@@ -1,0 +1,23 @@
+<!-- ## This is a comment, do no remove or modify these! ## -->
+<!-- ## Only replace the words on the right side of "=" ## -->
+
+<!-- ## Credit to Eternal Blue Flame ## -->
+
+<!-- ## Tabs ## -->
+
+item.myTab9=Inter European
+item.myTab2=Germany
+
+<!-- ## Extra countries ## --!>
+menu.item.europe=Europe
+
+<!-- ## Trains ## -->
+<!-- ## These are actually defined from the item name, so one name covers all areas ## -->
+item.BombardierTRAXXF140MS2.name=F140 MS2 Bombardier Traxx
+
+
+<!-- ## Rollingstock ## -->
+<!-- ## These are actually defined from the item name, so one name covers all areas ## -->
+item.CompartmentEurofima.name=Eurofima Compartment Coach
+item.Dobbelstock4thgeneration.name=4th Generation Doubledecker
+item.TEUSmallContainercarrier.name=TEU Small container carrier

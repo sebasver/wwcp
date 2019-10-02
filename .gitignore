@@ -1,0 +1,6 @@
+# Default ignored files
+/wwcp.iws
+
+# Project exclude paths
+/.gradle/
+/out/

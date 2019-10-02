@@ -1,0 +1,149 @@
+//This is a documentation file for copy pasting into a file with an open load freight carriage
+
+
+import ebf.tim.TrainsInMotion.transportTypes;
+import ebf.tim.api.RollingstockBase;
+import ebf.tim.api.SkinRegistry;
+import ebf.tim.items.ItemTransport;
+import ebf.tim.utility.RailUtility;
+import ebf.timsquared.TiMSquared;
+import ebf.timsquared.models.bogies.CMDBogie;
+import ebf.timsquared.models.rollingstock.VATLogCar;
+import fexcraft.tmt.slim.ModelBase;
+import java.util.List;
+import java.util.UUID;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+
+public class Entityxxxxx extends RollingstockBase {
+    public static final Item thisItem;
+
+    public Entityxxxxx(UUID owner, World world, double xPos, double yPos, double zPos) {
+        super(owner, world, xPos, yPos, zPos);
+    }
+
+    public static final Item thisItem = new ItemTransport(new EntityXXXXX(null), worldwidecontentpack.MODID , worldwidecontentpack.XXXXXX);
+
+    public Entityxxxxx(World world) {
+        super(world);
+    }
+    public String transportName() {
+        return "V.A.T Logcar";
+    }
+
+    public String transportcountry() {
+        return "US";
+    }
+
+    public String transportYear() {
+        return "1850-1970";
+    }
+
+    public String transportFuelType() {
+        return "Steam-Electric";
+    }
+
+    public float transportTopSpeed() {
+        return 0.0F;
+    }
+    public float weightKg() {
+        return 1814.3F;
+    }
+    public boolean isFictional() {
+        return true;
+    }
+
+    public float transportTractiveEffort() {
+        return 0.0F;
+    }
+
+    public float transportMetricHorsePower() {
+        return 0.0F;
+    }
+
+    public String[] additionalItemText() {
+        {return new String[]{RailUtility.translate("wwcp.era") + "II"};
+    }
+
+    public float getMaxFuel() {
+        return 0.0F;
+    }
+
+    public int getInventoryRows() {
+        return 3;
+    }
+    public float[][] bogieModelOffsets() {
+        return new float[][]{{1.3F, 0.0F, 0.0F}, {-1.3F, 0.0F, 0.0F}};
+    }
+
+    public ModelBase[] bogieModels() {
+        return new ModelBase[]{new xxxxxx()};
+    }
+
+    public float[] bogieLengthFromCenter() {
+        return new float[]{1.0F, -1.0F};
+    }
+
+    public float getRenderScale() {
+        return 0.0625F;
+    }
+
+    public float[][] modelOffsets() {
+        return (float[][])null);
+    }
+
+    public void registerSkins() {
+        SkinRegistry.addSkin(this.getClass(), "trainsinmotion", "textures/VATLogCar.png", new String[]{"textures/hd/rollingstock/cmd_bogie.png"}, "V.A.T Logcar", "Fictional log car from \"Railroads!\" used for carrying entire logs but would be good for planks too");
+    }
+
+    public boolean isReinforced() {
+        return false;
+    }
+
+    public int[] getTankCapacity() {
+        return null;
+    }
+
+    public String[][] getTankFilters() {
+        return (String[][])null;
+    }
+
+    public int getRFCapacity() {
+        return 0;
+    }
+
+    public void manageFuel() {
+    }
+
+    public ItemStack[] getRecipie() {
+        return new ItemStack[]{RailUtility.DefineStack(Blocks.field_150364_r, 1), null, null, null, null, null, null, null, null};
+    }
+
+
+
+    public List<transportTypes> getTypes() {
+        return transportTypes.LOGCAR.singleton();
+    }
+
+    public float[][] getRiderOffsets() {
+        return (float[][])null;
+    }
+
+    public float[] getHitboxSize() {
+        return new float[]{4.0F, 1.5F, 1.2F};
+    }
+
+    public float getPistonOffset() {
+        return 0.0F;
+    }
+
+    public ModelBase[] getModel() {
+        return new ModelBase[]{new xxxxx()};
+    }
+
+    public Item getItem() {
+        return thisItem;
+    }
+}
