@@ -28,7 +28,7 @@ public class EntityDBpza extends GenericRailTransport {
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") + ": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") + ": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new ItemTransport(new EntityDBpza(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new ItemTransport(new EntityDBpza(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
 
     public EntityDBpza(UUID owner, World world, double xPos, double yPos, double zPos) {
