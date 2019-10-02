@@ -1,0 +1,12 @@
+<xmlRoot>
+   <uuid>031bf17a-88aa-413c-83a8-4bc1978fa550</uuid>
+   <delegate>wwcp:item.Donnerbüchse2ndclass</delegate>
+   <pos_x>466.5</pos_x>
+   <pos_y>4.0</pos_y>
+   <pos_z>597.5</pos_z>
+    <inventory>
+   </inventory>
+   <fuel>N/A</fuel>
+   <fluids></fluids>
+
+</xmlRoot>

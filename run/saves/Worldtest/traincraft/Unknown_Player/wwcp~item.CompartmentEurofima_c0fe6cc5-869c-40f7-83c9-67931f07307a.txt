@@ -1,0 +1,12 @@
+<xmlRoot>
+   <uuid>c0fe6cc5-869c-40f7-83c9-67931f07307a</uuid>
+   <delegate>wwcp:item.CompartmentEurofima</delegate>
+   <pos_x>463.5</pos_x>
+   <pos_y>4.0</pos_y>
+   <pos_z>597.5</pos_z>
+    <inventory>
+   </inventory>
+   <fuel>N/A</fuel>
+   <fluids></fluids>
+
+</xmlRoot>

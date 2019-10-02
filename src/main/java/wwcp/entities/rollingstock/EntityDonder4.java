@@ -10,7 +10,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.models.rollingstock.ClassDonder2;
 import wwcp.models.rollingstock.ClassDonder4;
 import wwcp.worldwidecontentpack;
 
@@ -59,7 +58,7 @@ public class EntityDonder4 extends GenericRailTransport {
 
     @Override
     public float weightKg() {
-        return 1814.3f;
+        return 50000;
     }
 
     @Override

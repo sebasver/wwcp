@@ -18,14 +18,11 @@ import wwcp.entities.Freight.*;
 import wwcp.entities.locomotives.EntityTRAXXF140MS2;
 import wwcp.entities.locomotives.EntityV36;
 import wwcp.entities.railbusses.EntityBR626;
-import wwcp.entities.rollingstock.EntityDBpza;
-import wwcp.entities.rollingstock.EntityDonder2;
-import wwcp.entities.rollingstock.EntityEurofimaCompartment;
+import wwcp.entities.rollingstock.*;
 import wwcp.proxy.ClientProxy;
 import wwcp.proxy.CommonProxy;
 
 import static cpw.mods.fml.common.registry.GameRegistry.addRecipe;
-import static cpw.mods.fml.common.registry.GameRegistry.registerBlock;
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
 
@@ -120,7 +117,9 @@ public class worldwidecontentpack {
         return new GenericRailTransport[]{
                 new EntityEurofimaCompartment( null),
                 new EntityDBpza( null),
-                new EntityDonder2(null)
+                new EntityDonder2(null),
+                new EntityDonder3(null),
+                new EntityDonder4(null),
         };
     }
     public static GenericRailTransport[] listFreight(){
