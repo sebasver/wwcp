@@ -1,6 +1,11 @@
 # Default ignored files
 /wwcp.iws
+/wwcp.iml
+/wwcp.ipr
 
 # Project exclude paths
 /.gradle/
 /out/
+/build/
+/run/
+/fileTemplates/
