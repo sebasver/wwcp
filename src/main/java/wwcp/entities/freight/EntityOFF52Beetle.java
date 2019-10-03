@@ -1,4 +1,4 @@
-package wwcp.entities.Freight;
+package wwcp.entities.freight;
 
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -11,9 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import sun.net.www.content.text.Generic;
-import wwcp.models.Freight.OFF52Beetles;
-import wwcp.models.Freight.TeuSmallContainer;
+import wwcp.models.freight.OFF52Beetles;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -53,7 +51,7 @@ public class EntityOFF52Beetle extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/Freight/OFF52/OFF52_1.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/OFF52/OFF52_1.png",
                 "OFF 52 with 4 Beetles",
                 "Fictional skin promoting WWCP as a transport Company");
     }

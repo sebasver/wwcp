@@ -1,4 +1,4 @@
-package wwcp.entities.Freight;
+package wwcp.entities.freight;
 
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -11,38 +11,34 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.models.Freight.SGNS801BT2TS;
-import wwcp.models.bogies.SGNSBogie;
+import wwcp.models.freight.UKopenwagon;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntitySGNS801BT2TS extends GenericRailTransport {
+public class EntityUKopenWagon extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new ItemTransport(new EntitySGNS801BT2TS((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new ItemTransport(new EntityUKopenWagon((World)null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
-    public EntitySGNS801BT2TS(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityUKopenWagon(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntitySGNS801BT2TS(World world) {
+    public EntityUKopenWagon(World world) {
         super(world);
     }
 
-    @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{5f,0.08f,0},{-5f,0.08f,0}};
-    }
+        return null;}
 
-    @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new SGNSBogie()};
+        return null;
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{5.0F, -5.0F};
+        return new float[]{1.0F, -1.0F};
     }
 
     public float getRenderScale() {
@@ -51,13 +47,13 @@ public class EntitySGNS801BT2TS extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.475f,-0.1F,0F}};
+        return new float[][]{{0.625f,-0.10F,0.065F}};
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/Freight/SGNS80/S2.png", "textures/bogies/SGNSSBogie.png",
-                "WWCP Corperate Skin",
-                "Fictional skin promoting WWCP as a transport Company");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/UKopenwagon/O1.png",
+                "Default open wagon",
+                "This was the factory skin of the car");
     }
 
     public boolean isReinforced() {
@@ -88,7 +84,7 @@ public class EntitySGNS801BT2TS extends GenericRailTransport {
     }
 
     public String transportName() {
-        return "SGNSS 80 Load 4";
+        return "UK Open wagon";
     }
 
     public String transportcountry() {
@@ -96,7 +92,7 @@ public class EntitySGNS801BT2TS extends GenericRailTransport {
     }
 
     public String transportYear() {
-        return "1950-now";
+        return "1900-1930";
     }
 
     public float transportTopSpeed() {
@@ -137,11 +133,11 @@ public class EntitySGNS801BT2TS extends GenericRailTransport {
     }
 
     public float[][] getRiderOffsets() {
-        return null;
+        return (float[][])null;
     }
 
     public float[] getHitboxSize() {
-        return new float[]{13.4f, 2f, 1.6F};
+        return new float[]{2.95f, 1.4f, 1.4F};
     }
 
     public float getPistonOffset() {
@@ -149,7 +145,7 @@ public class EntitySGNS801BT2TS extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new SGNS801BT2TS()};
+        return new ModelBase[]{new UKopenwagon()};
     }
 
     public Item getItem() {
@@ -158,4 +154,3 @@ public class EntitySGNS801BT2TS extends GenericRailTransport {
 
 
 }
-

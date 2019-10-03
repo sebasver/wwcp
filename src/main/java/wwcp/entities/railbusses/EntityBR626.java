@@ -14,13 +14,10 @@ import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
-import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.models.bogies.BR626Bogie;
 import wwcp.models.railbusses.BR626;
 import wwcp.worldwidecontentpack;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.UUID;
 
 public class EntityBR626 extends EntityTrainCore {

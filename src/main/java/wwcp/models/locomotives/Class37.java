@@ -24,7 +24,7 @@ public class Class37 extends ModelBase //Same as Filename
 
 		initbodyModel_1();
 
-		translateAll(0F, 0F, 0F);
+		this.fixRotation(this.bodyModel, false, true, true);
 
 	}
 

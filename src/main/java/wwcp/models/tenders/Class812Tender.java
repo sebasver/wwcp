@@ -24,7 +24,7 @@ public class Class812Tender extends ModelBase //Same as Filename
 		bodyModel = new ModelRendererTurbo[214];
 
 		initbodyModel_1();
-
+		this.fixRotation(this.bodyModel, false, true, true);
 	}
 
 	private void initbodyModel_1()

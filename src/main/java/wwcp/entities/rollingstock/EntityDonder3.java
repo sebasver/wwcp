@@ -36,14 +36,14 @@ public class EntityDonder3 extends GenericRailTransport {
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{5.4f, -5.4f};
+        return new float[]{2.5f, -2.5f};
     }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DonderBushe/B2.png", "Blue Donnerbüsche ", "Factory blue version");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DonderBushe/G2.png", "Green Donnerbüsche ", "Factory green version");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DonderBushe/R2.png", "Red Donnerbüsche ", "Factory red version");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DonderBushe/G2.png", "Green Donnerbüsche ", "Factory green version");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DonderBushe/B2.png", "Blue Donnerbüsche ", "Factory blue version");
     }
     //How to add in more skins Just recopy skinregistry?
     //ETERNAL NOTE yeah, you just do SkinRegistry.addSkin over and over for all the skins you want.
@@ -58,7 +58,7 @@ public class EntityDonder3 extends GenericRailTransport {
 
     @Override
     public float weightKg() {
-        return 50000f;
+        return 20000f;
     }
 
     @Override
@@ -89,7 +89,7 @@ public class EntityDonder3 extends GenericRailTransport {
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate("wwcp.era") + " III"};
+            return new String[]{RailUtility.translate("wwcp.era") + " II-III"};
         }
     }
 

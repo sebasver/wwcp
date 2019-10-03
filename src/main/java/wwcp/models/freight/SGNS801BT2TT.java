@@ -7,13 +7,11 @@
 // Created on: 18.03.2019 - 18:16:07
 // Last changed on: 18.03.2019 - 18:16:07
 
-package wwcp.models.Freight; //Path where the model is located
+package wwcp.models.freight; //Path where the model is located
 
 
-import ebf.tim.models.StaticModelAnimator;
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
-import net.minecraft.entity.Entity;
 
 public class SGNS801BT2TT extends ModelBase //Same as Filename
 {

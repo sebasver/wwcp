@@ -8,13 +8,11 @@
 // Last changed on: 01.04.2018 - 12:16:49
 
 
-package wwcp.models.Freight; //Path where the model is located
+package wwcp.models.freight; //Path where the model is located
 
 
-import ebf.tim.models.StaticModelAnimator;
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
-import net.minecraft.entity.Entity;
 
 public class TeuSmallContainer extends ModelBase //Same as Filename
 {

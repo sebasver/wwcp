@@ -6,13 +6,11 @@
 // Model Creator: 
 // Created on: 30.09.2018 - 15:22:42
 // Last changed on: 30.09.2018 - 15:22:42
-package wwcp.models.Freight; //Path where the model is located
+package wwcp.models.freight; //Path where the model is located
 
 
-import ebf.tim.models.StaticModelAnimator;
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
-import net.minecraft.entity.Entity;
 
 public class OFF52Beetles extends ModelBase //Same as Filename
 {

@@ -1,7 +1,6 @@
-package wwcp.entities.Freight;
+package wwcp.entities.freight;
 
 import ebf.tim.TrainsInMotion;
-import ebf.tim.api.RollingstockBase;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
@@ -12,32 +11,37 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.models.Freight.TeuSmallContainer;
+import wwcp.models.freight.SGNS801BT2TT;
+import wwcp.models.bogies.SGNSBogie;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityTEUSmall extends GenericRailTransport {
+public class EntitySGNS801BT2TT extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new ItemTransport(new EntityTEUSmall((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new ItemTransport(new EntitySGNS801BT2TT((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
-    public EntityTEUSmall(UUID owner, World world, double xPos, double yPos, double zPos) {super(owner, world, xPos, yPos, zPos); }
-
-    public EntityTEUSmall(World world) {
-        super(world);
+    public EntitySGNS801BT2TT(UUID owner, World world, double xPos, double yPos, double zPos) {
+        super(owner, world, xPos, yPos, zPos);
     }
 
+    public EntitySGNS801BT2TT(World world) {
+        super(world);
+    }
+    @Override
     public float[][] bogieModelOffsets() {
-        return null;}
+        return new float[][]{{5f,0.08f,0},{-5f,0.08f,0}};
+    }
 
+    @Override
     public ModelBase[] bogieModels() {
-        return null;
+        return new ModelBase[]{new SGNSBogie()};
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, -1.0F};
+        return new float[]{5.0F, -5.0F};
     }
 
     public float getRenderScale() {
@@ -46,11 +50,11 @@ public class EntityTEUSmall extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.22f,-0.12F,0F}};
+        return new float[][]{{-0.475f,-0.1F,0F}};
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/Freight/TEUSmallContainer/C12.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/SGNS80/S2.png", "textures/bogies/SGNSSBogie.png",
                 "WWCP Corperate Skin",
                 "Fictional skin promoting WWCP as a transport Company");
     }
@@ -83,7 +87,7 @@ public class EntityTEUSmall extends GenericRailTransport {
     }
 
     public String transportName() {
-        return "TEU Small Container carrier";
+        return "SGNSS 80 Load 1";
     }
 
     public String transportcountry() {
@@ -132,11 +136,11 @@ public class EntityTEUSmall extends GenericRailTransport {
     }
 
     public float[][] getRiderOffsets() {
-        return (float[][])null;
+        return null;
     }
 
     public float[] getHitboxSize() {
-        return new float[]{3.78f, 1.8f, 1.2F};
+        return new float[]{13.4f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
@@ -144,7 +148,7 @@ public class EntityTEUSmall extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new TeuSmallContainer()};
+        return new ModelBase[]{new SGNS801BT2TT()};
     }
 
     public Item getItem() {
@@ -153,3 +157,4 @@ public class EntityTEUSmall extends GenericRailTransport {
 
 
 }
+

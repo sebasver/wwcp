@@ -68,8 +68,40 @@ public class EntityEurofimaCompartment extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E1.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E2.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E3.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E4.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E5.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E6.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E7.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E8.png", "textures/bogies/Eurofimabogie.png",
                 "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E9.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E10.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E11.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E12.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E13.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E14.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E15.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/EurofimaCompartment/E16.png", "textures/bogies/Eurofimabogie.png",
+                "Eurofima WWCP promotional skin", "Livery used when just coming out of the Factory");
+
+
     }
 
     @Override

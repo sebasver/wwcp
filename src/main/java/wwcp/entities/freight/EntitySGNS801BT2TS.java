@@ -1,4 +1,4 @@
-package wwcp.entities.Freight;
+package wwcp.entities.freight;
 
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -11,22 +11,23 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.models.Freight.SGNS804TS;
+import wwcp.models.freight.SGNS801BT2TS;
 import wwcp.models.bogies.SGNSBogie;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntitySGNS804TS extends GenericRailTransport {
+public class EntitySGNS801BT2TS extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new ItemTransport(new EntitySGNS804TS((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new ItemTransport(new EntitySGNS801BT2TS((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
-    public EntitySGNS804TS(UUID owner, World world, double xPos, double yPos, double zPos) {super(owner, world, xPos, yPos, zPos);
+    public EntitySGNS801BT2TS(UUID owner, World world, double xPos, double yPos, double zPos) {
+        super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntitySGNS804TS(World world) {
+    public EntitySGNS801BT2TS(World world) {
         super(world);
     }
 
@@ -54,7 +55,7 @@ public class EntitySGNS804TS extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/Freight/SGNS80/S2.png", "textures/bogies/SGNSSBogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/SGNS80/S2.png", "textures/bogies/SGNSSBogie.png",
                 "WWCP Corperate Skin",
                 "Fictional skin promoting WWCP as a transport Company");
     }
@@ -87,7 +88,7 @@ public class EntitySGNS804TS extends GenericRailTransport {
     }
 
     public String transportName() {
-        return "SGNSS 80 Load 3";
+        return "SGNSS 80 Load 4";
     }
 
     public String transportcountry() {
@@ -148,7 +149,7 @@ public class EntitySGNS804TS extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new SGNS804TS()};
+        return new ModelBase[]{new SGNS801BT2TS()};
     }
 
     public Item getItem() {

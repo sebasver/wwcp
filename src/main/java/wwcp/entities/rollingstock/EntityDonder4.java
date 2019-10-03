@@ -36,7 +36,7 @@ public class EntityDonder4 extends GenericRailTransport {
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{5.4f, -5.4f};
+        return new float[]{2.5f, -2.5f};
     }
 
     @Override
@@ -57,8 +57,7 @@ public class EntityDonder4 extends GenericRailTransport {
     }
 
     @Override
-    public float weightKg() {
-        return 50000;
+    public float weightKg() { return 20000;
     }
 
     @Override
@@ -89,7 +88,7 @@ public class EntityDonder4 extends GenericRailTransport {
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate("wwcp.era") + " III"};
+            return new String[]{RailUtility.translate("wwcp.era") + " II-III"};
         }
     }
 

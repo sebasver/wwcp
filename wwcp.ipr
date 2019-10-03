@@ -9,33 +9,12 @@
       <entry name="!?*.java" />
       <entry name="!?*.groovy" />
     </wildcardResourcePatterns>
-    <bytecodeTargetLevel>
-      <module name="wwcp.api" target="1.7" />
-      <module name="wwcp.main" target="1.7" />
-      <module name="wwcp.test" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
   <component name="CopyrightManager" default="">
     <module2copyright />
   </component>
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
-  </component>
-  <component name="GradleMigrationSettings" migrationVersion="1" />
-  <component name="GradleSettings">
-    <option name="linkedExternalProjectsSettings">
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="1.8.0_181" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-          </set>
-        </option>
-        <option name="useQualifiedModuleNames" value="true" />
-      </GradleProjectSettings>
-    </option>
   </component>
   <component name="GradleUISettings">
     <setting name="root" />
@@ -56,10 +35,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/wwcp.iml" filepath="$PROJECT_DIR$/wwcp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wwcp.api.iml" filepath="$PROJECT_DIR$/wwcp.api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wwcp.main.iml" filepath="$PROJECT_DIR$/wwcp.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wwcp.test.iml" filepath="$PROJECT_DIR$/wwcp.test.iml" />
     </modules>
+  </component>
+  <component name="ProjectNotificationSettings">
+    <option name="askShowProject" value="false" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8.0_181" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

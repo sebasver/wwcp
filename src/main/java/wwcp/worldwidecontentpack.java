@@ -14,23 +14,23 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import wwcp.blocks.Display;
-import wwcp.entities.Freight.*;
-import wwcp.entities.locomotives.EntityTRAXXF140MS2;
-import wwcp.entities.locomotives.EntityV36;
-import wwcp.entities.railbusses.EntityBR626;
+import wwcp.entities.freight.*;
+import wwcp.entities.locomotives.*;
+import wwcp.entities.railbusses.*;
 import wwcp.entities.rollingstock.*;
+import wwcp.entities.tender.*;
 import wwcp.proxy.ClientProxy;
 import wwcp.proxy.CommonProxy;
 
 import static cpw.mods.fml.common.registry.GameRegistry.addRecipe;
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
-
+//Todo gradlew setupDecompWorkspace --refresh-dependencies idea
 
 @Mod(modid = worldwidecontentpack.MODID, version = worldwidecontentpack.MOD_VERSION, name = "World Wide Content Pack")
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION="Press Teaser Release";
+    public static final String MOD_VERSION = "Press Teaser Release";
 
 
     public Block DisplayTrainFourteen = new Display();
@@ -42,19 +42,19 @@ public class worldwidecontentpack {
 
     }
 
-//Tab declerations
+    //Tab declerations
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
 
-        Belgium = new TiMTab(event.getSide().isClient(),"Belgian models", MODID, "myTab");
-        Germany = new TiMTab(event.getSide().isClient(),"German models", MODID, "myTab2");
-        United_Kingdom = new TiMTab(event.getSide().isClient(),"UK models", MODID, "myTab3");
-        France= new TiMTab(event.getSide().isClient(),"French models", MODID, "myTab4");
-        Netherlands = new TiMTab(event.getSide().isClient(),"Dutch models", MODID, "myTab5");
-        America = new TiMTab(event.getSide().isClient(),"American models", MODID, "myTab6");
-        Austria = new TiMTab(event.getSide().isClient(),"Austrian models", MODID, "myTab7");
-        Switzerland = new TiMTab(event.getSide().isClient(),"Swiss models", MODID, "myTab8");
-        European = new TiMTab(event.getSide().isClient(),"Inter European models", MODID, "myTab9");
+        Belgium = new TiMTab(event.getSide().isClient(), "Belgian models", MODID, "myTab");
+        Germany = new TiMTab(event.getSide().isClient(), "German models", MODID, "myTab2");
+        United_Kingdom = new TiMTab(event.getSide().isClient(), "UK models", MODID, "myTab3");
+        France = new TiMTab(event.getSide().isClient(), "French models", MODID, "myTab4");
+        Netherlands = new TiMTab(event.getSide().isClient(), "Dutch models", MODID, "myTab5");
+        America = new TiMTab(event.getSide().isClient(), "American models", MODID, "myTab6");
+        Austria = new TiMTab(event.getSide().isClient(), "Austrian models", MODID, "myTab7");
+        Switzerland = new TiMTab(event.getSide().isClient(), "Swiss models", MODID, "myTab8");
+        European = new TiMTab(event.getSide().isClient(), "Inter European models", MODID, "myTab9");
         BlocksWWCP = new TiMTab(event.getSide().isClient(), "Blocks", MODID, "blockTab");
 
         //for the eventhandler
@@ -74,8 +74,7 @@ public class worldwidecontentpack {
         registerTransports(event.getSide().isClient(), MODID, listFreight(), null);
 
 
-
-         addRecipe(new ItemStack(TiMGenericRegistry.registerBlock(event.getSide().isClient(), DisplayTrainFourteen, worldwidecontentpack.United_Kingdom,"blocks.14xxdisplay", null, proxy.getTESR()),1), "WWW", "WIW", "WWW", 'W', Blocks.planks, 'I', Items.iron_ingot);
+        addRecipe(new ItemStack(TiMGenericRegistry.registerBlock(event.getSide().isClient(), DisplayTrainFourteen, worldwidecontentpack.United_Kingdom, "blocks.14xxdisplay", null, proxy.getTESR()), 1), "WWW", "WIW", "WWW", 'W', Blocks.planks, 'I', Items.iron_ingot);
 
         //just copy this for a new type
     }
@@ -83,46 +82,50 @@ public class worldwidecontentpack {
 
     /**
      * I hereby start declaring the individual trains itself. I will insert a // statement before each big group
-     *
      */
 
     // Steam trains
-
     public static GenericRailTransport[] listSteamTrains() {
         return new GenericRailTransport[]{
-
-        }; }
+                new EntityClass812(null)
+        };
+    }
 
     // Tender list
     public static GenericRailTransport[] listTenders() {
         return new GenericRailTransport[]{
-
-        }; }
+                new EntityClass812Tender(null)
+        };
+    }
 
     // Diesel List
     public static GenericRailTransport[] listDiesel() {
         return new GenericRailTransport[]{
                 new EntityV36(null),
-                new EntityBR626(null)
-        }; }
+                new EntityBR626(null),
+                new EntityClass37(null)
+        };
+    }
 
     //Electric List
     public static GenericRailTransport[] listelectric() {
         return new GenericRailTransport[]{
                 new EntityTRAXXF140MS2(null)
-        }; }
+        };
+    }
 
     // Passenger car list
     public static GenericRailTransport[] listpassenger() {
         return new GenericRailTransport[]{
-                new EntityEurofimaCompartment( null),
-                new EntityDBpza( null),
+                new EntityEurofimaCompartment(null),
+                new EntityDBpza(null),
                 new EntityDonder2(null),
                 new EntityDonder3(null),
                 new EntityDonder4(null),
         };
     }
-    public static GenericRailTransport[] listFreight(){
+
+    public static GenericRailTransport[] listFreight() {
         return new GenericRailTransport[]{
                 new EntityTEUSmall(null),
                 new EntityUKopenWagon(null),
@@ -133,7 +136,6 @@ public class worldwidecontentpack {
                 new EntitySGNS801BT2TS(null)
         };
     }
-
 
 
     // declaring of the creative tabs I will be using

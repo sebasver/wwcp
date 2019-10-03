@@ -1,6 +1,5 @@
 package wwcp.entities.rollingstock;
 
-import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
@@ -14,8 +13,6 @@ import net.minecraft.world.World;
 import wwcp.models.rollingstock.ClassDonder2;
 import wwcp.worldwidecontentpack;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 import static ebf.tim.utility.RailUtility.DefineStack;
@@ -58,7 +55,7 @@ public class EntityDonder2 extends GenericRailTransport {
 
     @Override
     public float weightKg() {
-        return 1814.3f;
+        return 20000f;
     }
 
     @Override
@@ -88,7 +85,7 @@ public class EntityDonder2 extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + " III"};}
+        {return new String[]{RailUtility.translate("wwcp.era") + " II-III"};}
     }
 
     @Override

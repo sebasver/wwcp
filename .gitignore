@@ -1,11 +1,39 @@
-# Default ignored files
-/wwcp.iws
-/wwcp.iml
-/wwcp.ipr
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+eclipse
 
-# Project exclude paths
-/.gradle/
-/out/
-/build/
-/run/
-/fileTemplates/
+# idea
+out
+.idea
+*.iws
+*.iml
+*.ipr
+
+# gradle
+build
+.gradle
+
+# netbeans
+.nb-gradle-*
+
+# build
+asm
+config
+logs
+options.txt
+saves
+usernamecache.json
+crash-report
+crash-reports
+
+# other
+run
+lib
+/.nb-gradle/
+*.tmp
+src/main/java/ebf/tim/utility/DoNotInclude.java
+.debris/*
+libs/*

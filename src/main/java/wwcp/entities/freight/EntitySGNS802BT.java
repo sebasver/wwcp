@@ -1,4 +1,4 @@
-package wwcp.entities.Freight;
+package wwcp.entities.freight;
 
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -11,35 +11,38 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.models.Freight.TeuSmallContainer;
-import wwcp.models.Freight.UKopenwagon;
+import wwcp.models.freight.SGNS802BT;
+import wwcp.models.bogies.SGNSBogie;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityUKopenWagon extends GenericRailTransport {
+public class EntitySGNS802BT extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new ItemTransport(new EntityUKopenWagon((World)null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new ItemTransport(new EntitySGNS802BT((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
-    public EntityUKopenWagon(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntitySGNS802BT(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityUKopenWagon(World world) {
+    public EntitySGNS802BT(World world) {
         super(world);
     }
 
+    @Override
     public float[][] bogieModelOffsets() {
-        return null;}
+        return new float[][]{{5f,0.08f,0},{-5f,0.08f,0}};
+    }
 
+    @Override
     public ModelBase[] bogieModels() {
-        return null;
+        return new ModelBase[]{new SGNSBogie()};
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, -1.0F};
+        return new float[]{5.0F, -5.0F};
     }
 
     public float getRenderScale() {
@@ -48,13 +51,13 @@ public class EntityUKopenWagon extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.625f,-0.10F,0.065F}};
+        return new float[][]{{0f,-0.1F,0F}};
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/Freight/UKopenwagon/O1.png",
-                "Default open wagon",
-                "This was the factory skin of the car");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/SGNS80/S2.png", "textures/bogies/SGNSSBogie.png",
+                "WWCP Corperate Skin",
+                "Fictional skin promoting WWCP as a transport Company");
     }
 
     public boolean isReinforced() {
@@ -65,16 +68,6 @@ public class EntityUKopenWagon extends GenericRailTransport {
         return null;
     }
 
-    public String[] getTankFilters(int tankID) {
-        return null;
-    }
-
-    public int getRFCapacity() {
-        return 0;
-    }
-
-    public void manageFuel() {
-    }
 
     public float weightKg() {
         return 1814.3F;
@@ -85,7 +78,7 @@ public class EntityUKopenWagon extends GenericRailTransport {
     }
 
     public String transportName() {
-        return "UK Open wagon";
+        return "SGNSS 80 Load 2";
     }
 
     public String transportcountry() {
@@ -93,7 +86,7 @@ public class EntityUKopenWagon extends GenericRailTransport {
     }
 
     public String transportYear() {
-        return "1900-1930";
+        return "1950-now";
     }
 
     public float transportTopSpeed() {
@@ -134,11 +127,11 @@ public class EntityUKopenWagon extends GenericRailTransport {
     }
 
     public float[][] getRiderOffsets() {
-        return (float[][])null;
+        return null;
     }
 
     public float[] getHitboxSize() {
-        return new float[]{2.95f, 1.4f, 1.4F};
+        return new float[]{13.4f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
@@ -146,7 +139,7 @@ public class EntityUKopenWagon extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new UKopenwagon()};
+        return new ModelBase[]{new SGNS802BT()};
     }
 
     public Item getItem() {
@@ -155,3 +148,4 @@ public class EntityUKopenWagon extends GenericRailTransport {
 
 
 }
+

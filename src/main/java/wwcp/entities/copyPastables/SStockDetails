@@ -1,13 +1,16 @@
 //This is a documentation file for copy pasting into a steam locomotive.
+package wwcp.entities.locomotives;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion.transportTypes;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.api.TrainBase;
+import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
 import ebf.tim.registry.URIRegistry;
+import ebf.tim.utility.RailUtility;
 import ebf.timsquared.TiMSquared;
 import ebf.timsquared.models.trains.ModelBrigadelok_080;
 import fexcraft.tmt.slim.ModelBase;
@@ -21,17 +24,18 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
+import wwcp.models.locomotives.Class812;
+import wwcp.worldwidecontentpack;
 
-public class EntityXXXXX extends TrainBase {
-    public static final Item thisItem;
+public class EntityClass812 extends EntityTrainCore {
 
-    public EntityXXXXXXXX(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityClass812(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntityXXXXX(null), worldwidecontentpack.MODID , worldwidecontentpack.XXXXXX);
+    public static final Item thisItem = new ItemTransport(new EntityClass812(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
-    public EntityXXXXXX(World world) {
+    public EntityClass812(World world) {
         super(world);
     }
 
@@ -64,24 +68,20 @@ public class EntityXXXXX extends TrainBase {
     }
 
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + "II"};}
+        {
+            return new String[]{RailUtility.translate("wwcp.era") + "II"};
+        }
     }
 
     public float weightKg() {
         return 10886.217F;
     }
-
-    public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), "trainsinmotion", "textures/sd/train/brigadelok_080.png", "default", "Used by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkinRecolor(this.getClass(), "trainsinmotion", "textures/sd/train/brigadelok_080.png", new int[][]{new int[0], new int[0]}, "purple", "A fictional skin created for testing the recolor system, \nthe gui multi-line support and the paint bucket skin selector. \n Might keep it longrun to pay hommage to the development of the mod.");
-    }
-
     public float transportTopSpeed() {
         return 70.81F;
     }
-
-    public List<Double> getRenderBogieOffsets() {
-        return null;
+    public void registerSkins() {
+        SkinRegistry.addSkin(this.getClass(), "trainsinmotion", "textures/sd/train/brigadelok_080.png", "default", "Used by Germany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkinRecolor(this.getClass(), "trainsinmotion", "textures/sd/train/brigadelok_080.png", new int[][]{new int[0], new int[0]}, "purple", "A fictional skin created for testing the recolor system, \nthe gui multi-line support and the paint bucket skin selector. \n Might keep it longrun to pay hommage to the development of the mod.");
     }
 
     public int getInventoryRows() {
@@ -121,12 +121,12 @@ public class EntityXXXXX extends TrainBase {
     }
 
     public float[][] bogieModelOffsets() {
-        return new float[][]{{1.3F, 0.0F, 0.0F}, {-1.3F, 0.0F, 0.0F}};
+        return null;
 
     }
 
     public ModelBase[] bogieModels() {
-         return new ModelBase[]{new xxxxxx()};
+        return null;
     }
 
     public float[] bogieLengthFromCenter() {
@@ -138,7 +138,7 @@ public class EntityXXXXX extends TrainBase {
     }
 
     public float[][] modelOffsets() {
-        return (float[][])null;
+        return (float[][]) null;
     }
 
     public boolean shouldRiderSit() {
@@ -158,22 +158,22 @@ public class EntityXXXXX extends TrainBase {
     }
 
     public String[] getTankFilters(int tank) {
-        switch(tank) {
-        case 0:
-            return new String[]{FluidRegistry.WATER.getName()};
-        default:
-            return new String[]{FluidRegistry.LAVA.getName()};
+        switch (tank) {
+            case 0:
+                return new String[]{FluidRegistry.WATER.getName()};
+            default:
+                return new String[]{FluidRegistry.LAVA.getName()};
         }
     }
 
-    public boolean func_94041_b(int slot, ItemStack stack) {
-        switch(slot) {
-        case 400:
-            return TileEntityFurnace.func_145952_a(stack) > 0;
-        case 401:
-            return FluidContainerRegistry.getFluidForFilledItem(stack) != null && this.canFill((ForgeDirection)null, FluidContainerRegistry.getFluidForFilledItem(stack).getFluid());
-        default:
-            return true;
+    public boolean isItemValidForSlot(int slot, ItemStack stack) {
+        switch (slot) {
+            case 400:
+                return TileEntityFurnace.getItemBurnTime(stack) > 0;
+            case 401:
+                return FluidContainerRegistry.getFluidForFilledItem(stack) != null && this.canFill((ForgeDirection) null, FluidContainerRegistry.getFluidForFilledItem(stack).getFluid());
+            default:
+                return true;
         }
     }
 
@@ -186,7 +186,7 @@ public class EntityXXXXX extends TrainBase {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new xxxxxxxx()};
+        return new ModelBase[]{new Class812()};
     }
 
     @SideOnly(Side.CLIENT)
@@ -198,3 +198,4 @@ public class EntityXXXXX extends TrainBase {
     public ResourceLocation getRunningSound() {
         return URIRegistry.SOUND_RUNNING.getResource("XXXXXXX.ogg");
     }
+}
