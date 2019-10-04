@@ -87,7 +87,7 @@ public class worldwidecontentpack {
     // Steam trains
     public static GenericRailTransport[] listSteamTrains() {
         return new GenericRailTransport[]{
-                new EntityClass812(null)
+                new Entity94xx(null)
         };
     }
 

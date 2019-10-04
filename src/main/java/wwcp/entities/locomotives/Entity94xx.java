@@ -21,22 +21,23 @@ import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.models.locomotives.Class812;
+import wwcp.models.locomotives.UK94;
 import wwcp.worldwidecontentpack;
 
-public class EntityClass812 extends EntityTrainCore {
+public class Entity94xx extends EntityTrainCore {
 
-    public EntityClass812(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public Entity94xx(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
     public static final Item thisItem = new ItemTransport(new Entity94xx(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
-    public EntityClass812(World world) {
+    public Entity94xx(World world) {
         super(world);
     }
 
     public String transportName() {
-        return "Class 812";
+        return "GWR 9400 Class";
     }
 
     public String transportcountry() {
@@ -44,7 +45,7 @@ public class EntityClass812 extends EntityTrainCore {
     }
 
     public String transportYear() {
-        return "1899–1909";
+        return "1947–1956";
     }
 
     public String transportFuelType() {
@@ -55,9 +56,9 @@ public class EntityClass812 extends EntityTrainCore {
         return false;
     }
 
-    public float transportTractiveEffort() { return 20170F; }
+    public float transportTractiveEffort() { return 22515.5F; }
 
-    public float weightKg() { return 46380F; }
+    public float weightKg() { return 56200F; }
 
     public float transportMetricHorsePower() {
         return 75.0F;
@@ -65,16 +66,21 @@ public class EntityClass812 extends EntityTrainCore {
 
     @Override
     public String[] additionalItemText() {
-        return new String[]{RailUtility.translate("wwcp.era") + " II-III",
-                RailUtility.translate("wwcp.nick") + " Jumbos"};
+        return new String[]{RailUtility.translate("wwcp.era") + " III-IV"};
     }
 
     public float transportTopSpeed() {
-        return 88.9F;
+        return 72F;
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/812/C1.png", "default",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X1", "default",
+                "Used by Germany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X2", "default",
+                "Used by Germany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X3", "default",
+                "Used by Germany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X4", "default",
                 "Used by Germany in WWI as a transport for solders and equipment");
 
     }
@@ -177,7 +183,7 @@ public class EntityClass812 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new Class812()};
+        return new ModelBase[]{new UK94 ()};
     }
 
     @SideOnly(Side.CLIENT)

@@ -4,12 +4,21 @@
 <!-- ## Credit to Eternal Blue Flame ## -->
 
 <!-- ## Tabs ## -->
-
-item.myTab9=Inter European
+item.myTab=Belgium
 item.myTab2=Germany
+item.myTab3=United Kingdom
+item.myTab4=France
+item.myTab5=Netherlands
+item.myTab6=America
+item.myTab7=Austria
+item.myTab8=Switzerland
+item.myTab9=Inter European
+item.blockTab=Block Tab
+
 
 <!-- ## Extra Declarations ##--!>
 wwcp.era=Era
+wwcp.nick=Nickname
 
 <!-- ## Extra countries ## --!>
 menu.item.europe=Europe
@@ -24,3 +33,8 @@ item.BombardierTRAXXF140MS2.name=F140 MS2 Bombardier Traxx
 item.CompartmentEurofima.name=Eurofima Compartment Coach
 item.Dobbelstock4thgeneration.name=4th Generation Doubledecker
 item.TEUSmallContainercarrier.name=TEU Small container carrier
+
+
+<!-- ## Extra types -->
+menu.item.diesel-electric=Diesel-Electric
+menu.item.tractiveeffort=Tractive effort

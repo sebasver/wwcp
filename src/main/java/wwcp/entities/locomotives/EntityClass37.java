@@ -56,6 +56,8 @@ import java.util.UUID;
         @Override
         public boolean isFictional(){return false;}
         @Override
+        public float weightKg() { return 111765; }
+        @Override
         public float transportTractiveEffort(){return 55500;}
         @Override
         public float transportMetricHorsePower(){return 1750;}
@@ -68,7 +70,6 @@ import java.util.UUID;
             return new String[]{RailUtility.translate("wwcp.era") + " III-IV",
                     RailUtility.translate("wwcp.nick") + " Tractor"};
         }
-
         @Override
         public void registerSkins(){
             SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/Class37/C1.png","textures/bogies/Class37Bogie.png",
