@@ -29,7 +29,7 @@ public class EntityClass812 extends EntityTrainCore {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new Entity94xx(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new ItemTransport(new EntityClass812(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
     public EntityClass812(World world) {
         super(world);

@@ -61,7 +61,7 @@ public class Entity94xx extends EntityTrainCore {
     public float weightKg() { return 56200F; }
 
     public float transportMetricHorsePower() {
-        return 75.0F;
+        return 0.0F;
     }
 
     @Override
@@ -74,13 +74,13 @@ public class Entity94xx extends EntityTrainCore {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X1", "default",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X1.png", "default",
                 "Used by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X2", "default",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X2.png", "default",
                 "Used by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X3", "default",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X3.png", "default",
                 "Used by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X4", "default",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X4.png", "default",
                 "Used by Germany in WWI as a transport for solders and equipment");
 
     }
@@ -102,7 +102,7 @@ public class Entity94xx extends EntityTrainCore {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{4.45F, 2.1F, 1.3F};
+        return new float[]{6F, 2.1F, 1.3F};
     }
 
     public ItemStack[] getRecipie() {

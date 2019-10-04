@@ -21,7 +21,7 @@ public class UK94 extends ModelBase//Same as Filename
 
 	public UK94() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[273];
+		bodyModel = new ModelRendererTurbo[218];
 
 		initbodyModel_1();
 

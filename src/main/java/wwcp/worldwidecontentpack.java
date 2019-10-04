@@ -87,7 +87,8 @@ public class worldwidecontentpack {
     // Steam trains
     public static GenericRailTransport[] listSteamTrains() {
         return new GenericRailTransport[]{
-                new Entity94xx(null)
+                new Entity94xx(null),
+                new EntityClass812(null)
         };
     }
 
@@ -103,7 +104,8 @@ public class worldwidecontentpack {
         return new GenericRailTransport[]{
                 new EntityV36(null),
                 new EntityBR626(null),
-                new EntityClass37(null)
+                new EntityClass37(null),
+                new EntityAC4400CW(null)
         };
     }
 
@@ -122,6 +124,9 @@ public class worldwidecontentpack {
                 new EntityDonder2(null),
                 new EntityDonder3(null),
                 new EntityDonder4(null),
+                new EntityEurofimaRows(null),
+                new EntityEurofimaSleeper(null)
+
         };
     }
 
