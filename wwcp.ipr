@@ -14,6 +14,10 @@
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
+  <component name="DiscordProjectSettings">
+    <option name="nameOverrideEnabled" value="true" />
+    <option name="nameOverrideText" value="World Wide Content Pack" />
+  </component>
   <component name="GradleUISettings">
     <setting name="root" />
   </component>
@@ -160,9 +164,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/wwcp.iml" filepath="$PROJECT_DIR$/wwcp.iml" />
     </modules>
-  </component>
-  <component name="ProjectNotificationSettings">
-    <option name="askShowProject" value="false" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8.0_181" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

@@ -30,7 +30,7 @@ import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 @Mod(modid = worldwidecontentpack.MODID, version = worldwidecontentpack.MOD_VERSION, name = "World Wide Content Pack")
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "Press Teaser Release";
+    public static final String MOD_VERSION = "Development testing release";
 
 
     public Block DisplayTrainFourteen = new Display();
@@ -88,14 +88,16 @@ public class worldwidecontentpack {
     public static GenericRailTransport[] listSteamTrains() {
         return new GenericRailTransport[]{
                 new Entity94xx(null),
-                new EntityClass812(null)
+                new EntityClass812(null),
+                new EntityBR01(null)
         };
     }
 
     // Tender list
     public static GenericRailTransport[] listTenders() {
         return new GenericRailTransport[]{
-                new EntityClass812Tender(null)
+                new EntityClass812Tender(null),
+                new EntityT32(null)
         };
     }
 

@@ -17,8 +17,7 @@ public class BR626Bogie extends ModelBase //Same as Filename
 		bodyModel = new ModelRendererTurbo[29];
 
 		initbodyModel_1();
-
-		translateAll(0F, 0F, 0F);
+		this.fixRotation(this.bodyModel, false, true, true);
 
 	}
 
