@@ -127,7 +127,9 @@ public class worldwidecontentpack {
                 new EntityDonder3(null),
                 new EntityDonder4(null),
                 new EntityEurofimaRows(null),
-                new EntityEurofimaSleeper(null)
+                new EntityEurofimaSleeper(null),
+                new EntityRheingoldSalonOne(null),
+                new EntityRheingoldSalonTwo(null)
 
         };
     }

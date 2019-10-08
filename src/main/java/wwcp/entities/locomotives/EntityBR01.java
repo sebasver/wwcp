@@ -60,7 +60,7 @@ public class EntityBR01 extends EntityTrainCore {
     }
 
     public float transportMetricHorsePower() {
-        return 75.0F;
+        return 2210F;
     }
 
     public String[] additionalItemText() {
@@ -70,11 +70,13 @@ public class EntityBR01 extends EntityTrainCore {
     }
 
     public float weightKg() {
-        return 10886.217F;
+        return  108900F;
     }
+
     public float transportTopSpeed() {
-        return 70.81F;
+        return 130F;
     }
+
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01Wagner1.png", new String[]{"textures/bogies/BR01/BR01FrontBlack.png"}, new String[]{"textures/bogies/BR01/BR01BackBlack.png"},
                 "BR01 Wagner", "Default black wheels for the BR01 Wagner");
