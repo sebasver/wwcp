@@ -18,20 +18,20 @@ package wwcp.entities.locomotives;
         import net.minecraftforge.common.util.ForgeDirection;
         import net.minecraftforge.fluids.FluidContainerRegistry;
         import net.minecraftforge.fluids.FluidRegistry;
-        import wwcp.models.bogies.BR01BackBogie;
         import wwcp.models.bogies.BR01FrontBogie;
-        import wwcp.models.locomotives.BR01;
+        import wwcp.models.bogies.BackBogieDRBR01;
+        import wwcp.models.locomotives.DRBR01;
         import wwcp.worldwidecontentpack;
 
-public class EntityBR01 extends EntityTrainCore {
+public class EntityDRBR01 extends EntityTrainCore {
 
-    public EntityBR01(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityDRBR01(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntityBR01(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new ItemTransport(new EntityDRBR01(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
-    public EntityBR01(World world) {
+    public EntityDRBR01(World world) {
         super(world);
     }
 
@@ -78,7 +78,7 @@ public class EntityBR01 extends EntityTrainCore {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01Wagner1.png", new String[]{"textures/bogies/BR01/BR01FrontBlack.png"}, new String[]{"textures/bogies/BR01/BR01BackBlack.png"},
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DR01/Wagner1.png", "textures/bogies/BR01/BR01FrontBlack.png",
                 "BR01 Wagner", "Default black wheels for the BR01 Wagner");
     }
 
@@ -114,7 +114,7 @@ public class EntityBR01 extends EntityTrainCore {
     public float[][] bogieModelOffsets(){return new float[][]{{2.5f,0.1f,0},{-2.5f,0.1f,0}};
     }
     @Override
-    public ModelBase[] bogieModels() {return new ModelBase[]{new BR01FrontBogie(), new BR01BackBogie()}; }
+    public ModelBase[] bogieModels() {return new ModelBase[]{new BR01FrontBogie(), new BackBogieDRBR01()}; }
 
     public float[] bogieLengthFromCenter() {
         return new float[]{1.0F, 0.1F};
@@ -173,7 +173,7 @@ public class EntityBR01 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new BR01()};
+        return new ModelBase[]{new DRBR01()};
     }
 
     @SideOnly(Side.CLIENT)

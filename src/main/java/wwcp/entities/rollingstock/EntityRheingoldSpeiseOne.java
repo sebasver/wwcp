@@ -25,7 +25,7 @@ import java.util.UUID;
 
 import static ebf.tim.utility.RailUtility.DefineStack;
 
-
+//todo This one still need adjustments with offsets
 public class EntityRheingoldSpeiseOne extends GenericRailTransport {
 
     private static final String[] itemDescription = new String[]{

@@ -89,7 +89,8 @@ public class worldwidecontentpack {
         return new GenericRailTransport[]{
                 new Entity94xx(null),
                 new EntityClass812(null),
-                new EntityBR01(null)
+                new EntityDRBR01(null)
+                //todo give above right stats and naming
         };
     }
 
@@ -129,7 +130,10 @@ public class worldwidecontentpack {
                 new EntityEurofimaRows(null),
                 new EntityEurofimaSleeper(null),
                 new EntityRheingoldSalonOne(null),
-                new EntityRheingoldSalonTwo(null)
+                new EntityRheingoldSalonTwo(null),
+                new EntityRheingoldSpeiseOne(null),
+                new EntityRheingoldSpeiseTwo(null)
+                //todo give above 4 the right stats and names
 
         };
     }

@@ -13,34 +13,34 @@ package wwcp.models.bogies; //Path where the model is located
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
-public class BR01BackBogie extends ModelBase //Same as Filename
+public class BackBogieDRBR01 extends ModelBase //Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public BR01BackBogie() //Same as Filename
+	public BackBogieDRBR01() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[12];
+
 		initbodyModel_1();
+
 		this.fixRotation(this.bodyModel, false, true, true);
-
-
 	}
 
 	private void initbodyModel_1()
 	{
-		bodyModel[0] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 6
-		bodyModel[1] = new ModelRendererTurbo(this, 49, 1, textureX, textureY); // Box 127
-		bodyModel[2] = new ModelRendererTurbo(this, 73, 1, textureX, textureY); // Box 127
-		bodyModel[3] = new ModelRendererTurbo(this, 33, 1, textureX, textureY); // Box 127
-		bodyModel[4] = new ModelRendererTurbo(this, 97, 1, textureX, textureY); // Box 6
-		bodyModel[5] = new ModelRendererTurbo(this, 137, 1, textureX, textureY); // Box 6
-		bodyModel[6] = new ModelRendererTurbo(this, 177, 1, textureX, textureY); // Box 397
-		bodyModel[7] = new ModelRendererTurbo(this, 209, 1, textureX, textureY); // Box 6
-		bodyModel[8] = new ModelRendererTurbo(this, 241, 1, textureX, textureY); // Box 6
-		bodyModel[9] = new ModelRendererTurbo(this, 265, 1, textureX, textureY); // Box 6
-		bodyModel[10] = new ModelRendererTurbo(this, 305, 1, textureX, textureY); // Box 406
-		bodyModel[11] = new ModelRendererTurbo(this, 233, 1, textureX, textureY); // Box 6
+		bodyModel[0] = new ModelRendererTurbo(this, 1, 45, textureX, textureY); // Box 6
+		bodyModel[1] = new ModelRendererTurbo(this, 49, 45, textureX, textureY); // Box 127
+		bodyModel[2] = new ModelRendererTurbo(this, 73, 45, textureX, textureY); // Box 127
+		bodyModel[3] = new ModelRendererTurbo(this, 33, 45, textureX, textureY); // Box 127
+		bodyModel[4] = new ModelRendererTurbo(this, 97, 45, textureX, textureY); // Box 6
+		bodyModel[5] = new ModelRendererTurbo(this, 137, 45, textureX, textureY); // Box 6
+		bodyModel[6] = new ModelRendererTurbo(this, 177, 45, textureX, textureY); // Box 397
+		bodyModel[7] = new ModelRendererTurbo(this, 209, 45, textureX, textureY); // Box 6
+		bodyModel[8] = new ModelRendererTurbo(this, 241, 45, textureX, textureY); // Box 6
+		bodyModel[9] = new ModelRendererTurbo(this, 265, 45, textureX, textureY); // Box 6
+		bodyModel[10] = new ModelRendererTurbo(this, 305, 45, textureX, textureY); // Box 406
+		bodyModel[11] = new ModelRendererTurbo(this, 233, 45, textureX, textureY); // Box 6
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 15, 2, 6, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 6
 		bodyModel[0].setRotationPoint(-10F, 3F, -3F);
