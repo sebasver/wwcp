@@ -26,7 +26,7 @@ public class TeuSmallContainer extends ModelBase //Same as Filename
 		initbodyModel_1();
 
 
-		this.fixRotation(this.bodyModel, new boolean[]{false, true, true});
+		this.fixRotation(this.bodyModel, false, true, true);
 	}
 
 	private void initbodyModel_1()

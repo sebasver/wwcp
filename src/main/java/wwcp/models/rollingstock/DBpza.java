@@ -29,7 +29,7 @@ public class DBpza extends ModelBase //Same as Filename
 
 
 
-		this.fixRotation(this.bodyModel, new boolean[]{false, true, true});
+		this.fixRotation(this.bodyModel, false, true, true);
 
 	}
 
