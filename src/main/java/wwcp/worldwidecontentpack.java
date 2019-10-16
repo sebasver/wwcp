@@ -132,7 +132,8 @@ public class worldwidecontentpack {
                 new EntityRheingoldSalonOne(null),
                 new EntityRheingoldSalonTwo(null),
                 new EntityRheingoldSpeiseOne(null),
-                new EntityRheingoldSpeiseTwo(null)
+                new EntityRheingoldSpeiseTwo(null),
+                new EntityRheingoldBagage(null)
                 //todo give above 4 the right stats and names
 
         };
