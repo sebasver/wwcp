@@ -22,9 +22,9 @@ public class V36 extends ModelBase //Same as Filename
 	public V36() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[165];
-		initbodyModel_1();
-		this.fixRotation(this.bodyModel, false, true, true);
 
+		initbodyModel_1();
+		flipAll();
 	}
 
 	private void initbodyModel_1()

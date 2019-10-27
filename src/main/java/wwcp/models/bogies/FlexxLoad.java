@@ -23,8 +23,7 @@ public class FlexxLoad extends ModelBase
 		bodyModel = new ModelRendererTurbo[85];
 
 		initbodyModel_1();
-
-		translateAll(0F, 0F, 0F);
+		flipAll();
 	}
 	private void initbodyModel_1()
 	{

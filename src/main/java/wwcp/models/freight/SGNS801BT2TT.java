@@ -23,9 +23,7 @@ public class SGNS801BT2TT extends ModelBase //Same as Filename
 		bodyModel = new ModelRendererTurbo[230];
 
 		initbodyModel_1();
-
-		translateAll(0F, 0F, 0F);
-
+		flipAll();
 	}
 
 	private void initbodyModel_1()

@@ -21,9 +21,9 @@ public class GorlitzFront extends ModelBase //Same as Filename
 	public GorlitzFront() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[130];
-		initbodyModel_1();
 
-		this.fixRotation(this.bodyModel, false, true, true);
+		initbodyModel_1();
+		flipAll();
 	}
 
 	private void initbodyModel_1()

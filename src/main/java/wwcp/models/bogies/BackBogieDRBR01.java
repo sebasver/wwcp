@@ -23,8 +23,7 @@ public class BackBogieDRBR01 extends ModelBase //Same as Filename
 		bodyModel = new ModelRendererTurbo[12];
 
 		initbodyModel_1();
-
-		this.fixRotation(this.bodyModel, false, true, true);
+		flipAll();
 	}
 
 	private void initbodyModel_1()

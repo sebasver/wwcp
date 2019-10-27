@@ -26,6 +26,7 @@ public class T26Bogie extends ModelBase
 		bodyModel = new ModelRendererTurbo[117];
 
 		initbodyModel_1();
+		flipAll();
 	}
 
 	private void initbodyModel_1()

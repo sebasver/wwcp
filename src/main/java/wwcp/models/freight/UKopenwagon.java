@@ -23,9 +23,7 @@ public class UKopenwagon extends ModelBase //Same as Filename
 		bodyModel = new ModelRendererTurbo[94];
 
 		initbodyModel_1();
-
-
-
+		flipAll();
 	}
 
 	private void initbodyModel_1()

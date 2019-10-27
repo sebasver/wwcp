@@ -25,7 +25,6 @@ public class F140MS2 extends ModelBase //Same as Filename
 
 		initbodyModel_1();
 		flipAll();
-
 	}
 	private void initbodyModel_1()
 	{

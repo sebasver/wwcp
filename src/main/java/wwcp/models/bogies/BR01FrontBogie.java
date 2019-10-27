@@ -22,7 +22,7 @@ public class BR01FrontBogie extends ModelBase //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[8];
 		initbodyModel_1();
-		this.fixRotation(this.bodyModel, true, true, true);
+		flipAll();
 	}
 
 	private void initbodyModel_1()

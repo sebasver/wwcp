@@ -22,9 +22,7 @@ public class SGNS804TS extends ModelBase//Same as Filename
 		bodyModel = new ModelRendererTurbo[109];
 
 		initbodyModel_1();
-
-		translateAll(0F, 0F, 0F);
-
+		flipAll();
 	}
 
 	private void initbodyModel_1()

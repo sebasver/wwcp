@@ -24,8 +24,7 @@ public class BR626 extends ModelBase//Same as Filename
 		bodyModel = new ModelRendererTurbo[273];
 
 		initbodyModel_1();
-
-
+		flipAll();
 	}
 
 	private void initbodyModel_1()

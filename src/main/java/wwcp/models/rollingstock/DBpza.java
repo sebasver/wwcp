@@ -26,11 +26,7 @@ public class DBpza extends ModelBase //Same as Filename
 
 		initbodyModel_1();
 		initbodyModel_2();
-
-
-
-		this.fixRotation(this.bodyModel, false, true, true);
-
+		flipAll();
 	}
 
 	private void initbodyModel_1()

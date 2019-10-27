@@ -47,12 +47,12 @@ public class EntityRheingoldSalonTwo extends GenericRailTransport {
 
     @Override
     public float weightKg() {
-        return 1814.3f;
+        return 52800f;
     }
 
     @Override
     public String transportName() {
-        return "Rheingold Salon 2";
+        return "SB4ü28";
     }
 
     @Override
@@ -62,7 +62,7 @@ public class EntityRheingoldSalonTwo extends GenericRailTransport {
 
     @Override
     public String transportYear() {
-        return "1997-now";
+        return "1928-1939";
     }
 
     @Override
@@ -77,7 +77,7 @@ public class EntityRheingoldSalonTwo extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + "II"};}
+        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold 2nd class Salon"};}
     }
 
     /**

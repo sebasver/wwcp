@@ -45,12 +45,12 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public float weightKg() {
-        return 1814.3f;
+        return 41200f;
     }
 
     @Override
     public String transportName() {
-        return "Rheingold Bagage car";
+        return "SPw4ü28";
     }
 
     @Override
@@ -60,7 +60,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public String transportYear() {
-        return "1997-now";
+        return "1928-1939";
     }
 
     @Override
@@ -75,7 +75,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + "II"};}
+        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold Baggage"};}
     }
 
     /**

@@ -16,7 +16,7 @@ public class EurofimaBogie extends ModelBase
 		bodyModel = new ModelRendererTurbo[41];
 
 		initbodyModel_1();
-
+		flipAll();
 	}
 
 	private void initbodyModel_1()

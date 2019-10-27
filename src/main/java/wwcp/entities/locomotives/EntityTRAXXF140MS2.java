@@ -4,11 +4,13 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
+import ebf.tim.api.skin;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
 import ebf.tim.registry.URIRegistry;
 import fexcraft.tmt.slim.ModelBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -16,6 +18,9 @@ import net.minecraft.world.World;
 import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.F140MS2;
 import wwcp.worldwidecontentpack;
+
+import java.util.Calendar;
+import java.util.Map;
 import java.util.UUID;
 import net.minecraft.init.Items;
 
@@ -69,8 +74,13 @@ import net.minecraft.init.Items;
             SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T7.png", "textures/bogies/Flexxpower.png","Valentines Day Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
             SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T8.png", "textures/bogies/Flexxpower.png","WWCP Commercial Livery", "Used by the NMBS/SNCB in belgium for freight trains");
             SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T9.png", "textures/bogies/Flexxpower.png","StPatricks Day Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-            SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T10.png", "textures/bogies/Flexxpower.png","Halloween Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-       }
+            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T10.png", "textures/bogies/Flexxpower.png", "Halloween Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
+        }
+
+//        @Override
+//        public String getDefaultSkin(){
+//            return "HLE28 NMBS Cargo";
+//        }
 
         @Override
         public float transportTopSpeed(){return 140f;}

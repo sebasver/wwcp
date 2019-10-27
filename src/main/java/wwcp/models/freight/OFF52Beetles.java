@@ -23,6 +23,7 @@ public class OFF52Beetles extends ModelBase //Same as Filename
 
 		initbodyModel_1();
 		initbodyModel_2();
+		flipAll();
 	}
 
 	private void initbodyModel_1()
