@@ -1,16 +1,14 @@
-package wwcp.entities.locomotives;
+package wwcp.entities.locomotives.electrics;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
-import ebf.tim.api.skin;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
 import ebf.tim.registry.URIRegistry;
 import fexcraft.tmt.slim.ModelBase;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -19,8 +17,6 @@ import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.F140MS2;
 import wwcp.worldwidecontentpack;
 
-import java.util.Calendar;
-import java.util.Map;
 import java.util.UUID;
 import net.minecraft.init.Items;
 
@@ -32,7 +28,7 @@ import net.minecraft.init.Items;
      */
     public class EntityTRAXXF140MS2 extends EntityTrainCore {
 
-        public static final Item thisItem = new ItemTransport(new wwcp.entities.locomotives.EntityTRAXXF140MS2(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+        public static final Item thisItem = new ItemTransport(new EntityTRAXXF140MS2(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
 
         /**
          * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.

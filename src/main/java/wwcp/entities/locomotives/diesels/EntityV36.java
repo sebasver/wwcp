@@ -1,4 +1,4 @@
-package wwcp.entities.locomotives;
+package wwcp.entities.locomotives.diesels;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

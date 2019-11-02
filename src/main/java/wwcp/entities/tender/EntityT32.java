@@ -38,7 +38,7 @@ public class EntityT32 extends GenericRailTransport {
     }
 
     public String transportName() {
-        return "GATX 13000 Gallon Tanker";
+        return "T32 tender";
     }
 
     public String transportcountry() {
@@ -100,7 +100,14 @@ public class EntityT32 extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/T32Tender/T32DB.png", new String[]{"textures/bogies/T32Bogie/T32BogieBlack.png"}, "GATX 13000 Gallon Tanker", "One of their smaller tanker cars, usually used for commodities such as molten sulfur, clay slurry, caustic soda and corn syrup.");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/T32Tender/T32DB.png", new String[]{"textures/bogies/T32Bogie/T32BogieBlack.png"},
+                "DB Livery", "The standarized T32 tender paint while in use for the DB");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/T32Tender/T32DR.png", new String[]{"textures/bogies/T32Bogie/T32BogieBlack.png"},
+                "DRG Livery", "The standarized T32 tender paint while in use for the DRG");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/T32Tender/T32DR.png", new String[]{"textures/bogies/T32Bogie/T32BogieWhite.png"},
+                "DRG Livery white wheels", "The standarized T32 tender paint with white wheels while in use for the DRG");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/T32Tender/T32DB.png", new String[]{"textures/bogies/T32Bogie/T32BogieWhite.png"},
+                "DB Livery white wheels", "The standarized T32 tender paint with white wheels while in use for the DB");
     }
 
     public boolean isReinforced() {
@@ -112,11 +119,11 @@ public class EntityT32 extends GenericRailTransport {
     }
 
     public List<transportTypes> getTypes() {
-        return transportTypes.TANKER.singleton();
+        return transportTypes.TENDER.singleton();
     }
 
     public float[][] getRiderOffsets() {
-        return (float[][]) null;
+        return null;
     }
 
     public float[] getHitboxSize() {

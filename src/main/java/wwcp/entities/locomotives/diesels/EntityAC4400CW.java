@@ -1,4 +1,4 @@
-package wwcp.entities.locomotives;
+package wwcp.entities.locomotives.diesels;
 //This is a documentation class for copy pasting into a Diesel train class.
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -18,7 +18,6 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.models.bogies.Class37Bogie;
 import wwcp.models.locomotives.AC4400CW;
-import wwcp.models.locomotives.Class37;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;

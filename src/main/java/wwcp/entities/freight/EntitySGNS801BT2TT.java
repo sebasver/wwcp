@@ -54,9 +54,20 @@ public class EntitySGNS801BT2TT extends GenericRailTransport {
     }
 
     public void registerSkins() {
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/SGNS80/S1.png", "textures/bogies/SGNSSBogie.png",
+                "Variant 1", "Container loads variant 1");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/SGNS80/S2.png", "textures/bogies/SGNSSBogie.png",
-                "WWCP Corperate Skin",
-                "Fictional skin promoting WWCP as a transport Company");
+                "Variant 2", "Container loads variant 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/SGNS80/S3.png", "textures/bogies/SGNSSBogie.png",
+                "Variant 3", "Container loads variant 3");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/SGNS80/S4.png", "textures/bogies/SGNSSBogie.png",
+                "Variant 4", "Container loads variant 4");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/SGNS80/S5.png", "textures/bogies/SGNSSBogie.png",
+                "Variant 5", "Container loads variant 5");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/SGNS80/S6.png", "textures/bogies/SGNSSBogie.png",
+                "Variant 6", "Container loads variant 6");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/SGNS80/S7.png", "textures/bogies/SGNSSBogie.png",
+                "Variant 7", "Container loads variant 7");
     }
 
     public boolean isReinforced() {

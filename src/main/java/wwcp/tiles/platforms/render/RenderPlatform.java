@@ -56,23 +56,11 @@ public class RenderPlatform extends TileEntitySpecialRenderer {
                 GL11.glTranslatef((float) x, (float) y, (float) z);
                 break;
             }
-            case 0: {
-                GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
-                break;
-            }
+            case 0:
+            case 5:
+            case 3:
+            case 4:
             case 2: {
-                GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
-                break;
-            }
-            case 3: {
-                GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
-                break;
-            }
-            case 5: {
-                GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
-                break;
-            }
-            case 4: {
                 GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
                 break;
             }

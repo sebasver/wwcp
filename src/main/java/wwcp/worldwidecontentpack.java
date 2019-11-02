@@ -15,7 +15,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import wwcp.blocks.Display;
 import wwcp.entities.freight.*;
-import wwcp.entities.locomotives.*;
+import wwcp.entities.locomotives.electrics.*;
+import wwcp.entities.locomotives.steamers.*;
+import wwcp.entities.locomotives.diesels.*;
 import wwcp.entities.railbusses.*;
 import wwcp.entities.rollingstock.*;
 import wwcp.entities.tender.*;
@@ -26,6 +28,8 @@ import static cpw.mods.fml.common.registry.GameRegistry.addRecipe;
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
 //Todo gradlew setupDecompWorkspace --refresh-dependencies idea
+// X.Y.Z 
+//X = major (game defining, large content publishments?), Y = minor(small content publishments?)  Z = patch (stat fixing).
 
 @Mod(modid = worldwidecontentpack.MODID, version = worldwidecontentpack.MOD_VERSION, name = "World Wide Content Pack")
 public class worldwidecontentpack {
@@ -134,7 +138,7 @@ public class worldwidecontentpack {
                 new EntityRheingoldSpeiseOne(null),
                 new EntityRheingoldSpeiseTwo(null),
                 new EntityRheingoldBagage(null)
-                //todo give above 4 the right stats and names
+
 
         };
     }

@@ -108,7 +108,7 @@ public class EntityRheingoldSpeiseOne extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.225f,-0.1F,0.F}};
+        return new float[][]{{-0f,-0.1F,0.F}};
     }
 
     @Override

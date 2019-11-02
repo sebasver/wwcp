@@ -141,7 +141,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.3f,2,1.5f};
+        return new float[]{9.5f,2,1.5f};
     }
 
     @Override

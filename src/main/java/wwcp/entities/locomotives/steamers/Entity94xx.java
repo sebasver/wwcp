@@ -1,5 +1,5 @@
 //This is a documentation file for copy pasting into a steam locomotive.
-package wwcp.entities.locomotives;
+package wwcp.entities.locomotives.steamers;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -20,7 +20,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.models.locomotives.Class812;
 import wwcp.models.locomotives.UK94;
 import wwcp.worldwidecontentpack;
 

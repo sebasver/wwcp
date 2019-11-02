@@ -24,7 +24,7 @@ public class flexxpower extends ModelBase
 		bodyModel = new ModelRendererTurbo[117];
 
 		initbodyModel_1();
-		flipAll();
+		//flipAll();
 		}
 
 		private void initbodyModel_1()

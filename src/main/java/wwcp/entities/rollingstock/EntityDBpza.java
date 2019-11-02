@@ -75,6 +75,8 @@ public class EntityDBpza extends GenericRailTransport {
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DBpza/D2.png", "textures/bogies/Flexxload.png",
                 "DB Regio", "DB Regio livery");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DBpza/D1.png", "textures/bogies/Flexxload.png",
+                "WWCP Transportation", "WWCP Transportation livery");
     }
 
     @Override
