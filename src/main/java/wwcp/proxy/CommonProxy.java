@@ -19,4 +19,7 @@ public class CommonProxy implements IGuiHandler {
 
     public void registerRenderers() {
     }
+
+    public Object getRenderPlatform(){return null;}
+
 }

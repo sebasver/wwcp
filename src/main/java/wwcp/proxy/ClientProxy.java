@@ -1,6 +1,7 @@
 package wwcp.proxy;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
+import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
@@ -12,6 +13,12 @@ import wwcp.tiles.platforms.render.RenderPlatform;
 
 public class ClientProxy extends CommonProxy
 {
+
+    public static RenderPlatform renderer = new RenderPlatform();
+
+    @Override
+    public Object getRenderPlatform(){return renderer;}
+
 
     public static final TileEntitySpecialRenderer specialRenderer = new TileEntitySpecialRenderer() {
         @Override
@@ -27,6 +34,8 @@ public class ClientProxy extends CommonProxy
     };
 
     public static EventManager eventManager = new EventManager();
+
+
     //Method added by Oskiek.
     @Override
     public void registerRenderers(){
@@ -43,8 +52,5 @@ public class ClientProxy extends CommonProxy
     {
 
     }
-
-    @Override
-    public Object getTESR(){return specialRenderer;}
 }
 

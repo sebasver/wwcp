@@ -17,6 +17,7 @@ import wwcp.blocks.BlockCenterPlatform;
 import wwcp.blocks.BlockCenterPlatformSlope;
 import wwcp.models.platforms.*;
 import wwcp.tiles.platforms.*;
+import wwcp.worldwidecontentpack;
 
 
 //Class made by Oskiek (with little help from Eternal).
@@ -30,6 +31,8 @@ public class RenderPlatform extends TileEntitySpecialRenderer {
     private static BlockBorderPlatformSlope platform2;
     private static BlockCenterPlatform platform3;
     private static BlockCenterPlatformSlope platform4;
+
+
 
     public void Render() {
         platform1 = new BlockBorderPlatform();
@@ -94,7 +97,7 @@ public class RenderPlatform extends TileEntitySpecialRenderer {
         To add new block, you simply copy entire "if" method and you change "platform1" to whatever name you've set above
         */
         if (tileEntity instanceof TileEntityPlatform) {
-            TextureManager.bindTexture(texture);
+            fexcraft.tmt.slim.TextureManager.bindTexture(new ResourceLocation(worldwidecontentpack.MODID,"textures/blocks/Platform.png"));
             platform1.render();
         }
 

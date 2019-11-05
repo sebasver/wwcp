@@ -1,13 +1,17 @@
 package wwcp.blocks;
 
+import fexcraft.tmt.slim.Tessellator;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.tiles.platforms.TileEntityPlatform;
+import wwcp.worldwidecontentpack;
 
 
 //Class made by Oskiek.
@@ -65,8 +69,7 @@ public class BlockPlatform extends BlockContainer {
     {
             return false;
     }
-    
-   
+
 }
 
 	

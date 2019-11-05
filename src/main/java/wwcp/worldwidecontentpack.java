@@ -4,6 +4,7 @@ package wwcp;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import ebf.tim.TrainsInMotion;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.TiMTab;
 import ebf.tim.registry.TiMGenericRegistry;
@@ -13,6 +14,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import wwcp.blocks.BlockPlatform;
 import wwcp.blocks.Display;
 import wwcp.entities.TempTC.EntityE10;
 import wwcp.entities.TempTC.EntityPropaganda;
@@ -26,8 +28,11 @@ import wwcp.entities.tender.*;
 import wwcp.proxy.ClientProxy;
 import wwcp.proxy.CommonProxy;
 
+import java.util.Queue;
+
 import static cpw.mods.fml.common.registry.GameRegistry.addRecipe;
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
+import static wwcp.WWCP_Blocks.blockList;
 
 //Todo gradlew setupDecompWorkspace --refresh-dependencies idea
 // X.Y.Z 
@@ -41,11 +46,10 @@ public class worldwidecontentpack {
 
     public Block DisplayTrainFourteen = new Display();
 
+
     @Mod.EventHandler
     public void preInit(FMLInitializationEvent event) {
-        WWCP_Blocks.registerBlocks();
         proxy.registerRenderers();
-
     }
 
     //Tab declerations
@@ -69,8 +73,9 @@ public class worldwidecontentpack {
         //CreativeTabs WWCeurope = new TiMTab(event.getSide().isClient(), "European Models", "wwcp", "eu");
 
 
-// Train type declartions
+        blockList.add(TiMGenericRegistry.registerBlock(TrainsInMotion.proxy.isClient(),new BlockPlatform().setCreativeTab(worldwidecontentpack.BlocksWWCP).setBlockTextureName("wwcp:blocks/Platform.png"), null, "wwcp.platform", null, proxy.getRenderPlatform()));
 
+        // Train type declartions
 
         registerTransports(event.getSide().isClient(), MODID, listSteamTrains(), null);
         registerTransports(event.getSide().isClient(), MODID, listTenders(), null);
@@ -83,7 +88,6 @@ public class worldwidecontentpack {
 
 
         addRecipe(new ItemStack(TiMGenericRegistry.registerBlock(event.getSide().isClient(), DisplayTrainFourteen, worldwidecontentpack.United_Kingdom, "blocks.14xxdisplay", null, proxy.getTESR()), 1), "WWW", "WIW", "WWW", 'W', Blocks.planks, 'I', Items.iron_ingot);
-
         //just copy this for a new type
     }
 
@@ -98,7 +102,6 @@ public class worldwidecontentpack {
                 new Entity94xx(null),
                 new EntityClass812(null),
                 new EntityDRBR01(null)
-                //todo give above right stats and naming
         };
     }
 

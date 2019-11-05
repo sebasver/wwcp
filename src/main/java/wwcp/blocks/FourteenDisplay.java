@@ -23,7 +23,7 @@ public class FourteenDisplay extends ModelBase
 public FourteenDisplay() //Same as Filename
 		{
 		bodyModel = new ModelRendererTurbo[117];
-
+		flipAll();
 		initbodyModel_1();
 		}
 

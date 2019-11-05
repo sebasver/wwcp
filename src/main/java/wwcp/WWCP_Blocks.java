@@ -12,7 +12,7 @@ public class WWCP_Blocks {
 
     //here you add next blocks after ,
     public static Block  Platform, PlatformSecond, PlatformThird, PlatformFourth;
-    public static List<Block>blockList=new ArrayList<Block>();
+    public static List<Block>blockList= new ArrayList<>();
 
 
     public static void registerBlocks()
@@ -27,7 +27,7 @@ public class WWCP_Blocks {
         blockList.add(PlatformThird=new BlockPlatformThird().setCreativeTab(worldwidecontentpack.BlocksWWCP).setBlockTextureName("wwcp:icon/platforms/platformthird"));
         blockList.add(PlatformFourth=new BlockPlatformFourth().setCreativeTab(worldwidecontentpack.BlocksWWCP).setBlockTextureName("wwcp:icon/platforms/platformfourth"));
 
-        //this could be removed but it's just for checking. Spams log if there's a lot of blocks
+//        this could be removed but it's just for checking. Spams log if there's a lot of blocks
         for(Block block:blockList)
         {
             System.out.println(block);
