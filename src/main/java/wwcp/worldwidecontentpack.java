@@ -14,6 +14,8 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import wwcp.blocks.Display;
+import wwcp.entities.TempTC.EntityE10;
+import wwcp.entities.TempTC.EntityPropaganda;
 import wwcp.entities.freight.*;
 import wwcp.entities.locomotives.electrics.*;
 import wwcp.entities.locomotives.steamers.*;
@@ -34,7 +36,7 @@ import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 @Mod(modid = worldwidecontentpack.MODID, version = worldwidecontentpack.MOD_VERSION, name = "World Wide Content Pack")
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "Development testing release";
+    public static final String MOD_VERSION = "TiM BugTesting Release";
 
 
     public Block DisplayTrainFourteen = new Display();
@@ -76,6 +78,8 @@ public class worldwidecontentpack {
         registerTransports(event.getSide().isClient(), MODID, listpassenger(), null);
         registerTransports(event.getSide().isClient(), MODID, listelectric(), null);
         registerTransports(event.getSide().isClient(), MODID, listFreight(), null);
+        registerTransports(event.getSide().isClient(), MODID, listRailbusses(), null);
+        registerTransports(event.getSide().isClient(), MODID, listTemperory(),null);
 
 
         addRecipe(new ItemStack(TiMGenericRegistry.registerBlock(event.getSide().isClient(), DisplayTrainFourteen, worldwidecontentpack.United_Kingdom, "blocks.14xxdisplay", null, proxy.getTESR()), 1), "WWW", "WIW", "WWW", 'W', Blocks.planks, 'I', Items.iron_ingot);
@@ -110,9 +114,23 @@ public class worldwidecontentpack {
     public static GenericRailTransport[] listDiesel() {
         return new GenericRailTransport[]{
                 new EntityV36(null),
-                new EntityBR626(null),
                 new EntityClass37(null),
-                new EntityAC4400CW(null)
+                new EntityAC4400CW(null),
+                new EntityMZClassOne(null)
+        };
+    }
+
+    public static GenericRailTransport[] listRailbusses() {
+        return new GenericRailTransport[]{
+                new EntityBR626(null),
+                new EntityVT98(null)
+        };
+    }
+
+    public static GenericRailTransport[] listTemperory() {
+        return new GenericRailTransport[]{
+                new EntityE10(null),
+                new EntityPropaganda(null)
         };
     }
 

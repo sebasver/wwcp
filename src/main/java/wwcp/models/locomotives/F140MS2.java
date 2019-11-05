@@ -7,12 +7,12 @@
 // Created on: 13.02.2019 - 15:35:53
 // Last changed on: 13.02.2019 - 15:35:53
 
-package wwcp.models.locomotives;
+package wwcp.models.locomotives; //Path where the model is located
+
 
 import ebf.tim.models.StaticModelAnimator;
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
-import net.minecraft.entity.Entity;
 
 public class F140MS2 extends ModelBase //Same as Filename
 {
@@ -21,11 +21,12 @@ public class F140MS2 extends ModelBase //Same as Filename
 
 	public F140MS2() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[395];
+		bodyModel = new ModelRendererTurbo[396];
 
 		initbodyModel_1();
 		flipAll();
 	}
+
 	private void initbodyModel_1()
 	{
 		bodyModel[0] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // EU Buffers
@@ -58,7 +59,7 @@ public class F140MS2 extends ModelBase //Same as Filename
 		bodyModel[27] = new ModelRendererTurbo(this, 497, 9, textureX, textureY); // Box 47
 		bodyModel[28] = new ModelRendererTurbo(this, 33, 17, textureX, textureY); // Box 48
 		bodyModel[29] = new ModelRendererTurbo(this, 489, 17, textureX, textureY); // Box 49
-		bodyModel[30] = new ModelRendererTurbo(this, 217, 9, textureX, textureY, "lamp cone 1 0"); // Box 50
+		bodyModel[30] = new ModelRendererTurbo(this, 217, 9, textureX, textureY); // Box 50
 		bodyModel[31] = new ModelRendererTurbo(this, 505, 9, textureX, textureY); // Box 51
 		bodyModel[32] = new ModelRendererTurbo(this, 473, 17, textureX, textureY); // Box 52
 		bodyModel[33] = new ModelRendererTurbo(this, 153, 9, textureX, textureY); // Box 53
@@ -68,7 +69,7 @@ public class F140MS2 extends ModelBase //Same as Filename
 		bodyModel[37] = new ModelRendererTurbo(this, 505, 17, textureX, textureY); // Box 62
 		bodyModel[38] = new ModelRendererTurbo(this, 489, 9, textureX, textureY); // Box 63
 		bodyModel[39] = new ModelRendererTurbo(this, 9, 17, textureX, textureY); // Box 64
-		bodyModel[40] = new ModelRendererTurbo(this, 17, 25, textureX, textureY, "lamp cone 1 0"); // Box 65
+		bodyModel[40] = new ModelRendererTurbo(this, 17, 25, textureX, textureY); // Box 65
 		bodyModel[41] = new ModelRendererTurbo(this, 25, 25, textureX, textureY); // Box 66
 		bodyModel[42] = new ModelRendererTurbo(this, 57, 25, textureX, textureY); // Box 56
 		bodyModel[43] = new ModelRendererTurbo(this, 33, 25, textureX, textureY); // Box 57
@@ -108,7 +109,7 @@ public class F140MS2 extends ModelBase //Same as Filename
 		bodyModel[77] = new ModelRendererTurbo(this, 209, 49, textureX, textureY); // Box 98
 		bodyModel[78] = new ModelRendererTurbo(this, 497, 41, textureX, textureY); // Box 99
 		bodyModel[79] = new ModelRendererTurbo(this, 137, 33, textureX, textureY); // Box 100
-		bodyModel[80] = new ModelRendererTurbo(this, 505, 33, textureX, textureY); // Backlight
+		bodyModel[80] = new ModelRendererTurbo(this, 505, 33, textureX, textureY); // Box 101
 		bodyModel[81] = new ModelRendererTurbo(this, 473, 41, textureX, textureY); // Box 102
 		bodyModel[82] = new ModelRendererTurbo(this, 265, 41, textureX, textureY); // Box 103
 		bodyModel[83] = new ModelRendererTurbo(this, 209, 49, textureX, textureY); // Box 104
@@ -132,7 +133,7 @@ public class F140MS2 extends ModelBase //Same as Filename
 		bodyModel[101] = new ModelRendererTurbo(this, 297, 57, textureX, textureY); // Box 124
 		bodyModel[102] = new ModelRendererTurbo(this, 329, 57, textureX, textureY); // Box 125
 		bodyModel[103] = new ModelRendererTurbo(this, 89, 57, textureX, textureY); // Box 126
-		bodyModel[104] = new ModelRendererTurbo(this, 233, 49, textureX, textureY); // Backlight)
+		bodyModel[104] = new ModelRendererTurbo(this, 233, 49, textureX, textureY); // Box 127
 		bodyModel[105] = new ModelRendererTurbo(this, 257, 49, textureX, textureY); // Box 128
 		bodyModel[106] = new ModelRendererTurbo(this, 361, 49, textureX, textureY); // Box 129
 		bodyModel[107] = new ModelRendererTurbo(this, 49, 57, textureX, textureY); // Box 130
@@ -166,7 +167,7 @@ public class F140MS2 extends ModelBase //Same as Filename
 		bodyModel[135] = new ModelRendererTurbo(this, 369, 73, textureX, textureY); // Box 189
 		bodyModel[136] = new ModelRendererTurbo(this, 265, 73, textureX, textureY); // Box 190
 		bodyModel[137] = new ModelRendererTurbo(this, 401, 73, textureX, textureY); // Box 191
-		bodyModel[138] = new ModelRendererTurbo(this, 137, 73, textureX, textureY, "lamp cone 1 0"); // Box 192
+		bodyModel[138] = new ModelRendererTurbo(this, 137, 73, textureX, textureY); // Box 192
 		bodyModel[139] = new ModelRendererTurbo(this, 345, 73, textureX, textureY); // Box 193
 		bodyModel[140] = new ModelRendererTurbo(this, 457, 73, textureX, textureY); // Box 194
 		bodyModel[141] = new ModelRendererTurbo(this, 465, 73, textureX, textureY); // Box 151
@@ -181,7 +182,7 @@ public class F140MS2 extends ModelBase //Same as Filename
 		bodyModel[150] = new ModelRendererTurbo(this, 337, 89, textureX, textureY); // Box 207
 		bodyModel[151] = new ModelRendererTurbo(this, 369, 89, textureX, textureY); // Box 208
 		bodyModel[152] = new ModelRendererTurbo(this, 457, 89, textureX, textureY); // Box 209
-		bodyModel[153] = new ModelRendererTurbo(this, 217, 89, textureX, textureY); // Box 210
+		bodyModel[153] = new ModelRendererTurbo(this, 235, 90, textureX, textureY); // Box 210
 		bodyModel[154] = new ModelRendererTurbo(this, 1, 81, textureX, textureY); // Box 211
 		bodyModel[155] = new ModelRendererTurbo(this, 425, 97, textureX, textureY); // Box 212
 		bodyModel[156] = new ModelRendererTurbo(this, 145, 73, textureX, textureY); // Box 216
@@ -423,6 +424,7 @@ public class F140MS2 extends ModelBase //Same as Filename
 		bodyModel[392] = new ModelRendererTurbo(this, 8, 202, textureX, textureY); // Box 392
 		bodyModel[393] = new ModelRendererTurbo(this, 8, 202, textureX, textureY); // Box 393
 		bodyModel[394] = new ModelRendererTurbo(this, 8, 202, textureX, textureY); // Box 394
+		bodyModel[395] = new ModelRendererTurbo(this, 505, 33, textureX, textureY , StaticModelAnimator.tagLamp(1, 0)); // Backlight
 
 		bodyModel[0].addBox(0F, 0F, 0F, 3, 1, 1, 0F); // EU Buffers
 		bodyModel[0].setRotationPoint(-75F, 1F, -7.5F);
@@ -1675,5 +1677,9 @@ public class F140MS2 extends ModelBase //Same as Filename
 
 		bodyModel[394].addBox(0F, 0F, 0F, 1, 9, 1, 0F); // Box 394
 		bodyModel[394].setRotationPoint(68.5F, -6F, 10F);
+
+		bodyModel[395].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Backlight
+		bodyModel[395].setRotationPoint(73.05F, -2F, -4.75F);
+		bodyModel[395].rotateAngleY = -3.14159265F;
 	}
 }

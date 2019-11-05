@@ -63,7 +63,7 @@ public class EntityDBpza extends GenericRailTransport {
 
     @Override
     public float getRenderScale() {
-        return 0.0625f;
+        return 0.065f;
     }
 
     @Override
@@ -152,12 +152,12 @@ public class EntityDBpza extends GenericRailTransport {
      */
     @Override
     public float[][] getRiderOffsets() {
-        return new float[][]{{1.5f, 1.60f, -0.15f}, {0.75f, 0.5f, 0.2f}, {-0.75f, 0.5f, 0.2f}, {-2f, 0.5f, 0.2f}};
+        return new float[][]{{1.5f, 1.88f, -0.15f}, {0.75f, 0.5f, 0.2f}, {-0.75f, 0.5f, 0.2f}, {-2f, 0.5f, 0.2f}};
     }
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{13.68f, 2, 1.5f};
+        return new float[]{13.68f, 2.5f, 1.5f};
     }
 
     @Override

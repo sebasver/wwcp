@@ -55,7 +55,7 @@ public class EntityBR626 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/BR626/B1.png", "textures/bogies/BR626Bogie.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/BR626/B1.png", "textures/bogies/BR626Bogie.png",
                 "default", "Used by Germany in WWI as a transport for solders and equipment");
     }
 

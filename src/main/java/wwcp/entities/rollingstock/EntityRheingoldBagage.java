@@ -137,7 +137,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.5f,1.60f, -0.15f},{0.75f,0.5f, 0.2f},{-0.75f,0.5f, 0.2f},{-2f,0.5f, 0.2f}};}
+    public float[][] getRiderOffsets(){return null;}
 
     @Override
     public float[] getHitboxSize() {
