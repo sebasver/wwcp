@@ -2,6 +2,7 @@ package wwcp.tiles.platforms.render;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import ebf.tim.utility.DebugUtil;
 import fexcraft.tmt.slim.TextureManager;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.OpenGlHelper;
@@ -27,20 +28,10 @@ public class RenderPlatform extends TileEntitySpecialRenderer {
     public static int type;
 
     //To add more, just add new private static Model customName. Like below.
-    private static BlockBorderPlatform platform1;
-    private static BlockBorderPlatformSlope platform2;
-    private static BlockCenterPlatform platform3;
-    private static BlockCenterPlatformSlope platform4;
-
-
-
-    public void Render() {
-        platform1 = new BlockBorderPlatform();
-        platform2 = new BlockBorderPlatformSlope();
-        platform3 = new BlockCenterPlatform();
-        platform4 = new BlockCenterPlatformSlope();
-
-    }
+    private static BlockBorderPlatform platform1 = new BlockBorderPlatform();
+    private static BlockBorderPlatformSlope platform2 = new BlockBorderPlatformSlope();
+    private static BlockCenterPlatform platform3 = new BlockCenterPlatform();
+    private static BlockCenterPlatformSlope platform4 = new BlockCenterPlatformSlope();
 
 
     //Best if you have one texture for all platform blocks. If not then you simply change resource location to to have some String instead of "namexxx.png".
@@ -52,43 +43,33 @@ public class RenderPlatform extends TileEntitySpecialRenderer {
     //idea: make all models centered in SMP and on the same height.
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float p_147500_8_) {
-        Render();
         GL11.glPushMatrix();
-        switch (tileEntity.getBlockMetadata()) {
-            default: {
-                GL11.glTranslatef((float) x, (float) y, (float) z);
-                break;
-            }
-            case 0:
-            case 5:
-            case 3:
-            case 4:
-            case 2: {
-                GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
-                break;
-            }
-        }
+        GL11.glTranslatef((float) x, (float) y, (float) z);
 
 
         int rotation = 0;
         switch (tileEntity.getBlockMetadata() % 4) {
             case 0:
                 rotation = 0;
+                GL11.glTranslatef(0.5F, 0f, 0.5f);
                 break;
             case 1:
                 rotation = 270;
+                GL11.glTranslatef(0.5F, 0f, 0.5f);
                 break;
             case 2:
                 rotation = 180;
+                GL11.glTranslatef(0.5F, 0f, 0.5f);
                 break;
             case 3:
                 rotation = 90;
+                GL11.glTranslatef(0.5F, 0f, 0.5f);
                 break;
         }
-        GL11.glRotatef(rotation, 0.0F, 1.0F, 0.0F);
+        GL11.glRotatef(rotation, 0F, 1.0F, 0.0F);
 
         //general height
-        GL11.glTranslatef(0F, 0f, 0f);
+
         GL11.glRotatef(180, 1, 0, 0);
 
 
@@ -101,16 +82,16 @@ public class RenderPlatform extends TileEntitySpecialRenderer {
             platform1.render();
         }
 
-        if (tileEntity instanceof TileEntityPlatformSecond) {
+       else if (tileEntity instanceof TileEntityPlatformSecond) {
             TextureManager.bindTexture(texture);
             platform2.render();
         }
-        if (tileEntity instanceof TileEntityPlatformThird) {
+        else if (tileEntity instanceof TileEntityPlatformThird) {
             TextureManager.bindTexture(texture);
             platform3.render();
         }
 
-        if (tileEntity instanceof TileEntityPlatformFourth) {
+        else if (tileEntity instanceof TileEntityPlatformFourth) {
             TextureManager.bindTexture(texture);
             platform4.render();
         }

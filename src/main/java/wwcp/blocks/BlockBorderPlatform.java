@@ -24,7 +24,6 @@ public class BlockBorderPlatform extends ModelBase//Same as Filename
 
 		initbodyModel_1();
 
-		translateAll(0F, 0F, 0F);
 	}
 
 	private void initbodyModel_1()
