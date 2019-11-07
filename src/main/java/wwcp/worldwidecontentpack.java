@@ -38,10 +38,14 @@ import static wwcp.WWCP_Blocks.blockList;
 // X.Y.Z 
 //X = major (game defining, large content publishments?), Y = minor(small content publishments?)  Z = patch (stat fixing).
 
-@Mod(modid = worldwidecontentpack.MODID, version = worldwidecontentpack.MOD_VERSION, name = "World Wide Content Pack")
+@Mod(modid ="wwcp",
+        version = "TiM BugTesting Release",
+        name = "World Wide Content Pack")
+
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
     public static final String MOD_VERSION = "TiM BugTesting Release";
+//    @Mod.Instance(worldwidecontentpack.MODID)
 
 
     public Block DisplayTrainFourteen = new Display();
