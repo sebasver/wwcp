@@ -66,6 +66,11 @@ public class EntityDBpza extends GenericRailTransport {
         return 0.065f;
     }
 
+    /**defines the scale to render the model at. Default is 0.075*/
+//    @Override
+//    public float getRiderRenderScale(){return 0.65f;}
+
+
     @Override
     public float[][] modelOffsets() {
         return new float[][]{{-0.025f, -0.17F, 0.F}};

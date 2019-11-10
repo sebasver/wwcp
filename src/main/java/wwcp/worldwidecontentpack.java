@@ -45,7 +45,7 @@ import static wwcp.WWCP_Blocks.blockList;
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
     public static final String MOD_VERSION = "TiM BugTesting Release";
-//    @Mod.Instance(worldwidecontentpack.MODID)
+
 
 
     public Block DisplayTrainFourteen = new Display();
@@ -53,12 +53,16 @@ public class worldwidecontentpack {
 
     @Mod.EventHandler
     public void preInit(FMLInitializationEvent event) {
-        proxy.registerRenderers();
+
     }
 
     //Tab declerations
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+
+        //For the custom armor
+        proxy.registerRenderers();
+
 
         Belgium = new TiMTab(event.getSide().isClient(), "Belgian models", MODID, "myTab");
         Germany = new TiMTab(event.getSide().isClient(), "German models", MODID, "myTab2");

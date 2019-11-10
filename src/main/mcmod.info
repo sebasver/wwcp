@@ -5,10 +5,9 @@
   "description": "A content pack for TiM",
   "version": "1.7.10.1558-1614",
   "url": [],
-  "updateUrl":[]
+  "updateUrl":[],
   "authorList": ["Sébastiaan Verheyen (sebasver)"],
-  "credits": "Eternal Blue Flame | Lunar Tales | Zora no Densha | Fexcraft | TiM | Oskiek | sebasver
-              And all modellers and texturers",
+  "credits": "Eternal Blue Flame | Lunar Tales | Zora no Densha | Fexcraft | TiM | Oskiek | sebasver and all modellers and texturers",
   "logoFile": "/assets/wwcp/textures/items/myTab0.png",
   "screenshots": [],
   "dependencies": []
