@@ -42,32 +42,27 @@ public class EntityXXXX extends GenericRailTransport {
 
     @Override
     public float weightKg() {
-        return 1814.3f;
+        return SuperStat.YYYY;
     }
 
     @Override
     public String transportName() {
-        return "Dobbelstock 4th generation";
+        return SuperStat.YYYY.name;
     }
 
     @Override
     public String transportcountry() {
-        return "Germany";
+        return SuperStat.YYYY.country;
     }
 
     @Override
     public String transportYear() {
-        return "1997-now";
-    }
-
-    @Override
-    public String transportFuelType() {
-        return null;
+        return SuperStat.YYYY.year;
     }
 
     @Override
     public boolean isFictional() {
-        return false;
+        return SuperStat.YYYY.fictional;
     }
 
     @Override

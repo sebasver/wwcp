@@ -18,6 +18,8 @@ package wwcp.entities.locomotives.steamers;
         import net.minecraftforge.common.util.ForgeDirection;
         import net.minecraftforge.fluids.FluidContainerRegistry;
         import net.minecraftforge.fluids.FluidRegistry;
+        import wwcp.entities.SuperStat;
+        import wwcp.entities.WWCPItemTransport;
         import wwcp.models.bogies.BR01FrontBogie;
         import wwcp.models.bogies.BackBogieDRBR01;
         import wwcp.models.locomotives.DRBR01;
@@ -29,54 +31,47 @@ public class EntityDRBR01 extends EntityTrainCore {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntityDRBR01(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPItemTransport(new EntityDRBR01(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
     public EntityDRBR01(World world) {
         super(world);
     }
-
-    public String transportName() {
-        return "BR 01 Wagner";
-    }
-
-    public String transportcountry() {
-        return "Germany";
-    }
-
-    public String transportYear() {
-        return "1921";
-    }
-
+    @Override
+    public String transportName() { return SuperStat.BR01Wagner().name; }
+    @Override
+    public String transportcountry() { return SuperStat.BR01Wagner().country; }
+    @Override
+    public String transportYear() { return SuperStat.BR01Wagner().year; }
+    @Override
     public String transportFuelType() {
-        return "Steam";
+        return SuperStat.BR01Wagner().fuel;
     }
-
+    @Override
     public boolean isFictional() {
-        return false;
+        return SuperStat.BR01Wagner().fictional;
     }
-
+    @Override
     public float transportTractiveEffort() {
-        return 0.0F;
+        return SuperStat.BR01Wagner().tractive_effort;
     }
-
+    @Override
     public float transportMetricHorsePower() {
-        return 2210F;
+        return SuperStat.BR01Wagner().metric_horsepower;
     }
-
-    public String[] additionalItemText() {
-        {
-            return new String[]{RailUtility.translate("wwcp.era") + " II"};
-        }
-    }
-
+    @Override
     public float weightKg() {
-        return  108900F;
+        return  SuperStat.BR01Wagner().weightinKGs;
     }
 
-    public float transportTopSpeed() {
-        return 130F;
+    @Override
+    public String[] additionalItemText() {
+        {return new String[]{RailUtility.translate(SuperStat.BR01Wagner().additionalTextTitle) + SuperStat.BR01Wagner().additionalText,
+                RailUtility.translate(SuperStat.BR01Wagner().additionalTextTitle2) + SuperStat.BR01Wagner().additionalText2};}
     }
 
+    @Override
+    public float transportTopSpeed(){return accelerator<0?SuperStat.BR01Wagner().backTopSpeed:SuperStat.BR01Wagner().topSpeed;}
+    @Override
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DR01/Wagner1.png", "textures/bogies/BR01/BR01FrontBlack.png",
                 "BR01 Wagner", "Default black wheels for the BR01 Wagner");

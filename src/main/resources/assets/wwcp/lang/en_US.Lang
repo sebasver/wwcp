@@ -17,8 +17,9 @@ item.blockTab=Block Tab
 
 
 <!-- ## Extra Declarations ##--!>
-wwcp.era=Era
-wwcp.nick=Nickname
+wwcp.era=Era:
+wwcp.nick=Nickname:
+menu.item.weighttons=Tonne
 
 <!-- ## Extra countries ## --!>
 menu.item.europe=Europe
@@ -26,6 +27,7 @@ menu.item.europe=Europe
 <!-- ## Trains ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
 item.BombardierTRAXXF140MS2.name=F140 MS2 Bombardier Traxx
+item.BR01Wagner.name=§5BR 01 Wagner
 
 
 <!-- ## Rollingstock ## -->
@@ -36,5 +38,3 @@ item.TEUSmallContainercarrier.name=TEU Small container carrier
 
 
 <!-- ## Extra types -->
-menu.item.diesel-electric=Diesel-Electric
-menu.item.tractiveeffort=Tractive effort

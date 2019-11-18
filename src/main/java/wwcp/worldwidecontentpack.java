@@ -16,8 +16,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import wwcp.blocks.BlockPlatform;
 import wwcp.blocks.Display;
-import wwcp.entities.TempTC.EntityE10;
-import wwcp.entities.TempTC.EntityPropaganda;
+import wwcp.entities.TempTC.*;
 import wwcp.entities.freight.*;
 import wwcp.entities.locomotives.electrics.*;
 import wwcp.entities.locomotives.steamers.*;
@@ -28,7 +27,7 @@ import wwcp.entities.tender.*;
 import wwcp.proxy.ClientProxy;
 import wwcp.proxy.CommonProxy;
 
-import java.util.Queue;
+
 
 import static cpw.mods.fml.common.registry.GameRegistry.addRecipe;
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
@@ -37,16 +36,13 @@ import static wwcp.WWCP_Blocks.blockList;
 //Todo gradlew setupDecompWorkspace --refresh-dependencies idea
 // X.Y.Z 
 //X = major (game defining, large content publishments?), Y = minor(small content publishments?)  Z = patch (stat fixing).
+//todo fix Copy pastable files with the new superstat method
 
-@Mod(modid ="wwcp",
-        version = "TiM BugTesting Release",
-        name = "World Wide Content Pack")
+@Mod(modid = worldwidecontentpack.MODID, version = worldwidecontentpack.MOD_VERSION)
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
     public static final String MOD_VERSION = "TiM BugTesting Release";
-
-
 
     public Block DisplayTrainFourteen = new Display();
 

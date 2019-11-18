@@ -8,11 +8,13 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
 import ebf.tim.registry.URIRegistry;
+import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import wwcp.entities.SuperStat;
 import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.F140MS2;
 import wwcp.worldwidecontentpack;
@@ -47,12 +49,15 @@ import net.minecraft.init.Items;
         @Override
         public String transportcountry(){return "Europe";}
         @Override
-        public String transportYear(){return "2000-now";}
+        public String transportYear(){return "2004-now";}
 
         @Override
         public String transportFuelType() {
             return "Electric";
         }
+
+        public String[] additionalItemText() {
+            {return new String[]{RailUtility.translate( ("wwcp.era") + " VI")};}}
 
         @Override
         public boolean isFictional(){return false;}
@@ -100,11 +105,6 @@ import net.minecraft.init.Items;
         public float transportMetricHorsePower(){return 75f;}
 
         @Override
-        public String[] additionalItemText() {
-            return null;
-        }
-
-        @Override
         public float weightKg(){return 10886.2169f;}
 
 
@@ -139,7 +139,7 @@ import net.minecraft.init.Items;
 
         @Override
         public float[][] modelOffsets() {
-            return new float[][]{{0f,-0.05F,0.F}};}
+            return new float[][]{{0f,-0.15F,0.F}};}
 
         /**
          * <h2>rider sit or stand</h2>
