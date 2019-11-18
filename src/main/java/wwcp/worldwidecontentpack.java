@@ -34,15 +34,16 @@ import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 import static wwcp.WWCP_Blocks.blockList;
 
 //Todo gradlew setupDecompWorkspace --refresh-dependencies idea
-// X.Y.Z 
+//X.Y.Z
 //X = major (game defining, large content publishments?), Y = minor(small content publishments?)  Z = patch (stat fixing).
 //todo fix Copy pastable files with the new superstat method
+//todo fixup MCMod file
 
 @Mod(modid = worldwidecontentpack.MODID, version = worldwidecontentpack.MOD_VERSION)
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "TiM BugTesting Release";
+    public static final String MOD_VERSION = "0.4.1 Alpha";
 
     public Block DisplayTrainFourteen = new Display();
 
