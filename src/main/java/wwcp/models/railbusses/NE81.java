@@ -14,12 +14,12 @@ import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 import net.minecraft.entity.Entity;
 
-public class BR626 extends ModelBase//Same as Filename
+public class NE81 extends ModelBase//Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public BR626() //Same as Filename
+	public NE81() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[273];
 

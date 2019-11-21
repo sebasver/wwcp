@@ -17,71 +17,71 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class Entityxxxxx extends RollingstockBase {
+
+// XXXX
+// YYYY
+// ZZZZ
+// QQQQ
+
+public class EntityYYYY extends WWCPItemTransport {
     public static final Item thisItem;
 
-    public Entityxxxxx(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityYYYY(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntityXXXXX(null), worldwidecontentpack.MODID , worldwidecontentpack.XXXXXX);
+    public static final Item thisItem = new ItemTransport(new EntityYYYY(null), worldwidecontentpack.MODID , worldwidecontentpack.ZZZZ);
 
-    public Entityxxxxx(World world) {
+    public EntityYYYY(World world) {
         super(world);
     }
+    @Override
     public String transportName() {
-        return "V.A.T Logcar";
+        return SuperStat.XXXX().name;
     }
 
+    @Override
     public String transportcountry() {
-        return "US";
+        return SuperStat.XXXX().country;
     }
 
+    @Override
     public String transportYear() {
-        return "1850-1970";
+        return SuperStat.XXXX().year;
     }
 
-    public String transportFuelType() {
-        return "Steam-Electric";
-    }
-
-    public float transportTopSpeed() {
-        return 0.0F;
-    }
+    @Override
     public float weightKg() {
-        return 1814.3F;
+        return SuperStat.XXXX().weight;
     }
+
+    @Override
     public boolean isFictional() {
-        return true;
+        return SuperStat.XXXX().fictional;
     }
 
-    public float transportTractiveEffort() {
-        return 0.0F;
-    }
-
-    public float transportMetricHorsePower() {
-        return 0.0F;
-    }
-
+    @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + "II"};
+        {return new String[]{RailUtility.translate(SuperStat.XXXX().additionalTextTitle) + SuperStat.XXXX().additionalText,
+                RailUtility.translate(SuperStat.XXXX().additionalTextTitle2) + SuperStat.XXXX().additionalText2};}
     }
 
-    public float getMaxFuel() {
-        return 0.0F;
-    }
-
+    @Override
     public int getInventoryRows() {
         return 3;
     }
+
+    @Override
     public float[][] bogieModelOffsets() {
         return new float[][]{{1.3F, 0.0F, 0.0F}, {-1.3F, 0.0F, 0.0F}};
     }
 
+    @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new xxxxxx()};
+        return new ModelBase[]{new QQQQ()};
     }
 
+    @Override
     public float[] bogieLengthFromCenter() {
         return new float[]{1.0F, -1.0F};
     }
@@ -90,41 +90,27 @@ public class Entityxxxxx extends RollingstockBase {
         return 0.0625F;
     }
 
+    @Override
     public float[][] modelOffsets() {
-        return (float[][])null);
+        return new float[][]{{-0.025f,-0.17F,0.F}};
     }
 
+    @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), "trainsinmotion", "textures/VATLogCar.png", new String[]{"textures/hd/rollingstock/cmd_bogie.png"}, "V.A.T Logcar", "Fictional log car from \"Railroads!\" used for carrying entire logs but would be good for planks too");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/", "textures/bogies/",
+                "NAME", "Description");
     }
 
     public boolean isReinforced() {
-        return false;
-    }
-
-    public int[] getTankCapacity() {
-        return null;
-    }
-
-    public String[][] getTankFilters() {
-        return (String[][])null;
-    }
-
-    public int getRFCapacity() {
-        return 0;
-    }
-
-    public void manageFuel() {
+        return SuperStat.XXXX().reinforced;
     }
 
     public ItemStack[] getRecipie() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.field_150364_r, 1), null, null, null, null, null, null, null, null};
     }
 
-
-
     public List<transportTypes> getTypes() {
-        return transportTypes.LOGCAR.singleton();
+        return transportTypes.QQQQ.singleton();
     }
 
     public float[][] getRiderOffsets() {
@@ -140,7 +126,7 @@ public class Entityxxxxx extends RollingstockBase {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new xxxxx()};
+        return new ModelBase[]{new QQQQ()};
     }
 
     public Item getItem() {

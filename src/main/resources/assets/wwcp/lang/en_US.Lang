@@ -19,15 +19,15 @@ item.blockTab=Block Tab
 <!-- ## Extra Declarations ##--!>
 wwcp.era=Era:
 wwcp.nick=Nickname:
-menu.item.weighttons=Tonne
+menu.item.weighttons=Weight
 
 <!-- ## Extra countries ## --!>
 menu.item.europe=Europe
 
 <!-- ## Trains ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
-item.BombardierTRAXXF140MS2.name=F140 MS2 Bombardier Traxx
-item.BR01Wagner.name=§5BR 01 Wagner
+item.BombardierTRAXXF140MS2.name=§6F140 MS2 Bombardier Traxx
+item.BR01Wagner.name=§6BR 01 Wagner
 
 
 <!-- ## Rollingstock ## -->

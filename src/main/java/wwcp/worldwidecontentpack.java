@@ -43,7 +43,7 @@ import static wwcp.WWCP_Blocks.blockList;
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.4.1 Alpha";
+    public static final String MOD_VERSION = "0.4.2 Alpha";
 
     public Block DisplayTrainFourteen = new Display();
 
@@ -106,7 +106,7 @@ public class worldwidecontentpack {
         return new GenericRailTransport[]{
                 new Entity94xx(null),
                 new EntityClass812(null),
-                new EntityDRBR01(null)
+                new EntityDRBR01Wagner(null)
         };
     }
 
@@ -130,7 +130,7 @@ public class worldwidecontentpack {
 
     public static GenericRailTransport[] listRailbusses() {
         return new GenericRailTransport[]{
-                new EntityBR626(null),
+                new EntityNE81(null),
                 new EntityVT98(null)
         };
     }

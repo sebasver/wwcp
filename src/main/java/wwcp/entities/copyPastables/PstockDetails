@@ -19,58 +19,63 @@ import java.util.UUID;
 
 import static ebf.tim.utility.RailUtility.DefineStack;
 
+// XXXX
+// YYYY
+// ZZZZ
+// QQQQ
 
-public class EntityXXXX extends GenericRailTransport {
+public class EntityYYYY extends WWCWPItemTransport {
     private static final String[] itemDescription = new String[]{
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new ItemTransport(new EntityXXXX(null), worldwidecontentpack.MODID , worldwidecontentpack.XXXXXX);
+    public static final Item thisItem = new ItemTransport(new EntityYYYY(null), worldwidecontentpack.MODID , worldwidecontentpack.ZZZZ);
 
 
-    public EntityXXXX(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityYYYY(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityXXXX(World world){
+    public EntityYYYY(World world){
         super(world);
     }
 
     @Override
     public boolean isReinforced() {
-        return true;
-    }
-
-    @Override
-    public float weightKg() {
-        return SuperStat.YYYY;
+        return SuperStat.XXXX().reinforced;
     }
 
     @Override
     public String transportName() {
-        return SuperStat.YYYY.name;
+        return SuperStat.XXXX().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.YYYY.country;
+        return SuperStat.XXXX().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.YYYY.year;
+        return SuperStat.XXXX().year;
+    }
+
+    @Override
+    public float weightKg() {
+        return SuperStat.XXXX().weight;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.YYYY.fictional;
+        return SuperStat.XXXX().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + "II"};}
+        {return new String[]{RailUtility.translate(SuperStat.XXXX().additionalTextTitle) + SuperStat.XXXX().additionalText,
+                RailUtility.translate(SuperStat.XXXX().additionalTextTitle2) + SuperStat.XXXX().additionalText2};}
     }
 
-    /**
+
      * <h1>Variable Overrides</h1>
      */
 
@@ -81,7 +86,7 @@ public class EntityXXXX extends GenericRailTransport {
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new XXXX()};
+        return new ModelBase[]{new QQQQ()};
     }
 
     /**
@@ -141,7 +146,7 @@ public class EntityXXXX extends GenericRailTransport {
     }
 
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new XXXX()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new QQQQ()};}
 
     /**
      * <h2>pre-asigned values</h2>

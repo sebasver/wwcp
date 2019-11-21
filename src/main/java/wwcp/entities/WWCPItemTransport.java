@@ -30,11 +30,6 @@ public class WWCPItemTransport extends ItemTransport {
 
         setUnlocalizedName(cart.transportName().replace(" ",""));
 
-        subtext.add(EnumChatFormatting.BLUE + t("menu.item.year") +": " + cart.transportYear());
-
-        subtext.add(EnumChatFormatting.BLUE + t("menu.item.country") + ": " +
-                t("menu.item."+cart.transportcountry().toLowerCase()));
-
         if (cart.transportTopSpeed()!=0){
             subtext.add(EnumChatFormatting.RED + t("menu.item.speed") +": " + cart.transportTopSpeed() +" km/h");
         }
@@ -44,11 +39,16 @@ public class WWCPItemTransport extends ItemTransport {
                     t("menu.item."+cart.transportFuelType().toLowerCase()));
         }
 
+        subtext.add(EnumChatFormatting.BLUE + t("menu.item.year") +": " + cart.transportYear());
+
+        subtext.add(EnumChatFormatting.BLUE + t("menu.item.country") + ": " +
+                t("menu.item."+cart.transportcountry().toLowerCase()));
+
         if(cart.getRiderOffsets()!=null){
             subtext.add(EnumChatFormatting.GREEN +t("menu.item.seats")+ ": " + cart.getRiderOffsets().length);
         }
 
-        subtext.add(EnumChatFormatting.GREEN + t("menu.item.weighttons") +": " + (cart.weightKg()>0?cart.weightKg()/100:null + "metric tons"));
+        subtext.add(EnumChatFormatting.GREEN + t("menu.item.weighttons") +": " + (cart.weightKg()>0?cart.weightKg()/100:null) + " Metric tons");
 
         if(cart.getInventoryRows()>0){
             subtext.add(EnumChatFormatting.GREEN +t("menu.item.isizeof")+ ": " + (cart.getInventoryRows()*9) + " " + t("menu.item.slots"));

@@ -14,25 +14,24 @@ import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
-import wwcp.models.bogies.BR626Bogie;
-import wwcp.models.railbusses.BR626;
+import wwcp.models.bogies.NE81;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityBR626 extends EntityTrainCore {
+public class EntityNE81 extends EntityTrainCore {
 
-    public static final Item thisItem = new ItemTransport(new wwcp.entities.railbusses.EntityBR626(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
+    public static final Item thisItem = new ItemTransport(new EntityNE81(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntityBR626(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityNE81(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityBR626(World world){
+    public EntityNE81(World world){
         super(world);
     }
 
@@ -55,7 +54,7 @@ public class EntityBR626 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/BR626/B1.png", "textures/bogies/BR626Bogie.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/NE81/B1.png", "textures/bogies/NE81Bogie.png",
                 "default", "Used by Germany in WWI as a transport for solders and equipment");
     }
 
@@ -129,7 +128,7 @@ public class EntityBR626 extends EntityTrainCore {
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new BR626Bogie()};
+        return new ModelBase[]{new NE81()};
     }
 
     @Override
@@ -210,7 +209,7 @@ public class EntityBR626 extends EntityTrainCore {
     }
 
 
-    public ModelBase[] getModel(){return new ModelBase[]{new BR626()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new wwcp.models.railbusses.NE81()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

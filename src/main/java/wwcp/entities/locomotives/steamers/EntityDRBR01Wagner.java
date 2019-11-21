@@ -5,7 +5,6 @@ package wwcp.entities.locomotives.steamers;
         import ebf.tim.TrainsInMotion.transportTypes;
         import ebf.tim.api.SkinRegistry;
         import ebf.tim.entities.EntityTrainCore;
-        import ebf.tim.items.ItemTransport;
         import ebf.tim.registry.URIRegistry;
         import ebf.tim.utility.RailUtility;
         import fexcraft.tmt.slim.ModelBase;
@@ -25,17 +24,21 @@ package wwcp.entities.locomotives.steamers;
         import wwcp.models.locomotives.DRBR01;
         import wwcp.worldwidecontentpack;
 
-public class EntityDRBR01 extends EntityTrainCore {
+public class EntityDRBR01Wagner extends EntityTrainCore {
 
-    public EntityDRBR01(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityDRBR01Wagner(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPItemTransport(new EntityDRBR01(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPItemTransport(new EntityDRBR01Wagner(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
-    public EntityDRBR01(World world) {
+    public EntityDRBR01Wagner(World world) {
         super(world);
     }
+
+//    @Override
+//    public float getPlayerScale(){return 0.65f;}
+
     @Override
     public String transportName() { return SuperStat.BR01Wagner().name; }
     @Override

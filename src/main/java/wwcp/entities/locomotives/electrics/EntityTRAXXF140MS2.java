@@ -22,21 +22,10 @@ import wwcp.worldwidecontentpack;
 import java.util.UUID;
 import net.minecraft.init.Items;
 
-    /**
-     * <h1>Brigadelok 0-8-0 entity</h1>
-     * designed after the : Henschel No.15968
-     * This class is intended to serve as the primary example for API use.
-     * @author Eternal Blue Flame
-     */
     public class EntityTRAXXF140MS2 extends EntityTrainCore {
 
         public static final Item thisItem = new ItemTransport(new EntityTRAXXF140MS2(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
 
-        /**
-         * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
-         * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
-         * @see EntityTrainCore
-         */
         public EntityTRAXXF140MS2(UUID owner, World world, double xPos, double yPos, double zPos) {
             super(owner, world, xPos, yPos, zPos);
         }
@@ -78,10 +67,10 @@ import net.minecraft.init.Items;
             SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T10.png", "textures/bogies/Flexxpower.png", "Halloween Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
         }
 
-//        @Override
-//        public String getDefaultSkin(){
-//            return "HLE28 NMBS Cargo";
-//        }
+        @Override
+        public String getDefaultSkin(){
+            return "HLE28 NMBS Cargo";
+        }
 
         @Override
         public float transportTopSpeed(){return 140f;}
@@ -96,6 +85,7 @@ import net.minecraft.init.Items;
 
         @Override
         public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.4f, -0.25f}};}
+
         @Override
         public float[] getHitboxSize() {
             return new float[]{9.5f,2.5f,1.5f};
@@ -115,11 +105,6 @@ import net.minecraft.init.Items;
                     null, null, null
             };
         }
-
-        /**
-         * <h2>Hitbox offsets</h2>
-         * @return defines the positions for the hitboxes in blocks. 0 being the center, negative values being towards the front. the first and last values define the positions of the couplers
-         */
 
         @Override
         public float[][] bogieModelOffsets(){return new float[][]{{2.5f,0.05f,0},{-2.5f,0.05f,0}};
@@ -141,32 +126,21 @@ import net.minecraft.init.Items;
         public float[][] modelOffsets() {
             return new float[][]{{0f,-0.15F,0.F}};}
 
-        /**
-         * <h2>rider sit or stand</h2>
-         * @return true if the rider(s) should be sitting, false if the rider should be standing.
-         */
         @Override
         public boolean shouldRiderSit(){
             return true;
         }
-        /**
-         * <h2>reinforced transport</h2>
-         * this returns if this specific entity is reinforced (explosion proof and damage resistant).
-         * since this is a function it can b
-         * te conditional as well, for instance if it has a specific skin.
-         */
+
         @Override
         public boolean isReinforced(){return false;}
 
-        /**
-         * <h2>Fluid Tank Capacity</h2>
-         */
-        //@Override
+
+        @Override
         public int[] getTankCapacity(){return new int[]{9161, 800};}
 
-        //@Override
+
         public int getRFCapacity() {
-            return 11000;
+            return 12000;
         }
 
         @Override
@@ -186,19 +160,9 @@ import net.minecraft.init.Items;
                 this.fuelHandler.manageElectric(this);
             }
 
-        /**
-         * <h2>pre-assigned values</h2>
-         * These return values are defined from the top of the class.
-         * These should only need modification for advanced users, and even that's a stretch.
-         */
         public Item getItem(){
             return thisItem;
         }
-
-
-        //@Override
-        public Bogie[] getBogieModels(){return null;}
-
 
         public ModelBase[] getModel(){return new ModelBase[]{new F140MS2()};}
 
