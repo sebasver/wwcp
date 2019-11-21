@@ -80,11 +80,11 @@ public class SuperStat {
 
     }
 
-    /** ABCDEFGHIJKLMNOPQRSTUVWXYZ*/
+    /** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z*/
 
     //BR01 Wagner Deflectors
     public static EntityData1 BR01Wagner(){return new EntityData1("BR 01 Wagner","Germany","1926-1982","Steam",
-            era," II",type, " Passenger Locomotive",
+            "","",type, " Passenger Locomotive",
             0.0f,2210f,108.9f,130f,50f,false, true);}
 
     //BR 798 / VT 98
@@ -92,19 +92,63 @@ public class SuperStat {
             nick," VT 98",type, " Passenger Railbus",
             0f,299.12f,18.9f,90f, false, true);}
 
-    //Default F140 MS2 like the HLE28
+    //Class 37
+    public static EntityData2 Class37(){return new EntityData2("Class 37","United_Kingdom","1960-","Diesel",
+            nick," Tractors",type, " Mixed Locomotive",
+            55000f,1750f,102f,140f, false, true);}
+
+    //CR 812
+    public static EntityData2 CR812(){return new EntityData2("CR Class812","United_Kingdom","1899-1963","Steam",
+            nick," Jumbos",type, " Mixed Locomotive",
+            20170f,0f,46.38f,88.51f, false, true);}
+
+    //CR 812 Tender
+    public static EntityData3 Mcintosh3000Galon(){return new EntityData3("CR Class812","United_Kingdom","1899-1963","",
+            "",type," Tender", 19.5f, false, true);}
+
+    //F140 MS2
     public static EntityData2 F140MS2(){return new EntityData2("F140 MS2 Traxx","Europe","2006-","Electric",
-            era," VI",type, " Freight Locomotive",
+            "","",type, " Freight Locomotive",
             67000f,7500f,85.0f,140f, false, true);}
 
-    //Swiss version of the F140MS2
-    public static EntityData2 F140MS(){return new EntityData2("SBB Re 484","Switzerland","2006-","Electric",
-            era," VI",type, " Freight Locomotive",
-            67000f,7500f,85.4f,140f, false, true);}
+    //GE AC4400 CW
+    public static EntityData2 GEAC4400CW(){return new EntityData2("GE AC4400CW","America","1993-","Diesel",
+            "","",type, " Freight Locomotive",
+            145000f,4400f,193f,112f, false, true);}
+
+    //GWR 9400
+    public static EntityData2 GWR9400(){return new EntityData2("GWR 9400","United_Kingdom","1947-1965","Steam",
+            "","",type, " Shunting Locomotive",
+            22515f,0f,56.2f,72f,false, true);}
+
+    //MZ Class I
+    public static EntityData2 MZI(){return new EntityData2("MZ I","Denmark","1967-","Diesel",
+            nick," Cake Tins",type, " Mixed Locomotive",
+            88000f,3253f,116.5f,143f, false, true);}
+
+    //MZ Class II
+    public static EntityData2 MZII(){return new EntityData2("MZ II","Denmark","1970-","Diesel",
+            nick," Cake Tins",type, " Mixed Locomotive",
+            88000f,3253f,116.5f,143f, false, true);}
+
+    //MZ Class III
+    public static EntityData2 MZIII(){return new EntityData2("MZ III","Denmark","1972-","Diesel",
+            nick," Cake Tins",type, " Mixed Locomotive",
+            88000f,3854f,121.2f,165f, false, true);}
+
+    //MZ Class IV
+    public static EntityData2 MZIV(){return new EntityData2("MZ IV","Denmark","1977-","Diesel",
+            nick," Cake Tins",type, " Mixed Locomotive",
+            88000f,3854f,123f,165f, false, true);}
+
+    //MZ Class Australia
+    public static EntityData2 MZAustralia(){return new EntityData2("MZ III","Australia","1972-","Diesel",
+            nick," Cake Tins",type, " Mixed Locomotive",
+            88000f,3854f,121.2f,105f, false, true);}
 
     //NS Highspeed version of the F140MS2
     public static EntityData2 F140MS2HS(){return new EntityData2("NS E186","Netherlands","2006-","Electric",
-            era," VI",type, " Passenger Locomotive",
+            "","",type, " Passenger Locomotive",
             67000f,7500f,85.0f,160f, false, true);}
 
     //NE 81 / BR626
@@ -112,10 +156,24 @@ public class SuperStat {
             nick," BR 626",type, " Passenger Railbus",
             0f,679.81f,46.0f,100f, false, true);}
 
+    //SSB Re 484
+    public static EntityData2 F140MS(){return new EntityData2("SBB Re 484","Switzerland","2004-","Electric",
+            "","",type, " Freight Locomotive",
+            67000f,7500f,85.4f,140f, false, true);}
+
+    //T32 Tender
+
+
     //Wehrmachtslokomotive WR 360 C 14 / V36
     public static EntityData2 WR360C14(){return new EntityData2("Wehrmachtslokomotive WR 360 C 14","Germany","1937-1950","Diesel",
             nick," V36",type, " Shunting Locomotive",
             31473.3f,360.3f,43.0f,60f, false, true);}
+
+
+    /**Rolling stock Declaration*/
+    /** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z*/
+
+
 
 
 }
