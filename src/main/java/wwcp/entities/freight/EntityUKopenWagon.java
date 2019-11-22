@@ -96,7 +96,7 @@ public class EntityUKopenWagon extends GenericRailTransport {
     }
 
     public float transportTopSpeed() {
-        return 0.0F;
+        return 0.0f;
     }
 
     @Override

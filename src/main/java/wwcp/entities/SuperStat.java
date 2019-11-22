@@ -59,7 +59,7 @@ public class SuperStat {
 
 
     }
-    /**This is for rollingstock with no engine*/
+    /**This is for rolingstock with a defined topspeed or with no topspeed "0"*/
     public static class EntityData3{
         public String name;
         public String country;
@@ -69,13 +69,15 @@ public class SuperStat {
         public String additionalTextTitle2;
         public String additionalText2;
         public float weightinKGs;
+        public float topSpeed;
+        public float backTopSpeed;
         public boolean fictional;
         public boolean reinforced;
 
         public EntityData3(String Name, String Country, String Year, String AditionalTextTitle, String AditionalText, String AditionalText2Title,
-                           String AditionalText2,float WeightinTons, boolean Fictional, boolean Reinforced)
+                           String AditionalText2,float WeightinTons,float TopSpeed, boolean Fictional, boolean Reinforced)
         {name=Name;country=Country;year=Year;additionalTextTitle = AditionalTextTitle; additionalText=AditionalText;additionalTextTitle2 = AditionalText2Title;additionalText2=AditionalText2;
-            weightinKGs=(WeightinTons * 100);fictional=Fictional;reinforced=Reinforced;}
+            weightinKGs=(WeightinTons * 100);topSpeed=TopSpeed;fictional=Fictional;backTopSpeed = TopSpeed;reinforced=Reinforced;}
 
 
     }
@@ -104,7 +106,7 @@ public class SuperStat {
 
     //CR 812 Tender
     public static EntityData3 Mcintosh3000Galon(){return new EntityData3("CR Class812","United_Kingdom","1899-1963","",
-            "",type," Tender", 19.5f, false, true);}
+            "",type," Tender", 19.5f,0f, false, true);}
 
     //F140 MS2
     public static EntityData2 F140MS2(){return new EntityData2("F140 MS2 Traxx","Europe","2006-","Electric",
@@ -147,7 +149,7 @@ public class SuperStat {
             88000f,3854f,121.2f,105f, false, true);}
 
     //NS Highspeed version of the F140MS2
-    public static EntityData2 F140MS2HS(){return new EntityData2("NS E186","Netherlands","2006-","Electric",
+    public static EntityData2 NSHSF140MS2(){return new EntityData2("NS E186","Netherlands","2006-","Electric",
             "","",type, " Passenger Locomotive",
             67000f,7500f,85.0f,160f, false, true);}
 
@@ -157,12 +159,13 @@ public class SuperStat {
             0f,679.81f,46.0f,100f, false, true);}
 
     //SSB Re 484
-    public static EntityData2 F140MS(){return new EntityData2("SBB Re 484","Switzerland","2004-","Electric",
+    public static EntityData2 SBBRE484(){return new EntityData2("SBB Re 484","Switzerland","2004-","Electric",
             "","",type, " Freight Locomotive",
             67000f,7500f,85.4f,140f, false, true);}
 
-    //T32 Tender
-
+    //T32 Tender todo unfinished
+    public static EntityData3 T32Tender(){return new EntityData3("CR Class812","United_Kingdom","1899-1963","",
+            "",type," Tender", 19.5f, 0f,false, true);}
 
     //Wehrmachtslokomotive WR 360 C 14 / V36
     public static EntityData2 WR360C14(){return new EntityData2("Wehrmachtslokomotive WR 360 C 14","Germany","1937-1950","Diesel",
@@ -173,7 +176,61 @@ public class SuperStat {
     /**Rolling stock Declaration*/
     /** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z*/
 
+    //Donderbus 1st class todo unfinished
+    public static EntityData3 Donderbus1(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
 
+    //Donderbus 2nd class todo unfinished
+    public static EntityData3 Donderbus2(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //Donderbus 3rd class todo unfinished
+    public static EntityData3 Donderbus3(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //Eurofima with Compartments todo unfinished
+    public static EntityData3 EurofimaCompartment(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //Eurofima with Rows todo unfinished
+    public static EntityData3 EurofimaRows(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //Eurofima with Sleeperbeds todo unfinished
+    public static EntityData3 EurofimaSleeper(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //OFF52 todo unfinished
+    public static EntityData3 OFF52(){return new EntityData3("CR Class812","United_Kingdom","1899-1963","",
+            "",type," Tender", 19.5f, 0,false, true);}
+
+    //Rheingold 1st Kitchen todo unfinished
+    public static EntityData3 RheingoldKitchen1(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //Rheingold 1st Salon todo unfinished
+    public static EntityData3 RheingoldSalon1(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //Rheingold 2nd Kitchen todo unfinished
+    public static EntityData3 RheingoldKitchen2(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //Rheingold 2nd Salon todo unfinished
+    public static EntityData3 RheingoldSalon2(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //Rheingold Baggage todo unfinished
+    public static EntityData3 RheingoldBaggage(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //Sggnss 80 todo unfinished
+    public static EntityData3 Sggnss80(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //UK Openwagon todo unfinished
+    public static EntityData3 UKOpenWagon(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+            "",type," Freight Container", 21.5f, 120f,false, true);}
 
 
 }
