@@ -37,3 +37,5 @@ lib
 src/main/java/ebf/tim/utility/DoNotInclude.java
 .debris/*
 libs/*
+/src/main/java/wwcp/models/
+/src/main/resources/
