@@ -7,7 +7,9 @@ import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.models.Bogie;
+import ebf.tim.models.ParticleFX;
 import ebf.tim.registry.URIRegistry;
+import ebf.tim.utility.DebugUtil;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.item.Item;
@@ -19,6 +21,7 @@ import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.F140MS2;
 import wwcp.worldwidecontentpack;
 
+import java.util.List;
 import java.util.UUID;
 import net.minecraft.init.Items;
 
@@ -45,6 +48,7 @@ import net.minecraft.init.Items;
             return "Electric";
         }
 
+        @Override
         public String[] additionalItemText() {
             {return new String[]{RailUtility.translate( ("wwcp.era") + " VI")};}}
 
@@ -80,6 +84,7 @@ import net.minecraft.init.Items;
 
         public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
         }
+
         @Override
         public float getMaxFuel(){return 20;}
 
@@ -109,6 +114,7 @@ import net.minecraft.init.Items;
         @Override
         public float[][] bogieModelOffsets(){return new float[][]{{2.5f,0.05f,0},{-2.5f,0.05f,0}};
         }
+
         @Override
         public ModelBase[] bogieModels() {return new ModelBase[]{new flexxpower()}; }
 
@@ -138,9 +144,32 @@ import net.minecraft.init.Items;
         @Override
         public int[] getTankCapacity(){return new int[]{9161, 800};}
 
-
-        public int getRFCapacity() {
-            return 12000;
+        @SideOnly(Side.CLIENT)
+        public int[] getParticleData(int id) {
+            DebugUtil.println(id);
+            switch (id) {
+                case 0: {
+                    return new int[]{3, 100, 0x232323};//smoke
+                }
+                case 1: {
+                    return new int[]{5, 100, 0x232323};//heavy smoke
+                }
+                case 2: {
+                    return new int[]{2, 100, 0xEEEEEE};//steam
+                }
+                case 3: {
+                    return new int[]{6, 100, 0xCECDCB};//led lamp
+                }
+                case 4: {
+                    return new int[]{3, 50, 0xCC0000};//reverse lamp
+                }
+                case 5: {
+                    return new int[]{2, 25, 0x800080};//small sphere lamp
+                }
+                default: {
+                    return new int[]{6, 100, 0xCCCC00};//lamp
+                }
+            }
         }
 
         @Override

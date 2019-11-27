@@ -18,7 +18,7 @@ package wwcp.entities.locomotives.steamers;
         import net.minecraftforge.fluids.FluidContainerRegistry;
         import net.minecraftforge.fluids.FluidRegistry;
         import wwcp.entities.SuperStat;
-        import wwcp.entities.WWCPItemTransport;
+        import wwcp.entities.WWCPTransport;
         import wwcp.models.bogies.BR01FrontBogie;
         import wwcp.models.bogies.BackBogieDRBR01;
         import wwcp.models.locomotives.DRBR01;
@@ -30,7 +30,7 @@ public class EntityDRBR01Wagner extends EntityTrainCore {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPItemTransport(new EntityDRBR01Wagner(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityDRBR01Wagner(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
     public EntityDRBR01Wagner(World world) {
         super(world);
@@ -74,6 +74,7 @@ public class EntityDRBR01Wagner extends EntityTrainCore {
 
     @Override
     public float transportTopSpeed(){return accelerator<0?SuperStat.BR01Wagner().backTopSpeed:SuperStat.BR01Wagner().topSpeed;}
+
     @Override
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DR01/Wagner1.png", "textures/bogies/BR01/BR01FrontBlack.png",
@@ -133,7 +134,7 @@ public class EntityDRBR01Wagner extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return false;
+        return SuperStat.BR01Wagner().reinforced;
     }
 
     public int[] getTankCapacity() {

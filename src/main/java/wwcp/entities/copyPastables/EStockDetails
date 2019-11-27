@@ -1,5 +1,5 @@
 //This is a documentation class for copy pasting into an electric train class.
-
+package wwcp.locomotives.electrics
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -19,68 +19,91 @@ import java.util.UUID;
 import net.minecraft.init.Items;
 
 
-    public class Entityxxxxxx extends EntityTrainCore {
+// XXXX -> Entity Name
+// YYYY -> Data for SuperStat
+// ZZZZ -> Country for tab
+// QQQQ -> Bogies
 
-        public static final Item thisItem = new ItemTransport(new wwcp.entities.locomotives.Entityxxxxxx(null), worldwidecontentpack.MODID,worldwidecontentpack.xxxxxx);
+    public class EntityRE484 extends EntityTrainCore {
+
+        public static final Item thisItem = new ItemTransport(new wwcp.entities.locomotives.EntityRE484(null), worldwidecontentpack.MODID,worldwidecontentpack.ZZZZ);
 
         /**
          * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
          * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
          * @see EntityTrainCore
          */
-        public Entityxxxxxxxx(UUID owner, World world, double xPos, double yPos, double zPos) {
+        public EntityRE484(UUID owner, World world, double xPos, double yPos, double zPos) {
             super(owner, world, xPos, yPos, zPos);
         }
-        public Entityxxxxxx(World world){
+        public EntityRE484(World world){
             super(world);
         }
 
-        @Override
-        public String transportName(){return "Bombardier TRAXX F140 MS2";}
-        @Override
-        public String transportcountry(){return "Europe";}
-        @Override
-        public String transportYear(){return "2000-now";}
-        @Override
-        public String transportFuelType() {
-            return "Electric";
+    @Override
+    public String transportName() { return SuperStat.YYYY().name; }
+
+    @Override
+    public String transportcountry() { return SuperStat.YYYY().country; }
+
+    @Override
+    public String transportYear() { return SuperStat.YYYY().year; }
+
+    @Override
+    public String transportFuelType() {
+        return SuperStat.YYYY().fuel;
+    }
+    @Override
+    public boolean isFictional() {
+        return SuperStat.YYYY().fictional;
+    }
+    @Override
+    public float transportTractiveEffort() {
+        return SuperStat.YYYY().tractive_effort;
+    }
+    @Override
+    public float transportMetricHorsePower() {
+        return SuperStat.YYYY().metric_horsepower;
+    }
+    @Override
+    public float weightKg() {
+        return  SuperStat.YYYY().weightinKGs;
+    }
+
+        public boolean isReinforced() {
+            return SuperStat.YYYY().reinforced;
         }
-        @Override
-        public boolean isFictional(){return false;}
-        @Override
-        public float transportTractiveEffort(){return 0;}
-        @Override
-         public float transportMetricHorsePower(){return 75f;}
-        @Override
-        public float transportTopSpeed(){return 140f;}
-        @Override
-        public int getInventoryRows(){return 1;}
-         @Override
-         public String[] additionalItemText() {
-            {return new String[]{RailUtility.translate("wwcp.era") + "II"};}
-         }
+
+    @Override
+    public String[] additionalItemText() {
+        {return new String[]{RailUtility.translate(SuperStat.YYYY().additionalTextTitle) + SuperStat.YYYY().additionalText,
+                RailUtility.translate(SuperStat.YYYY().additionalTextTitle2) + SuperStat.YYYY().additionalText2};}
+    }
+
+    @Override
+    public float transportTopSpeed(){return accelerator<0?SuperStat.YYYY().backTopSpeed:SuperStat.YYYY().topSpeed;}
+
         @Override
         public void registerSkins(){
             SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T6.png", "textures/bogies/Flexxpower.png",
                     "HLE28 NMBS Cargo", "Used by the NMBS/SNCB in belgium for freight trains");
         }
+        @Override
         public float getMaxFuel(){return 20;}
 
-
+@Override
         public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
         }
-        @Override
+
 
 
         @Override
         public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.4f, -0.25f}};}
+
         @Override
         public float[] getHitboxSize() {
             return new float[]{9.5f,2.5f,1.5f};
         }
-
-        @Override
-        public float weightKg(){return 10886.2169f;}
 
         public ItemStack[] getRecipie() {
             return new ItemStack[]{
@@ -99,7 +122,7 @@ import net.minecraft.init.Items;
         public float[][] bogieModelOffsets(){return new float[][]{{2.5f,0.05f,0},{-2.5f,0.05f,0}};
         }
         @Override
-        public ModelBase[] bogieModels() {return new ModelBase[]{new xxxxxxx()}; }
+        public ModelBase[] bogieModels() {return new ModelBase[]{new ZZZZ()}; }
 
         @Override
         public float[] bogieLengthFromCenter() {
@@ -129,19 +152,12 @@ import net.minecraft.init.Items;
          * since this is a function it can b
          * te conditional as well, for instance if it has a specific skin.
          */
-        @Override
-        public boolean isReinforced(){return false;}
 
         /**
          * <h2>Fluid Tank Capacity</h2>
          */
         //@Override
         public int[] getTankCapacity(){return new int[]{9161, 800};}
-
-        //@Override
-        public int getRFCapacity() {
-            return 11000;
-        }
 
         @Override
         public boolean isItemValidForSlot(int slot, ItemStack stack){
@@ -168,7 +184,7 @@ import net.minecraft.init.Items;
             return thisItem;
         }
 
-        public ModelBase[] getModel(){return new ModelBase[]{new xxxxx()};}
+        public ModelBase[] getModel(){return new ModelBase[]{new QQQQ()};}
 
         /**
          * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

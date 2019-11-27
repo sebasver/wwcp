@@ -14,7 +14,7 @@ import net.minecraft.util.EnumChatFormatting;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WWCPItemTransport extends ItemTransport {
+public class WWCPTransport extends ItemTransport {
 
     private final List<String> subtext = new ArrayList<>();
     private static String t(String translate){
@@ -25,7 +25,7 @@ public class WWCPItemTransport extends ItemTransport {
     @SideOnly(Side.CLIENT)
     GenericRailTransport entity;
 
-    public WWCPItemTransport(GenericRailTransport cart, String MODID, CreativeTabs tabs) {
+    public WWCPTransport(GenericRailTransport cart, String MODID, CreativeTabs tabs) {
         super(cart, MODID, tabs);
 
         setUnlocalizedName(cart.transportName().replace(" ",""));

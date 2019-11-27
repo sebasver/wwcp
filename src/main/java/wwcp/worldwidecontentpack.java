@@ -42,7 +42,7 @@ import static wwcp.WWCP_Blocks.blockList;
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.4.4 Alpha";
+    public static final String MOD_VERSION = "0.4.5 Alpha";
 
     public Block DisplayTrainFourteen = new Display();
 
@@ -60,16 +60,16 @@ public class worldwidecontentpack {
         proxy.registerRenderers();
 
 
-        Belgium = new TiMTab(event.getSide().isClient(), "Belgian models", MODID, "myTab");
-        Germany = new TiMTab(event.getSide().isClient(), "German models", MODID, "myTab2");
-        United_Kingdom = new TiMTab(event.getSide().isClient(), "UK models", MODID, "myTab3");
-        France = new TiMTab(event.getSide().isClient(), "French models", MODID, "myTab4");
-        Netherlands = new TiMTab(event.getSide().isClient(), "Dutch models", MODID, "myTab5");
-        America = new TiMTab(event.getSide().isClient(), "American models", MODID, "myTab6");
-        Austria = new TiMTab(event.getSide().isClient(), "Austrian models", MODID, "myTab7");
-        Switzerland = new TiMTab(event.getSide().isClient(), "Swiss models", MODID, "myTab8");
-        European = new TiMTab(event.getSide().isClient(), "Inter European models", MODID, "myTab9");
-        BlocksWWCP = new TiMTab(event.getSide().isClient(), "Blocks", MODID, "blockTab");
+        Belgium = new TiMTab("Belgian models", MODID, "myTab");
+        Germany = new TiMTab("German models", MODID, "myTab2");
+        United_Kingdom = new TiMTab("UK models", MODID, "myTab3");
+        France = new TiMTab("French models", MODID, "myTab4");
+        Netherlands = new TiMTab("Dutch models", MODID, "myTab5");
+        America = new TiMTab("American models", MODID, "myTab6");
+        Austria = new TiMTab( "Austrian models", MODID, "myTab7");
+        Switzerland = new TiMTab("Swiss models", MODID, "myTab8");
+        European = new TiMTab("Inter European models", MODID, "myTab9");
+        BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
 
         //for the eventhandler
         MinecraftForge.EVENT_BUS.register(ClientProxy.eventManager);
@@ -77,21 +77,21 @@ public class worldwidecontentpack {
         //CreativeTabs WWCeurope = new TiMTab(event.getSide().isClient(), "European Models", "wwcp", "eu");
 
 
-        blockList.add(TiMGenericRegistry.registerBlock(TrainsInMotion.proxy.isClient(),new BlockPlatform().setCreativeTab(worldwidecontentpack.BlocksWWCP).setBlockTextureName("wwcp:blocks/Platform.png"), null, "wwcp.platform", null, proxy.getRenderPlatform()));
+        blockList.add(TiMGenericRegistry.registerBlock(new BlockPlatform().setCreativeTab(worldwidecontentpack.BlocksWWCP).setBlockTextureName("wwcp:blocks/Platform.png"), null, "wwcp.platform", null, proxy.getRenderPlatform()));
 
         // Train type declartions
 
-        registerTransports(event.getSide().isClient(), MODID, listSteamTrains(), null);
-        registerTransports(event.getSide().isClient(), MODID, listTenders(), null);
-        registerTransports(event.getSide().isClient(), MODID, listDiesel(), null);
-        registerTransports(event.getSide().isClient(), MODID, listpassenger(), null);
-        registerTransports(event.getSide().isClient(), MODID, listelectric(), null);
-        registerTransports(event.getSide().isClient(), MODID, listFreight(), null);
-        registerTransports(event.getSide().isClient(), MODID, listRailbusses(), null);
-        registerTransports(event.getSide().isClient(), MODID, listTemperory(),null);
+        registerTransports(MODID, listSteamTrains(), null);
+        registerTransports(MODID,listTenders(), null);
+        registerTransports(MODID, listDiesel(), null);
+        registerTransports(MODID, listpassenger(), null);
+        registerTransports(MODID, listelectric(), null);
+        registerTransports(MODID, listFreight(), null);
+        registerTransports(MODID, listRailbusses(), null);
+        registerTransports(MODID, listTemperory(),null);
 
 
-        addRecipe(new ItemStack(TiMGenericRegistry.registerBlock(event.getSide().isClient(), DisplayTrainFourteen, worldwidecontentpack.United_Kingdom, "blocks.14xxdisplay", null, proxy.getTESR()), 1), "WWW", "WIW", "WWW", 'W', Blocks.planks, 'I', Items.iron_ingot);
+        addRecipe(new ItemStack(TiMGenericRegistry.registerBlock( DisplayTrainFourteen, worldwidecontentpack.United_Kingdom, "blocks.14xxdisplay", null, proxy.getTESR()), 1), "WWW", "WIW", "WWW", 'W', Blocks.planks, 'I', Items.iron_ingot);
         //just copy this for a new type
     }
 
@@ -137,14 +137,15 @@ public class worldwidecontentpack {
     public static GenericRailTransport[] listTemperory() {
         return new GenericRailTransport[]{
                 new EntityE10(null),
-                new EntityPropaganda(null)
+                new EntityPropaganda(null),
         };
     }
 
     //Electric List
     public static GenericRailTransport[] listelectric() {
         return new GenericRailTransport[]{
-                new EntityTRAXXF140MS2(null)
+                new EntityTRAXXF140MS2(null),
+                new EntityRE484(null)
         };
     }
 
@@ -170,13 +171,13 @@ public class worldwidecontentpack {
 
     public static GenericRailTransport[] listFreight() {
         return new GenericRailTransport[]{
-                new EntityTEUSmall(null),
+//                new EntityTEUSmall(null),
                 new EntityUKopenWagon(null),
                 new EntityOFF52Beetle(null),
-                new EntitySGNS801BT2TT(null),
-                new EntitySGNS802BT(null),
-                new EntitySGNS804TS(null),
-                new EntitySGNS801BT2TS(null)
+//                new EntitySGNS801BT2TT(null),
+//                new EntitySGNS802BT(null),
+//                new EntitySGNS804TS(null),
+//                new EntitySGNS801BT2TS(null)
         };
     }
 
