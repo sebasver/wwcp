@@ -4,7 +4,6 @@ package wwcp;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import ebf.tim.TrainsInMotion;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.TiMTab;
 import ebf.tim.registry.TiMGenericRegistry;
@@ -22,7 +21,7 @@ import wwcp.entities.locomotives.electrics.*;
 import wwcp.entities.locomotives.steamers.*;
 import wwcp.entities.locomotives.diesels.*;
 import wwcp.entities.railbusses.*;
-import wwcp.entities.rollingstock.*;
+import wwcp.entities.passengerstock.*;
 import wwcp.entities.tender.*;
 import wwcp.proxy.ClientProxy;
 import wwcp.proxy.CommonProxy;
@@ -163,7 +162,11 @@ public class worldwidecontentpack {
                 new EntityRheingoldSalonTwo(null),
                 new EntityRheingoldSpeiseOne(null),
                 new EntityRheingoldSpeiseTwo(null),
-                new EntityRheingoldBagage(null)
+                new EntityRheingoldBagage(null),
+                new EntityRheingoldSalonOneChristmas(null),
+                new EntityRheingoldSalonTwoChristmas(null),
+                new EntityRheingoldSpeiseOneChristmas(null),
+                new EntityRheingoldSpeiseTwoChristmas(null)
 
 
         };

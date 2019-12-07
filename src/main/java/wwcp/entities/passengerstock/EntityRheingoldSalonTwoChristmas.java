@@ -1,8 +1,7 @@
 //This is a documentation class for copy pasting into a passenger entity file.
-package wwcp.entities.rollingstock;
+package wwcp.entities.passengerstock;
 
 import ebf.tim.TrainsInMotion;
-import ebf.tim.api.RollingstockBase;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
@@ -15,30 +14,28 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
-import wwcp.models.rollingstock.RheingoldSalonOne;
-import wwcp.models.rollingstock.RheingoldSalonTwo;
-import wwcp.models.rollingstock.RheingoldSpeiseOne;
-import wwcp.models.rollingstock.RheingoldSpeiseTwo;
+import wwcp.models.passengerStock.ChristmasSalon2;
+import wwcp.models.passengerStock.RheingoldSalonTwo;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
 import static ebf.tim.utility.RailUtility.DefineStack;
 
-//todo This one still need adjustments with offsets
-public class EntityRheingoldSpeiseOne extends GenericRailTransport {
+
+public class EntityRheingoldSalonTwoChristmas extends GenericRailTransport {
 
     private static final String[] itemDescription = new String[]{
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new ItemTransport(new EntityRheingoldSpeiseOne(null), worldwidecontentpack.MODID , worldwidecontentpack.Germany);
+    public static final Item thisItem = new ItemTransport(new EntityRheingoldSalonTwoChristmas(null), worldwidecontentpack.MODID , worldwidecontentpack.Germany);
 
 
-    public EntityRheingoldSpeiseOne(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityRheingoldSalonTwoChristmas(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityRheingoldSpeiseOne(World world){
+    public EntityRheingoldSalonTwoChristmas(World world){
         super(world);
     }
 
@@ -49,12 +46,12 @@ public class EntityRheingoldSpeiseOne extends GenericRailTransport {
 
     @Override
     public float weightKg() {
-        return 56600f;
+        return 52800f;
     }
 
     @Override
     public String transportName() {
-        return "SA4ük28";
+        return "SB4ü28 Christmas";
     }
 
     @Override
@@ -79,8 +76,9 @@ public class EntityRheingoldSpeiseOne extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold 1st class Kitchen"};}
+        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold 2nd class Salon"};}
     }
+
     /**
      * <h1>Variable Overrides</h1>
      */
@@ -108,12 +106,12 @@ public class EntityRheingoldSpeiseOne extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0f,-0.1F,0.F}};
+        return new float[][]{{-0.225f,-0.1F,0.F}};
     }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/RheingoldSet/Speise1.png", "textures/bogies/RheingoldBogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasSalon2.png", "textures/bogies/RheingoldBogie.png",
                 "NAME", "Description");
     }
     @Override
@@ -152,7 +150,7 @@ public class EntityRheingoldSpeiseOne extends GenericRailTransport {
     }
 
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new RheingoldSpeiseOne()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ChristmasSalon2()};}
 
     /**
      * <h2>pre-asigned values</h2>

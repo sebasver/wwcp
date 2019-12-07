@@ -88,6 +88,7 @@ public class EntityRE484 extends EntityTrainCore {
     public float transportTopSpeed(){return accelerator<0?SuperStat.SBBRE484().backTopSpeed:SuperStat.SBBRE484().topSpeed;}
 
     @Override
+    //todo Needs an SBB RE 484 skin before final implementation, remove other skins
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T1.png", "textures/bogies/Flexxpower.png","Belgian Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T2.png", "textures/bogies/Flexxpower.png","NS Livery", "Used by the NS in their regular service");
@@ -102,34 +103,6 @@ public class EntityRE484 extends EntityTrainCore {
     }
     @Override
     public float getMaxFuel(){return 20;}
-
-    @SideOnly(Side.CLIENT)
-    public int[] getParticleData(int id) {
-        DebugUtil.println(id);
-        switch (id) {
-            case 0: {
-                return new int[]{3, 100, 0x232323};//smoke
-            }
-            case 1: {
-                return new int[]{5, 100, 0x232323};//heavy smoke
-            }
-            case 2: {
-                return new int[]{2, 100, 0xEEEEEE};//steam
-            }
-            case 3: {
-                return new int[]{6, 100, 0xCECDCB};//led lamp
-            }
-            case 4: {
-                return new int[]{4, 50, 0xCC0000};//reverse lamp
-            }
-            case 5: {
-                return new int[]{1, 50, 0xCC0000};//small sphere lamp
-            }
-            default: {
-                return new int[]{6, 100, 0xCCCC00};//lamp
-            }
-        }
-    }
 
 //    @Override
     public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC; }

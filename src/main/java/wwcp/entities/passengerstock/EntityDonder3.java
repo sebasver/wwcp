@@ -1,4 +1,4 @@
-package wwcp.entities.rollingstock;
+package wwcp.entities.passengerstock;
 
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.models.rollingstock.ClassDonder4;
+import wwcp.models.passengerStock.ClassDonder3;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -18,19 +18,19 @@ import java.util.UUID;
 import static ebf.tim.utility.RailUtility.DefineStack;
 
 
-public class EntityDonder4 extends GenericRailTransport {
+public class EntityDonder3 extends GenericRailTransport {
     private static final String[] itemDescription = new String[]{
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") + ": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") + ": 4 " + StatCollector.translateToLocal("menu.item.players")}; //whats with the +4?
 
-    public static final Item thisItem = new ItemTransport(new EntityDonder4(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new ItemTransport(new EntityDonder3(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
 
-    public EntityDonder4(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityDonder3(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityDonder4(World world) {
+    public EntityDonder3(World world) {
         super(world);
     }
 
@@ -41,9 +41,9 @@ public class EntityDonder4 extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DonderBushe/B3.png", "Blue Donnerbüsche ", "Factory blue version");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DonderBushe/G3.png", "Green Donnerbüsche ", "Factory green version");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DonderBushe/R3.png", "Red Donnerbüsche ", "Factory red version");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/DonderBushe/R2.png", "Red Donnerbüsche ", "Factory red version");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/DonderBushe/G2.png", "Green Donnerbüsche ", "Factory green version");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/DonderBushe/B2.png", "Blue Donnerbüsche ", "Factory blue version");
     }
     //How to add in more skins Just recopy skinregistry?
     //ETERNAL NOTE yeah, you just do SkinRegistry.addSkin over and over for all the skins you want.
@@ -57,12 +57,13 @@ public class EntityDonder4 extends GenericRailTransport {
     }
 
     @Override
-    public float weightKg() { return 20000;
+    public float weightKg() {
+        return 20000f;
     }
 
     @Override
     public String transportName() {
-        return "Donnerbüchse 4th class";
+        return "Donnerbüchse 3rd class";
     }
 
     @Override
@@ -107,15 +108,16 @@ public class EntityDonder4 extends GenericRailTransport {
         return new float[]{4.70f, 2.2f, 1.5f};
     }
 
+
     @Override
     public float getRenderScale() {
         return 0.0625f;
     }
 
     @Override
-    public float[][] modelOffsets() {
-        return new float[][]{{-0f, -0.05F, 0.F}};
-    }
+        public float[][] modelOffsets() {
+            return new float[][]{{-0f,-0.05F,0.F}};
+        }
 
 
     //public TrainsInMotion.transportTypes[] getTypes(){return TrainsInMotion.transportTypes.PASSENGER.singleton();}
@@ -170,7 +172,7 @@ public class EntityDonder4 extends GenericRailTransport {
 
     @Override
     public ModelBase[] getModel() {
-        return new ModelBase[]{new ClassDonder4()};
+        return new ModelBase[]{new ClassDonder3()};
     }
 
     @Override

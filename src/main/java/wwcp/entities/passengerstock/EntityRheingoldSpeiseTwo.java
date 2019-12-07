@@ -1,8 +1,7 @@
 //This is a documentation class for copy pasting into a passenger entity file.
-package wwcp.entities.rollingstock;
+package wwcp.entities.passengerstock;
 
 import ebf.tim.TrainsInMotion;
-import ebf.tim.api.RollingstockBase;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
@@ -15,7 +14,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
-import wwcp.models.rollingstock.RheingoldBaggage;
+import wwcp.models.passengerStock.RheingoldSpeiseTwo;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -23,18 +22,19 @@ import java.util.UUID;
 import static ebf.tim.utility.RailUtility.DefineStack;
 
 
-public class EntityRheingoldBagage extends GenericRailTransport {
+public class EntityRheingoldSpeiseTwo extends GenericRailTransport {
+
     private static final String[] itemDescription = new String[]{
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new ItemTransport(new EntityRheingoldBagage(null), worldwidecontentpack.MODID , worldwidecontentpack.Germany);
+    public static final Item thisItem = new ItemTransport(new EntityRheingoldSpeiseTwo(null), worldwidecontentpack.MODID , worldwidecontentpack.Germany);
 
 
-    public EntityRheingoldBagage(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityRheingoldSpeiseTwo(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityRheingoldBagage(World world){
+    public EntityRheingoldSpeiseTwo(World world){
         super(world);
     }
 
@@ -45,12 +45,12 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public float weightKg() {
-        return 41200f;
+        return 55500f;
     }
 
     @Override
     public String transportName() {
-        return "SPw4ü28";
+        return "SB4ük28";
     }
 
     @Override
@@ -75,7 +75,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold Baggage"};}
+        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold 2nd class Kitchen"};}
     }
 
     /**
@@ -84,7 +84,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.7f,0.12f,0},{-2.7f,0.12f,0}};
+        return new float[][]{{3.70f,0.12f,0},{-3.70f,0.12f,0}};
     }
 
     @Override
@@ -105,15 +105,14 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.34f,-0.1F,0.F}};
+        return new float[][]{{-0.225f,-0.1F,0.F}};
     }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/RheingoldSet/Baggage.png", "textures/bogies/RheingoldBogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldSet/Speise2.png", "textures/bogies/RheingoldBogie.png",
                 "NAME", "Description");
     }
-
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
@@ -137,11 +136,11 @@ public class EntityRheingoldBagage extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return null;}
+    public float[][] getRiderOffsets(){return new float[][]{{1.5f,1.15f,0.2f},{0.75f,0.5f, 0.2f},{-0.75f,0.5f, 0.2f},{-2f,0.5f, 0.2f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.5f,2,1.5f};
+        return new float[]{11.525f,2,1.5f};
     }
 
     @Override
@@ -150,7 +149,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
     }
 
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new RheingoldBaggage()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new RheingoldSpeiseTwo()};}
 
     /**
      * <h2>pre-asigned values</h2>
@@ -160,3 +159,4 @@ public class EntityRheingoldBagage extends GenericRailTransport {
         return thisItem;
     }
 }
+

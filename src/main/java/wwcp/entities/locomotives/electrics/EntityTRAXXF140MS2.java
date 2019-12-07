@@ -16,7 +16,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import wwcp.entities.SuperStat;
 import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.F140MS2;
 import wwcp.worldwidecontentpack;
@@ -24,6 +23,7 @@ import wwcp.worldwidecontentpack;
 import java.util.List;
 import java.util.UUID;
 import net.minecraft.init.Items;
+//todo Remake class into a new entity class to fix constant crashing with this entity file
 
     public class EntityTRAXXF140MS2 extends EntityTrainCore {
 

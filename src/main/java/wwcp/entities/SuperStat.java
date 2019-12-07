@@ -81,7 +81,7 @@ public class SuperStat {
 
 
     }
-
+//todo add in all Traxx locomotive Types
     /** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z*/
 
     //BR01 Wagner Deflectors
@@ -108,10 +108,10 @@ public class SuperStat {
     public static EntityData3 Mcintosh3000Galon(){return new EntityData3("CR Class812","United_Kingdom","1899-1963","",
             "",type," Tender", 19.5f,0f, false, true);}
 
-    //F140 MS2
-    public static EntityData2 F140MS2(){return new EntityData2("F140 MS2 Traxx","Europe","2006-","Electric",
+    //F140 MS2E
+    public static EntityData2 F140MS2E(){return new EntityData2("F140 MS2E","Europe","2006-","Electric",
             "","",type, " Freight Locomotive",
-            67000f,7500f,85.0f,140f, false, true);}
+            67442.68f,7613.88f,85.0f,140f, false, true);}
 
     //GE AC4400 CW
     public static EntityData2 GEAC4400CW(){return new EntityData2("GE AC4400CW","America","1993-","Diesel",
@@ -148,20 +148,20 @@ public class SuperStat {
             nick," Cake Tins",type, " Mixed Locomotive",
             88000f,3854f,121.2f,105f, false, true);}
 
-    //NS Highspeed version of the F140MS2
-    public static EntityData2 NSHSF140MS2(){return new EntityData2("NS E186","Netherlands","2006-","Electric",
+    //NS Highspeed version of the F140MS2E
+    public static EntityData2 NSHSF140MS2E(){return new EntityData2("NS E186","Netherlands","2006-","Electric",
             "","",type, " Passenger Locomotive",
-            67000f,7500f,85.0f,160f, false, true);}
+            67442.68f,7613.88f,85.0f,160f, false, true);}
 
     //NE 81 / BR626
     public static EntityData2 NE81(){return new EntityData2("NE 81","Germany","1981-1995","Diesel",
             nick," BR 626",type, " Passenger Railbus",
             0f,679.81f,46.0f,100f, false, true);}
 
-    //SSB Re 484
+    //SSB Re 484 / F 140MS2
     public static EntityData2 SBBRE484(){return new EntityData2("SBB Re 484","Switzerland","2004-","Electric",
             "","",type, " Freight Locomotive",
-            67000f,7500f,85.4f,140f, false, true);}
+            0f,7613.88f,85.4f,140f, false, true);}
 
     //T32 Tender todo unfinished
     public static EntityData3 T32Tender(){return new EntityData3("CR Class812","United_Kingdom","1899-1963","",

@@ -1,4 +1,4 @@
-package wwcp.entities.rollingstock;
+package wwcp.entities.passengerstock;
 
 
 import ebf.tim.TrainsInMotion;
@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 import wwcp.worldwidecontentpack;
 
 import wwcp.models.bogies.FlexxLoad;
-import wwcp.models.rollingstock.DBpza;
+import wwcp.models.passengerStock.DBpza;
 
 import java.util.UUID;
 
@@ -83,9 +83,9 @@ public class EntityDBpza extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DBpza/D2.png", "textures/bogies/Flexxload.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/DBpza/D2.png", "textures/bogies/Flexxload.png",
                 "DB Regio", "DB Regio livery");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/rollingstock/DBpza/D1.png", "textures/bogies/Flexxload.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/DBpza/D1.png", "textures/bogies/Flexxload.png",
                 "WWCP Transportation", "WWCP Transportation livery");
     }
 
