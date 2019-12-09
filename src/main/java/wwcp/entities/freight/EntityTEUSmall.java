@@ -49,7 +49,7 @@ public class EntityTEUSmall extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/TEUSmallContainer/C12.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/TEUSmallContainer/C12.png",
                 "WWCP Corperate Skin",
                 "Fictional skin promoting WWCP as a transport Company");
     }

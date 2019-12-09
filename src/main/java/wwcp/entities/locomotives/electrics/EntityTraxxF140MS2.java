@@ -8,9 +8,9 @@ import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.registry.URIRegistry;
-import ebf.tim.utility.DebugUtil;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -19,8 +19,8 @@ import wwcp.entities.SuperStat;
 import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.F140MS2;
 import wwcp.worldwidecontentpack;
+
 import java.util.UUID;
-import net.minecraft.init.Items;
 
 
 // XXXX
@@ -28,64 +28,64 @@ import net.minecraft.init.Items;
 // ZZZZ
 // QQQQ
 
-public class EntityRE484 extends EntityTrainCore {
+public class EntityTraxxF140MS2 extends EntityTrainCore {
 
-    public static final Item thisItem = new ItemTransport(new wwcp.entities.locomotives.electrics.EntityRE484(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+    public static final Item thisItem = new ItemTransport(new EntityTraxxF140MS2(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntityRE484(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityTraxxF140MS2(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityRE484(World world){
+    public EntityTraxxF140MS2(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return SuperStat.SBBRE484().name; }
+    public String transportName() { return SuperStat.F140MS2E().name; }
 
     @Override
-    public String transportcountry() { return SuperStat.SBBRE484().country; }
+    public String transportcountry() { return SuperStat.F140MS2E().country; }
 
     @Override
-    public String transportYear() { return SuperStat.SBBRE484().year; }
+    public String transportYear() { return SuperStat.F140MS2E().year; }
 
     @Override
     public String transportFuelType() {
-        return SuperStat.SBBRE484().fuel;
+        return SuperStat.F140MS2E().fuel;
     }
     @Override
     public boolean isFictional() {
-        return SuperStat.SBBRE484().fictional;
+        return SuperStat.F140MS2E().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return SuperStat.SBBRE484().tractive_effort;
+        return SuperStat.F140MS2E().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return SuperStat.SBBRE484().metric_horsepower;
+        return SuperStat.F140MS2E().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  SuperStat.SBBRE484().weightinKGs;
+        return  SuperStat.F140MS2E().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return SuperStat.SBBRE484().reinforced;
+        return SuperStat.F140MS2E().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.SBBRE484().additionalTextTitle) + SuperStat.SBBRE484().additionalText,
-                RailUtility.translate(SuperStat.SBBRE484().additionalTextTitle2) + SuperStat.SBBRE484().additionalText2};}
+        {return new String[]{RailUtility.translate(SuperStat.F140MS2E().additionalTextTitle) + SuperStat.F140MS2E().additionalText,
+                RailUtility.translate(SuperStat.F140MS2E().additionalTextTitle2) + SuperStat.F140MS2E().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0?SuperStat.SBBRE484().backTopSpeed:SuperStat.SBBRE484().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0?SuperStat.F140MS2E().backTopSpeed:SuperStat.F140MS2E().topSpeed;}
 
     @Override
     //todo Needs an SBB RE 484 skin before final implementation, remove other skins

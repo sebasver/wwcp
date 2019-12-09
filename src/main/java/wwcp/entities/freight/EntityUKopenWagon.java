@@ -51,7 +51,7 @@ public class EntityUKopenWagon extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/UKopenwagon/O1.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/O1.png",
                 "Default open wagon",
                 "This was the factory skin of the car");
     }

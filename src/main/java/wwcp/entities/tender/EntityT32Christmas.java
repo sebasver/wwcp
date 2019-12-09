@@ -4,56 +4,53 @@
 package wwcp.entities.tender;
 
 import ebf.tim.TrainsInMotion.transportTypes;
-import ebf.tim.api.RollingstockBase;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.utility.FuelHandler;
 import ebf.tim.utility.RailUtility;
-import ebf.timsquared.TiMSquared;
-import ebf.timsquared.models.bogies.CMDBogie;
-import ebf.timsquared.models.rollingstock.ModelGATX1300GallonTanker;
 import fexcraft.tmt.slim.ModelBase;
-import java.util.List;
-import java.util.UUID;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import wwcp.entities.SuperStat;
 import wwcp.models.bogies.Tender32Bogie;
-import wwcp.models.tenders.Tender32;
+import wwcp.models.tenders.ChristmasTenderT32;
 import wwcp.worldwidecontentpack;
 
-public class EntityT32 extends GenericRailTransport {
+import java.util.List;
+import java.util.UUID;
+
+public class EntityT32Christmas extends GenericRailTransport {
 
 
-    public EntityT32(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityT32Christmas(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntityT32(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new ItemTransport(new EntityT32Christmas(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
-    public EntityT32(World world) {
+    public EntityT32Christmas(World world) {
         super(world);
     }
 
     public String transportName() {
-        return SuperStat.T32Tender().name;
+        return SuperStat.T32TenderChristmas().name;
     }
 
     public String transportcountry() {
-        return SuperStat.T32Tender().country;
+        return SuperStat.T32TenderChristmas().country;
     }
 
     public String transportYear() {
-        return SuperStat.T32Tender().year;
+        return SuperStat.T32TenderChristmas().year;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.T32Tender().additionalTextTitle) + SuperStat.T32Tender().additionalText,
-                RailUtility.translate(SuperStat.T32Tender().additionalTextTitle2) + SuperStat.T32Tender().additionalText2};}
+        {return new String[]{RailUtility.translate(SuperStat.T32TenderChristmas().additionalTextTitle) + SuperStat.T32TenderChristmas().additionalText,
+                RailUtility.translate(SuperStat.T32TenderChristmas().additionalTextTitle2) + SuperStat.T32TenderChristmas().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
         return new float[][]{{1.01f, 0.12F, 0.0F}, {-0.66F, 0.12F, 0.0F}};
@@ -76,18 +73,12 @@ public class EntityT32 extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/T32Tender/T32DB.png", new String[]{"textures/bogies/T32Bogie/T32BogieBlack.png"},
-                "DB Livery", "The standarized T32 tender paint while in use for the DB");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/T32Tender/T32DR.png", new String[]{"textures/bogies/T32Bogie/T32BogieBlack.png"},
-                "DRG Livery", "The standarized T32 tender paint while in use for the DRG");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/T32Tender/T32DR.png", new String[]{"textures/bogies/T32Bogie/T32BogieWhite.png"},
-                "DRG Livery white wheels", "The standarized T32 tender paint with white wheels while in use for the DRG");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/T32Tender/T32DB.png", new String[]{"textures/bogies/T32Bogie/T32BogieWhite.png"},
-                "DB Livery white wheels", "The standarized T32 tender paint with white wheels while in use for the DB");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasT32.png", new String[]{"textures/bogies/T32Bogie/T32BogieBlack.png"},
+                "Christmas Livery", "The standarized T32 tender paint while in use for the DB");
     }
 
     public boolean isReinforced() {
-        return SuperStat.T32Tender().reinforced;
+        return SuperStat.T32TenderChristmas().reinforced;
     }
 
     public int getInventoryRows() {
@@ -127,6 +118,6 @@ public class EntityT32 extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new Tender32()};
+        return new ModelBase[]{new ChristmasTenderT32()};
     }
 }

@@ -1,86 +1,86 @@
 package wwcp.entities.locomotives.steamers;
 
-        import cpw.mods.fml.relauncher.Side;
-        import cpw.mods.fml.relauncher.SideOnly;
-        import ebf.tim.TrainsInMotion.transportTypes;
-        import ebf.tim.api.SkinRegistry;
-        import ebf.tim.entities.EntityTrainCore;
-        import ebf.tim.registry.URIRegistry;
-        import ebf.tim.utility.RailUtility;
-        import fexcraft.tmt.slim.ModelBase;
-        import java.util.UUID;
-        import net.minecraft.item.Item;
-        import net.minecraft.item.ItemStack;
-        import net.minecraft.tileentity.TileEntityFurnace;
-        import net.minecraft.util.ResourceLocation;
-        import net.minecraft.world.World;
-        import net.minecraftforge.common.util.ForgeDirection;
-        import net.minecraftforge.fluids.FluidContainerRegistry;
-        import net.minecraftforge.fluids.FluidRegistry;
-        import wwcp.entities.SuperStat;
-        import wwcp.entities.WWCPTransport;
-        import wwcp.models.bogies.BR01FrontBogie;
-        import wwcp.models.bogies.BackBogieDRBR01;
-        import wwcp.models.locomotives.DRBR01;
-        import wwcp.worldwidecontentpack;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import ebf.tim.TrainsInMotion.transportTypes;
+import ebf.tim.api.SkinRegistry;
+import ebf.tim.entities.EntityTrainCore;
+import ebf.tim.registry.URIRegistry;
+import ebf.tim.utility.RailUtility;
+import fexcraft.tmt.slim.ModelBase;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntityFurnace;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidRegistry;
+import wwcp.entities.SuperStat;
+import wwcp.entities.WWCPTransport;
+import wwcp.models.bogies.BR01FrontBogie;
+import wwcp.models.bogies.BackBogieDRBR01;
+import wwcp.models.locomotives.ChristmasBR01;
+import wwcp.models.locomotives.DRBR01;
+import wwcp.worldwidecontentpack;
 
-public class EntityDRBR01Wagner extends EntityTrainCore {
+import java.util.UUID;
 
-    public EntityDRBR01Wagner(UUID owner, World world, double xPos, double yPos, double zPos) {
+public class EntityDRBR01WitteChristmas extends EntityTrainCore {
+
+    public EntityDRBR01WitteChristmas(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityDRBR01Wagner(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityDRBR01WitteChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
-    public EntityDRBR01Wagner(World world) {
+    public EntityDRBR01WitteChristmas(World world) {
         super(world);
     }
 
-//    @Override
-//    public float getPlayerScale(){return 0.65f;}
+    @Override
+    public float getPlayerScale(){return 0.60f;}
 
     @Override
-    public String transportName() { return SuperStat.DRBR01Wagner().name; }
+    public String transportName() { return SuperStat.DRBR01WitteChristmas().name; }
     @Override
-    public String transportcountry() { return SuperStat.DRBR01Wagner().country; }
+    public String transportcountry() { return SuperStat.DRBR01WitteChristmas().country; }
     @Override
-    public String transportYear() { return SuperStat.DRBR01Wagner().year; }
+    public String transportYear() { return SuperStat.DRBR01WitteChristmas().year; }
     @Override
     public String transportFuelType() {
-        return SuperStat.DRBR01Wagner().fuel;
+        return SuperStat.DRBR01WitteChristmas().fuel;
     }
     @Override
     public boolean isFictional() {
-        return SuperStat.DRBR01Wagner().fictional;
+        return SuperStat.DRBR01WitteChristmas().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return SuperStat.DRBR01Wagner().tractive_effort;
+        return SuperStat.DRBR01WitteChristmas().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return SuperStat.DRBR01Wagner().metric_horsepower;
+        return SuperStat.DRBR01WitteChristmas().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  SuperStat.DRBR01Wagner().weightinKGs;
+        return  SuperStat.DRBR01WitteChristmas().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.DRBR01Wagner().additionalTextTitle) + SuperStat.DRBR01Wagner().additionalText,
-                RailUtility.translate(SuperStat.DRBR01Wagner().additionalTextTitle2) + SuperStat.DRBR01Wagner().additionalText2};}
+        {return new String[]{RailUtility.translate(SuperStat.DRBR01WitteChristmas().additionalTextTitle) + SuperStat.DRBR01WitteChristmas().additionalText,
+                RailUtility.translate(SuperStat.DRBR01WitteChristmas().additionalTextTitle2) + SuperStat.DRBR01WitteChristmas().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0?SuperStat.DRBR01Wagner().backTopSpeed:SuperStat.DRBR01Wagner().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0?SuperStat.DRBR01WitteChristmas().backTopSpeed:SuperStat.DRBR01WitteChristmas().topSpeed;}
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DR01/Wagner1.png", "textures/bogies/BR01/BR01FrontBlack.png",
-                "BR01 Wagner", "Default black wheels for the BR01 Wagner");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DR01/Wagner2.png", "textures/bogies/BR01/BR01FrontWhite.png",
-                "BR01 Wagner white wheels", "Special white wheels for the BR01 Wagner");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasBR01.png", "textures/bogies/BR01/BR01FrontBlack.png",
+                "Christmas BR01 Witte deflectors", "Default black wheels for the BR01 Wagner");
     }
 
     public int getInventoryRows() {
@@ -134,7 +134,7 @@ public class EntityDRBR01Wagner extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return SuperStat.DRBR01Wagner().reinforced;
+        return SuperStat.DRBR01WitteChristmas().reinforced;
     }
 
     public int[] getTankCapacity() {
@@ -174,7 +174,7 @@ public class EntityDRBR01Wagner extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new DRBR01()};
+        return new ModelBase[]{new ChristmasBR01()};
     }
 
     @SideOnly(Side.CLIENT)

@@ -49,7 +49,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public String transportName() {
-        return "SPw4ü28";
+        return "SPw4u28";
     }
 
     @Override
@@ -104,7 +104,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.34f,-0.1F,0.F}};
+        return new float[][]{{0.34f,-0.125F,0.F}};
     }
 
     @Override
@@ -136,7 +136,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return null;}
+    public float[][] getRiderOffsets(){return new float[][]{{3f,1.1f,0.2f}};}
 
     @Override
     public float[] getHitboxSize() {

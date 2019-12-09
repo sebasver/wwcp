@@ -6,20 +6,21 @@ import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
-
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.SuperStat;
 import wwcp.models.bogies.MzBogie;
+import wwcp.models.locomotives.DSBMzIV;
 import wwcp.models.locomotives.DSBMzI_II;
 import wwcp.worldwidecontentpack;
+
 import java.util.UUID;
-import net.minecraft.init.Items;
 
 
 // XXXX -> Entity Name
@@ -27,71 +28,71 @@ import net.minecraft.init.Items;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntityMZClassOne extends EntityTrainCore {
+public class EntityMZClassFour extends EntityTrainCore {
 
-    public static final Item thisItem = new ItemTransport(new wwcp.entities.locomotives.diesels.EntityMZClassOne(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+    public static final Item thisItem = new ItemTransport(new EntityMZClassFour(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntityMZClassOne(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityMZClassFour(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityMZClassOne(World world){
+    public EntityMZClassFour(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return SuperStat.MZI().name; }
+    public String transportName() { return SuperStat.MZIV().name; }
 
     @Override
-    public String transportcountry() { return SuperStat.MZI().country; }
+    public String transportcountry() { return SuperStat.MZIV().country; }
 
     @Override
-    public String transportYear() { return SuperStat.MZI().year; }
+    public String transportYear() { return SuperStat.MZIV().year; }
 
     @Override
     public String transportFuelType() {
-        return SuperStat.MZI().fuel;
+        return SuperStat.MZIV().fuel;
     }
     @Override
     public boolean isFictional() {
-        return SuperStat.MZI().fictional;
+        return SuperStat.MZIV().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return SuperStat.MZI().tractive_effort;
+        return SuperStat.MZIV().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return SuperStat.MZI().metric_horsepower;
+        return SuperStat.MZIV().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  SuperStat.MZI().weightinKGs;
+        return  SuperStat.MZIV().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return SuperStat.MZI().reinforced;
+        return SuperStat.MZIV().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.MZI().additionalTextTitle) + SuperStat.MZI().additionalText,
-                RailUtility.translate(SuperStat.MZI().additionalTextTitle2) + SuperStat.MZI().additionalText2};}
+        {return new String[]{RailUtility.translate(SuperStat.MZIV().additionalTextTitle) + SuperStat.MZIV().additionalText,
+                RailUtility.translate(SuperStat.MZIV().additionalTextTitle2) + SuperStat.MZIV().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0?SuperStat.MZI().backTopSpeed:SuperStat.MZI().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0?SuperStat.MZIV().backTopSpeed:SuperStat.MZIV().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz12Red.png", "textures/bogies/Mz_Bogey.png",
-                "DSB Red Livery", "Standard livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz12RedBlack1.png", "textures/bogies/Mz_Bogey.png",
-                "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz4RedBlack1.png", "textures/bogies/Mz_Bogey.png",
+                "DSB Livery", "Standard Red livery for the DSB");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz4RedBlack2001.png", "textures/bogies/Mz_Bogey.png",
+                "DSB Livery 2", "Standard Red and Black livery for the DSB");
     }
 
     @Override
@@ -104,7 +105,7 @@ public class EntityMZClassOne extends EntityTrainCore {
 
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.4f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.6f, -0.25f}};}
 
     @Override
     public float[] getHitboxSize() {
@@ -190,7 +191,7 @@ public class EntityMZClassOne extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzI_II()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzIV()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

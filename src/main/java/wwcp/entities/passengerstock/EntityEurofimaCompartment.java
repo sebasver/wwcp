@@ -96,8 +96,6 @@ public class EntityEurofimaCompartment extends GenericRailTransport {
                 "Eurofima WWCP promotional two skin", "Livery used when just coming out of the Factory");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E16.png", "textures/bogies/Eurofimabogie.png",
                 "Eurofima Trams in Motion", "Livery used when just coming out of the Factory");
-
-
     }
 
     @Override
@@ -164,7 +162,8 @@ public class EntityEurofimaCompartment extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{2.2f,1.1f, 0.1f},{0.75f,0.5f, 0.2f},{-0.75f,0.5f, 0.2f},{-2f,0.5f, 0.2f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{2.2f,1.1f, 0.2f}};}
+
 
     @Override
     public float[] getHitboxSize() {

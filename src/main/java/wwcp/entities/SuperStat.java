@@ -85,7 +85,12 @@ public class SuperStat {
     /** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z*/
 
     //BR01 Wagner Deflectors
-    public static EntityData1 BR01Wagner(){return new EntityData1("BR 01 Wagner","Germany","1926-1982","Steam",
+    public static EntityData1 DRBR01Wagner(){return new EntityData1("BR 01 Wagner","Germany","1926-1982","Steam",
+            "","",type, " Passenger Locomotive",
+            0.0f,2210f,108.9f,130f,50f,false, true);}
+
+    //BR01 Witte Christmas
+    public static EntityData1 DRBR01WitteChristmas(){return new EntityData1("Christmas BR 01 Witte","Germany","1926-1982","Steam",
             "","",type, " Passenger Locomotive",
             0.0f,2210f,108.9f,130f,50f,false, true);}
 
@@ -122,6 +127,16 @@ public class SuperStat {
     public static EntityData2 GWR9400(){return new EntityData2("GWR 9400","United_Kingdom","1947-1965","Steam",
             "","",type, " Shunting Locomotive",
             22515f,0f,56.2f,72f,false, true);}
+
+    //KoF III 1
+    public static EntityData2 KoFIII1(){return new EntityData2("KoF III 1","Germany","1959-","Diesel",
+            nick,"KleinLokomotive",type, " Shunting Locomotive",
+            18726.58f,240f,22f,30f,false, true);}
+
+    //KoF III 2
+    public static EntityData2 KoFIII2(){return new EntityData2("KoF III 2","Germany","1959-","Diesel",
+            nick,"KleinLokomotive",type, " Shunting Locomotive",
+            18726.58f,240f,22f,30f,false, true);}
 
     //MZ Class I
     public static EntityData2 MZI(){return new EntityData2("MZ I","Denmark","1967-","Diesel",
@@ -164,8 +179,12 @@ public class SuperStat {
             0f,7613.88f,85.4f,140f, false, true);}
 
     //T32 Tender todo unfinished
-    public static EntityData3 T32Tender(){return new EntityData3("CR Class812","United_Kingdom","1899-1963","",
-            "",type," Tender", 19.5f, 0f,false, true);}
+    public static EntityData3 T32Tender(){return new EntityData3("T32 2'2'","Germany","1926-1982","",
+            "",type," Tender", 20f, 0f,false, true);}
+
+    //T32 Christmas Tender
+    public static EntityData3 T32TenderChristmas(){return new EntityData3("T32 2'2' Christmas","Germany","1926-1982","",
+            "",type," Tender", 20f, 0f,false, true);}
 
     //Wehrmachtslokomotive WR 360 C 14 / V36
     public static EntityData2 WR360C14(){return new EntityData2("Wehrmachtslokomotive WR 360 C 14","Germany","1937-1950","Diesel",

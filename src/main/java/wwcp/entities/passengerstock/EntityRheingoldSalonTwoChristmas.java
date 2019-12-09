@@ -51,7 +51,7 @@ public class EntityRheingoldSalonTwoChristmas extends GenericRailTransport {
 
     @Override
     public String transportName() {
-        return "SB4ü28 Christmas";
+        return "SB4u28 Christmas";
     }
 
     @Override
@@ -106,7 +106,7 @@ public class EntityRheingoldSalonTwoChristmas extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.225f,-0.1F,0.F}};
+        return new float[][]{{-0.225f,-0.125F,0.F}};
     }
 
     @Override
@@ -137,7 +137,7 @@ public class EntityRheingoldSalonTwoChristmas extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.5f,1.15f,0.2f},{0.75f,0.5f, 0.2f},{-0.75f,0.5f, 0.2f},{-2f,0.5f, 0.2f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{1.6f,1.1f,0.4f}};}
 
     @Override
     public float[] getHitboxSize() {

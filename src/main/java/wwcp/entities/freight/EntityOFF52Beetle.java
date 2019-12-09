@@ -51,7 +51,7 @@ public class EntityOFF52Beetle extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freight/OFF52/OFF52_1.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/OFF52/OFF52_1.png",
                 "OFF 52 with 4 Beetles",
                 "Fictional skin promoting WWCP as a transport Company");
     }

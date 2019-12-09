@@ -6,10 +6,10 @@ import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
-
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -18,8 +18,8 @@ import wwcp.entities.SuperStat;
 import wwcp.models.bogies.MzBogie;
 import wwcp.models.locomotives.DSBMzI_II;
 import wwcp.worldwidecontentpack;
+
 import java.util.UUID;
-import net.minecraft.init.Items;
 
 
 // XXXX -> Entity Name
@@ -27,64 +27,64 @@ import net.minecraft.init.Items;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntityMZClassOne extends EntityTrainCore {
+public class EntityMZClassTwo extends EntityTrainCore {
 
-    public static final Item thisItem = new ItemTransport(new wwcp.entities.locomotives.diesels.EntityMZClassOne(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+    public static final Item thisItem = new ItemTransport(new EntityMZClassTwo(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntityMZClassOne(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityMZClassTwo(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityMZClassOne(World world){
+    public EntityMZClassTwo(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return SuperStat.MZI().name; }
+    public String transportName() { return SuperStat.MZII().name; }
 
     @Override
-    public String transportcountry() { return SuperStat.MZI().country; }
+    public String transportcountry() { return SuperStat.MZII().country; }
 
     @Override
-    public String transportYear() { return SuperStat.MZI().year; }
+    public String transportYear() { return SuperStat.MZII().year; }
 
     @Override
     public String transportFuelType() {
-        return SuperStat.MZI().fuel;
+        return SuperStat.MZII().fuel;
     }
     @Override
     public boolean isFictional() {
-        return SuperStat.MZI().fictional;
+        return SuperStat.MZII().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return SuperStat.MZI().tractive_effort;
+        return SuperStat.MZII().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return SuperStat.MZI().metric_horsepower;
+        return SuperStat.MZII().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  SuperStat.MZI().weightinKGs;
+        return  SuperStat.MZII().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return SuperStat.MZI().reinforced;
+        return SuperStat.MZII().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.MZI().additionalTextTitle) + SuperStat.MZI().additionalText,
-                RailUtility.translate(SuperStat.MZI().additionalTextTitle2) + SuperStat.MZI().additionalText2};}
+        {return new String[]{RailUtility.translate(SuperStat.MZII().additionalTextTitle) + SuperStat.MZII().additionalText,
+                RailUtility.translate(SuperStat.MZII().additionalTextTitle2) + SuperStat.MZII().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0?SuperStat.MZI().backTopSpeed:SuperStat.MZI().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0?SuperStat.MZII().backTopSpeed:SuperStat.MZII().topSpeed;}
 
     @Override
     public void registerSkins(){

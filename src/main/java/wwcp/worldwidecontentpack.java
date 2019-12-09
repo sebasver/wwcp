@@ -41,7 +41,7 @@ import static wwcp.WWCP_Blocks.blockList;
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.4.5 Alpha";
+    public static final String MOD_VERSION = "0.4.8 Alpha";
 
     public Block DisplayTrainFourteen = new Display();
 
@@ -104,7 +104,8 @@ public class worldwidecontentpack {
         return new GenericRailTransport[]{
                 new Entity94xx(null),
                 new EntityClass812(null),
-                new EntityDRBR01Wagner(null)
+                new EntityDRBR01Wagner(null),
+                new EntityDRBR01WitteChristmas(null)
         };
     }
 
@@ -112,7 +113,8 @@ public class worldwidecontentpack {
     public static GenericRailTransport[] listTenders() {
         return new GenericRailTransport[]{
                 new EntityClass812Tender(null),
-                new EntityT32(null)
+                new EntityT32(null),
+                new EntityT32Christmas(null)
         };
     }
 
@@ -122,7 +124,13 @@ public class worldwidecontentpack {
                 new EntityV36(null),
                 new EntityClass37(null),
                 new EntityAC4400CW(null),
-                new EntityMZClassOne(null)
+                new EntityMZClassOne(null),
+                new EntityMZClassTwo(null),
+                new EntityMZClassThree(null),
+                new EntityMZClassFour(null),
+                new EntityKofIII(null),
+                new EntityKofIII2(null)
+
         };
     }
 
@@ -143,7 +151,7 @@ public class worldwidecontentpack {
     //Electric List
     public static GenericRailTransport[] listelectric() {
         return new GenericRailTransport[]{
-                new EntityTRAXXF140MS2(null),
+                new EntityTraxxF140MS2(null),
                 new EntityRE484(null)
         };
     }
@@ -174,13 +182,13 @@ public class worldwidecontentpack {
 
     public static GenericRailTransport[] listFreight() {
         return new GenericRailTransport[]{
-//                new EntityTEUSmall(null),
+                new EntityTEUSmall(null),
                 new EntityUKopenWagon(null),
                 new EntityOFF52Beetle(null),
-//                new EntitySGNS801BT2TT(null),
-//                new EntitySGNS802BT(null),
-//                new EntitySGNS804TS(null),
-//                new EntitySGNS801BT2TS(null)
+                new EntitySGNS801BT2TT(null),
+                new EntitySGNS802BT(null),
+                new EntitySGNS804TS(null),
+                new EntitySGNS801BT2TS(null)
         };
     }
 

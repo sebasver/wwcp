@@ -50,7 +50,7 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
 
     @Override
     public String transportName() {
-        return "SA4ü28";
+        return "SA4u28";
     }
 
     @Override
@@ -105,7 +105,7 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{1.04f,-0.1F,0.F}};
+        return new float[][]{{1.04f,-0.125F,0.F}};
     }
 
     @Override
@@ -136,7 +136,12 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.5f,1.15f,0.3f},{0.75f,0.5f, 0.2f},{-0.75f,0.5f, 0.2f},{-2f,0.5f, 0.2f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{1.3f,1.1f,0.4f}};}
+
+//    @Override
+//    public float getPlayerScale() {
+//        return 0.60f;
+//    }
 
     @Override
     public float[] getHitboxSize() {
