@@ -106,7 +106,7 @@ public class EntityRheingoldSalonOneChristmas extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,-0.125F,0.F}};
+        return new float[][]{{-0.1925f,-0.125F,0.F}};
     }
 
     @Override

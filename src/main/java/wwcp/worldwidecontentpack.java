@@ -41,9 +41,7 @@ import static wwcp.WWCP_Blocks.blockList;
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.4.8 Alpha";
-
-    public Block DisplayTrainFourteen = new Display();
+    public static final String MOD_VERSION = "0.4.9 Alpha";
 
 
     @Mod.EventHandler
