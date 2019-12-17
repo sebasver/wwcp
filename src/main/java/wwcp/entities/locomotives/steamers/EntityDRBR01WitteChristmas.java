@@ -24,6 +24,9 @@ import wwcp.models.locomotives.ChristmasBR01;
 import wwcp.models.locomotives.DRBR01;
 import wwcp.worldwidecontentpack;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.UUID;
 
 public class EntityDRBR01WitteChristmas extends EntityTrainCore {
@@ -77,10 +80,18 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     @Override
     public float transportTopSpeed(){return accelerator<0?SuperStat.DRBR01WitteChristmas().backTopSpeed:SuperStat.DRBR01WitteChristmas().topSpeed;}
 
+
+    private LocalDateTime now = LocalDateTime.now();
+
     @Override
     public void registerSkins() {
+        if(now.getMonthValue()==12||now.getMonthValue()==1 ){
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasBR01.png", "textures/bogies/BR01/BR01FrontBlack.png",
-                "Christmas BR01 Witte deflectors", "Default black wheels for the BR01 Wagner");
+                "Christmas BR01 Witte deflectors", "Default black wheels for the BR01 Wagner");}
+        else{
+            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasBR01.png", "textures/bogies/BR01/BR01FrontBlack.png",
+                    "Christmas BR01 Witte deflectors", "Default black wheels for the BR01 Wagner");
+        }
     }
 
     public int getInventoryRows() {

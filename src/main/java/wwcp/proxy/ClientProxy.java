@@ -5,13 +5,13 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import wwcp.EventManager;
-import wwcp.tiles.platforms.render.RenderPlatform;
+import wwcp.tiles.render.RenderPlatformBlocks;
 
 
 public class ClientProxy extends CommonProxy
 {
 
-    public static RenderPlatform renderer = new RenderPlatform();
+    public static RenderPlatformBlocks renderer = new RenderPlatformBlocks();
 
     @Override
     public Object getRenderPlatform(){return renderer;}
@@ -36,13 +36,6 @@ public class ClientProxy extends CommonProxy
     //Method added by Oskiek.
     @Override
     public void registerRenderers(){
-
-        //self explaining.
-//        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPlatform.class, new RenderPlatform());
-//        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPlatformSecond.class, new RenderPlatform());
-//        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPlatformThird.class, new RenderPlatform());
-//        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPlatformFourth.class, new RenderPlatform());
-
         registerItemRenderers();
     }
     public void registerItemRenderers()

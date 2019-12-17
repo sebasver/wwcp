@@ -25,11 +25,10 @@ public class EventManager {
 
     @SubscribeEvent
     public void entityJoinWorldEvent(EntityJoinWorldEvent event){
-        if(event.world == null || !event.world.isRemote || event.entity instanceof EntityPlayer == false) return;//fex-fix
-        ((EntityPlayer)event.entity).addChatMessage(new ChatComponentText("You are currently playing a Press teaser release of WWCP"));
+        if(event.world == null || !event.world.isRemote || !(event.entity instanceof EntityPlayer)) return;//fex-fix
         ((EntityPlayer)event.entity).addChatMessage(new ChatComponentText("For official releases please stay tuned in our discord at https://discord.gg/FVVAEpS"));
         ((EntityPlayer)event.entity).addChatMessage(new ChatComponentText("Keep in mind that everything in this mod is currently subject to change and might be buggy."));
-        ((EntityPlayer)event.entity).addChatMessage(new ChatComponentText("Have fun playing this teaser - The WWCP Team."));
+        ((EntityPlayer)event.entity).addChatMessage(new ChatComponentText("Happy Hollidays! - The WWCP Team."));
 
     }
 

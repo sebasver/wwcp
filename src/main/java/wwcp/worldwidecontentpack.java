@@ -6,15 +6,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.TiMTab;
-import ebf.tim.registry.TiMGenericRegistry;
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import wwcp.blocks.BlockPlatform;
-import wwcp.blocks.Display;
 import wwcp.entities.TempTC.*;
 import wwcp.entities.freight.*;
 import wwcp.entities.locomotives.electrics.*;
@@ -27,10 +20,9 @@ import wwcp.proxy.ClientProxy;
 import wwcp.proxy.CommonProxy;
 
 
-
 import static cpw.mods.fml.common.registry.GameRegistry.addRecipe;
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
-import static wwcp.WWCP_Blocks.blockList;
+
 
 //gradlew setupDecompWorkspace --refresh-dependencies idea
 //X.Y.Z
@@ -41,7 +33,7 @@ import static wwcp.WWCP_Blocks.blockList;
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.4.9 Alpha";
+    public static final String MOD_VERSION = "0.4.12 Alpha";
 
 
     @Mod.EventHandler
@@ -56,7 +48,6 @@ public class worldwidecontentpack {
         //For the custom armor
         proxy.registerRenderers();
 
-
         Belgium = new TiMTab("Belgian models", MODID, "myTab");
         Germany = new TiMTab("German models", MODID, "myTab2");
         United_Kingdom = new TiMTab("UK models", MODID, "myTab3");
@@ -67,31 +58,24 @@ public class worldwidecontentpack {
         Switzerland = new TiMTab("Swiss models", MODID, "myTab8");
         European = new TiMTab("Inter European models", MODID, "myTab9");
         BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
+        FestivitiesTab = new TiMTab("Festive Models", MODID, "festivetab");
 
         //for the eventhandler
         MinecraftForge.EVENT_BUS.register(ClientProxy.eventManager);
 
-        //CreativeTabs WWCeurope = new TiMTab(event.getSide().isClient(), "European Models", "wwcp", "eu");
+        wwcp_registrations.registerBlocks();
+        wwcp_registrations.registerItems();
+        registerTransports(worldwidecontentpack.MODID, listSteamTrains(), null);
+        registerTransports(worldwidecontentpack.MODID, listTenders(), null);
+        registerTransports(worldwidecontentpack.MODID, listDiesel(), null);
+        registerTransports(worldwidecontentpack.MODID, listpassenger(), null);
+        registerTransports(worldwidecontentpack.MODID, listelectric(), null);
+        registerTransports(worldwidecontentpack.MODID, listFreight(), null);
+        registerTransports(worldwidecontentpack.MODID, listRailbusses(), null);
+        registerTransports(worldwidecontentpack.MODID, listTemperory(),null);
 
-
-        blockList.add(TiMGenericRegistry.registerBlock(new BlockPlatform().setCreativeTab(worldwidecontentpack.BlocksWWCP).setBlockTextureName("wwcp:blocks/Platform.png"), null, "wwcp.platform", null, proxy.getRenderPlatform()));
-
-        // Train type declartions
-
-        registerTransports(MODID, listSteamTrains(), null);
-        registerTransports(MODID,listTenders(), null);
-        registerTransports(MODID, listDiesel(), null);
-        registerTransports(MODID, listpassenger(), null);
-        registerTransports(MODID, listelectric(), null);
-        registerTransports(MODID, listFreight(), null);
-        registerTransports(MODID, listRailbusses(), null);
-        registerTransports(MODID, listTemperory(),null);
-
-
-        addRecipe(new ItemStack(TiMGenericRegistry.registerBlock( DisplayTrainFourteen, worldwidecontentpack.United_Kingdom, "blocks.14xxdisplay", null, proxy.getTESR()), 1), "WWW", "WIW", "WWW", 'W', Blocks.planks, 'I', Items.iron_ingot);
-        //just copy this for a new type
     }
-
+        //todo Block platform 5(Full block),7(half slope),9(station lamp) still erroring
 
     /**
      * I hereby start declaring the individual trains itself. I will insert a // statement before each big group
@@ -106,7 +90,6 @@ public class worldwidecontentpack {
                 new EntityDRBR01WitteChristmas(null)
         };
     }
-
     // Tender list
     public static GenericRailTransport[] listTenders() {
         return new GenericRailTransport[]{
@@ -115,7 +98,6 @@ public class worldwidecontentpack {
                 new EntityT32Christmas(null)
         };
     }
-
     // Diesel List
     public static GenericRailTransport[] listDiesel() {
         return new GenericRailTransport[]{
@@ -131,21 +113,20 @@ public class worldwidecontentpack {
 
         };
     }
-
+    //Railbusses
     public static GenericRailTransport[] listRailbusses() {
         return new GenericRailTransport[]{
                 new EntityNE81(null),
                 new EntityVT98(null)
         };
     }
-
+    //Temporary TC stock for testing purposes
     public static GenericRailTransport[] listTemperory() {
         return new GenericRailTransport[]{
                 new EntityE10(null),
                 new EntityPropaganda(null),
         };
     }
-
     //Electric List
     public static GenericRailTransport[] listelectric() {
         return new GenericRailTransport[]{
@@ -153,8 +134,7 @@ public class worldwidecontentpack {
                 new EntityRE484(null)
         };
     }
-
-    // Passenger car list
+    //Passenger car list
     public static GenericRailTransport[] listpassenger() {
         return new GenericRailTransport[]{
                 new EntityEurofimaCompartment(null),
@@ -177,7 +157,7 @@ public class worldwidecontentpack {
 
         };
     }
-
+    //Freight list
     public static GenericRailTransport[] listFreight() {
         return new GenericRailTransport[]{
                 new EntityTEUSmall(null),
@@ -192,7 +172,7 @@ public class worldwidecontentpack {
 
 
     // declaring of the creative tabs I will be using
-    public static CreativeTabs Belgium, Germany, United_Kingdom, France, Netherlands, America, Austria, Switzerland, European, BlocksWWCP;
+    public static CreativeTabs Belgium, Germany, United_Kingdom, France, Netherlands, America, Austria, Switzerland, European, BlocksWWCP, FestivitiesTab;
 
     @SidedProxy(clientSide = "wwcp.proxy.ClientProxy", serverSide = "wwcp.proxy.CommonProxy")
     public static CommonProxy proxy;
