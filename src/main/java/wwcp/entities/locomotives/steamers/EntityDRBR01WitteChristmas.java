@@ -5,6 +5,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion.transportTypes;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
+import ebf.tim.models.ParticleFX;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
@@ -21,12 +22,10 @@ import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.BR01FrontBogie;
 import wwcp.models.bogies.BackBogieDRBR01;
 import wwcp.models.locomotives.ChristmasBR01;
-import wwcp.models.locomotives.DRBR01;
 import wwcp.worldwidecontentpack;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 public class EntityDRBR01WitteChristmas extends EntityTrainCore {
@@ -80,19 +79,21 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     @Override
     public float transportTopSpeed(){return accelerator<0?SuperStat.DRBR01WitteChristmas().backTopSpeed:SuperStat.DRBR01WitteChristmas().topSpeed;}
 
-
-    private LocalDateTime now = LocalDateTime.now();
+    @Override
+    @SideOnly(Side.CLIENT)
+    public int[] getParticleData(int id) {
+        switch (id){
+            case 1: {return new int[]{1,50,0xCCCC00};}
+            case 2: {return new int[]{20,100,0xCCCC00};}
+            default: {return new int[]{1,50,0xCCCC11};}
+        }
+    }
 
     @Override
     public void registerSkins() {
-        if(now.getMonthValue()==12||now.getMonthValue()==1 ){
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasBR01.png", "textures/bogies/BR01/BR01FrontBlack.png",
                 "Christmas BR01 Witte deflectors", "Default black wheels for the BR01 Wagner");}
-        else{
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasBR01.png", "textures/bogies/BR01/BR01FrontBlack.png",
-                    "Christmas BR01 Witte deflectors", "Default black wheels for the BR01 Wagner");
-        }
-    }
+
 
     public int getInventoryRows() {
         return 1;
@@ -103,7 +104,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     }
 
     public float getMaxFuel() {
-        return 1.0F;
+        return 100.0F;
     }
 
     public float[][] getRiderOffsets() {
@@ -129,7 +130,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     public ModelBase[] bogieModels() {return new ModelBase[]{new BR01FrontBogie(), new BackBogieDRBR01()}; }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, 0.1F};
+        return new float[]{2.5F, -2.5F};
     }
 
     public float getRenderScale() {
@@ -149,7 +150,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     }
 
     public int[] getTankCapacity() {
-        return new int[]{9161, 800};
+        return new int[]{9000, 800};
     }
 
     public int getRFCapacity() {

@@ -20,6 +20,8 @@ import wwcp.proxy.ClientProxy;
 import wwcp.proxy.CommonProxy;
 
 
+import java.time.LocalDateTime;
+
 import static cpw.mods.fml.common.registry.GameRegistry.addRecipe;
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
@@ -63,8 +65,9 @@ public class worldwidecontentpack {
         //for the eventhandler
         MinecraftForge.EVENT_BUS.register(ClientProxy.eventManager);
 
-        wwcp_registrations.registerBlocks();
         wwcp_registrations.registerItems();
+        wwcp_registrations.registerBlocks();
+
         registerTransports(worldwidecontentpack.MODID, listSteamTrains(), null);
         registerTransports(worldwidecontentpack.MODID, listTenders(), null);
         registerTransports(worldwidecontentpack.MODID, listDiesel(), null);

@@ -130,12 +130,12 @@ public class SuperStat {
 
     //KoF III 1
     public static EntityData2 KoFIII1(){return new EntityData2("KoF III 1","Germany","1959-","Diesel",
-            nick,"KleinLokomotive",type, " Shunting Locomotive",
+            nick," Klein Lokomotive",type, " Shunting Locomotive",
             18726.58f,240f,22f,30f,false, true);}
 
     //KoF III 2
     public static EntityData2 KoFIII2(){return new EntityData2("KoF III 2","Germany","1959-","Diesel",
-            nick,"KleinLokomotive",type, " Shunting Locomotive",
+            nick," Klein Lokomotive",type, " Shunting Locomotive",
             18726.58f,240f,22f,30f,false, true);}
 
     //MZ Class I
