@@ -2,12 +2,9 @@ package wwcp.entities;
 
 public class SuperStat {
 
-
     public static String era = "wwcp.era";
     public static String nick = "wwcp.nick";
     public static String type = "wwcp.type";
-
-
 
     /**Backspeed has to be known*/
     public static class EntityData1{
@@ -85,7 +82,7 @@ public class SuperStat {
     /** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z*/
 
     //BR01 Wagner Deflectors
-    public static EntityData1 DRBR01Wagner(){return new EntityData1("BR 01 Wagner","Germany","1926-1982","Steam",
+    public static EntityData1 DRBR01Wagner(){return new EntityData1("DR BR 01","Germany","1926-1982","Steam",
             "","",type, " Passenger Locomotive",
             0.0f,2210f,108.9f,130f,50f,false, true);}
 
@@ -99,13 +96,18 @@ public class SuperStat {
             nick," VT 98",type, " Passenger Railbus",
             0f,299.12f,18.9f,90f, false, true);}
 
+    //BR 798 / VT 98
+    public static EntityData2 BR798Ads(){return new EntityData2("BR 798 Advertising","Germany","1953-2000","Diesel",
+            nick," VT 98",type, " Passenger Railbus",
+            0f,299.12f,18.9f,90f, false, true);}
+
     //Class 37
-    public static EntityData2 Class37(){return new EntityData2("Class 37","United_Kingdom","1960-","Diesel",
+    public static EntityData2 Class37(){return new EntityData2("Class 37","United Kingdom","1960-","Diesel",
             nick," Tractors",type, " Mixed Locomotive",
             55000f,1750f,102f,140f, false, true);}
 
     //CR 812
-    public static EntityData2 CR812(){return new EntityData2("CR Class812","United_Kingdom","1899-1963","Steam",
+    public static EntityData2 CR812(){return new EntityData2("CR Class812","United Kingdom","1899-1963","Steam",
             nick," Jumbos",type, " Mixed Locomotive",
             20170f,0f,46.38f,88.51f, false, true);}
 
@@ -124,7 +126,7 @@ public class SuperStat {
             145000f,4400f,193f,112f, false, true);}
 
     //GWR 9400
-    public static EntityData2 GWR9400(){return new EntityData2("GWR 9400","United_Kingdom","1947-1965","Steam",
+    public static EntityData2 GWR9400(){return new EntityData2("GWR 9400","United Kingdom","1947-1965","Steam",
             "","",type, " Shunting Locomotive",
             22515f,0f,56.2f,72f,false, true);}
 
@@ -173,6 +175,16 @@ public class SuperStat {
             nick," BR 626",type, " Passenger Railbus",
             0f,679.81f,46.0f,100f, false, true);}
 
+    //Sentinel 100 HP
+    public static EntityData2 Sentinel100HP(){return new EntityData2("Sentinel100HP","United Kingdom","1931-1955","Steam",
+            "","",type, " Shunting Locomotive",
+            8870f,100f,19.3f,33.8f, false, true);}
+
+    //Sentinel 100 HP
+    public static EntityData2 Sentinel100HPChristmas(){return new EntityData2("Sentinel100HPChristmas","United Kingdom","1931-1955","Steam",
+            "","",type, " Shunting Locomotive",
+            8870f,100f,19.3f,33.8f, false, true);}
+
     //SSB Re 484 / F 140MS2
     public static EntityData2 SBBRE484(){return new EntityData2("SBB Re 484","Switzerland","2004-","Electric",
             "","",type, " Freight Locomotive",
@@ -218,6 +230,14 @@ public class SuperStat {
     //Eurofima with Sleeperbeds todo unfinished
     public static EntityData3 EurofimaSleeper(){return new EntityData3("Sggnss 80'","Europe","2014-","",
             "",type," Freight Container", 21.5f, 120f,false, true);}
+
+    //GWR Third
+    public static EntityData3 GWRThirdOpen(){return new EntityData3("GWR Third Class open (BG)","United Kingdom","1838-1854-","",
+            "",type," Passenger Carriage", 9.5f, 0f,false, true);}
+
+    //GWR Third
+    public static EntityData3 GWRThirdOpenChristmas(){return new EntityData3("GWR Third Class open Christmas(BG)","United Kingdom","1838-1854-","",
+            "",type," Passenger Carriage", 9.5f, 0f,false, true);}
 
     //OFF52 todo unfinished
     public static EntityData3 OFF52(){return new EntityData3("CR Class812","United_Kingdom","1899-1963","",

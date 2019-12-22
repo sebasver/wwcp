@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.WWCPTransport;
 import wwcp.worldwidecontentpack;
 
 import wwcp.models.bogies.FlexxLoad;
@@ -27,7 +28,7 @@ public class EntityDBpza extends GenericRailTransport {
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") + ": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") + ": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new ItemTransport(new EntityDBpza(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityDBpza(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
 
     public EntityDBpza(UUID owner, World world, double xPos, double yPos, double zPos) {
@@ -87,6 +88,10 @@ public class EntityDBpza extends GenericRailTransport {
                 "DB Regio", "DB Regio livery");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/DBpza/D1.png", "textures/bogies/Flexxload.png",
                 "WWCP Transportation", "WWCP Transportation livery");
+    }
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:DB Regio";
     }
 
     @Override

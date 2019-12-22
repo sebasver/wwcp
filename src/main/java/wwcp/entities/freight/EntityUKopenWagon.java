@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.freight.UKopenwagon;
 import wwcp.worldwidecontentpack;
 
@@ -20,7 +21,7 @@ public class EntityUKopenWagon extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new ItemTransport(new EntityUKopenWagon((World)null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new WWCPTransport(new EntityUKopenWagon((World)null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
     public EntityUKopenWagon(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);

@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.freight.OFF52Beetles;
 import wwcp.worldwidecontentpack;
 
@@ -20,7 +21,7 @@ public class EntityOFF52Beetle extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new ItemTransport(new EntityOFF52Beetle((World)null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityOFF52Beetle((World)null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
     public EntityOFF52Beetle(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);

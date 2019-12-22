@@ -7,6 +7,7 @@ import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.models.ParticleFX;
 import ebf.tim.registry.URIRegistry;
+import ebf.tim.utility.FuelHandler;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.item.Item;
@@ -34,7 +35,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityDRBR01WitteChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityDRBR01WitteChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.FestivitiesTab);
 
     public EntityDRBR01WitteChristmas(World world) {
         super(world);
@@ -84,7 +85,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     public int[] getParticleData(int id) {
         switch (id){
             case 1: {return new int[]{1,50,0xCCCC00};}
-            case 2: {return new int[]{20,100,0xCCCC00};}
+            case 2: {return new int[]{1,10,0xCCCC00};}
             default: {return new int[]{1,50,0xCCCC11};}
         }
     }
@@ -104,7 +105,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     }
 
     public float getMaxFuel() {
-        return 100.0F;
+        return 1.0F;
     }
 
     public float[][] getRiderOffsets() {
@@ -150,20 +151,12 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     }
 
     public int[] getTankCapacity() {
-        return new int[]{9000, 800};
+        return new int[]{9000, 1000};
     }
 
-    public int getRFCapacity() {
-        return 0;
-    }
-
-    public String[] getTankFilters(int tank) {
-        switch (tank) {
-            case 0:
-                return new String[]{FluidRegistry.WATER.getName()};
-            default:
-                return new String[]{FluidRegistry.LAVA.getName()};
-        }
+    @Override
+    public String[][] getTankFilters(){
+        return FuelHandler.DefaultTanks.STEAM.value();
     }
 
     public boolean isItemValidForSlot(int slot, ItemStack stack) {

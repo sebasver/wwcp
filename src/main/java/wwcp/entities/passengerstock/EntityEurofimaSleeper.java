@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.EurofimaBogie;
 import wwcp.models.passengerStock.EurofimaSleeper;
 import wwcp.worldwidecontentpack;
@@ -27,7 +28,7 @@ public class EntityEurofimaSleeper extends GenericRailTransport {
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new ItemTransport(new EntityEurofimaSleeper(null), worldwidecontentpack.MODID , worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityEurofimaSleeper(null), worldwidecontentpack.MODID , worldwidecontentpack.European);
 
 
     public EntityEurofimaSleeper(UUID owner, World world, double xPos, double yPos, double zPos) {

@@ -16,6 +16,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.SuperStat;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.F140MS2;
 import wwcp.worldwidecontentpack;
@@ -30,7 +31,7 @@ import net.minecraft.init.Items;
 
 public class EntityRE484 extends EntityTrainCore {
 
-    public static final Item thisItem = new ItemTransport(new wwcp.entities.locomotives.electrics.EntityRE484(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new wwcp.entities.locomotives.electrics.EntityRE484(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.

@@ -1,5 +1,5 @@
 //This is a documentation file for copy pasting into a steam locomotive.
-package wwcp.entities.locomotives;
+package wwcp.entities.locomotives.steamers;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -23,6 +23,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.SuperStat;
+import wwcp.models.locomotives.ChristmasSentinel;
 import wwcp.worldwidecontentpack;
 
 // XXXX -> Entity Name
@@ -30,66 +31,66 @@ import wwcp.worldwidecontentpack;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntityXXXX extends EntityTrainCore {
+public class EntitySentinel100HPChristmas extends EntityTrainCore {
 
-    public EntityXXXX(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntitySentinel100HPChristmas(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntityXXXX(null), worldwidecontentpack.MODID, worldwidecontentpack.ZZZZ);
+    public static final Item thisItem = new ItemTransport(new EntitySentinel100HPChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.FestivitiesTab);
 
-    public EntityXXXX(World world) {
+    public EntitySentinel100HPChristmas(World world) {
         super(world);
     }
 
     @Override
-    public String transportName() { return SuperStat.YYYY().name; }
+    public String transportName() { return SuperStat.Sentinel100HPChristmas().name; }
 
     @Override
-    public String transportcountry() { return SuperStat.YYYY().country; }
+    public String transportcountry() { return SuperStat.Sentinel100HPChristmas().country; }
 
     @Override
-    public String transportYear() { return SuperStat.YYYY().year; }
+    public String transportYear() { return SuperStat.Sentinel100HPChristmas().year; }
 
     @Override
     public String transportFuelType() {
-        return SuperStat.YYYY().fuel;
+        return SuperStat.Sentinel100HPChristmas().fuel;
     }
     @Override
     public boolean isFictional() {
-        return SuperStat.YYYY().fictional;
+        return SuperStat.Sentinel100HPChristmas().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return SuperStat.YYYY().tractive_effort;
+        return SuperStat.Sentinel100HPChristmas().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return SuperStat.YYYY().metric_horsepower;
+        return SuperStat.Sentinel100HPChristmas().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  SuperStat.YYYY().weightinKGs;
+        return  SuperStat.Sentinel100HPChristmas().weightinKGs;
     }
 
-        public boolean isReinforced() {
-            return SuperStat.YYYY().reinforced;
-        }
+    public boolean isReinforced() {
+        return SuperStat.Sentinel100HPChristmas().reinforced;
+    }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.YYYY().additionalTextTitle) + SuperStat.YYYY().additionalText,
-                RailUtility.translate(SuperStat.YYYY().additionalTextTitle2) + SuperStat.YYYY().additionalText2};}
+        {return new String[]{RailUtility.translate(SuperStat.Sentinel100HPChristmas().additionalTextTitle) + SuperStat.Sentinel100HPChristmas().additionalText,
+                RailUtility.translate(SuperStat.Sentinel100HPChristmas().additionalTextTitle2) + SuperStat.Sentinel100HPChristmas().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0?SuperStat.YYYY().backTopSpeed:SuperStat.YYYY().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0?SuperStat.Sentinel100HPChristmas().backTopSpeed:SuperStat.Sentinel100HPChristmas().topSpeed;}
 
-        @Override
-        public void registerSkins(){
-            SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T6.png", "textures/bogies/Flexxpower.png",
-                    "HLE28 NMBS Cargo", "Used by the NMBS/SNCB in belgium for freight trains");
-        }
+    @Override
+    public void registerSkins(){
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasSentinel.png",
+                "HLE28 NMBS Cargo", "Used by the NMBS/SNCB in belgium for freight trains");
+    }
 
     public int getInventoryRows() {
         return 1;
@@ -104,11 +105,16 @@ public class EntityXXXX extends EntityTrainCore {
     }
 
     public float[][] getRiderOffsets() {
-        return new float[][]{{1.3F, 1.2F, 0.0F}};
+        return new float[][]{{0.8F, 1.1F, 0.3F}};
     }
 
     public float[] getHitboxSize() {
-        return new float[]{3.6F, 2.1F, 1.3F};
+        return new float[]{2.79F, 1.6F, 1.3F};
+    }
+
+    @Override
+    public float[][] modelOffsets() {
+        return new float[][]{{-1.345f,-0.12F,0F}};
     }
 
     public ItemStack[] getRecipie() {
@@ -119,13 +125,14 @@ public class EntityXXXX extends EntityTrainCore {
         return 0.5F;
     }
 
-    public float[][] getSmokeOffset() {
-        return new float[][]{{-1.0F, 0.0F, 0.5F, 1.1711154E7F, 30.0F}, {-1.0F, 0.0F, -0.5F, 1.1711154E7F, 30.0F}, {-1.4F, 2.0F, 0.0F, 3947580.0F, 500.0F}};
-    }
-
     public float[][] bogieModelOffsets() {
         return null;
 
+    }
+
+    @Override
+    public float getPlayerScale() {
+        return 0.50f;
     }
 
     public ModelBase[] bogieModels() {
@@ -138,10 +145,6 @@ public class EntityXXXX extends EntityTrainCore {
 
     public float getRenderScale() {
         return 0.0625F;
-    }
-
-    public float[][] modelOffsets() {
-        return (float[][]) null;
     }
 
     public boolean shouldRiderSit() {
@@ -181,7 +184,7 @@ public class EntityXXXX extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new cccc()};
+        return new ModelBase[]{new ChristmasSentinel()};
     }
 
     @SideOnly(Side.CLIENT)

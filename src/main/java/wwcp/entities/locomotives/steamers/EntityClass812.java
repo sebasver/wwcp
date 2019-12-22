@@ -20,6 +20,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.Class812;
 import wwcp.worldwidecontentpack;
 
@@ -29,7 +30,7 @@ public class EntityClass812 extends EntityTrainCore {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntityClass812(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new WWCPTransport(new EntityClass812(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
     public EntityClass812(World world) {
         super(world);

@@ -16,6 +16,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.Class37Bogie;
 import wwcp.models.locomotives.Class37;
 import wwcp.worldwidecontentpack;
@@ -28,7 +29,7 @@ import java.util.UUID;
      */
     public class EntityClass37 extends EntityTrainCore {
 
-        public static final Item thisItem = new ItemTransport(new EntityClass37(null), worldwidecontentpack.MODID,worldwidecontentpack.United_Kingdom);
+        public static final Item thisItem = new WWCPTransport(new EntityClass37(null), worldwidecontentpack.MODID,worldwidecontentpack.United_Kingdom);
 
         /**
          * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.

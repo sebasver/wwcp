@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
 import wwcp.models.passengerStock.RheingoldBaggage;
@@ -27,7 +28,7 @@ public class EntityRheingoldBagage extends GenericRailTransport {
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new ItemTransport(new EntityRheingoldBagage(null), worldwidecontentpack.MODID , worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityRheingoldBagage(null), worldwidecontentpack.MODID , worldwidecontentpack.Germany);
 
 
     public EntityRheingoldBagage(UUID owner, World world, double xPos, double yPos, double zPos) {

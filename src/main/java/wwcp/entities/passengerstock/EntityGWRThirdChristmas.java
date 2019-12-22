@@ -12,106 +12,97 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.GorlitzBack;
-import wwcp.models.bogies.GorlitzFront;
-import wwcp.models.passengerStock.RheingoldSalonOne;
+import wwcp.models.passengerStock.GWROpenXmas;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
 import static ebf.tim.utility.RailUtility.DefineStack;
 
+// XXXX
+// YYYY
+// ZZZZ
+// QQQQ
 
-public class EntityRheingoldSalonOne extends GenericRailTransport {
-
+public class EntityGWRThirdChristmas extends GenericRailTransport {
     private static final String[] itemDescription = new String[]{
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityRheingoldSalonOne(null), worldwidecontentpack.MODID , worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityGWRThirdChristmas(null), worldwidecontentpack.MODID , worldwidecontentpack.FestivitiesTab);
 
 
-    public EntityRheingoldSalonOne(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityGWRThirdChristmas(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityRheingoldSalonOne(World world){
+    public EntityGWRThirdChristmas(World world){
         super(world);
     }
 
     @Override
     public boolean isReinforced() {
-        return true;
-    }
-
-    @Override
-    public float weightKg() {
-        return 51900f;
+        return SuperStat.GWRThirdOpenChristmas().reinforced;
     }
 
     @Override
     public String transportName() {
-        return "SA4u28";
+        return SuperStat.GWRThirdOpenChristmas().name;
     }
 
     @Override
     public String transportcountry() {
-        return "Germany";
+        return SuperStat.GWRThirdOpenChristmas().country;
     }
 
     @Override
     public String transportYear() {
-        return "1928-1939";
+        return SuperStat.GWRThirdOpenChristmas().year;
     }
 
     @Override
-    public String transportFuelType() {
-        return null;
+    public float weightKg() {
+        return SuperStat.GWRThirdOpenChristmas().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return false;
+        return SuperStat.GWRThirdOpenChristmas().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold 1st class Salon"};}
+        {return new String[]{RailUtility.translate(SuperStat.GWRThirdOpenChristmas().additionalTextTitle) + SuperStat.GWRThirdOpenChristmas().additionalText,
+                RailUtility.translate(SuperStat.GWRThirdOpenChristmas().additionalTextTitle2) + SuperStat.GWRThirdOpenChristmas().additionalText2};}
     }
 
-    /**
-     * <h1>Variable Overrides</h1>
-     */
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{3.70f,0.12f,0},{-3.70f,0.12f,0}};
+        return null;
     }
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new GorlitzFront(), new GorlitzBack()};
+        return null;
     }
 
     /**
      * <h2>Bogie Offset</h2>
      */
     @Override
-    public float[] bogieLengthFromCenter(){return new float[]{2f,-2f};}
+    public float[] bogieLengthFromCenter(){return new float[]{1f,-1f};}
 
     @Override
     public float getRenderScale() {
         return 0.0625f;
     }
 
-    @Override
-    public float[][] modelOffsets() {
-        return new float[][]{{1.04f,-0.125F,0.F}};
-    }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldSet/Salon1.png", "textures/bogies/RheingoldBogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/GWROpenPassengerXmas.png",
                 "NAME", "Description");
     }
     @Override
@@ -137,16 +128,20 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.3f,1.1f,0.4f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{0.85f,1.4f, -0.15f}};}
 
-//    @Override
-//    public float getPlayerScale() {
-//        return 0.60f;
-//    }
+    @Override
+    public float[][] modelOffsets() {
+        return new float[][]{{2.25f,-0.07F,-0.69F}};
+    }
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{11.525f,2,1.5f};
+        return new float[]{3.06f,1.8f,1.5f};
+    }
+
+    public boolean shouldRiderSit() {
+        return false;
     }
 
     @Override
@@ -155,7 +150,7 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
     }
 
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new RheingoldSalonOne()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new GWROpenXmas()};}
 
     /**
      * <h2>pre-asigned values</h2>

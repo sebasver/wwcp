@@ -7,6 +7,7 @@ import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.registry.URIRegistry;
+import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -14,6 +15,8 @@ import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
+import wwcp.entities.SuperStat;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.V36;
 import wwcp.worldwidecontentpack;
 
@@ -24,7 +27,7 @@ import static ebf.tim.utility.RailUtility.DefineStack;
 
 public class EntityV36 extends EntityTrainCore {
 
-    public static final Item thisItem = new ItemTransport(new EntityV36(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityV36(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
 
     public EntityV36(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
@@ -34,21 +37,47 @@ public class EntityV36 extends EntityTrainCore {
     }
 
     @Override
-    public String transportName(){return "V36";}
+    public String transportName() { return SuperStat.WR360C14().name; }
+
     @Override
-    public String transportcountry(){return "Germany";}
+    public String transportcountry() { return SuperStat.WR360C14().country; }
+
     @Override
-    public String transportYear(){return "1931";}
+    public String transportYear() { return SuperStat.WR360C14().year; }
 
     @Override
     public String transportFuelType() {
-        return null;
+        return SuperStat.WR360C14().fuel;
+    }
+    @Override
+    public boolean isFictional() {
+        return SuperStat.WR360C14().fictional;
+    }
+    @Override
+    public float transportTractiveEffort() {
+        return SuperStat.WR360C14().tractive_effort;
+    }
+    @Override
+    public float transportMetricHorsePower() {
+        return SuperStat.WR360C14().metric_horsepower;
+    }
+    @Override
+    public float weightKg() {
+        return  SuperStat.WR360C14().weightinKGs;
+    }
+
+    public boolean isReinforced() {
+        return SuperStat.WR360C14().reinforced;
     }
 
     @Override
-    public boolean isFictional(){return false;}
+    public String[] additionalItemText() {
+        {return new String[]{RailUtility.translate(SuperStat.WR360C14().additionalTextTitle) + SuperStat.WR360C14().additionalText,
+                RailUtility.translate(SuperStat.WR360C14().additionalTextTitle2) + SuperStat.WR360C14().additionalText2};}
+    }
+
     @Override
-    public float transportTractiveEffort(){return 0;}
+    public float transportTopSpeed(){return accelerator<0?SuperStat.WR360C14().backTopSpeed:SuperStat.WR360C14().topSpeed;}
 
     @Override
     public void registerSkins(){
@@ -56,9 +85,6 @@ public class EntityV36 extends EntityTrainCore {
                 "default", "Used by Germany in WWI as a transport for solders and equipment");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/V1.png", "Black", "Used by germany");
     }
-
-    @Override
-    public float transportTopSpeed(){return 202f;}
 
     @Override
     public int getInventoryRows(){return 1;}
@@ -74,18 +100,6 @@ public class EntityV36 extends EntityTrainCore {
     public float[] getHitboxSize() {
         return new float[]{4.05f,2.2f,1.5f};
     }
-
-    @Override
-    public float transportMetricHorsePower(){return 75f;}
-
-    @Override
-    public String[] additionalItemText() {
-        return null;
-    }
-
-    @Override
-    public float weightKg(){return 10886.2169f;}
-
 
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
@@ -117,9 +131,6 @@ public class EntityV36 extends EntityTrainCore {
     public boolean shouldRiderSit(){
         return false;
     }
-
-    @Override
-    public boolean isReinforced(){return false;}
 
     /**
      * <h2>Fluid Tank Capacity</h2>

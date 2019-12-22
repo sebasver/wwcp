@@ -15,6 +15,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.SuperStat;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.MzBogie;
 import wwcp.models.locomotives.DSBMzIII;
 import wwcp.models.locomotives.DSBMzI_II;
@@ -30,7 +31,7 @@ import java.util.UUID;
 
 public class EntityMZClassThree extends EntityTrainCore {
 
-    public static final Item thisItem = new ItemTransport(new EntityMZClassThree(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityMZClassThree(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.

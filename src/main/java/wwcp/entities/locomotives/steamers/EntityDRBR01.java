@@ -1,38 +1,40 @@
 package wwcp.entities.locomotives.steamers;
 
-        import cpw.mods.fml.relauncher.Side;
-        import cpw.mods.fml.relauncher.SideOnly;
-        import ebf.tim.TrainsInMotion.transportTypes;
-        import ebf.tim.api.SkinRegistry;
-        import ebf.tim.entities.EntityTrainCore;
-        import ebf.tim.registry.URIRegistry;
-        import ebf.tim.utility.RailUtility;
-        import fexcraft.tmt.slim.ModelBase;
-        import java.util.UUID;
-        import net.minecraft.item.Item;
-        import net.minecraft.item.ItemStack;
-        import net.minecraft.tileentity.TileEntityFurnace;
-        import net.minecraft.util.ResourceLocation;
-        import net.minecraft.world.World;
-        import net.minecraftforge.common.util.ForgeDirection;
-        import net.minecraftforge.fluids.FluidContainerRegistry;
-        import net.minecraftforge.fluids.FluidRegistry;
-        import wwcp.entities.SuperStat;
-        import wwcp.entities.WWCPTransport;
-        import wwcp.models.bogies.BR01FrontBogie;
-        import wwcp.models.bogies.BackBogieDRBR01;
-        import wwcp.models.locomotives.DRBR01;
-        import wwcp.worldwidecontentpack;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import ebf.tim.TrainsInMotion.transportTypes;
+import ebf.tim.api.SkinRegistry;
+import ebf.tim.entities.EntityTrainCore;
+import ebf.tim.registry.URIRegistry;
+import ebf.tim.utility.RailUtility;
+import fexcraft.tmt.slim.ModelBase;
 
-public class EntityDRBR01Wagner extends EntityTrainCore {
+import java.util.UUID;
 
-    public EntityDRBR01Wagner(UUID owner, World world, double xPos, double yPos, double zPos) {
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntityFurnace;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidRegistry;
+import wwcp.entities.SuperStat;
+import wwcp.entities.WWCPTransport;
+import wwcp.models.bogies.BR01FrontBogie;
+import wwcp.models.bogies.BackBogieDRBR01;
+import wwcp.models.locomotives.DRBR01;
+import wwcp.worldwidecontentpack;
+
+public class EntityDRBR01 extends EntityTrainCore {
+
+    public EntityDRBR01(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityDRBR01Wagner(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityDRBR01(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
-    public EntityDRBR01Wagner(World world) {
+    public EntityDRBR01(World world) {
         super(world);
     }
 
@@ -40,40 +42,57 @@ public class EntityDRBR01Wagner extends EntityTrainCore {
 //    public float getPlayerScale(){return 0.65f;}
 
     @Override
-    public String transportName() { return SuperStat.DRBR01Wagner().name; }
+    public String transportName() {
+        return SuperStat.DRBR01Wagner().name;
+    }
+
     @Override
-    public String transportcountry() { return SuperStat.DRBR01Wagner().country; }
+    public String transportcountry() {
+        return SuperStat.DRBR01Wagner().country;
+    }
+
     @Override
-    public String transportYear() { return SuperStat.DRBR01Wagner().year; }
+    public String transportYear() {
+        return SuperStat.DRBR01Wagner().year;
+    }
+
     @Override
     public String transportFuelType() {
         return SuperStat.DRBR01Wagner().fuel;
     }
+
     @Override
     public boolean isFictional() {
         return SuperStat.DRBR01Wagner().fictional;
     }
+
     @Override
     public float transportTractiveEffort() {
         return SuperStat.DRBR01Wagner().tractive_effort;
     }
+
     @Override
     public float transportMetricHorsePower() {
         return SuperStat.DRBR01Wagner().metric_horsepower;
     }
+
     @Override
     public float weightKg() {
-        return  SuperStat.DRBR01Wagner().weightinKGs;
+        return SuperStat.DRBR01Wagner().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.DRBR01Wagner().additionalTextTitle) + SuperStat.DRBR01Wagner().additionalText,
-                RailUtility.translate(SuperStat.DRBR01Wagner().additionalTextTitle2) + SuperStat.DRBR01Wagner().additionalText2};}
+        {
+            return new String[]{RailUtility.translate(SuperStat.DRBR01Wagner().additionalTextTitle) + SuperStat.DRBR01Wagner().additionalText,
+                    RailUtility.translate(SuperStat.DRBR01Wagner().additionalTextTitle2) + SuperStat.DRBR01Wagner().additionalText2};
+        }
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0?SuperStat.DRBR01Wagner().backTopSpeed:SuperStat.DRBR01Wagner().topSpeed;}
+    public float transportTopSpeed() {
+        return accelerator < 0 ? SuperStat.DRBR01Wagner().backTopSpeed : SuperStat.DRBR01Wagner().topSpeed;
+    }
 
     @Override
     public void registerSkins() {
@@ -112,10 +131,14 @@ public class EntityDRBR01Wagner extends EntityTrainCore {
     }
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{2.5f,0.1f,0},{-2.5f,0.1f,0}};
+    public float[][] bogieModelOffsets() {
+        return new float[][]{{2.5f, 0.1f, 0}, {-2.5f, 0.1f, 0}};
     }
+
     @Override
-    public ModelBase[] bogieModels() {return new ModelBase[]{new BR01FrontBogie(), new BackBogieDRBR01()}; }
+    public ModelBase[] bogieModels() {
+        return new ModelBase[]{new BR01FrontBogie(), new BackBogieDRBR01()};
+    }
 
     public float[] bogieLengthFromCenter() {
         return new float[]{1.0F, 0.1F};
@@ -127,7 +150,8 @@ public class EntityDRBR01Wagner extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.165f,-0.1F,0.F}};}
+        return new float[][]{{0.165f, -0.1F, 0.F}};
+    }
 
     public boolean shouldRiderSit() {
         return false;

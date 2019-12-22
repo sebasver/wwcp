@@ -15,6 +15,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.SuperStat;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.KoFIII2;
 import wwcp.worldwidecontentpack;
 
@@ -28,7 +29,7 @@ import java.util.UUID;
 
 public class EntityKofIII2 extends EntityTrainCore {
 
-    public static final Item thisItem = new ItemTransport(new EntityKofIII2(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityKofIII2(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.

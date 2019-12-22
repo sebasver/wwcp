@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.EurofimaBogie;
 import wwcp.models.passengerStock.EurofimaRows;
 import wwcp.worldwidecontentpack;
@@ -27,7 +28,7 @@ import static ebf.tim.utility.RailUtility.DefineStack;
                 "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
                 "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-        public static final Item thisItem = new ItemTransport(new EntityEurofimaRows(null), worldwidecontentpack.MODID , worldwidecontentpack.European);
+        public static final Item thisItem = new WWCPTransport(new EntityEurofimaRows(null), worldwidecontentpack.MODID , worldwidecontentpack.European);
 
 
         public EntityEurofimaRows(UUID owner, World world, double xPos, double yPos, double zPos) {

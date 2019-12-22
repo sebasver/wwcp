@@ -21,6 +21,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidRegistry;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.tenders.Class812Tender;
 import wwcp.worldwidecontentpack;
 
@@ -31,7 +32,7 @@ public class EntityClass812Tender extends GenericRailTransport {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntityClass812Tender(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new WWCPTransport(new EntityClass812Tender(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
     public EntityClass812Tender(World world) {
         super(world);

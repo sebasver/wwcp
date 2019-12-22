@@ -1,5 +1,5 @@
 //This is a documentation class for copy pasting into a passenger entity file.
-
+package wwcp.passengerstock;
 
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.RollingstockBase;
@@ -74,10 +74,6 @@ public class EntityYYYY extends WWCWPItemTransport {
         {return new String[]{RailUtility.translate(SuperStat.XXXX().additionalTextTitle) + SuperStat.XXXX().additionalText,
                 RailUtility.translate(SuperStat.XXXX().additionalTextTitle2) + SuperStat.XXXX().additionalText2};}
     }
-
-
-     * <h1>Variable Overrides</h1>
-     */
 
     @Override
     public float[][] bogieModelOffsets() {

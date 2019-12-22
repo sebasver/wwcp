@@ -21,6 +21,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import wwcp.entities.SuperStat;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.Tender32Bogie;
 import wwcp.models.tenders.Tender32;
 import wwcp.worldwidecontentpack;
@@ -32,7 +33,7 @@ public class EntityT32 extends GenericRailTransport {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntityT32(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityT32(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
     public EntityT32(World world) {
         super(world);
@@ -49,6 +50,16 @@ public class EntityT32 extends GenericRailTransport {
     public String transportYear() {
         return SuperStat.T32Tender().year;
     }
+
+    public boolean isFictional() {
+        return SuperStat.T32Tender().fictional;
+    }
+
+    @Override
+    public String transportFuelType() {
+        return null;
+    }
+
 
     @Override
     public String[] additionalItemText() {

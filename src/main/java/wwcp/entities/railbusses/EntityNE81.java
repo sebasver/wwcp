@@ -14,6 +14,7 @@ import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.NE81;
 import wwcp.worldwidecontentpack;
 
@@ -21,7 +22,7 @@ import java.util.UUID;
 
 public class EntityNE81 extends EntityTrainCore {
 
-    public static final Item thisItem = new ItemTransport(new EntityNE81(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityNE81(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.

@@ -10,6 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.WWCPTransport;
 import wwcp.models.passengerStock.ClassDonder2;
 import wwcp.worldwidecontentpack;
 
@@ -23,7 +24,7 @@ public class EntityDonder2 extends GenericRailTransport {
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")}; //whats with the +4?
 
-    public static final Item thisItem = new ItemTransport(new EntityDonder2(null), worldwidecontentpack.MODID , worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityDonder2(null), worldwidecontentpack.MODID , worldwidecontentpack.Germany);
 
 
     public EntityDonder2(UUID owner, World world, double xPos, double yPos, double zPos) {
