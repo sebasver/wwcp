@@ -5,14 +5,12 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion.transportTypes;
 import ebf.tim.api.SkinRegistry;
-import ebf.tim.api.TrainBase;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
-import ebf.tim.models.Bogie;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
-import java.util.List;
+
 import java.util.UUID;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -23,7 +21,8 @@ import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.SuperStat;
-import wwcp.models.locomotives.ChristmasSentinel;
+import wwcp.entities.WWCPTransport;
+import wwcp.models.locomotives.steamers.ChristmasSentinel;
 import wwcp.worldwidecontentpack;
 
 // XXXX -> Entity Name
@@ -37,7 +36,7 @@ public class EntitySentinel100HPChristmas extends EntityTrainCore {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntitySentinel100HPChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.FestivitiesTab);
+    public static final Item thisItem = new WWCPTransport(new EntitySentinel100HPChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.FestivitiesTab);
 
     public EntitySentinel100HPChristmas(World world) {
         super(world);

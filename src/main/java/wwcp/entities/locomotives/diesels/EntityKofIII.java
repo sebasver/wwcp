@@ -5,7 +5,6 @@ import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
-import ebf.tim.items.ItemTransport;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
@@ -16,8 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.MzBogie;
-import wwcp.models.locomotives.KoFIII1;
+import wwcp.models.locomotives.diesels.KoFIII1;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;

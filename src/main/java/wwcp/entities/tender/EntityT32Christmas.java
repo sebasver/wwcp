@@ -30,7 +30,7 @@ public class EntityT32Christmas extends GenericRailTransport {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityT32Christmas(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityT32Christmas(null), worldwidecontentpack.MODID, worldwidecontentpack.FestivitiesTab);
 
     public EntityT32Christmas(World world) {
         super(world);

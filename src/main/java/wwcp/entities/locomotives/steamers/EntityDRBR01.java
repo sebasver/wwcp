@@ -23,7 +23,7 @@ import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.BR01FrontBogie;
 import wwcp.models.bogies.BackBogieDRBR01;
-import wwcp.models.locomotives.DRBR01;
+import wwcp.models.locomotives.steamers.DRBR01.DRBR01;
 import wwcp.worldwidecontentpack;
 
 public class EntityDRBR01 extends EntityTrainCore {

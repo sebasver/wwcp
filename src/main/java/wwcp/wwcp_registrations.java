@@ -47,7 +47,7 @@ public class wwcp_registrations {
     static ItemStack orangeDye = new ItemStack(Items.dye, 1, 14);
     static ItemStack whiteDye = new ItemStack(Items.dye, 1, 15);
 
-    public static void registerTrains(){
+    public static void registerTrains() {
         registerTransports(worldwidecontentpack.MODID, listSteamTrains(), null);
         registerTransports(worldwidecontentpack.MODID, listTenders(), null);
         registerTransports(worldwidecontentpack.MODID, listDiesel(), null);
@@ -55,17 +55,17 @@ public class wwcp_registrations {
         registerTransports(worldwidecontentpack.MODID, listelectric(), null);
         registerTransports(worldwidecontentpack.MODID, listFreight(), null);
         registerTransports(worldwidecontentpack.MODID, listRailbusses(), null);
-        registerTransports(worldwidecontentpack.MODID, listTemperory(),null);
+        registerTransports(worldwidecontentpack.MODID, listTemperory(), null);
     }
 
     public static void registerItems() {
-        crafting_wheel = new Item().setUnlocalizedName("Crafting_Wheel").setTextureName("wwcp:icon/crafting_wheel").setCreativeTab(worldwidecontentpack.BlocksWWCP);
-        TiMGenericRegistry.RegisterItem(crafting_wheel, worldwidecontentpack.MODID, crafting_wheel.getUnlocalizedName(), null);
-
-        platform_asphalt = new Item().setUnlocalizedName("platform_asphalt").setTextureName("wwcp:icon/platform_asphalt").setCreativeTab(worldwidecontentpack.BlocksWWCP);
-        TiMGenericRegistry.RegisterItem(platform_asphalt, worldwidecontentpack.MODID, platform_asphalt.getUnlocalizedName(), null);
-
-        GameRegistry.addRecipe(new ItemStack(wwcp_registrations.platform_asphalt, 3), "   ", "   ", "X X", 'X', Blocks.stone);
+//        crafting_wheel = new Item().setUnlocalizedName("Crafting_Wheel").setTextureName("wwcp:icon/crafting_wheel").setCreativeTab(worldwidecontentpack.BlocksWWCP);
+//        TiMGenericRegistry.RegisterItem(crafting_wheel, worldwidecontentpack.MODID, crafting_wheel.getUnlocalizedName(), null);
+//
+//        platform_asphalt = new Item().setUnlocalizedName("platform_asphalt").setTextureName("wwcp:icon/platform_asphalt").setCreativeTab(worldwidecontentpack.BlocksWWCP);
+//        TiMGenericRegistry.RegisterItem(platform_asphalt, worldwidecontentpack.MODID, platform_asphalt.getUnlocalizedName(), null);
+//
+//        GameRegistry.addRecipe(new ItemStack(wwcp_registrations.platform_asphalt, 3), "   ", "   ", "X X", 'X', Blocks.stone);
     }
 
     public static void registerBlocks() {
@@ -100,78 +100,83 @@ public class wwcp_registrations {
         blockPlatformSlabSlope = new BlockPlatformSlabSlope().setCreativeTab(worldwidecontentpack.BlocksWWCP).setBlockTextureName("wwcp:icon/slabslope");
         TiMGenericRegistry.registerBlock(blockPlatformSlabSlope, null, "wwcp.blockPlatformSlabSlope", null, worldwidecontentpack.proxy.getRenderPlatform());
 
-        GameRegistry.addRecipe(new ItemStack(blockBorderPlatform, 1), "   ", "   ", "XXX", 'X', platform_asphalt);
+//        GameRegistry.addRecipe(new ItemStack(blockBorderPlatform, 1), "   ", "   ", "XXX", 'X', platform_asphalt);
     }
 
     // Steam trains
     public static GenericRailTransport[] listSteamTrains() {
         return new GenericRailTransport[]{
-                new Entity94xx(null),
-                new EntityClass812(null),
-                new EntityDRBR01(null),
+//                new Entity94xx(null),
+//                new EntityClass812(null),
+//                new EntityDRBR01(null),
                 new EntityDRBR01WitteChristmas(null),
                 new EntitySentinel100HPChristmas(null)
         };
     }
+
     // Tender list
     public static GenericRailTransport[] listTenders() {
         return new GenericRailTransport[]{
-                new EntityClass812Tender(null),
-                new EntityT32(null),
+//                new EntityClass812Tender(null),
+//                new EntityT32(null),
                 new EntityT32Christmas(null)
         };
     }
+
     // Diesel List
     public static GenericRailTransport[] listDiesel() {
         return new GenericRailTransport[]{
-                new EntityV36(null),
-                new EntityClass37(null),
-                new EntityAC4400CW(null),
-                new EntityMZClassOne(null),
-                new EntityMZClassTwo(null),
-                new EntityMZClassThree(null),
-                new EntityMZClassFour(null),
-                new EntityKofIII(null),
-                new EntityKofIII2(null)
-
+//                new EntityV36(null),
+//                new EntityClass37(null),
+//                new EntityAC4400CW(null),
+//                new EntityMZClassOne(null),
+//                new EntityMZClassTwo(null),
+//                new EntityMZClassThree(null),
+//                new EntityMZClassFour(null),
+//                new EntityKofIII(null),
+//                new EntityKofIII2(null)
         };
     }
+
     //Railbusses
     public static GenericRailTransport[] listRailbusses() {
         return new GenericRailTransport[]{
-                new EntityNE81(null),
-                new EntityVT98(null)
+//                new EntityNE81(null),
+//                new EntityVT98(null)
         };
     }
+
     //Temporary TC stock for testing purposes
     public static GenericRailTransport[] listTemperory() {
         return new GenericRailTransport[]{
-                new EntityE10(null),
-                new EntityPropaganda(null),
+//                new EntityE10(null),
+//                new EntityPropaganda(null),
         };
     }
+
     //Electric List
     public static GenericRailTransport[] listelectric() {
         return new GenericRailTransport[]{
                 new EntityTraxxF140MS2(null),
-                new EntityRE484(null)
+//                new EntityRE484(null)
         };
     }
+
     //Passenger car list
     public static GenericRailTransport[] listpassenger() {
         return new GenericRailTransport[]{
                 new EntityEurofimaCompartment(null),
-                new EntityDBpza(null),
-                new EntityDonder2(null),
-                new EntityDonder3(null),
-                new EntityDonder4(null),
                 new EntityEurofimaRows(null),
-                new EntityEurofimaSleeper(null),
-                new EntityRheingoldSalonOne(null),
-                new EntityRheingoldSalonTwo(null),
-                new EntityRheingoldSpeiseOne(null),
-                new EntityRheingoldSpeiseTwo(null),
-                new EntityRheingoldBagage(null),
+//                new EntityEurofimaSleeper(null),
+                new EntityDBpza(null),
+//                new EntityDonder2(null),
+//                new EntityDonder3(null),
+//                new EntityDonder4(null),
+//                new EntityRheingoldSalonOne(null),
+//                new EntityRheingoldSalonTwo(null),
+//                new EntityRheingoldSpeiseOne(null),
+//                new EntityRheingoldSpeiseTwo(null),
+//                new EntityRheingoldBagage(null),
                 new EntityRheingoldSalonOneChristmas(null),
                 new EntityRheingoldSalonTwoChristmas(null),
                 new EntityRheingoldSpeiseOneChristmas(null),
@@ -181,16 +186,17 @@ public class wwcp_registrations {
 
         };
     }
+
     //Freight list
     public static GenericRailTransport[] listFreight() {
         return new GenericRailTransport[]{
                 new EntityTEUSmall(null),
-                new EntityUKopenWagon(null),
-                new EntityOFF52Beetle(null),
-                new EntitySGNS801BT2TT(null),
-                new EntitySGNS802BT(null),
-                new EntitySGNS804TS(null),
-                new EntitySGNS801BT2TS(null)
+//                new EntityUKopenWagon(null),
+//                new EntityOFF52Beetle(null),
+//                new EntitySGNS801BT2TT(null),
+//                new EntitySGNS802BT(null),
+//                new EntitySGNS804TS(null),
+//                new EntitySGNS801BT2TS(null)
         };
     }
 }

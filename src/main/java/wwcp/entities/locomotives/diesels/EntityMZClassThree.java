@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.MzBogie;
-import wwcp.models.locomotives.DSBMzIII;
+import wwcp.models.locomotives.diesels.DSBMzIII;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;

@@ -72,6 +72,9 @@ public class EntityGWRThirdChristmas extends GenericRailTransport {
     }
 
     @Override
+    public String transportFuelType() {return null;}
+
+    @Override
     public String[] additionalItemText() {
         {return new String[]{RailUtility.translate(SuperStat.GWRThirdOpenChristmas().additionalTextTitle) + SuperStat.GWRThirdOpenChristmas().additionalText,
                 RailUtility.translate(SuperStat.GWRThirdOpenChristmas().additionalTextTitle2) + SuperStat.GWRThirdOpenChristmas().additionalText2};}

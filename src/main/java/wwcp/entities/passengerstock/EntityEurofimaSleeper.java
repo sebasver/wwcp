@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.EurofimaBogie;
 import wwcp.models.passengerStock.EurofimaSleeper;
@@ -40,43 +41,42 @@ public class EntityEurofimaSleeper extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return true;
-    }
-
-    @Override
-    public float weightKg() {
-        return 1814.3f;
+        return SuperStat.EurofimaSleeper().reinforced;
     }
 
     @Override
     public String transportName() {
-        return "Eurofima compartment berths";
+        return SuperStat.EurofimaSleeper().name;
     }
 
     @Override
     public String transportcountry() {
-        return "Germany";
+        return SuperStat.EurofimaSleeper().country;
     }
 
     @Override
     public String transportYear() {
-        return "1997-now";
+        return SuperStat.EurofimaSleeper().year;
     }
 
     @Override
-    public String transportFuelType() {
-        return null;
+    public float weightKg() {
+        return SuperStat.EurofimaSleeper().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return false;
+        return SuperStat.EurofimaSleeper().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + "II"};}
+        {return new String[]{RailUtility.translate(SuperStat.EurofimaSleeper().additionalTextTitle) + SuperStat.EurofimaSleeper().additionalText,
+                RailUtility.translate(SuperStat.EurofimaSleeper().additionalTextTitle2) + SuperStat.EurofimaSleeper().additionalText2};}
     }
+
+    @Override
+    public String transportFuelType() {return null;}
 
     /**
      * <h1>Variable Overrides</h1>

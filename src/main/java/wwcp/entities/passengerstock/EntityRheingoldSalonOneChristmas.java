@@ -17,7 +17,6 @@ import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
 import wwcp.models.passengerStock.ChristmasSalon1;
-import wwcp.models.passengerStock.RheingoldSalonOne;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;

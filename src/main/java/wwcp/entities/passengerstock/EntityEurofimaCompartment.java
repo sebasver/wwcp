@@ -5,12 +5,14 @@ import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
+import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.EurofimaBogie;
 import wwcp.models.passengerStock.EurofimaCompartment;
@@ -36,7 +38,44 @@ public class EntityEurofimaCompartment extends GenericRailTransport {
         super(world);
     }
 
+    @Override
+    public boolean isReinforced() {
+        return SuperStat.EurofimaCompartment().reinforced;
+    }
 
+    @Override
+    public String transportName() {
+        return SuperStat.EurofimaCompartment().name;
+    }
+
+    @Override
+    public String transportcountry() {
+        return SuperStat.EurofimaCompartment().country;
+    }
+
+    @Override
+    public String transportYear() {
+        return SuperStat.EurofimaCompartment().year;
+    }
+
+    @Override
+    public float weightKg() {
+        return SuperStat.EurofimaCompartment().weightinKGs;
+    }
+
+    @Override
+    public boolean isFictional() {
+        return SuperStat.EurofimaCompartment().fictional;
+    }
+
+    @Override
+    public String[] additionalItemText() {
+        {return new String[]{RailUtility.translate(SuperStat.EurofimaCompartment().additionalTextTitle) + SuperStat.EurofimaCompartment().additionalText,
+                RailUtility.translate(SuperStat.EurofimaCompartment().additionalTextTitle2) + SuperStat.EurofimaCompartment().additionalText2};}
+    }
+
+    @Override
+    public String transportFuelType() {return null;}
     /**
      * <h1>Variable Overrides</h1>
      */
@@ -82,33 +121,28 @@ public class EntityEurofimaCompartment extends GenericRailTransport {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E7.png", "textures/bogies/Eurofimabogie.png",
                 "Eurofima Factory Livery", "Livery used when just coming out of the Factory");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E8.png", "textures/bogies/Eurofimabogie.png",
-                "Eurofima NMBS", "Livery used when just coming out of the Factory");
+                "Eurofima NMBS", "Livery used by the NMBS/SNCB");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E9.png", "textures/bogies/Eurofimabogie.png",
-                "Eurofima OBB", "Livery used when just coming out of the Factory");
+                "Eurofima OBB", "Livery used by the OBB");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E10.png", "textures/bogies/Eurofimabogie.png",
-                "Eurofima Renfe", "Livery used when just coming out of the Factory");
+                "Eurofima Renfe", "Livery used by Renfe");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E11.png", "textures/bogies/Eurofimabogie.png",
-                "Eurofima CF night", "Livery used when just coming out of the Factory");
+                "Eurofima SBB night", "Livery used on SBB night trains");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E12.png", "textures/bogies/Eurofimabogie.png",
-                "Eurofima SBB", "Livery used when just coming out of the Factory");
+                "Eurofima SBB", "Livery used by SBB day trains");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E14.png", "textures/bogies/Eurofimabogie.png",
                 "Eurofima WWCP promotional one skin", "Livery used when just coming out of the Factory");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E15.png", "textures/bogies/Eurofimabogie.png",
                 "Eurofima WWCP promotional two skin", "Livery used when just coming out of the Factory");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E16.png", "textures/bogies/Eurofimabogie.png",
-                "Eurofima Trams in Motion", "Livery used when just coming out of the Factory");
+                "Eurofima Trams in Motion", "Promotional Livery for TramsIm");
     }
 
     @Override
-    public boolean isReinforced() {
-        return true;
+    public String getDefaultSkin() {
+        return "wwcp:Eurofima Factory Livery";
     }
-
-    @Override
-    public float weightKg() {
-        return 1814.3f;
-    }
-
+    
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
@@ -117,38 +151,7 @@ public class EntityEurofimaCompartment extends GenericRailTransport {
                 null, null, null
         };
     }
-
-    @Override
-    public String transportName() {
-        return "Compartment Eurofima";
-    }
-
-    @Override
-    public String transportcountry() {
-        return "Europe";
-    }
-
-    @Override
-    public String transportYear() {
-        return "1977-now";
-    }
-
-    @Override
-    public String transportFuelType() {
-        return null;
-    }
-
-    @Override
-    public boolean isFictional() { return false;
-    }
-
-
-    @Override
-    public String[] additionalItemText() {
-        return null;
-    }
-
-
+    
     /**
      * <h2>Inventory Size</h2>
      */

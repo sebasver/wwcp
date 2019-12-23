@@ -5,7 +5,6 @@ import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion.transportTypes;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
-import ebf.tim.models.ParticleFX;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.FuelHandler;
 import ebf.tim.utility.RailUtility;
@@ -17,16 +16,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
-import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.BR01FrontBogie;
 import wwcp.models.bogies.BackBogieDRBR01;
-import wwcp.models.locomotives.ChristmasBR01;
+import wwcp.models.locomotives.steamers.ChristmasBR01;
 import wwcp.worldwidecontentpack;
 
-import java.time.LocalDateTime;
-import java.util.List;
 import java.util.UUID;
 
 public class EntityDRBR01WitteChristmas extends EntityTrainCore {
