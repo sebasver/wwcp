@@ -43,55 +43,55 @@ public class EntityDRBR01 extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return SuperStat.DRBR01Wagner().name;
+        return SuperStat.DRBR01().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.DRBR01Wagner().country;
+        return SuperStat.DRBR01().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.DRBR01Wagner().year;
+        return SuperStat.DRBR01().year;
     }
 
     @Override
     public String transportFuelType() {
-        return SuperStat.DRBR01Wagner().fuel;
+        return SuperStat.DRBR01().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.DRBR01Wagner().fictional;
+        return SuperStat.DRBR01().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return SuperStat.DRBR01Wagner().tractive_effort;
+        return SuperStat.DRBR01().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return SuperStat.DRBR01Wagner().metric_horsepower;
+        return SuperStat.DRBR01().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return SuperStat.DRBR01Wagner().weightinKGs;
+        return SuperStat.DRBR01().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(SuperStat.DRBR01Wagner().additionalTextTitle) + SuperStat.DRBR01Wagner().additionalText,
-                    RailUtility.translate(SuperStat.DRBR01Wagner().additionalTextTitle2) + SuperStat.DRBR01Wagner().additionalText2};
+            return new String[]{RailUtility.translate(SuperStat.DRBR01().additionalTextTitle) + SuperStat.DRBR01().additionalText,
+                    RailUtility.translate(SuperStat.DRBR01().additionalTextTitle2) + SuperStat.DRBR01().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? SuperStat.DRBR01Wagner().backTopSpeed : SuperStat.DRBR01Wagner().topSpeed;
+        return accelerator < 0 ? SuperStat.DRBR01().backTopSpeed : SuperStat.DRBR01().topSpeed;
     }
 
     @Override
@@ -158,7 +158,7 @@ public class EntityDRBR01 extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return SuperStat.DRBR01Wagner().reinforced;
+        return SuperStat.DRBR01().reinforced;
     }
 
     public int[] getTankCapacity() {

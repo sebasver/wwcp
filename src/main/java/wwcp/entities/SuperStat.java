@@ -5,6 +5,7 @@ public class SuperStat {
     public static String era = "wwcp.era";
     public static String nick = "wwcp.nick";
     public static String type = "wwcp.type";
+    public static String aditional = "wwcp.aditional";
 
     /**Backspeed has to be known*/
     public static class EntityData1{
@@ -82,7 +83,7 @@ public class SuperStat {
     /** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z*/
 
     //BR01 Wagner Deflectors
-    public static EntityData1 DRBR01Wagner(){return new EntityData1("DR BR 01","Germany","1926-1982","Steam",
+    public static EntityData1 DRBR01(){return new EntityData1("DR BR 01","Germany","1926-1982","Steam",
             "","",type, " Passenger Locomotive",
             0.0f,2210f,108.9f,130f,50f,false, true);}
 
@@ -172,7 +173,7 @@ public class SuperStat {
 
     //NE 81 / BR626
     public static EntityData2 NE81(){return new EntityData2("NE 81","Germany","1981-1995","Diesel",
-            nick," BR 626",type, " Passenger Railbus",
+            aditional," BR 626",type, " Passenger Railbus",
             0f,679.81f,46.0f,100f, false, true);}
 
     //Sentinel 100 HP
@@ -185,22 +186,22 @@ public class SuperStat {
             "","",type, " Shunting Locomotive",
             8870f,100f,19.3f,33.8f, false, true);}
 
-    //SSB Re 484 / F 140MS2
+    //SSB Re 484 / F 140MS2 todo fact check again
     public static EntityData2 SBBRE484(){return new EntityData2("SBB Re 484","Switzerland","2004-","Electric",
             "","",type, " Freight Locomotive",
             0f,7613.88f,85.4f,140f, false, true);}
 
-    //T32 Tender todo unfinished
+    //T32 Tender
     public static EntityData3 T32Tender(){return new EntityData3("T32 2'2'","Germany","1926-1982","",
-            "",type," Tender", 20f, 0f,false, true);}
+            "",type," Tender", 17.5f, 0f,false, true);}
 
     //T32 Christmas Tender
     public static EntityData3 T32TenderChristmas(){return new EntityData3("T32 2'2' Christmas","Germany","1926-1982","",
-            "",type," Tender", 20f, 0f,false, true);}
+            "",type," Tender", 17.5f, 0f,false, true);}
 
     //Wehrmachtslokomotive WR 360 C 14 / V36
     public static EntityData2 WR360C14(){return new EntityData2("Wehrmachtslokomotive WR 360 C 14","Germany","1937-1950","Diesel",
-            nick," V36",type, " Shunting Locomotive",
+            aditional," DB V36, DB BR236, DR BR103",type, " Shunting Locomotive",
             31473.3f,360.3f,43.0f,60f, false, true);}
 
 
@@ -219,17 +220,17 @@ public class SuperStat {
     public static EntityData3 Donderbus3(){return new EntityData3("Sggnss 80'","Europe","2014-","",
             "",type," Freight Container", 21.5f, 120f,false, true);}
 
-    //Eurofima with Compartments todo unfinished
-    public static EntityData3 EurofimaCompartment(){return new EntityData3("Sggnss 80'","Europe","2014-","",
-            "",type," Freight Container", 21.5f, 120f,false, true);}
+    //Eurofima with Compartments
+    public static EntityData3 EurofimaCompartment(){return new EntityData3("Eurofima Compartments","Europe","1977-","",
+            "",type," Passenger", 45f, 200f,false, true);}
 
-    //Eurofima with Rows todo unfinished
-    public static EntityData3 EurofimaRows(){return new EntityData3("Sggnss 80'","Europe","2014-","",
-            "",type," Freight Container", 21.5f, 120f,false, true);}
+    //Eurofima with Rows
+    public static EntityData3 EurofimaRows(){return new EntityData3("Eurofima Open Seating","Europe","1977-","",
+            "",type," Passenger", 45f, 200f,false, true);}
 
-    //Eurofima with Sleeperbeds todo unfinished
-    public static EntityData3 EurofimaSleeper(){return new EntityData3("Sggnss 80'","Europe","2014-","",
-            "",type," Freight Container", 21.5f, 120f,false, true);}
+    //Eurofima with Sleeperbeds
+    public static EntityData3 EurofimaSleeper(){return new EntityData3("Eurofima Sleeper","Europe","1977-","",
+            "",type," Passenger", 45f, 200f,false, true);}
 
     //GWR Third
     public static EntityData3 GWRThirdOpen(){return new EntityData3("GWR Third Class open (BG)","United Kingdom","1838-1854-","",
@@ -239,37 +240,65 @@ public class SuperStat {
     public static EntityData3 GWRThirdOpenChristmas(){return new EntityData3("GWR Third Class open Christmas(BG)","United Kingdom","1838-1854-","",
             "",type," Passenger Carriage", 9.5f, 0f,false, true);}
 
-    //OFF52 todo unfinished
-    public static EntityData3 OFF52(){return new EntityData3("CR Class812","United_Kingdom","1899-1963","",
-            "",type," Tender", 19.5f, 0,false, true);}
+    //OFF52
+    public static EntityData3 OFF52(){return new EntityData3("Off 52","Germany","1954-1980",aditional,
+            "Laae 540",type," Freight Cars", 25.4f, 0,false, true);}
 
-    //Rheingold 1st Kitchen todo unfinished
-    public static EntityData3 RheingoldKitchen1(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+    //Rheingold 1st Kitchen
+    public static EntityData3 RheingoldKitchen1Christmas(){return new EntityData3("SSA4uk28 Christmas","Germany","1928-1939",aditional,
+            " Rheingold 1st class dinnercar Christmas",type," Passenger Dinner", 56.6f, 0f,false, true);}
+
+    //Rheingold 1st Salon
+    public static EntityData3 RheingoldSalon1Christmas(){return new EntityData3("SA4u28 Christmas","Germany","1928-1939",aditional,
+            " Rheingold 1st class saloncarChristmas",type," Passenger", 51.9f, 0f,false, true);}
+
+    //Rheingold 2nd Kitchen
+    public static EntityData3 RheingoldKitchen2Christmas(){return new EntityData3("SB4uk28 Christmas","Germany","1928-1939",aditional,
+            " Rheingold 2nd class dinnercar Christmas",type," Passenger Dinner", 55.5f, 0f,false, true);}
+
+    //Rheingold 2nd Salon
+    public static EntityData3 RheingoldSalon2Christmas(){return new EntityData3("SB4u28 Christmas","Germany","1928-1939",aditional,
+            " Rheingold 2nd class saloncar Christmas",type," Passenger", 52.8f, 0f,false, true);}
+
+    //Rheingold 1st Kitchen
+    public static EntityData3 RheingoldKitchen1(){return new EntityData3("SA4uk28","Germany","1928-1939",aditional,
+            " Rheingold 1st class dinnercar",type," Passenger Dinner", 56.6f, 0f,false, true);}
+
+    //Rheingold 1st Salon
+    public static EntityData3 RheingoldSalon1(){return new EntityData3("SA4u28","Germany","1928-1939",aditional,
+            " Rheingold 1st class saloncar",type," Passenger", 51.9f, 0f,false, true);}
+
+    //Rheingold 2nd Kitchen
+    public static EntityData3 RheingoldKitchen2(){return new EntityData3("SB4uk28","Germany","1928-1939",aditional,
+            " Rheingold 2nd class dinnercar",type," Passenger Dinner", 55.5f, 0f,false, true);}
+
+    //Rheingold 2nd Salon
+    public static EntityData3 RheingoldSalon2(){return new EntityData3("SB4u28","Germany","1928-1939",aditional,
+            " Rheingold 2nd class saloncar",type," Passenger", 52.8f, 0f,false, true);}
+
+    //Rheingold Baggagef
+    public static EntityData3 RheingoldBaggage(){return new EntityData3("SPw4u28","Germany","1928-1939",aditional,
+            " Rheingold baggagecar",type," Passenger Baggage", 41.2f, 0f,false, true);}
+
+    //Sggnss 80 Load 1
+    public static EntityData3 Sggnss80Load1(){return new EntityData3("Sggnss 80 Load 1'","Europe","2006-","",
             "",type," Freight Container", 21.5f, 120f,false, true);}
 
-    //Rheingold 1st Salon todo unfinished
-    public static EntityData3 RheingoldSalon1(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+    //Sggnss 80 Load 2
+    public static EntityData3 Sggnss80Load2(){return new EntityData3("Sggnss 80 Load 2'","Europe","2006-","",
             "",type," Freight Container", 21.5f, 120f,false, true);}
 
-    //Rheingold 2nd Kitchen todo unfinished
-    public static EntityData3 RheingoldKitchen2(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+    //Sggnss 80 Load 3
+    public static EntityData3 Sggnss80Load3(){return new EntityData3("Sggnss 80 Load 3'","Europe","2006-","",
             "",type," Freight Container", 21.5f, 120f,false, true);}
 
-    //Rheingold 2nd Salon todo unfinished
-    public static EntityData3 RheingoldSalon2(){return new EntityData3("Sggnss 80'","Europe","2014-","",
+    //Sggnss 80 Load 4
+    public static EntityData3 Sggnss80Load4(){return new EntityData3("Sggnss 80 Load 4'","Europe","2006-","",
             "",type," Freight Container", 21.5f, 120f,false, true);}
 
-    //Rheingold Baggage todo unfinished
-    public static EntityData3 RheingoldBaggage(){return new EntityData3("Sggnss 80'","Europe","2014-","",
-            "",type," Freight Container", 21.5f, 120f,false, true);}
-
-    //Sggnss 80 todo unfinished
-    public static EntityData3 Sggnss80(){return new EntityData3("Sggnss 80'","Europe","2014-","",
-            "",type," Freight Container", 21.5f, 120f,false, true);}
-
-    //UK Openwagon todo unfinished
-    public static EntityData3 UKOpenWagon(){return new EntityData3("Sggnss 80'","Europe","2014-","",
-            "",type," Freight Container", 21.5f, 120f,false, true);}
+    //UK 6 Plank
+    public static EntityData3 UKOpenWagon(){return new EntityData3("6-Plank open wagon'","United Kingdom","1930-1959","",
+            "",type," Freight Loose", 10f, 0f,false, true);}
 
 
 }

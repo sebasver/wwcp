@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -41,43 +42,43 @@ public class EntityRheingoldSpeiseOne extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return true;
-    }
-
-    @Override
-    public float weightKg() {
-        return 56600f;
+        return SuperStat.RheingoldKitchen1().reinforced;
     }
 
     @Override
     public String transportName() {
-        return "SA4uk28";
+        return SuperStat.RheingoldKitchen1().name;
     }
 
     @Override
     public String transportcountry() {
-        return "Germany";
+        return SuperStat.RheingoldKitchen1().country;
     }
 
     @Override
     public String transportYear() {
-        return "1928-1939";
+        return SuperStat.RheingoldKitchen1().year;
     }
 
     @Override
-    public String transportFuelType() {
-        return null;
+    public float weightKg() {
+        return SuperStat.RheingoldKitchen1().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return false;
+        return SuperStat.RheingoldKitchen1().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold 1st class Kitchen"};}
+        {return new String[]{RailUtility.translate(SuperStat.RheingoldKitchen1().additionalTextTitle) + SuperStat.RheingoldKitchen1().additionalText,
+                RailUtility.translate(SuperStat.RheingoldKitchen1().additionalTextTitle2) + SuperStat.RheingoldKitchen1().additionalText2};}
     }
+
+    @Override
+    public String transportFuelType() {return null;}
+
     /**
      * <h1>Variable Overrides</h1>
      */
@@ -111,7 +112,7 @@ public class EntityRheingoldSpeiseOne extends GenericRailTransport {
     @Override
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldSet/Speise1.png", "textures/bogies/RheingoldBogie.png",
-                "NAME", "Description");
+                "Service Livery", "Livery showing how the car looked during its service years");
     }
     @Override
     public ItemStack[] getRecipie() {

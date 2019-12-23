@@ -28,12 +28,13 @@ import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 //X.Y.Z
 //X = major (game defining, large content publishments?), Y = minor(small content publishments?)  Z = patch (stat fixing).
 //todo fix Copy pastable files with the new superstat method
+//todo port over old rollingstock to the superstats, make version ready for launch
 
 @Mod(modid = worldwidecontentpack.MODID, version = worldwidecontentpack.MOD_VERSION)
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.4.15 Alpha";
+    public static final String MOD_VERSION = "0.5.16 Alpha";
 
 
     @Mod.EventHandler

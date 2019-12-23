@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -26,66 +27,67 @@ import static ebf.tim.utility.RailUtility.DefineStack;
 public class EntityRheingoldSalonOne extends GenericRailTransport {
 
     private static final String[] itemDescription = new String[]{
-            "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
-            "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
+            "\u00A77" + StatCollector.translateToLocal("menu.item.weight") + ": 2 " + StatCollector.translateToLocal("menu.item.tons"),
+            "\u00A77" + StatCollector.translateToLocal("menu.item.seats") + ": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityRheingoldSalonOne(null), worldwidecontentpack.MODID , worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityRheingoldSalonOne(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
 
     public EntityRheingoldSalonOne(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityRheingoldSalonOne(World world){
+
+    public EntityRheingoldSalonOne(World world) {
         super(world);
     }
 
-    @Override
-    public boolean isReinforced() {
-        return true;
-    }
 
     @Override
-    public float weightKg() {
-        return 51900f;
+    public boolean isReinforced() {
+        return SuperStat.RheingoldSalon1().reinforced;
     }
 
     @Override
     public String transportName() {
-        return "SA4u28";
+        return SuperStat.RheingoldSalon1().name;
     }
 
     @Override
     public String transportcountry() {
-        return "Germany";
+        return SuperStat.RheingoldSalon1().country;
     }
 
     @Override
     public String transportYear() {
-        return "1928-1939";
+        return SuperStat.RheingoldSalon1().year;
     }
 
     @Override
-    public String transportFuelType() {
-        return null;
+    public float weightKg() {
+        return SuperStat.RheingoldSalon1().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return false;
+        return SuperStat.RheingoldSalon1().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold 1st class Salon"};}
+        {return new String[]{RailUtility.translate(SuperStat.RheingoldSalon1().additionalTextTitle) + SuperStat.RheingoldSalon1().additionalText,
+                RailUtility.translate(SuperStat.RheingoldSalon1().additionalTextTitle2) + SuperStat.RheingoldSalon1().additionalText2};}
     }
 
+    @Override
+    public String transportFuelType() {return null;}
+    
     /**
      * <h1>Variable Overrides</h1>
      */
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{3.70f,0.12f,0},{-3.70f,0.12f,0}};
+        return new float[][]{{3.70f, 0.12f, 0}, {-3.70f, 0.12f, 0}};
     }
 
     @Override
@@ -97,7 +99,9 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
      * <h2>Bogie Offset</h2>
      */
     @Override
-    public float[] bogieLengthFromCenter(){return new float[]{2f,-2f};}
+    public float[] bogieLengthFromCenter() {
+        return new float[]{2f, -2f};
+    }
 
     @Override
     public float getRenderScale() {
@@ -106,7 +110,7 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{1.04f,-0.125F,0.F}};
+        return new float[][]{{1.04f, -0.125F, 0.F}};
     }
 
     @Override
@@ -114,6 +118,7 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldSet/Salon1.png", "textures/bogies/RheingoldBogie.png",
                 "NAME", "Description");
     }
+
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
@@ -127,17 +132,25 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
      * <h2>Inventory Size</h2>
      */
     @Override
-    public int getInventoryRows(){return 0;}
+    public int getInventoryRows() {
+        return 0;
+    }
+
     /**
      * <h2>Type</h2>
      */
 
-    public TrainsInMotion.transportTypes getType(){return TrainsInMotion.transportTypes.PASSENGER;}
+    public TrainsInMotion.transportTypes getType() {
+        return TrainsInMotion.transportTypes.PASSENGER;
+    }
+
     /**
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.3f,1.1f,0.4f}};}
+    public float[][] getRiderOffsets() {
+        return new float[][]{{1.3f, 1.1f, 0.4f}};
+    }
 
 //    @Override
 //    public float getPlayerScale() {
@@ -146,7 +159,7 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{11.525f,2,1.5f};
+        return new float[]{11.525f, 2, 1.5f};
     }
 
     @Override
@@ -155,13 +168,15 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
     }
 
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new RheingoldSalonOne()};}
+    public ModelBase[] getModel() {
+        return new ModelBase[]{new RheingoldSalonOne()};
+    }
 
     /**
      * <h2>pre-asigned values</h2>
      */
     @Override
-    public Item getItem(){
+    public Item getItem() {
         return thisItem;
     }
 }

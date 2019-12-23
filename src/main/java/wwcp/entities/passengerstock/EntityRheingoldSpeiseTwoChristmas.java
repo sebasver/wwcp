@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -42,43 +43,42 @@ public class EntityRheingoldSpeiseTwoChristmas extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return true;
-    }
-
-    @Override
-    public float weightKg() {
-        return 55500f;
+        return SuperStat.RheingoldKitchen2Christmas().reinforced;
     }
 
     @Override
     public String transportName() {
-        return "SB4uk28 Christmas";
+        return SuperStat.RheingoldKitchen2Christmas().name;
     }
 
     @Override
     public String transportcountry() {
-        return "Germany";
+        return SuperStat.RheingoldKitchen2Christmas().country;
     }
 
     @Override
     public String transportYear() {
-        return "1928-1939";
+        return SuperStat.RheingoldKitchen2Christmas().year;
     }
 
     @Override
-    public String transportFuelType() {
-        return null;
+    public float weightKg() {
+        return SuperStat.RheingoldKitchen2Christmas().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return false;
+        return SuperStat.RheingoldKitchen2Christmas().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold 2nd class Kitchen"};}
+        {return new String[]{RailUtility.translate(SuperStat.RheingoldKitchen2Christmas().additionalTextTitle) + SuperStat.RheingoldKitchen2Christmas().additionalText,
+                RailUtility.translate(SuperStat.RheingoldKitchen2Christmas().additionalTextTitle2) + SuperStat.RheingoldKitchen2Christmas().additionalText2};}
     }
+
+    @Override
+    public String transportFuelType() {return null;}
 
     /**
      * <h1>Variable Overrides</h1>

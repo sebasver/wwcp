@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -41,43 +42,42 @@ public class EntityRheingoldSpeiseTwo extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return true;
-    }
-
-    @Override
-    public float weightKg() {
-        return 55500f;
+        return SuperStat.RheingoldKitchen2().reinforced;
     }
 
     @Override
     public String transportName() {
-        return "SB4uk28";
+        return SuperStat.RheingoldKitchen2().name;
     }
 
     @Override
     public String transportcountry() {
-        return "Germany";
+        return SuperStat.RheingoldKitchen2().country;
     }
 
     @Override
     public String transportYear() {
-        return "1928-1939";
+        return SuperStat.RheingoldKitchen2().year;
     }
 
     @Override
-    public String transportFuelType() {
-        return null;
+    public float weightKg() {
+        return SuperStat.RheingoldKitchen2().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return false;
+        return SuperStat.RheingoldKitchen2().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold 2nd class Kitchen"};}
+        {return new String[]{RailUtility.translate(SuperStat.RheingoldKitchen2().additionalTextTitle) + SuperStat.RheingoldKitchen2().additionalText,
+                RailUtility.translate(SuperStat.RheingoldKitchen2().additionalTextTitle2) + SuperStat.RheingoldKitchen2().additionalText2};}
     }
+
+    @Override
+    public String transportFuelType() {return null;}
 
     /**
      * <h1>Variable Overrides</h1>

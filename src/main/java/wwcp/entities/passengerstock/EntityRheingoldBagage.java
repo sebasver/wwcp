@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.entities.SuperStat;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -40,43 +41,43 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return true;
-    }
-
-    @Override
-    public float weightKg() {
-        return 41200f;
+        return SuperStat.RheingoldBaggage().reinforced;
     }
 
     @Override
     public String transportName() {
-        return "SPw4u28";
+        return SuperStat.RheingoldBaggage().name;
     }
 
     @Override
     public String transportcountry() {
-        return "Germany";
+        return SuperStat.RheingoldBaggage().country;
     }
 
     @Override
     public String transportYear() {
-        return "1928-1939";
+        return SuperStat.RheingoldBaggage().year;
     }
 
     @Override
-    public String transportFuelType() {
-        return null;
+    public float weightKg() {
+        return SuperStat.RheingoldBaggage().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return false;
+        return SuperStat.RheingoldBaggage().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + " II", RailUtility.translate("wwcp.nick") + " Rheingold Baggage"};}
+        {return new String[]{RailUtility.translate(SuperStat.RheingoldBaggage().additionalTextTitle) + SuperStat.RheingoldBaggage().additionalText,
+                RailUtility.translate(SuperStat.RheingoldBaggage().additionalTextTitle2) + SuperStat.RheingoldBaggage().additionalText2};}
     }
+
+    @Override
+    public String transportFuelType() {return null;}
+    
 
     /**
      * <h1>Variable Overrides</h1>
