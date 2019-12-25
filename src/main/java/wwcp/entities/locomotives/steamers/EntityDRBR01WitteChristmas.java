@@ -9,6 +9,7 @@ import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.FuelHandler;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
+import wwcp.models.bogies.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityFurnace;
@@ -16,10 +17,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.BR01FrontBogie;
-import wwcp.models.bogies.BackBogieDRBR01;
 import wwcp.models.locomotives.steamers.ChristmasBR01;
 import wwcp.worldwidecontentpack;
 
@@ -41,40 +40,40 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     public float getPlayerScale(){return 0.60f;}
 
     @Override
-    public String transportName() { return SuperStat.DRBR01WitteChristmas().name; }
+    public String transportName() { return TransportDetails.DRBR01WitteChristmas().name; }
     @Override
-    public String transportcountry() { return SuperStat.DRBR01WitteChristmas().country; }
+    public String transportcountry() { return TransportDetails.DRBR01WitteChristmas().country; }
     @Override
-    public String transportYear() { return SuperStat.DRBR01WitteChristmas().year; }
+    public String transportYear() { return TransportDetails.DRBR01WitteChristmas().year; }
     @Override
     public String transportFuelType() {
-        return SuperStat.DRBR01WitteChristmas().fuel;
+        return TransportDetails.DRBR01WitteChristmas().fuel;
     }
     @Override
     public boolean isFictional() {
-        return SuperStat.DRBR01WitteChristmas().fictional;
+        return TransportDetails.DRBR01WitteChristmas().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return SuperStat.DRBR01WitteChristmas().tractive_effort;
+        return TransportDetails.DRBR01WitteChristmas().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return SuperStat.DRBR01WitteChristmas().metric_horsepower;
+        return TransportDetails.DRBR01WitteChristmas().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  SuperStat.DRBR01WitteChristmas().weightinKGs;
+        return  TransportDetails.DRBR01WitteChristmas().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.DRBR01WitteChristmas().additionalTextTitle) + SuperStat.DRBR01WitteChristmas().additionalText,
-                RailUtility.translate(SuperStat.DRBR01WitteChristmas().additionalTextTitle2) + SuperStat.DRBR01WitteChristmas().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.DRBR01WitteChristmas().additionalTextTitle) + TransportDetails.DRBR01WitteChristmas().additionalText,
+                RailUtility.translate(TransportDetails.DRBR01WitteChristmas().additionalTextTitle2) + TransportDetails.DRBR01WitteChristmas().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0?SuperStat.DRBR01WitteChristmas().backTopSpeed:SuperStat.DRBR01WitteChristmas().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? TransportDetails.DRBR01WitteChristmas().backTopSpeed: TransportDetails.DRBR01WitteChristmas().topSpeed;}
 
     @Override
     @SideOnly(Side.CLIENT)
@@ -88,7 +87,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasBR01.png", "textures/bogies/BR01/BR01FrontBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasBR01.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "Christmas BR01 Witte deflectors", "Default black wheels for the BR01 Wagner");}
 
 
@@ -124,7 +123,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     public float[][] bogieModelOffsets(){return new float[][]{{2.5f,0.1f,0},{-2.5f,0.1f,0}};
     }
     @Override
-    public ModelBase[] bogieModels() {return new ModelBase[]{new BR01FrontBogie(), new BackBogieDRBR01()}; }
+    public ModelBase[] bogieModels() {return new ModelBase[]{new BR01FrontBogie(), new BR01BackBogie()}; }
 
     public float[] bogieLengthFromCenter() {
         return new float[]{2.5F, -2.5F};
@@ -143,7 +142,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return SuperStat.DRBR01WitteChristmas().reinforced;
+        return TransportDetails.DRBR01WitteChristmas().reinforced;
     }
 
     public int[] getTankCapacity() {

@@ -1,7 +1,7 @@
 //This is a documentation file for copy pasting reussable details into a tender entity class.
 
 //This is a documentation class for copy pasting into a freight tanker entity file.
-package wwcp.entities.tender;
+package wwcp.entities.tender.germanTenders;
 
 import ebf.tim.TrainsInMotion.transportTypes;
 import ebf.tim.api.SkinRegistry;
@@ -15,58 +15,63 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.Tender32Bogie;
-import wwcp.models.tenders.ChristmasTenderT32;
 import wwcp.worldwidecontentpack;
+import wwcp.models.bogies.TenderBogies.BR01Line.*;
+import wwcp.models.tenders.germanTenders.*;
 
 import java.util.List;
 import java.util.UUID;
 
-public class EntityT32Christmas extends GenericRailTransport {
+public class EntityT34AditionalOil extends GenericRailTransport {
 
 
-    public EntityT32Christmas(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityT34AditionalOil(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityT32Christmas(null), worldwidecontentpack.MODID, worldwidecontentpack.FestivitiesTab);
+    public static final Item thisItem = new WWCPTransport(new EntityT34AditionalOil(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
-    public EntityT32Christmas(World world) {
+    public EntityT34AditionalOil(World world) {
         super(world);
     }
 
     public String transportName() {
-        return TransportDetails.T32TenderChristmas().name;
+        return TransportDetails.T34AditionalOil().name;
     }
 
     public String transportcountry() {
-        return TransportDetails.T32TenderChristmas().country;
+        return TransportDetails.T34AditionalOil().country;
     }
 
     public String transportYear() {
-        return TransportDetails.T32TenderChristmas().year;
+        return TransportDetails.T34AditionalOil().year;
     }
 
     public boolean isFictional() {
-        return TransportDetails.T32TenderChristmas().fictional;
+        return TransportDetails.T34AditionalOil().fictional;
     }
 
+    public float weightKg() {
+        return TransportDetails.T34().weightinKGs;
+    }
+    
     @Override
     public String transportFuelType() {
         return null;
     }
 
+
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.T32TenderChristmas().additionalTextTitle) + TransportDetails.T32TenderChristmas().additionalText,
-                RailUtility.translate(TransportDetails.T32TenderChristmas().additionalTextTitle2) + TransportDetails.T32TenderChristmas().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.T34AditionalOil().additionalTextTitle) + TransportDetails.T34AditionalOil().additionalText,
+                RailUtility.translate(TransportDetails.T34AditionalOil().additionalTextTitle2) + TransportDetails.T34AditionalOil().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
         return new float[][]{{1.01f, 0.12F, 0.0F}, {-0.66F, 0.12F, 0.0F}};
     }
 
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new Tender32Bogie()};
+        return new ModelBase[]{new T34Bogie()};
     }
 
     public float[] bogieLengthFromCenter() {
@@ -82,12 +87,12 @@ public class EntityT32Christmas extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasT32.png", new String[]{"textures/bogies/germanTenderBogies/T32BogieBlack.png"},
-                "Christmas Livery", "The standarized T32 tender paint while in use for the DB");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T34AditionalOil.png", new String[]{"textures/bogies/germanTenderBogies/T34BogieBlack.png"},
+                "DB Livery", "The standarized T32 tender paint while in use for the DB");
     }
 
     public boolean isReinforced() {
-        return TransportDetails.T32TenderChristmas().reinforced;
+        return TransportDetails.T34AditionalOil().reinforced;
     }
 
     public int getInventoryRows() {
@@ -117,16 +122,12 @@ public class EntityT32Christmas extends GenericRailTransport {
     public void manageFuel() {
         FuelHandler.manageTanker(this);
     }
-
-    public float weightKg() {
-        return TransportDetails.T32TenderChristmas().weightinKGs;
-    }
-
+    
     public ItemStack[] getRecipie() {
         return new ItemStack[]{RailUtility.DefineStack(Items.bed, 1), null, null, null, null, null, null, null, null};
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new ChristmasTenderT32()};
+        return new ModelBase[]{new T34AditionalOil()};
     }
 }

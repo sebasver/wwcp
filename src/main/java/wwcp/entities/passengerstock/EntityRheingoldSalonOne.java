@@ -4,7 +4,6 @@ package wwcp.entities.passengerstock;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
-import ebf.tim.items.ItemTransport;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -12,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -44,38 +43,38 @@ public class EntityRheingoldSalonOne extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return SuperStat.RheingoldSalon1().reinforced;
+        return TransportDetails.RheingoldSalon1().reinforced;
     }
 
     @Override
     public String transportName() {
-        return SuperStat.RheingoldSalon1().name;
+        return TransportDetails.RheingoldSalon1().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.RheingoldSalon1().country;
+        return TransportDetails.RheingoldSalon1().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.RheingoldSalon1().year;
+        return TransportDetails.RheingoldSalon1().year;
     }
 
     @Override
     public float weightKg() {
-        return SuperStat.RheingoldSalon1().weightinKGs;
+        return TransportDetails.RheingoldSalon1().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.RheingoldSalon1().fictional;
+        return TransportDetails.RheingoldSalon1().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.RheingoldSalon1().additionalTextTitle) + SuperStat.RheingoldSalon1().additionalText,
-                RailUtility.translate(SuperStat.RheingoldSalon1().additionalTextTitle2) + SuperStat.RheingoldSalon1().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.RheingoldSalon1().additionalTextTitle) + TransportDetails.RheingoldSalon1().additionalText,
+                RailUtility.translate(TransportDetails.RheingoldSalon1().additionalTextTitle2) + TransportDetails.RheingoldSalon1().additionalText2};}
     }
 
     @Override

@@ -1,6 +1,6 @@
-package wwcp.entities;
+package wwcp;
 
-public class SuperStat {
+public class TransportDetails {
 
     public static String era = "wwcp.era";
     public static String nick = "wwcp.nick";
@@ -82,10 +82,76 @@ public class SuperStat {
 //todo add in all Traxx locomotive Types
     /** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z*/
 
-    //BR01 Wagner Deflectors
-    public static EntityData1 DRBR01(){return new EntityData1("DRBR01","Germany","1926-1982","Steam",
+    //BR01
+    public static EntityData1 DBBR01(){return new EntityData1("DBBR01","Germany","1945-1973","Steam",
             "","",type, " Passenger Locomotive",
-            0.0f,2210f,108.9f,130f,50f,false, true);}
+            39566f,2240f,108.9f,130f,50f,false, true);}
+
+    public static EntityData1 DBBR01NeuKessel(){return new EntityData1("DBBR01NeuKessel","Germany","1957-1973","Steam",
+            "","",type, " Passenger Locomotive",
+            33721f,2330f,111.1f,130f,50f,false, true);}
+
+    public static EntityData1 DBBR01NeuKesselOil(){return new EntityData1("DBBR01NeuKesselOil","Germany","1957-1973","Steam (Oil)",
+            "","",type, " Passenger Locomotive",
+            33721f,1330f,111.1f,130f,50f,false, true);}
+
+    public static EntityData1 DBBR01_10Streamlined(){return new EntityData1("DBBR01_10Streamlined","Germany","1945-1953","Steam (Oil)",
+            "","",type, " Passenger Locomotive",
+            35070f,2120f,114.3f,150f,50f,false, true);}
+
+    public static EntityData1 DBBR01Umbau(){return new EntityData1("DBBR01Umbau","Germany","1950-1968","Steam",
+            "","",type, " Passenger Locomotive",
+            33721f,2450f,111.2f,130f,50f,false, true);}
+
+    public static EntityData1 DBBR012(){return new EntityData1("DBBR01_10","Germany","1945-1953","Steam",
+            "","",type, " Passenger Locomotive",
+            35070f,2120f,114.3f,140f,50f,false, true);}
+
+    public static EntityData1 DBBR012Oil(){return new EntityData1("DBBR01_10Oil","Germany","1945-1953","Steam (Oil)",
+            "","",type, " Passenger Locomotive",
+            35070f,2120f,114.3f,140f,50f,false, true);}
+
+    public static EntityData1 DBBR012NeuKessel(){return new EntityData1("DBBR01_10NeuKessel","Germany","1953-1975","Steam",
+            "","",type, " Passenger Locomotive",
+            35070f,2350f,110.8f,140f,50f,false, true);}
+
+    public static EntityData1 DBBR012NeuKesselOil(){return new EntityData1("DBBR01_10NeuKesselOil","Germany","1953-1975","Steam (Oil)",
+            "","",type, " Passenger Locomotive",
+            35070f,2740f,111.6f,140f,50f,false, true);}
+
+    //DR BR01's
+    public static EntityData1 DRBR01(){return new EntityData1("DRBR01","Germany","1945-1982","Steam",
+            "","",type, " Passenger Locomotive",
+            33721f,2240f,108.9f,130f,50f,false, true);}
+
+    public static EntityData1 DRBR01_5(){return new EntityData1("DRBR01_5","Germany","1961-1991","Steam",
+            "","",type, " Passenger Locomotive",
+            33721f,2500f,111f,130f,50f,false, true);}
+
+    public static EntityData1 DRBR01_5SD(){return new EntityData1("DRBR01_5SD","Germany","1961-1991","Steam",
+            "","",type, " Passenger Locomotive",
+            33721f,2500f,111f,130f,50f,false, true);}
+
+    public static EntityData1 DRBR01_5Oil(){return new EntityData1("DRBR01_5Oil","Germany","1961-1991","Steam (Oil)",
+            "","",type, " Passenger Locomotive",
+            33721f,2500f,111f,130f,50f,false, true);}
+
+    //DRG BR01's
+    public static EntityData1 DRGBR01(){return new EntityData1("DRGBR01","Germany","1926-1945","Steam",
+            "","",type, " Passenger Locomotive",
+            33721f,2210f,108.9f,130f,50f,false, true);}
+
+    public static EntityData1 DRGBR01_850mm(){return new EntityData1("DRGBR01(850mm)","Germany","1926-1945","Steam",
+            "","",type, " Passenger Locomotive",
+            39566f,2210f,108.9f,130f,50f,false, true);}
+
+    public static EntityData1 DRGBR01_10Streamlined(){return new EntityData1("DRGBR01_10Streamlined","Germany","1937-1945","Steam",
+            "","",type, " Passenger Locomotive",
+            35070f,2120f,114.3f,150f,50f,false, true);}
+
+    public static EntityData1 DRGBR01_10UnStreamlined(){return new EntityData1("DRGBR01_10UnStreamlined","Germany","1937-1945","Steam",
+            "","",type, " Passenger Locomotive",
+            35070f,2120f,114.3f,140f,50f,false, true);}
 
     //BR01 Witte Christmas
     public static EntityData1 DRBR01WitteChristmas(){return new EntityData1("ChristmasBR01Witte","Germany","1926-1982","Steam",
@@ -96,7 +162,6 @@ public class SuperStat {
     public static EntityData2 BR798(){return new EntityData2("BR798","Germany","1953-2000","Diesel",
             nick," VT 98",type, " Passenger Railbus",
             0f,299.12f,18.9f,90f, false, true);}
-
     //BR 798 / VT 98
     public static EntityData2 BR798Ads(){return new EntityData2("BR798Advertising","Germany","1953-2000","Diesel",
             nick," VT 98",type, " Passenger Railbus",
@@ -191,8 +256,48 @@ public class SuperStat {
             "","",type, " Freight Locomotive",
             0f,7613.88f,85.4f,140f, false, true);}
 
+    //T32 Tender todo fix these stats
+    public static EntityData3 T26(){return new EntityData3("T26","Germany","1926-1982","",
+            "",type," Tender", 17.5f, 0f,false, true);}
+
     //T32 Tender
-    public static EntityData3 T32Tender(){return new EntityData3("T322'2'","Germany","1926-1982","",
+    public static EntityData3 T32(){return new EntityData3("T32","Germany","1926-1982","",
+            "",type," Tender", 17.5f, 0f,false, true);}
+
+    //T32 Tender todo fix these stats
+    public static EntityData3 T34(){return new EntityData3("T34","Germany","1926-1982","",
+            "",type," Tender", 17.5f, 0f,false, true);}
+
+    //T32 Tender todo fix these stats
+    public static EntityData3 T34AditionalOil(){return new EntityData3("T34 Aditional Oil","Germany","1926-1982","",
+            "",type," Tender", 17.5f, 0f,false, true);}
+
+    //T32 Tender todo fix these stats
+    public static EntityData3 T34Oil(){return new EntityData3("T34 Oil","Germany","1926-1982","",
+            "",type," Tender", 17.5f, 0f,false, true);}
+
+    //T32 Tender todo fix these stats
+    public static EntityData3 T34Streamlined(){return new EntityData3("T34 Streamline","Germany","1926-1982","",
+            "",type," Tender", 17.5f, 0f,false, true);}
+
+    //T32 Tender todo fix these stats
+    public static EntityData3 T34StreamlinedDRG(){return new EntityData3("T34 StreamlineDRG","Germany","1926-1982","",
+            "",type," Tender", 17.5f, 0f,false, true);}
+
+    //T32 Tender todo fix these stats
+    public static EntityData3 T37(){return new EntityData3("T37","Germany","1926-1982","",
+            "",type," Tender", 17.5f, 0f,false, true);}
+
+    //T32 Tender todo fix these stats
+    public static EntityData3 T37DRG(){return new EntityData3("T37DRG","Germany","1926-1982","",
+            "",type," Tender", 17.5f, 0f,false, true);}
+
+    //T32 Tender todo fix these stats
+    public static EntityData3 T38(){return new EntityData3("T38","Germany","1926-1982","",
+            "",type," Tender", 17.5f, 0f,false, true);}
+
+    //T32 Tender todo fix these stats
+    public static EntityData3 T38DRG(){return new EntityData3("T38DRG","Germany","1926-1982","",
             "",type," Tender", 17.5f, 0f,false, true);}
 
     //T32 Christmas Tender
@@ -250,7 +355,7 @@ public class SuperStat {
 
     //Rheingold 1st Salon
     public static EntityData3 RheingoldSalon1Christmas(){return new EntityData3("SA4u28Christmas","Germany","1928-1939",aditional,
-            " Rheingold 1st class saloncar eChristmas",type," Passenger", 51.9f, 0f,false, true);}
+            " Rheingold 1st class saloncar Christmas",type," Passenger", 51.9f, 0f,false, true);}
 
     //Rheingold 2nd Kitchen
     public static EntityData3 RheingoldKitchen2Christmas(){return new EntityData3("SB4uk28Christmas","Germany","1928-1939",aditional,

@@ -4,7 +4,6 @@ package wwcp.entities.passengerstock;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
-import ebf.tim.items.ItemTransport;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -12,12 +11,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
 import wwcp.models.passengerStock.ChristmasSalon2;
-import wwcp.models.passengerStock.RheingoldSalonTwo;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -43,38 +41,38 @@ public class EntityRheingoldSalonTwoChristmas extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return SuperStat.RheingoldSalon2Christmas().reinforced;
+        return TransportDetails.RheingoldSalon2Christmas().reinforced;
     }
 
     @Override
     public String transportName() {
-        return SuperStat.RheingoldSalon2Christmas().name;
+        return TransportDetails.RheingoldSalon2Christmas().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.RheingoldSalon2Christmas().country;
+        return TransportDetails.RheingoldSalon2Christmas().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.RheingoldSalon2Christmas().year;
+        return TransportDetails.RheingoldSalon2Christmas().year;
     }
 
     @Override
     public float weightKg() {
-        return SuperStat.RheingoldSalon2Christmas().weightinKGs;
+        return TransportDetails.RheingoldSalon2Christmas().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.RheingoldSalon2Christmas().fictional;
+        return TransportDetails.RheingoldSalon2Christmas().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.RheingoldSalon2Christmas().additionalTextTitle) + SuperStat.RheingoldSalon2Christmas().additionalText,
-                RailUtility.translate(SuperStat.RheingoldSalon2Christmas().additionalTextTitle2) + SuperStat.RheingoldSalon2Christmas().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.RheingoldSalon2Christmas().additionalTextTitle) + TransportDetails.RheingoldSalon2Christmas().additionalText,
+                RailUtility.translate(TransportDetails.RheingoldSalon2Christmas().additionalTextTitle2) + TransportDetails.RheingoldSalon2Christmas().additionalText2};}
     }
 
     @Override

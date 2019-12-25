@@ -1,19 +1,13 @@
-//This is a documentation file for copy pasting into a steam locomotive.
-package wwcp.entities.locomotives;
+package wwcp.entities.locomotives.steamers.DR;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion.transportTypes;
 import ebf.tim.api.SkinRegistry;
-import ebf.tim.api.TrainBase;
 import ebf.tim.entities.EntityTrainCore;
-import ebf.tim.items.ItemTransport;
-import ebf.tim.models.Bogie;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
-import java.util.List;
-import java.util.UUID;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityFurnace;
@@ -23,73 +17,88 @@ import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.TransportDetails;
+import wwcp.entities.WWCPTransport;
+import wwcp.models.bogies.*;
+import wwcp.models.locomotives.steamers.DRBR01.DR_BR01_5Oil;
 import wwcp.worldwidecontentpack;
 
-// XXXX -> Entity Name
-// YYYY -> Data for SuperStat
-// ZZZZ -> Country for tab
-// QQQQ -> Bogies
+import java.util.UUID;
 
-public class EntityXXXX extends EntityTrainCore {
+public class EntityDRBR01_5Oil extends EntityTrainCore {
 
-    public EntityXXXX(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityDRBR01_5Oil(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new ItemTransport(new EntityXXXX(null), worldwidecontentpack.MODID, worldwidecontentpack.ZZZZ);
+    public static final Item thisItem = new WWCPTransport(new EntityDRBR01_5Oil(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
-    public EntityXXXX(World world) {
+    public EntityDRBR01_5Oil(World world) {
         super(world);
     }
 
     @Override
-    public String transportName() { return SuperStat.YYYY().name; }
+    public float getPlayerScale(){return 0.65f;}
 
     @Override
-    public String transportcountry() { return SuperStat.YYYY().country; }
+    public String transportName() {
+        return TransportDetails.DRBR01_5Oil().name;
+    }
 
     @Override
-    public String transportYear() { return SuperStat.YYYY().year; }
+    public String transportcountry() {
+        return TransportDetails.DRBR01_5Oil().country;
+    }
+
+    @Override
+    public String transportYear() {
+        return TransportDetails.DRBR01_5Oil().year;
+    }
 
     @Override
     public String transportFuelType() {
-        return SuperStat.YYYY().fuel;
-    }
-    @Override
-    public boolean isFictional() {
-        return SuperStat.YYYY().fictional;
-    }
-    @Override
-    public float transportTractiveEffort() {
-        return SuperStat.YYYY().tractive_effort;
-    }
-    @Override
-    public float transportMetricHorsePower() {
-        return SuperStat.YYYY().metric_horsepower;
-    }
-    @Override
-    public float weightKg() {
-        return  SuperStat.YYYY().weightinKGs;
+        return TransportDetails.DRBR01_5Oil().fuel;
     }
 
-        public boolean isReinforced() {
-            return SuperStat.YYYY().reinforced;
-        }
+    @Override
+    public boolean isFictional() {
+        return TransportDetails.DRBR01_5Oil().fictional;
+    }
+
+    @Override
+    public float transportTractiveEffort() {
+        return TransportDetails.DRBR01_5Oil().tractive_effort;
+    }
+
+    @Override
+    public float transportMetricHorsePower() {
+        return TransportDetails.DRBR01_5Oil().metric_horsepower;
+    }
+
+    @Override
+    public float weightKg() {
+        return TransportDetails.DRBR01_5Oil().weightinKGs;
+    }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.YYYY().additionalTextTitle) + SuperStat.YYYY().additionalText,
-                RailUtility.translate(SuperStat.YYYY().additionalTextTitle2) + SuperStat.YYYY().additionalText2};}
+        {
+            return new String[]{RailUtility.translate(TransportDetails.DRBR01_5Oil().additionalTextTitle) + TransportDetails.DRBR01_5Oil().additionalText,
+                    RailUtility.translate(TransportDetails.DRBR01_5Oil().additionalTextTitle2) + TransportDetails.DRBR01_5Oil().additionalText2};
+        }
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0?SuperStat.YYYY().backTopSpeed:SuperStat.YYYY().topSpeed;}
+    public float transportTopSpeed() {
+        return accelerator < 0 ? TransportDetails.DRBR01_5Oil().backTopSpeed : TransportDetails.DRBR01_5Oil().topSpeed;
+    }
 
-        @Override
-        public void registerSkins(){
-            SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T6.png", "textures/bogies/Flexxpower.png",
-                    "HLE28 NMBS Cargo", "Used by the NMBS/SNCB in belgium for freight trains");
-        }
+    @Override
+    public void registerSkins() {
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DRBR01/DR_BR01_5_Oil_1.png", "textures/bogies/BR01/BR01BogieBlack.png",
+                "DR BR 01.5 1", "DR BR 01.5 variant 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DRBR01/DR_BR01_5_Oil_2.png", "textures/bogies/BR01/BR01BogieBlack.png",
+                "DR BR 01.5 2", "DR BR 01.5 variant 2");
+    }
 
     public int getInventoryRows() {
         return 1;
@@ -98,17 +107,17 @@ public class EntityXXXX extends EntityTrainCore {
     public transportTypes getType() {
         return transportTypes.STEAM;
     }
-
+ 
     public float getMaxFuel() {
         return 1.0F;
     }
 
     public float[][] getRiderOffsets() {
-        return new float[][]{{1.3F, 1.2F, 0.0F}};
+        return new float[][]{{3.3F, 1.6F, 0.0F}};
     }
 
     public float[] getHitboxSize() {
-        return new float[]{3.6F, 2.1F, 1.3F};
+        return new float[]{7.325F, 2.1F, 1.3F};
     }
 
     public ItemStack[] getRecipie() {
@@ -119,17 +128,14 @@ public class EntityXXXX extends EntityTrainCore {
         return 0.5F;
     }
 
-    public float[][] getSmokeOffset() {
-        return new float[][]{{-1.0F, 0.0F, 0.5F, 1.1711154E7F, 30.0F}, {-1.0F, 0.0F, -0.5F, 1.1711154E7F, 30.0F}, {-1.4F, 2.0F, 0.0F, 3947580.0F, 500.0F}};
-    }
-
+    @Override
     public float[][] bogieModelOffsets() {
-        return null;
-
+        return new float[][]{{2.5f, 0.1f, 0}, {-2.5f, 0.1f, 0}};
     }
 
+    @Override
     public ModelBase[] bogieModels() {
-        return null;
+        return new ModelBase[]{new BR01FrontBogie(), new BR01BackBogie()};
     }
 
     public float[] bogieLengthFromCenter() {
@@ -140,16 +146,25 @@ public class EntityXXXX extends EntityTrainCore {
         return 0.0625F;
     }
 
+    @Override
     public float[][] modelOffsets() {
-        return (float[][]) null;
+        return new float[][]{{0.165f, -0.1F, 0.F}};
     }
 
     public boolean shouldRiderSit() {
         return false;
     }
 
+    public boolean isReinforced() {
+        return TransportDetails.DRBR01().reinforced;
+    }
+
     public int[] getTankCapacity() {
         return new int[]{9161, 800};
+    }
+
+    public int getRFCapacity() {
+        return 0;
     }
 
     public String[] getTankFilters(int tank) {
@@ -181,7 +196,7 @@ public class EntityXXXX extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new cccc()};
+        return new ModelBase[]{new DR_BR01_5Oil()};
     }
 
     @SideOnly(Side.CLIENT)
@@ -194,3 +209,4 @@ public class EntityXXXX extends EntityTrainCore {
         return URIRegistry.SOUND_RUNNING.getResource("XXXXXXX.ogg");
     }
 }
+

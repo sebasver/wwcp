@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;

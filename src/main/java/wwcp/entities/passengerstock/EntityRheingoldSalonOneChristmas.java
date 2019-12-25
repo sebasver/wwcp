@@ -4,7 +4,6 @@ package wwcp.entities.passengerstock;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
-import ebf.tim.items.ItemTransport;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -12,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -42,38 +41,38 @@ public class EntityRheingoldSalonOneChristmas extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return SuperStat.RheingoldSalon1Christmas().reinforced;
+        return TransportDetails.RheingoldSalon1Christmas().reinforced;
     }
 
     @Override
     public String transportName() {
-        return SuperStat.RheingoldSalon1Christmas().name;
+        return TransportDetails.RheingoldSalon1Christmas().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.RheingoldSalon1Christmas().country;
+        return TransportDetails.RheingoldSalon1Christmas().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.RheingoldSalon1Christmas().year;
+        return TransportDetails.RheingoldSalon1Christmas().year;
     }
 
     @Override
     public float weightKg() {
-        return SuperStat.RheingoldSalon1Christmas().weightinKGs;
+        return TransportDetails.RheingoldSalon1Christmas().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.RheingoldSalon1Christmas().fictional;
+        return TransportDetails.RheingoldSalon1Christmas().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.RheingoldSalon1Christmas().additionalTextTitle) + SuperStat.RheingoldSalon1Christmas().additionalText,
-                RailUtility.translate(SuperStat.RheingoldSalon1Christmas().additionalTextTitle2) + SuperStat.RheingoldSalon1Christmas().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.RheingoldSalon1Christmas().additionalTextTitle) + TransportDetails.RheingoldSalon1Christmas().additionalText,
+                RailUtility.translate(TransportDetails.RheingoldSalon1Christmas().additionalTextTitle2) + TransportDetails.RheingoldSalon1Christmas().additionalText2};}
     }
 
     @Override

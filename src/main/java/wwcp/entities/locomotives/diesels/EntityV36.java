@@ -14,7 +14,7 @@ import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.diesels.V36;
 import wwcp.worldwidecontentpack;
@@ -36,47 +36,47 @@ public class EntityV36 extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return SuperStat.WR360C14().name; }
+    public String transportName() { return TransportDetails.WR360C14().name; }
 
     @Override
-    public String transportcountry() { return SuperStat.WR360C14().country; }
+    public String transportcountry() { return TransportDetails.WR360C14().country; }
 
     @Override
-    public String transportYear() { return SuperStat.WR360C14().year; }
+    public String transportYear() { return TransportDetails.WR360C14().year; }
 
     @Override
     public String transportFuelType() {
-        return SuperStat.WR360C14().fuel;
+        return TransportDetails.WR360C14().fuel;
     }
     @Override
     public boolean isFictional() {
-        return SuperStat.WR360C14().fictional;
+        return TransportDetails.WR360C14().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return SuperStat.WR360C14().tractive_effort;
+        return TransportDetails.WR360C14().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return SuperStat.WR360C14().metric_horsepower;
+        return TransportDetails.WR360C14().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  SuperStat.WR360C14().weightinKGs;
+        return  TransportDetails.WR360C14().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return SuperStat.WR360C14().reinforced;
+        return TransportDetails.WR360C14().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.WR360C14().additionalTextTitle) + SuperStat.WR360C14().additionalText,
-                RailUtility.translate(SuperStat.WR360C14().additionalTextTitle2) + SuperStat.WR360C14().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.WR360C14().additionalTextTitle) + TransportDetails.WR360C14().additionalText,
+                RailUtility.translate(TransportDetails.WR360C14().additionalTextTitle2) + TransportDetails.WR360C14().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0?SuperStat.WR360C14().backTopSpeed:SuperStat.WR360C14().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? TransportDetails.WR360C14().backTopSpeed: TransportDetails.WR360C14().topSpeed;}
 
     @Override
     public void registerSkins(){

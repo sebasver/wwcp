@@ -4,7 +4,6 @@ package wwcp.entities.passengerstock;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
-import ebf.tim.items.ItemTransport;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -12,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -42,38 +41,38 @@ public class EntityRheingoldSpeiseTwo extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return SuperStat.RheingoldKitchen2().reinforced;
+        return TransportDetails.RheingoldKitchen2().reinforced;
     }
 
     @Override
     public String transportName() {
-        return SuperStat.RheingoldKitchen2().name;
+        return TransportDetails.RheingoldKitchen2().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.RheingoldKitchen2().country;
+        return TransportDetails.RheingoldKitchen2().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.RheingoldKitchen2().year;
+        return TransportDetails.RheingoldKitchen2().year;
     }
 
     @Override
     public float weightKg() {
-        return SuperStat.RheingoldKitchen2().weightinKGs;
+        return TransportDetails.RheingoldKitchen2().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.RheingoldKitchen2().fictional;
+        return TransportDetails.RheingoldKitchen2().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.RheingoldKitchen2().additionalTextTitle) + SuperStat.RheingoldKitchen2().additionalText,
-                RailUtility.translate(SuperStat.RheingoldKitchen2().additionalTextTitle2) + SuperStat.RheingoldKitchen2().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.RheingoldKitchen2().additionalTextTitle) + TransportDetails.RheingoldKitchen2().additionalText,
+                RailUtility.translate(TransportDetails.RheingoldKitchen2().additionalTextTitle2) + TransportDetails.RheingoldKitchen2().additionalText2};}
     }
 
     @Override

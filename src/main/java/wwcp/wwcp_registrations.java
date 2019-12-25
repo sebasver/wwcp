@@ -1,26 +1,28 @@
 package wwcp;
 
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.registry.TiMGenericRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import wwcp.blockEntities.platform.*;
-import wwcp.entities.TempTC.*;
 import wwcp.entities.freight.*;
 import wwcp.entities.locomotives.diesels.*;
 import wwcp.entities.locomotives.electrics.*;
 import wwcp.entities.locomotives.steamers.*;
+import wwcp.entities.locomotives.steamers.DB.*;
+import wwcp.entities.locomotives.steamers.DR.*;
+import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01;
+import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Streamlined;
+import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Unstreamlined;
+import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_850mm;
 import wwcp.entities.passengerstock.*;
 import wwcp.entities.railbusses.*;
 import wwcp.entities.tender.*;
+import wwcp.entities.tender.germanTenders.*;
 
-
-import java.util.Timer;
 
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
@@ -106,9 +108,25 @@ public class wwcp_registrations {
     // Steam trains
     public static GenericRailTransport[] listSteamTrains() {
         return new GenericRailTransport[]{
-//                new Entity94xx(null),
-//                new EntityClass812(null),
-//                new EntityDRBR01(null),
+                new Entity94xx(null),
+                new EntityClass812(null),
+                new EntityDRBR01(null),
+                new EntityDRBR01_5(null),
+                new EntityDRBR01_5Oil(null),
+                new EntityDRBR01_5SD(null),
+                new EntityDBBR01(null),
+                new EntityDBBR01_10Streamlined_Oil(null),
+                new EntityDBBR01NeuKessel(null),
+                new EntityDBBR01NeuKessel_Oil(null),
+                new EntityDBBR01Umbau(null),
+                new EntityDBBR012(null),
+                new EntityDBBR012_Oil(null),
+                new EntityDBBR012NeuKessel(null),
+                new EntityDBBR012NeuKessel_Oil(null),
+                new EntityDRGBR01(null),
+                new EntityDRGBR01_850mm(null),
+                new EntityDRGBR01_10_Streamlined(null),
+                new EntityDRGBR01_10_Unstreamlined(null),
                 new EntityDRBR01WitteChristmas(null),
                 new EntitySentinel100HPChristmas(null)
         };
@@ -117,32 +135,40 @@ public class wwcp_registrations {
     // Tender list
     public static GenericRailTransport[] listTenders() {
         return new GenericRailTransport[]{
-//                new EntityClass812Tender(null),
-//                new EntityT32(null),
-                new EntityT32Christmas(null)
+                new EntityClass812Tender(null),
+                new EntityT32(null),
+                new EntityT32Christmas(null),
+                new EntityT26(null),
+                new EntityT34(null),
+                new EntityT34AditionalOil(null),
+                new EntityT34Oil(null),
+                new EntityT34Streamlined(null),
+                new EntityT34StreamlinedDRG(null),
+                new EntityT37(null),
+                new EntityT38(null)
         };
     }
 
     // Diesel List
     public static GenericRailTransport[] listDiesel() {
         return new GenericRailTransport[]{
-//                new EntityV36(null),
-//                new EntityClass37(null),
-//                new EntityAC4400CW(null),
-//                new EntityMZClassOne(null),
-//                new EntityMZClassTwo(null),
-//                new EntityMZClassThree(null),
-//                new EntityMZClassFour(null),
-//                new EntityKofIII(null),
-//                new EntityKofIII2(null)
+                new EntityV36(null),
+                new EntityClass37(null),
+                new EntityAC4400CW(null),
+                new EntityMZClassOne(null),
+                new EntityMZClassTwo(null),
+                new EntityMZClassThree(null),
+                new EntityMZClassFour(null),
+                new EntityKofIII(null),
+                new EntityKofIII2(null)
         };
     }
 
     //Railbusses
     public static GenericRailTransport[] listRailbusses() {
         return new GenericRailTransport[]{
-//                new EntityNE81(null),
-//                new EntityVT98(null)
+                new EntityNE81(null),
+                new EntityVT98(null)
         };
     }
 
@@ -167,16 +193,16 @@ public class wwcp_registrations {
         return new GenericRailTransport[]{
                 new EntityEurofimaCompartment(null),
                 new EntityEurofimaRows(null),
-//                new EntityEurofimaSleeper(null),
+                new EntityEurofimaSleeper(null),
                 new EntityDBpza(null),
-//                new EntityDonder2(null),
-//                new EntityDonder3(null),
-//                new EntityDonder4(null),
-//                new EntityRheingoldSalonOne(null),
-//                new EntityRheingoldSalonTwo(null),
-//                new EntityRheingoldSpeiseOne(null),
-//                new EntityRheingoldSpeiseTwo(null),
-//                new EntityRheingoldBagage(null),
+                new EntityDonder2(null),
+                new EntityDonder3(null),
+                new EntityDonder4(null),
+                new EntityRheingoldSalonOne(null),
+                new EntityRheingoldSalonTwo(null),
+                new EntityRheingoldSpeiseOne(null),
+                new EntityRheingoldSpeiseTwo(null),
+                new EntityRheingoldBagage(null),
                 new EntityRheingoldSalonOneChristmas(null),
                 new EntityRheingoldSalonTwoChristmas(null),
                 new EntityRheingoldSpeiseOneChristmas(null),
@@ -191,12 +217,12 @@ public class wwcp_registrations {
     public static GenericRailTransport[] listFreight() {
         return new GenericRailTransport[]{
                 new EntityTEUSmall(null),
-//                new EntityUKopenWagon(null),
-//                new EntityOFF52Beetle(null),
-//                new EntitySGNS801BT2TT(null),
-//                new EntitySGNS802BT(null),
-//                new EntitySGNS804TS(null),
-//                new EntitySGNS801BT2TS(null)
+                new EntityUKopenWagon(null),
+                new EntityOFF52Beetle(null),
+                new EntitySGNS801BT2TT(null),
+                new EntitySGNS802BT(null),
+                new EntitySGNS804TS(null),
+                new EntitySGNS801BT2TS(null)
         };
     }
 }

@@ -1,4 +1,4 @@
-package wwcp.entities.locomotives.steamers;
+package wwcp.entities.locomotives.steamers.DRG;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -8,9 +8,6 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
-
-import java.util.UUID;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityFurnace;
@@ -19,87 +16,90 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
+import wwcp.models.bogies.BR01BackBogie;
 import wwcp.models.bogies.BR01FrontBogie;
-import wwcp.models.bogies.BackBogieDRBR01;
-import wwcp.models.locomotives.steamers.DRBR01.DRBR01;
+import wwcp.models.locomotives.steamers.DRGBR01.DRG_BR01;
+import wwcp.models.locomotives.steamers.DRGBR01.DRG_BR01_10Unstreamlined;
 import wwcp.worldwidecontentpack;
 
-public class EntityDRBR01 extends EntityTrainCore {
+import java.util.UUID;
 
-    public EntityDRBR01(UUID owner, World world, double xPos, double yPos, double zPos) {
+public class EntityDRGBR01_10_Unstreamlined extends EntityTrainCore {
+
+    public EntityDRGBR01_10_Unstreamlined(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityDRBR01(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityDRGBR01_10_Unstreamlined(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
-    public EntityDRBR01(World world) {
+    public EntityDRGBR01_10_Unstreamlined(World world) {
         super(world);
     }
 
-//    @Override
-//    public float getPlayerScale(){return 0.65f;}
+    @Override
+    public float getPlayerScale(){return 0.65f;}
 
     @Override
     public String transportName() {
-        return SuperStat.DRBR01().name;
+        return TransportDetails.DRGBR01_10UnStreamlined().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.DRBR01().country;
+        return TransportDetails.DRGBR01_10UnStreamlined().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.DRBR01().year;
+        return TransportDetails.DRGBR01_10UnStreamlined().year;
     }
 
     @Override
     public String transportFuelType() {
-        return SuperStat.DRBR01().fuel;
+        return TransportDetails.DRGBR01_10UnStreamlined().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.DRBR01().fictional;
+        return TransportDetails.DRGBR01_10UnStreamlined().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return SuperStat.DRBR01().tractive_effort;
+        return TransportDetails.DRGBR01_10UnStreamlined().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return SuperStat.DRBR01().metric_horsepower;
+        return TransportDetails.DRGBR01_10UnStreamlined().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return SuperStat.DRBR01().weightinKGs;
+        return TransportDetails.DRGBR01_10UnStreamlined().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(SuperStat.DRBR01().additionalTextTitle) + SuperStat.DRBR01().additionalText,
-                    RailUtility.translate(SuperStat.DRBR01().additionalTextTitle2) + SuperStat.DRBR01().additionalText2};
+            return new String[]{RailUtility.translate(TransportDetails.DRGBR01_10UnStreamlined().additionalTextTitle) + TransportDetails.DRGBR01_10UnStreamlined().additionalText,
+                    RailUtility.translate(TransportDetails.DRGBR01_10UnStreamlined().additionalTextTitle2) + TransportDetails.DRGBR01_10UnStreamlined().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? SuperStat.DRBR01().backTopSpeed : SuperStat.DRBR01().topSpeed;
+        return accelerator < 0 ? TransportDetails.DRGBR01_10UnStreamlined().backTopSpeed : TransportDetails.DRGBR01_10UnStreamlined().topSpeed;
     }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DR01/Wagner1.png", "textures/bogies/BR01/BR01FrontBlack.png",
-                "BR01 Wagner", "Default black wheels for the BR01 Wagner");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DR01/Wagner2.png", "textures/bogies/BR01/BR01FrontWhite.png",
-                "BR01 Wagner white wheels", "Special white wheels for the BR01 Wagner");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DRGBR01/DRG_BR012_1.png", "textures/bogies/BR01/BR01BogieBlack.png",
+                "DB BR 01.10 1", "DR BR 01.10 variant 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DRGBR01/DRG_BR012_2.png", "textures/bogies/BR01/BR01BogieBlack.png",
+                "DB BR 01.10 1", "DR BR 01.10 variant 2");
     }
 
     public int getInventoryRows() {
@@ -137,7 +137,7 @@ public class EntityDRBR01 extends EntityTrainCore {
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new BR01FrontBogie(), new BackBogieDRBR01()};
+        return new ModelBase[]{new BR01FrontBogie(), new BR01BackBogie()};
     }
 
     public float[] bogieLengthFromCenter() {
@@ -158,7 +158,7 @@ public class EntityDRBR01 extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return SuperStat.DRBR01().reinforced;
+        return TransportDetails.DRGBR01_10UnStreamlined().reinforced;
     }
 
     public int[] getTankCapacity() {
@@ -198,7 +198,7 @@ public class EntityDRBR01 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new DRBR01()};
+        return new ModelBase[]{new DRG_BR01_10Unstreamlined()};
     }
 
     @SideOnly(Side.CLIENT)

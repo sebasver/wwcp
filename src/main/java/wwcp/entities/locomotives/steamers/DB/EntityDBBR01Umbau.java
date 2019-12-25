@@ -1,5 +1,4 @@
-//This is a documentation file for copy pasting into a steam locomotive.
-package wwcp.entities.locomotives.steamers;
+package wwcp.entities.locomotives.steamers.DB;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -9,8 +8,6 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
-
-import java.util.UUID;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityFurnace;
@@ -21,73 +18,92 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.locomotives.steamers.ChristmasSentinel;
+import wwcp.models.bogies.BR01BackBogie;
+import wwcp.models.bogies.BR01FrontBogie;
+import wwcp.models.locomotives.steamers.DBBR01.DB_BR01;
+import wwcp.models.locomotives.steamers.DBBR01.DB_BR01Umbau;
 import wwcp.worldwidecontentpack;
 
-// XXXX -> Entity Name
-// YYYY -> Data for SuperStat
-// ZZZZ -> Country for tab
-// QQQQ -> Bogies
+import java.util.UUID;
 
-public class EntitySentinel100HPChristmas extends EntityTrainCore {
+public class EntityDBBR01Umbau extends EntityTrainCore {
 
-    public EntitySentinel100HPChristmas(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityDBBR01Umbau(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntitySentinel100HPChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.FestivitiesTab);
+    public static final Item thisItem = new WWCPTransport(new EntityDBBR01Umbau(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
-    public EntitySentinel100HPChristmas(World world) {
+    public EntityDBBR01Umbau(World world) {
         super(world);
     }
 
     @Override
-    public String transportName() { return TransportDetails.Sentinel100HPChristmas().name; }
+    public float getPlayerScale(){return 0.65f;}
 
     @Override
-    public String transportcountry() { return TransportDetails.Sentinel100HPChristmas().country; }
+    public String transportName() {
+        return TransportDetails.DBBR01Umbau().name;
+    }
 
     @Override
-    public String transportYear() { return TransportDetails.Sentinel100HPChristmas().year; }
+    public String transportcountry() {
+        return TransportDetails.DBBR01Umbau().country;
+    }
+
+    @Override
+    public String transportYear() {
+        return TransportDetails.DBBR01Umbau().year;
+    }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.Sentinel100HPChristmas().fuel;
-    }
-    @Override
-    public boolean isFictional() {
-        return TransportDetails.Sentinel100HPChristmas().fictional;
-    }
-    @Override
-    public float transportTractiveEffort() {
-        return TransportDetails.Sentinel100HPChristmas().tractive_effort;
-    }
-    @Override
-    public float transportMetricHorsePower() {
-        return TransportDetails.Sentinel100HPChristmas().metric_horsepower;
-    }
-    @Override
-    public float weightKg() {
-        return  TransportDetails.Sentinel100HPChristmas().weightinKGs;
+        return TransportDetails.DBBR01Umbau().fuel;
     }
 
-    public boolean isReinforced() {
-        return TransportDetails.Sentinel100HPChristmas().reinforced;
+    @Override
+    public boolean isFictional() {
+        return TransportDetails.DBBR01Umbau().fictional;
+    }
+
+    @Override
+    public float transportTractiveEffort() {
+        return TransportDetails.DBBR01Umbau().tractive_effort;
+    }
+
+    @Override
+    public float transportMetricHorsePower() {
+        return TransportDetails.DBBR01Umbau().metric_horsepower;
+    }
+
+    @Override
+    public float weightKg() {
+        return TransportDetails.DBBR01Umbau().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.Sentinel100HPChristmas().additionalTextTitle) + TransportDetails.Sentinel100HPChristmas().additionalText,
-                RailUtility.translate(TransportDetails.Sentinel100HPChristmas().additionalTextTitle2) + TransportDetails.Sentinel100HPChristmas().additionalText2};}
+        {
+            return new String[]{RailUtility.translate(TransportDetails.DBBR01Umbau().additionalTextTitle) + TransportDetails.DBBR01Umbau().additionalText,
+                    RailUtility.translate(TransportDetails.DBBR01Umbau().additionalTextTitle2) + TransportDetails.DBBR01Umbau().additionalText2};
+        }
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.Sentinel100HPChristmas().backTopSpeed: TransportDetails.Sentinel100HPChristmas().topSpeed;}
+    public float transportTopSpeed() {
+        return accelerator < 0 ? TransportDetails.DBBR01Umbau().backTopSpeed : TransportDetails.DBBR01Umbau().topSpeed;
+    }
 
     @Override
-    public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasSentinel.png",
-                "HLE28 NMBS Cargo", "Used by the NMBS/SNCB in belgium for freight trains");
+    public void registerSkins() {
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR01_Witte_1.png", "textures/bogies/BR01/BR01BogieBlack.png",
+                "DB BR 01 Witte 1", "DR BR 01 Witte Deflectors Variant 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR01_Witte_2.png", "textures/bogies/BR01/BR01BogieBlack.png",
+                "DB BR 01 Witte 2", "DR BR 01 Witte Deflectors Variant 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR01_Witte_3.png", "textures/bogies/BR01/BR01BogieBlack.png",
+                "DB BR 01 Witte 3", "DR BR 01 Witte Deflectors Variant 3");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR01_Witte_4.png", "textures/bogies/BR01/BR01BogieBlack.png",
+                "DB BR 01 Witte 4", "DR BR 01 Witte Deflectors Variant 4");
     }
 
     public int getInventoryRows() {
@@ -103,16 +119,11 @@ public class EntitySentinel100HPChristmas extends EntityTrainCore {
     }
 
     public float[][] getRiderOffsets() {
-        return new float[][]{{0.8F, 1.1F, 0.3F}};
+        return new float[][]{{3.3F, 1.6F, 0.0F}};
     }
 
     public float[] getHitboxSize() {
-        return new float[]{2.79F, 1.6F, 1.3F};
-    }
-
-    @Override
-    public float[][] modelOffsets() {
-        return new float[][]{{-1.345f,-0.12F,0F}};
+        return new float[]{7.325F, 2.1F, 1.3F};
     }
 
     public ItemStack[] getRecipie() {
@@ -123,18 +134,14 @@ public class EntitySentinel100HPChristmas extends EntityTrainCore {
         return 0.5F;
     }
 
+    @Override
     public float[][] bogieModelOffsets() {
-        return null;
-
+        return new float[][]{{2.5f, 0.1f, 0}, {-2.5f, 0.1f, 0}};
     }
 
     @Override
-    public float getPlayerScale() {
-        return 0.50f;
-    }
-
     public ModelBase[] bogieModels() {
-        return null;
+        return new ModelBase[]{new BR01FrontBogie(), new BR01BackBogie()};
     }
 
     public float[] bogieLengthFromCenter() {
@@ -145,12 +152,25 @@ public class EntitySentinel100HPChristmas extends EntityTrainCore {
         return 0.0625F;
     }
 
+    @Override
+    public float[][] modelOffsets() {
+        return new float[][]{{0.165f, -0.1F, 0.F}};
+    }
+
     public boolean shouldRiderSit() {
         return false;
     }
 
+    public boolean isReinforced() {
+        return TransportDetails.DBBR01Umbau().reinforced;
+    }
+
     public int[] getTankCapacity() {
         return new int[]{9161, 800};
+    }
+
+    public int getRFCapacity() {
+        return 0;
     }
 
     public String[] getTankFilters(int tank) {
@@ -182,7 +202,7 @@ public class EntitySentinel100HPChristmas extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new ChristmasSentinel()};
+        return new ModelBase[]{new DB_BR01Umbau()};
     }
 
     @SideOnly(Side.CLIENT)
@@ -195,3 +215,4 @@ public class EntitySentinel100HPChristmas extends EntityTrainCore {
         return URIRegistry.SOUND_RUNNING.getResource("XXXXXXX.ogg");
     }
 }
+

@@ -34,7 +34,7 @@ import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.5.17 Alpha";
+    public static final String MOD_VERSION = "0.7.17 Alpha";
 
 
     @Mod.EventHandler
@@ -55,7 +55,7 @@ public class worldwidecontentpack {
 //        France = new TiMTab("French models", MODID, "myTab4");
 //        Netherlands = new TiMTab("Dutch models", MODID, "myTab5");
 //        America = new TiMTab("American models", MODID, "myTab6");
-//        Austria = new TiMTab( "Austrian models", MODID, "myTab7");
+        Austria = new TiMTab( "Austrian models", MODID, "myTab7");
 //        Switzerland = new TiMTab("Swiss models", MODID, "myTab8");
         European = new TiMTab("Inter European models", MODID, "myTab9");
         BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
@@ -70,6 +70,8 @@ public class worldwidecontentpack {
 
     }
         //todo Block platform 5(Full block),7(half slope),9(station lamp) still erroring
+        //todo fix tender positioning + completion
+        //todo fix bogie rotating points on ALL Stock, HIGH URGENCY
 
     /**
      * I hereby start declaring the individual trains itself. I will insert a // statement before each big group

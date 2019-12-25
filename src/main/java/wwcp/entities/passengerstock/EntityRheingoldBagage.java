@@ -4,7 +4,6 @@ package wwcp.entities.passengerstock;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
-import ebf.tim.items.ItemTransport;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -12,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -41,38 +40,38 @@ public class EntityRheingoldBagage extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return SuperStat.RheingoldBaggage().reinforced;
+        return TransportDetails.RheingoldBaggage().reinforced;
     }
 
     @Override
     public String transportName() {
-        return SuperStat.RheingoldBaggage().name;
+        return TransportDetails.RheingoldBaggage().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.RheingoldBaggage().country;
+        return TransportDetails.RheingoldBaggage().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.RheingoldBaggage().year;
+        return TransportDetails.RheingoldBaggage().year;
     }
 
     @Override
     public float weightKg() {
-        return SuperStat.RheingoldBaggage().weightinKGs;
+        return TransportDetails.RheingoldBaggage().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.RheingoldBaggage().fictional;
+        return TransportDetails.RheingoldBaggage().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.RheingoldBaggage().additionalTextTitle) + SuperStat.RheingoldBaggage().additionalText,
-                RailUtility.translate(SuperStat.RheingoldBaggage().additionalTextTitle2) + SuperStat.RheingoldBaggage().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.RheingoldBaggage().additionalTextTitle) + TransportDetails.RheingoldBaggage().additionalText,
+                RailUtility.translate(TransportDetails.RheingoldBaggage().additionalTextTitle2) + TransportDetails.RheingoldBaggage().additionalText2};}
     }
 
     @Override

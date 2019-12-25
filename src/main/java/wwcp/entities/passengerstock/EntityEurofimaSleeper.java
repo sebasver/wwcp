@@ -5,7 +5,6 @@ package wwcp.entities.passengerstock;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
-import ebf.tim.items.ItemTransport;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -13,7 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.EurofimaBogie;
 import wwcp.models.passengerStock.EurofimaSleeper;
@@ -41,38 +40,38 @@ public class EntityEurofimaSleeper extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return SuperStat.EurofimaSleeper().reinforced;
+        return TransportDetails.EurofimaSleeper().reinforced;
     }
 
     @Override
     public String transportName() {
-        return SuperStat.EurofimaSleeper().name;
+        return TransportDetails.EurofimaSleeper().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.EurofimaSleeper().country;
+        return TransportDetails.EurofimaSleeper().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.EurofimaSleeper().year;
+        return TransportDetails.EurofimaSleeper().year;
     }
 
     @Override
     public float weightKg() {
-        return SuperStat.EurofimaSleeper().weightinKGs;
+        return TransportDetails.EurofimaSleeper().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.EurofimaSleeper().fictional;
+        return TransportDetails.EurofimaSleeper().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.EurofimaSleeper().additionalTextTitle) + SuperStat.EurofimaSleeper().additionalText,
-                RailUtility.translate(SuperStat.EurofimaSleeper().additionalTextTitle2) + SuperStat.EurofimaSleeper().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.EurofimaSleeper().additionalTextTitle) + TransportDetails.EurofimaSleeper().additionalText,
+                RailUtility.translate(TransportDetails.EurofimaSleeper().additionalTextTitle2) + TransportDetails.EurofimaSleeper().additionalText2};}
     }
 
     @Override

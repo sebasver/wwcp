@@ -14,7 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.electrics.F140MS2;
@@ -48,59 +48,59 @@ public class EntityTraxxF140MS2 extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return SuperStat.F140MS2E().name;
+        return TransportDetails.F140MS2E().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.F140MS2E().country;
+        return TransportDetails.F140MS2E().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.F140MS2E().year;
+        return TransportDetails.F140MS2E().year;
     }
 
     @Override
     public String transportFuelType() {
-        return SuperStat.F140MS2E().fuel;
+        return TransportDetails.F140MS2E().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.F140MS2E().fictional;
+        return TransportDetails.F140MS2E().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return SuperStat.F140MS2E().tractive_effort;
+        return TransportDetails.F140MS2E().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return SuperStat.F140MS2E().metric_horsepower;
+        return TransportDetails.F140MS2E().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return SuperStat.F140MS2E().weightinKGs;
+        return TransportDetails.F140MS2E().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return SuperStat.F140MS2E().reinforced;
+        return TransportDetails.F140MS2E().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(SuperStat.F140MS2E().additionalTextTitle) + SuperStat.F140MS2E().additionalText,
-                    RailUtility.translate(SuperStat.F140MS2E().additionalTextTitle2) + SuperStat.F140MS2E().additionalText2};
+            return new String[]{RailUtility.translate(TransportDetails.F140MS2E().additionalTextTitle) + TransportDetails.F140MS2E().additionalText,
+                    RailUtility.translate(TransportDetails.F140MS2E().additionalTextTitle2) + TransportDetails.F140MS2E().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? SuperStat.F140MS2E().backTopSpeed : SuperStat.F140MS2E().topSpeed;
+        return accelerator < 0 ? TransportDetails.F140MS2E().backTopSpeed : TransportDetails.F140MS2E().topSpeed;
     }
 
     @Override

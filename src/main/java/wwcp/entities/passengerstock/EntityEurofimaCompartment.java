@@ -4,7 +4,6 @@ package wwcp.entities.passengerstock;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
-import ebf.tim.items.ItemTransport;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.init.Items;
@@ -12,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.SuperStat;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.EurofimaBogie;
 import wwcp.models.passengerStock.EurofimaCompartment;
@@ -40,38 +39,38 @@ public class EntityEurofimaCompartment extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return SuperStat.EurofimaCompartment().reinforced;
+        return TransportDetails.EurofimaCompartment().reinforced;
     }
 
     @Override
     public String transportName() {
-        return SuperStat.EurofimaCompartment().name;
+        return TransportDetails.EurofimaCompartment().name;
     }
 
     @Override
     public String transportcountry() {
-        return SuperStat.EurofimaCompartment().country;
+        return TransportDetails.EurofimaCompartment().country;
     }
 
     @Override
     public String transportYear() {
-        return SuperStat.EurofimaCompartment().year;
+        return TransportDetails.EurofimaCompartment().year;
     }
 
     @Override
     public float weightKg() {
-        return SuperStat.EurofimaCompartment().weightinKGs;
+        return TransportDetails.EurofimaCompartment().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return SuperStat.EurofimaCompartment().fictional;
+        return TransportDetails.EurofimaCompartment().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(SuperStat.EurofimaCompartment().additionalTextTitle) + SuperStat.EurofimaCompartment().additionalText,
-                RailUtility.translate(SuperStat.EurofimaCompartment().additionalTextTitle2) + SuperStat.EurofimaCompartment().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.EurofimaCompartment().additionalTextTitle) + TransportDetails.EurofimaCompartment().additionalText,
+                RailUtility.translate(TransportDetails.EurofimaCompartment().additionalTextTitle2) + TransportDetails.EurofimaCompartment().additionalText2};}
     }
 
     @Override
