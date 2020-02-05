@@ -28,13 +28,13 @@ import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 //X.Y.Z
 //X = major (game defining, large content publishments?), Y = minor(small content publishments?)  Z = patch (stat fixing).
 //todo fix Copy pastable files with the new superstat method
-//todo port over old rollingstock to the superstats, make version ready for launch
+//todo fix texture names/descriptions all stock
 
 @Mod(modid = worldwidecontentpack.MODID, version = worldwidecontentpack.MOD_VERSION)
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.7.17 Alpha";
+    public static final String MOD_VERSION = "0.7.02 Alpha";
 
 
     @Mod.EventHandler
@@ -54,7 +54,7 @@ public class worldwidecontentpack {
 //        United_Kingdom = new TiMTab("UK models", MODID, "myTab3");
 //        France = new TiMTab("French models", MODID, "myTab4");
 //        Netherlands = new TiMTab("Dutch models", MODID, "myTab5");
-//        America = new TiMTab("American models", MODID, "myTab6");
+        America = new TiMTab("American models", MODID, "myTab6");
         Austria = new TiMTab( "Austrian models", MODID, "myTab7");
 //        Switzerland = new TiMTab("Swiss models", MODID, "myTab8");
         European = new TiMTab("Inter European models", MODID, "myTab9");

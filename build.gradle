@@ -10,7 +10,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "0.5.17 Alpha"
+version = "0.7.17 Alpha"
 group= "wwcp"
 archivesBaseName = "WWCP"
 

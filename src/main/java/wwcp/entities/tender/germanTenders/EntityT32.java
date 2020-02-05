@@ -70,7 +70,7 @@ public class EntityT32 extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{5.0F, -5.0F};
+        return new float[]{0.68F, -0.98F};
     }
 
     public float getRenderScale() {

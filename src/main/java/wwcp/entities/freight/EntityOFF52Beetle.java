@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.freight.OFF52Beetles;
 import wwcp.worldwidecontentpack;
@@ -57,27 +58,17 @@ public class EntityOFF52Beetle extends GenericRailTransport {
                 "Fictional skin promoting WWCP as a transport Company");
     }
 
+    @Override
+    public String transportFuelType() {
+        return null;
+    }
+
     public boolean isReinforced() {
-        return false;
-    }
-
-    public int[] getTankCapacity() {
-        return null;
-    }
-
-    public String[] getTankFilters(int tankID) {
-        return null;
-    }
-
-    public int getRFCapacity() {
-        return 0;
-    }
-
-    public void manageFuel() {
+        return TransportDetails.OFF52().reinforced;
     }
 
     public float weightKg() {
-        return 1814.3F;
+        return TransportDetails.OFF52().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -85,48 +76,28 @@ public class EntityOFF52Beetle extends GenericRailTransport {
     }
 
     public String transportName() {
-        return "OFF 52 with beetles";
+        return TransportDetails.OFF52().name;
     }
 
-    public String transportcountry() {
-        return "Europe";
-    }
+    public String transportcountry() { return TransportDetails.OFF52().country; }
 
-    public String transportYear() {
-        return "1950-now";
-    }
+    public String transportYear() { return TransportDetails.OFF52().year; }
 
     public float transportTopSpeed() {
-        return 0.0F;
-    }
-
-    @Override
-    public String transportFuelType() {
-        return null;
+        return TransportDetails.OFF52().topSpeed;
     }
 
     public boolean isFictional() {
-        return false;
+        return TransportDetails.OFF52().fictional;
     }
 
-    public float transportTractiveEffort() {
-        return 0.0F;
-    }
-
-    public float transportMetricHorsePower() {
-        return 0.0F;
-    }
-
+    @Override
     public String[] additionalItemText() {
-        return null;
+        {return new String[]{RailUtility.translate(TransportDetails.OFF52().additionalTextTitle) + TransportDetails.OFF52().additionalText,
+                RailUtility.translate(TransportDetails.OFF52().additionalTextTitle2) + TransportDetails.OFF52().additionalText2};}
     }
-
-    public float getMaxFuel() {
-        return 0.0F;
-    }
-
     public int getInventoryRows() {
-        return 3;
+        return TransportDetails.OFF52().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {

@@ -7,6 +7,7 @@ import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.registry.URIRegistry;
+import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -14,6 +15,7 @@ import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.railbusses.VT98;
 import wwcp.worldwidecontentpack;
@@ -37,63 +39,65 @@ public class EntityVT98 extends EntityTrainCore {
     }
 
     @Override
-    public String transportName(){return "VT 98";}
+    public String transportName() { return TransportDetails.BR798().name; }
+
     @Override
-    public String transportcountry(){return "Germany";}
+    public String transportcountry() { return TransportDetails.BR798().country; }
+
     @Override
-    public String transportYear(){return "1931";}
+    public String transportYear() { return TransportDetails.BR798().year; }
 
     @Override
     public String transportFuelType() {
-        return null;
+        return TransportDetails.BR798().fuel;
+    }
+    @Override
+    public boolean isFictional() {
+        return TransportDetails.BR798().fictional;
+    }
+    @Override
+    public float transportTractiveEffort() {
+        return TransportDetails.BR798().tractive_effort;
+    }
+    @Override
+    public float transportMetricHorsePower() {
+        return TransportDetails.BR798().metric_horsepower;
+    }
+    @Override
+    public float weightKg() {
+        return  TransportDetails.BR798().weightinKGs;
+    }
+
+    public boolean isReinforced() {
+        return TransportDetails.BR798().reinforced;
     }
 
     @Override
-    public boolean isFictional(){return false;}
-    @Override
-    public float transportTractiveEffort(){return 0;}
+    public String[] additionalItemText() {
+        {return new String[]{RailUtility.translate(TransportDetails.BR798().additionalTextTitle) + TransportDetails.BR798().additionalText,
+                RailUtility.translate(TransportDetails.BR798().additionalTextTitle2) + TransportDetails.BR798().additionalText2};}
+    }
 
     @Override
+    public float transportTopSpeed(){return accelerator<0? TransportDetails.BR798().backTopSpeed: TransportDetails.BR798().topSpeed;}
+    @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT981.png",
-                "Defined Rails", "One by Germany in WWI as a transport for solders and equipment");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT982.png",
                 "Natural Paint", "Two by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT983.png",
-                "WWCP", "Used4 by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT984.png",
-                "Geneseo Model railroaders", "Used 5by Germany in WWI as a transport for solders and equipment");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT985.png",
                 "Gleismesszug", "Used by 3Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT986.png",
-                "Imperial one", "Used by Ger13many in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT987.png",
-                "Imperial two", "Used by G315ermany in WWI as a transport for solders and equipment");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT988.png",
                 "Jerted", "Used by Germ543any in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT989.png",
-                "Lor Big", "Used by Ger4534many in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT9810.png",
-                "Lor Small", "Used by Germ34313any in WWI as a transport for solders and equipment");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT9811.png",
                 "Nokia", "Used by G4686ermany in WWI as a transport for solders and equipment");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT9812.png",
                 "Prignitzer Eisenbahn", "Used by G4313ermany in WWI as a transport for solders and equipment");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT9813.png",
                 "Rheingoldish one", "Used by G4684ermany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT9814.png",
-                "Traincraft", "Used by Ge6456rmany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT9815.png",
-                "Trams in Motion", "Used by Germ4564any in WWI as a transport for solders and equipment");
-
     }
-
+    
     @Override
-    public float transportTopSpeed(){return 202f;}
-
-
-    @Override
-    public int getInventoryRows(){return 1;}
+    public int getInventoryRows(){return TransportDetails.BR798().rows;}
 
     //@Override
     public TrainsInMotion.transportTypes getType(){return TrainsInMotion.transportTypes.DIESEL;}
@@ -107,19 +111,7 @@ public class EntityVT98 extends EntityTrainCore {
     public float[] getHitboxSize() {
         return new float[]{8.05f,2.2f,1.7f};
     }
-
-    @Override
-    public float transportMetricHorsePower(){return 75f;}
-
-    @Override
-    public String[] additionalItemText() {
-        return null;
-    }
-
-    @Override
-    public float weightKg(){return 10886.2169f;}
-
-
+    
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
                 null, null, null,
@@ -189,9 +181,6 @@ public class EntityVT98 extends EntityTrainCore {
      * this returns if this specific entity is reinforced (explosion proof and damage resistant).
      * since this is a function it can be conditional as well, for instance if it has a specific skin.
      */
-    @Override
-    public boolean isReinforced(){return false;}
-
     /**
      * <h2>Fluid Tank Capacity</h2>
      */

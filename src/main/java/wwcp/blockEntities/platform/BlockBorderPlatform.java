@@ -17,6 +17,7 @@ public class BlockBorderPlatform extends BlockContainer {
 		 this.setBlockBounds(0F, 0.0F, 0F, 1F, 0.25F, 1F);
 	}
 
+
 	 
     public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLivingBase par5EntityLivingBase, ItemStack par6ItemStack)
     {

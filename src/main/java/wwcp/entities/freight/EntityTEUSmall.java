@@ -124,7 +124,7 @@ public class EntityTEUSmall extends GenericRailTransport {
     }
 
     public int getInventoryRows() {
-        return 3;
+        return 21;
     }
 
     public TrainsInMotion.transportTypes getType() {

@@ -5,7 +5,6 @@ import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
-import ebf.tim.items.ItemTransport;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
@@ -17,78 +16,95 @@ import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.NE81;
+import wwcp.models.railbusses.VT98;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityNE81 extends EntityTrainCore {
+public class EntityVT98AD extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityNE81(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityVT98AD(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntityNE81(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityVT98AD(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityNE81(World world){
+    public EntityVT98AD(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return TransportDetails.NE81().name; }
+    public String transportName() { return TransportDetails.BR798Ads().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.NE81().country; }
+    public String transportcountry() { return TransportDetails.BR798Ads().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.NE81().year; }
+    public String transportYear() { return TransportDetails.BR798Ads().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.NE81().fuel;
+        return TransportDetails.BR798Ads().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.NE81().fictional;
+        return TransportDetails.BR798Ads().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.NE81().tractive_effort;
+        return TransportDetails.BR798Ads().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.NE81().metric_horsepower;
+        return TransportDetails.BR798Ads().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.NE81().weightinKGs;
+        return  TransportDetails.BR798Ads().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.NE81().reinforced;
+        return TransportDetails.BR798Ads().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.NE81().additionalTextTitle) + TransportDetails.NE81().additionalText,
-                RailUtility.translate(TransportDetails.NE81().additionalTextTitle2) + TransportDetails.NE81().additionalText2};}
+        {return new String[]{RailUtility.translate(TransportDetails.BR798Ads().additionalTextTitle) + TransportDetails.BR798Ads().additionalText,
+                RailUtility.translate(TransportDetails.BR798Ads().additionalTextTitle2) + TransportDetails.BR798Ads().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.NE81().backTopSpeed: TransportDetails.NE81().topSpeed;}
-
+    public float transportTopSpeed(){return accelerator<0? TransportDetails.BR798Ads().backTopSpeed: TransportDetails.BR798Ads().topSpeed;}
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/NE81/B1.png", "textures/bogies/NE81Bogie.png",
-                "default", "Used by Germany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT981.png",
+                "Defined Rails", "One by Germany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT983.png",
+                "WWCP", "Used4 by Germany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT984.png",
+                "Geneseo Model railroaders", "Used 5by Germany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT986.png",
+                "Imperial one", "Used by Ger13many in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT987.png",
+                "Imperial two", "Used by G315ermany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT989.png",
+                "Lor Big", "Used by Ger4534many in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT9810.png",
+                "Lor Small", "Used by Germ34313any in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT9814.png",
+                "Traincraft", "Used by Ge6456rmany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT9815.png",
+                "Trams in Motion", "Used by Germ4564any in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT98_RWC.png",
+                "Railwaycraft", "Used by Germ45513any in WWI as a transport for solders and equipment");
     }
     
     @Override
-    public int getInventoryRows(){return TransportDetails.NE81().rows;}
+    public int getInventoryRows(){return TransportDetails.BR798Ads().rows;}
 
     //@Override
     public TrainsInMotion.transportTypes getType(){return TrainsInMotion.transportTypes.DIESEL;}
@@ -97,10 +113,10 @@ public class EntityNE81 extends EntityTrainCore {
     public float getMaxFuel(){return 1;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-4.2f,1.3f, -0.2f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.1f,1.2f, -0.2f}};}
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.3f,2.2f,1.7f};
+        return new float[]{8.05f,2.2f,1.7f};
     }
     
     public ItemStack[] getRecipie() {
@@ -136,13 +152,12 @@ public class EntityNE81 extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.8f,0.07f,0},{-2.2f,0.07f,0}};
+        return null;
     }
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new NE81()};
-    }
+        return null; }
 
     @Override
     public float[] bogieLengthFromCenter() {
@@ -219,7 +234,7 @@ public class EntityNE81 extends EntityTrainCore {
     }
 
 
-    public ModelBase[] getModel(){return new ModelBase[]{new wwcp.models.railbusses.NE81()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new VT98()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

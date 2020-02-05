@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.freight.SGNS802BT;
 import wwcp.models.bogies.SGNSBogie;
@@ -72,17 +73,17 @@ public class EntitySGNS802BT extends GenericRailTransport {
                 "Variant 7", "Container loads variant 7");
     }
 
-    public boolean isReinforced() {
-        return false;
-    }
-
-    public int[] getTankCapacity() {
+    @Override
+    public String transportFuelType() {
         return null;
     }
 
+    public boolean isReinforced() {
+        return TransportDetails.Sggnss80Load2().reinforced;
+    }
 
     public float weightKg() {
-        return 1814.3F;
+        return TransportDetails.Sggnss80Load2().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -90,48 +91,28 @@ public class EntitySGNS802BT extends GenericRailTransport {
     }
 
     public String transportName() {
-        return "SGNSS 80 Load 2";
+        return TransportDetails.Sggnss80Load2().name;
     }
 
-    public String transportcountry() {
-        return "Europe";
-    }
+    public String transportcountry() { return TransportDetails.Sggnss80Load2().country; }
 
-    public String transportYear() {
-        return "1950-now";
-    }
+    public String transportYear() { return TransportDetails.Sggnss80Load2().year; }
 
     public float transportTopSpeed() {
-        return 0.0F;
-    }
-
-    @Override
-    public String transportFuelType() {
-        return null;
+        return TransportDetails.Sggnss80Load2().topSpeed;
     }
 
     public boolean isFictional() {
-        return false;
+        return TransportDetails.Sggnss80Load2().fictional;
     }
 
-    public float transportTractiveEffort() {
-        return 0.0F;
-    }
-
-    public float transportMetricHorsePower() {
-        return 0.0F;
-    }
-
+    @Override
     public String[] additionalItemText() {
-        return null;
+        {return new String[]{RailUtility.translate(TransportDetails.Sggnss80Load2().additionalTextTitle) + TransportDetails.Sggnss80Load2().additionalText,
+                RailUtility.translate(TransportDetails.Sggnss80Load2().additionalTextTitle2) + TransportDetails.Sggnss80Load2().additionalText2};}
     }
-
-    public float getMaxFuel() {
-        return 0.0F;
-    }
-
     public int getInventoryRows() {
-        return 3;
+        return TransportDetails.Sggnss80Load2().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {

@@ -15,9 +15,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.Class37Bogie;
-import wwcp.models.locomotives.diesels.AC4400CW;
+import wwcp.models.Taurus;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -44,35 +44,54 @@ public class EntityAC4400CW extends EntityTrainCore {
     }
 
     @Override
-    public String transportName(){return "GE AC4400CW";}
+    public String transportName() { return TransportDetails.GEAC4400CW().name; }
+
     @Override
-    public String transportcountry(){return "United States of America";}
+    public String transportcountry() { return TransportDetails.GEAC4400CW().country; }
+
     @Override
-    public String transportYear(){return "1993-2004";}
+    public String transportYear() { return TransportDetails.GEAC4400CW().year; }
+
     @Override
     public String transportFuelType() {
-        return "Diesel-electric";
+        return TransportDetails.GEAC4400CW().fuel;
     }
     @Override
-    public boolean isFictional(){return false;}
+    public boolean isFictional() {
+        return TransportDetails.GEAC4400CW().fictional;
+    }
     @Override
-    public float weightKg() { return 193000; }
+    public float transportTractiveEffort() {
+        return TransportDetails.GEAC4400CW().tractive_effort;
+    }
     @Override
-    public float transportTractiveEffort(){return 1800000;}
+    public float transportMetricHorsePower() {
+        return TransportDetails.GEAC4400CW().metric_horsepower;
+    }
     @Override
-    public float transportMetricHorsePower(){return 4400;}
-    @Override
-    public float transportTopSpeed(){return 112.65f;}
-    @Override
-    public int getInventoryRows(){return 1;}
+    public float weightKg() {
+        return  TransportDetails.GEAC4400CW().weightinKGs;
+    }
+
+    public boolean isReinforced() {
+        return TransportDetails.GEAC4400CW().reinforced;
+    }
+
     @Override
     public String[] additionalItemText() {
-        return new String[]{RailUtility.translate("wwcp.era") + " III-IV"};
+        {return new String[]{RailUtility.translate(TransportDetails.GEAC4400CW().additionalTextTitle) + TransportDetails.GEAC4400CW().additionalText,
+                RailUtility.translate(TransportDetails.GEAC4400CW().additionalTextTitle2) + TransportDetails.GEAC4400CW().additionalText2};}
     }
+
+    @Override
+    public float transportTopSpeed(){return accelerator<0? TransportDetails.GEAC4400CW().backTopSpeed: TransportDetails.GEAC4400CW().topSpeed;}
+
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC1.png","textures/bogies/Class37Bogie.png",
-                "UP Livery", "Standard UP livery for the AC4400CW");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/taurus1.png",
+                "Bludorange", "Standard UP livery for the AC4400CW");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/taurus2.png",
+                "Verkehrsrot", "Standard UP livery for the AC4400CW");
     }
 
     /**
@@ -89,7 +108,7 @@ public class EntityAC4400CW extends EntityTrainCore {
      */
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new Class37Bogie()};
+        return null;
     }
 
     @Override
@@ -121,7 +140,7 @@ public class EntityAC4400CW extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{15f,2f,1.5f};
+        return new float[]{1f,2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -169,10 +188,7 @@ public class EntityAC4400CW extends EntityTrainCore {
     @Override
     public float[][] modelOffsets() {
         return new float[][]{{-0.05f,-0.15F,0.F}};}
-
-    @Override
-    public boolean isReinforced(){return true;}
-
+        
     /**
      * <h2>Fluid Tank Capacity</h2>
      */
@@ -253,7 +269,7 @@ public class EntityAC4400CW extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new AC4400CW()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new Taurus()};}
 
     //For sound effects
     @SideOnly(Side.CLIENT)

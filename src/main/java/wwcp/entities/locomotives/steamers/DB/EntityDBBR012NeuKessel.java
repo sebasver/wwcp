@@ -96,11 +96,11 @@ public class EntityDBBR012NeuKessel extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_NeuKessel_1.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_NeuKessel_1.png", "textures/bogies/BR01/BR01BogieWhite.png",
                 "DB BR 01.10 1", "DB BR 01.10 variant 1");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_NeuKessel_2.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "DB BR 01.10 2", "DB BR 01.10 variant 2");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_NeuKessel_3.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_NeuKessel_3.png", "textures/bogies/BR01/BR01BogieWhite.png",
                 "DB BR 01.10 3", "DB BR 01.10 variant 3");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_NeuKessel_4.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "DB BR 01.10 4", "DB BR 01.10 variant 4");
@@ -136,7 +136,7 @@ public class EntityDBBR012NeuKessel extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.5f, 0.1f, 0}, {-2.5f, 0.1f, 0}};
+        return new float[][]{{2.38f, 0.1f, 0}, {-2.75f, 0.1f, 0}};
     }
 
     @Override
@@ -145,11 +145,7 @@ public class EntityDBBR012NeuKessel extends EntityTrainCore {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, 0.1F};
-    }
-
-    public float getRenderScale() {
-        return 0.0625F;
+        return new float[]{2.20F, -2.31F};
     }
 
     @Override

@@ -99,7 +99,7 @@ public class EntityDRGBR01_10_Unstreamlined extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DRGBR01/DRG_BR012_1.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "DB BR 01.10 1", "DR BR 01.10 variant 1");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DRGBR01/DRG_BR012_2.png", "textures/bogies/BR01/BR01BogieBlack.png",
-                "DB BR 01.10 1", "DR BR 01.10 variant 2");
+                "DB BR 01.10 2", "DR BR 01.10 variant 2");
     }
 
     public int getInventoryRows() {
@@ -132,7 +132,7 @@ public class EntityDRGBR01_10_Unstreamlined extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.5f, 0.1f, 0}, {-2.5f, 0.1f, 0}};
+        return new float[][]{{2.38f, 0.1f, 0}, {-2.75f, 0.1f, 0}};
     }
 
     @Override
@@ -141,7 +141,7 @@ public class EntityDRGBR01_10_Unstreamlined extends EntityTrainCore {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, 0.1F};
+        return new float[]{2.20F, -2.31F};
     }
 
     public float getRenderScale() {

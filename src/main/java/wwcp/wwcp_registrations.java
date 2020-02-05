@@ -135,7 +135,7 @@ public class wwcp_registrations {
     // Tender list
     public static GenericRailTransport[] listTenders() {
         return new GenericRailTransport[]{
-                new EntityClass812Tender(null),
+                new Entity3000GalonTender(null),
                 new EntityT32(null),
                 new EntityT32Christmas(null),
                 new EntityT26(null),
@@ -145,7 +145,9 @@ public class wwcp_registrations {
                 new EntityT34Streamlined(null),
                 new EntityT34StreamlinedDRG(null),
                 new EntityT37(null),
-                new EntityT38(null)
+                new EntityT37DRG(null),
+                new EntityT38(null),
+                new EntityT38Oil(null)
         };
     }
 
@@ -168,6 +170,7 @@ public class wwcp_registrations {
     public static GenericRailTransport[] listRailbusses() {
         return new GenericRailTransport[]{
                 new EntityNE81(null),
+                new EntityVT98AD(null),
                 new EntityVT98(null)
         };
     }

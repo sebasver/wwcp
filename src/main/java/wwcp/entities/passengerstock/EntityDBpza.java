@@ -7,11 +7,13 @@ import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.worldwidecontentpack;
 
@@ -75,8 +77,6 @@ public class EntityDBpza extends GenericRailTransport {
     /**defines the scale to render the model at. Default is 0.075*/
 
 
-
-
     @Override
     public float[][] modelOffsets() {
         return new float[][]{{-0.025f, -0.17F, 0.F}};
@@ -95,65 +95,46 @@ public class EntityDBpza extends GenericRailTransport {
     }
 
     @Override
-    public boolean isReinforced() {
-        return true;
-    }
-
-    @Override
-    public float weightKg() {
-        return 1814.3f;
-    }
-
-    @Override
-    public ItemStack[] getRecipie() {
-        return new ItemStack[]{
-                DefineStack(Items.bed, 1), null, null,
-                null, null, null,
-                null, null, null
-        };
-    }
-
-    @Override
-    public String transportName() {
-        return "Dobbelstock 4th generation";
-    }
-
-    @Override
-    public String transportcountry() {
-        return "Germany";
-    }
-
-    @Override
-    public String transportYear() {
-        return "1997-now";
-    }
-
-    @Override
     public String transportFuelType() {
         return null;
     }
 
-    @Override
-    public boolean isFictional() {
-        return false;
+    public boolean isReinforced() {
+        return TransportDetails.DBpza().reinforced;
     }
 
+    public float weightKg() {
+        return TransportDetails.DBpza().weightinKGs;
+    }
+
+    public ItemStack[] getRecipie() {
+        return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
+    }
+
+    public String transportName() {
+        return TransportDetails.DBpza().name;
+    }
+
+    public String transportcountry() { return TransportDetails.DBpza().country; }
+
+    public String transportYear() { return TransportDetails.DBpza().year; }
+
+    public float transportTopSpeed() {
+        return TransportDetails.DBpza().topSpeed;
+    }
+
+    public boolean isFictional() {
+        return TransportDetails.DBpza().fictional;
+    }
 
     @Override
     public String[] additionalItemText() {
-        {
-            return new String[]{RailUtility.translate("wwcp.era") + "II"};
-        }
+        {return new String[]{RailUtility.translate(TransportDetails.DBpza().additionalTextTitle) + TransportDetails.DBpza().additionalText,
+                RailUtility.translate(TransportDetails.DBpza().additionalTextTitle2) + TransportDetails.DBpza().additionalText2};}
     }
-
-    /**
-     * <h2>Inventory Size</h2>
-     */
-    @Override
     public int getInventoryRows() {
-        return 0;
+        return TransportDetails.DBpza().rows;
     }
-
     /**
      * <h2>Type</h2>
      */

@@ -100,9 +100,9 @@ public class EntityDBBR01NeuKessel_Oil extends EntityTrainCore {
                 "DB BR 01 Neubaukessel 1", "DB BR 01 Neubaukessel variant 1");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR01_NeuKessel_Oil_2.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "DB BR 01 Neubaukessel 2", "DB BR 01 Neubaukessel variant 2");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR01_NeuKessel_Oil_3.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR01_NeuKessel_Oil_3.png", "textures/bogies/BR01/BR01BogieWhite.png",
                 "DB BR 01 Neubaukessel 3", "DB BR 01 Neubaukessel variant 3");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR01_NeuKessel_Oil_4.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR01_NeuKessel_Oil_4.png", "textures/bogies/BR01/BR01BogieWhite.png",
                 "DB BR 01 Neubaukessel 4", "DB BR 01 Neubaukessel variant 4");
     }
 
@@ -136,7 +136,7 @@ public class EntityDBBR01NeuKessel_Oil extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.5f, 0.1f, 0}, {-2.5f, 0.1f, 0}};
+        return new float[][]{{2.38f, 0.1f, 0}, {-2.75f, 0.1f, 0}};
     }
 
     @Override
@@ -145,7 +145,7 @@ public class EntityDBBR01NeuKessel_Oil extends EntityTrainCore {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, 0.1F};
+        return new float[]{2.20F, -2.31F};
     }
 
     public float getRenderScale() {

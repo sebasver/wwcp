@@ -67,7 +67,7 @@ public class EntityT38 extends GenericRailTransport {
                 RailUtility.translate(TransportDetails.T38().additionalTextTitle2) + TransportDetails.T38().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
-        return new float[][]{{1.01f, 0.12F, 0.0F}, {-0.66F, 0.12F, 0.0F}};
+        return new float[][]{{1.2f, 0.12F, 0.0F}, {-0.73F, 0.12F, 0.0F}};
     }
 
     public ModelBase[] bogieModels() {
@@ -75,7 +75,7 @@ public class EntityT38 extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{5.0F, -5.0F};
+        return new float[]{0.73F, -1.14F};
     }
 
     public float getRenderScale() {
@@ -83,12 +83,14 @@ public class EntityT38 extends GenericRailTransport {
     }
 
     public float[][] modelOffsets() {
-        return new float[][]{{-0.395f,-0.12F,0F}};
+        return new float[][]{{-0.42f,-0.1F,0F}};
     }
 
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T38.png", new String[]{"textures/bogies/germanTenderBogies/T37BogieBlack.png"},
-                "DB Livery", "The standarized T32 tender paint while in use for the DB");
+                "DB", "The standarized T38 tender paint while in use for the DB");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T38DRG.png", new String[]{"textures/bogies/germanTenderBogies/T37BogieBlack.png"},
+                "DRG", "The standarized T38 tender paint while in use for the DRG");
     }
 
     public boolean isReinforced() {
@@ -108,7 +110,7 @@ public class EntityT38 extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{4.025F, 2F, 1.5F};
+        return new float[]{4.35F, 2F, 1.5F};
     }
 
     public Item getItem() {

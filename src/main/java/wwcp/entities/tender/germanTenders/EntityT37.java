@@ -67,7 +67,7 @@ public class EntityT37 extends GenericRailTransport {
                 RailUtility.translate(TransportDetails.T37().additionalTextTitle2) + TransportDetails.T37().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
-        return new float[][]{{1.01f, 0.12F, 0.0F}, {-0.66F, 0.12F, 0.0F}};
+        return new float[][]{{1.20f, 0.12F, 0.0F}, {-0.60F, 0.12F, 0.0F}};
     }
 
     public ModelBase[] bogieModels() {
@@ -75,7 +75,7 @@ public class EntityT37 extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{5.0F, -5.0F};
+        return new float[]{0.6F, -1.22F};
     }
 
     public float getRenderScale() {
@@ -83,7 +83,7 @@ public class EntityT37 extends GenericRailTransport {
     }
 
     public float[][] modelOffsets() {
-        return new float[][]{{-0.395f,-0.12F,0F}};
+        return new float[][]{{-0.235f,-0.1F,0F}};
     }
 
     public void registerSkins() {
@@ -108,7 +108,7 @@ public class EntityT37 extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{4.025F, 2F, 1.5F};
+        return new float[]{4.1F, 2F, 1.5F};
     }
 
     public Item getItem() {

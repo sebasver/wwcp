@@ -1,15 +1,18 @@
 package wwcp.entities.passengerstock;
 
+import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.ItemTransport;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.passengerStock.ClassDonder2;
 import wwcp.worldwidecontentpack;
@@ -50,43 +53,45 @@ public class EntityDonder2 extends GenericRailTransport {
     // the PostInit method for one example.
 
     @Override
-    public boolean isReinforced() {
-        return true;
-    }
-
-    @Override
-    public float weightKg() {
-        return 20000f;
-    }
-
-    @Override
-    public String transportName() {
-        return "Donnerbüchse 2nd class";
-    }
-
-    @Override
-    public String transportcountry() {
-        return "Germany";
-    }
-
-    @Override
-    public String transportYear() {
-        return "1921-1931";
-    }
-
-    @Override
     public String transportFuelType() {
         return null;
     }
 
-    @Override
+    public boolean isReinforced() {
+        return TransportDetails.Donderbus1().reinforced;
+    }
+
+    public float weightKg() {
+        return TransportDetails.Donderbus1().weightinKGs;
+    }
+
+    public ItemStack[] getRecipie() {
+        return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
+    }
+
+    public String transportName() {
+        return TransportDetails.Donderbus1().name;
+    }
+
+    public String transportcountry() { return TransportDetails.Donderbus1().country; }
+
+    public String transportYear() { return TransportDetails.Donderbus1().year; }
+
+    public float transportTopSpeed() {
+        return TransportDetails.Donderbus1().topSpeed;
+    }
+
     public boolean isFictional() {
-        return false;
+        return TransportDetails.Donderbus1().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate("wwcp.era") + " II-III"};}
+        {return new String[]{RailUtility.translate(TransportDetails.Donderbus1().additionalTextTitle) + TransportDetails.Donderbus1().additionalText,
+                RailUtility.translate(TransportDetails.Donderbus1().additionalTextTitle2) + TransportDetails.Donderbus1().additionalText2};}
+    }
+    public int getInventoryRows() {
+        return TransportDetails.Donderbus1().rows;
     }
 
     @Override
@@ -112,7 +117,9 @@ public class EntityDonder2 extends GenericRailTransport {
         return new float[][]{{-0f,-0.05F,0.F}};
     }
 
-    //public TrainsInMotion.transportTypes[] getTypes(){return TrainsInMotion.transportTypes.PASSENGER.singleton();}
+    public TrainsInMotion.transportTypes getType() {
+        return TrainsInMotion.transportTypes.PASSENGER;
+    }
     /**ETERNAL NOTE
      * this method was updated to an array so you can return multiple types and us the functionality of all.
      * for example a steam train that also takes passengers like a tram.
@@ -129,16 +136,6 @@ public class EntityDonder2 extends GenericRailTransport {
      * public TrainsInMotion.transportTypes[] getTypes(){return TrainsInMotion.transportTypes.PASSENGER.singleton();}
      */
 
-
-    @Override
-    public ItemStack[] getRecipie() {
-        return new ItemStack[]{
-                DefineStack
-                        (Items.bed, 1),null, null,
-                null, null, null,
-                null, null, null
-        };
-    }
     //can use future tim crafting items how?
     /**ETERNAL NOTE
      * the DefineStack method is just a simpler way to do

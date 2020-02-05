@@ -119,7 +119,7 @@ public class EntityDRBR01_5 extends EntityTrainCore {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{7.325F, 2.1F, 1.3F};
+        return new float[]{7.22F, 2.1F, 1.3F};
     }
 
     public ItemStack[] getRecipie() {
@@ -132,7 +132,7 @@ public class EntityDRBR01_5 extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.5f, 0.1f, 0}, {-2.5f, 0.1f, 0}};
+        return new float[][]{{2.38f, 0.1f, 0}, {-2.75f, 0.1f, 0}};
     }
 
     @Override
@@ -141,7 +141,7 @@ public class EntityDRBR01_5 extends EntityTrainCore {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, 0.1F};
+        return new float[]{2.20F, -2.31F};
     }
 
     public float getRenderScale() {
@@ -150,7 +150,7 @@ public class EntityDRBR01_5 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.165f, -0.1F, 0.F}};
+        return new float[][]{{0.11f, -0.1F, 0.F}};
     }
 
     public boolean shouldRiderSit() {

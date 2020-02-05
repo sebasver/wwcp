@@ -126,6 +126,8 @@ public class EntityTraxxF140MS2 extends EntityTrainCore {
                 "StPatricks Day Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T10.png", "textures/bogies/Flexxpower.png",
                 "Halloween Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T11.png", "textures/bogies/Flexxpower.png",
+                "New Years Skin", "Special New Years skin to celebrate 2020");
     }
 
     @Override

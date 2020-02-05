@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
+import wwcp.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.freight.UKopenwagon;
 import wwcp.worldwidecontentpack;
@@ -57,27 +58,17 @@ public class EntityUKopenWagon extends GenericRailTransport {
                 "This was the factory skin of the car");
     }
 
+    @Override
+    public String transportFuelType() {
+        return null;
+    }
+
     public boolean isReinforced() {
-        return false;
-    }
-
-    public int[] getTankCapacity() {
-        return null;
-    }
-
-    public String[] getTankFilters(int tankID) {
-        return null;
-    }
-
-    public int getRFCapacity() {
-        return 0;
-    }
-
-    public void manageFuel() {
+        return TransportDetails.UKOpenWagon().reinforced;
     }
 
     public float weightKg() {
-        return 1814.3F;
+        return TransportDetails.UKOpenWagon().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -85,48 +76,28 @@ public class EntityUKopenWagon extends GenericRailTransport {
     }
 
     public String transportName() {
-        return "UK Open wagon";
+        return TransportDetails.UKOpenWagon().name;
     }
 
-    public String transportcountry() {
-        return "Europe";
-    }
+    public String transportcountry() { return TransportDetails.UKOpenWagon().country; }
 
-    public String transportYear() {
-        return "1900-1930";
-    }
+    public String transportYear() { return TransportDetails.UKOpenWagon().year; }
 
     public float transportTopSpeed() {
-        return 0.0f;
-    }
-
-    @Override
-    public String transportFuelType() {
-        return null;
+        return TransportDetails.UKOpenWagon().topSpeed;
     }
 
     public boolean isFictional() {
-        return false;
+        return TransportDetails.UKOpenWagon().fictional;
     }
 
-    public float transportTractiveEffort() {
-        return 0.0F;
-    }
-
-    public float transportMetricHorsePower() {
-        return 0.0F;
-    }
-
+    @Override
     public String[] additionalItemText() {
-        return null;
+        {return new String[]{RailUtility.translate(TransportDetails.UKOpenWagon().additionalTextTitle) + TransportDetails.UKOpenWagon().additionalText,
+                RailUtility.translate(TransportDetails.UKOpenWagon().additionalTextTitle2) + TransportDetails.UKOpenWagon().additionalText2};}
     }
-
-    public float getMaxFuel() {
-        return 0.0F;
-    }
-
     public int getInventoryRows() {
-        return 3;
+        return TransportDetails.UKOpenWagon().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {
