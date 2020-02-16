@@ -14,7 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import wwcp.TransportDetails;
+import wwcp.entities.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.electrics.F140MS2;
@@ -108,8 +108,8 @@ public class EntityTraxxF140MS2 extends EntityTrainCore {
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T1.png", "textures/bogies/Flexxpower.png",
                 "Belgian Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-//        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T2.png", "textures/bogies/Flexxpower.png",
-//                "NS Livery", "Used by the NS in their regular service");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T2.png", "textures/bogies/Flexxpower.png",
+                "NS Livery", "Used by the NS in their regular service");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T3.png", "textures/bogies/Flexxpower.png",
                 "Polish Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T4.png", "textures/bogies/Flexxpower.png",

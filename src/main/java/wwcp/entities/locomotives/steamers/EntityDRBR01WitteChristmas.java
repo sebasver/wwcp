@@ -17,7 +17,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
-import wwcp.TransportDetails;
+import wwcp.entities.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.steamers.ChristmasBR01;
 import wwcp.worldwidecontentpack;

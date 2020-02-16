@@ -15,9 +15,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.TransportDetails;
+import wwcp.entities.TransportDetails;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.Taurus;
+import wwcp.models.ModelTubeStock1938;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -269,7 +269,7 @@ public class EntityAC4400CW extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new Taurus()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ModelTubeStock1938()};}
 
     //For sound effects
     @SideOnly(Side.CLIENT)

@@ -34,12 +34,11 @@ import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.7.02 Alpha";
+    public static final String MOD_VERSION = "0.7.03 Alpha";
 
 
     @Mod.EventHandler
     public void preInit(FMLInitializationEvent event) {
-
     }
 
     //Tab declerations
@@ -49,14 +48,14 @@ public class worldwidecontentpack {
         //For the custom armor
         proxy.registerRenderers();
 
-//        Belgium = new TiMTab("Belgian models", MODID, "myTab");
+        Belgium = new TiMTab("Belgian models", MODID, "myTab");
         Germany = new TiMTab("German models", MODID, "myTab2");
-//        United_Kingdom = new TiMTab("UK models", MODID, "myTab3");
-//        France = new TiMTab("French models", MODID, "myTab4");
-//        Netherlands = new TiMTab("Dutch models", MODID, "myTab5");
+        United_Kingdom = new TiMTab("UK models", MODID, "myTab3");
+        France = new TiMTab("French models", MODID, "myTab4");
+        Netherlands = new TiMTab("Dutch models", MODID, "myTab5");
         America = new TiMTab("American models", MODID, "myTab6");
         Austria = new TiMTab( "Austrian models", MODID, "myTab7");
-//        Switzerland = new TiMTab("Swiss models", MODID, "myTab8");
+        Switzerland = new TiMTab("Swiss models", MODID, "myTab8");
         European = new TiMTab("Inter European models", MODID, "myTab9");
         BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
         FestivitiesTab = new TiMTab("Festive Models", MODID, "festivetab");

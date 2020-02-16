@@ -16,11 +16,10 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.TransportDetails;
+import wwcp.entities.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.BR01BackBogie;
 import wwcp.models.bogies.BR01FrontBogie;
-import wwcp.models.locomotives.steamers.DRGBR01.DRG_BR01;
 import wwcp.models.locomotives.steamers.DRGBR01.DRG_BR01_10Unstreamlined;
 import wwcp.worldwidecontentpack;
 
