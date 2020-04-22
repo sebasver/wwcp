@@ -17,6 +17,7 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.TransportDetails;
 import wwcp.entities.WWCPTransport;
+import wwcp.models.LampTest;
 import wwcp.models.ModelTubeStock1938;
 import wwcp.worldwidecontentpack;
 
@@ -88,10 +89,10 @@ public class EntityAC4400CW extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/taurus1.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/test.png",
                 "Bludorange", "Standard UP livery for the AC4400CW");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/taurus2.png",
-                "Verkehrsrot", "Standard UP livery for the AC4400CW");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/taurus2.png",
+//                "Verkehrsrot", "Standard UP livery for the AC4400CW");
     }
 
     /**
@@ -269,7 +270,7 @@ public class EntityAC4400CW extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new ModelTubeStock1938()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new LampTest()};}
 
     //For sound effects
     @SideOnly(Side.CLIENT)

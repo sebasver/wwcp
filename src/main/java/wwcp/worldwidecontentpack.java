@@ -20,6 +20,10 @@ import wwcp.proxy.ClientProxy;
 import wwcp.proxy.CommonProxy;
 
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Month;
+
 import static cpw.mods.fml.common.registry.GameRegistry.addRecipe;
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
@@ -54,11 +58,19 @@ public class worldwidecontentpack {
         France = new TiMTab("French models", MODID, "myTab4");
         Netherlands = new TiMTab("Dutch models", MODID, "myTab5");
         America = new TiMTab("American models", MODID, "myTab6");
-        Austria = new TiMTab( "Austrian models", MODID, "myTab7");
+        Austria = new TiMTab("Austrian models", MODID, "myTab7");
         Switzerland = new TiMTab("Swiss models", MODID, "myTab8");
         European = new TiMTab("Inter European models", MODID, "myTab9");
         BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
-        FestivitiesTab = new TiMTab("Festive Models", MODID, "festivetab");
+        if (LocalDate.now().getMonth() == Month.DECEMBER || LocalDate.now().getMonth() == Month.JANUARY || LocalDate.now().getMonth() == Month.FEBRUARY) {
+            FestivitiesTab = new TiMTab("Festive Models", MODID, "winter/festivetab");
+        } else if (LocalDate.now().getMonth() == Month.MARCH || /*LocalDate.now().getMonth() == Month.APRIL ||*/ LocalDate.now().getMonth() == Month.MAY) {
+            FestivitiesTab = new TiMTab("Festive Models", MODID, "spring/festivetab");
+        } else if (LocalDate.now().getMonth() == Month.JUNE || LocalDate.now().getMonth() == Month.JULY || LocalDate.now().getMonth() == Month.AUGUST) {
+            FestivitiesTab = new TiMTab("Festive Models", MODID, "summer/festivetab");
+        } else {
+            FestivitiesTab = new TiMTab("Festive Models", MODID, "autum/festivetab");
+        }
 
         //for the eventhandler
         MinecraftForge.EVENT_BUS.register(ClientProxy.eventManager);
@@ -68,9 +80,9 @@ public class worldwidecontentpack {
         wwcp_registrations.registerTrains();
 
     }
-        //todo Block platform 5(Full block),7(half slope),9(station lamp) still erroring
-        //todo fix tender positioning + completion
-        //todo fix bogie rotating points on ALL Stock, HIGH URGENCY
+    //todo Block platform 5(Full block),7(half slope),9(station lamp) still erroring
+    //todo fix tender positioning + completion
+    //todo fix bogie rotating points on ALL Stock, HIGH URGENCY
 
     /**
      * I hereby start declaring the individual trains itself. I will insert a // statement before each big group
