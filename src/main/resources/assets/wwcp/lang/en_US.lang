@@ -1,0 +1,77 @@
+<!-- ## This is a comment, do no remove or modify these! ## -->
+<!-- ## Only replace the words on the right side of "=" ## -->
+<!-- ## Credit to Eternal Blue Flame ## -->
+
+<!-- ## Tabs ## -->
+item.myTab=Belgium
+item.myTab2=Germany
+item.myTab3=United Kingdom
+item.myTab4=France
+item.myTab5=Netherlands
+item.myTab6=America
+item.myTab7=Austria
+item.myTab8=Switzerland
+item.myTab9=Inter European
+item.blockTab=Blocks
+item.festivetab=Festive Content
+
+
+<!-- ## Extra Declarations ##--!>
+wwcp.era=Era:
+wwcp.nick=Nickname:
+menu.item.weighttons=Weight
+menu.item.tractiveeffort=Tractive Effort
+wwcp.type=Type:
+wwcp.aditional=Aditional Names:
+gui.skin=Skin
+gui.owner=Owner
+
+<!-- ## Extra countries ## --!>
+menu.item.europe=Europe
+
+<!-- ## Trains ## -->
+<!-- ## These are actually defined from the item name, so one name covers all areas § ## -->
+item.F140MS2E.name=F140 MS2E
+item.DRBR01.name=DR BR 01
+item.ChristmasBR01Witte.name=DR BR 01 Christmas
+item.WehrmachtslokomotiveWR360C14.name=Wehrmachtslokomotive WR 360 C 14
+item.KoFIII1.name=KoF III Type 1
+item.KoFIII2.name=KoF III Type 2
+item.MZI.name=MZ I
+item.MZII.name=MZ II
+item.MZIII.name=MZ III
+item.MZIV.name=MZ IV
+item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
+
+
+<!-- ## Rollingstock ## -->
+<!-- ## These are actually defined from the item name, so one name covers all areas ## -->
+item.EurofimaCompartments.name=Eurofima Compartment Coach
+item.Dobbelstock4thgeneration.name=4th Generation Doubledecker
+item.TEUSmallContainercarrier.name=TEU Small container carrier
+item.GWRBrunel3rdClassChristmas.name=GWR Brunel 3rd Class Christmas
+item.SA4uk28Christmas.name=SA4uk28 Christmas
+item.SA4u28Christmas.name=SA4u28 Christmas
+item.SB4uk28Christmas.name=SB4uk28 Christmas
+item.SB4u28Christmas.name=SB4u28 Christmas
+
+<!-- ## Tenders ## -->
+item.T322'2'.name=T32 2'2'
+T322'2'.name=T32 2'2'
+item.T322'2'Christmas.name=T32 2'2' Christmas
+
+<!-- ## Blocks ## --!>
+tile.wwcp.blockBorderPlatform.name=Boarding Platform
+tile.wwcp.blockBorderPlatformSlopeLeft.name=Boarding Platform Slope Left
+tile.wwcp.blockBorderPlatformSlopeRight.name=Boarding Platform Slope Right
+tile.wwcp.blockPlatformStationLamp.name=Platform Station Lamp
+tile.wwcp.blockPlatformSlab.name=Platform Slab
+tile.wwcp.blockPlatformStair.name=Platform Stair
+tile.wwcp.blockPlatformFullSlope.name=Platform Full Slope
+tile.wwcp.blockPlatformHalfSlope.name=Platform Half Slope
+tile.wwcp.blockPlatformSlabSlope.name=Platorm Slab Slope
+tile.wwcp.blockPlatformFullBlock.name=Platform Block
+
+<!-- ## Crafting Materials ## -->
+
+<!-- ## Extra types ## -->

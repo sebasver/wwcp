@@ -1,0 +1,16 @@
+[
+{
+  "modid": "wwcp",
+  "name": "World Wide Content Pack",
+  "description": "an Addon for Trains in Motion",
+  "version": "1.7.10.1558-1614",
+  "mcversion": "${mcversion}",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/world-wide-content-pack",
+  "updateUrl": "https://www.curseforge.com/minecraft/mc-mods/world-wide-content-pack",
+  "authorList": ["Sébastiaan Verheyen (sebasver)"],
+  "credits": "My Entire Team of modellers, Eternal, Ferd and Oskiek",
+  "logoFile": "assets/wwcp/textures/items/myTab0.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
