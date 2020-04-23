@@ -8,6 +8,7 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.models.bogies.*;
 import java.util.UUID;
 import net.minecraft.item.Item;
@@ -18,7 +19,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.steamers.DRBR01.DR_BR01;
 import wwcp.worldwidecontentpack;
@@ -40,55 +40,55 @@ public class EntityDRBR01 extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return TransportDetails.DRBR01().name;
+        return Transport.DRBR01().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.DRBR01().country;
+        return Transport.DRBR01().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.DRBR01().year;
+        return Transport.DRBR01().year;
     }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.DRBR01().fuel;
+        return Transport.DRBR01().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.DRBR01().fictional;
+        return Transport.DRBR01().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.DRBR01().tractive_effort;
+        return Transport.DRBR01().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.DRBR01().metric_horsepower;
+        return Transport.DRBR01().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.DRBR01().weightinKGs;
+        return Transport.DRBR01().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(TransportDetails.DRBR01().additionalTextTitle) + TransportDetails.DRBR01().additionalText,
-                    RailUtility.translate(TransportDetails.DRBR01().additionalTextTitle2) + TransportDetails.DRBR01().additionalText2};
+            return new String[]{RailUtility.translate(Transport.DRBR01().additionalTextTitle) + Transport.DRBR01().additionalText,
+                    RailUtility.translate(Transport.DRBR01().additionalTextTitle2) + Transport.DRBR01().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? TransportDetails.DRBR01().backTopSpeed : TransportDetails.DRBR01().topSpeed;
+        return accelerator < 0 ? Transport.DRBR01().backTopSpeed : Transport.DRBR01().topSpeed;
     }
 
     @Override
@@ -157,7 +157,7 @@ public class EntityDRBR01 extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.DRBR01().reinforced;
+        return Transport.DRBR01().reinforced;
     }
 
     public int[] getTankCapacity() {

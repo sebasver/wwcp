@@ -9,6 +9,7 @@ import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.FuelHandler;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.models.bogies.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -17,7 +18,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
-import wwcp.entities.TransportDetails;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.steamers.ChristmasBR01;
 import wwcp.worldwidecontentpack;
@@ -40,40 +40,40 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     public float getPlayerScale(){return 0.60f;}
 
     @Override
-    public String transportName() { return TransportDetails.DRBR01WitteChristmas().name; }
+    public String transportName() { return Transport.DRBR01WitteChristmas().name; }
     @Override
-    public String transportcountry() { return TransportDetails.DRBR01WitteChristmas().country; }
+    public String transportcountry() { return Transport.DRBR01WitteChristmas().country; }
     @Override
-    public String transportYear() { return TransportDetails.DRBR01WitteChristmas().year; }
+    public String transportYear() { return Transport.DRBR01WitteChristmas().year; }
     @Override
     public String transportFuelType() {
-        return TransportDetails.DRBR01WitteChristmas().fuel;
+        return Transport.DRBR01WitteChristmas().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.DRBR01WitteChristmas().fictional;
+        return Transport.DRBR01WitteChristmas().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.DRBR01WitteChristmas().tractive_effort;
+        return Transport.DRBR01WitteChristmas().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.DRBR01WitteChristmas().metric_horsepower;
+        return Transport.DRBR01WitteChristmas().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.DRBR01WitteChristmas().weightinKGs;
+        return  Transport.DRBR01WitteChristmas().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.DRBR01WitteChristmas().additionalTextTitle) + TransportDetails.DRBR01WitteChristmas().additionalText,
-                RailUtility.translate(TransportDetails.DRBR01WitteChristmas().additionalTextTitle2) + TransportDetails.DRBR01WitteChristmas().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.DRBR01WitteChristmas().additionalTextTitle) + Transport.DRBR01WitteChristmas().additionalText,
+                RailUtility.translate(Transport.DRBR01WitteChristmas().additionalTextTitle2) + Transport.DRBR01WitteChristmas().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.DRBR01WitteChristmas().backTopSpeed: TransportDetails.DRBR01WitteChristmas().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.DRBR01WitteChristmas().backTopSpeed: Transport.DRBR01WitteChristmas().topSpeed;}
 
     @Override
     @SideOnly(Side.CLIENT)
@@ -142,7 +142,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.DRBR01WitteChristmas().reinforced;
+        return Transport.DRBR01WitteChristmas().reinforced;
     }
 
     public int[] getTankCapacity() {

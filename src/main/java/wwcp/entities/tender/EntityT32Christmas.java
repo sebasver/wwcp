@@ -13,7 +13,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.Tender32Bogie;
 import wwcp.models.tenders.ChristmasTenderT32;
@@ -36,19 +36,19 @@ public class EntityT32Christmas extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.T32TenderChristmas().name;
+        return Transport.T32TenderChristmas().name;
     }
 
     public String transportcountry() {
-        return TransportDetails.T32TenderChristmas().country;
+        return Transport.T32TenderChristmas().country;
     }
 
     public String transportYear() {
-        return TransportDetails.T32TenderChristmas().year;
+        return Transport.T32TenderChristmas().year;
     }
 
     public boolean isFictional() {
-        return TransportDetails.T32TenderChristmas().fictional;
+        return Transport.T32TenderChristmas().fictional;
     }
 
     @Override
@@ -58,8 +58,8 @@ public class EntityT32Christmas extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.T32TenderChristmas().additionalTextTitle) + TransportDetails.T32TenderChristmas().additionalText,
-                RailUtility.translate(TransportDetails.T32TenderChristmas().additionalTextTitle2) + TransportDetails.T32TenderChristmas().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.T32TenderChristmas().additionalTextTitle) + Transport.T32TenderChristmas().additionalText,
+                RailUtility.translate(Transport.T32TenderChristmas().additionalTextTitle2) + Transport.T32TenderChristmas().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
         return new float[][]{{1.01f, 0.12F, 0.0F}, {-0.66F, 0.12F, 0.0F}};
@@ -87,7 +87,7 @@ public class EntityT32Christmas extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.T32TenderChristmas().reinforced;
+        return Transport.T32TenderChristmas().reinforced;
     }
 
     public int getInventoryRows() {
@@ -119,7 +119,7 @@ public class EntityT32Christmas extends GenericRailTransport {
     }
 
     public float weightKg() {
-        return TransportDetails.T32TenderChristmas().weightinKGs;
+        return Transport.T32TenderChristmas().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {

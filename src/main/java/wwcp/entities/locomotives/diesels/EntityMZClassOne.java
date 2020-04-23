@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.MzBogie;
 import wwcp.models.locomotives.diesels.DSBMzI_II;
@@ -44,47 +44,47 @@ public class EntityMZClassOne extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return TransportDetails.MZI().name; }
+    public String transportName() { return Transport.MZI().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.MZI().country; }
+    public String transportcountry() { return Transport.MZI().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.MZI().year; }
+    public String transportYear() { return Transport.MZI().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.MZI().fuel;
+        return Transport.MZI().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.MZI().fictional;
+        return Transport.MZI().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.MZI().tractive_effort;
+        return Transport.MZI().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.MZI().metric_horsepower;
+        return Transport.MZI().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.MZI().weightinKGs;
+        return  Transport.MZI().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.MZI().reinforced;
+        return Transport.MZI().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.MZI().additionalTextTitle) + TransportDetails.MZI().additionalText,
-                RailUtility.translate(TransportDetails.MZI().additionalTextTitle2) + TransportDetails.MZI().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.MZI().additionalTextTitle) + Transport.MZI().additionalText,
+                RailUtility.translate(Transport.MZI().additionalTextTitle2) + Transport.MZI().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.MZI().backTopSpeed: TransportDetails.MZI().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.MZI().backTopSpeed: Transport.MZI().topSpeed;}
 
     @Override
     public void registerSkins(){

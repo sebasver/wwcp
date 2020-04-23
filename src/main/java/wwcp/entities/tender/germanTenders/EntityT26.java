@@ -13,7 +13,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.TenderBogies.BR01Line.*;
 import wwcp.models.tenders.germanTenders.T26;
@@ -36,23 +36,23 @@ public class EntityT26 extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.T26().name;
+        return Transport.T26().name;
     }
 
     public String transportcountry() {
-        return TransportDetails.T26().country;
+        return Transport.T26().country;
     }
 
     public String transportYear() {
-        return TransportDetails.T26().year;
+        return Transport.T26().year;
     }
 
     public boolean isFictional() {
-        return TransportDetails.T26().fictional;
+        return Transport.T26().fictional;
     }
 
     public float weightKg() {
-        return TransportDetails.T26().weightinKGs;
+        return Transport.T26().weightinKGs;
     }
 
     @Override
@@ -63,8 +63,8 @@ public class EntityT26 extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.T26().additionalTextTitle) + TransportDetails.T26().additionalText,
-                RailUtility.translate(TransportDetails.T26().additionalTextTitle2) + TransportDetails.T26().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.T26().additionalTextTitle) + Transport.T26().additionalText,
+                RailUtility.translate(Transport.T26().additionalTextTitle2) + Transport.T26().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
         return new float[][]{{0.55f, 0.12F, 0.0F}, {-.87F, 0.12F, 0.0F}};
@@ -92,7 +92,7 @@ public class EntityT26 extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.T26().reinforced;
+        return Transport.T26().reinforced;
     }
 
     public int getInventoryRows() {

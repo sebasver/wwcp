@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -41,38 +41,38 @@ public class EntityRheingoldSpeiseTwo extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return TransportDetails.RheingoldKitchen2().reinforced;
+        return Transport.RheingoldKitchen2().reinforced;
     }
 
     @Override
     public String transportName() {
-        return TransportDetails.RheingoldKitchen2().name;
+        return Transport.RheingoldKitchen2().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.RheingoldKitchen2().country;
+        return Transport.RheingoldKitchen2().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.RheingoldKitchen2().year;
+        return Transport.RheingoldKitchen2().year;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.RheingoldKitchen2().weightinKGs;
+        return Transport.RheingoldKitchen2().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.RheingoldKitchen2().fictional;
+        return Transport.RheingoldKitchen2().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.RheingoldKitchen2().additionalTextTitle) + TransportDetails.RheingoldKitchen2().additionalText,
-                RailUtility.translate(TransportDetails.RheingoldKitchen2().additionalTextTitle2) + TransportDetails.RheingoldKitchen2().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.RheingoldKitchen2().additionalTextTitle) + Transport.RheingoldKitchen2().additionalText,
+                RailUtility.translate(Transport.RheingoldKitchen2().additionalTextTitle2) + Transport.RheingoldKitchen2().additionalText2};}
     }
 
     @Override

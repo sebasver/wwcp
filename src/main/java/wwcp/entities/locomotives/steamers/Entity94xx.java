@@ -19,7 +19,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.steamers.UK94;
 import wwcp.worldwidecontentpack;
@@ -37,47 +37,47 @@ public class Entity94xx extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return TransportDetails.GWR9400().name; }
+    public String transportName() { return Transport.GWR9400().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.GWR9400().country; }
+    public String transportcountry() { return Transport.GWR9400().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.GWR9400().year; }
+    public String transportYear() { return Transport.GWR9400().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.GWR9400().fuel;
+        return Transport.GWR9400().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.GWR9400().fictional;
+        return Transport.GWR9400().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.GWR9400().tractive_effort;
+        return Transport.GWR9400().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.GWR9400().metric_horsepower;
+        return Transport.GWR9400().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.GWR9400().weightinKGs;
+        return  Transport.GWR9400().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.GWR9400().reinforced;
+        return Transport.GWR9400().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.GWR9400().additionalTextTitle) + TransportDetails.GWR9400().additionalText,
-                RailUtility.translate(TransportDetails.GWR9400().additionalTextTitle2) + TransportDetails.GWR9400().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.GWR9400().additionalTextTitle) + Transport.GWR9400().additionalText,
+                RailUtility.translate(Transport.GWR9400().additionalTextTitle2) + Transport.GWR9400().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.GWR9400().backTopSpeed: TransportDetails.GWR9400().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.GWR9400().backTopSpeed: Transport.GWR9400().topSpeed;}
 
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/94XX/X1.png", "default",

@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.BR01BackBogie;
 import wwcp.models.bogies.BR01FrontBogie;
@@ -42,55 +42,55 @@ public class EntityDBBR01_10Streamlined_Oil extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return TransportDetails.DBBR01_10Streamlined().name;
+        return Transport.DBBR01_10Streamlined().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.DBBR01_10Streamlined().country;
+        return Transport.DBBR01_10Streamlined().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.DBBR01_10Streamlined().year;
+        return Transport.DBBR01_10Streamlined().year;
     }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.DBBR01_10Streamlined().fuel;
+        return Transport.DBBR01_10Streamlined().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.DBBR01_10Streamlined().fictional;
+        return Transport.DBBR01_10Streamlined().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.DBBR01_10Streamlined().tractive_effort;
+        return Transport.DBBR01_10Streamlined().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.DBBR01_10Streamlined().metric_horsepower;
+        return Transport.DBBR01_10Streamlined().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.DBBR01_10Streamlined().weightinKGs;
+        return Transport.DBBR01_10Streamlined().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(TransportDetails.DBBR01_10Streamlined().additionalTextTitle) + TransportDetails.DBBR01_10Streamlined().additionalText,
-                    RailUtility.translate(TransportDetails.DBBR01_10Streamlined().additionalTextTitle2) + TransportDetails.DBBR01_10Streamlined().additionalText2};
+            return new String[]{RailUtility.translate(Transport.DBBR01_10Streamlined().additionalTextTitle) + Transport.DBBR01_10Streamlined().additionalText,
+                    RailUtility.translate(Transport.DBBR01_10Streamlined().additionalTextTitle2) + Transport.DBBR01_10Streamlined().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? TransportDetails.DBBR01_10Streamlined().backTopSpeed : TransportDetails.DBBR01_10Streamlined().topSpeed;
+        return accelerator < 0 ? Transport.DBBR01_10Streamlined().backTopSpeed : Transport.DBBR01_10Streamlined().topSpeed;
     }
 
     @Override
@@ -155,7 +155,7 @@ public class EntityDBBR01_10Streamlined_Oil extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.DBBR01_10Streamlined().reinforced;
+        return Transport.DBBR01_10Streamlined().reinforced;
     }
 
     public int[] getTankCapacity() {

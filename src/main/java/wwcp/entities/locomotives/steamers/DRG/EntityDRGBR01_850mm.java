@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.BR01BackBogie;
 import wwcp.models.bogies.BR01FrontBogie;
@@ -42,55 +42,55 @@ public class EntityDRGBR01_850mm extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return TransportDetails.DRGBR01_850mm().name;
+        return Transport.DRGBR01_850mm().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.DRGBR01_850mm().country;
+        return Transport.DRGBR01_850mm().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.DRGBR01_850mm().year;
+        return Transport.DRGBR01_850mm().year;
     }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.DRGBR01_850mm().fuel;
+        return Transport.DRGBR01_850mm().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.DRGBR01_850mm().fictional;
+        return Transport.DRGBR01_850mm().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.DRGBR01_850mm().tractive_effort;
+        return Transport.DRGBR01_850mm().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.DRGBR01_850mm().metric_horsepower;
+        return Transport.DRGBR01_850mm().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.DRGBR01_850mm().weightinKGs;
+        return Transport.DRGBR01_850mm().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(TransportDetails.DRGBR01_850mm().additionalTextTitle) + TransportDetails.DRGBR01_850mm().additionalText,
-                    RailUtility.translate(TransportDetails.DRGBR01_850mm().additionalTextTitle2) + TransportDetails.DRGBR01_850mm().additionalText2};
+            return new String[]{RailUtility.translate(Transport.DRGBR01_850mm().additionalTextTitle) + Transport.DRGBR01_850mm().additionalText,
+                    RailUtility.translate(Transport.DRGBR01_850mm().additionalTextTitle2) + Transport.DRGBR01_850mm().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? TransportDetails.DRGBR01_850mm().backTopSpeed : TransportDetails.DRGBR01_850mm().topSpeed;
+        return accelerator < 0 ? Transport.DRGBR01_850mm().backTopSpeed : Transport.DRGBR01_850mm().topSpeed;
     }
 
     @Override
@@ -159,7 +159,7 @@ public class EntityDRGBR01_850mm extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.DRGBR01_850mm().reinforced;
+        return Transport.DRGBR01_850mm().reinforced;
     }
 
     public int[] getTankCapacity() {

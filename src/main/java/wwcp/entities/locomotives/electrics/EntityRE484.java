@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.electrics.F140MS2;
@@ -44,47 +44,47 @@ public class EntityRE484 extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return TransportDetails.F140MS2().name; }
+    public String transportName() { return Transport.F140MS2().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.F140MS2().country; }
+    public String transportcountry() { return Transport.F140MS2().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.F140MS2().year; }
+    public String transportYear() { return Transport.F140MS2().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.F140MS2().fuel;
+        return Transport.F140MS2().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.F140MS2().fictional;
+        return Transport.F140MS2().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.F140MS2().tractive_effort;
+        return Transport.F140MS2().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.F140MS2().metric_horsepower;
+        return Transport.F140MS2().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.F140MS2().weightinKGs;
+        return  Transport.F140MS2().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.F140MS2().reinforced;
+        return Transport.F140MS2().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.F140MS2().additionalTextTitle) + TransportDetails.F140MS2().additionalText,
-                RailUtility.translate(TransportDetails.F140MS2().additionalTextTitle2) + TransportDetails.F140MS2().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.F140MS2().additionalTextTitle) + Transport.F140MS2().additionalText,
+                RailUtility.translate(Transport.F140MS2().additionalTextTitle2) + Transport.F140MS2().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.F140MS2().backTopSpeed: TransportDetails.F140MS2().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.F140MS2().backTopSpeed: Transport.F140MS2().topSpeed;}
 
     @Override
     //todo Needs an SBB RE 484 skin before final implementation, remove other skins

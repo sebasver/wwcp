@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.*;
 import wwcp.models.locomotives.steamers.DRBR01.DR_BR01_5;
@@ -41,55 +41,55 @@ public class EntityDRBR01_5 extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return TransportDetails.DRBR01_5().name;
+        return Transport.DRBR01_5().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.DRBR01_5().country;
+        return Transport.DRBR01_5().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.DRBR01_5().year;
+        return Transport.DRBR01_5().year;
     }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.DRBR01_5().fuel;
+        return Transport.DRBR01_5().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.DRBR01_5().fictional;
+        return Transport.DRBR01_5().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.DRBR01_5().tractive_effort;
+        return Transport.DRBR01_5().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.DRBR01_5().metric_horsepower;
+        return Transport.DRBR01_5().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.DRBR01_5().weightinKGs;
+        return Transport.DRBR01_5().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(TransportDetails.DRBR01_5().additionalTextTitle) + TransportDetails.DRBR01_5().additionalText,
-                    RailUtility.translate(TransportDetails.DRBR01_5().additionalTextTitle2) + TransportDetails.DRBR01_5().additionalText2};
+            return new String[]{RailUtility.translate(Transport.DRBR01_5().additionalTextTitle) + Transport.DRBR01_5().additionalText,
+                    RailUtility.translate(Transport.DRBR01_5().additionalTextTitle2) + Transport.DRBR01_5().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? TransportDetails.DRBR01_5().backTopSpeed : TransportDetails.DRBR01_5().topSpeed;
+        return accelerator < 0 ? Transport.DRBR01_5().backTopSpeed : Transport.DRBR01_5().topSpeed;
     }
 
     @Override
@@ -158,7 +158,7 @@ public class EntityDRBR01_5 extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.DRBR01_5().reinforced;
+        return Transport.DRBR01_5().reinforced;
     }
 
     public int[] getTankCapacity() {

@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.diesels.KoFIII1;
 import wwcp.worldwidecontentpack;
@@ -43,47 +43,47 @@ public class EntityKofIII extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return TransportDetails.KoFIII1().name; }
+    public String transportName() { return Transport.KoFIII1().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.KoFIII1().country; }
+    public String transportcountry() { return Transport.KoFIII1().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.KoFIII1().year; }
+    public String transportYear() { return Transport.KoFIII1().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.KoFIII1().fuel;
+        return Transport.KoFIII1().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.KoFIII1().fictional;
+        return Transport.KoFIII1().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.KoFIII1().tractive_effort;
+        return Transport.KoFIII1().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.KoFIII1().metric_horsepower;
+        return Transport.KoFIII1().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.KoFIII1().weightinKGs;
+        return  Transport.KoFIII1().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.KoFIII1().reinforced;
+        return Transport.KoFIII1().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.KoFIII1().additionalTextTitle) + TransportDetails.KoFIII1().additionalText,
-                RailUtility.translate(TransportDetails.KoFIII1().additionalTextTitle2) + TransportDetails.KoFIII1().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.KoFIII1().additionalTextTitle) + Transport.KoFIII1().additionalText,
+                RailUtility.translate(Transport.KoFIII1().additionalTextTitle2) + Transport.KoFIII1().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.KoFIII1().backTopSpeed: TransportDetails.KoFIII1().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.KoFIII1().backTopSpeed: Transport.KoFIII1().topSpeed;}
 
     @Override
     public void registerSkins(){

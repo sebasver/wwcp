@@ -12,7 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.EurofimaBogie;
 import wwcp.models.passengerStock.EurofimaRows;
@@ -40,38 +40,38 @@ import static ebf.tim.utility.RailUtility.DefineStack;
 
         @Override
         public boolean isReinforced() {
-            return TransportDetails.EurofimaRows().reinforced;
+            return Transport.EurofimaRows().reinforced;
         }
 
         @Override
         public String transportName() {
-            return TransportDetails.EurofimaRows().name;
+            return Transport.EurofimaRows().name;
         }
 
         @Override
         public String transportcountry() {
-            return TransportDetails.EurofimaRows().country;
+            return Transport.EurofimaRows().country;
         }
 
         @Override
         public String transportYear() {
-            return TransportDetails.EurofimaRows().year;
+            return Transport.EurofimaRows().year;
         }
 
         @Override
         public float weightKg() {
-            return TransportDetails.EurofimaRows().weightinKGs;
+            return Transport.EurofimaRows().weightinKGs;
         }
 
         @Override
         public boolean isFictional() {
-            return TransportDetails.EurofimaRows().fictional;
+            return Transport.EurofimaRows().fictional;
         }
 
         @Override
         public String[] additionalItemText() {
-            {return new String[]{RailUtility.translate(TransportDetails.EurofimaRows().additionalTextTitle) + TransportDetails.EurofimaRows().additionalText,
-                    RailUtility.translate(TransportDetails.EurofimaRows().additionalTextTitle2) + TransportDetails.EurofimaRows().additionalText2};}
+            {return new String[]{RailUtility.translate(Transport.EurofimaRows().additionalTextTitle) + Transport.EurofimaRows().additionalText,
+                    RailUtility.translate(Transport.EurofimaRows().additionalTextTitle2) + Transport.EurofimaRows().additionalText2};}
         }
 
         @Override

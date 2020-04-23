@@ -13,7 +13,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.worldwidecontentpack;
 import wwcp.models.bogies.TenderBogies.BR01Line.*;
@@ -36,23 +36,23 @@ public class EntityT34StreamlinedDRG extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.T34StreamlinedDRG().name;
+        return Transport.T34StreamlinedDRG().name;
     }
 
     public String transportcountry() {
-        return TransportDetails.T34StreamlinedDRG().country;
+        return Transport.T34StreamlinedDRG().country;
     }
 
     public String transportYear() {
-        return TransportDetails.T34StreamlinedDRG().year;
+        return Transport.T34StreamlinedDRG().year;
     }
 
     public boolean isFictional() {
-        return TransportDetails.T34StreamlinedDRG().fictional;
+        return Transport.T34StreamlinedDRG().fictional;
     }
 
     public float weightKg() {
-        return TransportDetails.T34().weightinKGs;
+        return Transport.T34().weightinKGs;
     }
 
     @Override
@@ -63,8 +63,8 @@ public class EntityT34StreamlinedDRG extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.T34StreamlinedDRG().additionalTextTitle) + TransportDetails.T34StreamlinedDRG().additionalText,
-                RailUtility.translate(TransportDetails.T34StreamlinedDRG().additionalTextTitle2) + TransportDetails.T34StreamlinedDRG().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.T34StreamlinedDRG().additionalTextTitle) + Transport.T34StreamlinedDRG().additionalText,
+                RailUtility.translate(Transport.T34StreamlinedDRG().additionalTextTitle2) + Transport.T34StreamlinedDRG().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
         return new float[][]{{1.01f, 0.12F, 0.0F}, {-0.67F, 0.12F, 0.0F}};
@@ -92,7 +92,7 @@ public class EntityT34StreamlinedDRG extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.T34StreamlinedDRG().reinforced;
+        return Transport.T34StreamlinedDRG().reinforced;
     }
 
     public int getInventoryRows() {

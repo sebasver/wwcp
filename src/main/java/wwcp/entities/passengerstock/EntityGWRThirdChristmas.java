@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.passengerStock.GWROpenXmas;
 import wwcp.worldwidecontentpack;
@@ -42,32 +42,32 @@ public class EntityGWRThirdChristmas extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return TransportDetails.GWRThirdOpenChristmas().reinforced;
+        return Transport.GWRThirdOpenChristmas().reinforced;
     }
 
     @Override
     public String transportName() {
-        return TransportDetails.GWRThirdOpenChristmas().name;
+        return Transport.GWRThirdOpenChristmas().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.GWRThirdOpenChristmas().country;
+        return Transport.GWRThirdOpenChristmas().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.GWRThirdOpenChristmas().year;
+        return Transport.GWRThirdOpenChristmas().year;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.GWRThirdOpenChristmas().weightinKGs;
+        return Transport.GWRThirdOpenChristmas().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.GWRThirdOpenChristmas().fictional;
+        return Transport.GWRThirdOpenChristmas().fictional;
     }
 
     @Override
@@ -75,8 +75,8 @@ public class EntityGWRThirdChristmas extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.GWRThirdOpenChristmas().additionalTextTitle) + TransportDetails.GWRThirdOpenChristmas().additionalText,
-                RailUtility.translate(TransportDetails.GWRThirdOpenChristmas().additionalTextTitle2) + TransportDetails.GWRThirdOpenChristmas().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.GWRThirdOpenChristmas().additionalTextTitle) + Transport.GWRThirdOpenChristmas().additionalText,
+                RailUtility.translate(Transport.GWRThirdOpenChristmas().additionalTextTitle2) + Transport.GWRThirdOpenChristmas().additionalText2};}
     }
 
 

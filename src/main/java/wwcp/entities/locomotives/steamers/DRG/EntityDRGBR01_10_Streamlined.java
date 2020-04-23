@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.BR01BackBogie;
 import wwcp.models.bogies.BR01FrontBogie;
@@ -42,55 +42,55 @@ public class EntityDRGBR01_10_Streamlined extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return TransportDetails.DRGBR01_10Streamlined().name;
+        return Transport.DRGBR01_10Streamlined().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.DRGBR01_10Streamlined().country;
+        return Transport.DRGBR01_10Streamlined().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.DRGBR01_10Streamlined().year;
+        return Transport.DRGBR01_10Streamlined().year;
     }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.DRGBR01_10Streamlined().fuel;
+        return Transport.DRGBR01_10Streamlined().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.DRGBR01_10Streamlined().fictional;
+        return Transport.DRGBR01_10Streamlined().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.DRGBR01_10Streamlined().tractive_effort;
+        return Transport.DRGBR01_10Streamlined().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.DRGBR01_10Streamlined().metric_horsepower;
+        return Transport.DRGBR01_10Streamlined().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.DRGBR01_10Streamlined().weightinKGs;
+        return Transport.DRGBR01_10Streamlined().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(TransportDetails.DRGBR01_10Streamlined().additionalTextTitle) + TransportDetails.DRGBR01_10Streamlined().additionalText,
-                    RailUtility.translate(TransportDetails.DRGBR01_10Streamlined().additionalTextTitle2) + TransportDetails.DRGBR01_10Streamlined().additionalText2};
+            return new String[]{RailUtility.translate(Transport.DRGBR01_10Streamlined().additionalTextTitle) + Transport.DRGBR01_10Streamlined().additionalText,
+                    RailUtility.translate(Transport.DRGBR01_10Streamlined().additionalTextTitle2) + Transport.DRGBR01_10Streamlined().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? TransportDetails.DRGBR01_10Streamlined().backTopSpeed : TransportDetails.DRGBR01_10Streamlined().topSpeed;
+        return accelerator < 0 ? Transport.DRGBR01_10Streamlined().backTopSpeed : Transport.DRGBR01_10Streamlined().topSpeed;
     }
 
     @Override
@@ -155,7 +155,7 @@ public class EntityDRGBR01_10_Streamlined extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.DRGBR01_10Streamlined().reinforced;
+        return Transport.DRGBR01_10Streamlined().reinforced;
     }
 
     public int[] getTankCapacity() {

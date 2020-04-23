@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.freight.OFF52Beetles;
 import wwcp.worldwidecontentpack;
@@ -63,11 +63,11 @@ public class EntityOFF52Beetle extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.OFF52().reinforced;
+        return Transport.OFF52().reinforced;
     }
 
     public float weightKg() {
-        return TransportDetails.OFF52().weightinKGs;
+        return Transport.OFF52().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -75,28 +75,28 @@ public class EntityOFF52Beetle extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.OFF52().name;
+        return Transport.OFF52().name;
     }
 
-    public String transportcountry() { return TransportDetails.OFF52().country; }
+    public String transportcountry() { return Transport.OFF52().country; }
 
-    public String transportYear() { return TransportDetails.OFF52().year; }
+    public String transportYear() { return Transport.OFF52().year; }
 
     public float transportTopSpeed() {
-        return TransportDetails.OFF52().topSpeed;
+        return Transport.OFF52().topSpeed;
     }
 
     public boolean isFictional() {
-        return TransportDetails.OFF52().fictional;
+        return Transport.OFF52().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.OFF52().additionalTextTitle) + TransportDetails.OFF52().additionalText,
-                RailUtility.translate(TransportDetails.OFF52().additionalTextTitle2) + TransportDetails.OFF52().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.OFF52().additionalTextTitle) + Transport.OFF52().additionalText,
+                RailUtility.translate(Transport.OFF52().additionalTextTitle2) + Transport.OFF52().additionalText2};}
     }
     public int getInventoryRows() {
-        return TransportDetails.OFF52().rows;
+        return Transport.OFF52().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {

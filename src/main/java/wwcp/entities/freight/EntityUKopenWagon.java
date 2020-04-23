@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.freight.UKopenwagon;
 import wwcp.worldwidecontentpack;
@@ -63,11 +63,11 @@ public class EntityUKopenWagon extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.UKOpenWagon().reinforced;
+        return Transport.UKOpenWagon().reinforced;
     }
 
     public float weightKg() {
-        return TransportDetails.UKOpenWagon().weightinKGs;
+        return Transport.UKOpenWagon().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -75,28 +75,28 @@ public class EntityUKopenWagon extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.UKOpenWagon().name;
+        return Transport.UKOpenWagon().name;
     }
 
-    public String transportcountry() { return TransportDetails.UKOpenWagon().country; }
+    public String transportcountry() { return Transport.UKOpenWagon().country; }
 
-    public String transportYear() { return TransportDetails.UKOpenWagon().year; }
+    public String transportYear() { return Transport.UKOpenWagon().year; }
 
     public float transportTopSpeed() {
-        return TransportDetails.UKOpenWagon().topSpeed;
+        return Transport.UKOpenWagon().topSpeed;
     }
 
     public boolean isFictional() {
-        return TransportDetails.UKOpenWagon().fictional;
+        return Transport.UKOpenWagon().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.UKOpenWagon().additionalTextTitle) + TransportDetails.UKOpenWagon().additionalText,
-                RailUtility.translate(TransportDetails.UKOpenWagon().additionalTextTitle2) + TransportDetails.UKOpenWagon().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.UKOpenWagon().additionalTextTitle) + Transport.UKOpenWagon().additionalText,
+                RailUtility.translate(Transport.UKOpenWagon().additionalTextTitle2) + Transport.UKOpenWagon().additionalText2};}
     }
     public int getInventoryRows() {
-        return TransportDetails.UKOpenWagon().rows;
+        return Transport.UKOpenWagon().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {

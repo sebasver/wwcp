@@ -13,7 +13,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.TenderBogies.BR01Line.*;
 import wwcp.models.tenders.germanTenders.*;
@@ -36,23 +36,23 @@ public class EntityT37 extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.T37().name;
+        return Transport.T37().name;
     }
 
     public String transportcountry() {
-        return TransportDetails.T37().country;
+        return Transport.T37().country;
     }
 
     public String transportYear() {
-        return TransportDetails.T37().year;
+        return Transport.T37().year;
     }
 
     public boolean isFictional() {
-        return TransportDetails.T37().fictional;
+        return Transport.T37().fictional;
     }
 
     public float weightKg() {
-        return TransportDetails.T37().weightinKGs;
+        return Transport.T37().weightinKGs;
     }
     
     @Override
@@ -63,8 +63,8 @@ public class EntityT37 extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.T37().additionalTextTitle) + TransportDetails.T37().additionalText,
-                RailUtility.translate(TransportDetails.T37().additionalTextTitle2) + TransportDetails.T37().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.T37().additionalTextTitle) + Transport.T37().additionalText,
+                RailUtility.translate(Transport.T37().additionalTextTitle2) + Transport.T37().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
         return new float[][]{{1.20f, 0.12F, 0.0F}, {-0.60F, 0.12F, 0.0F}};
@@ -92,7 +92,7 @@ public class EntityT37 extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.T37().reinforced;
+        return Transport.T37().reinforced;
     }
 
     public int getInventoryRows() {

@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -41,38 +41,38 @@ public class EntityRheingoldSpeiseTwoChristmas extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return TransportDetails.RheingoldKitchen2Christmas().reinforced;
+        return Transport.RheingoldKitchen2Christmas().reinforced;
     }
 
     @Override
     public String transportName() {
-        return TransportDetails.RheingoldKitchen2Christmas().name;
+        return Transport.RheingoldKitchen2Christmas().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.RheingoldKitchen2Christmas().country;
+        return Transport.RheingoldKitchen2Christmas().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.RheingoldKitchen2Christmas().year;
+        return Transport.RheingoldKitchen2Christmas().year;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.RheingoldKitchen2Christmas().weightinKGs;
+        return Transport.RheingoldKitchen2Christmas().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.RheingoldKitchen2Christmas().fictional;
+        return Transport.RheingoldKitchen2Christmas().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.RheingoldKitchen2Christmas().additionalTextTitle) + TransportDetails.RheingoldKitchen2Christmas().additionalText,
-                RailUtility.translate(TransportDetails.RheingoldKitchen2Christmas().additionalTextTitle2) + TransportDetails.RheingoldKitchen2Christmas().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.RheingoldKitchen2Christmas().additionalTextTitle) + Transport.RheingoldKitchen2Christmas().additionalText,
+                RailUtility.translate(Transport.RheingoldKitchen2Christmas().additionalTextTitle2) + Transport.RheingoldKitchen2Christmas().additionalText2};}
     }
 
     @Override

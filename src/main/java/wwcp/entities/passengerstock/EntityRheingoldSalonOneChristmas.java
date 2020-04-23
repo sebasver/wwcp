@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -41,38 +41,38 @@ public class EntityRheingoldSalonOneChristmas extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return TransportDetails.RheingoldSalon1Christmas().reinforced;
+        return Transport.RheingoldSalon1Christmas().reinforced;
     }
 
     @Override
     public String transportName() {
-        return TransportDetails.RheingoldSalon1Christmas().name;
+        return Transport.RheingoldSalon1Christmas().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.RheingoldSalon1Christmas().country;
+        return Transport.RheingoldSalon1Christmas().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.RheingoldSalon1Christmas().year;
+        return Transport.RheingoldSalon1Christmas().year;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.RheingoldSalon1Christmas().weightinKGs;
+        return Transport.RheingoldSalon1Christmas().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.RheingoldSalon1Christmas().fictional;
+        return Transport.RheingoldSalon1Christmas().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.RheingoldSalon1Christmas().additionalTextTitle) + TransportDetails.RheingoldSalon1Christmas().additionalText,
-                RailUtility.translate(TransportDetails.RheingoldSalon1Christmas().additionalTextTitle2) + TransportDetails.RheingoldSalon1Christmas().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.RheingoldSalon1Christmas().additionalTextTitle) + Transport.RheingoldSalon1Christmas().additionalText,
+                RailUtility.translate(Transport.RheingoldSalon1Christmas().additionalTextTitle2) + Transport.RheingoldSalon1Christmas().additionalText2};}
     }
 
     @Override

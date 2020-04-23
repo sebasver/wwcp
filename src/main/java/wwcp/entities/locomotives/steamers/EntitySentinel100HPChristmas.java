@@ -19,7 +19,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.steamers.ChristmasSentinel;
 import wwcp.worldwidecontentpack;
@@ -42,47 +42,47 @@ public class EntitySentinel100HPChristmas extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return TransportDetails.Sentinel100HPChristmas().name; }
+    public String transportName() { return Transport.Sentinel100HPChristmas().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.Sentinel100HPChristmas().country; }
+    public String transportcountry() { return Transport.Sentinel100HPChristmas().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.Sentinel100HPChristmas().year; }
+    public String transportYear() { return Transport.Sentinel100HPChristmas().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.Sentinel100HPChristmas().fuel;
+        return Transport.Sentinel100HPChristmas().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.Sentinel100HPChristmas().fictional;
+        return Transport.Sentinel100HPChristmas().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.Sentinel100HPChristmas().tractive_effort;
+        return Transport.Sentinel100HPChristmas().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.Sentinel100HPChristmas().metric_horsepower;
+        return Transport.Sentinel100HPChristmas().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.Sentinel100HPChristmas().weightinKGs;
+        return  Transport.Sentinel100HPChristmas().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.Sentinel100HPChristmas().reinforced;
+        return Transport.Sentinel100HPChristmas().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.Sentinel100HPChristmas().additionalTextTitle) + TransportDetails.Sentinel100HPChristmas().additionalText,
-                RailUtility.translate(TransportDetails.Sentinel100HPChristmas().additionalTextTitle2) + TransportDetails.Sentinel100HPChristmas().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.Sentinel100HPChristmas().additionalTextTitle) + Transport.Sentinel100HPChristmas().additionalText,
+                RailUtility.translate(Transport.Sentinel100HPChristmas().additionalTextTitle2) + Transport.Sentinel100HPChristmas().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.Sentinel100HPChristmas().backTopSpeed: TransportDetails.Sentinel100HPChristmas().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.Sentinel100HPChristmas().backTopSpeed: Transport.Sentinel100HPChristmas().topSpeed;}
 
     @Override
     public void registerSkins(){

@@ -13,7 +13,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.models.bogies.TenderBogies.BR01Line.*;
 import wwcp.models.tenders.germanTenders.*;
 import wwcp.entities.WWCPTransport;
@@ -36,23 +36,23 @@ public class EntityT38Oil extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.T38Oil().name;
+        return Transport.T38Oil().name;
     }
 
     public String transportcountry() {
-        return TransportDetails.T38Oil().country;
+        return Transport.T38Oil().country;
     }
 
     public String transportYear() {
-        return TransportDetails.T38Oil().year;
+        return Transport.T38Oil().year;
     }
 
     public boolean isFictional() {
-        return TransportDetails.T38Oil().fictional;
+        return Transport.T38Oil().fictional;
     }
 
     public float weightKg() {
-        return TransportDetails.T38Oil().weightinKGs;
+        return Transport.T38Oil().weightinKGs;
     }
 
     @Override
@@ -63,8 +63,8 @@ public class EntityT38Oil extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.T38Oil().additionalTextTitle) + TransportDetails.T38Oil().additionalText,
-                RailUtility.translate(TransportDetails.T38Oil().additionalTextTitle2) + TransportDetails.T38Oil().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.T38Oil().additionalTextTitle) + Transport.T38Oil().additionalText,
+                RailUtility.translate(Transport.T38Oil().additionalTextTitle2) + Transport.T38Oil().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
         return new float[][]{{1.2f, 0.12F, 0.0F}, {-0.73F, 0.12F, 0.0F}};
@@ -94,7 +94,7 @@ public class EntityT38Oil extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.T38Oil().reinforced;
+        return Transport.T38Oil().reinforced;
     }
 
     public int getInventoryRows() {

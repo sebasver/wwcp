@@ -15,7 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.Class37Bogie;
 import wwcp.models.locomotives.diesels.Class37;
@@ -45,47 +45,47 @@ import java.util.UUID;
         }
 
         @Override
-        public String transportName() { return TransportDetails.Class37().name; }
+        public String transportName() { return Transport.Class37().name; }
 
         @Override
-        public String transportcountry() { return TransportDetails.Class37().country; }
+        public String transportcountry() { return Transport.Class37().country; }
 
         @Override
-        public String transportYear() { return TransportDetails.Class37().year; }
+        public String transportYear() { return Transport.Class37().year; }
 
         @Override
         public String transportFuelType() {
-            return TransportDetails.Class37().fuel;
+            return Transport.Class37().fuel;
         }
         @Override
         public boolean isFictional() {
-            return TransportDetails.Class37().fictional;
+            return Transport.Class37().fictional;
         }
         @Override
         public float transportTractiveEffort() {
-            return TransportDetails.Class37().tractive_effort;
+            return Transport.Class37().tractive_effort;
         }
         @Override
         public float transportMetricHorsePower() {
-            return TransportDetails.Class37().metric_horsepower;
+            return Transport.Class37().metric_horsepower;
         }
         @Override
         public float weightKg() {
-            return  TransportDetails.Class37().weightinKGs;
+            return  Transport.Class37().weightinKGs;
         }
 
         public boolean isReinforced() {
-            return TransportDetails.Class37().reinforced;
+            return Transport.Class37().reinforced;
         }
 
         @Override
         public String[] additionalItemText() {
-            {return new String[]{RailUtility.translate(TransportDetails.Class37().additionalTextTitle) + TransportDetails.Class37().additionalText,
-                    RailUtility.translate(TransportDetails.Class37().additionalTextTitle2) + TransportDetails.Class37().additionalText2};}
+            {return new String[]{RailUtility.translate(Transport.Class37().additionalTextTitle) + Transport.Class37().additionalText,
+                    RailUtility.translate(Transport.Class37().additionalTextTitle2) + Transport.Class37().additionalText2};}
         }
 
         @Override
-        public float transportTopSpeed(){return accelerator<0? TransportDetails.Class37().backTopSpeed: TransportDetails.Class37().topSpeed;}
+        public float transportTopSpeed(){return accelerator<0? Transport.Class37().backTopSpeed: Transport.Class37().topSpeed;}
         @Override
         public void registerSkins(){
             SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/Class37/C1.png","textures/bogies/Class37Bogie.png",

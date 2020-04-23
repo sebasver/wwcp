@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GorlitzBack;
 import wwcp.models.bogies.GorlitzFront;
@@ -41,38 +41,38 @@ public class EntityRheingoldSalonTwo extends GenericRailTransport {
 
     @Override
     public boolean isReinforced() {
-        return TransportDetails.RheingoldSalon2().reinforced;
+        return Transport.RheingoldSalon2().reinforced;
     }
 
     @Override
     public String transportName() {
-        return TransportDetails.RheingoldSalon2().name;
+        return Transport.RheingoldSalon2().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.RheingoldSalon2().country;
+        return Transport.RheingoldSalon2().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.RheingoldSalon2().year;
+        return Transport.RheingoldSalon2().year;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.RheingoldSalon2().weightinKGs;
+        return Transport.RheingoldSalon2().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.RheingoldSalon2().fictional;
+        return Transport.RheingoldSalon2().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.RheingoldSalon2().additionalTextTitle) + TransportDetails.RheingoldSalon2().additionalText,
-                RailUtility.translate(TransportDetails.RheingoldSalon2().additionalTextTitle2) + TransportDetails.RheingoldSalon2().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.RheingoldSalon2().additionalTextTitle) + Transport.RheingoldSalon2().additionalText,
+                RailUtility.translate(Transport.RheingoldSalon2().additionalTextTitle2) + Transport.RheingoldSalon2().additionalText2};}
     }
 
     @Override

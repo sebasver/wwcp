@@ -13,7 +13,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.worldwidecontentpack;
 import wwcp.models.bogies.TenderBogies.BR01Line.*;
@@ -36,23 +36,23 @@ public class EntityT37DRG extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.T37DRG().name;
+        return Transport.T37DRG().name;
     }
 
     public String transportcountry() {
-        return TransportDetails.T37DRG().country;
+        return Transport.T37DRG().country;
     }
 
     public String transportYear() {
-        return TransportDetails.T37DRG().year;
+        return Transport.T37DRG().year;
     }
 
     public boolean isFictional() {
-        return TransportDetails.T37DRG().fictional;
+        return Transport.T37DRG().fictional;
     }
 
     public float weightKg() {
-        return TransportDetails.T37DRG().weightinKGs;
+        return Transport.T37DRG().weightinKGs;
     }
     
     @Override
@@ -63,8 +63,8 @@ public class EntityT37DRG extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.T37DRG().additionalTextTitle) + TransportDetails.T37DRG().additionalText,
-                RailUtility.translate(TransportDetails.T37DRG().additionalTextTitle2) + TransportDetails.T37DRG().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.T37DRG().additionalTextTitle) + Transport.T37DRG().additionalText,
+                RailUtility.translate(Transport.T37DRG().additionalTextTitle2) + Transport.T37DRG().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
         return new float[][]{{1.20f, 0.12F, 0.0F}, {-0.60F, 0.12F, 0.0F}};
@@ -92,7 +92,7 @@ public class EntityT37DRG extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.T37DRG().reinforced;
+        return Transport.T37DRG().reinforced;
     }
 
     public int getInventoryRows() {

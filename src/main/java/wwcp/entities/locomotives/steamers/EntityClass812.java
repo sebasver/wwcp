@@ -19,7 +19,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.steamers.Class812;
 import wwcp.worldwidecontentpack;
@@ -37,47 +37,47 @@ public class EntityClass812 extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return TransportDetails.CR812().name; }
+    public String transportName() { return Transport.CR812().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.CR812().country; }
+    public String transportcountry() { return Transport.CR812().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.CR812().year; }
+    public String transportYear() { return Transport.CR812().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.CR812().fuel;
+        return Transport.CR812().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.CR812().fictional;
+        return Transport.CR812().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.CR812().tractive_effort;
+        return Transport.CR812().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.CR812().metric_horsepower;
+        return Transport.CR812().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.CR812().weightinKGs;
+        return  Transport.CR812().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.CR812().reinforced;
+        return Transport.CR812().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.CR812().additionalTextTitle) + TransportDetails.CR812().additionalText,
-                RailUtility.translate(TransportDetails.CR812().additionalTextTitle2) + TransportDetails.CR812().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.CR812().additionalTextTitle) + Transport.CR812().additionalText,
+                RailUtility.translate(Transport.CR812().additionalTextTitle2) + Transport.CR812().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.CR812().backTopSpeed: TransportDetails.CR812().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.CR812().backTopSpeed: Transport.CR812().topSpeed;}
 
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/812/C1.png", "default",

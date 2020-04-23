@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.MzBogie;
 import wwcp.models.locomotives.diesels.DSBMzIII;
@@ -44,47 +44,47 @@ public class EntityMZClassThree extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return TransportDetails.MZIII().name; }
+    public String transportName() { return Transport.MZIII().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.MZIII().country; }
+    public String transportcountry() { return Transport.MZIII().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.MZIII().year; }
+    public String transportYear() { return Transport.MZIII().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.MZIII().fuel;
+        return Transport.MZIII().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.MZIII().fictional;
+        return Transport.MZIII().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.MZIII().tractive_effort;
+        return Transport.MZIII().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.MZIII().metric_horsepower;
+        return Transport.MZIII().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.MZIII().weightinKGs;
+        return  Transport.MZIII().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.MZIII().reinforced;
+        return Transport.MZIII().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.MZIII().additionalTextTitle) + TransportDetails.MZIII().additionalText,
-                RailUtility.translate(TransportDetails.MZIII().additionalTextTitle2) + TransportDetails.MZIII().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.MZIII().additionalTextTitle) + Transport.MZIII().additionalText,
+                RailUtility.translate(Transport.MZIII().additionalTextTitle2) + Transport.MZIII().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.MZIII().backTopSpeed: TransportDetails.MZIII().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.MZIII().backTopSpeed: Transport.MZIII().topSpeed;}
 
     @Override
     public void registerSkins(){

@@ -13,7 +13,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.worldwidecontentpack;
 import wwcp.models.bogies.TenderBogies.BR01Line.*;
@@ -36,23 +36,23 @@ public class EntityT34AditionalOil extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.T34AditionalOil().name;
+        return Transport.T34AditionalOil().name;
     }
 
     public String transportcountry() {
-        return TransportDetails.T34AditionalOil().country;
+        return Transport.T34AditionalOil().country;
     }
 
     public String transportYear() {
-        return TransportDetails.T34AditionalOil().year;
+        return Transport.T34AditionalOil().year;
     }
 
     public boolean isFictional() {
-        return TransportDetails.T34AditionalOil().fictional;
+        return Transport.T34AditionalOil().fictional;
     }
 
     public float weightKg() {
-        return TransportDetails.T34().weightinKGs;
+        return Transport.T34().weightinKGs;
     }
     
     @Override
@@ -63,8 +63,8 @@ public class EntityT34AditionalOil extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.T34AditionalOil().additionalTextTitle) + TransportDetails.T34AditionalOil().additionalText,
-                RailUtility.translate(TransportDetails.T34AditionalOil().additionalTextTitle2) + TransportDetails.T34AditionalOil().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.T34AditionalOil().additionalTextTitle) + Transport.T34AditionalOil().additionalText,
+                RailUtility.translate(Transport.T34AditionalOil().additionalTextTitle2) + Transport.T34AditionalOil().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
         return new float[][]{{0.75f, 0.12F, 0.0F}, {-0.94F, 0.12F, 0.0F}};
@@ -92,7 +92,7 @@ public class EntityT34AditionalOil extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.T34AditionalOil().reinforced;
+        return Transport.T34AditionalOil().reinforced;
     }
 
     public int getInventoryRows() {

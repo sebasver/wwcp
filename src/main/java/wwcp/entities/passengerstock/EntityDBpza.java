@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.worldwidecontentpack;
 
@@ -98,11 +98,11 @@ public class EntityDBpza extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.DBpza().reinforced;
+        return Transport.DBpza().reinforced;
     }
 
     public float weightKg() {
-        return TransportDetails.DBpza().weightinKGs;
+        return Transport.DBpza().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -110,28 +110,28 @@ public class EntityDBpza extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.DBpza().name;
+        return Transport.DBpza().name;
     }
 
-    public String transportcountry() { return TransportDetails.DBpza().country; }
+    public String transportcountry() { return Transport.DBpza().country; }
 
-    public String transportYear() { return TransportDetails.DBpza().year; }
+    public String transportYear() { return Transport.DBpza().year; }
 
     public float transportTopSpeed() {
-        return TransportDetails.DBpza().topSpeed;
+        return Transport.DBpza().topSpeed;
     }
 
     public boolean isFictional() {
-        return TransportDetails.DBpza().fictional;
+        return Transport.DBpza().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.DBpza().additionalTextTitle) + TransportDetails.DBpza().additionalText,
-                RailUtility.translate(TransportDetails.DBpza().additionalTextTitle2) + TransportDetails.DBpza().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.DBpza().additionalTextTitle) + Transport.DBpza().additionalText,
+                RailUtility.translate(Transport.DBpza().additionalTextTitle2) + Transport.DBpza().additionalText2};}
     }
     public int getInventoryRows() {
-        return TransportDetails.DBpza().rows;
+        return Transport.DBpza().rows;
     }
     /**
      * <h2>Type</h2>

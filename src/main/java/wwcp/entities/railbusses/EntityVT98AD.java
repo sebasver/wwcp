@@ -14,7 +14,7 @@ import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.railbusses.VT98;
 import wwcp.worldwidecontentpack;
@@ -38,47 +38,47 @@ public class EntityVT98AD extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return TransportDetails.BR798Ads().name; }
+    public String transportName() { return Transport.BR798Ads().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.BR798Ads().country; }
+    public String transportcountry() { return Transport.BR798Ads().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.BR798Ads().year; }
+    public String transportYear() { return Transport.BR798Ads().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.BR798Ads().fuel;
+        return Transport.BR798Ads().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.BR798Ads().fictional;
+        return Transport.BR798Ads().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.BR798Ads().tractive_effort;
+        return Transport.BR798Ads().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.BR798Ads().metric_horsepower;
+        return Transport.BR798Ads().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.BR798Ads().weightinKGs;
+        return  Transport.BR798Ads().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.BR798Ads().reinforced;
+        return Transport.BR798Ads().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.BR798Ads().additionalTextTitle) + TransportDetails.BR798Ads().additionalText,
-                RailUtility.translate(TransportDetails.BR798Ads().additionalTextTitle2) + TransportDetails.BR798Ads().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.BR798Ads().additionalTextTitle) + Transport.BR798Ads().additionalText,
+                RailUtility.translate(Transport.BR798Ads().additionalTextTitle2) + Transport.BR798Ads().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.BR798Ads().backTopSpeed: TransportDetails.BR798Ads().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.BR798Ads().backTopSpeed: Transport.BR798Ads().topSpeed;}
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/VT98/VT981.png",
@@ -104,7 +104,7 @@ public class EntityVT98AD extends EntityTrainCore {
     }
     
     @Override
-    public int getInventoryRows(){return TransportDetails.BR798Ads().rows;}
+    public int getInventoryRows(){return Transport.BR798Ads().rows;}
 
     //@Override
     public TrainsInMotion.transportTypes getType(){return TrainsInMotion.transportTypes.DIESEL;}

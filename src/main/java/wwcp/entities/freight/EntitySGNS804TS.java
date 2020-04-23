@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.freight.SGNS804TS;
 import wwcp.models.bogies.SGNSBogie;
@@ -77,11 +77,11 @@ public class EntitySGNS804TS extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.Sggnss80Load3().reinforced;
+        return Transport.Sggnss80Load3().reinforced;
     }
 
     public int[] getTankCapacity() {
-        return new int[] {TransportDetails.Sggnss80Load3().tankcapacity,TransportDetails.Sggnss80Load3().tankcapacity};
+        return new int[] {Transport.Sggnss80Load3().tankcapacity, Transport.Sggnss80Load3().tankcapacity};
     }
 
     public String[] getTankFilters(int tankID) {
@@ -89,7 +89,7 @@ public class EntitySGNS804TS extends GenericRailTransport {
     }
 
     public float weightKg() {
-        return TransportDetails.Sggnss80Load3().weightinKGs;
+        return Transport.Sggnss80Load3().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -97,28 +97,28 @@ public class EntitySGNS804TS extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.Sggnss80Load3().name;
+        return Transport.Sggnss80Load3().name;
     }
 
-    public String transportcountry() { return TransportDetails.Sggnss80Load3().country; }
+    public String transportcountry() { return Transport.Sggnss80Load3().country; }
 
-    public String transportYear() { return TransportDetails.Sggnss80Load3().year; }
+    public String transportYear() { return Transport.Sggnss80Load3().year; }
 
     public float transportTopSpeed() {
-        return TransportDetails.Sggnss80Load3().topSpeed;
+        return Transport.Sggnss80Load3().topSpeed;
     }
 
     public boolean isFictional() {
-        return TransportDetails.Sggnss80Load3().fictional;
+        return Transport.Sggnss80Load3().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.Sggnss80Load3().additionalTextTitle) + TransportDetails.Sggnss80Load3().additionalText,
-                RailUtility.translate(TransportDetails.Sggnss80Load3().additionalTextTitle2) + TransportDetails.Sggnss80Load3().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.Sggnss80Load3().additionalTextTitle) + Transport.Sggnss80Load3().additionalText,
+                RailUtility.translate(Transport.Sggnss80Load3().additionalTextTitle2) + Transport.Sggnss80Load3().additionalText2};}
     }
     public int getInventoryRows() {
-        return TransportDetails.Sggnss80Load3().rows;
+        return Transport.Sggnss80Load3().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {

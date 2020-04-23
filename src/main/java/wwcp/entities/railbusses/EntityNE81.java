@@ -14,7 +14,7 @@ import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.NE81;
 import wwcp.worldwidecontentpack;
@@ -38,47 +38,47 @@ public class EntityNE81 extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return TransportDetails.NE81().name; }
+    public String transportName() { return Transport.NE81().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.NE81().country; }
+    public String transportcountry() { return Transport.NE81().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.NE81().year; }
+    public String transportYear() { return Transport.NE81().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.NE81().fuel;
+        return Transport.NE81().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.NE81().fictional;
+        return Transport.NE81().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.NE81().tractive_effort;
+        return Transport.NE81().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.NE81().metric_horsepower;
+        return Transport.NE81().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.NE81().weightinKGs;
+        return  Transport.NE81().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.NE81().reinforced;
+        return Transport.NE81().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.NE81().additionalTextTitle) + TransportDetails.NE81().additionalText,
-                RailUtility.translate(TransportDetails.NE81().additionalTextTitle2) + TransportDetails.NE81().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.NE81().additionalTextTitle) + Transport.NE81().additionalText,
+                RailUtility.translate(Transport.NE81().additionalTextTitle2) + Transport.NE81().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.NE81().backTopSpeed: TransportDetails.NE81().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.NE81().backTopSpeed: Transport.NE81().topSpeed;}
 
     @Override
     public void registerSkins(){
@@ -87,7 +87,7 @@ public class EntityNE81 extends EntityTrainCore {
     }
     
     @Override
-    public int getInventoryRows(){return TransportDetails.NE81().rows;}
+    public int getInventoryRows(){return Transport.NE81().rows;}
 
     //@Override
     public TrainsInMotion.transportTypes getType(){return TrainsInMotion.transportTypes.DIESEL;}

@@ -18,7 +18,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.tenders.Class812Tender;
 import wwcp.worldwidecontentpack;
@@ -41,11 +41,11 @@ public class Entity3000GalonTender extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.Mcintosh3000Galon().reinforced;
+        return Transport.Mcintosh3000Galon().reinforced;
     }
 
     public int[] getTankCapacity() {
-        return new int[] {TransportDetails.Mcintosh3000Galon().tankcapacity,TransportDetails.Mcintosh3000Galon().tankcapacity};
+        return new int[] {Transport.Mcintosh3000Galon().tankcapacity, Transport.Mcintosh3000Galon().tankcapacity};
     }
 
     public String[] getTankFilters(int tankID) {
@@ -60,7 +60,7 @@ public class Entity3000GalonTender extends GenericRailTransport {
     }
 
     public float weightKg() {
-        return TransportDetails.Mcintosh3000Galon().weightinKGs;
+        return Transport.Mcintosh3000Galon().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -68,28 +68,28 @@ public class Entity3000GalonTender extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.Mcintosh3000Galon().name;
+        return Transport.Mcintosh3000Galon().name;
     }
 
-    public String transportcountry() { return TransportDetails.Mcintosh3000Galon().country; }
+    public String transportcountry() { return Transport.Mcintosh3000Galon().country; }
 
-    public String transportYear() { return TransportDetails.Mcintosh3000Galon().year; }
+    public String transportYear() { return Transport.Mcintosh3000Galon().year; }
 
     public float transportTopSpeed() {
-        return TransportDetails.Mcintosh3000Galon().topSpeed;
+        return Transport.Mcintosh3000Galon().topSpeed;
     }
 
     public boolean isFictional() {
-        return TransportDetails.Mcintosh3000Galon().fictional;
+        return Transport.Mcintosh3000Galon().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.Mcintosh3000Galon().additionalTextTitle) + TransportDetails.Mcintosh3000Galon().additionalText,
-                RailUtility.translate(TransportDetails.Mcintosh3000Galon().additionalTextTitle2) + TransportDetails.Mcintosh3000Galon().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.Mcintosh3000Galon().additionalTextTitle) + Transport.Mcintosh3000Galon().additionalText,
+                RailUtility.translate(Transport.Mcintosh3000Galon().additionalTextTitle2) + Transport.Mcintosh3000Galon().additionalText2};}
     }
     public int getInventoryRows() {
-        return TransportDetails.Mcintosh3000Galon().rows;
+        return Transport.Mcintosh3000Galon().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {

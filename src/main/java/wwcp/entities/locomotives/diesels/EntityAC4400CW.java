@@ -15,10 +15,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.LampTest;
-import wwcp.models.ModelTubeStock1938;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -45,47 +44,47 @@ public class EntityAC4400CW extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return TransportDetails.GEAC4400CW().name; }
+    public String transportName() { return Transport.GEAC4400CW().name; }
 
     @Override
-    public String transportcountry() { return TransportDetails.GEAC4400CW().country; }
+    public String transportcountry() { return Transport.GEAC4400CW().country; }
 
     @Override
-    public String transportYear() { return TransportDetails.GEAC4400CW().year; }
+    public String transportYear() { return Transport.GEAC4400CW().year; }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.GEAC4400CW().fuel;
+        return Transport.GEAC4400CW().fuel;
     }
     @Override
     public boolean isFictional() {
-        return TransportDetails.GEAC4400CW().fictional;
+        return Transport.GEAC4400CW().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.GEAC4400CW().tractive_effort;
+        return Transport.GEAC4400CW().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.GEAC4400CW().metric_horsepower;
+        return Transport.GEAC4400CW().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  TransportDetails.GEAC4400CW().weightinKGs;
+        return  Transport.GEAC4400CW().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.GEAC4400CW().reinforced;
+        return Transport.GEAC4400CW().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.GEAC4400CW().additionalTextTitle) + TransportDetails.GEAC4400CW().additionalText,
-                RailUtility.translate(TransportDetails.GEAC4400CW().additionalTextTitle2) + TransportDetails.GEAC4400CW().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.GEAC4400CW().additionalTextTitle) + Transport.GEAC4400CW().additionalText,
+                RailUtility.translate(Transport.GEAC4400CW().additionalTextTitle2) + Transport.GEAC4400CW().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? TransportDetails.GEAC4400CW().backTopSpeed: TransportDetails.GEAC4400CW().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.GEAC4400CW().backTopSpeed: Transport.GEAC4400CW().topSpeed;}
 
     @Override
     public void registerSkins(){

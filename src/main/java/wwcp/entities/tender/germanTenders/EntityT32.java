@@ -15,7 +15,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.Tender32Bogie;
 import wwcp.models.tenders.germanTenders.T32;
@@ -35,19 +35,19 @@ public class EntityT32 extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.T32().name;
+        return Transport.T32().name;
     }
 
     public String transportcountry() {
-        return TransportDetails.T32().country;
+        return Transport.T32().country;
     }
 
     public String transportYear() {
-        return TransportDetails.T32().year;
+        return Transport.T32().year;
     }
 
     public boolean isFictional() {
-        return TransportDetails.T32().fictional;
+        return Transport.T32().fictional;
     }
 
     @Override
@@ -58,8 +58,8 @@ public class EntityT32 extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.T32().additionalTextTitle) + TransportDetails.T32().additionalText,
-                RailUtility.translate(TransportDetails.T32().additionalTextTitle2) + TransportDetails.T32().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.T32().additionalTextTitle) + Transport.T32().additionalText,
+                RailUtility.translate(Transport.T32().additionalTextTitle2) + Transport.T32().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
         return new float[][]{{1.01f, 0.12F, 0.0F}, {-0.66F, 0.12F, 0.0F}};
@@ -89,7 +89,7 @@ public class EntityT32 extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.T32().reinforced;
+        return Transport.T32().reinforced;
     }
 
     public int getInventoryRows() {
@@ -121,7 +121,7 @@ public class EntityT32 extends GenericRailTransport {
     }
 
     public float weightKg() {
-        return TransportDetails.T32().weightinKGs;
+        return Transport.T32().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {

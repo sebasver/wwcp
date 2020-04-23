@@ -14,7 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.electrics.F140MS2;
@@ -48,59 +48,59 @@ public class EntityTraxxF140MS2 extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return TransportDetails.F140MS2E().name;
+        return Transport.F140MS2E().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.F140MS2E().country;
+        return Transport.F140MS2E().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.F140MS2E().year;
+        return Transport.F140MS2E().year;
     }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.F140MS2E().fuel;
+        return Transport.F140MS2E().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.F140MS2E().fictional;
+        return Transport.F140MS2E().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.F140MS2E().tractive_effort;
+        return Transport.F140MS2E().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.F140MS2E().metric_horsepower;
+        return Transport.F140MS2E().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.F140MS2E().weightinKGs;
+        return Transport.F140MS2E().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return TransportDetails.F140MS2E().reinforced;
+        return Transport.F140MS2E().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(TransportDetails.F140MS2E().additionalTextTitle) + TransportDetails.F140MS2E().additionalText,
-                    RailUtility.translate(TransportDetails.F140MS2E().additionalTextTitle2) + TransportDetails.F140MS2E().additionalText2};
+            return new String[]{RailUtility.translate(Transport.F140MS2E().additionalTextTitle) + Transport.F140MS2E().additionalText,
+                    RailUtility.translate(Transport.F140MS2E().additionalTextTitle2) + Transport.F140MS2E().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? TransportDetails.F140MS2E().backTopSpeed : TransportDetails.F140MS2E().topSpeed;
+        return accelerator < 0 ? Transport.F140MS2E().backTopSpeed : Transport.F140MS2E().topSpeed;
     }
 
     @Override

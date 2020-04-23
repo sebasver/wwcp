@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.passengerStock.ClassDonder4;
 import wwcp.worldwidecontentpack;
@@ -59,11 +59,11 @@ public class EntityDonder4 extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.Donderbus3().reinforced;
+        return Transport.Donderbus3().reinforced;
     }
 
     public float weightKg() {
-        return TransportDetails.Donderbus3().weightinKGs;
+        return Transport.Donderbus3().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -71,28 +71,28 @@ public class EntityDonder4 extends GenericRailTransport {
     }
 
     public String transportName() {
-        return TransportDetails.Donderbus3().name;
+        return Transport.Donderbus3().name;
     }
 
-    public String transportcountry() { return TransportDetails.Donderbus3().country; }
+    public String transportcountry() { return Transport.Donderbus3().country; }
 
-    public String transportYear() { return TransportDetails.Donderbus3().year; }
+    public String transportYear() { return Transport.Donderbus3().year; }
 
     public float transportTopSpeed() {
-        return TransportDetails.Donderbus3().topSpeed;
+        return Transport.Donderbus3().topSpeed;
     }
 
     public boolean isFictional() {
-        return TransportDetails.Donderbus3().fictional;
+        return Transport.Donderbus3().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(TransportDetails.Donderbus3().additionalTextTitle) + TransportDetails.Donderbus3().additionalText,
-                RailUtility.translate(TransportDetails.Donderbus3().additionalTextTitle2) + TransportDetails.Donderbus3().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.Donderbus3().additionalTextTitle) + Transport.Donderbus3().additionalText,
+                RailUtility.translate(Transport.Donderbus3().additionalTextTitle2) + Transport.Donderbus3().additionalText2};}
     }
     public int getInventoryRows() {
-        return TransportDetails.Donderbus3().rows;
+        return Transport.Donderbus3().rows;
     }
     @Override
     public float[][] getRiderOffsets() {

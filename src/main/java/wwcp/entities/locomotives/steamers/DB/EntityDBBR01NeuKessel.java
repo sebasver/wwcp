@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
-import wwcp.entities.TransportDetails;
+import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.BR01BackBogie;
 import wwcp.models.bogies.BR01FrontBogie;
@@ -42,55 +42,55 @@ public class EntityDBBR01NeuKessel extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return TransportDetails.DBBR01NeuKessel().name;
+        return Transport.DBBR01NeuKessel().name;
     }
 
     @Override
     public String transportcountry() {
-        return TransportDetails.DBBR01NeuKessel().country;
+        return Transport.DBBR01NeuKessel().country;
     }
 
     @Override
     public String transportYear() {
-        return TransportDetails.DBBR01NeuKessel().year;
+        return Transport.DBBR01NeuKessel().year;
     }
 
     @Override
     public String transportFuelType() {
-        return TransportDetails.DBBR01NeuKessel().fuel;
+        return Transport.DBBR01NeuKessel().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return TransportDetails.DBBR01NeuKessel().fictional;
+        return Transport.DBBR01NeuKessel().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return TransportDetails.DBBR01NeuKessel().tractive_effort;
+        return Transport.DBBR01NeuKessel().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return TransportDetails.DBBR01NeuKessel().metric_horsepower;
+        return Transport.DBBR01NeuKessel().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return TransportDetails.DBBR01NeuKessel().weightinKGs;
+        return Transport.DBBR01NeuKessel().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(TransportDetails.DBBR01NeuKessel().additionalTextTitle) + TransportDetails.DBBR01NeuKessel().additionalText,
-                    RailUtility.translate(TransportDetails.DBBR01NeuKessel().additionalTextTitle2) + TransportDetails.DBBR01NeuKessel().additionalText2};
+            return new String[]{RailUtility.translate(Transport.DBBR01NeuKessel().additionalTextTitle) + Transport.DBBR01NeuKessel().additionalText,
+                    RailUtility.translate(Transport.DBBR01NeuKessel().additionalTextTitle2) + Transport.DBBR01NeuKessel().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? TransportDetails.DBBR01NeuKessel().backTopSpeed : TransportDetails.DBBR01NeuKessel().topSpeed;
+        return accelerator < 0 ? Transport.DBBR01NeuKessel().backTopSpeed : Transport.DBBR01NeuKessel().topSpeed;
     }
 
     @Override
@@ -161,7 +161,7 @@ public class EntityDBBR01NeuKessel extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return TransportDetails.DBBR01NeuKessel().reinforced;
+        return Transport.DBBR01NeuKessel().reinforced;
     }
 
     public int[] getTankCapacity() {
