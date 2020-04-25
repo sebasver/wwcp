@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
         maven { url = "http://files.minecraftforge.net/maven" }
     }
     dependencies {
@@ -10,9 +10,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "0.7.03 Alpha"
-group= "wwcp"
-archivesBaseName = "WWCP"
+version = "1.0"
+group= "ebf.tim"
+archivesBaseName = "Trains in Motion"
 
 sourceCompatibility = targetCompatibility = "1.7"
 compileJava { sourceCompatibility = targetCompatibility = "1.7" }
