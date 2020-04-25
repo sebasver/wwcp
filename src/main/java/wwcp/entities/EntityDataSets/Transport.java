@@ -574,6 +574,18 @@ public class Transport {
                 31473.3f, 360.3f, 43.0f, 60f, false, true, 0);
     }
 
+    public static Transport.LocomotiveNoBackspeed WR360C14Kanzel() {
+        return new Transport.LocomotiveNoBackspeed("WehrmachtslokomotiveWR360C14Kanzel", "Germany", "1937-1950", "Diesel",
+                aditional, " DB V36, DB BR236, DR BR103", type, " Shunting Locomotive",
+                31473.3f, 360.3f, 43.0f, 60f, false, true, 0);
+    }
+
+    public static Transport.LocomotiveNoBackspeed WR360C14Electric() {
+        return new Transport.LocomotiveNoBackspeed("WehrmachtslokomotiveWR360C14Electric", "Germany", "1937-1950", "Electric",
+                aditional, " DB V36, DB BR236, DR BR103", type, " Shunting Locomotive",
+                31473.3f, 360.3f, 43.0f, 60f, false, true, 0);
+    }
+
     //DBpza
     public static Transport.Rollingstock DBpza() {
         return new Transport.Rollingstock("Dobbelstock 4th generation", "Germany", "1997-", "",

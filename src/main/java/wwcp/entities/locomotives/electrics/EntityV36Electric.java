@@ -1,4 +1,4 @@
-package wwcp.entities.locomotives.diesels;
+package wwcp.entities.locomotives.electrics;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -17,6 +17,8 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.locomotives.diesels.ModelV36;
+import wwcp.models.locomotives.diesels.ModelV36Kanzel;
+import wwcp.models.locomotives.electrics.ModelV36Electric;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -24,59 +26,59 @@ import java.util.UUID;
 import static ebf.tim.utility.RailUtility.DefineStack;
 
 
-public class EntityV36 extends EntityTrainCore {
+public class EntityV36Electric extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityV36(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityV36Electric(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
 
-    public EntityV36(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityV36Electric(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityV36(World world){
+    public EntityV36Electric(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.WR360C14().name; }
+    public String transportName() { return Transport.WR360C14Electric().name; }
 
     @Override
-    public String transportcountry() { return Transport.WR360C14().country; }
+    public String transportcountry() { return Transport.WR360C14Electric().country; }
 
     @Override
-    public String transportYear() { return Transport.WR360C14().year; }
+    public String transportYear() { return Transport.WR360C14Electric().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.WR360C14().fuel;
+        return Transport.WR360C14Electric().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.WR360C14().fictional;
+        return Transport.WR360C14Electric().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.WR360C14().tractive_effort;
+        return Transport.WR360C14Electric().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.WR360C14().metric_horsepower;
+        return Transport.WR360C14Electric().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  Transport.WR360C14().weightinKGs;
+        return  Transport.WR360C14Electric().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.WR360C14().reinforced;
+        return Transport.WR360C14Electric().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.WR360C14().additionalTextTitle) + Transport.WR360C14().additionalText,
-                RailUtility.translate(Transport.WR360C14().additionalTextTitle2) + Transport.WR360C14().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.WR360C14Electric().additionalTextTitle) + Transport.WR360C14Electric().additionalText,
+                RailUtility.translate(Transport.WR360C14Electric().additionalTextTitle2) + Transport.WR360C14Electric().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.WR360C14().backTopSpeed: Transport.WR360C14().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.WR360C14Electric().backTopSpeed: Transport.WR360C14Electric().topSpeed;}
 
     @Override
     public void registerSkins(){
@@ -171,7 +173,7 @@ public class EntityV36 extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new ModelV36()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new ModelV36Electric()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>
