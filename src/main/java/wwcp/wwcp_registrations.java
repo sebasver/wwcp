@@ -155,6 +155,7 @@ public class wwcp_registrations {
     public static GenericRailTransport[] listDiesel() {
         return new GenericRailTransport[]{
                 new EntityV36(null),
+                new EntityV36Kanzel(null),
                 new EntityClass37(null),
                 new EntityAC4400CW(null),
                 new EntityMZClassOne(null),
@@ -187,6 +188,7 @@ public class wwcp_registrations {
     public static GenericRailTransport[] listelectric() {
         return new GenericRailTransport[]{
                 new EntityTraxxF140MS2(null),
+                new EntityV36Electric(null)
 //                new EntityRE484(null)
         };
     }
