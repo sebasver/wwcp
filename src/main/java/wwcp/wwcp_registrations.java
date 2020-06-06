@@ -187,7 +187,7 @@ public class wwcp_registrations {
     //Electric List
     public static GenericRailTransport[] listelectric() {
         return new GenericRailTransport[]{
-                new EntityTraxxF140MS2(null),
+                new EntityTraxxF140MS2E(null),
                 new EntityV36Electric(null)
 //                new EntityRE484(null)
         };

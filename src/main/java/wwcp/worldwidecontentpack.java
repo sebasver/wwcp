@@ -38,7 +38,7 @@ import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.7.03 Alpha";
+    public static final String MOD_VERSION = "0.7.04 Alpha";
 
 
     @Mod.EventHandler
@@ -48,10 +48,8 @@ public class worldwidecontentpack {
     //Tab declerations
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-
         //For the custom armor
         proxy.registerRenderers();
-
         Belgium = new TiMTab("Belgian models", MODID, "myTab");
         Germany = new TiMTab("German models", MODID, "myTab2");
         United_Kingdom = new TiMTab("UK models", MODID, "myTab3");
@@ -62,31 +60,13 @@ public class worldwidecontentpack {
         Switzerland = new TiMTab("Swiss models", MODID, "myTab8");
         European = new TiMTab("Inter European models", MODID, "myTab9");
         BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
-        if (LocalDate.now().getMonth() == Month.DECEMBER || LocalDate.now().getMonth() == Month.JANUARY || LocalDate.now().getMonth() == Month.FEBRUARY) {
-            FestivitiesTab = new TiMTab("Festive Models", MODID, "winter/festivetab");
-        } else if (LocalDate.now().getMonth() == Month.MARCH || /*LocalDate.now().getMonth() == Month.APRIL ||*/ LocalDate.now().getMonth() == Month.MAY) {
-            FestivitiesTab = new TiMTab("Festive Models", MODID, "spring/festivetab");
-        } else if (LocalDate.now().getMonth() == Month.JUNE || LocalDate.now().getMonth() == Month.JULY || LocalDate.now().getMonth() == Month.AUGUST) {
-            FestivitiesTab = new TiMTab("Festive Models", MODID, "summer/festivetab");
-        } else {
-            FestivitiesTab = new TiMTab("Festive Models", MODID, "autum/festivetab");
-        }
-
+        FestivitiesTab = new TiMTab("Festive Models", MODID, "festivetab");
         //for the eventhandler
         MinecraftForge.EVENT_BUS.register(ClientProxy.eventManager);
-
         wwcp_registrations.registerItems();
         wwcp_registrations.registerBlocks();
         wwcp_registrations.registerTrains();
-
     }
-    //todo Block platform 5(Full block),7(half slope),9(station lamp) still erroring
-    //todo fix tender positioning + completion
-    //todo fix bogie rotating points on ALL Stock, HIGH URGENCY
-
-    /**
-     * I hereby start declaring the individual trains itself. I will insert a // statement before each big group
-     */
 
     // declaring of the creative tabs I will be using
     public static CreativeTabs Belgium, Germany, United_Kingdom, France, Netherlands, America, Austria, Switzerland, European, BlocksWWCP, FestivitiesTab;
