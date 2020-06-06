@@ -97,7 +97,7 @@ public class EntityMZClassFour extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDBCSC.png", "textures/bogies/Mz_Bogey.png",
                 "DB Cargo Scandinavia Livery", "DB Red livery for the DB Cargo \n with blinded cab windows");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDBCSC1449.png", "textures/bogies/Mz_Bogey.png",
-                "DB Cargo Scandinavia Livery", "DB Red livery for the DB Cargo \n with cab windows and no rear lights, only nr 1449 has this type of changes");
+                "DB Cargo Scandinavia Livery 1449", "DB Red livery for the DB Cargo \n with cab windows and no rear lights, only nr 1449 has this type of changes");
     }
 
     @Override
