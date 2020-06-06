@@ -88,10 +88,10 @@ public class EntityMZClassFour extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz4RedBlack1.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDSB.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz4RedBlack2001.png", "textures/bogies/Mz_Bogey.png",
-                "DSB Livery blinded cab", "Standard Red and Black livery for the DSB \n with blinded cab windows");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVRDK.png", "textures/bogies/Mz_Bogey.png",
+                "DSB Livery blinded cab", "Standard Red and Black livery for the Railion \n with blinded cab windows");
     }
 
     @Override
