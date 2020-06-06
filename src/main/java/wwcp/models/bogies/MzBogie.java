@@ -34,7 +34,7 @@ public class MzBogie extends ModelBase //Same as Filename
 	{
 		bodyModel[0] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 87
 		bodyModel[1] = new ModelRendererTurbo(this, 33, 1, textureX, textureY); // Box 88
-		bodyModel[2] = new ModelRendererTurbo(this, 65, 1, textureX, textureY); // Box 91
+		bodyModel[2] = new ModelRendererTurbo(this, 65, 11, textureX, textureY); // Box 91
 		bodyModel[3] = new ModelRendererTurbo(this, 161, 1, textureX, textureY); // Box 92
 		bodyModel[4] = new ModelRendererTurbo(this, 201, 1, textureX, textureY); // Box 93
 		bodyModel[5] = new ModelRendererTurbo(this, 17, 1, textureX, textureY); // Box 126
