@@ -19,7 +19,7 @@ public class DSBMzIV extends ModelBase //Same as Filename
 
 	public DSBMzIV() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[273];
+		bodyModel = new ModelRendererTurbo[292];
 
 		initbodyModel_1();
 
