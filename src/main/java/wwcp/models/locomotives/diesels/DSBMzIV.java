@@ -321,8 +321,8 @@ public class DSBMzIV extends ModelBase //Same as Filename
 		bodyModel[287] = new ModelRendererTurbo(this, 281, 176, textureX, textureY); // Box 203
 		bodyModel[288] = new ModelRendererTurbo(this, 281, 205, textureX, textureY); // Box 203
 		bodyModel[289] = new ModelRendererTurbo(this, 281, 205, textureX, textureY); // Box 203
-		bodyModel[290] = new ModelRendererTurbo(this, 387, 189, textureX, textureY); // Box 112
-		bodyModel[291] = new ModelRendererTurbo(this, 387, 189, textureX, textureY); // Box 112
+		bodyModel[290] = new ModelRendererTurbo(this, 387, 189, textureX, textureY); // Bog Front
+		bodyModel[291] = new ModelRendererTurbo(this, 387, 189, textureX, textureY); // Bog Rear
 
 		bodyModel[0].addBox(0F, 0F, -2F, 125, 2, 22, 0F); // Box 31
 		bodyModel[0].setRotationPoint(-47F, -2F, -9F);
@@ -974,7 +974,7 @@ public class DSBMzIV extends ModelBase //Same as Filename
 		bodyModel[208].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Front Red Left
 		bodyModel[208].setRotationPoint(-62F, -5.5F, -7.45F);
 
-		bodyModel[209].addShapeBox(0F, 0F, 0F, 13, 9, 1, 0F,0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 107
+		bodyModel[209].addShapeBox(0F, 0F, 0F, 13, 9, 1, 0F,0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 1F, -0.5F, 0F, 1F, -0.5F, 0F, 1F, 0F, 0F, 1F, 0F); // Box 107
 		bodyModel[209].setRotationPoint(50F, -16F, 10.5F);
 
 		bodyModel[210].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 1.25F, 0F, 0F, 1.25F, 0F, 0F, 0F, 0F, 0F); // Box 396
@@ -1248,10 +1248,10 @@ public class DSBMzIV extends ModelBase //Same as Filename
 		bodyModel[289].addShapeBox(0F, 0F, 0F, 1, 2, 20, 0F,0F, 0F, -1.5F, 0F, 0F, -10F, 0F, 0F, -10F, 0F, 0F, -1.5F, 0F, 0F, -1.5F, 0F, 0F, -10F, 0F, 0F, -10F, 0F, 0F, -1.5F); // Box 203
 		bodyModel[289].setRotationPoint(90.5F, -6F, -10F);
 
-		bodyModel[290].addBox(0F, 0F, 0F, 4, 1, 4, 0F); // Box 112
+		bodyModel[290].addBox(0F, 0F, 0F, 4, 1, 4, 0F); // Bog Front
 		bodyModel[290].setRotationPoint(-35F, 0F, -2F);
 
-		bodyModel[291].addBox(0F, 0F, 0F, 4, 1, 4, 0F); // Box 112
+		bodyModel[291].addBox(0F, 0F, 0F, 4, 1, 4, 0F); // Bog Rear
 		bodyModel[291].setRotationPoint(63F, 0F, -2F);
 	}
 }
