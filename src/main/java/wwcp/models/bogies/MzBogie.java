@@ -20,7 +20,7 @@ public class MzBogie extends ModelBase //Same as Filename
 
 	public MzBogie() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[37];
+		bodyModel = new ModelRendererTurbo[38];
 
 		initbodyModel_1();
 
