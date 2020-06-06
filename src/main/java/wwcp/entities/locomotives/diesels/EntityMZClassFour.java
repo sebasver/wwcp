@@ -131,8 +131,7 @@ public class EntityMZClassFour extends EntityTrainCore {
     public ModelBase[] bogieModels() {return new ModelBase[]{new MzBogie()}; }
 
     @Override
-    public float[] bo
-gieLengthFromCenter() {
+    public float[] bogieLengthFromCenter() {
         return new float[]{2, 0};
     }
     @Override
