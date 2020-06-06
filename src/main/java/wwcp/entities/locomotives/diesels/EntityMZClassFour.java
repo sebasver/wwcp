@@ -125,16 +125,16 @@ public class EntityMZClassFour extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{3f,0.05f,0},{-3.15f,0.05f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{3f,0.05f,0},{-3.10f,0.05f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new MzBogie()}; }
 
     @Override
-    public float[] bogieLengthFromCenter() {
+    public float[] bo
+gieLengthFromCenter() {
         return new float[]{2, 0};
     }
-
     @Override
     public float getRenderScale() {
         return  0.0625f;
@@ -142,7 +142,7 @@ public class EntityMZClassFour extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.03f,-0.05F,0.F}};}
+        return new float[][]{{0.0f,-0.05F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>
