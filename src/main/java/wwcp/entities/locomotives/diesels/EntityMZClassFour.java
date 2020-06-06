@@ -125,7 +125,7 @@ public class EntityMZClassFour extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{0,0.05f,0},{-0,0.05f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{2.70f,0.05f,0},{-2.70f,0.05f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new MzBogie()}; }
