@@ -132,7 +132,7 @@ public class EntityMZClassFour extends EntityTrainCore {
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{2, -2};
+        return new float[]{2, 0};
     }
 
     @Override
