@@ -519,7 +519,7 @@ public class Transport {
     }
     //SSB Re 484 / F 140MS2
     public static Transport.LocomotiveNoBackspeed F140MS2() {
-        return new Transport.LocomotiveNoBackspeed("F140MS2", "Switzerland", "2004-", "Electric",
+        return new Transport.LocomotiveNoBackspeed("F140MS2E", "Switzerland", "2004-", "Electric",
                 aditional, " SSB Re 484", type, " Freight Locomotive",
                 67000f, 7500f, 85.0f, 140f, false, true, 0);
     }

@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.flexxpower;
-import wwcp.models.locomotives.electrics.F140MS2;
+import wwcp.models.locomotives.electrics.Traxx2ndGen;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -28,9 +28,9 @@ import java.util.UUID;
 // ZZZZ
 // QQQQ
 
-public class EntityTraxxF140MS2 extends EntityTrainCore {
+public class EntityTraxxF140MS2E extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityTraxxF140MS2(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityTraxxF140MS2E(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -38,11 +38,11 @@ public class EntityTraxxF140MS2 extends EntityTrainCore {
      *
      * @see EntityTrainCore
      */
-    public EntityTraxxF140MS2(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityTraxxF140MS2E(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityTraxxF140MS2(World world) {
+    public EntityTraxxF140MS2E(World world) {
         super(world);
     }
 
@@ -104,30 +104,41 @@ public class EntityTraxxF140MS2 extends EntityTrainCore {
     }
 
     @Override
-    //todo Needs an SBB RE 484 skin before final implementation, remove other skins
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T1.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT1.png", "textures/bogies/Flexxpower.png",
                 "Belgian Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T2.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT2.png", "textures/bogies/Flexxpower.png",
                 "NS Livery", "Used by the NS in their regular service");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T3.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT3.png", "textures/bogies/Flexxpower.png",
                 "Polish Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T4.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT4.png", "textures/bogies/Flexxpower.png",
                 "Easter Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T5.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT5.png", "textures/bogies/Flexxpower.png",
                 "Silesian Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T6.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT6.png", "textures/bogies/Flexxpower.png",
                 "HLE28 NMBS Cargo", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T7.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT7.png", "textures/bogies/Flexxpower.png",
                 "Valentines Day Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T8.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT8.png", "textures/bogies/Flexxpower.png",
                 "WWCP Commercial Livery", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T9.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT9.png", "textures/bogies/Flexxpower.png",
                 "StPatricks Day Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T10.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT10.png", "textures/bogies/Flexxpower.png",
                 "Halloween Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2/T11.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT11.png", "textures/bogies/Flexxpower.png",
                 "New Years Skin", "Special New Years skin to celebrate 2020");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT12.png", "textures/bogies/Flexxpower.png",
+                "Metronom", "Special New Years skin to celebrate 2020");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT13.png", "textures/bogies/Flexxpower.png",
+                "Railpool", "Special New Years skin to celebrate 2020");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT14.png", "textures/bogies/Flexxpower.png",
+                "DB", "Special New Years skin to celebrate 2020");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT15.png", "textures/bogies/Flexxpower.png",
+                "RER", "Special New Years skin to celebrate 2020");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT16.png", "textures/bogies/Flexxpower.png",
+                "WWCP 2 Years", "Special New Years skin to celebrate 2020");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT17.png", "textures/bogies/Flexxpower.png",
+                "Chemoil SBB", "Special New Years skin to celebrate 2020");
     }
 
     @Override
@@ -147,12 +158,12 @@ public class EntityTraxxF140MS2 extends EntityTrainCore {
 
     @Override
     public float[][] getRiderOffsets() {
-        return new float[][]{{-3.82f, 1.3f, -0.25f}};
+        return new float[][]{{-3.6f, 1.25f, -0.25f},{3.6f, 1.25f, 0.25f}};
     }
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.5f, 2.5f, 1.5f};
+        return new float[]{9.075f, 2.5f, 1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -171,7 +182,7 @@ public class EntityTraxxF140MS2 extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.5f, 0.05f, 0}, {-2.5f, 0.05f, 0}};
+        return new float[][]{{2.45f, 0.05f, 0}, {-2.55f, 0.05f, 0}};
     }
 
     @Override
@@ -181,7 +192,7 @@ public class EntityTraxxF140MS2 extends EntityTrainCore {
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{2, -2};
+        return new float[]{2.45f, -2.55f};
     }
 
     @Override
@@ -249,7 +260,7 @@ public class EntityTraxxF140MS2 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new F140MS2()};
+        return new ModelBase[]{new Traxx2ndGen()};
     }
 
     /**
