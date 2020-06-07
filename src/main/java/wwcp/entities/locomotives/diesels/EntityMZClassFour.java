@@ -114,7 +114,7 @@ public class EntityMZClassFour extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{10.1f,2.2f,1.5f};
+        return new float[]{10.2f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -146,7 +146,7 @@ public class EntityMZClassFour extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.0f,-0.05F,0.F}};}
+        return new float[][]{{0.05f,-0.05F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>
