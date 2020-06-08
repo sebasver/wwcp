@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.MzBogie;
-import wwcp.models.locomotives.diesels.DSBMzI_II;
+import wwcp.models.locomotives.diesels.DSBMzI;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -88,11 +88,11 @@ public class EntityMZClassOne extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI-IIDSB1990-2020s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIDSB1990-2020s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI-IIRDK.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIRDK.png", "textures/bogies/Mz_Bogey.png",
                 "Railion Livery", "After DSB Gods (DSB Freight/Cargo) was sold to Railion in 2001, all DSB markers were removed from the Locomotives");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI-IIWWCP.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIWWCP.png", "textures/bogies/Mz_Bogey.png",
                 "WWCP Commercial Livery", "Standard Red and Black livery for the DSB");
     }
 
@@ -192,7 +192,7 @@ public class EntityMZClassOne extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzI_II()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzI()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>
