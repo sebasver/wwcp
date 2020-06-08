@@ -94,69 +94,6 @@ public class DSBMzIV extends ModelBase //Same as Filename
 		bodyModel[60] = new ModelRendererTurbo(this, 273, 57, textureX, textureY); // Box 90
 		bodyModel[61] = new ModelRendererTurbo(this, 433, 49, textureX, textureY); // Box 203
 		bodyModel[62] = new ModelRendererTurbo(this, 153, 57, textureX, textureY); // Box 203
-		bodyModel[0] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 31
-		bodyModel[1] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 62
-		bodyModel[2] = new ModelRendererTurbo(this, 297, 1, textureX, textureY); // Box 80
-		bodyModel[3] = new ModelRendererTurbo(this, 281, 1, textureX, textureY); // Box 81
-		bodyModel[4] = new ModelRendererTurbo(this, 289, 1, textureX, textureY); // Box 83
-		bodyModel[5] = new ModelRendererTurbo(this, 353, 1, textureX, textureY); // Box 85
-		bodyModel[6] = new ModelRendererTurbo(this, 361, 1, textureX, textureY); // Box 88
-		bodyModel[7] = new ModelRendererTurbo(this, 401, 1, textureX, textureY); // Box 90
-		bodyModel[8] = new ModelRendererTurbo(this, 425, 1, textureX, textureY); // Box 94
-		bodyModel[9] = new ModelRendererTurbo(this, 457, 1, textureX, textureY); // Box 95
-		bodyModel[10] = new ModelRendererTurbo(this, 305, 1, textureX, textureY); // Front White Left
-		bodyModel[11] = new ModelRendererTurbo(this, 353, 1, textureX, textureY); // Front White Left
-		bodyModel[12] = new ModelRendererTurbo(this, 369, 1, textureX, textureY); // Box 153
-		bodyModel[13] = new ModelRendererTurbo(this, 385, 1, textureX, textureY); // Rear White Left
-		bodyModel[14] = new ModelRendererTurbo(this, 393, 1, textureX, textureY); // Rear White Right
-		bodyModel[15] = new ModelRendererTurbo(this, 401, 1, textureX, textureY); // Box 156
-		bodyModel[16] = new ModelRendererTurbo(this, 489, 1, textureX, textureY); // Box 157
-		bodyModel[17] = new ModelRendererTurbo(this, 489, 1, textureX, textureY); // Box 161
-		bodyModel[18] = new ModelRendererTurbo(this, 1, 33, textureX, textureY); // Box 107
-		bodyModel[19] = new ModelRendererTurbo(this, 217, 33, textureX, textureY); // Box 141
-		bodyModel[20] = new ModelRendererTurbo(this, 425, 17, textureX, textureY); // Box 203
-		bodyModel[21] = new ModelRendererTurbo(this, 281, 17, textureX, textureY); // Box 203
-		bodyModel[22] = new ModelRendererTurbo(this, 441, 17, textureX, textureY); // Door Front Left
-		bodyModel[23] = new ModelRendererTurbo(this, 457, 17, textureX, textureY); // Box 203
-		bodyModel[24] = new ModelRendererTurbo(this, 473, 17, textureX, textureY); // Box 203
-		bodyModel[25] = new ModelRendererTurbo(this, 497, 17, textureX, textureY); // Door Rear Left
-		bodyModel[26] = new ModelRendererTurbo(this, 473, 25, textureX, textureY); // Box 203
-		bodyModel[27] = new ModelRendererTurbo(this, 369, 25, textureX, textureY); // Box 203
-		bodyModel[28] = new ModelRendererTurbo(this, 433, 33, textureX, textureY); // Door Front Right
-		bodyModel[29] = new ModelRendererTurbo(this, 449, 33, textureX, textureY); // Box 203
-		bodyModel[30] = new ModelRendererTurbo(this, 393, 25, textureX, textureY); // Box 203
-		bodyModel[31] = new ModelRendererTurbo(this, 489, 33, textureX, textureY); // Door Rear Right
-		bodyModel[32] = new ModelRendererTurbo(this, 313, 1, textureX, textureY); // Front Red Right
-		bodyModel[33] = new ModelRendererTurbo(this, 417, 1, textureX, textureY); // Rear Red Left
-		bodyModel[34] = new ModelRendererTurbo(this, 505, 1, textureX, textureY); // Rear Red Right
-		bodyModel[35] = new ModelRendererTurbo(this, 457, 41, textureX, textureY); // Box 161
-		bodyModel[36] = new ModelRendererTurbo(this, 425, 49, textureX, textureY); // Box 159
-		bodyModel[37] = new ModelRendererTurbo(this, 1, 9, textureX, textureY); // Box 127
-		bodyModel[38] = new ModelRendererTurbo(this, 385, 9, textureX, textureY); // Box 127
-		bodyModel[39] = new ModelRendererTurbo(this, 1, 17, textureX, textureY); // Box 127
-		bodyModel[40] = new ModelRendererTurbo(this, 305, 17, textureX, textureY); // Box 127
-		bodyModel[41] = new ModelRendererTurbo(this, 473, 49, textureX, textureY); // Box 90
-		bodyModel[42] = new ModelRendererTurbo(this, 1, 57, textureX, textureY); // Box 90
-		bodyModel[43] = new ModelRendererTurbo(this, 25, 57, textureX, textureY); // Box 90
-		bodyModel[44] = new ModelRendererTurbo(this, 49, 57, textureX, textureY); // Box 90
-		bodyModel[45] = new ModelRendererTurbo(this, 73, 57, textureX, textureY); // Box 90
-		bodyModel[46] = new ModelRendererTurbo(this, 97, 57, textureX, textureY); // Box 90
-		bodyModel[47] = new ModelRendererTurbo(this, 121, 57, textureX, textureY); // Box 90
-		bodyModel[48] = new ModelRendererTurbo(this, 145, 57, textureX, textureY); // Box 90
-		bodyModel[49] = new ModelRendererTurbo(this, 177, 57, textureX, textureY); // Box 90
-		bodyModel[50] = new ModelRendererTurbo(this, 201, 57, textureX, textureY); // Box 90
-		bodyModel[51] = new ModelRendererTurbo(this, 225, 57, textureX, textureY); // Box 159
-		bodyModel[52] = new ModelRendererTurbo(this, 473, 41, textureX, textureY); // Box 155
-		bodyModel[53] = new ModelRendererTurbo(this, 441, 49, textureX, textureY); // Box 155
-		bodyModel[54] = new ModelRendererTurbo(this, 489, 49, textureX, textureY); // Box 156
-		bodyModel[55] = new ModelRendererTurbo(this, 1, 57, textureX, textureY); // Box 157
-		bodyModel[56] = new ModelRendererTurbo(this, 17, 57, textureX, textureY); // Box 155
-		bodyModel[57] = new ModelRendererTurbo(this, 41, 57, textureX, textureY); // Box 155
-		bodyModel[58] = new ModelRendererTurbo(this, 65, 57, textureX, textureY); // Box 156
-		bodyModel[59] = new ModelRendererTurbo(this, 249, 57, textureX, textureY); // Box 90
-		bodyModel[60] = new ModelRendererTurbo(this, 273, 57, textureX, textureY); // Box 90
-		bodyModel[61] = new ModelRendererTurbo(this, 433, 49, textureX, textureY); // Box 203
-		bodyModel[62] = new ModelRendererTurbo(this, 153, 57, textureX, textureY); // Box 203
 		bodyModel[63] = new ModelRendererTurbo(this, 289, 57, textureX, textureY); // Standard Seat
 		bodyModel[64] = new ModelRendererTurbo(this, 321, 57, textureX, textureY); // Standard Seat
 		bodyModel[65] = new ModelRendererTurbo(this, 89, 57, textureX, textureY); // Box 103
@@ -867,17 +804,17 @@ public class DSBMzIV extends ModelBase //Same as Filename
 		bodyModel[152].setRotationPoint(-51.5F, -21F, 10F);
 		bodyModel[152].rotateAngleY = -3.14159265F;
 
-		bodyModel[153].addBox(0F, 0F, 0F, 15, 5, 4, 0F); // Box 193
+		bodyModel[153].addBox(0F, 0F, 0F, 15, 6, 4, 0F); // Box 193
 		bodyModel[153].setRotationPoint(-4.5F, 0F, 6F);
 
-		bodyModel[154].addBox(0F, 0F, 0F, 15, 5, 4, 0F); // Box 195
+		bodyModel[154].addBox(0F, 0F, 0F, 15, 6, 4, 0F); // Box 195
 		bodyModel[154].setRotationPoint(-21.5F, 0F, 6F);
 
-		bodyModel[155].addBox(0F, 0F, 0F, 15, 5, 4, 0F); // Box 190
+		bodyModel[155].addBox(0F, 0F, 0F, 15, 6, 4, 0F); // Box 190
 		bodyModel[155].setRotationPoint(-6.5F, 0F, -6F);
 		bodyModel[155].rotateAngleY = -3.14159265F;
 
-		bodyModel[156].addBox(0F, 0F, 0F, 15, 5, 4, 0F); // Box 191
+		bodyModel[156].addBox(0F, 0F, 0F, 15, 6, 4, 0F); // Box 191
 		bodyModel[156].setRotationPoint(10.5F, 0F, -6F);
 		bodyModel[156].rotateAngleY = -3.14159265F;
 
