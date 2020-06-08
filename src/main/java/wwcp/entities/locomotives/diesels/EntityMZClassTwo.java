@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.MzBogie;
-import wwcp.models.locomotives.diesels.DSBMzI_II;
+import wwcp.models.locomotives.diesels.DSBMzII;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -192,7 +192,7 @@ public class EntityMZClassTwo extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzI_II()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzII()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>
