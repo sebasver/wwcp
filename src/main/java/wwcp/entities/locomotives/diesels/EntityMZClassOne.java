@@ -91,7 +91,7 @@ public class EntityMZClassOne extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIDSB1990-2020s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
-                "DSB Red and Black Livery 1980\", \"Standard Red and Black livery for the DSB before the cornered windows were blinded in 1990");
+                "DSB Red and Black Livery 1980", "Standard Red and Black livery for the DSB before the cornered windows were blinded in 1990");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIRDK.png", "textures/bogies/Mz_Bogey.png",
                 "Railion Livery", "After DSB Gods (DSB Freight/Cargo) was sold to Railion in 2001, all DSB markers were removed from the Locomotives");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIWWCP.png", "textures/bogies/Mz_Bogey.png",
