@@ -322,9 +322,9 @@ public class DSBMzIII extends ModelBase //Same as Filename
 		bodyModel[288] = new ModelRendererTurbo(this, 97, 306, textureX, textureY); // Box 206
 		bodyModel[289] = new ModelRendererTurbo(this, 553, 1, textureX, textureY); // Bog Front
 		bodyModel[290] = new ModelRendererTurbo(this, 552, 1, textureX, textureY); // Bog Rear
-		bodyModel[291] = new ModelRendererTurbo(this, 161, 241, textureX, textureY); // Box 93
+		bodyModel[291] = new ModelRendererTurbo(this, 164, 253, textureX, textureY); // Box 93
 		bodyModel[292] = new ModelRendererTurbo(this, 177, 250, textureX, textureY); // Box 93
-		bodyModel[293] = new ModelRendererTurbo(this, 116, 332, textureX, textureY); // Box 93
+		bodyModel[293] = new ModelRendererTurbo(this, 125, 332, textureX, textureY); // Box 93
 		bodyModel[294] = new ModelRendererTurbo(this, 377, 287, textureX, textureY); // Box 93
 
 		bodyModel[0].addBox(0F, 0F, -2F, 125, 2, 22, 0F); // Box 31
