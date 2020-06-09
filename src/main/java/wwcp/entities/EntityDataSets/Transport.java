@@ -365,10 +365,10 @@ public class Transport {
                 88000f, 3854f, 121.2f, 165f, false, true, 0);
     }
 
-    //MZ Class IV
+   //MZ Class IV
     public static Transport.LocomotiveNoBackspeed MZIV() {
         return new Transport.LocomotiveNoBackspeed("MZIV", "Denmark", "1977-", "Diesel",
-                nick, " Cake Tins", type, " Universal Locomotive",
+                nick,  " Cake Tins", type, " Universal Locomotive",
                 88000f, 3854f, 123f, 165f, false, true, 0);
     }
 
@@ -728,6 +728,13 @@ public class Transport {
     public static Transport.Rollingstock UKOpenWagon() {
         return new Transport.Rollingstock("UKOpenwagon", "United Kingdom", "1930-1959", "",
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
+    }
+
+    //Taurus
+    public static Transport.LocomotiveNoBackspeed ES64U() {
+        return new Transport.LocomotiveNoBackspeed("ES64U", "Europe", "2006", "Electric",
+                nick,  "Taurus", type, " Universal Locomotive",
+                67442.68f, 5710.41f, 82.0f, 160f, false, true, 0);
     }
 }
 
