@@ -17,7 +17,6 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.flexxpower;
-import wwcp.models.locomotives.electrics.Taurus;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -28,9 +27,9 @@ import java.util.UUID;
 // ZZZZ
 // QQQQ
 
-public class ES64U2 extends EntityTrainCore {
+public class EntityES64U2 extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new ES64U2(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityES64U2(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -38,11 +37,11 @@ public class ES64U2 extends EntityTrainCore {
      *
      * @see EntityTrainCore
      */
-    public ES64U2(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityES64U2(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public ES64U2(World world) {
+    public EntityES64U2(World world) {
         super(world);
     }
 
@@ -109,11 +108,6 @@ public class ES64U2 extends EntityTrainCore {
                 "OBB Livery", "Used by the OBB");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Taurus/taurus2.png", "textures/bogies/Flexxpower.png",
                 "DB Livery", "Used by DB");
-    }
-
-    @Override
-    public String getDefaultSkin() {
-        return "wwcp:OBB Livery";
     }
 
     @Override
@@ -230,7 +224,7 @@ public class ES64U2 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new Taurus()};
+        return new ModelBase[]{new wwcp.models.locomotives.electrics.ES64U2()};
     }
 
     /**
