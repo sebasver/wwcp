@@ -7,7 +7,7 @@
 // Created on: 31.01.2020 - 23:31:22
 // Last changed on: 31.01.2020 - 23:31:22
 
-package wwcp.models; //Path where the model is located
+package wwcp.models.locomotives.electrics; //Path where the model is located
 
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
