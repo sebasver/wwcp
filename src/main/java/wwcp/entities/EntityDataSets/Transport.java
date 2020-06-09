@@ -550,8 +550,8 @@ public class Transport {
     /**end of traxx program.*/
 
     public static Transport.LocomotiveNoBackspeed ES64U2() {
-        return new Transport.LocomotiveNoBackspeed("ES64U2", "Europe", "1999-", "Electric",
-                "", "", type, " Universal Locomotive",
+        return new Transport.LocomotiveNoBackspeed("ES64U2", "Europe", "2006", "Electric",
+                nick,  "Taurus", type, " Universal Locomotive",
                 56202.23f, 8701.57f, 86.0f, 230f, false, true, 0);
     }
 
@@ -728,13 +728,6 @@ public class Transport {
     public static Transport.Rollingstock UKOpenWagon() {
         return new Transport.Rollingstock("UKOpenwagon", "United Kingdom", "1930-1959", "",
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
-    }
-
-    //Taurus
-    public static Transport.LocomotiveNoBackspeed ES64U() {
-        return new Transport.LocomotiveNoBackspeed("ES64U", "Europe", "2006", "Electric",
-                nick,  "Taurus", type, " Universal Locomotive",
-                67442.68f, 5710.41f, 82.0f, 160f, false, true, 0);
     }
 }
 
