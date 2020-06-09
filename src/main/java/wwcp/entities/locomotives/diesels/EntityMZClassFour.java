@@ -107,7 +107,9 @@ public class EntityMZClassFour extends EntityTrainCore {
     public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
     }
 
-
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:DSB Livery";
 
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.6f, -0.25f}};}
