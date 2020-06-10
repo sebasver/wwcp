@@ -17,6 +17,7 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.flexxpower;
+import wwcp.models.locomotives.electrics.ES64U2;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -224,7 +225,7 @@ public class EntityES64U2 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new wwcp.models.locomotives.electrics.ES64U2()};
+        return new ModelBase[]{new ES64U2()};
     }
 
     /**
