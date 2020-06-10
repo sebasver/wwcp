@@ -44,47 +44,47 @@ public class EntityMZClassOne1967 extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return Transport.MZI().name; }
+    public String transportName() { return Transport.MZI1967().name; }
 
     @Override
-    public String transportcountry() { return Transport.MZI().country; }
+    public String transportcountry() { return Transport.MZI1967().country; }
 
     @Override
-    public String transportYear() { return Transport.MZI().year; }
+    public String transportYear() { return Transport.MZI1967().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.MZI().fuel;
+        return Transport.MZI1967().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.MZI().fictional;
+        return Transport.MZI1967().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.MZI().tractive_effort;
+        return Transport.MZI1967().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.MZI().metric_horsepower;
+        return Transport.MZI1967().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  Transport.MZI().weightinKGs;
+        return  Transport.MZI1967().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.MZI().reinforced;
+        return Transport.MZI1967().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.MZI().additionalTextTitle) + Transport.MZI().additionalText,
-                RailUtility.translate(Transport.MZI().additionalTextTitle2) + Transport.MZI().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.MZI1967().additionalTextTitle) + Transport.MZI1967().additionalText,
+                RailUtility.translate(Transport.MZI1967().additionalTextTitle2) + Transport.MZI1967().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.MZI().backTopSpeed: Transport.MZI().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.MZI1967().backTopSpeed: Transport.MZI1967().topSpeed;}
 
     @Override
     public void registerSkins(){
