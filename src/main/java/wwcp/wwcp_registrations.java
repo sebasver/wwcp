@@ -10,19 +10,29 @@ import net.minecraft.item.ItemStack;
 import wwcp.blockEntities.platform.*;
 import wwcp.entities.freight.*;
 import wwcp.entities.locomotives.diesels.*;
-import wwcp.entities.locomotives.electrics.*;
-import wwcp.entities.locomotives.steamers.*;
+import wwcp.entities.locomotives.electrics.EntityES64U2;
+import wwcp.entities.locomotives.electrics.EntityTraxxF140MS2E;
+import wwcp.entities.locomotives.electrics.EntityV36Electric;
 import wwcp.entities.locomotives.steamers.DB.*;
-import wwcp.entities.locomotives.steamers.DR.*;
+import wwcp.entities.locomotives.steamers.DR.EntityDRBR01;
+import wwcp.entities.locomotives.steamers.DR.EntityDRBR01_5;
+import wwcp.entities.locomotives.steamers.DR.EntityDRBR01_5Oil;
+import wwcp.entities.locomotives.steamers.DR.EntityDRBR01_5SD;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Streamlined;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Unstreamlined;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_850mm;
+import wwcp.entities.locomotives.steamers.Entity94xx;
+import wwcp.entities.locomotives.steamers.EntityClass812;
+import wwcp.entities.locomotives.steamers.EntityDRBR01WitteChristmas;
+import wwcp.entities.locomotives.steamers.EntitySentinel100HPChristmas;
 import wwcp.entities.passengerstock.*;
-import wwcp.entities.railbusses.*;
-import wwcp.entities.tender.*;
+import wwcp.entities.railbusses.EntityNE81;
+import wwcp.entities.railbusses.EntityVT98;
+import wwcp.entities.railbusses.EntityVT98AD;
+import wwcp.entities.tender.Entity3000GalonTender;
+import wwcp.entities.tender.EntityT32Christmas;
 import wwcp.entities.tender.germanTenders.*;
-
 
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
@@ -190,6 +200,7 @@ public class wwcp_registrations {
                 new EntityTraxxF140MS2E(null),
                 new EntityV36Electric(null)
 //                new EntityRE484(null)
+                new EntityES64U2(null)
         };
     }
 
