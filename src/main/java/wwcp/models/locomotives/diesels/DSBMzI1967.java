@@ -313,7 +313,7 @@ public class DSBMzI1967 extends ModelBase //Same as Filename
 		bodyModel[280] = new ModelRendererTurbo(this, 505, 177, textureX, textureY); // Box 94
 		bodyModel[281] = new ModelRendererTurbo(this, 9, 193, textureX, textureY); // Box 90
 		bodyModel[282] = new ModelRendererTurbo(this, 33, 193, textureX, textureY); // Box 90
-		bodyModel[283] = new ModelRendererTurbo(this, 89, 193, textureX, textureY); // Box 94
+		bodyModel[283] = new ModelRendererTurbo(this, 89, 198, textureX, textureY); // Box 94
 		bodyModel[284] = new ModelRendererTurbo(this, 113, 193, textureX, textureY); // Box 94
 		bodyModel[285] = new ModelRendererTurbo(this, 1, 9, textureX, textureY); // Exhaust
 		bodyModel[286] = new ModelRendererTurbo(this, 369, 49, textureX, textureY); // Box 112
