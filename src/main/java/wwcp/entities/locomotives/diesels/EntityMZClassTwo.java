@@ -97,13 +97,16 @@ public class EntityMZClassTwo extends EntityTrainCore {
     }
 
     @Override
+    public String getDefaultSkin() {
+        return "wwcp:DSB Red and Black Livery";
+    }
+
+    @Override
     public float getMaxFuel(){return 20;}
 
 
     public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
     }
-
-
 
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.4f, -0.25f}};}
