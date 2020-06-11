@@ -99,6 +99,11 @@ public class EntityMZClassOne extends EntityTrainCore {
     }
 
     @Override
+    public String getDefaultSkin() {
+        return "wwcp:DSB Red and Black Livery";
+    }
+
+    @Override
     public float getMaxFuel(){return 20;}
 
 
