@@ -42,7 +42,7 @@ public class EntityZACNS extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{5.0F, -5.0F};
+        return new float[]{2.0F, -2.0F};
     }
 
     public float getRenderScale() {
