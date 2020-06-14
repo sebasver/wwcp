@@ -741,7 +741,7 @@ public class Transport {
     //Zacns 95
     public static Transport.TankCars Zacns() {
         return new Transport.TankCars("Zacns 95", "Europe", "2006-", "",
-                "", type, "Tanker", 21.5f, 120f, false, true, 0, 60000);
+                "", type, "Tanker", 24.3f, 120f, false, true, 0, 60000);
     }
 
     //UK 6 Plank "6-Plankopenwagon"
