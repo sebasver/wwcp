@@ -146,7 +146,7 @@ public class EntityZACNS extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{8.5f, 2f, 1.6F};
+        return new float[]{8.25f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
