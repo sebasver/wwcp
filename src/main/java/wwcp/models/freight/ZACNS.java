@@ -23,7 +23,6 @@ public class ZACNS extends ModelBase //Same as Filename
 		bodyModel = new ModelRendererTurbo[166];
 
 		initbodyModel_1();
-		flipAll();
 	}
 
 	private void initbodyModel_1()
