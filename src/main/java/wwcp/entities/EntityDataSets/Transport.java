@@ -738,9 +738,9 @@ public class Transport {
                 "", type, " Freight Container", 21.5f, 120f, false, true, 0, 60000);
     }
 
-    //Zacns
+    //Zacns 95
     public static Transport.TankCars Zacns() {
-        return new Transport.TankCars("Zacns", "Europe", "2006-", "",
+        return new Transport.TankCars("Zacns 95", "Europe", "2006-", "",
                 "", type, "Tanker", 21.5f, 120f, false, true, 0, 60000);
     }
 
