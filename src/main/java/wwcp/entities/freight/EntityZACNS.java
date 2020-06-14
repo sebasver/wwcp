@@ -13,21 +13,22 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.SGNSBogie;
+import wwcp.models.freight.ZACNS;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class ZACNS extends GenericRailTransport {
+public class EntityZACNS extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new WWCPTransport(new ZACNS((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityZACNS((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
-    public ZACNS(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityZACNS(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public ZACNS(World world) {
+    public EntityZACNS(World world) {
         super(world);
     }
     @Override
