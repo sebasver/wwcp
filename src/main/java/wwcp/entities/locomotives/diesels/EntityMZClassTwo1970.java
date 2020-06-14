@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.MzBogie;
-import wwcp.models.locomotives.diesels.DSBMzIV;
+import wwcp.models.locomotives.diesels.DSBMzII1970;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -27,82 +27,71 @@ import java.util.UUID;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntityMZClassFour extends EntityTrainCore {
+public class EntityMZClassTwo1970 extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityMZClassFour(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityMZClassTwo1970(null), worldwidecontentpack.MODID,worldwidecontentpack.Denmark);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntityMZClassFour(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityMZClassTwo1970(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityMZClassFour(World world){
+    public EntityMZClassTwo1970(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.MZIV().name; }
+    public String transportName() { return Transport.MZII1970().name; }
 
     @Override
-    public String transportcountry() { return Transport.MZIV().country; }
+    public String transportcountry() { return Transport.MZII1970().country; }
 
     @Override
-    public String transportYear() { return Transport.MZIV().year; }
+    public String transportYear() { return Transport.MZII1970().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.MZIV().fuel;
+        return Transport.MZII1970().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.MZIV().fictional;
+        return Transport.MZII1970().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.MZIV().tractive_effort;
+        return Transport.MZII1970().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.MZIV().metric_horsepower;
+        return Transport.MZII1970().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  Transport.MZIV().weightinKGs;
+        return  Transport.MZII1970().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.MZIV().reinforced;
+        return Transport.MZII1970().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.MZIV().additionalTextTitle) + Transport.MZIV().additionalText,
-                RailUtility.translate(Transport.MZIV().additionalTextTitle2) + Transport.MZIV().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.MZII1970().additionalTextTitle) + Transport.MZII1970().additionalText,
+                RailUtility.translate(Transport.MZII1970().additionalTextTitle2) + Transport.MZII1970().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.MZIV().backTopSpeed: Transport.MZIV().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.MZII1970().backTopSpeed: Transport.MZII1970().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDSB.png", "textures/bogies/Mz_Bogey.png",
-                "DSB Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVRDK.png", "textures/bogies/Mz_Bogey.png",
-                "Railion Scandinavia Livery", "Standard Red and Black livery for the Railion \n with blinded cab windows");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVRSC.png", "textures/bogies/Mz_Bogey.png",
-                "DB Schenker Scandinavia Livery", "Standard Red and Black livery for the DB Schenker \n with DB logo");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDBCSC.png", "textures/bogies/Mz_Bogey.png",
-                "DB Cargo Scandinavia Livery", "DB Red livery for the DB Cargo \n with blinded cab windows");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDBCSC1449.png", "textures/bogies/Mz_Bogey.png",
-                "DB Cargo Scandinavia Livery 1449", "DB Red livery for the DB Cargo \n with cab windows and no rear lights, only nr 1449 has this type of changes");
-    }
-
-    @Override
-    public String getDefaultSkin() {
-        return "wwcp:DSB Livery";
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIBrown.png", "textures/bogies/Mz_Bogey.png",
+                "DSB Brown Livery", "The original livery of the Class Mz I and II when delivered to DSB");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
+                "DSB Red and Black Livery 1980", "Standard Red and Black livery for the DSB before the cornered windows were blinded in 1990");
     }
 
     @Override
@@ -113,12 +102,13 @@ public class EntityMZClassFour extends EntityTrainCore {
     }
 
 
+
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.6f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.4f, -0.25f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{10.25f,2.2f,1.5f};
+        return new float[]{9.3f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -135,14 +125,16 @@ public class EntityMZClassFour extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{3.05f,0.05f,0},{-3.05f,0.05f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{3f,0.05f,0},{-3f,0.05f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new MzBogie()}; }
 
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{3, -3};
+    public float[] bogieLengthFromCenter() {
+        return new float[]{3, -3};
     }
+
     @Override
     public float getRenderScale() {
         return  0.0625f;
@@ -150,7 +142,7 @@ public class EntityMZClassFour extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.0f,-0.05F,0.0F}};}
+        return new float[][]{{0.03f,-0.05F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>
@@ -198,7 +190,7 @@ public class EntityMZClassFour extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzIV()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzII1970()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

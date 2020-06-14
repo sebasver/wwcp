@@ -9,49 +9,27 @@
 
 package wwcp.models.locomotives.diesels; //Path where the model is located
 
-
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
-public class MZII extends ModelBase //Same as Filename
+public class DSBMzI extends ModelBase //Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public MZII() //Same as Filename
+	public DSBMzI() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[274];
+		bodyModel = new ModelRendererTurbo[278];
 
 		initbodyModel_1();
 
 		translateAll(0F, 0F, 0F);
-
 
 		flipAll();
 	}
 
 	private void initbodyModel_1()
 	{
-		bodyModel[0] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 31
-		bodyModel[1] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 62
-		bodyModel[2] = new ModelRendererTurbo(this, 273, 1, textureX, textureY); // Box 80
-		bodyModel[3] = new ModelRendererTurbo(this, 257, 1, textureX, textureY); // Box 81
-		bodyModel[4] = new ModelRendererTurbo(this, 265, 1, textureX, textureY); // Box 83
-		bodyModel[5] = new ModelRendererTurbo(this, 321, 1, textureX, textureY); // Box 85
-		bodyModel[6] = new ModelRendererTurbo(this, 329, 1, textureX, textureY); // Box 88
-		bodyModel[7] = new ModelRendererTurbo(this, 369, 1, textureX, textureY); // Box 90
-		bodyModel[8] = new ModelRendererTurbo(this, 393, 1, textureX, textureY); // Box 94
-		bodyModel[9] = new ModelRendererTurbo(this, 425, 1, textureX, textureY); // Box 95
-		bodyModel[10] = new ModelRendererTurbo(this, 17, 1, textureX, textureY); // Box 93
-		bodyModel[11] = new ModelRendererTurbo(this, 457, 1, textureX, textureY); // Box 94
-		bodyModel[12] = new ModelRendererTurbo(this, 353, 1, textureX, textureY); // Box 99
-		bodyModel[13] = new ModelRendererTurbo(this, 481, 1, textureX, textureY); // Box 100
-		bodyModel[14] = new ModelRendererTurbo(this, 1, 9, textureX, textureY); // Box 101
-		bodyModel[15] = new ModelRendererTurbo(this, 281, 1, textureX, textureY); // Box 99
-		bodyModel[16] = new ModelRendererTurbo(this, 321, 1, textureX, textureY); // Box 100
-		bodyModel[17] = new ModelRendererTurbo(this, 1, 33, textureX, textureY); // Box 105
-		bodyModel[18] = new ModelRendererTurbo(this, 233, 33, textureX, textureY); // Box 106
-		bodyModel[19] = new ModelRendererTurbo(this, 257, 17, textureX, textureY); // Box 108
 		bodyModel[0] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 31
 		bodyModel[1] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 62
 		bodyModel[2] = new ModelRendererTurbo(this, 297, 1, textureX, textureY); // Box 80
@@ -326,6 +304,10 @@ public class MZII extends ModelBase //Same as Filename
 		bodyModel[271] = new ModelRendererTurbo(this, 57, 233, textureX, textureY); // Box 159
 		bodyModel[272] = new ModelRendererTurbo(this, 369, 49, textureX, textureY); // Bog Front
 		bodyModel[273] = new ModelRendererTurbo(this, 369, 49, textureX, textureY); // Bog Rear
+		bodyModel[274] = new ModelRendererTurbo(this, 105, 342, textureX, textureY); // Box 93
+		bodyModel[275] = new ModelRendererTurbo(this, 161, 241, textureX, textureY); // Box 93
+		bodyModel[276] = new ModelRendererTurbo(this, 177, 250, textureX, textureY); // Box 93
+		bodyModel[277] = new ModelRendererTurbo(this, 377, 226, textureX, textureY); // Box 93
 
 		bodyModel[0].addBox(0F, 0F, -2F, 123, 2, 22, 0F); // Box 31
 		bodyModel[0].setRotationPoint(-62F, -2F, -9F);
@@ -465,17 +447,17 @@ public class MZII extends ModelBase //Same as Filename
 		bodyModel[41].setRotationPoint(-54F, -24F, -1F);
 		bodyModel[41].rotateAngleY = 3.14159265F;
 
-		bodyModel[42].addBox(0F, 0F, 0F, 17, 5, 4, 0F); // Box 193
+		bodyModel[42].addBox(0F, 0F, 0F, 17, 6, 4, 0F); // Box 193
 		bodyModel[42].setRotationPoint(1F, 0F, 6F);
 
-		bodyModel[43].addBox(0F, 0F, 0F, 17, 5, 4, 0F); // Box 195
+		bodyModel[43].addBox(0F, 0F, 0F, 17, 6, 4, 0F); // Box 195
 		bodyModel[43].setRotationPoint(-19.5F, 0F, 6F);
 
-		bodyModel[44].addBox(0F, 0F, 0F, 17, 5, 4, 0F); // Box 190
+		bodyModel[44].addBox(0F, 0F, 0F, 17, 6, 4, 0F); // Box 190
 		bodyModel[44].setRotationPoint(-2.5F, 0F, -6F);
 		bodyModel[44].rotateAngleY = -3.14159265F;
 
-		bodyModel[45].addBox(0F, 0F, 0F, 17, 5, 4, 0F); // Box 191
+		bodyModel[45].addBox(0F, 0F, 0F, 17, 6, 4, 0F); // Box 191
 		bodyModel[45].setRotationPoint(18F, 0F, -6F);
 		bodyModel[45].rotateAngleY = -3.14159265F;
 
@@ -1187,5 +1169,17 @@ public class MZII extends ModelBase //Same as Filename
 
 		bodyModel[273].addBox(0F, 0F, 0F, 4, 1, 4, 0F); // Bog Rear
 		bodyModel[273].setRotationPoint(46F, 0F, -2F);
+
+		bodyModel[274].addShapeBox(0F, 0F, 0F, 2, 14, 2, 0F,-3F, 0F, -3F, 1F, 0F, -3F, 0F, 0F, 2F, -2F, 0F, 2F, -1F, -7F, -1F, -1F, -7F, -1F, -2F, -7F, 0F, 0F, -7F, 0F); // Box 93
+		bodyModel[274].setRotationPoint(-76F, -21F, -11F);
+
+		bodyModel[275].addShapeBox(0F, 0F, 0F, 2, 14, 2, 0F,0F, 0F, 2F, -2F, 0F, 2F, -3F, 0F, -3F, 1F, 0F, -3F, -2F, -7F, 0F, 0F, -7F, 0F, -1F, -7F, -1F, -1F, -7F, -1F); // Box 93
+		bodyModel[275].setRotationPoint(73F, -21F, 9F);
+
+		bodyModel[276].addShapeBox(0F, 0F, 0F, 2, 14, 2, 0F,1F, 0F, -3F, -3F, 0F, -3F, -2F, 0F, 2F, 0F, 0F, 2F, -1F, -7F, -1F, -1F, -7F, -1F, 0F, -7F, 0F, -2F, -7F, 0F); // Box 93
+		bodyModel[276].setRotationPoint(73F, -21F, -11F);
+
+		bodyModel[277].addShapeBox(0F, 0F, 0F, 2, 14, 2, 0F,-2F, 0F, 2F, 0F, 0F, 2F, 1F, 0F, -3F, -3F, 0F, -3F, 0F, -7F, 0F, -2F, -7F, 0F, -1F, -7F, -1F, -1F, -7F, -1F); // Box 93
+		bodyModel[277].setRotationPoint(-76F, -21F, 9F);
 	}
 }

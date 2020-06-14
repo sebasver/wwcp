@@ -1,4 +1,5 @@
-package wwcp.entities.locomotives.diesels;
+package wwcp.entities.locomotives.electrics;//This is a documentation class for copy pasting into an electric train class.
+
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -15,103 +16,119 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.MzBogie;
-import wwcp.models.locomotives.diesels.DSBMzIII;
+import wwcp.models.bogies.flexxpower;
+import wwcp.models.locomotives.electrics.ES64U2;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
 
-// XXXX -> Entity Name
-// MZI -> Data for SuperStat
-// ZZZZ -> Country for tab
-// QQQQ -> Bogies
+// XXXX
+// YYYY
+// ZZZZ
+// QQQQ
 
-public class EntityMZClassThree extends EntityTrainCore {
+public class EntityES64U2 extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityMZClassThree(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityES64U2(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
+     *
      * @see EntityTrainCore
      */
-    public EntityMZClassThree(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityES64U2(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityMZClassThree(World world){
+
+    public EntityES64U2(World world) {
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.MZIII().name; }
+    public String transportName() {
+        return Transport.ES64U2().name;
+    }
 
     @Override
-    public String transportcountry() { return Transport.MZIII().country; }
+    public String transportcountry() {
+        return Transport.ES64U2().country;
+    }
 
     @Override
-    public String transportYear() { return Transport.MZIII().year; }
+    public String transportYear() {
+        return Transport.ES64U2().year;
+    }
 
     @Override
     public String transportFuelType() {
-        return Transport.MZIII().fuel;
+        return Transport.ES64U2().fuel;
     }
+
     @Override
     public boolean isFictional() {
-        return Transport.MZIII().fictional;
+        return Transport.ES64U2().fictional;
     }
+
     @Override
     public float transportTractiveEffort() {
-        return Transport.MZIII().tractive_effort;
+        return Transport.ES64U2().tractive_effort;
     }
+
     @Override
     public float transportMetricHorsePower() {
-        return Transport.MZIII().metric_horsepower;
+        return Transport.ES64U2().metric_horsepower;
     }
+
     @Override
     public float weightKg() {
-        return  Transport.MZIII().weightinKGs;
+        return Transport.ES64U2().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.MZIII().reinforced;
+        return Transport.ES64U2().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.MZIII().additionalTextTitle) + Transport.MZIII().additionalText,
-                RailUtility.translate(Transport.MZIII().additionalTextTitle2) + Transport.MZIII().additionalText2};}
+        {
+            return new String[]{RailUtility.translate(Transport.ES64U2().additionalTextTitle) + Transport.ES64U2().additionalText,
+                    RailUtility.translate(Transport.ES64U2().additionalTextTitle2) + Transport.ES64U2().additionalText2};
+        }
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.MZIII().backTopSpeed: Transport.MZIII().topSpeed;}
-
-    @Override
-    public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIIDSB1990-2000s.png", "textures/bogies/Mz_Bogey.png",
-                "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIIDSB1972-1990s.png", "textures/bogies/Mz_Bogey.png",
-                "DSB Red and Black Livery 1972", "Standard Red and Black livery for the DSB 1972, although plows were added the windows weren't blinded until 1990");
+    public float transportTopSpeed() {
+        return accelerator < 0 ? Transport.ES64U2().backTopSpeed : Transport.ES64U2().topSpeed;
     }
 
     @Override
-    public String getDefaultSkin() {
-        return "wwcp:DSB Red and Black Livery";
+    public void registerSkins() {
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Taurus/taurus1.png", "textures/bogies/Flexxpower.png",
+                "OBB Livery", "Used by the OBB");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Taurus/taurus2.png", "textures/bogies/Flexxpower.png",
+                "DB Livery", "Used by DB");
     }
 
     @Override
-    public float getMaxFuel(){return 20;}
+    public float getMaxFuel() {
+        return 20;
+    }
 
-
-    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
+    //    @Override
+    public TrainsInMotion.transportTypes getType() {
+        return TrainsInMotion.transportTypes.ELECTRIC;
     }
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.4f, -0.25f}};}
+    public float[][] getRiderOffsets() {
+        return new float[][]{{-3.6f, 1.25f, -0.25f},{3.6f, 1.25f, 0.25f}};
+    }
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{10.25f,2.2f,1.5f};
+        return new float[]{9.075f, 2.5f, 1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -124,35 +141,42 @@ public class EntityMZClassThree extends EntityTrainCore {
 
     /**
      * <h2>Hitbox offsets</h2>
+     *
      * @return defines the positions for the hitboxes in blocks. 0 being the center, negative values being towards the front. the first and last values define the positions of the couplers
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{3.05f,0.05f,0},{-3.05f,0.05f,0}};
+    public float[][] bogieModelOffsets() {
+        return new float[][]{{2.45f, 0.05f, 0}, {-2.55f, 0.05f, 0}};
     }
+
     @Override
-    public ModelBase[] bogieModels() {return new ModelBase[]{new MzBogie()}; }
+    public ModelBase[] bogieModels() {
+        return new ModelBase[]{new flexxpower()};
+    }
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{3, -3};
+        return new float[]{2.45f, -2.55f};
     }
 
     @Override
     public float getRenderScale() {
-        return  0.0625f;
+        return 0.0625f;
     }
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.0f,-0.05F,0.F}};}
+        return new float[][]{{0f, -0.05F, 0.F}};
+    }
 
     /**
      * <h2>rider sit or stand</h2>
+     *
      * @return true if the rider(s) should be sitting, false if the rider should be standing.
      */
     @Override
-    public boolean shouldRiderSit(){
+    public boolean shouldRiderSit() {
         return true;
     }
     /**
@@ -166,14 +190,21 @@ public class EntityMZClassThree extends EntityTrainCore {
      * <h2>Fluid Tank Capacity</h2>
      */
     //@Override
-    public int[] getTankCapacity(){return new int[]{9161, 800};}
+    public int[] getTankCapacity() {
+        return new int[]{9161, 800};
+    }
 
     @Override
-    public boolean isItemValidForSlot(int slot, ItemStack stack){
-        switch (slot){
-            case 400:{return stack!=null && stack.getItem() ==Items.redstone;}
-            default:{return true;}
-        }}
+    public boolean isItemValidForSlot(int slot, ItemStack stack) {
+        switch (slot) {
+            case 400: {
+                return stack != null && stack.getItem() == Items.redstone;
+            }
+            default: {
+                return true;
+            }
+        }
+    }
 
     /**
      * <h2>fuel management</h2>
@@ -189,21 +220,28 @@ public class EntityMZClassThree extends EntityTrainCore {
      * These return values are defined from the top of the class.
      * These should only need modification for advanced users, and even that's a stretch.
      */
-    public Item getItem(){
+    public Item getItem() {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzIII()};}
+    public ModelBase[] getModel() {
+        return new ModelBase[]{new ES64U2()};
+    }
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>
      */
     @SideOnly(Side.CLIENT)
     @Override
-    public ResourceLocation getHorn(){return URIRegistry.SOUND_HORN.getResource("xxxxxxx.ogg");}
+    public ResourceLocation getHorn() {
+        return URIRegistry.SOUND_HORN.getResource("xxxxxxx.ogg");
+    }
+
     @SideOnly(Side.CLIENT)
     @Override
-    public ResourceLocation getRunningSound(){return URIRegistry.SOUND_RUNNING.getResource("xxxxxxx.ogg");}
+    public ResourceLocation getRunningSound() {
+        return URIRegistry.SOUND_RUNNING.getResource("xxxxxxx.ogg");
+    }
 }
 
 

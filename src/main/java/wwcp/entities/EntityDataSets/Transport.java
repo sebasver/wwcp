@@ -351,9 +351,23 @@ public class Transport {
                 88000f, 3253f, 116.5f, 143f, false, true, 0);
     }
 
+    //MZ Class I 1967
+    public static Transport.LocomotiveNoBackspeed MZI1967() {
+        return new Transport.LocomotiveNoBackspeed("MZI1967", "Denmark", "1967-", "Diesel",
+                nick, " Cake Tins", type, " Universal Locomotive",
+                88000f, 3253f, 116.5f, 143f, false, true, 0);
+    }
+
     //MZ Class II
     public static Transport.LocomotiveNoBackspeed MZII() {
         return new Transport.LocomotiveNoBackspeed("MZII", "Denmark", "1970-", "Diesel",
+                nick, " Cake Tins", type, " Universal Locomotive",
+                88000f, 3253f, 116.5f, 143f, false, true, 0);
+    }
+
+    //MZ Class II 1970
+    public static Transport.LocomotiveNoBackspeed MZII1970() {
+        return new Transport.LocomotiveNoBackspeed("MZII1970", "Denmark", "1970-", "Diesel",
                 nick, " Cake Tins", type, " Universal Locomotive",
                 88000f, 3253f, 116.5f, 143f, false, true, 0);
     }
@@ -365,10 +379,10 @@ public class Transport {
                 88000f, 3854f, 121.2f, 165f, false, true, 0);
     }
 
-    //MZ Class IV
+   //MZ Class IV
     public static Transport.LocomotiveNoBackspeed MZIV() {
         return new Transport.LocomotiveNoBackspeed("MZIV", "Denmark", "1977-", "Diesel",
-                nick, " Cake Tins", type, " Universal Locomotive",
+                nick,  " Cake Tins", type, " Universal Locomotive",
                 88000f, 3854f, 123f, 165f, false, true, 0);
     }
 
@@ -550,8 +564,8 @@ public class Transport {
     /**end of traxx program.*/
 
     public static Transport.LocomotiveNoBackspeed ES64U2() {
-        return new Transport.LocomotiveNoBackspeed("ES64U2", "Europe", "1999-", "Electric",
-                "", "", type, " Universal Locomotive",
+        return new Transport.LocomotiveNoBackspeed("ES64U2", "Europe", "2006", "Electric",
+                nick,  "Taurus", type, " Universal Locomotive",
                 56202.23f, 8701.57f, 86.0f, 230f, false, true, 0);
     }
 

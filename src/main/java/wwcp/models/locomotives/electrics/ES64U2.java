@@ -7,17 +7,17 @@
 // Created on: 31.01.2020 - 23:31:22
 // Last changed on: 31.01.2020 - 23:31:22
 
-package wwcp.models; //Path where the model is located
+package wwcp.models.locomotives.electrics; //Path where the model is located
 
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
-public class Taurus extends ModelBase //Same as Filename
+public class ES64U2 extends ModelBase //Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public Taurus() //Same as Filename
+	public ES64U2() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[525];
 

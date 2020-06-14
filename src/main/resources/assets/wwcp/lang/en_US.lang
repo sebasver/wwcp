@@ -12,6 +12,7 @@ item.myTab6=America
 item.myTab7=Austria
 item.myTab8=Switzerland
 item.myTab9=Inter European
+item.myTab10=Denmark
 item.blockTab=Blocks
 item.festivetab=Festive Content
 
@@ -38,7 +39,9 @@ item.WehrmachtslokomotiveWR360C14.name=Wehrmachtslokomotive WR 360 C 14
 item.KoFIII1.name=KoF III Type 1
 item.KoFIII2.name=KoF III Type 2
 item.MZI.name=MZ I
+item.MZI1967.name= MZ I 1967
 item.MZII.name=MZ II
+item.MZII1970.name=MZ II 1970
 item.MZIII.name=MZ III
 item.MZIV.name=MZ IV
 item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
