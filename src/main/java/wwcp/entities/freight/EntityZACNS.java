@@ -33,7 +33,7 @@ public class EntityZACNS extends GenericRailTransport {
     }
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{8.75F,0.08f,0},{-8.75F,0.08f,0}};
+        return new float[][]{{0F,0.08f,0},{-0F,0.08f,0}};
     }
 
     @Override
