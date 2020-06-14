@@ -738,6 +738,12 @@ public class Transport {
                 "", type, " Freight Container", 21.5f, 120f, false, true, 0, 60000);
     }
 
+    //Zacns
+    public static Transport.TankCars Zacns() {
+        return new Transport.TankCars("Zacns", "Europe", "2006-", "",
+                "", type, "Tanker", 21.5f, 120f, false, true, 0, 60000);
+    }
+
     //UK 6 Plank "6-Plankopenwagon"
     public static Transport.Rollingstock UKOpenWagon() {
         return new Transport.Rollingstock("UKOpenwagon", "United Kingdom", "1930-1959", "",
