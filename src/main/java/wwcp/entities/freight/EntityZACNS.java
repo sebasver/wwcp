@@ -12,7 +12,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.SGNSBogie;
+import wwcp.models.bogies.SGNSSBogie;
 import wwcp.models.freight.ZACNS;
 import wwcp.worldwidecontentpack;
 
@@ -38,7 +38,7 @@ public class EntityZACNS extends GenericRailTransport {
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new SGNSBogie()};
+        return new ModelBase[]{new SGNSSBogie()};
     }
 
     public float[] bogieLengthFromCenter() {
