@@ -746,8 +746,8 @@ public class Transport {
 
     //Ealos-x
     public static Transport.Rollingstock EalosX() {
-        return new Transport.Rollingstock("Ealos-x", "Europe", "2006-", "",
-                "", type, "Freight Loose", 24.3f, 120f, false, true, 0, 60000);
+        return new Transport.Rollingstock("Ealos-X", "Europe", "2006-", "",
+                "", type, "Freight Loose", 24.3f, 120f, false, true, 0);
     }
 
     //UK 6 Plank "6-Plankopenwagon"
