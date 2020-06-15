@@ -242,6 +242,7 @@ public class wwcp_registrations {
                 new EntitySGNS804TS(null),
                 new EntitySGNS801BT2TS(null),
                 new EntityZACNS(null),
+                new EntityEALOSX(null),
         };
     }
 }
