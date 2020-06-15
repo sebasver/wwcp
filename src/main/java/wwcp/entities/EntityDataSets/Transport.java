@@ -744,6 +744,12 @@ public class Transport {
                 "", type, "Tanker", 24.3f, 120f, false, true, 0, 60000);
     }
 
+    //Ealos-x
+    public static Transport.Rollingstock EalosX() {
+        return new Transport.Rollingstock("Ealos-x", "Europe", "2006-", "",
+                "", type, "Freight Loose", 24.3f, 120f, false, true, 0, 60000);
+    }
+
     //UK 6 Plank "6-Plankopenwagon"
     public static Transport.Rollingstock UKOpenWagon() {
         return new Transport.Rollingstock("UKOpenwagon", "United Kingdom", "1930-1959", "",
