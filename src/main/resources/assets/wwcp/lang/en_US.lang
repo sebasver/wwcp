@@ -45,7 +45,8 @@ item.MZII1970.name=MZ II 1970
 item.MZIII.name=MZ III
 item.MZIV.name=MZ IV
 item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
-
+item.ES64U2.name=ES64U2
+item.ES64U4.name=ES64U4
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
@@ -57,6 +58,9 @@ item.SA4uk28Christmas.name=SA4uk28 Christmas
 item.SA4u28Christmas.name=SA4u28 Christmas
 item.SB4uk28Christmas.name=SB4uk28 Christmas
 item.SB4u28Christmas.name=SB4u28 Christmas
+item.Zacns.name=ZACNS95
+item.EalosX.name=Ealos-X
+
 
 <!-- ## Tenders ## -->
 item.T322'2'.name=T32 2'2'

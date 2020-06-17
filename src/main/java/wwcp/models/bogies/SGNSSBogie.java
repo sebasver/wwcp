@@ -13,12 +13,12 @@ package wwcp.models.bogies; //Path where the model is located
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
-public class SGNSBogie extends ModelBase //Same as Filename
+public class SGNSSBogie extends ModelBase //Same as Filename
 {
 	int textureX = 128;
 	int textureY = 64;
 
-	public SGNSBogie() //Same as Filename
+	public SGNSSBogie() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[37];
 
