@@ -11,6 +11,7 @@ import wwcp.blockEntities.platform.*;
 import wwcp.entities.freight.*;
 import wwcp.entities.locomotives.diesels.*;
 import wwcp.entities.locomotives.electrics.EntityES64U2;
+import wwcp.entities.locomotives.electrics.EntityES64U4;
 import wwcp.entities.locomotives.electrics.EntityTraxxF140MS2E;
 import wwcp.entities.locomotives.electrics.EntityV36Electric;
 import wwcp.entities.locomotives.steamers.DB.*;
