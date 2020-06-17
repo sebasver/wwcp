@@ -351,6 +351,13 @@ public class Transport {
                 88000f, 3253f, 116.5f, 143f, false, true, 0);
     }
 
+    //F7A
+    public static Transport.LocomotiveNoBackspeed F7A() {
+        return new Transport.LocomotiveNoBackspeed("F7A", "North America", "1949-Present", "Diesel",
+                nick, "", type, "Freight Locomotive",
+                40000f, 1500f, 123.7f, 105f, false, true, 0);
+    }
+
     //MZ Class II
     public static Transport.LocomotiveNoBackspeed MZII() {
         return new Transport.LocomotiveNoBackspeed("MZII", "Denmark", "1970-", "Diesel",
