@@ -202,7 +202,8 @@ public class wwcp_registrations {
                 new EntityTraxxF140MS2E(null),
                 new EntityV36Electric(null),
 //                new EntityRE484(null)
-                new EntityES64U2(null)
+                new EntityES64U2(null),
+                new EntityES64U4(null)
         };
     }
 
