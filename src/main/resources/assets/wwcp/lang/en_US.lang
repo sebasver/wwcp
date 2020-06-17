@@ -45,7 +45,8 @@ item.MZII1970.name=MZ II 1970
 item.MZIII.name=MZ III
 item.MZIV.name=MZ IV
 item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
-
+item.ES64U2.name=ES64U2
+item.ES64U4.name=ES64U4
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
