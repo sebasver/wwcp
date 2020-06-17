@@ -51,7 +51,7 @@ public class EntityEALOSX extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.06f,-0.2F,0F}};
+        return new float[][]{{0.06f,-0.12F,0F}};
     }
 
     public void registerSkins() {
