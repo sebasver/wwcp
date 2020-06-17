@@ -101,11 +101,11 @@ public class EntityZACNS extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return Transport.Zacns().reinforced;
+        return Transport.Zacns95().reinforced;
     }
 
     public float weightKg() {
-        return Transport.Zacns().weightinKGs;
+        return Transport.Zacns95().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -113,28 +113,28 @@ public class EntityZACNS extends GenericRailTransport {
     }
 
     public String transportName() {
-        return Transport.Zacns().name;
+        return Transport.Zacns95().name;
     }
 
-    public String transportcountry() { return Transport.Zacns().country; }
+    public String transportcountry() { return Transport.Zacns95().country; }
 
-    public String transportYear() { return Transport.Zacns().year; }
+    public String transportYear() { return Transport.Zacns95().year; }
 
     public float transportTopSpeed() {
-        return Transport.Zacns().topSpeed;
+        return Transport.Zacns95().topSpeed;
     }
 
     public boolean isFictional() {
-        return Transport.Zacns().fictional;
+        return Transport.Zacns95().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.Zacns().additionalTextTitle) + Transport.Zacns().additionalText,
-                RailUtility.translate(Transport.Zacns().additionalTextTitle2) + Transport.Zacns().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.Zacns95().additionalTextTitle) + Transport.Zacns95().additionalText,
+                RailUtility.translate(Transport.Zacns95().additionalTextTitle2) + Transport.Zacns95().additionalText2};}
     }
     public int getInventoryRows() {
-        return Transport.Zacns().rows;
+        return Transport.Zacns95().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {

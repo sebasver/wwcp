@@ -211,7 +211,7 @@ public class wwcp_registrations {
     //Passenger car list
     public static GenericRailTransport[] listpassenger() {
         return new GenericRailTransport[]{
-                new EntityEurofimaCompartment(null),
+                new EntityEurofimaCompartment1(null),
                 new EntityEurofimaRows(null),
                 new EntityEurofimaSleeper(null),
                 new EntityDBpza(null),
