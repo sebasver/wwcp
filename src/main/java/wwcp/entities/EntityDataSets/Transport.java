@@ -309,12 +309,42 @@ public class Transport {
                 20170f, 0f, 46.38f, 88.51f, false, true, 0);
     }
 
+    public static Transport.LocomotiveNoBackspeed ES64U2() {
+        return new Transport.LocomotiveNoBackspeed("ES64U2", "Europe", "2000-", "Electric",
+                nick,  " Taurus", type, " Universal Locomotive",
+                67000.0f, 8600.0f, 86.0f, 230f, false, true, 0);
+    }
+
+    public static Transport.LocomotiveNoBackspeed ES64U4() {
+        return new Transport.LocomotiveNoBackspeed("ES64U4", "Europe", "2005-", "Electric",
+                nick, " Taurus", type, " Universal Locomotive",
+                67000.0f, 8600.0f, 87.0f, 230f, false, true, 0);
+    }
+
+    public static Transport.LocomotiveNoBackspeed ES64U4Record() {
+        return new Transport.LocomotiveNoBackspeed("ES64U4", "Europe", "2006-", "Electric",
+                nick, " World Speed Record Taurus", type, " Universal Locomotive",
+                67000.0f, 8600.0f, 87.0f, 357f, false, true, 0);
+    }
+
+    public static Transport.LocomotiveNoBackspeed ES64F4() {
+        return new Transport.LocomotiveNoBackspeed("ES64F4", "Europe", "2003-", "Electric",
+                "", "", type, " Freight Locomotive",
+                67000.0f, 8600.0f, 87.0f, 140f, false, true, 0);
+    }
+  
+    //F7A
+    public static Transport.LocomotiveNoBackspeed F7A() {
+        return new Transport.LocomotiveNoBackspeed("F7A", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
+                40000f, 1500f, 123.7f, 105f, false, true, 0);
+    }
+
     //CR 812 Tender "Mcintosh3000Gallon"
     public static Transport.TankCars Mcintosh3000Galon() {
         return new Transport.TankCars("Class812Tender", "United_Kingdom", "1899-1963", "",
                 "", type, " Tender", 19.5f, 0f, false, true, 0, 300000);
     }
-
 
     //GE AC4400 CW
     public static Transport.LocomotiveNoBackspeed GEAC4400CW() {
@@ -351,16 +381,24 @@ public class Transport {
                 88000f, 3253f, 116.5f, 143f, false, true, 0);
     }
 
-    //F7A
-    public static Transport.LocomotiveNoBackspeed F7A() {
-        return new Transport.LocomotiveNoBackspeed("F7A", "America", "1949-Present", "Diesel",
-                nick, "", type, " Freight Locomotive",
-                40000f, 1500f, 123.7f, 105f, false, true, 0);
+    //MZ Class I 1967
+    public static Transport.LocomotiveNoBackspeed MZI1967() {
+        return new Transport.LocomotiveNoBackspeed("MZI1967", "Denmark", "1967-", "Diesel",
+                nick, " Cake Tins", type, " Universal Locomotive",
+                88000f, 3253f, 116.5f, 143f, false, true, 0);
+
     }
 
     //MZ Class II
     public static Transport.LocomotiveNoBackspeed MZII() {
         return new Transport.LocomotiveNoBackspeed("MZII", "Denmark", "1970-", "Diesel",
+                nick, " Cake Tins", type, " Universal Locomotive",
+                88000f, 3253f, 116.5f, 143f, false, true, 0);
+    }
+
+    //MZ Class II 1970
+    public static Transport.LocomotiveNoBackspeed MZII1970() {
+        return new Transport.LocomotiveNoBackspeed("MZII1970", "Denmark", "1970-", "Diesel",
                 nick, " Cake Tins", type, " Universal Locomotive",
                 88000f, 3253f, 116.5f, 143f, false, true, 0);
     }
@@ -372,10 +410,10 @@ public class Transport {
                 88000f, 3854f, 121.2f, 165f, false, true, 0);
     }
 
-    //MZ Class IV
+   //MZ Class IV
     public static Transport.LocomotiveNoBackspeed MZIV() {
         return new Transport.LocomotiveNoBackspeed("MZIV", "Denmark", "1977-", "Diesel",
-                nick, " Cake Tins", type, " Universal Locomotive",
+                nick,  " Cake Tins", type, " Universal Locomotive",
                 88000f, 3854f, 123f, 165f, false, true, 0);
     }
 
@@ -556,23 +594,7 @@ public class Transport {
     }
     /**end of traxx program.*/
 
-    public static Transport.LocomotiveNoBackspeed ES64U2() {
-        return new Transport.LocomotiveNoBackspeed("ES64U2", "Europe", "1999-", "Electric",
-                "", "", type, " Universal Locomotive",
-                56202.23f, 8701.57f, 86.0f, 230f, false, true, 0);
-    }
 
-    public static Transport.LocomotiveNoBackspeed ES64U4() {
-        return new Transport.LocomotiveNoBackspeed("ES64U4", "Europe", "2005-", "Electric",
-                "", "", type, " Universal Locomotive",
-                67442.68f, 8701.57f, 87.0f, 357f, false, true, 0);
-    }
-
-    public static Transport.LocomotiveNoBackspeed ES64F4() {
-        return new Transport.LocomotiveNoBackspeed("ES64F4", "Europe", "2003-", "Electric",
-                "", "", type, " Freight Locomotive",
-                67442.68f, 8701.57f, 87.0f, 140f, false, true, 0);
-    }
 
     //Wehrmachtslokomotive WR 360 C 14 / V36
     public static Transport.LocomotiveNoBackspeed WR360C14() {
@@ -617,9 +639,15 @@ public class Transport {
                 "", type, " Passenger", 19.6f, 120f, false, true, 0);
     }
 
+    //Ealos-x 053
+    public static Transport.Rollingstock EalosX() {
+        return new Transport.Rollingstock("Ealos-X", "Europe", "1996-", "",
+                "", type, "Freight Loose", 24.3f, 120f, false, true, 0);
+    }
+
     //Eurofima with Compartments
-    public static Transport.Rollingstock EurofimaCompartment() {
-        return new Transport.Rollingstock("EurofimaCompartments", "Europe", "1977-", "",
+    public static Transport.Rollingstock EurofimaCompartment1() {
+        return new Transport.Rollingstock("EurofimaCompartments1", "Europe", "1977-", "",
                 "", type, " Passenger", 45f, 200f, false, true, 0);
     }
 
@@ -737,6 +765,12 @@ public class Transport {
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
 
+    //Zacns 95
+    public static Transport.TankCars Zacns95() {
+        return new Transport.TankCars("Zacns 95", "Europe", "2006-", "",
+                "", type, " Tank wagon", 24.4f, 120f, false, true, 0, 60000);
+    }
+  
     //60' Hi Cube Plate F Boxcar
     public static Transport.Rollingstock Hi_Cube_Plate_F_Boxcar() {
         return new Transport.Rollingstock("60' Hi Cube Plate F Boxcar", "America", "?", "",
@@ -747,7 +781,5 @@ public class Transport {
             return new Transport.Rollingstock("40ft Boxcar", "America", "?", "",
                     "", type, " Boxcar", 48000f, 120f, false, true, 0);
     }
-
-}
 
 

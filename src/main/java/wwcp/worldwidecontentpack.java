@@ -4,28 +4,11 @@ package wwcp;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.items.TiMTab;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
-import wwcp.entities.TempTC.*;
-import wwcp.entities.freight.*;
-import wwcp.entities.locomotives.electrics.*;
-import wwcp.entities.locomotives.steamers.*;
-import wwcp.entities.locomotives.diesels.*;
-import wwcp.entities.railbusses.*;
-import wwcp.entities.passengerstock.*;
-import wwcp.entities.tender.*;
 import wwcp.proxy.ClientProxy;
 import wwcp.proxy.CommonProxy;
-
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.Month;
-
-import static cpw.mods.fml.common.registry.GameRegistry.addRecipe;
-import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
 
 //gradlew setupDecompWorkspace --refresh-dependencies idea
@@ -38,7 +21,7 @@ import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.7.04 Alpha";
+    public static final String MOD_VERSION = "0.7.05 Alpha";
 
 
     @Mod.EventHandler
@@ -58,6 +41,7 @@ public class worldwidecontentpack {
         America = new TiMTab("American models", MODID, "myTab6");
         Austria = new TiMTab("Austrian models", MODID, "myTab7");
         Switzerland = new TiMTab("Swiss models", MODID, "myTab8");
+        Denmark = new TiMTab("Danish models", MODID, "myTab10");
         European = new TiMTab("Inter European models", MODID, "myTab9");
         BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
         FestivitiesTab = new TiMTab("Festive Models", MODID, "festivetab");
@@ -69,7 +53,7 @@ public class worldwidecontentpack {
     }
 
     // declaring of the creative tabs I will be using
-    public static CreativeTabs Belgium, Germany, United_Kingdom, France, Netherlands, America, Austria, Switzerland, European, BlocksWWCP, FestivitiesTab;
+    public static CreativeTabs Belgium, Germany, United_Kingdom, France, Netherlands, America, Austria, Switzerland, Denmark, European, BlocksWWCP, FestivitiesTab;
 
     @SidedProxy(clientSide = "wwcp.proxy.ClientProxy", serverSide = "wwcp.proxy.CommonProxy")
     public static CommonProxy proxy;
