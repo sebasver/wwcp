@@ -12,7 +12,6 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.SGNSBogie;
 import wwcp.models.bogies.truck_70ton;
 import wwcp.models.freight.HiCubePlateFBoxcar;
 import wwcp.worldwidecontentpack;

@@ -29,7 +29,7 @@ public class Transport {
         public boolean reinforced;
 
         public LocomotiveWithBackspeed(String Name, String Country, String Year, String Fuel, String AditionalTextTitle, String AditionalText, String AditionalText2Title, String AditionalText2,
-                           float TractiveEffort, float MetricHorsepower, float WeightinTons, float TopSpeed, float BackTopSpeed, boolean Fictional, boolean Reinforced, int MaxRows) {
+                                       float TractiveEffort, float MetricHorsepower, float WeightinTons, float TopSpeed, float BackTopSpeed, boolean Fictional, boolean Reinforced, int MaxRows) {
             name = Name;
             country = Country;
             year = Year;
@@ -73,7 +73,7 @@ public class Transport {
         public boolean reinforced;
 
         public LocomotiveNoBackspeed(String Name, String Country, String Year, String Fuel, String AditionalTextTitle, String AditionalText, String AditionalText2Title, String AditionalText2,
-                           float TractiveEffort, float MetricHorsepower, float WeightinTons, float TopSpeed, boolean Fictional, boolean Reinforced, int MaxRows) {
+                                     float TractiveEffort, float MetricHorsepower, float WeightinTons, float TopSpeed, boolean Fictional, boolean Reinforced, int MaxRows) {
             name = Name;
             country = Country;
             year = Year;
@@ -114,7 +114,7 @@ public class Transport {
         public boolean reinforced;
 
         public Rollingstock(String Name, String Country, String Year, String AditionalTextTitle, String AditionalText, String AditionalText2Title,
-                           String AditionalText2, float WeightinTons, float TopSpeed, boolean Fictional, boolean Reinforced, int MaxRows) {
+                            String AditionalText2, float WeightinTons, float TopSpeed, boolean Fictional, boolean Reinforced, int MaxRows) {
             name = Name;
             country = Country;
             year = Year;
@@ -151,7 +151,7 @@ public class Transport {
         public boolean reinforced;
 
         public TankCars(String Name, String Country, String Year, String AditionalTextTitle, String AditionalText, String AditionalText2Title,
-                           String AditionalText2, float WeightinTons, float TopSpeed, boolean Fictional, boolean Reinforced, int MaxRows, int Capacity) {
+                        String AditionalText2, float WeightinTons, float TopSpeed, boolean Fictional, boolean Reinforced, int MaxRows, int Capacity) {
             name = Name;
             country = Country;
             year = Year;
@@ -311,7 +311,7 @@ public class Transport {
 
     public static Transport.LocomotiveNoBackspeed ES64U2() {
         return new Transport.LocomotiveNoBackspeed("ES64U2", "Europe", "2000-", "Electric",
-                nick,  " Taurus", type, " Universal Locomotive",
+                nick, " Taurus", type, " Universal Locomotive",
                 67000.0f, 8600.0f, 86.0f, 230f, false, true, 0);
     }
 
@@ -332,7 +332,7 @@ public class Transport {
                 "", "", type, " Freight Locomotive",
                 67000.0f, 8600.0f, 87.0f, 140f, false, true, 0);
     }
-  
+
     //F7A
     public static Transport.LocomotiveNoBackspeed F7A() {
         return new Transport.LocomotiveNoBackspeed("F7A", "America", "1949-Present", "Diesel",
@@ -410,10 +410,10 @@ public class Transport {
                 88000f, 3854f, 121.2f, 165f, false, true, 0);
     }
 
-   //MZ Class IV
+    //MZ Class IV
     public static Transport.LocomotiveNoBackspeed MZIV() {
         return new Transport.LocomotiveNoBackspeed("MZIV", "Denmark", "1977-", "Diesel",
-                nick,  " Cake Tins", type, " Universal Locomotive",
+                nick, " Cake Tins", type, " Universal Locomotive",
                 88000f, 3854f, 123f, 165f, false, true, 0);
     }
 
@@ -519,7 +519,9 @@ public class Transport {
                 "", type, " Tender", 17.5f, 0f, false, true, 0);
     }
 
-    /**Traxx Program*/
+    /**
+     * Traxx Program
+     */
     //F140 MS2E
     public static Transport.LocomotiveNoBackspeed F140MS2E() {
         return new Transport.LocomotiveNoBackspeed("F140MS2E", "Europe", "2006-", "Electric",
@@ -562,6 +564,7 @@ public class Transport {
                 "", "", type, " Freight Locomotive",
                 67000f, 7500f, 84.0f, 140f, false, true, 0);
     }
+
     //SSB Re 484 / F 140MS2
     public static Transport.LocomotiveNoBackspeed F140MS2() {
         return new Transport.LocomotiveNoBackspeed("F140MS2E", "Switzerland", "2004-", "Electric",
@@ -592,8 +595,10 @@ public class Transport {
                 "", "", type, " Passenger Locomotive",
                 6744.26f, 3061.86f, 81.0f, 160f, false, true, 0);
     }
-    /**end of traxx program.*/
 
+    /**
+     * end of traxx program.
+     */
 
 
     //Wehrmachtslokomotive WR 360 C 14 / V36
@@ -770,16 +775,18 @@ public class Transport {
         return new Transport.TankCars("Zacns 95", "Europe", "2006-", "",
                 "", type, " Tank wagon", 24.4f, 120f, false, true, 0, 60000);
     }
-  
+
     //60' Hi Cube Plate F Boxcar
     public static Transport.Rollingstock Hi_Cube_Plate_F_Boxcar() {
         return new Transport.Rollingstock("60' Hi Cube Plate F Boxcar", "America", "?", "",
                 "", type, " Boxcar", 80900f, 120f, false, true, 0);
     }
-        //40ft Boxcar
-        public static Transport.Rollingstock Fortyfoot_Boxcar() {
-            return new Transport.Rollingstock("40ft Boxcar", "America", "?", "",
-                    "", type, " Boxcar", 48000f, 120f, false, true, 0);
+
+    //40ft Boxcar
+    public static Transport.Rollingstock Fortyfoot_Boxcar() {
+        return new Transport.Rollingstock("40ft Boxcar", "America", "?", "",
+                "", type, " Boxcar", 48000f, 120f, false, true, 0);
     }
+}
 
 
