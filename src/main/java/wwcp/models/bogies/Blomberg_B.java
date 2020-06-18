@@ -6,8 +6,8 @@ import fexcraft.tmt.slim.ModelRendererTurbo;
 
 public class Blomberg_B extends ModelBase
 {
-	int textureX = 128;
-	int textureY = 64;
+	int textureX = 512;
+	int textureY = 512;
 
 	public Blomberg_B() //Same as Filename
 	{
