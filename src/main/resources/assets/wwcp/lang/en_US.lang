@@ -38,6 +38,7 @@ item.WehrmachtslokomotiveWR360C14.name=Wehrmachtslokomotive WR 360 C 14
 item.KoFIII1.name=KoF III Type 1
 item.KoFIII2.name=KoF III Type 2
 item.MZI.name=MZ I
+item.F7A.name=F7A
 item.MZII.name=MZ II
 item.MZIII.name=MZ III
 item.MZIV.name=MZ IV
@@ -54,6 +55,8 @@ item.SA4uk28Christmas.name=SA4uk28 Christmas
 item.SA4u28Christmas.name=SA4u28 Christmas
 item.SB4uk28Christmas.name=SB4uk28 Christmas
 item.SB4u28Christmas.name=SB4u28 Christmas
+item.HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
+item.FortyFoot_Boxcar.name=40ft Boxcar
 
 <!-- ## Tenders ## -->
 item.T322'2'.name=T32 2'2'
