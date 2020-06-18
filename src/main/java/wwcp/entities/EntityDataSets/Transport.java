@@ -353,8 +353,8 @@ public class Transport {
 
     //F7A
     public static Transport.LocomotiveNoBackspeed F7A() {
-        return new Transport.LocomotiveNoBackspeed("F7A", "North America", "1949-Present", "Diesel",
-                nick, "", type, "Freight Locomotive",
+        return new Transport.LocomotiveNoBackspeed("F7A", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
                 40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
 
@@ -736,6 +736,18 @@ public class Transport {
         return new Transport.Rollingstock("UKOpenwagon", "United Kingdom", "1930-1959", "",
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
+
+    //60' Hi Cube Plate F Boxcar
+    public static Transport.Rollingstock Hi_Cube_Plate_F_Boxcar() {
+        return new Transport.Rollingstock("60' Hi Cube Plate F Boxcar", "America", "?", "",
+                "", type, " Boxcar", 80900f, 120f, false, true, 0);
+    }
+        //40ft Boxcar
+        public static Transport.Rollingstock Fortyfoot_Boxcar() {
+            return new Transport.Rollingstock("40ft Boxcar", "America", "?", "",
+                    "", type, " Boxcar", 48000f, 120f, false, true, 0);
+    }
+
 }
 
 
