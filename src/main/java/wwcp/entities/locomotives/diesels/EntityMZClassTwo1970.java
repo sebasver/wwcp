@@ -108,7 +108,7 @@ public class EntityMZClassTwo1970 extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.3f,2.2f,1.5f};
+        return new float[]{10f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
