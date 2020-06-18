@@ -30,7 +30,7 @@ import java.util.UUID;
 
 public class EntityF7A extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityF7A(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityF7A(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -85,6 +85,8 @@ public class EntityF7A extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/EMD F7 Demo new.png", "textures/bogies/blombergB_silver.png",
                 "EMD Demonstrator", "Standard EMD demonstrator scheme");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/MILW F7", "textures/bogies/blombergB_black.png",
+                "Milwaukee Road Orange", "Milwaukee Road Orange scheme with Black Roof");
     }
 
     @Override
@@ -101,7 +103,7 @@ public class EntityF7A extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.3f,2.2f,1.5f};
+        return new float[]{6f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -118,7 +120,7 @@ public class EntityF7A extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{2.65f,0.05f,0},{-2.65f,0.05f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{1.69f,0.1f,0},{-2f,0.1f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
