@@ -88,8 +88,15 @@ public class EntityMZClassThree extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz3RedBlack1.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIIDSB1990-2000s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIIDSB1972-1990s.png", "textures/bogies/Mz_Bogey.png",
+                "DSB Red and Black Livery 1972", "Standard Red and Black livery for the DSB 1972, although plows were added the windows weren't blinded until 1990");
+    }
+
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:DSB Red and Black Livery";
     }
 
     @Override
@@ -99,14 +106,12 @@ public class EntityMZClassThree extends EntityTrainCore {
     public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
     }
 
-
-
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.4f, -0.25f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.3f,2.2f,1.5f};
+        return new float[]{10.25f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -123,14 +128,14 @@ public class EntityMZClassThree extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{2.65f,0.05f,0},{-2.65f,0.05f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{3.05f,0.05f,0},{-3.05f,0.05f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new MzBogie()}; }
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{2, -2};
+        return new float[]{3, -3};
     }
 
     @Override
@@ -140,7 +145,7 @@ public class EntityMZClassThree extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.06f,-0.05F,0.F}};}
+        return new float[][]{{0.0f,-0.05F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>
