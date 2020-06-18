@@ -340,6 +340,12 @@ public class Transport {
                 40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
 
+    //F7B
+    public static Transport.TankCars F7B() {
+        return new Transport.TankCars("F7B", "America", "1949-Present", "",
+                "", type, " B-Unit", 114f, 105f, false, true, 0, 60000);
+    }
+
     //CR 812 Tender "Mcintosh3000Gallon"
     public static Transport.TankCars Mcintosh3000Galon() {
         return new Transport.TankCars("Class812Tender", "United_Kingdom", "1899-1963", "",
@@ -351,6 +357,13 @@ public class Transport {
         return new Transport.LocomotiveNoBackspeed("GEAC4400CW", "America", "1993-", "Diesel",
                 "", "", type, " Freight Locomotive",
                 145000f, 4400f, 193f, 112f, false, true, 0);
+    }
+
+    //GP7
+    public static Transport.LocomotiveNoBackspeed GP7() {
+        return new Transport.LocomotiveNoBackspeed("GP7", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
+                40000f, 1500f, 123f, 105f, false, true, 0);
     }
 
     //GWR 9400
