@@ -87,6 +87,26 @@ public class EntityF7A extends EntityTrainCore {
                 "EMD Demonstrator", "Standard EMD demonstrator scheme");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/MILW F7.png", "textures/bogies/blombergB_black.png",
                 "Milwaukee Road Orange", "Milwaukee Road Orange scheme with Black Roof");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7_CN.png", "textures/bogies/blombergB_black.png",
+                "Canadian National Wet Noodle Scheme", "Red front with wet noodle logo and striped sides");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7_CNW.png", "textures/bogies/blombergB_black.png",
+                "CNW Yellow/Green", "Classic CNW scheme with green roof and yellow body");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7_NYC_CigarBand.png", "textures/bogies/blombergB_black.png",
+                "NYC Cigar Band", "New York Central black scheme with cigar band");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Bluebonnet.png", "textures/bogies/blombergB_silver.png",
+                "Santa Fe Blue Bonnet", "Santa Fe with blue bonnet scheme on nose and silver body");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Warbonnet_1_Leslie_A-200.png", "textures/bogies/blombergB_silver.png",
+                "Santa Fe War Bonnet", "Santa Fe with war bonnet, silver body, A-200");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Warbonnet_2_Leslie_S5T.png", "textures/bogies/blombergB_silver.png",
+                "Santa Fe War Bonnet", "Santa Fe with war bonnet, silver body, S5T");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Yellowbonnet_1.png", "textures/bogies/blombergB_silver.png",
+                "Santa Fe Yellow Bonnet", "Santa Fe with YellowBonnet, 1");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Yellowbonnet_2.png", "textures/bogies/blombergB_silver.png",
+                "Santa Fe Yellow Bonnet", "Santa Fe with YellowBonnet, 2");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Yellowbonnet_3.png", "textures/bogies/blombergB_silver.png",
+                "Santa Fe Yellow Bonnet", "Santa Fe with YellowBonnet, 3");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Yellowbonnet_4.png", "textures/bogies/blombergB_silver.png",
+                "Santa Fe Yellow Bonnet", "Santa Fe with YellowBonnet, 4");
     }
 
     @Override
