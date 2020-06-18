@@ -15,7 +15,7 @@ public class Blomberg_B extends ModelBase
 
 		initbodyModel_1();
 
-		translateAll(0F, 0F, 0F);
+
 
 		flipAll();
 	}
