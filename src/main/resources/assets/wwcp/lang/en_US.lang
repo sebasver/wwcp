@@ -55,8 +55,8 @@ item.SA4uk28Christmas.name=SA4uk28 Christmas
 item.SA4u28Christmas.name=SA4u28 Christmas
 item.SB4uk28Christmas.name=SB4uk28 Christmas
 item.SB4u28Christmas.name=SB4u28 Christmas
-item.HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
-item.FortyFoot_Boxcar.name=40ft Boxcar
+item.60'HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
+item.40ftBoxcar.name=40ft Boxcar
 
 <!-- ## Tenders ## -->
 item.T322'2'.name=T32 2'2'
