@@ -12,7 +12,6 @@ item.myTab6=America
 item.myTab7=Austria
 item.myTab8=Switzerland
 item.myTab9=Inter European
-item.myTab10=Denmark
 item.blockTab=Blocks
 item.festivetab=Festive Content
 
@@ -39,15 +38,13 @@ item.WehrmachtslokomotiveWR360C14.name=Wehrmachtslokomotive WR 360 C 14
 item.KoFIII1.name=KoF III Type 1
 item.KoFIII2.name=KoF III Type 2
 item.MZI.name=MZ I
-item.MZI1967.name= MZ I 1967
+item.F7A.name=F7A
 item.MZII.name=MZ II
-item.MZII1970.name=MZ II 1970
 item.MZIII.name=MZ III
 item.MZIV.name=MZ IV
 item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
-item.ES64U2.name=ES64U2
-item.ES64U4.name=ES64U4
-item.F7A.name=F7A
+
+
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
 item.EurofimaCompartments.name=Eurofima Compartment Coach
@@ -58,11 +55,8 @@ item.SA4uk28Christmas.name=SA4uk28 Christmas
 item.SA4u28Christmas.name=SA4u28 Christmas
 item.SB4uk28Christmas.name=SB4uk28 Christmas
 item.SB4u28Christmas.name=SB4u28 Christmas
-item.Zacns.name=ZACNS95
-item.EalosX.name=Ealos-X
-item.HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
-item.FortyFoot_Boxcar.name=40ft Boxcar
-
+item.60'HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
+item.40ftBoxcar.name=40ft Boxcar
 
 <!-- ## Tenders ## -->
 item.T322'2'.name=T32 2'2'

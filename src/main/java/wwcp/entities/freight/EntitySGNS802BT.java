@@ -12,8 +12,8 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.SGNSSBogie;
 import wwcp.models.freight.SGNS802BT;
+import wwcp.models.bogies.SGNSBogie;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -39,7 +39,7 @@ public class EntitySGNS802BT extends GenericRailTransport {
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new SGNSSBogie()};
+        return new ModelBase[]{new SGNSBogie()};
     }
 
     public float[] bogieLengthFromCenter() {

@@ -109,8 +109,8 @@ public class EntityEurofimaSleeper extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/1/2Years_WWCP.png", "textures/bogies/Eurofimabogie.png",
-                "Fictional British Rail Livery", "Fake livery");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaSleeper/SE1.png", "textures/bogies/Eurofimabogie.png",
+                "ÖBB Sleeper", "Livery used by an OBB sleeper train");
     }
     @Override
     public ItemStack[] getRecipie() {

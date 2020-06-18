@@ -88,21 +88,10 @@ public class EntityMZClassFour extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDSB.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz4RedBlack1.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVRDK.png", "textures/bogies/Mz_Bogey.png",
-                "Railion Scandinavia Livery", "Standard Red and Black livery for the Railion \n with blinded cab windows");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVRSC.png", "textures/bogies/Mz_Bogey.png",
-                "DB Schenker Scandinavia Livery", "Standard Red and Black livery for the DB Schenker \n with DB logo");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDBCSC.png", "textures/bogies/Mz_Bogey.png",
-                "DB Cargo Scandinavia Livery", "DB Red livery for the DB Cargo \n with blinded cab windows");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDBCSC1449.png", "textures/bogies/Mz_Bogey.png",
-                "DB Cargo Scandinavia Livery 1449", "DB Red livery for the DB Cargo \n with cab windows and no rear lights, only nr 1449 has this type of changes");
-    }
-
-    @Override
-    public String getDefaultSkin() {
-        return "wwcp:DSB Livery";
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz4RedBlack2001.png", "textures/bogies/Mz_Bogey.png",
+                "DSB Livery blinded cab", "Standard Red and Black livery for the DSB \n with blinded cab windows");
     }
 
     @Override
@@ -113,12 +102,13 @@ public class EntityMZClassFour extends EntityTrainCore {
     }
 
 
+
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.6f, -0.25f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{10.25f,2.2f,1.5f};
+        return new float[]{9.3f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -135,14 +125,16 @@ public class EntityMZClassFour extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{3.05f,0.05f,0},{-3.05f,0.05f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{2.65f,0.05f,0},{-2.65f,0.05f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new MzBogie()}; }
 
     @Override
-    public float[] bogieLengthFromCenter() {return new float[]{3, -3};
+    public float[] bogieLengthFromCenter() {
+        return new float[]{2, -2};
     }
+
     @Override
     public float getRenderScale() {
         return  0.0625f;
@@ -150,7 +142,7 @@ public class EntityMZClassFour extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.0f,-0.05F,0.0F}};}
+        return new float[][]{{0.03f,-0.05F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>

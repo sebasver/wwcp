@@ -5,10 +5,10 @@ import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
+
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -16,10 +16,10 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.MzBogie;
-import wwcp.models.locomotives.diesels.DSBMzI;
+import wwcp.models.locomotives.diesels.DSBMzI_II;
 import wwcp.worldwidecontentpack;
-
 import java.util.UUID;
+import net.minecraft.init.Items;
 
 
 // XXXX -> Entity Name
@@ -88,19 +88,12 @@ public class EntityMZClassOne extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIDSB1990-2020s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz12RedBlack1.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
-                "DSB Red and Black Livery 1980", "Standard Red and Black livery for the DSB before the cornered windows were blinded in 1990");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIRDK.png", "textures/bogies/Mz_Bogey.png",
-                "Railion Livery", "After DSB Gods (DSB Freight/Cargo) was sold to Railion in 2001, all DSB markers were removed from the Locomotives");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIWWCP.png", "textures/bogies/Mz_Bogey.png",
-                "WWCP Commercial Livery", "Standard Purple Blue livery for WWCP");
-    }
-
-    @Override
-    public String getDefaultSkin() {
-        return "wwcp:DSB Red and Black Livery";
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz12Yellow.png", "textures/bogies/Mz_Bogey.png",
+                "Jernbaneverket Livery", "Yellow livery used by Jernbahnverkey");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/Mz12WWCP.png", "textures/bogies/Mz_Bogey.png",
+                "WWCP Commercial Livery", "Standard Red and Black livery for the DSB");
     }
 
     @Override
@@ -134,14 +127,14 @@ public class EntityMZClassOne extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{3f,0.05f,0},{-3f,0.05f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{2.65f,0.05f,0},{-2.65f,0.05f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new MzBogie()}; }
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{3, -3};
+        return new float[]{2, -2};
     }
 
     @Override
@@ -199,7 +192,7 @@ public class EntityMZClassOne extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzI()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new DSBMzI_II()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

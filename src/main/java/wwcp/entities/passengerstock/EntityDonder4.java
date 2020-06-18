@@ -17,6 +17,8 @@ import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
+import static ebf.tim.utility.RailUtility.DefineStack;
+
 
 public class EntityDonder4 extends GenericRailTransport {
     private static final String[] itemDescription = new String[]{
@@ -36,7 +38,7 @@ public class EntityDonder4 extends GenericRailTransport {
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{2f, -2f};
+        return new float[]{2.5f, -2.5f};
     }
 
     @Override
