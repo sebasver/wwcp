@@ -61,7 +61,44 @@ public class EntityFortyFoot_Boxcar extends GenericRailTransport {
                 "Ontario Northland Teal", "Ontario Northland Teal with white lettering");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar - TH&B.png", "textures/bogies/70ton_truck_black.png",
                 "Toronto Hamilton and Buffalo Yellow/black", "Toronto Hamilton and Buffalo yellow scheme with black door, roof and sides");
-
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_UP.png", "textures/bogies/70ton_truck_black.png",
+                "Union Pacific ,brown", "Union Pacific brown boxcar with classic logo and lettering");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_TBR.png", "textures/bogies/70ton_truck_black.png",
+                "Thatcher Brook Railroad, Red", "TBR red boxcar, with logo and block lettering");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_SOO.png", "textures/bogies/70ton_truck_black.png",
+                "SOO Line, brown", "Soo line brown boxcar with block lettering");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_NH.png", "textures/bogies/70ton_truck_black.png",
+                "New Haven, Orange", "New Haven orange boxcar with white/black logo");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_IC.png", "textures/bogies/70ton_truck_black.png",
+                "Illinois Central, Brown", "Illinois central brown boxcar, block lettering");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_FEC_Speedway_Blue.png", "textures/bogies/70ton_truck_black.png",
+                "FEC Speedway, Blue", "FEC Speedway in blue scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_FEC_Speedway.png", "textures/bogies/70ton_truck_black.png",
+                "FEC Speedway, Brown", "FEC Speedway in brown scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_FEC_Cane.png", "textures/bogies/70ton_truck_black.png",
+                "FEC Cane, white", "FEC Cane Boxcar, white scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_EJ&E.png", "textures/bogies/70ton_truck_black.png",
+                "EJ&E, black and Orange", "Elgin, Joliet and Eastern Railway boxcar in orange/Black scheme, Block lettering");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_DRGWOrangeSilverRoof.png", "textures/bogies/70ton_truck_black.png",
+                "DRGW, Orange/Silver", "DRGW with silver and orange scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_DRGWGoldSilverRoof.png", "textures/bogies/70ton_truck_black.png",
+                "DRGW, Gold/Silver", "DRGW with silver and gold scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_DRGW.png", "textures/bogies/70ton_truck_black.png",
+                "DRGW, Brown", "DRGW with brown scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CBQ.png", "textures/bogies/70ton_truck_black.png",
+                "Burlington Route, Red", "Burlington Route Logo with red body");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CN Regular.png", "textures/bogies/70ton_truck_black.png",
+                "Canadian National, Wet Noodle, brown", "Canadian National with wet noodle logo and brown body");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CPR regular.png", "textures/bogies/70ton_truck_black.png",
+                "Canadian Pacific, block lettering", "Canadian Pacific block lettering and brown body");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CNR Red Orange, White Leaf.png", "textures/bogies/70ton_truck_black.png",
+                "CNR, Red Orange, White Maple Leaf", "Canadian National Railway boxcar with white maple leaf logo in red/orange scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CNR Red Orange.png", "textures/bogies/70ton_truck_black.png",
+                "CNR, Red Orange", "Canadian National Railway boxcar with maple leaf logo in red/orange scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CNR Regular.png", "textures/bogies/70ton_truck_black.png",
+                "CNR, Brown, Maple Leaf", "Canadian National Railway boxcar with maple leaf logo in brown scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CNR White Leaf.png", "textures/bogies/70ton_truck_black.png",
+                "CNR, Brown, White Leaf", "Canadian National Railway boxcar with white maple leaf logo in brown scheme");
     }
 
     @Override
