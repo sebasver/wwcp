@@ -85,7 +85,7 @@ public class EntityF7A extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/EMD F7 Demo new.png", "textures/bogies/blombergB_silver.png",
                 "EMD Demonstrator", "Standard EMD demonstrator scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/MILW F7", "textures/bogies/blombergB_black.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/MILW F7.png", "textures/bogies/blombergB_black.png",
                 "Milwaukee Road Orange", "Milwaukee Road Orange scheme with Black Roof");
     }
 
