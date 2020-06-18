@@ -176,7 +176,8 @@ public class wwcp_registrations {
                 new EntityMZClassThree(null),
                 new EntityMZClassFour(null),
                 new EntityKofIII(null),
-                new EntityKofIII2(null)
+                new EntityKofIII2(null),
+                new EntityF7A(null)
         };
     }
 
@@ -244,7 +245,9 @@ public class wwcp_registrations {
                 new EntitySGNS804TS(null),
                 new EntitySGNS801BT2TS(null),
                 new EntityZACNS95(null),
-                new EntityEALOSX(null),
+                new EntityEALOSX(null),                
+                new EntityHiCubePlateFBoxcar(null),
+                new EntityFortyFoot_Boxcar(null)
         };
     }
 }

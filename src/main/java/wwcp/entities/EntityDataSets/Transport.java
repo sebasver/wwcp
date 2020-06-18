@@ -332,6 +332,13 @@ public class Transport {
                 "", "", type, " Freight Locomotive",
                 67000.0f, 8600.0f, 87.0f, 140f, false, true, 0);
     }
+  
+    //F7A
+    public static Transport.LocomotiveNoBackspeed F7A() {
+        return new Transport.LocomotiveNoBackspeed("F7A", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
+                40000f, 1500f, 123.7f, 105f, false, true, 0);
+    }
 
     //CR 812 Tender "Mcintosh3000Gallon"
     public static Transport.TankCars Mcintosh3000Galon() {
@@ -379,6 +386,7 @@ public class Transport {
         return new Transport.LocomotiveNoBackspeed("MZI1967", "Denmark", "1967-", "Diesel",
                 nick, " Cake Tins", type, " Universal Locomotive",
                 88000f, 3253f, 116.5f, 143f, false, true, 0);
+
     }
 
     //MZ Class II
@@ -762,6 +770,16 @@ public class Transport {
         return new Transport.TankCars("Zacns 95", "Europe", "2006-", "",
                 "", type, " Tank wagon", 24.4f, 120f, false, true, 0, 60000);
     }
-}
+  
+    //60' Hi Cube Plate F Boxcar
+    public static Transport.Rollingstock Hi_Cube_Plate_F_Boxcar() {
+        return new Transport.Rollingstock("60' Hi Cube Plate F Boxcar", "America", "?", "",
+                "", type, " Boxcar", 80900f, 120f, false, true, 0);
+    }
+        //40ft Boxcar
+        public static Transport.Rollingstock Fortyfoot_Boxcar() {
+            return new Transport.Rollingstock("40ft Boxcar", "America", "?", "",
+                    "", type, " Boxcar", 48000f, 120f, false, true, 0);
+    }
 
 

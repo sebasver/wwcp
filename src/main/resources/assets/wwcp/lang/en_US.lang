@@ -47,7 +47,7 @@ item.MZIV.name=MZ IV
 item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
 item.ES64U2.name=ES64U2
 item.ES64U4.name=ES64U4
-
+item.F7A.name=F7A
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
 item.EurofimaCompartments.name=Eurofima Compartment Coach
@@ -60,6 +60,8 @@ item.SB4uk28Christmas.name=SB4uk28 Christmas
 item.SB4u28Christmas.name=SB4u28 Christmas
 item.Zacns.name=ZACNS95
 item.EalosX.name=Ealos-X
+item.HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
+item.FortyFoot_Boxcar.name=40ft Boxcar
 
 
 <!-- ## Tenders ## -->
