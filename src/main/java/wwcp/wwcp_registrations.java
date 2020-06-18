@@ -177,9 +177,7 @@ public class wwcp_registrations {
                 new EntityMZClassFour(null),
                 new EntityKofIII(null),
                 new EntityKofIII2(null),
-                new EntityF7A(null),
-                new EntityF7B(null),
-                new EntityGP7(null)
+                new EntityF7A(null)
         };
     }
 

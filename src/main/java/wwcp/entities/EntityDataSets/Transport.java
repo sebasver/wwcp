@@ -339,18 +339,6 @@ public class Transport {
                 nick, "", type, " Freight Locomotive",
                 40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
-    //F7B
-    public static Transport.TankCars F7B() {
-        return new Transport.TankCars("F7B", "America", "1949-Present", "",
-                "", type, " B-Unit", 114f, 105f, false, true, 0, 60000);
-    }
-
-    //GP7
-    public static Transport.LocomotiveNoBackspeed GP7() {
-        return new Transport.LocomotiveNoBackspeed("GP7", "America", "1949-Present", "Diesel",
-                nick, "", type, " Freight Locomotive",
-                40000f, 1500f, 123f, 105f, false, true, 0);
-    }
 
     //CR 812 Tender "Mcintosh3000Gallon"
     public static Transport.TankCars Mcintosh3000Galon() {

@@ -109,40 +109,15 @@ import static ebf.tim.utility.RailUtility.DefineStack;
 
         @Override
         public void registerSkins() {
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E1.png", "textures/bogies/Eurofimabogie.png",
+            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/1/2Years_WWCP.png", "textures/bogies/Eurofimabogie.png",
                     "Fictional British Rail Livery", "Fake livery");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E2.png", "textures/bogies/Eurofimabogie.png",
-                    "PKP Inter-city Livery", "Paintjob used by PKP on Eurofima coaches");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E4.png", "textures/bogies/Eurofimabogie.png",
-                    "Czech railway livery", "Used by the Czech State railway");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E5.png", "textures/bogies/Eurofimabogie.png",
-                    "SNCF Eurofima", "Standard used SNCF Livery on eurofimas");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E6.png", "textures/bogies/Eurofimabogie.png",
-                    "Deutshe Bahn Livery", "Livery used by the Deutshe Bahn");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E7.png", "textures/bogies/Eurofimabogie.png",
-                    "Eurofima Factory Livery", "Livery used when just coming out of the Factory");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E8.png", "textures/bogies/Eurofimabogie.png",
-                    "Eurofima NMBS", "Livery used by the NMBS/SNCB");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E9.png", "textures/bogies/Eurofimabogie.png",
-                    "Eurofima OBB", "Livery used by the OBB");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E10.png", "textures/bogies/Eurofimabogie.png",
-                    "Eurofima Renfe", "Livery used by Renfe");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E11.png", "textures/bogies/Eurofimabogie.png",
-                    "Eurofima SBB night", "Livery used on SBB night trains");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E12.png", "textures/bogies/Eurofimabogie.png",
-                    "Eurofima SBB", "Livery used by SBB day trains");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E14.png", "textures/bogies/Eurofimabogie.png",
-                    "Eurofima WWCP promotional one skin", "Livery used when just coming out of the Factory");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E15.png", "textures/bogies/Eurofimabogie.png",
-                    "Eurofima WWCP promotional two skin", "Livery used when just coming out of the Factory");
-            SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/E16.png", "textures/bogies/Eurofimabogie.png",
-                    "Eurofima Trams in Motion", "Promotional Livery for TramsIm");
         }
 
-        @Override
+        /*@Override
         public String getDefaultSkin() {
-            return "wwcp:Eurofima Factory Livery";
-        }
+            return "";
+        }*/
+
         @Override
         public ItemStack[] getRecipie() {
             return new ItemStack[]{
