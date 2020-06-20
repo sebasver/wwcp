@@ -176,7 +176,10 @@ public class wwcp_registrations {
                 new EntityMZClassThree(null),
                 new EntityMZClassFour(null),
                 new EntityKofIII(null),
-                new EntityKofIII2(null)
+                new EntityKofIII2(null),
+                new EntityF7A(null),
+                new EntityF7B(null),
+                new EntityGP7(null)
         };
     }
 
@@ -211,7 +214,7 @@ public class wwcp_registrations {
     //Passenger car list
     public static GenericRailTransport[] listpassenger() {
         return new GenericRailTransport[]{
-                new EntityEurofimaCompartment(null),
+                new EntityEurofimaCompartment1(null),
                 new EntityEurofimaRows(null),
                 new EntityEurofimaSleeper(null),
                 new EntityDBpza(null),
@@ -243,8 +246,10 @@ public class wwcp_registrations {
                 new EntitySGNS802BT(null),
                 new EntitySGNS804TS(null),
                 new EntitySGNS801BT2TS(null),
-                new EntityZACNS(null),
-                new EntityEALOSX(null),
+                new EntityZACNS95(null),
+                new EntityEALOSX(null),                
+                new EntityHiCubePlateFBoxcar(null),
+                new EntityFortyFoot_Boxcar(null)
         };
     }
 }

@@ -6,6 +6,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
+import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
@@ -20,6 +21,7 @@ import wwcp.models.bogies.flexxpower;
 import wwcp.models.locomotives.electrics.ES64U2;
 import wwcp.worldwidecontentpack;
 
+import java.util.List;
 import java.util.UUID;
 
 
@@ -105,10 +107,8 @@ public class EntityES64U2 extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Taurus/taurus1.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Taurus/TaurusU4OBB.png", "textures/bogies/Flexxpower.png",
                 "OBB Livery", "Used by the OBB");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Taurus/taurus2.png", "textures/bogies/Flexxpower.png",
-                "DB Livery", "Used by DB");
     }
 
     @Override
