@@ -33,7 +33,7 @@ public class EntityEALOSX extends GenericRailTransport {
     }
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.121F,0.08f,0},{-2.121F,0.08f,0}};
+        return new float[][]{{2.05F,0.08f,0},{-2.05F,0.08f,0}};
     }
 
     @Override
@@ -42,7 +42,7 @@ public class EntityEALOSX extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{2.121F, -2.121F};
+        return new float[]{2.05F, -2.05F};
     }
 
     public float getRenderScale() {
@@ -51,7 +51,7 @@ public class EntityEALOSX extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,-0.1F,0F}};
+        return new float[][]{{0.06f,-0.12F,0F}};
     }
 
     public void registerSkins() {
@@ -112,7 +112,7 @@ public class EntityEALOSX extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{4f, 2f, 1.6F};
+        return new float[]{6.82f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
