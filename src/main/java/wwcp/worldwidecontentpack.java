@@ -46,7 +46,7 @@ public class worldwidecontentpack {
         BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
         FestivitiesTab = new TiMTab("Festive Models", MODID, "festivetab");
         //for the eventhandler
-        MinecraftForge.EVENT_BUS.register(ClientProxy.eventManager);
+        MinecraftForge.EVENT_BUS.register(eventManager);
         wwcp_registrations.registerItems();
         wwcp_registrations.registerBlocks();
         wwcp_registrations.registerTrains();
@@ -57,6 +57,9 @@ public class worldwidecontentpack {
 
     @SidedProxy(clientSide = "wwcp.proxy.ClientProxy", serverSide = "wwcp.proxy.CommonProxy")
     public static CommonProxy proxy;
+    
+    //Register EventManager outside of proxy to avoid siding issues.
+    public static EventManager eventManager = new EventManager();
 
 
 }

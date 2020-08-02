@@ -10,9 +10,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.0"
-group= "ebf.tim"
-archivesBaseName = "Trains in Motion"
+version = "0.7.05 Alpha"
+group= "wwcp"
+archivesBaseName = "World Wide Content Pack"
 
 sourceCompatibility = targetCompatibility = "1.7"
 compileJava { sourceCompatibility = targetCompatibility = "1.7" }
