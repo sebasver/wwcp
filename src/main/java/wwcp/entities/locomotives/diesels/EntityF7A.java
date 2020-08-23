@@ -144,7 +144,7 @@ public class EntityF7A extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{1.9f,0.1f,0},{-1.9f,0.1f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{2f,0.1f,0},{-2f,0.1f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
