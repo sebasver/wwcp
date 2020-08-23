@@ -16,7 +16,6 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.Blomberg_B;
-import wwcp.models.bogies.MzBogie;
 import wwcp.models.locomotives.diesels.F7A;
 import wwcp.worldwidecontentpack;
 
@@ -145,7 +144,7 @@ public class EntityF7A extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{1.69f,0.1f,0},{-2f,0.1f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{1.7f,0.1f,0},{-2f,0.1f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
