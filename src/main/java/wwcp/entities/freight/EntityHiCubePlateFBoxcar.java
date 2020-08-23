@@ -112,7 +112,7 @@ public class EntityHiCubePlateFBoxcar extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{8.4f, 2.25f, 1.6F};
+        return new float[]{8.5f, 2.25f, 1.6F};
     }
 
     public float getPistonOffset() {

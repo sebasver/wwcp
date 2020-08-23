@@ -152,7 +152,7 @@ public class EntityFortyFoot_Boxcar extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{5.4f, 2f, 1.6F};
+        return new float[]{6f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
