@@ -33,7 +33,7 @@ public class EntityHiCubePlateFBoxcar extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{3f,0.08f,0},{-3.5f,0.08f,0}};
+        return new float[][]{{3f,0.08f,0},{-3f,0.08f,0}};
     }
 
     @Override
