@@ -51,7 +51,7 @@ public class EntityFortyFoot_Boxcar extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.475f,-0.1F,0F}};
+        return new float[][]{{-0F,-0.1F,0F}};
     }
 
     public void registerSkins() {
