@@ -100,7 +100,7 @@ public class EntityGP7 extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{7.5f,2.2f,1.5f};
+        return new float[]{7.4f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
