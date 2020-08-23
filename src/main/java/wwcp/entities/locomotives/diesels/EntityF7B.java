@@ -120,7 +120,7 @@ public class EntityF7B extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{6.5f, 2f, 1.6F};
+        return new float[]{6.4f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
