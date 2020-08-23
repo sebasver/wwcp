@@ -13,7 +13,6 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.Blomberg_B;
-import wwcp.models.bogies.SGNSSBogie;
 import wwcp.models.locomotives.diesels.F7B;
 import wwcp.worldwidecontentpack;
 
@@ -121,7 +120,7 @@ public class EntityF7B extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{6.25f, 2f, 1.6F};
+        return new float[]{7f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
