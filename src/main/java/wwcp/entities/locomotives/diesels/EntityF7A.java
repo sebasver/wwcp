@@ -123,7 +123,7 @@ public class EntityF7A extends EntityTrainCore {
 
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-2.0f, 1.4f, -0.4f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-1.9.0f, 1.35f, -0.35f}};}
 
     @Override
     public float[] getHitboxSize() {
