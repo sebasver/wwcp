@@ -96,7 +96,7 @@ public class EntityGP7 extends EntityTrainCore {
     }
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.8f,1.6f, -0.250f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{1.75f,0.6f, -0.30f}};}
 
     @Override
     public float[] getHitboxSize() {
