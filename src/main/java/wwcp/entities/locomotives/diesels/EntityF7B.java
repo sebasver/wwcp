@@ -70,6 +70,11 @@ public class EntityF7B extends GenericRailTransport {
     }
 
     @Override
+    public String getDefaultSkin() {
+        return "wwcp:EMD Demonstrator";
+    }
+
+    @Override
     public String transportFuelType() {
         return null;
     }
