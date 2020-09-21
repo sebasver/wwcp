@@ -16,7 +16,7 @@ import fexcraft.tmt.slim.ModelRendererTurbo;
 public class Habbiins_14 extends ModelBase //Same as Filename
 {
 	int textureX = 512;
-	int textureY = 128;
+	int textureY = 512;
 
 	public Habbiins_14() //Same as Filename
 	{
@@ -235,7 +235,7 @@ public class Habbiins_14 extends ModelBase //Same as Filename
 		bodyModel[205] = new ModelRendererTurbo(this, 249, 161, textureX, textureY); // Box 0
 		bodyModel[206] = new ModelRendererTurbo(this, 249, 161, textureX, textureY); // Box 0
 		bodyModel[207] = new ModelRendererTurbo(this, 249, 170, textureX, textureY); // Box 0
-		bodyModel[208] = new ModelRendererTurbo(this, 249, 170, textureX, textureY); // Box 0
+		bodyModel[208] = new ModelRendererTurbo(this, 249, 171, textureX, textureY); // Box 0
 
 		bodyModel[0].addBox(0F, 0F, 0F, 177, 2, 22, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-88.5F, 1F, -11F);
