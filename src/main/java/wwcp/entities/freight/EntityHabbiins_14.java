@@ -62,33 +62,21 @@ public class EntityHabbiins_14 extends GenericRailTransport {
     @Override
     public String transportFuelType() { return null; }
 
-    public boolean isReinforced() {
-        return Transport.Habbiins_14().reinforced;
-    }
+    public boolean isReinforced() { return Transport.Habbiins_14().reinforced; }
 
-    public float weightKg() {
-        return Transport.Habbiins_14().weightinKGs;
-    }
+    public float weightKg() { return Transport.Habbiins_14().weightinKGs; }
 
-    public ItemStack[] getRecipie() {
-        return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
-    }
+    public ItemStack[] getRecipie() { return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null}; }
 
-    public String transportName() {
-        return Transport.Habbiins_14().name;
-    }
+    public String transportName() { return Transport.Habbiins_14().name; }
 
     public String transportcountry() { return Transport.Habbiins_14().country; }
 
     public String transportYear() { return Transport.Habbiins_14().year; }
 
-    public float transportTopSpeed() {
-        return Transport.Habbiins_14().topSpeed;
-    }
+    public float transportTopSpeed() { return Transport.Habbiins_14().topSpeed; }
 
-    public boolean isFictional() {
-        return Transport.Habbiins_14().fictional;
-    }
+    public boolean isFictional() { return Transport.Habbiins_14().fictional; }
 
     @Override
     public String[] additionalItemText() {
@@ -96,33 +84,18 @@ public class EntityHabbiins_14 extends GenericRailTransport {
                 RailUtility.translate(Transport.Habbiins_14().additionalTextTitle2) + Transport.Habbiins_14().additionalText2};}
     }
 
-    public int getInventoryRows() {
-        return Transport.Habbiins_14().rows;
-    }
+    public int getInventoryRows() { return Transport.Habbiins_14().rows; }
 
-    public TrainsInMotion.transportTypes getType() {
-        return TrainsInMotion.transportTypes.FREIGHT;
-    }
+    public TrainsInMotion.transportTypes getType() { return TrainsInMotion.transportTypes.FREIGHT; }
 
-    public float[][] getRiderOffsets() {
-        return null;
-    }
+    public float[][] getRiderOffsets() { return null; }
 
-    public float[] getHitboxSize() {
-        return new float[]{6.82f, 2f, 1.6F};
-    }
+    public float[] getHitboxSize() { return new float[]{6.82f, 2f, 1.6F}; }
 
-    public float getPistonOffset() {
-        return 0.0F;
-    }
+    public float getPistonOffset() { return 0.0F; }
 
-    public ModelBase[] getModel() {
-        return new ModelBase[]{new Habbiins_14()};
-    }
+    public ModelBase[] getModel() { return new ModelBase[]{new Habbiins_14()}; }
 
-    public Item getItem() {
-        return thisItem;
-    }
-
+    public Item getItem() { return thisItem; }
 
 }
