@@ -112,7 +112,7 @@ public class EntityHabbiins_14 extends GenericRailTransport {
         }
 
         public float[] getHitboxSize() {
-            return new float[]{13.4f, 2f, 1.6F};
+            return new float[]{10.5f, 2f, 1.6F};
         }
 
         public float getPistonOffset() {
