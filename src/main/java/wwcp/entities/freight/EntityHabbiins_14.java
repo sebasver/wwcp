@@ -60,9 +60,7 @@ public class EntityHabbiins_14 extends GenericRailTransport {
 
 
     @Override
-    public String transportFuelType() {
-        return null;
-    }
+    public String transportFuelType() { return null; }
 
     public boolean isReinforced() {
         return Transport.Habbiins_14().reinforced;
@@ -94,9 +92,10 @@ public class EntityHabbiins_14 extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.EalosX().additionalTextTitle) + Transport.EalosX().additionalText,
-                RailUtility.translate(Transport.EalosX().additionalTextTitle2) + Transport.EalosX().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.Habbiins_14().additionalTextTitle) + Transport.Habbiins_14().additionalText,
+                RailUtility.translate(Transport.Habbiins_14().additionalTextTitle2) + Transport.Habbiins_14().additionalText2};}
     }
+
     public int getInventoryRows() {
         return Transport.Habbiins_14().rows;
     }
