@@ -235,7 +235,7 @@ public class Habbiins_14 extends ModelBase //Same as Filename
 		bodyModel[205] = new ModelRendererTurbo(this, 249, 161, textureX, textureY); // Box 0
 		bodyModel[206] = new ModelRendererTurbo(this, 249, 161, textureX, textureY); // Box 0
 		bodyModel[207] = new ModelRendererTurbo(this, 249, 170, textureX, textureY); // Box 0
-		bodyModel[208] = new ModelRendererTurbo(this, 249, 171, textureX, textureY); // Box 0
+		bodyModel[208] = new ModelRendererTurbo(this, 249, 170, textureX, textureY); // Box 0
 
 		bodyModel[0].addBox(0F, 0F, 0F, 177, 2, 22, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-88.5F, 1F, -11F);
@@ -457,7 +457,7 @@ public class Habbiins_14 extends ModelBase //Same as Filename
 		bodyModel[72].setRotationPoint(-51.5F, 3F, 8F);
 
 		bodyModel[73].addBox(0F, 0F, 0F, 3, 1, 3, 0F); // Box 17
-		bodyModel[73].setRotationPoint(-74F, 3F, -1.5F);
+		bodyModel[73].setRotationPoint(-75F, 3F, -1.5F);
 
 		bodyModel[74].addBox(0F, 0F, 0F, 3, 1, 3, 0F); // Box 17
 		bodyModel[74].setRotationPoint(72F, 3F, -1.5F);
