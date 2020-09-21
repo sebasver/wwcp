@@ -42,7 +42,7 @@ public class EntityHabbiins_14 extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{2.05F, -2.05F};
+        return new float[]{4F, -4F};
     }
 
     public float getRenderScale() {
@@ -51,7 +51,7 @@ public class EntityHabbiins_14 extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.06f,-0.12F,0F}};
+        return new float[][]{{0.0f,-0.12F,0F}};
     }
 
     public void registerSkins() {
@@ -98,7 +98,7 @@ public class EntityHabbiins_14 extends GenericRailTransport {
                     RailUtility.translate(Transport.Habbiins_14().additionalTextTitle2) + Transport.Habbiins_14().additionalText2};}
         }
         public int getInventoryRows() {
-            return Transport.EalosX().rows;
+            return Transport.Habbiins_14().rows;
         }
 
         public TrainsInMotion.transportTypes getType() {
@@ -110,7 +110,7 @@ public class EntityHabbiins_14 extends GenericRailTransport {
         }
 
         public float[] getHitboxSize() {
-            return new float[]{6.82f, 2f, 1.6F};
+            return new float[]{13.4f, 2f, 1.6F};
         }
 
         public float getPistonOffset() {
