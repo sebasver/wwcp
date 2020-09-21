@@ -792,13 +792,19 @@ public class Transport {
     //60' Hi Cube Plate F Boxcar
     public static Transport.Rollingstock Hi_Cube_Plate_F_Boxcar() {
         return new Transport.Rollingstock("60' Hi Cube Plate F Boxcar", "America", "?", "",
-                "", type, " Boxcar", 80900f, 120f, false, true, 0);
+                "", type, " Boxcar", 80.9f, 120f, false, true, 0);
     }
 
     //40ft Boxcar
     public static Transport.Rollingstock Fortyfoot_Boxcar() {
         return new Transport.Rollingstock("40ft Boxcar", "America", "?", "",
-                "", type, " Boxcar", 48000f, 120f, false, true, 0);
+                "", type, " Boxcar", 48f, 120f, false, true, 0);
+    }
+
+    //Habbiins_14
+    public static Transport.Rollingstock Habbiins_14() {
+        return new Transport.Rollingstock("Habbiins_14", "Europe", "1990s", "",
+                "", type, " Boxcar", 26f, 120f, false, true, 0);
     }
 }
 
