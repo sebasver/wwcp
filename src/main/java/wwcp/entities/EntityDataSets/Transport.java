@@ -806,6 +806,12 @@ public class Transport {
         return new Transport.Rollingstock("Habbiins_14", "Europe", "1990s", "",
                 "", type, " Boxcar", 26f, 120f, false, true, 0);
     }
+
+    //Habbiins_17
+    public static Transport.Rollingstock Habbiins_17() {
+        return new Transport.Rollingstock("Habbiins_17", "Europe", "1990s", "",
+                "", type, " Boxcar", 26f, 120f, false, true, 0);
+    }
 }
 
 
