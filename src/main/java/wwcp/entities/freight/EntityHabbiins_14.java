@@ -89,7 +89,7 @@ public class EntityHabbiins_14 extends GenericRailTransport {
         public String transportYear() { return Transport.Habbiins_14().year; }
 
         public float transportTopSpeed() {
-            return Transport.EalosX().topSpeed;
+            return Transport.Habbiins_14().topSpeed;
         }
 
         public boolean isFictional() {
