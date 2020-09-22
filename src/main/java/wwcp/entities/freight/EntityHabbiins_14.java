@@ -58,7 +58,9 @@ public class EntityHabbiins_14 extends GenericRailTransport {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_14/Habbiins_14_TWA_Brown.png", "textures/bogies/SGNSSBogie.png",
                 "Habbiins_14_TWA_Brown", "This is the most common livery to see in real life");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_14/Habbiins_14_TWA_Grey.png", "textures/bogies/SGNSSBogie.png",
-                "Habbiins_14_TWA_Grey", "This wass the most common livery to see in real life, mostly when they came out from factories");
+                "Habbiins_14_TWA_Grey", "This was the most common livery to see in real life, mostly when they came out from factories");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_14/Habbiins_14_SJ.png", "textures/bogies/SGNSSBogie.png",
+                "Habbiins_14_SJ", "Statens Jernväger (Swedish Federal Railways) didn't own as many of the Habbiins_14 as the 17 series, but few did exist.");
     }
 
         @Override
