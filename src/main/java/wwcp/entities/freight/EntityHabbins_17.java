@@ -18,17 +18,17 @@ import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityHabbiins_17 extends GenericRailTransport {
+public class EntityHabbins_17 extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityHabbiins_17((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityHabbins_17((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
-    public EntityHabbiins_17(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityHabbins_17(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityHabbiins_17(World world) {
+    public EntityHabbins_17(World world) {
         super(world);
     }
     @Override
