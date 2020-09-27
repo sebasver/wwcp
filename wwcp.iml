@@ -712,7 +712,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/Trains.in.Motion-2.3.jar!/"/>
+          <root url="jar://$MODULE_DIR$/libs/TiM-Experimental-2020-09-26.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>
