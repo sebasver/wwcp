@@ -15,7 +15,7 @@ public class ChristmasSentinel extends RollingStockModel {
 
 	public ChristmasSentinel(){
 		super(); textureX = 512; textureY = 512;
-		this.addToCreators("Test Account");
+		this.addToCreators("MadFrogs");
 		//
 		TurboList group0 = new TurboList("group0");
 		group0.add(new ModelRendererTurbo(group0, 1, 1, textureX, textureY).addBox(0, 0, 0, 37, 1, 18)
