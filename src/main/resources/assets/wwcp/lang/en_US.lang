@@ -48,6 +48,7 @@ item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
 item.ES64U2.name=ES64U2
 item.ES64U4.name=ES64U4
 item.F7A.name=F7A
+item.GP7.name=GP7
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
 item.EurofimaCompartments.name=Eurofima Compartment Coach
