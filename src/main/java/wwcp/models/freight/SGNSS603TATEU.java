@@ -12,12 +12,12 @@ package wwcp.models.freight; //Path where the model is located
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
-public class SGNSS60TATEU extends ModelBase//Same as Filename
+public class SGNSS603TATEU extends ModelBase//Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public SGNSS60TATEU() //Same as Filename
+	public SGNSS603TATEU() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[267];
 
