@@ -812,6 +812,12 @@ public class Transport {
         return new Transport.Rollingstock("Habbiins_17", "Europe", "1990s", "",
                 "", type, " Boxcar", 26f, 120f, false, true, 0);
     }
+
+    //Sggnss 60 Load 1
+    public static Transport.TankCars Sgnss60Load1() {
+        return new Transport.TankCars("SGNSS 80 Load 4", "Europe", "2006-", "",
+                "", type, " Freight Container", 21.5f, 120f, false, true, 0, 60000);
+    }
 }
 
 
