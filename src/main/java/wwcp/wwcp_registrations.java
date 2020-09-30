@@ -251,7 +251,8 @@ public class wwcp_registrations {
                 new EntityHiCubePlateFBoxcar(null),
                 new EntityFortyFoot_Boxcar(null),
                 new EntityHabbiins_14(null),
-                new EntityHabbiins_17(null)
+                new EntityHabbiins_17(null),
+                new EntitySGNSS603TATEU(null)
         };
     }
 }
