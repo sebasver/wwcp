@@ -815,7 +815,7 @@ public class Transport {
 
     //Sggnss 60 Load 1
     public static Transport.TankCars Sgnss60Load1() {
-        return new Transport.TankCars("SGNSS 80 Load 4", "Europe", "2006-", "",
+        return new Transport.TankCars("SGNSS 60 Load 4", "Europe", "2006-", "",
                 "", type, " Freight Container", 21.5f, 120f, false, true, 0, 60000);
     }
 }
