@@ -33,7 +33,7 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{5f,0.08f,0},{-5f,0.08f,0}};
+        return new float[][]{{4f,0.08f,0},{-4f,0.08f,0}};
     }
 
     @Override
@@ -42,7 +42,7 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{5.0F, -5.0F};
+        return new float[]{4.0F, -4.0F};
     }
 
     public float getRenderScale() {
@@ -51,7 +51,7 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.475f,-0.1F,0F}};
+        return new float[][]{{-0F,-0.1F,0F}};
     }
 
     public void registerSkins() {
