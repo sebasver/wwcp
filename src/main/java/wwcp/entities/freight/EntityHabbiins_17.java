@@ -55,7 +55,7 @@ public class EntityHabbiins_17 extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_TWA_Brown.png", "textures/bogies/SGNSSBogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_TWA_Brown.png", "textures/bogies/SGNSSBogie2.png",
                 "Habbiins_17_TWA_Brown", "This is the most common livery to see in real life");
     }
 
