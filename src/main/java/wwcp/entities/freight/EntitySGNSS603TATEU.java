@@ -33,7 +33,7 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{4f,0.08f,0},{-4f,0.08f,0}};
+        return new float[][]{{4f,0.0f,0},{-4f,0.0f,0}};
     }
 
     @Override
