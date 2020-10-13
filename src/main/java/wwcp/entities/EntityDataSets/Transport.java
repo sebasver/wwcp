@@ -783,6 +783,13 @@ public class Transport {
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
 
+    //UK Flatbed
+    public static Transport.Rollingstock UKFlatbed() {
+        return new Transport.Rollingstock("UKFlatbed", "United Kingdom", "1930-1959", "",
+                "", type, " Freight Loose", 10f, 0f, false, true, 0);
+    }
+
+
     //Zacns 95
     public static Transport.TankCars Zacns95() {
         return new Transport.TankCars("Zacns 95", "Europe", "2006-", "",
