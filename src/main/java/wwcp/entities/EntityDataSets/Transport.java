@@ -789,6 +789,11 @@ public class Transport {
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
 
+    //UK Tanker
+    public static Transport.Rollingstock UKTanker() {
+        return new Transport.Rollingstock("UKTanker", "United Kingdom", "1930-1959", "",
+                "", type, " Freight Loose", 10f, 0f, false, true, 0);
+    }
 
     //Zacns 95
     public static Transport.TankCars Zacns95() {
