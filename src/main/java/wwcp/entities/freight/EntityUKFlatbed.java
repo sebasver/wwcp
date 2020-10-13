@@ -52,7 +52,7 @@ public class EntityUKFlatbed extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/UK_Flatbed_Texture_1.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKFlatbed/UK_Flatbed_Texture_1.png",
                 "Default Flat wagon",
                 "This was the factory skin of the car");
     }
