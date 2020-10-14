@@ -837,6 +837,12 @@ public class Transport {
                 "", type, " Boxcar", 26f, 120f, false, true, 0);
     }
 
+    //Hbbins
+    public static Transport.Rollingstock Hbbins() {
+        return new Transport.Rollingstock("Hbbins", "Europe", "1990s", "",
+                "", type, " Boxcar", 15f, 120f, false, true, 0);
+    }
+
     //Sggnss 60 Load 1
     public static Transport.TankCars Sgnss60Load1() {
         return new Transport.TankCars("SGNSS 60 Load 4", "Europe", "2006-", "",
