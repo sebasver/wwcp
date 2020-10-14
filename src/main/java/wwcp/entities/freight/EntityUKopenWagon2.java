@@ -66,11 +66,11 @@ public class EntityUKopenWagon2 extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return Transport.UKOpenWagon().reinforced;
+        return Transport.UKOpenWagon2().reinforced;
     }
 
     public float weightKg() {
-        return Transport.UKOpenWagon().weightinKGs;
+        return Transport.UKOpenWagon2().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -78,28 +78,28 @@ public class EntityUKopenWagon2 extends GenericRailTransport {
     }
 
     public String transportName() {
-        return Transport.UKOpenWagon().name;
+        return Transport.UKOpenWagon2().name;
     }
 
-    public String transportcountry() { return Transport.UKOpenWagon().country; }
+    public String transportcountry() { return Transport.UKOpenWagon2().country; }
 
-    public String transportYear() { return Transport.UKOpenWagon().year; }
+    public String transportYear() { return Transport.UKOpenWagon2().year; }
 
     public float transportTopSpeed() {
-        return Transport.UKOpenWagon().topSpeed;
+        return Transport.UKOpenWagon2().topSpeed;
     }
 
     public boolean isFictional() {
-        return Transport.UKOpenWagon().fictional;
+        return Transport.UKOpenWagon2().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.UKOpenWagon().additionalTextTitle) + Transport.UKOpenWagon().additionalText,
-                RailUtility.translate(Transport.UKOpenWagon().additionalTextTitle2) + Transport.UKOpenWagon().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.UKOpenWagon2().additionalTextTitle) + Transport.UKOpenWagon2().additionalText,
+                RailUtility.translate(Transport.UKOpenWagon2().additionalTextTitle2) + Transport.UKOpenWagon2().additionalText2};}
     }
     public int getInventoryRows() {
-        return Transport.UKOpenWagon().rows;
+        return Transport.UKOpenWagon2().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {
