@@ -253,7 +253,8 @@ public class wwcp_registrations {
                 new EntitySGNSS603TATEU(null),
                 new EntityUKFlatbed(null),
                 new EntityUKTanker(null),
-                new EntityUKVan(null)
+                new EntityUKVan(null),
+                new EntityHbbins(null)
         };
     }
 }
