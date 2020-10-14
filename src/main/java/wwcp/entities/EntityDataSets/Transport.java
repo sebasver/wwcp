@@ -783,6 +783,12 @@ public class Transport {
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
 
+    //UK Windcutter
+    public static Transport.Rollingstock UKOpenWagon2() {
+        return new Transport.Rollingstock("UK Windcutter", "United Kingdom", "1930-1959", "",
+                "", type, " Freight Loose", 10f, 0f, false, true, 0);
+    }
+
     //UK Van
     public static Transport.Rollingstock UKVan() {
         return new Transport.Rollingstock("UKVan", "United Kingdom", "1930-1959", "",
