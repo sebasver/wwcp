@@ -783,6 +783,12 @@ public class Transport {
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
 
+    //UK Van
+    public static Transport.Rollingstock UKOpenWagon() {
+        return new Transport.Rollingstock("UKOpenwagon", "United Kingdom", "1930-1959", "",
+                "", type, " Freight Loose", 12f, 0f, false, true, 0);
+    }
+
     //UK Flatbed
     public static Transport.Rollingstock UKFlatbed() {
         return new Transport.Rollingstock("UKFlatbed", "United Kingdom", "1930-1959", "",
@@ -790,9 +796,9 @@ public class Transport {
     }
 
     //UK Tanker
-    public static Transport.Rollingstock UKTanker() {
-        return new Transport.Rollingstock("UKTanker", "United Kingdom", "1930-1959", "",
-                "", type, " Freight Loose", 10f, 0f, false, true, 0);
+    public static Transport.TankCars UKTanker() {
+        return new Transport.TankCars("UKTanker", "United Kingdom", "1930-1959", "",
+                "", type, " Tank wagon", 12f, 0f, false, true, 0,  60000);
     }
 
     //Zacns 95
