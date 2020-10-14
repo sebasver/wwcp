@@ -82,7 +82,7 @@ public class EntityUKTanker extends GenericRailTransport {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKTanker/UK_Tanker_Texture_10.png",
                 "Lime Green UK Tanker",
                 "I don't know about you, but this seems toxic");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKTanker/UK_Tanker_Texture_6.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKTanker/UK_Tanker_Texture_11.png",
                 "WWCP UK Tanker 2",
                 "This skin represent the WWCP community");
     }
