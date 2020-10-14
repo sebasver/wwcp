@@ -54,10 +54,10 @@ public class EntityUKTanker extends GenericRailTransport {
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKTanker/UK_Tanker_Texture_1.png",
                 "WWCP UK Tanker 1",
-                "This skin represent the WWCP community");
+                "This skin represents the WWCP community");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKTanker/UK_Tanker_Texture_2.png",
                 "Yellow UK Tanker",
-                "This Tanker are carrying Petrol, proceed with caution");
+                "This Tanker is carrying Petrol, proceed with caution");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKTanker/UK_Tanker_Texture_3.png",
                 "Grey UK Tanker",
                 "This Tanker is just Grey");
@@ -84,7 +84,7 @@ public class EntityUKTanker extends GenericRailTransport {
                 "I don't know about you, but this seems toxic");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKTanker/UK_Tanker_Texture_11.png",
                 "WWCP UK Tanker 2",
-                "This skin represent the WWCP community");
+                "This skin represents the WWCP community");
     }
 
     @Override
