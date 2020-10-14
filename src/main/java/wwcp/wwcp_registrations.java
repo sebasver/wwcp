@@ -241,6 +241,7 @@ public class wwcp_registrations {
         return new GenericRailTransport[]{
                 new EntityTEUSmall(null),
                 new EntityUKopenWagon(null),
+                new EntityUKopenWagon2(null),
                 new EntityOFF52Beetle(null),
                 new EntitySGNS801BT2TT(null),
                 new EntitySGNS802BT(null),
