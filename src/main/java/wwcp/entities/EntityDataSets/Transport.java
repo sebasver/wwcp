@@ -804,7 +804,7 @@ public class Transport {
     //UK Tanker
     public static Transport.TankCars UKTanker() {
         return new Transport.TankCars("UKTanker", "United Kingdom", "1930-1959", "",
-                "", type, " Tank wagon", 12f, 0f, false, true, 0,  60000);
+                "", type, " Tank wagon", 12f, 0f, false, true, 0,  9000);
     }
 
     //Zacns 95
