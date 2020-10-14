@@ -784,8 +784,8 @@ public class Transport {
     }
 
     //UK Van
-    public static Transport.Rollingstock UKOpenWagon() {
-        return new Transport.Rollingstock("UKOpenwagon", "United Kingdom", "1930-1959", "",
+    public static Transport.Rollingstock UKVan() {
+        return new Transport.Rollingstock("UKVan", "United Kingdom", "1930-1959", "",
                 "", type, " Freight Loose", 12f, 0f, false, true, 0);
     }
 
