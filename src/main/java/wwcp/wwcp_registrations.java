@@ -254,7 +254,8 @@ public class wwcp_registrations {
                 new EntityHabbiins_17(null),
                 new EntitySGNSS603TATEU(null),
                 new EntityUKFlatbed(null),
-                new EntityUKTanker(null)
+                new EntityUKTanker(null),
+                new EntityUKVan(null)
         };
     }
 }
