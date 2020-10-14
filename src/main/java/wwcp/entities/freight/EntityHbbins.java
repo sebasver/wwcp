@@ -125,7 +125,7 @@ public class EntityHbbins extends GenericRailTransport {
     }
 
     public float[][] getRiderOffsets() {
-        return (float[][])null;
+        return null;
     }
 
     public float[] getHitboxSize() {
