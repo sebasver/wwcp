@@ -195,8 +195,6 @@ public class wwcp_registrations {
     //Temporary TC stock for testing purposes
     public static GenericRailTransport[] listTemperory() {
         return new GenericRailTransport[]{
-//                new EntityE10(null),
-//                new EntityPropaganda(null),
         };
     }
 
@@ -205,7 +203,6 @@ public class wwcp_registrations {
         return new GenericRailTransport[]{
                 new EntityTraxxF140MS2E(null),
                 new EntityV36Electric(null),
-//                new EntityRE484(null)
                 new EntityES64U2(null),
                 new EntityES64U4(null)
         };
