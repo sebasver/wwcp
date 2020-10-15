@@ -62,7 +62,7 @@ public class EntityHbbins extends GenericRailTransport {
                 "Brown Transwaggon Hbbins",
                 "Transwaggon are the biggest freightcar leasing company in europe, most of their Hbbins like the rest of their boxcar fleet has become brown due to dirt and rust dust.");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbins/TWAGrey.png",
-                "Brown Transwaggon Hbbins",
+                "Grey Transwaggon Hbbins",
                 "This is how a clean Transwaggon Hbbins looks like, they are common still");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbins/AtaCitrus.png",
                 "Ata Citrus Hbbins",
@@ -80,7 +80,7 @@ public class EntityHbbins extends GenericRailTransport {
 
     @Override
     public String getDefaultSkin() {
-        return "wwcp:TWAGrey";
+        return "wwcp:Grey Transwaggon Hbbins";
     }
 
     @Override
