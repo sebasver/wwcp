@@ -20,9 +20,13 @@ public class SGNSSBogie extends ModelBase //Same as Filename
 
 	public SGNSSBogie() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[37];
+		bodyModel = new ModelRendererTurbo[38];
 
 		initbodyModel_1();
+
+		translateAll(0F, 0F, 0F);
+
+
 		flipAll();
 	}
 
@@ -65,6 +69,7 @@ public class SGNSSBogie extends ModelBase //Same as Filename
 		bodyModel[34] = new ModelRendererTurbo(this, 89, 25, textureX, textureY); // Box 34
 		bodyModel[35] = new ModelRendererTurbo(this, 97, 25, textureX, textureY); // Box 35
 		bodyModel[36] = new ModelRendererTurbo(this, 113, 25, textureX, textureY); // Box 36
+		bodyModel[37] = new ModelRendererTurbo(this, 33, 29, textureX, textureY); // Box 37
 
 		bodyModel[0].addBox(0F, 0F, 0F, 1, 1, 14, 0F); // Box50
 		bodyModel[0].setRotationPoint(6F, 6F, -7F);
@@ -176,5 +181,8 @@ public class SGNSSBogie extends ModelBase //Same as Filename
 
 		bodyModel[36].addShapeBox(0F, 0F, 0F, 4, 2, 1, 0F,0.5F, 0.6F, -0.5F, -0.5F, -0.5F, -0.5F, -0.5F, -0.5F, 0F, 0.5F, 0.6F, 0F, 0.5F, -2.1F, -0.5F, -0.5F, -0.5F, -0.5F, -0.5F, -0.5F, 0F, 0.5F, -2.1F, 0F); // Box 36
 		bodyModel[36].setRotationPoint(-4.5F, 5F, -7F);
+
+		bodyModel[37].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 37
+		bodyModel[37].setRotationPoint(-1F, 2F, -1F);
 	}
 }

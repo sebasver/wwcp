@@ -783,6 +783,30 @@ public class Transport {
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
 
+    //UK Windcutter
+    public static Transport.Rollingstock UKOpenWagon2() {
+        return new Transport.Rollingstock("UK Windcutter", "United Kingdom", "1930-1959", "",
+                "", type, " Freight Loose", 10f, 0f, false, true, 0);
+    }
+
+    //UK Van
+    public static Transport.Rollingstock UKVan() {
+        return new Transport.Rollingstock("UKVan", "United Kingdom", "1930-1959", "",
+                "", type, " Freight Loose", 12f, 0f, false, true, 0);
+    }
+
+    //UK Flatbed
+    public static Transport.Rollingstock UKFlatbed() {
+        return new Transport.Rollingstock("UKFlatbed", "United Kingdom", "1930-1959", "",
+                "", type, " Freight Loose", 10f, 0f, false, true, 0);
+    }
+
+    //UK Tanker
+    public static Transport.TankCars UKTanker() {
+        return new Transport.TankCars("UKTanker", "United Kingdom", "1930-1959", "",
+                "", type, " Tank wagon", 12f, 0f, false, true, 0,  9000);
+    }
+
     //Zacns 95
     public static Transport.TankCars Zacns95() {
         return new Transport.TankCars("Zacns 95", "Europe", "2006-", "",
@@ -792,13 +816,37 @@ public class Transport {
     //60' Hi Cube Plate F Boxcar
     public static Transport.Rollingstock Hi_Cube_Plate_F_Boxcar() {
         return new Transport.Rollingstock("60' Hi Cube Plate F Boxcar", "America", "?", "",
-                "", type, " Boxcar", 80900f, 120f, false, true, 0);
+                "", type, " Boxcar", 80.9f, 120f, false, true, 0);
     }
 
     //40ft Boxcar
     public static Transport.Rollingstock Fortyfoot_Boxcar() {
         return new Transport.Rollingstock("40ft Boxcar", "America", "?", "",
-                "", type, " Boxcar", 48000f, 120f, false, true, 0);
+                "", type, " Boxcar", 48f, 120f, false, true, 0);
+    }
+
+    //Habbiins_14
+    public static Transport.Rollingstock Habbiins_14() {
+        return new Transport.Rollingstock("Habbiins_14", "Europe", "1990s", "",
+                "", type, " Boxcar", 26f, 120f, false, true, 0);
+    }
+
+    //Habbiins_17
+    public static Transport.Rollingstock Habbiins_17() {
+        return new Transport.Rollingstock("Habbiins_17", "Europe", "1990s", "",
+                "", type, " Boxcar", 26f, 120f, false, true, 0);
+    }
+
+    //Hbbins
+    public static Transport.Rollingstock Hbbins() {
+        return new Transport.Rollingstock("Hbbins", "Europe", "1990s", "",
+                "", type, " Boxcar", 15f, 120f, false, true, 0);
+    }
+
+    //Sggnss 60 Load 1
+    public static Transport.TankCars Sgnss60Load1() {
+        return new Transport.TankCars("SGNSS 60 Load 4", "Europe", "2006-", "",
+                "", type, " Freight Container", 21.5f, 120f, false, true, 0, 60000);
     }
 }
 

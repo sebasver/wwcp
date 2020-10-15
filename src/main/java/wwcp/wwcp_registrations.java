@@ -195,8 +195,6 @@ public class wwcp_registrations {
     //Temporary TC stock for testing purposes
     public static GenericRailTransport[] listTemperory() {
         return new GenericRailTransport[]{
-//                new EntityE10(null),
-//                new EntityPropaganda(null),
         };
     }
 
@@ -205,7 +203,6 @@ public class wwcp_registrations {
         return new GenericRailTransport[]{
                 new EntityTraxxF140MS2E(null),
                 new EntityV36Electric(null),
-//                new EntityRE484(null)
                 new EntityES64U2(null),
                 new EntityES64U4(null)
         };
@@ -241,6 +238,7 @@ public class wwcp_registrations {
         return new GenericRailTransport[]{
                 new EntityTEUSmall(null),
                 new EntityUKopenWagon(null),
+                new EntityUKopenWagon2(null),
                 new EntityOFF52Beetle(null),
                 new EntitySGNS801BT2TT(null),
                 new EntitySGNS802BT(null),
@@ -249,7 +247,14 @@ public class wwcp_registrations {
                 new EntityZACNS95(null),
                 new EntityEALOSX(null),                
                 new EntityHiCubePlateFBoxcar(null),
-                new EntityFortyFoot_Boxcar(null)
+                new EntityFortyFoot_Boxcar(null),
+                new EntityHabbiins_14(null),
+                new EntityHabbiins_17(null),
+                new EntitySGNSS603TATEU(null),
+                new EntityUKFlatbed(null),
+                new EntityUKTanker(null),
+                new EntityUKVan(null),
+                new EntityHbbins(null)
         };
     }
 }

@@ -55,6 +55,30 @@ public class EntityUKopenWagon extends GenericRailTransport {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/O1.png",
                 "Default open wagon",
                 "This was the factory skin of the car");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/O2.png",
+                "Green open wagon",
+                "This was the factory skin of the car");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/O3.png",
+                "Grey GW open wagon",
+                "This was the factory skin of the car");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/O4.png",
+                "Grey NE open wagon",
+                "This was the factory skin of the car");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/O5.png",
+                "Grey LMS open wagon",
+                "London Midland and Scottish Railway skin of the car");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/O6.png",
+                "Grey SR open wagon",
+                "This was the factory skin of the car");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/O7.png",
+                "Grey open wagon",
+                "This Grey colored Truck can be troublesome");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/O8.png",
+                "Blue open wagon",
+                "Blue is the only color for a really useful train");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKopenwagon/O9.png",
+                "Red open wagon",
+                "A nice Red color, and you'll never see it dirty");
     }
 
     @Override

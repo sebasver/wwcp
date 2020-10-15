@@ -96,11 +96,11 @@ public class EntityGP7 extends EntityTrainCore {
     }
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.6f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{1.5f, 1.250f, 0.4f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{6f,2.2f,1.5f};
+        return new float[]{7.3f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -117,7 +117,7 @@ public class EntityGP7 extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{1.9f,0.1f,0},{-2.2f,0.1f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{2.05f,0.1f,0},{-2.05f,0.1f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
@@ -134,7 +134,7 @@ public class EntityGP7 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.03f,-0.10F,0.F}};}
+        return new float[][]{{0.0f,-0.10F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>

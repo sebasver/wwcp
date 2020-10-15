@@ -16,7 +16,6 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.Blomberg_B;
-import wwcp.models.bogies.MzBogie;
 import wwcp.models.locomotives.diesels.F7A;
 import wwcp.worldwidecontentpack;
 
@@ -115,6 +114,11 @@ public class EntityF7A extends EntityTrainCore {
     }
 
     @Override
+    public String getDefaultSkin() {
+        return "wwcp:EMD Demonstrator";
+    }
+
+    @Override
     public float getMaxFuel(){return 20;}
 
 
@@ -124,11 +128,11 @@ public class EntityF7A extends EntityTrainCore {
 
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-3.82f,1.6f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-1.9f, 1.45f, -0.3f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{6f,2.2f,1.5f};
+        return new float[]{6.6f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -145,7 +149,7 @@ public class EntityF7A extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{1.69f,0.1f,0},{-2f,0.1f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{1.7f,0.1f,0},{-2.05f,0.1f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
@@ -162,7 +166,7 @@ public class EntityF7A extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.03f,-0.05F,0.F}};}
+        return new float[][]{{0.F,-0.05F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>

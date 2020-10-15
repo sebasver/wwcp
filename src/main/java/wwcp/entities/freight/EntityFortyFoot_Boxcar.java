@@ -33,7 +33,7 @@ public class EntityFortyFoot_Boxcar extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.45f,0.08f,0},{-1.70f,0.08f,0}};
+        return new float[][]{{2.05f,0.08f,0},{-2.05f,0.08f,0}};
     }
 
     @Override
@@ -51,7 +51,7 @@ public class EntityFortyFoot_Boxcar extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.475f,-0.1F,0F}};
+        return new float[][]{{-0F,-0.1F,0F}};
     }
 
     public void registerSkins() {
@@ -152,7 +152,7 @@ public class EntityFortyFoot_Boxcar extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{5.4f, 2f, 1.6F};
+        return new float[]{5.9f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
