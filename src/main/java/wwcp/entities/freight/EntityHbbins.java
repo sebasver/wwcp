@@ -79,6 +79,11 @@ public class EntityHbbins extends GenericRailTransport {
     }
 
     @Override
+    public String getDefaultSkin() {
+        return "wwcp:TWAGrey";
+    }
+
+    @Override
     public String transportFuelType() {
         return null;
     }

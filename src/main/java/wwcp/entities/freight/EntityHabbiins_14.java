@@ -56,11 +56,16 @@ public class EntityHabbiins_14 extends GenericRailTransport {
 
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_14/Habbiins_14_TWA_Brown.png", "textures/bogies/SGNSSBogie2.png",
-                "Habbiins_14_TWA_Brown", "This is the most common livery to see in real life");
+                "Habbiins 14 TWA_Brown", "This is the most common livery to see in real life");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_14/Habbiins_14_TWA_Grey.png", "textures/bogies/SGNSSBogie2.png",
-                "Habbiins_14_TWA_Grey", "This was the most common livery to see in real life, mostly when they came out from factories");
+                "Habbiins 14 TWA_Grey", "This was the most common livery to see in real life, mostly when they came out from factories");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_14/Habbiins_14_SJ.png", "textures/bogies/SGNSSBogie2.png",
-                "Habbiins_14_SJ", "Statens Jernväger (Swedish Federal Railways) didn't own as many of the Habbiins_14 as the 17 series, but few did exist.");
+                "Habbiins 14 SJ", "Statens Jernväger (Swedish Federal Railways) didn't own as many of the Habbiins_14 as the 17 series, but few did exist.");
+    }
+
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:Habbiins 14 TWA Grey";
     }
 
         @Override

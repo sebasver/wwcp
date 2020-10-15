@@ -56,11 +56,16 @@ public class EntityHabbiins_17 extends GenericRailTransport {
 
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_TWA_Brown.png", "textures/bogies/SGNSSBogie2.png",
-                "Habbiins_17_TWA_Brown", "This is the most common livery to see in real life");
+                "Habbiins 17 TWA Brown", "This is the most common livery to see in real life");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_TWA_Grey.png", "textures/bogies/SGNSSBogie2.png",
-                "Habbiins_17_TWA_Grey", "This is the most common livery to see in real life");
+                "Habbiins 17 TWA Grey", "This is the most common livery to see in real life");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_DB.png", "textures/bogies/SGNSSBogie2.png",
-                "Habbiins_17_DB", "This is the most common livery to see in real life, though more dirty");
+                "Habbiins 17 DB", "This is the most common livery to see in real life, though more dirty");
+    }
+
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:Habbiins 17 TWA Grey";
     }
 
         @Override
