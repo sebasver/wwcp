@@ -68,7 +68,7 @@ public class EntityHbbins extends GenericRailTransport {
                 "Ata Citrus Hbbins",
                 "This skin is fictional");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbins/BrownGrey.png",
-                "Brown nd Grey Hbbins",
+                "Brown and Grey Hbbins",
                 "This skin is fictional");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbins/Persil.png",
                 "Persil Hbbins",
