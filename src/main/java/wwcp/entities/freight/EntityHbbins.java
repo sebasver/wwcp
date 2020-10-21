@@ -48,7 +48,7 @@ public class EntityHbbins extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.0f,-0.10F,0.065F}};
+        return new float[][]{{0.0f,-0.10F,0.0F}};
     }
 
     public void registerSkins() {
