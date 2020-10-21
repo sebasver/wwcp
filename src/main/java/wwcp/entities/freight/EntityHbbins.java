@@ -118,7 +118,7 @@ public class EntityHbbins extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.UKFlatbed().additionalTextTitle) + Transport.Hbbins().additionalText,
+        {return new String[]{RailUtility.translate(Transport.Hbbins().additionalTextTitle) + Transport.Hbbins().additionalText,
                 RailUtility.translate(Transport.Hbbins().additionalTextTitle2) + Transport.Hbbins().additionalText2};}
     }
     public int getInventoryRows() {
