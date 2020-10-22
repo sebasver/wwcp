@@ -55,7 +55,7 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/SGNSS60/SGNSS603TATEU_1.png", "textures/bogies/SGNSSBogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/SGNSS60/SGNSS60TATEU_1.png", "textures/bogies/SGNSSBogie.png",
                 "Variant 1", "Tanktainers loads variant 1");
     }
 
