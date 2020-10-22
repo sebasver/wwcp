@@ -39,7 +39,7 @@ public class EntityHbbins extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, -1.0F};
+        return new float[]{2.5F, -2.5F};
     }
 
     public float getRenderScale() {
