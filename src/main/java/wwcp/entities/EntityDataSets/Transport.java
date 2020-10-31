@@ -843,9 +843,21 @@ public class Transport {
                 "", type, " Boxcar", 15f, 120f, false, true, 0);
     }
 
-    //Sggnss 60 Load 1
+    //Hbbillns
+    public static Transport.Rollingstock Hbbillns() {
+        return new Transport.Rollingstock("Hbbillns", "Europe", "1990s", "",
+                "", type, " Boxcar", 15f, 120f, false, true, 0);
+    }
+
+    //Sggnss 60 3 TATEU
     public static Transport.TankCars Sgnss60Load1() {
-        return new Transport.TankCars("SGNSS 60 Load 4", "Europe", "2006-", "",
+        return new Transport.TankCars("SGNSS 60 3 TATEU", "Europe", "2006-", "",
+                "", type, " Freight Container", 21.5f, 120f, false, true, 0, 60000);
+    }
+
+    //Sggnss 60 2 TATEU
+    public static Transport.TankCars Sgnss60Load2() {
+        return new Transport.TankCars("SGNSS 60 2 TATEU", "Europe", "2006-", "",
                 "", type, " Freight Container", 21.5f, 120f, false, true, 0, 60000);
     }
 }

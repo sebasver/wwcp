@@ -39,7 +39,7 @@ public class EntityHbbins extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{6.0F, -1.0F};
+        return new float[]{2.3F, -2.3F};
     }
 
     public float getRenderScale() {
@@ -48,7 +48,7 @@ public class EntityHbbins extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.0f,-0.10F,0.065F}};
+        return new float[][]{{0.0f,-0.10F,0.0F}};
     }
 
     public void registerSkins() {
@@ -68,7 +68,7 @@ public class EntityHbbins extends GenericRailTransport {
                 "Ata Citrus Hbbins",
                 "This skin is fictional");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbins/BrownGrey.png",
-                "Brown nd Grey Hbbins",
+                "Brown and Grey Hbbins",
                 "This skin is fictional");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbins/Persil.png",
                 "Persil Hbbins",
@@ -118,7 +118,7 @@ public class EntityHbbins extends GenericRailTransport {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.UKFlatbed().additionalTextTitle) + Transport.Hbbins().additionalText,
+        {return new String[]{RailUtility.translate(Transport.Hbbins().additionalTextTitle) + Transport.Hbbins().additionalText,
                 RailUtility.translate(Transport.Hbbins().additionalTextTitle2) + Transport.Hbbins().additionalText2};}
     }
     public int getInventoryRows() {

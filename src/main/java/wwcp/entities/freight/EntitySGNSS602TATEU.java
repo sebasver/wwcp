@@ -13,21 +13,21 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.SGNSSBogie;
-import wwcp.models.freight.SGNSS603TATEU;
+import wwcp.models.freight.SGNSS602TATEU;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntitySGNSS603TATEU extends GenericRailTransport {
+public class EntitySGNSS602TATEU extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new WWCPTransport(new EntitySGNSS603TATEU((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntitySGNSS602TATEU((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
-    public EntitySGNSS603TATEU(UUID owner, World world, double xPos, double yPos, double zPos) {super(owner, world, xPos, yPos, zPos);
+    public EntitySGNSS602TATEU(UUID owner, World world, double xPos, double yPos, double zPos) {super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntitySGNSS603TATEU(World world) {
+    public EntitySGNSS602TATEU(World world) {
         super(world);
     }
 
@@ -65,11 +65,11 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return Transport.Sgnss60Load1().reinforced;
+        return Transport.Sgnss60Load2().reinforced;
     }
 
     public int[] getTankCapacity() {
-        return new int[] {Transport.Sgnss60Load1().tankcapacity, Transport.Sgnss60Load1().tankcapacity};
+        return new int[] {Transport.Sgnss60Load2().tankcapacity, Transport.Sgnss60Load2().tankcapacity};
     }
 
     public String[] getTankFilters(int tankID) {
@@ -77,7 +77,7 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
     }
 
     public float weightKg() {
-        return Transport.Sgnss60Load1().weightinKGs;
+        return Transport.Sgnss60Load2().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -85,28 +85,28 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
     }
 
     public String transportName() {
-        return Transport.Sgnss60Load1().name;
+        return Transport.Sgnss60Load2().name;
     }
 
-    public String transportcountry() { return Transport.Sgnss60Load1().country; }
+    public String transportcountry() { return Transport.Sgnss60Load2().country; }
 
-    public String transportYear() { return Transport.Sgnss60Load1().year; }
+    public String transportYear() { return Transport.Sgnss60Load2().year; }
 
     public float transportTopSpeed() {
-        return Transport.Sgnss60Load1().topSpeed;
+        return Transport.Sgnss60Load2().topSpeed;
     }
 
     public boolean isFictional() {
-        return Transport.Sgnss60Load1().fictional;
+        return Transport.Sgnss60Load2().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.Sgnss60Load1().additionalTextTitle) + Transport.Sgnss60Load1().additionalText,
-                RailUtility.translate(Transport.Sgnss60Load1().additionalTextTitle2) + Transport.Sgnss60Load1().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.Sgnss60Load2().additionalTextTitle) + Transport.Sgnss60Load2().additionalText,
+                RailUtility.translate(Transport.Sgnss60Load2().additionalTextTitle2) + Transport.Sgnss60Load2().additionalText2};}
     }
     public int getInventoryRows() {
-        return Transport.Sgnss60Load1().rows;
+        return Transport.Sgnss60Load2().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {
@@ -126,7 +126,7 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new SGNSS603TATEU()};
+        return new ModelBase[]{new SGNSS602TATEU()};
     }
 
     public Item getItem() {
