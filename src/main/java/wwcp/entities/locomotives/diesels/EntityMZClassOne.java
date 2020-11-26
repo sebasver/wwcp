@@ -88,14 +88,18 @@ public class EntityMZClassOne extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIDSB1990-2020s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI/MzIDSB1990-2020s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI/MzIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery 1980", "Standard Red and Black livery for the DSB before the cornered windows were blinded in 1990");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIRDK.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI/MzIRDK.png", "textures/bogies/Mz_Bogey.png",
                 "Railion Livery", "After DSB Gods (DSB Freight/Cargo) was sold to Railion in 2001, all DSB markers were removed from the Locomotives");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIWWCP.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI/MzIWWCP.png", "textures/bogies/Mz_Bogey.png",
                 "WWCP Commercial Livery", "Standard Purple Blue livery for WWCP");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI/TGOJTMZ1410.png", "textures/bogies/Mz_Bogey.png",
+                "TGOJ TMZ 1410", "STT sold number 1410 to TGOJ in 2005, the skin clivery survived over Green Cargo and till NRFAB,until they sold it to BaneNor, and it was reverted back into classic DSB Red/Black");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI/3TTMZ1409.png", "textures/bogies/Mz_Bogey.png",
+                "IGAB livery from when they bough Mz 1409 from DSB, it carried over to 3T or Three T AB", "Standard Purple Blue livery for WWCP");
     }
 
     @Override
