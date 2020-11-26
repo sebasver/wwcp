@@ -93,7 +93,7 @@ public class EntityMZClassThree extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIII/MzIIIDSB1972-1980s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery 1972", "Standard Red and Black livery for the DSB 1972, although plows were added the windows weren't blinded until 1990");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIII/NEGMZ1439.png", "textures/bogies/Mz_Bogey.png",
-                "DSB Red and Black Livery", "Almost all of Class III was sold to Australia, and two to spain. The reminder in Denmark was number 1430, which was used for spare parts, then 1439 which is still usable");
+                "NEG Mz 1439", "1439, last of the Class III still remains in Denmark and is still usable");
     }
 
     @Override
