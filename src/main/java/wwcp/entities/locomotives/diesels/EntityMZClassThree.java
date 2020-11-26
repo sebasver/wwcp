@@ -88,10 +88,12 @@ public class EntityMZClassThree extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIIDSB1990-2000s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIII/MzIIIDSB1980-2000s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIIDSB1972-1990s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIII/MzIIIDSB1972-1980s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery 1972", "Standard Red and Black livery for the DSB 1972, although plows were added the windows weren't blinded until 1990");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIII/NEGMZ1439.png", "textures/bogies/Mz_Bogey.png",
+                "DSB Red and Black Livery", "Almost all of Class III was sold to Australia, and two to spain. The reminder in Denmark was number 1430, which was used for spare parts, then 1439 which is still usable");
     }
 
     @Override
@@ -107,7 +109,7 @@ public class EntityMZClassThree extends EntityTrainCore {
     }
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-4.25f,1.4f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-4.25f,1.55f, -0.25f}};}
 
     @Override
     public float[] getHitboxSize() {
