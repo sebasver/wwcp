@@ -88,9 +88,9 @@ public class EntityMZClassOne1967 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIBrown.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI/MzIBrown.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Brown Livery", "The original livery of the Class Mz I and II when delivered to DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI/MzIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery 1980", "Standard Red and Black livery for the DSB before the cornered windows were blinded in 1990");
     }
 
