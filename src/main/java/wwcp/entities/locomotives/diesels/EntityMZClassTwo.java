@@ -88,12 +88,16 @@ public class EntityMZClassTwo extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIDSB1990-2020s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzII/MzIIDSB1990-2020s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIRDK.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzII/MzIIBrown.png", "textures/bogies/Mz_Bogey.png",
+                "DSB Brown Livery", "The original livery of the Class Mz I and II when delivered to DSB");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzII/MzIIRDK.png", "textures/bogies/Mz_Bogey.png",
                 "Railion Livery", "After DSB Gods (DSB Freight/Cargo) was sold to Railion in 2001, all DSB markers were removed from the Locomotives");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzII/MzIIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery 1980", "Standard Red and Black livery for the DSB before the cornered windows were blinded in 1990");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzII/STTTMZ1413.png", "textures/bogies/Mz_Bogey.png",
+                "STT TMZ 1413", "STT painted TMZ 1413 in a special livery, with a few vent modifications later on it remained in this livery through its life in STT and NRFAB, it was sold to IBAB in 2013");
     }
 
     @Override
