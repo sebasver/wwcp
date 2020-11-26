@@ -104,7 +104,7 @@ public class EntityMZClassOne1967 extends EntityTrainCore {
 
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-4.25f,1.75f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-4.25f,1.5f, -0.25f}};}
 
     @Override
     public float[] getHitboxSize() {
