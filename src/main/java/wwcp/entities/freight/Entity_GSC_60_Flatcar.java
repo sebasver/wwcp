@@ -107,7 +107,7 @@ public class Entity_GSC_60_Flatcar extends GenericRailTransport {
     public int getInventoryRows() {
         return Transport.GSC_Flatcar().rows;
     }
-K
+
     public TrainsInMotion.transportTypes getType() {
         return TrainsInMotion.transportTypes.FREIGHT;
     }
