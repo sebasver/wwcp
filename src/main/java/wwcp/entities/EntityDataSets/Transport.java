@@ -825,6 +825,21 @@ public class Transport {
                 "", type, " Boxcar", 48f, 120f, false, true, 0);
     }
 
+    public static Transport.Rollingstock GSC_Flatcar() {
+        return new Transport.Rollingstock("GSCFlatcar", "America", "1956", "",
+                "", type, " Flatcar", 75f, 0f, false, true, 0);
+    }
+
+    public static Transport.Rollingstock GSC_FlatcarBulkhead() {
+        return new Transport.Rollingstock("GSCFlatcarBulkhead", "America", "1956", "",
+                "", type, " Flatcar", 75f, 0f, false, true, 0);
+    }
+
+    public static Transport.Rollingstock GSC_FlatcarBulkheadLate() {
+        return new Transport.Rollingstock("GSCFlatcarBulkheadLate", "America", "1956", "",
+                "", type, " Flatcar", 75f, 0f, false, true, 0);
+    }
+
     //Habbiins_14
     public static Transport.Rollingstock Habbiins_14() {
         return new Transport.Rollingstock("Habbiins_14", "Europe", "1990s", "",

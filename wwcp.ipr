@@ -18,7 +18,6 @@
     <option name="nameOverrideEnabled" value="true" />
     <option name="nameOverrideText" value="World Wide Content Pack" />
   </component>
-  <component name="Encoding" addBOMForNewFiles="with NO BOM" />
   <component name="GradleUISettings">
     <setting name="root" />
   </component>
