@@ -88,10 +88,12 @@ public class EntityMZClassThree extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIIDSB1990-2000s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIII/MzIIIDSB1980s-2000s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIIDSB1972-1990s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIII/MzIIIDSB1972-1980s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery 1972", "Standard Red and Black livery for the DSB 1972, although plows were added the windows weren't blinded until 1990");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIII/NEGMZ1439.png", "textures/bogies/Mz_Bogey.png",
+                "NEG Mz 1439", "1439, last of the Class III still remains in Denmark and is still usable");
     }
 
     @Override
@@ -107,7 +109,7 @@ public class EntityMZClassThree extends EntityTrainCore {
     }
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-4.25f,1.4f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-4.3f,1.55f, -0.25f}};}
 
     @Override
     public float[] getHitboxSize() {
