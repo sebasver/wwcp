@@ -86,7 +86,6 @@ public class EntityMZClassOne extends EntityTrainCore {
     @Override
     public float transportTopSpeed(){return accelerator<0? Transport.MZI().backTopSpeed: Transport.MZI().topSpeed;}
 
-    //todo implement right names for this stuff
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIDSB1990-2020s.png", "textures/bogies/Mz_Bogey.png",
@@ -99,8 +98,12 @@ public class EntityMZClassOne extends EntityTrainCore {
                 "WWCP Commercial Livery", "Standard Purple Blue livery for WWCP");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/3TTMZ1407.png", "textures/bogies/Mz_Bogey.png",
                 "TTMZ Skin", "Standard Purple Blue livery for WWCP");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI/TGOJTMZ1410.png", "textures/bogies/Mz_Bogey.png",
+                "TGOJ TMZ 1410", "STT sold number 1410 to TGOJ in 2005, the skin clivery survived over Green Cargo and till NRFAB,until they sold it to BaneNor, and it was reverted back into classic DSB Red/Black");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzI/3TTMZ1409.png", "textures/bogies/Mz_Bogey.png",
+                "IGAB livery from when they bough Mz 1409 from DSB, it carried over to 3T or Three T AB", "Standard Purple Blue livery for WWCP");
     }
-    
+
     @Override
     public String getDefaultSkin() {
         return "wwcp:DSB Red and Black Livery";
@@ -116,7 +119,7 @@ public class EntityMZClassOne extends EntityTrainCore {
 
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-4.25f,1.4f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-4.25f,1.55f, -0.25f}};}
 
     @Override
     public float[] getHitboxSize() {
