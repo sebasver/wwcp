@@ -110,9 +110,11 @@ public class EntityF7A extends EntityTrainCore {
                 "WWCP 2 Years blue nose", "Fictional WWCP livery");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/WWCP_2.png", "textures/bogies/blombergB_silver.png",
                 "WWCP 2 Years purple nose", "Fictional WWCP livery");
-
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7_SP_BloodyNose.png", "textures/bogies/blombergB_silver.png",
+                "F7 SP Bloodynose", "Fictional WWCP livery");
+        //todo fix above entry.
     }
-
+    
     @Override
     public String getDefaultSkin() {
         return "wwcp:EMD Demonstrator";

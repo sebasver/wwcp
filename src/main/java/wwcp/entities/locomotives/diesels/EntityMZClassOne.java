@@ -86,6 +86,7 @@ public class EntityMZClassOne extends EntityTrainCore {
     @Override
     public float transportTopSpeed(){return accelerator<0? Transport.MZI().backTopSpeed: Transport.MZI().topSpeed;}
 
+    //todo implement right names for this stuff
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIDSB1990-2020s.png", "textures/bogies/Mz_Bogey.png",
@@ -96,8 +97,10 @@ public class EntityMZClassOne extends EntityTrainCore {
                 "Railion Livery", "After DSB Gods (DSB Freight/Cargo) was sold to Railion in 2001, all DSB markers were removed from the Locomotives");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIWWCP.png", "textures/bogies/Mz_Bogey.png",
                 "WWCP Commercial Livery", "Standard Purple Blue livery for WWCP");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/3TTMZ1407.png", "textures/bogies/Mz_Bogey.png",
+                "TTMZ Skin", "Standard Purple Blue livery for WWCP");
     }
-
+    
     @Override
     public String getDefaultSkin() {
         return "wwcp:DSB Red and Black Livery";

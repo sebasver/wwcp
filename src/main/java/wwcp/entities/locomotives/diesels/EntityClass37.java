@@ -89,7 +89,9 @@ import java.util.UUID;
         @Override
         public void registerSkins(){
             SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/Class37/C1.png","textures/bogies/Class37Bogie.png",
-                    "BR Livery", "Standard commisioned British Rail livery");
+                    "BR Livery", "Standard commissioned British Rail livery");
+            SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/Class37/C2.png","textures/bogies/Class37Bogie.png",
+                    "EWS Livery", "Standard commissioned EWS livery");
         }
 
         /**
@@ -111,7 +113,7 @@ import java.util.UUID;
 
         @Override
         public float[][] bogieModelOffsets() {
-            return new float[][]{{2.9f,0.12f,0},{-2.9f,0.12f,0}};
+            return new float[][]{{2.9f,-0.05f,0},{-2.9f,-0.05f,0}};
         }
 
         @Override
@@ -185,7 +187,7 @@ import java.util.UUID;
 
         @Override
         public float[][] modelOffsets() {
-            return new float[][]{{-0.05f,-0.15F,0.F}};}
+            return new float[][]{{-0.05f,0.05F,0.F}};}
             
         /**
          * <h2>Fluid Tank Capacity</h2>
