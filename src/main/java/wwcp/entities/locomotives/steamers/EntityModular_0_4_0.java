@@ -9,8 +9,6 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
-
-import java.util.UUID;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityFurnace;
@@ -21,68 +19,75 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.locomotives.steamers.Class812;
+import wwcp.models.locomotives.steamers.Modular_0_4_0;
 import wwcp.worldwidecontentpack;
 
-public class EntityClass812 extends EntityTrainCore {
+import java.util.UUID;
 
-    public EntityClass812(UUID owner, World world, double xPos, double yPos, double zPos) {
+// XXXX -> Entity Name
+// YYYY -> Data for SuperStat
+// ZZZZ -> Country for tab
+// QQQQ -> Bogies
+
+public class EntityModular_0_4_0 extends EntityTrainCore {
+
+    public EntityModular_0_4_0(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityClass812(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new WWCPTransport(new EntityModular_0_4_0(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
-    public EntityClass812(World world) {
+    public EntityModular_0_4_0(World world) {
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.CR812().name; }
+    public String transportName() { return Transport.Modular_0_4_0().name; }
 
     @Override
-    public String transportcountry() { return Transport.CR812().country; }
+    public String transportcountry() { return Transport.Modular_0_4_0().country; }
 
     @Override
-    public String transportYear() { return Transport.CR812().year; }
+    public String transportYear() { return Transport.Modular_0_4_0().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.CR812().fuel;
+        return Transport.Modular_0_4_0().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.CR812().fictional;
+        return Transport.Modular_0_4_0().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.CR812().tractive_effort;
+        return Transport.Modular_0_4_0().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.CR812().metric_horsepower;
+        return Transport.Modular_0_4_0().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  Transport.CR812().weightinKGs;
+        return  Transport.Modular_0_4_0().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.CR812().reinforced;
+        return Transport.Modular_0_4_0().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.CR812().additionalTextTitle) + Transport.CR812().additionalText,
-                RailUtility.translate(Transport.CR812().additionalTextTitle2) + Transport.CR812().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.Modular_0_4_0().additionalTextTitle) + Transport.Modular_0_4_0().additionalText,
+                RailUtility.translate(Transport.Modular_0_4_0().additionalTextTitle2) + Transport.Modular_0_4_0().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.CR812().backTopSpeed: Transport.CR812().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.Modular_0_4_0().backTopSpeed: Transport.Modular_0_4_0().topSpeed;}
 
-    public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/C812/C1.png", "default",
-                "Used by Germany in WWI as a transport for solders and equipment");
-
+    @Override
+    public void registerSkins(){
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Steam/modular_0_4_0/Modular_0-4-0_Texture_1.png",
+                "Modular 040 1", "Used by the NMBS/SNCB in belgium for freight trains");
     }
 
     public int getInventoryRows() {
@@ -98,11 +103,16 @@ public class EntityClass812 extends EntityTrainCore {
     }
 
     public float[][] getRiderOffsets() {
-        return new float[][]{{1.3F, 1.2F, 0.0F}};
+        return new float[][]{{0.8F, 1.1F, 0.3F}};
     }
 
     public float[] getHitboxSize() {
-        return new float[]{4.45F, 2.1F, 1.3F};
+        return new float[]{2.79F, 1.6F, 1.3F};
+    }
+
+    @Override
+    public float[][] modelOffsets() {
+        return new float[][]{{0f,0F,0.065f}};
     }
 
     public ItemStack[] getRecipie() {
@@ -113,13 +123,14 @@ public class EntityClass812 extends EntityTrainCore {
         return 0.5F;
     }
 
-    public float[][] getSmokeOffset() {
-        return new float[][]{{-1.0F, 0.0F, 0.5F, 1.1711154E7F, 30.0F}, {-1.0F, 0.0F, -0.5F, 1.1711154E7F, 30.0F}, {-1.4F, 2.0F, 0.0F, 3947580.0F, 500.0F}};
-    }
-
     public float[][] bogieModelOffsets() {
         return null;
 
+    }
+
+    @Override
+    public float getPlayerScale() {
+        return 0.50f;
     }
 
     public ModelBase[] bogieModels() {
@@ -134,20 +145,12 @@ public class EntityClass812 extends EntityTrainCore {
         return 0.0625F;
     }
 
-    @Override
-    public float[][] modelOffsets() {
-        return new float[][]{{0.15f,-0.12F,0.F}};}
-
     public boolean shouldRiderSit() {
         return false;
     }
-    
+
     public int[] getTankCapacity() {
         return new int[]{9161, 800};
-    }
-
-    public int getRFCapacity() {
-        return 0;
     }
 
     public String[] getTankFilters(int tank) {
@@ -179,7 +182,7 @@ public class EntityClass812 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new Class812()};
+        return new ModelBase[]{new Modular_0_4_0()};
     }
 
     @SideOnly(Side.CLIENT)

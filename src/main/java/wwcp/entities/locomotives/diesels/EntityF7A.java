@@ -151,7 +151,7 @@ public class EntityF7A extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{1.7f,0.1f,0},{-2.05f,0.1f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{1.7f,0f,0},{-2.05f,0f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
@@ -168,7 +168,7 @@ public class EntityF7A extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.F,-0.05F,0.F}};}
+        return new float[][]{{0.F,0F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>

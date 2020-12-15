@@ -1,5 +1,5 @@
-//This is a documentation class for copy pasting into a passenger entity file.
 package wwcp.entities.passengerstock;
+
 
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -13,100 +13,112 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.passengerStock.GWROpenXmas;
+import wwcp.models.bogies.Amfleet1_truck;
+import wwcp.models.bogies.EurofimaBogie;
+import wwcp.models.passengerStock.Amfleet1;
+import wwcp.models.passengerStock.Amfleet1;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
 import static ebf.tim.utility.RailUtility.DefineStack;
 
-// XXXX
-// YYYY
-// ZZZZ
-// QQQQ
 
-public class EntityGWRThirdChristmas extends GenericRailTransport {
+public class EntityAmfleet1 extends GenericRailTransport {
     private static final String[] itemDescription = new String[]{
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityGWRThirdChristmas(null), worldwidecontentpack.MODID , worldwidecontentpack.FestivitiesTab);
+    public static final Item thisItem = new WWCPTransport(new EntityAmfleet1(null), worldwidecontentpack.MODID , worldwidecontentpack.America);
 
 
-    public EntityGWRThirdChristmas(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityAmfleet1(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityGWRThirdChristmas(World world){
+    public EntityAmfleet1(World world){
         super(world);
     }
 
     @Override
     public boolean isReinforced() {
-        return Transport.GWRThirdOpenChristmas().reinforced;
+        return Transport.Amfleet1().reinforced;
     }
 
     @Override
     public String transportName() {
-        return Transport.GWRThirdOpenChristmas().name;
+        return Transport.Amfleet1().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.GWRThirdOpenChristmas().country;
+        return Transport.Amfleet1().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.GWRThirdOpenChristmas().year;
+        return Transport.Amfleet1().year;
     }
 
     @Override
     public float weightKg() {
-        return Transport.GWRThirdOpenChristmas().weightinKGs;
+        return Transport.Amfleet1().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.GWRThirdOpenChristmas().fictional;
+        return Transport.Amfleet1().fictional;
+    }
+
+    @Override
+    public String[] additionalItemText() {
+        {return new String[]{RailUtility.translate(Transport.Amfleet1().additionalTextTitle) + Transport.Amfleet1().additionalText,
+                RailUtility.translate(Transport.Amfleet1().additionalTextTitle2) + Transport.Amfleet1().additionalText2};}
     }
 
     @Override
     public String transportFuelType() {return null;}
-
-    @Override
-    public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.GWRThirdOpenChristmas().additionalTextTitle) + Transport.GWRThirdOpenChristmas().additionalText,
-                RailUtility.translate(Transport.GWRThirdOpenChristmas().additionalTextTitle2) + Transport.GWRThirdOpenChristmas().additionalText2};}
-    }
-
+    /**
+     * <h1>Variable Overrides</h1>
+     */
 
     @Override
     public float[][] bogieModelOffsets() {
-        return null;
+        return new float[][]{{3.975f,0f,0},{-3.975f,0f,0}};
     }
 
     @Override
     public ModelBase[] bogieModels() {
-        return null;
+        return new ModelBase[]{new Amfleet1_truck()};
     }
 
     /**
      * <h2>Bogie Offset</h2>
      */
     @Override
-    public float[] bogieLengthFromCenter(){return new float[]{1f,-1f};}
+    public float[] bogieLengthFromCenter(){return new float[]{4f,-4f};}
 
     @Override
     public float getRenderScale() {
         return 0.0625f;
     }
 
+    @Override
+    public float[][] modelOffsets() {
+        return new float[][]{{0.4f,0.05F,0.F}};
+    }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ChristmasStock/GWROpenPassengerXmas.png",
-                "NAME", "Description");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/amfleet1/Amfleet1.png",
+                "textures/bogies/Amfleet1_truck.png",
+                "Amfleet", "Celebration livery for 2 years WWCP");
     }
+
+    /*@Override
+    public String getDefaultSkin() {
+        return "";
+    }*/
+    
     @Override
     public ItemStack[] getRecipie() {
         return new ItemStack[]{
@@ -115,7 +127,7 @@ public class EntityGWRThirdChristmas extends GenericRailTransport {
                 null, null, null
         };
     }
-
+    
     /**
      * <h2>Inventory Size</h2>
      */
@@ -130,20 +142,12 @@ public class EntityGWRThirdChristmas extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0.85f,1.4f, -0.15f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{2.2f,1.1f, 0.2f}};}
 
-    @Override
-    public float[][] modelOffsets() {
-        return new float[][]{{2.25f,-0.07F,-0.69F}};
-    }
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{3.06f,1.8f,1.5f};
-    }
-
-    public boolean shouldRiderSit() {
-        return false;
+        return new float[]{9f,2.1f,1.5f};
     }
 
     @Override
@@ -152,7 +156,7 @@ public class EntityGWRThirdChristmas extends GenericRailTransport {
     }
 
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new GWROpenXmas()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new Amfleet1()};}
 
     /**
      * <h2>pre-asigned values</h2>
@@ -162,3 +166,4 @@ public class EntityGWRThirdChristmas extends GenericRailTransport {
         return thisItem;
     }
 }
+

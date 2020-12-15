@@ -48,7 +48,7 @@ public class EntityUKFlatbed extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.625f,-0.10F,0.065F}};
+        return new float[][]{{0.625f,0F,0.065F}};
     }
 
     public void registerSkins() {

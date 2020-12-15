@@ -302,7 +302,7 @@ public class Transport {
                 55000f, 1750f, 102f, 140f, false, true, 0);
     }
 
-    //CR 812 "CRClass812"
+    //CR C812 "CRClass812"
     public static Transport.LocomotiveNoBackspeed CR812() {
         return new Transport.LocomotiveNoBackspeed("Class812", "United Kingdom", "1899-1963", "Steam",
                 nick, " Jumbos", type, " Universal Locomotive",
@@ -340,15 +340,27 @@ public class Transport {
                 40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
 
+    public static Transport.LocomotiveNoBackspeed FP7A() {
+        return new Transport.LocomotiveNoBackspeed("FP7A", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
+                40000f, 1500f, 123.7f, 105f, false, true, 0);
+    }
+
     //F7B
     public static Transport.TankCars F7B() {
         return new Transport.TankCars("F7B", "America", "1949-Present", "",
                 "", type, " B-Unit", 114f, 105f, false, true, 0, 60000);
     }
 
-    //CR 812 Tender "Mcintosh3000Gallon"
+    //CR C812 Tender "Mcintosh3000Gallon"
     public static Transport.TankCars Mcintosh3000Galon() {
         return new Transport.TankCars("Class812Tender", "United_Kingdom", "1899-1963", "",
+                "", type, " Tender", 19.5f, 0f, false, true, 0, 300000);
+    }
+
+    //CR C812 Tender "Mcintosh3000Gallon"
+    public static Transport.TankCars MakeshiftTender() {
+        return new Transport.TankCars("MakeshiftTender", "United_Kingdom", "1899-1963", "",
                 "", type, " Tender", 19.5f, 0f, false, true, 0, 300000);
     }
 
@@ -459,6 +471,12 @@ public class Transport {
                 8870f, 100f, 19.3f, 33.8f, false, true, 0);
     }
 
+    //todo fix these stats
+    public static Transport.LocomotiveNoBackspeed Modular_0_4_0() {
+        return new Transport.LocomotiveNoBackspeed("Modular040", "United Kingdom", "1931-1955", "Steam",
+                "", "", type, " Shunting Locomotive",
+                8870f, 100f, 19.3f, 33.8f, false, true, 0);
+    }
 
     //T32 Tender todo fix these stats
     public static Transport.Rollingstock T26() {
@@ -633,6 +651,18 @@ public class Transport {
                 31473.3f, 360.3f, 43.0f, 60f, false, true, 0);
     }
 
+    //DBpza //todo unfinished
+    public static Transport.Rollingstock ACF_60Seat() {
+        return new Transport.Rollingstock("ACF_60Seat", "Germany", "1997-", "",
+                "", type, " Passenger", 47.5f, 140f, false, true, 0);
+    }
+
+    //DBpza //todo unfinished
+    public static Transport.Rollingstock GWR_Toad20() {
+        return new Transport.Rollingstock("GWRToad20", "Germany", "1997-", "",
+                "", type, " Passenger", 47.5f, 140f, false, true, 0);
+    }
+
     //DBpza
     public static Transport.Rollingstock DBpza() {
         return new Transport.Rollingstock("Dobbelstock 4th generation", "Germany", "1997-", "",
@@ -661,6 +691,12 @@ public class Transport {
     public static Transport.Rollingstock EalosX() {
         return new Transport.Rollingstock("Ealos-X", "Europe", "1996-", "",
                 "", type, "Freight Loose", 24.3f, 120f, false, true, 0);
+    }
+
+    //Eurofima with Compartments
+    public static Transport.Rollingstock Amfleet1() {
+        return new Transport.Rollingstock("Amfleet1", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
     }
 
     //Eurofima with Compartments
@@ -800,6 +836,11 @@ public class Transport {
         return new Transport.Rollingstock("UKFlatbed", "United Kingdom", "1930-1959", "",
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
+    //todo fix stats
+    public static Transport.Rollingstock Chaldron() {
+        return new Transport.Rollingstock("Chaldron", "United Kingdom", "1930-1959", "",
+                "", type, " Freight Loose", 10f, 0f, false, true, 0);
+    }
 
     //UK Tanker
     public static Transport.TankCars UKTanker() {
@@ -828,6 +869,16 @@ public class Transport {
     public static Transport.Rollingstock GSC_Flatcar() {
         return new Transport.Rollingstock("GSCFlatcar", "America", "1956", "",
                 "", type, " Flatcar", 75f, 0f, false, true, 0);
+    }
+
+    public static Transport.Rollingstock Flatcar_89ft() {
+        return new Transport.Rollingstock("89ftFlatCar", "America", "1956", "",
+                "", type, " Flatcar", 75f, 0f, false, true, 0);
+    }
+
+    public static Transport.Rollingstock Autorack_89ft_BiLevel() {
+        return new Transport.Rollingstock("89ftBiLevelAutoRack", "America", "1956", "",
+                "", type, " Autorack", 75f, 0f, false, true, 0);
     }
 
     public static Transport.Rollingstock GSC_FlatcarBulkhead() {

@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.Blomberg_B;
-import wwcp.models.locomotives.diesels.GP7;
+import wwcp.models.locomotives.diesels.FP7Model;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -27,66 +27,72 @@ import java.util.UUID;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntityGP7 extends EntityTrainCore {
+public class EntityFP7A extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityGP7(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntityFP7A(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntityGP7(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityFP7A(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityGP7(World world){
+    public EntityFP7A(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.GP7().name; }
+    public String transportName() { return Transport.FP7A().name; }
 
     @Override
-    public String transportcountry() { return Transport.GP7().country; }
+    public String transportcountry() { return Transport.FP7A().country; }
 
     @Override
-    public String transportYear() { return Transport.GP7().year; }
+    public String transportYear() { return Transport.FP7A().year; }
 
     @Override
-    public String transportFuelType() { return Transport.GP7().fuel;
+    public String transportFuelType() { return Transport.FP7A().fuel;
     }
     @Override
-    public boolean isFictional() { return Transport.GP7().fictional;
+    public boolean isFictional() { return Transport.FP7A().fictional;
     }
     @Override
-    public float transportTractiveEffort() { return Transport.GP7().tractive_effort;
+    public float transportTractiveEffort() { return Transport.FP7A().tractive_effort;
     }
     @Override
-    public float transportMetricHorsePower() { return Transport.GP7().metric_horsepower;
+    public float transportMetricHorsePower() { return Transport.FP7A().metric_horsepower;
     }
     @Override
-    public float weightKg() { return  Transport.GP7().weightinKGs;
+    public float weightKg() { return  Transport.FP7A().weightinKGs;
     }
 
-    public boolean isReinforced() { return Transport.GP7().reinforced;
+    public boolean isReinforced() { return Transport.FP7A().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.GP7().additionalTextTitle) + Transport.GP7().additionalText,
-                RailUtility.translate(Transport.GP7().additionalTextTitle2) + Transport.GP7().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.FP7A().additionalTextTitle) + Transport.FP7A().additionalText,
+                RailUtility.translate(Transport.FP7A().additionalTextTitle2) + Transport.FP7A().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.GP7().backTopSpeed: Transport.GP7().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.FP7A().backTopSpeed: Transport.FP7A().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/EMD_GP7_Demo.png", "textures/bogies/blombergB_black.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/FP7A/GO_FP7.png",
+                "textures/bogies/blombergB_silver.png",
                 "EMD Demonstrator", "Standard EMD demonstrator scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_CNW_Stripes.png", "textures/bogies/blombergB_black.png",
-                "CNW Yellow Green Stripes", "CNW in yellow green scheme with stripes");
+
+        //todo fix above entry.
     }
+    
+   /* @Override
+    public String getDefaultSkin() {
+        return "wwcp:EMD Demonstrator";
+    }*/
 
     @Override
     public float getMaxFuel(){return 20;}
@@ -95,12 +101,14 @@ public class EntityGP7 extends EntityTrainCore {
     public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
     }
 
+
+
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.5f, 1.250f, 0.4f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-1.9f, 1.45f, -0.3f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{7.3f,2.2f,1.5f};
+        return new float[]{6.6f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -117,7 +125,7 @@ public class EntityGP7 extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{2.05f,0f,0},{-2.05f,0f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{1.7f,0f,0},{-2.05f,0f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
@@ -134,7 +142,7 @@ public class EntityGP7 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.0f,-0F,0.F}};}
+        return new float[][]{{0.F,0F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>
@@ -182,7 +190,7 @@ public class EntityGP7 extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new GP7()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new FP7Model()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

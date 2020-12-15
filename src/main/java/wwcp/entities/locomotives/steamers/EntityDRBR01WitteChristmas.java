@@ -87,7 +87,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasBR01.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ChristmasStock/ChristmasBR01.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "Christmas BR01 Witte deflectors", "Default black wheels for the BR01 Wagner");}
 
 

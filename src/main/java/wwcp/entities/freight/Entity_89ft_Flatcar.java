@@ -14,27 +14,28 @@ import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.truck_100ton;
 import wwcp.models.bogies.truck_70ton;
+import wwcp.models.freight.Flatcar89ft;
 import wwcp.models.freight.GSC_60_Flatcar;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class Entity_GSC_60_Flatcar extends GenericRailTransport {
+public class Entity_89ft_Flatcar extends GenericRailTransport {
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new WWCPTransport(new Entity_GSC_60_Flatcar((World)null), worldwidecontentpack.MODID, worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new Entity_89ft_Flatcar((World)null), worldwidecontentpack.MODID, worldwidecontentpack.America);
 
-    public Entity_GSC_60_Flatcar(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public Entity_89ft_Flatcar(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public Entity_GSC_60_Flatcar(World world) {
+    public Entity_89ft_Flatcar(World world) {
         super(world);
     }
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{3.4f, 0f, 0}, {-3.4f, 0f, 0}};
+        return new float[][]{{4.5f, 0f, 0}, {-4.5f, 0f, 0}};
     }
 
     @Override
@@ -57,7 +58,7 @@ public class Entity_GSC_60_Flatcar extends GenericRailTransport {
 
     //todo fix naming of this;
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/GSCFlatcar/GSC_60_Flatcar_BN_crooked_lettering.png", "textures/bogies/100ton_truck_black.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/FlatCar89ft/TTX_flatcar_Blank_and_Blank.png", "textures/bogies/100ton_truck_black.png",
                 "CNR Maple Leaf, Aluminium Sheathed", "Canadian National Railway Red Orange Boxcar with aluminium sheathed sides");
     }
 
@@ -67,11 +68,11 @@ public class Entity_GSC_60_Flatcar extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return Transport.GSC_Flatcar().reinforced;
+        return Transport.Flatcar_89ft().reinforced;
     }
 
     public float weightKg() {
-        return Transport.GSC_Flatcar().weightinKGs;
+        return Transport.Flatcar_89ft().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -79,35 +80,35 @@ public class Entity_GSC_60_Flatcar extends GenericRailTransport {
     }
 
     public String transportName() {
-        return Transport.GSC_Flatcar().name;
+        return Transport.Flatcar_89ft().name;
     }
 
     public String transportcountry() {
-        return Transport.GSC_Flatcar().country;
+        return Transport.Flatcar_89ft().country;
     }
 
     public String transportYear() {
-        return Transport.GSC_Flatcar().year;
+        return Transport.Flatcar_89ft().year;
     }
 
     public float transportTopSpeed() {
-        return Transport.GSC_Flatcar().topSpeed;
+        return Transport.Flatcar_89ft().topSpeed;
     }
 
     public boolean isFictional() {
-        return Transport.GSC_Flatcar().fictional;
+        return Transport.Flatcar_89ft().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(Transport.GSC_Flatcar().additionalTextTitle) + Transport.GSC_Flatcar().additionalText,
-                    RailUtility.translate(Transport.GSC_Flatcar().additionalTextTitle2) + Transport.GSC_Flatcar().additionalText2};
+            return new String[]{RailUtility.translate(Transport.Flatcar_89ft().additionalTextTitle) + Transport.Flatcar_89ft().additionalText,
+                    RailUtility.translate(Transport.Flatcar_89ft().additionalTextTitle2) + Transport.Flatcar_89ft().additionalText2};
         }
     }
 
     public int getInventoryRows() {
-        return Transport.GSC_Flatcar().rows;
+        return Transport.Flatcar_89ft().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {
@@ -127,7 +128,7 @@ public class Entity_GSC_60_Flatcar extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new GSC_60_Flatcar()};
+        return new ModelBase[]{new Flatcar89ft()};
     }
 
     public Item getItem() {

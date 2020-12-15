@@ -712,7 +712,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/TiM-Experimental-2020-10-25.jar!/"/>
+          <root url="jar://$MODULE_DIR$/libs/TiM-Experimental-2020-11-29.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>

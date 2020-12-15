@@ -109,7 +109,7 @@ public class EntityRheingoldSpeiseOneChristmas extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasSpeise1.png", "textures/bogies/RheingoldBogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ChristmasStock/ChristmasSpeise1.png", "textures/bogies/RheingoldBogie.png",
                 "NAME", "Description");
     }
     @Override
