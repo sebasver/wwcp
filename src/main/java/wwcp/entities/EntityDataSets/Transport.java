@@ -365,10 +365,24 @@ public class Transport {
     }
 
     //GE AC4400 CW
+    public static Transport.LocomotiveNoBackspeed SD70Mac() {
+        return new Transport.LocomotiveNoBackspeed("SD70Mac", "America", "1993-", "Diesel",
+                "", "", type, " Freight Locomotive",
+                145000f, 4400f, 193f, 112f, false, true, 0);
+    }
+
+    //GE AC4400 CW
     public static Transport.LocomotiveNoBackspeed GEAC4400CW() {
         return new Transport.LocomotiveNoBackspeed("GEAC4400CW", "America", "1993-", "Diesel",
                 "", "", type, " Freight Locomotive",
                 145000f, 4400f, 193f, 112f, false, true, 0);
+    }
+
+    //GP7
+    public static Transport.LocomotiveNoBackspeed HS4000() {
+        return new Transport.LocomotiveNoBackspeed("HS4000", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
+                40000f, 1500f, 123f, 105f, false, true, 0);
     }
 
     //GP7

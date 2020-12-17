@@ -180,7 +180,9 @@ public class wwcp_registrations {
                 new EntityF7A(null),
                 new EntityF7B(null),
                 new EntityGP7(null),
-                new EntityFP7A(null)
+                new EntityFP7A(null),
+                new EntityHS4000(null),
+                new EntitySD70Mac(null)
         };
     }
 
