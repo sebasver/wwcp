@@ -138,7 +138,9 @@ public class wwcp_registrations {
                 new EntityDRGBR01_10_Unstreamlined(null),
                 new EntityDRBR01WitteChristmas(null),
                 new EntitySentinel100HPChristmas(null),
-                new EntityModular_0_4_0(null)
+                new EntityModular_0_4_0(null),
+                new Entity57(null),
+                new EntityDSBFII(null)
         };
     }
 
@@ -233,7 +235,8 @@ public class wwcp_registrations {
                 new EntityGWRThirdChristmas(null),
                 new EntityAmfleet1(null),
                 new EntityACF_60Seats(null),
-                new EntityGWR_Toad20(null)
+                new EntityGWR_Toad20(null),
+                new EntityBOCaboose(null)
 
 
         };

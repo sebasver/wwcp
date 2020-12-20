@@ -393,6 +393,14 @@ public class Transport {
     }
 
     //GWR 9400
+    public static Transport.LocomotiveNoBackspeed GWR57() {
+        return new Transport.LocomotiveNoBackspeed("GWR57", "United Kingdom", "1947-1965", "Steam",
+                "", "", type, " Shunting Locomotive",
+                22515f, 0f, 56.2f, 72f, false, true, 0);
+    }
+
+
+    //GWR 9400
     public static Transport.LocomotiveNoBackspeed GWR9400() {
         return new Transport.LocomotiveNoBackspeed("GWR9400Class", "United Kingdom", "1947-1965", "Steam",
                 "", "", type, " Shunting Locomotive",
@@ -411,6 +419,22 @@ public class Transport {
         return new Transport.LocomotiveNoBackspeed("KoFIII2", "Germany", "1959-", "Diesel",
                 nick, " Klein Lokomotive", type, " Shunting Locomotive",
                 18726.58f, 240f, 22f, 30f, false, true, 0);
+    }
+
+
+
+    //DSB FII todo fix this entry
+    public static Transport.LocomotiveNoBackspeed DSBFII() {
+        return new Transport.LocomotiveNoBackspeed("DSBFII", "Denmark", "1967-", "Diesel",
+                nick, " Cake Tins", type, " Universal Locomotive",
+                88000f, 3253f, 116.5f, 143f, false, true, 0);
+    }
+
+    //BO Caboose todo fix this entry
+    public static Transport.LocomotiveNoBackspeed BOCaboose() {
+        return new Transport.LocomotiveNoBackspeed("BOCaboose", "Denmark", "1967-", "Diesel",
+                nick, " Cake Tins", type, " Universal Locomotive",
+                88000f, 3253f, 116.5f, 143f, false, true, 0);
     }
 
     //MZ Class I

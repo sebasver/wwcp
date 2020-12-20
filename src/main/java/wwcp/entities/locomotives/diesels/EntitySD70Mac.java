@@ -256,6 +256,9 @@ public class EntitySD70Mac extends EntityTrainCore {
         }
     }
 
+    @Override
+    public float[][] modelRotations(){return new float[][]{{0.0f, 180.0f, 0.0f}};}
+
     /**
      * <h2>fuel management</h2>
      * defines how the transport manages burnHeat, both in consuming items, and in managing the burnHeat.
