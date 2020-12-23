@@ -25,6 +25,7 @@ import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Streamlined;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Unstreamlined;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_850mm;
 import wwcp.entities.passengerstock.*;
+import wwcp.entities.railbusses.EntityBRClass121;
 import wwcp.entities.railbusses.EntityNE81;
 import wwcp.entities.railbusses.EntityVT98;
 import wwcp.entities.railbusses.EntityVT98AD;
@@ -193,7 +194,8 @@ public class wwcp_registrations {
         return new GenericRailTransport[]{
                 new EntityNE81(null),
                 new EntityVT98AD(null),
-                new EntityVT98(null)
+                new EntityVT98(null),
+                new EntityBRClass121(null)
         };
     }
 
@@ -237,8 +239,6 @@ public class wwcp_registrations {
                 new EntityACF_60Seats(null),
                 new EntityGWR_Toad20(null),
                 new EntityBOCaboose(null)
-
-
         };
     }
 

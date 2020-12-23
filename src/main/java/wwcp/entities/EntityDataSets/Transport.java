@@ -487,6 +487,13 @@ public class Transport {
                 88000f, 3854f, 121.2f, 105f, false, true, 0);
     }
 
+    //NE 81 / BR626
+    public static Transport.LocomotiveNoBackspeed BRClass121() {
+        return new Transport.LocomotiveNoBackspeed("BRClass121", "Germany", "1981-1995", "Diesel",
+                aditional, " BR 626", type, " Passenger Railbus",
+                0f, 679.81f, 46.0f, 100f, false, true, 0);
+    }
+
 
     //NE 81 / BR626
     public static Transport.LocomotiveNoBackspeed NE81() {

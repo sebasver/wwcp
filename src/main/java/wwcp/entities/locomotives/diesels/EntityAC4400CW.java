@@ -19,6 +19,9 @@ import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.LampTest;
 import wwcp.models.ModelWindowTest;
+import wwcp.models.bogies.ModelBackGEBogie;
+import wwcp.models.bogies.ModelFrontGEBogie;
+import wwcp.models.locomotives.diesels.AC4400CW;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -89,7 +92,8 @@ public class EntityAC4400CW extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/GP30_test_texture_4.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_CNW.png",
+                "textures/bogies/GE_Trucky_Black.png",
                 "Bludorange", "Standard UP livery for the AC4400CW");
 //        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/taurus2.png",
 //                "Verkehrsrot", "Standard UP livery for the AC4400CW");
@@ -109,21 +113,16 @@ public class EntityAC4400CW extends EntityTrainCore {
      */
     @Override
     public ModelBase[] bogieModels() {
-        return null;
+        return new ModelBase[] {new ModelFrontGEBogie(), new ModelBackGEBogie()};
     }
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.9f,0.12f,0},{-2.9f,0.12f,0}};
+        return new float[][]{{2.9f,0f,0},{-3f,0f,0}};
     }
 
     @Override
     public float[] bogieLengthFromCenter(){return new float[]{3f,-3f};}
-
-    @Override
-    public List<TrainsInMotion.transportTypes> getTypes() {
-        return TrainsInMotion.transportTypes.PASSENGER.singleton();
-    }
 
     //in what units is this?
     //ETERNAL NOTE: millibuckets, so 1000 is a bucket.
@@ -133,15 +132,17 @@ public class EntityAC4400CW extends EntityTrainCore {
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{1.3f,1.2f, 0f}};}
 
-
     @Override
     public boolean shouldRiderSit(){
         return false;
     }
 
     @Override
+    public float[][] modelRotations(){return new float[][]{{0.0f, 180.0f, 0.0f}};}
+
+    @Override
     public float[] getHitboxSize() {
-        return new float[]{1f,2f,1.5f};
+        return new float[]{9f,2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -188,7 +189,7 @@ public class EntityAC4400CW extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.05f,-0.15F,0.F}};}
+        return new float[][]{{0f,-0F,0.F}};}
         
     /**
      * <h2>Fluid Tank Capacity</h2>
@@ -270,7 +271,7 @@ public class EntityAC4400CW extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new ModelWindowTest()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new AC4400CW()};}
 
     //For sound effects
     @SideOnly(Side.CLIENT)
