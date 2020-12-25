@@ -13,9 +13,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.Amfleet1_truck;
-import wwcp.models.bogies.EurofimaBogie;
-import wwcp.models.passengerStock.Amfleet1;
+import wwcp.models.bogies.AmericanTrucks.Amfleet1_truck;
 import wwcp.models.passengerStock.Amfleet1;
 import wwcp.worldwidecontentpack;
 

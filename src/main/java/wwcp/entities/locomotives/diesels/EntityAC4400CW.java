@@ -2,7 +2,6 @@ package wwcp.entities.locomotives.diesels;
 //This is a documentation class for copy pasting into a Diesel train class.
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
@@ -17,14 +16,11 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.LampTest;
-import wwcp.models.ModelWindowTest;
-import wwcp.models.bogies.ModelBackGEBogie;
-import wwcp.models.bogies.ModelFrontGEBogie;
+import wwcp.models.bogies.AmericanTrucks.ModelBackGEBogie;
+import wwcp.models.bogies.AmericanTrucks.ModelFrontGEBogie;
 import wwcp.models.locomotives.diesels.AC4400CW;
 import wwcp.worldwidecontentpack;
 
-import java.util.List;
 import java.util.UUID;
 
 /**

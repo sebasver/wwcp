@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.ModelBRDMUBogie;
+import wwcp.models.bogies.EUBogies.ModelBRDMUBogie;
 import wwcp.models.railbusses.BRClass121;
 import wwcp.worldwidecontentpack;
 

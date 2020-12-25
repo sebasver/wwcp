@@ -9,7 +9,7 @@ import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import wwcp.entities.EntityDataSets.Transport;
-import wwcp.models.bogies.*;
+
 import java.util.UUID;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -20,7 +20,9 @@ import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.locomotives.steamers.DRBR01.DR_BR01;
+import wwcp.models.bogies.GermanBRBogies.BR01BackBogie;
+import wwcp.models.bogies.GermanBRBogies.BR01FrontBogie;
+import wwcp.models.locomotives.steamers.GermanBR.BR01.DRBR01.DR_BR01;
 import wwcp.worldwidecontentpack;
 
 public class EntityDRBR01 extends EntityTrainCore {

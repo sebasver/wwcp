@@ -17,7 +17,7 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.Class37Bogie;
+import wwcp.models.bogies.EUBogies.Class37Bogie;
 import wwcp.models.locomotives.diesels.Class37;
 import wwcp.worldwidecontentpack;
 

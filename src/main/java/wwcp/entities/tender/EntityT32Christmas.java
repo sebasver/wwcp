@@ -15,7 +15,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.Tender32Bogie;
+import wwcp.models.bogies.TenderBogies.Tender32Bogie;
 import wwcp.models.tenders.ChristmasTenderT32;
 import wwcp.worldwidecontentpack;
 

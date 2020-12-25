@@ -17,10 +17,8 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.ModelWindowTest;
-import wwcp.models.bogies.HS4000Bogie;
-import wwcp.models.bogies.MacBogieBack;
-import wwcp.models.bogies.MacBogieFront;
+import wwcp.models.bogies.AmericanTrucks.MacBogieBack;
+import wwcp.models.bogies.AmericanTrucks.MacBogieFront;
 import wwcp.models.locomotives.diesels.SD70MAC;
 import wwcp.worldwidecontentpack;
 

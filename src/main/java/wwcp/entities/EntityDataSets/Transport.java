@@ -281,6 +281,13 @@ public class Transport {
                 0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
     }
 
+    //BR50
+    public static Transport.LocomotiveWithBackspeed DBBR50() {
+        return new Transport.LocomotiveWithBackspeed("DBBR50", "Germany", "1926-1982", "Steam",
+                "", "", type, " Passenger Locomotive",
+                0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
+    }
+
     //BR 798 / VT 98
     public static Transport.LocomotiveNoBackspeed BR798() {
         return new Transport.LocomotiveNoBackspeed("VT98", "Germany", "1953-2000", "Diesel",
@@ -331,6 +338,19 @@ public class Transport {
         return new Transport.LocomotiveNoBackspeed("ES64F4", "Europe", "2003-", "Electric",
                 "", "", type, " Freight Locomotive",
                 67000.0f, 8600.0f, 87.0f, 140f, false, true, 0);
+    }
+
+    public static Transport.LocomotiveNoBackspeed F40ph() {
+        return new Transport.LocomotiveNoBackspeed("F40PH", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
+                40000f, 1500f, 123.7f, 105f, false, true, 0);
+    }
+
+    //F7A todo fix these stats.
+    public static Transport.LocomotiveNoBackspeed BL2() {
+        return new Transport.LocomotiveNoBackspeed("BL2", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
+                40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
 
     //F7A
@@ -521,6 +541,12 @@ public class Transport {
         return new Transport.LocomotiveNoBackspeed("Modular040", "United Kingdom", "1931-1955", "Steam",
                 "", "", type, " Shunting Locomotive",
                 8870f, 100f, 19.3f, 33.8f, false, true, 0);
+    }
+
+    //T32 Tender todo fix these stats
+    public static Transport.Rollingstock KabinTenderT26() {
+        return new Transport.Rollingstock("KabinTenderT26", "Germany", "1926-1982", "",
+                "", type, " Tender", 17.5f, 0f, false, true, 0);
     }
 
     //T32 Tender todo fix these stats

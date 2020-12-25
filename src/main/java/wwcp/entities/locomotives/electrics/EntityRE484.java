@@ -15,7 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.flexxpower;
+import wwcp.models.bogies.EUBogies.flexxpower;
 import wwcp.models.locomotives.electrics.F140MS2;
 import wwcp.worldwidecontentpack;
 import java.util.UUID;

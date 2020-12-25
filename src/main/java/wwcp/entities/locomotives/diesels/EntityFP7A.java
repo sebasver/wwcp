@@ -15,7 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.Blomberg_B;
+import wwcp.models.bogies.AmericanTrucks.Blomberg_B;
 import wwcp.models.locomotives.diesels.FP7Model;
 import wwcp.worldwidecontentpack;
 

@@ -141,7 +141,8 @@ public class wwcp_registrations {
                 new EntitySentinel100HPChristmas(null),
                 new EntityModular_0_4_0(null),
                 new Entity57(null),
-                new EntityDSBFII(null)
+                new EntityDSBFII(null),
+                new EntityDBBR50(null)
         };
     }
 
@@ -161,7 +162,8 @@ public class wwcp_registrations {
                 new EntityT37DRG(null),
                 new EntityT38(null),
                 new EntityT38Oil(null),
-                new EntityMakeshiftTender(null)
+                new EntityMakeshiftTender(null),
+                new EntityKabinTenderT26(null)
         };
     }
 
@@ -185,7 +187,9 @@ public class wwcp_registrations {
                 new EntityGP7(null),
                 new EntityFP7A(null),
                 new EntityHS4000(null),
-                new EntitySD70Mac(null)
+                new EntitySD70Mac(null),
+                new EntityF40ph(null),
+                new EntityBL2(null)
         };
     }
 

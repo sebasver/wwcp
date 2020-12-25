@@ -12,10 +12,8 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.truck_100ton;
-import wwcp.models.bogies.truck_70ton;
+import wwcp.models.bogies.AmericanTrucks.truck_100ton;
 import wwcp.models.freight.Flatcar89ft;
-import wwcp.models.freight.GSC_60_Flatcar;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;

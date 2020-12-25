@@ -13,7 +13,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.SwingMotionBogie70Ton;
+import wwcp.models.bogies.AmericanTrucks.SwingMotionBogie70Ton;
 import wwcp.models.passengerStock.BOCaboose;
 import wwcp.worldwidecontentpack;
 

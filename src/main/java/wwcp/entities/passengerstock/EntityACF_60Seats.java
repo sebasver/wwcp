@@ -13,7 +13,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.M500Truck;
+import wwcp.models.bogies.AmericanTrucks.M500Truck;
 import wwcp.models.passengerStock.ACF_60_Seat;
 import wwcp.worldwidecontentpack;
 
