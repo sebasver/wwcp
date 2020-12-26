@@ -10,7 +10,6 @@ import ebf.tim.utility.FuelHandler;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import wwcp.entities.EntityDataSets.Transport;
-import wwcp.models.bogies.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityFurnace;
@@ -19,7 +18,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.locomotives.steamers.ChristmasBR01;
+import wwcp.models.bogies.GermanBRBogies.BR01BackBogie;
+import wwcp.models.bogies.GermanBRBogies.BR01FrontBogie;
+import wwcp.models.locomotives.steamers.GermanBR.BR01.ChristmasBR01;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -87,7 +88,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasBR01.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ChristmasStock/ChristmasBR01.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "Christmas BR01 Witte deflectors", "Default black wheels for the BR01 Wagner");}
 
 

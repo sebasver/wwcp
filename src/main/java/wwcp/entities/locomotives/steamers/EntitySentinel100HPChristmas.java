@@ -86,7 +86,7 @@ public class EntitySentinel100HPChristmas extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasSentinel.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/passengerstock/ChristmasStock/ChristmasSentinel.png",
                 "HLE28 NMBS Cargo", "Used by the NMBS/SNCB in belgium for freight trains");
     }
 
