@@ -15,7 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.MzBogie;
+import wwcp.models.bogies.EUBogies.MzBogie;
 import wwcp.models.locomotives.diesels.DSBMzIII;
 import wwcp.worldwidecontentpack;
 

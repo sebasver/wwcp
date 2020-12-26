@@ -104,7 +104,7 @@ public class EntityGWRThirdChristmas extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/GWROpenPassengerXmas.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ChristmasStock/GWROpenPassengerXmas.png",
                 "NAME", "Description");
     }
     @Override

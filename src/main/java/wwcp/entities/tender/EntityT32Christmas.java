@@ -15,7 +15,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.Tender32Bogie;
+import wwcp.models.bogies.TenderBogies.Tender32Bogie;
 import wwcp.models.tenders.ChristmasTenderT32;
 import wwcp.worldwidecontentpack;
 
@@ -82,7 +82,7 @@ public class EntityT32Christmas extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasT32.png", new String[]{"textures/bogies/germanTenderBogies/T32BogieBlack.png"},
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ChristmasStock/ChristmasT32.png", new String[]{"textures/bogies/germanTenderBogies/T32BogieBlack.png"},
                 "Christmas Livery", "The standarized T32 tender paint while in use for the DB");
     }
 

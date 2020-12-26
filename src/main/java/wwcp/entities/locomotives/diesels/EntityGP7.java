@@ -15,7 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.Blomberg_B;
+import wwcp.models.bogies.AmericanTrucks.Blomberg_B;
 import wwcp.models.locomotives.diesels.GP7;
 import wwcp.worldwidecontentpack;
 
@@ -117,7 +117,7 @@ public class EntityGP7 extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{2.05f,0.1f,0},{-2.05f,0.1f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{2.05f,0f,0},{-2.05f,0f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
@@ -134,7 +134,7 @@ public class EntityGP7 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.0f,-0.10F,0.F}};}
+        return new float[][]{{0.0f,-0F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>

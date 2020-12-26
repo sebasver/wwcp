@@ -12,37 +12,37 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.EUBogies.SGNSSBogie;
-import wwcp.models.freight.EALOSX;
+import wwcp.models.bogies.AmericanTrucks.truck_100ton;
+import wwcp.models.freight.Flatcar89ft;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityEALOSX extends GenericRailTransport {
-
+public class Entity_89ft_Flatcar extends GenericRailTransport {
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityEALOSX((World)null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new Entity_89ft_Flatcar((World)null), worldwidecontentpack.MODID, worldwidecontentpack.America);
 
-    public EntityEALOSX(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public Entity_89ft_Flatcar(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityEALOSX(World world) {
+    public Entity_89ft_Flatcar(World world) {
         super(world);
     }
+
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.05F,0.08f,0},{-2.05F,0.08f,0}};
+        return new float[][]{{4.5f, 0f, 0}, {-4.5f, 0f, 0}};
     }
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new SGNSSBogie()};
+        return new ModelBase[]{new truck_100ton()};
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{2.05F, -2.05F};
+        return new float[]{3.4F, -3.4F};
     }
 
     public float getRenderScale() {
@@ -51,14 +51,13 @@ public class EntityEALOSX extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.06f,-0.12F,0F}};
+        return new float[][]{{-0F, -0F, 0F}};
     }
 
+    //todo fix naming of this;
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Ealos_x/Ealos-X053.png", "textures/bogies/SGNSSBogie.png",
-                "Brown Ealos-x", "This was the factory skin of the car");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Ealos_x/Ealos-x_053_DB_Red.png", "textures/bogies/SGNSSBogie.png",
-                "DB Ealos-x", "This is the DB variant");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/FlatCar89ft/TTX_flatcar_Blank_and_Blank.png", "textures/bogies/100ton_truck_black.png",
+                "CNR Maple Leaf, Aluminium Sheathed", "Canadian National Railway Red Orange Boxcar with aluminium sheathed sides");
     }
 
     @Override
@@ -67,11 +66,11 @@ public class EntityEALOSX extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return Transport.EalosX().reinforced;
+        return Transport.Flatcar_89ft().reinforced;
     }
 
     public float weightKg() {
-        return Transport.EalosX().weightinKGs;
+        return Transport.Flatcar_89ft().weightinKGs;
     }
 
     public ItemStack[] getRecipie() {
@@ -79,28 +78,35 @@ public class EntityEALOSX extends GenericRailTransport {
     }
 
     public String transportName() {
-        return Transport.EalosX().name;
+        return Transport.Flatcar_89ft().name;
     }
 
-    public String transportcountry() { return Transport.EalosX().country; }
+    public String transportcountry() {
+        return Transport.Flatcar_89ft().country;
+    }
 
-    public String transportYear() { return Transport.EalosX().year; }
+    public String transportYear() {
+        return Transport.Flatcar_89ft().year;
+    }
 
     public float transportTopSpeed() {
-        return Transport.EalosX().topSpeed;
+        return Transport.Flatcar_89ft().topSpeed;
     }
 
     public boolean isFictional() {
-        return Transport.EalosX().fictional;
+        return Transport.Flatcar_89ft().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.EalosX().additionalTextTitle) + Transport.EalosX().additionalText,
-                RailUtility.translate(Transport.EalosX().additionalTextTitle2) + Transport.EalosX().additionalText2};}
+        {
+            return new String[]{RailUtility.translate(Transport.Flatcar_89ft().additionalTextTitle) + Transport.Flatcar_89ft().additionalText,
+                    RailUtility.translate(Transport.Flatcar_89ft().additionalTextTitle2) + Transport.Flatcar_89ft().additionalText2};
+        }
     }
+
     public int getInventoryRows() {
-        return Transport.EalosX().rows;
+        return Transport.Flatcar_89ft().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {
@@ -112,7 +118,7 @@ public class EntityEALOSX extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{6.82f, 2f, 1.6F};
+        return new float[]{8.4f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
@@ -120,12 +126,11 @@ public class EntityEALOSX extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new EALOSX()};
+        return new ModelBase[]{new Flatcar89ft()};
     }
 
     public Item getItem() {
         return thisItem;
     }
-
 
 }

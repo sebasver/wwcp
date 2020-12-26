@@ -15,7 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.Blomberg_B;
+import wwcp.models.bogies.AmericanTrucks.Blomberg_B;
 import wwcp.models.locomotives.diesels.F7A;
 import wwcp.worldwidecontentpack;
 
@@ -110,9 +110,11 @@ public class EntityF7A extends EntityTrainCore {
                 "WWCP 2 Years blue nose", "Fictional WWCP livery");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/WWCP_2.png", "textures/bogies/blombergB_silver.png",
                 "WWCP 2 Years purple nose", "Fictional WWCP livery");
-
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7_SP_BloodyNose.png", "textures/bogies/blombergB_silver.png",
+                "F7 SP Bloodynose", "Fictional WWCP livery");
+        //todo fix above entry.
     }
-
+    
     @Override
     public String getDefaultSkin() {
         return "wwcp:EMD Demonstrator";
@@ -149,7 +151,7 @@ public class EntityF7A extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{1.7f,0.1f,0},{-2.05f,0.1f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{1.7f,0f,0},{-2.05f,0f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
@@ -166,7 +168,7 @@ public class EntityF7A extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.F,-0.05F,0.F}};}
+        return new float[][]{{0.F,0F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>

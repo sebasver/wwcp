@@ -13,7 +13,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.EurofimaBogie;
+import wwcp.models.bogies.EUBogies.EurofimaBogie;
 import wwcp.models.passengerStock.EurofimaCompartment1;
 import wwcp.worldwidecontentpack;
 
@@ -81,7 +81,7 @@ public class EntityEurofimaCompartment1 extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{4.60f,0.15f,0},{-4.60f,0.12f,0}};
+        return new float[][]{{4.60f,0f,0},{-4.60f,0f,0}};
     }
 
     @Override
@@ -102,7 +102,7 @@ public class EntityEurofimaCompartment1 extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.03f,-0.15F,0.F}};
+        return new float[][]{{0.03f,-0F,0.F}};
     }
 
     @Override
