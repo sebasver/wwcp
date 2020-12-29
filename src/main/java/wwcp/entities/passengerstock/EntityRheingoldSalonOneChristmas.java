@@ -13,8 +13,8 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.GorlitzBack;
-import wwcp.models.bogies.GorlitzFront;
+import wwcp.models.bogies.EUBogies.GorlitzBack;
+import wwcp.models.bogies.EUBogies.GorlitzFront;
 import wwcp.models.passengerStock.ChristmasSalon1;
 import wwcp.worldwidecontentpack;
 
@@ -110,7 +110,7 @@ public class EntityRheingoldSalonOneChristmas extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/RheingoldChristmas/ChristmasSalon1.png", "textures/bogies/RheingoldBogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ChristmasStock/ChristmasSalon1.png", "textures/bogies/RheingoldBogie.png",
                 "NAME", "Description");
     }
     @Override

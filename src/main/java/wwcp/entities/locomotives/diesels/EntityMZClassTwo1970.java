@@ -15,7 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.MzBogie;
+import wwcp.models.bogies.EUBogies.MzBogie;
 import wwcp.models.locomotives.diesels.DSBMzII1970;
 import wwcp.worldwidecontentpack;
 
@@ -88,9 +88,9 @@ public class EntityMZClassTwo1970 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIBrown.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzII/MzIIBrown.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Brown Livery", "The original livery of the Class Mz I and II when delivered to DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzII/MzIIDSB1980-1990s.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Red and Black Livery 1980", "Standard Red and Black livery for the DSB before the cornered windows were blinded in 1990");
     }
 
@@ -104,7 +104,7 @@ public class EntityMZClassTwo1970 extends EntityTrainCore {
 
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-4.25f,1.4f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-4.25f,1.55f, -0.25f}};}
 
     @Override
     public float[] getHitboxSize() {

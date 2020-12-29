@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.NE81;
+import wwcp.models.bogies.EUBogies.NE81;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;

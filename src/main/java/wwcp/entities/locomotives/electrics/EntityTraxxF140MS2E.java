@@ -16,7 +16,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.flexxpower;
+import wwcp.models.bogies.EUBogies.flexxpower;
 import wwcp.models.locomotives.electrics.Traxx2ndGen;
 import wwcp.worldwidecontentpack;
 
@@ -182,7 +182,7 @@ public class EntityTraxxF140MS2E extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.45f, 0.1f, 0}, {-2.55f, 0.1f, 0}};
+        return new float[][]{{2.45f, 0f, 0}, {-2.55f, 0f, 0}};
     }
 
     @Override
@@ -202,7 +202,7 @@ public class EntityTraxxF140MS2E extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f, -0.15F, 0.F}};
+        return new float[][]{{0f, -0.05F, 0.F}};
     }
 
     /**

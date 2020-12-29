@@ -12,7 +12,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.SGNSSBogie;
+import wwcp.models.bogies.EUBogies.SGNSSBogie;
 import wwcp.models.freight.SGNSS603TATEU;
 import wwcp.worldwidecontentpack;
 
@@ -55,7 +55,7 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/SGNSS60/SGNSS603TATEU_1.png", "textures/bogies/SGNSSBogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/SGNSS60/SGNSS60TATEU_1.png", "textures/bogies/SGNSSBogie.png",
                 "Variant 1", "Tanktainers loads variant 1");
     }
 
@@ -118,7 +118,7 @@ public class EntitySGNSS603TATEU extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{13.4f, 2f, 1.6F};
+        return new float[]{10.2f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {

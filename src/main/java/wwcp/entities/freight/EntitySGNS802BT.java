@@ -12,7 +12,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.SGNSSBogie;
+import wwcp.models.bogies.EUBogies.SGNSSBogie;
 import wwcp.models.freight.SGNS802BT;
 import wwcp.worldwidecontentpack;
 

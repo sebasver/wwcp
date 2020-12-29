@@ -15,7 +15,7 @@ import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.worldwidecontentpack;
 
-import wwcp.models.bogies.FlexxLoad;
+import wwcp.models.bogies.EUBogies.FlexxLoad;
 import wwcp.models.passengerStock.DBpza;
 
 import java.util.UUID;

@@ -12,7 +12,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.SGNSSBogie;
+import wwcp.models.bogies.EUBogies.SGNSSBogie;
 import wwcp.models.freight.Habbiins_17;
 import wwcp.worldwidecontentpack;
 
@@ -61,6 +61,8 @@ public class EntityHabbiins_17 extends GenericRailTransport {
                 "Habbiins 17 TWA Grey", "This is the most common livery to see in real life");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_DB.png", "textures/bogies/SGNSSBogie2.png",
                 "Habbiins 17 DB", "This is the most common livery to see in real life, though more dirty");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_DSB.png", "textures/bogies/SGNSSBogie2.png",
+                "Habbiins 17 DSB", "This is the most common livery to see in real life, though more dirty");
     }
 
     @Override

@@ -66,12 +66,14 @@ item.Habbiins_17=Habbiins-17
 item.HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
 item.FortyFoot_Boxcar.name=40ft Boxcar
 item.SGNSS603TATEU=Sgnss60 3 TaTeu
+item.SGNSS602TATEU=Sgnss60 2 TaTeu
 item.UKOpenwagon=UK 6 Plank Truck
 item.UKFlatbed=UK Flatbed
 item.UKTanker=UK Tanker
 item.UKVan=UK Van
 item.UKOpenwagon2=UK Windcutter Truck
 item.Hbbins=Hbbins
+item.Hbbillns=Hbbillns
 
 <!-- ## Tenders ## -->
 item.T322'2'.name=T32 2'2'
