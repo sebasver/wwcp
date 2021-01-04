@@ -82,7 +82,7 @@ public class Entity57 extends EntityTrainCore {
 
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR57/GWR57.png", 
-                "default", "Used by Germany in WWI as a transport for solders and equipment");
+                "GWR", "There is two ways of doing things, the GWR way, or the wrong way.");
     }
 
     public int getInventoryRows() {
