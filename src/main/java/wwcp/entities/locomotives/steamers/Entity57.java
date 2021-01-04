@@ -82,7 +82,7 @@ public class Entity57 extends EntityTrainCore {
 
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR57/GWR57.png", 
-                "GWR", "There is two ways of doing things, the GWR way, or the wrong way.");
+                "GWR", "There are two ways of doing things, the Great Western way, or the wrong way.");
     }
 
     public int getInventoryRows() {
