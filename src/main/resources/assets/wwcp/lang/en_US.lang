@@ -47,8 +47,12 @@ item.MZIV.name=MZ IV
 item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
 item.ES64U2.name=ES64U2
 item.ES64U4.name=ES64U4
-item.F7A.name=F7A
-item.GP7.name=GP7
+item.F7A.name=EMD F7A
+item.GP7.name=EMD GP7
+item.FP7A.name=EMD FP7A
+item.AC4400CW.name=GE AC4400CW
+item.GWR57xx.name=GWR 57xx
+item.GWR94xx.name=GWR 94xx
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
 item.EurofimaCompartments.name=Eurofima Compartment Coach
