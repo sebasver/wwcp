@@ -84,7 +84,7 @@ public class EntityHS4000 extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/HS4000/HS4000LightNoised.png",
                 "textures/bogies/HS4000BogiesNoised.png",
-                "EMD Demonstrator", "Standard EMD demonstrator scheme");
+                "Kestrel Prototype", "The HS4000 was a prototype built by Brush Traction works");
 
         //todo fix above entry.
     }
