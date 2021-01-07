@@ -340,17 +340,18 @@ public class Transport {
                 67000.0f, 8600.0f, 87.0f, 140f, false, true, 0);
     }
 
+    //F40ph
     public static Transport.LocomotiveNoBackspeed F40ph() {
-        return new Transport.LocomotiveNoBackspeed("F40PH", "America", "1949-Present", "Diesel",
-                nick, "", type, " Freight Locomotive",
-                40000f, 1500f, 123.7f, 105f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("F40PH", "America", "1976-Present", "Diesel",
+                nick, "", type, " Passenger Locomotive",
+                38240f, 3000f, 130f, 153f, false, true, 0);
     }
 
-    //F7A todo fix these stats.
+    //BL2
     public static Transport.LocomotiveNoBackspeed BL2() {
-        return new Transport.LocomotiveNoBackspeed("BL2", "America", "1949-Present", "Diesel",
-                nick, "", type, " Freight Locomotive",
-                40000f, 1500f, 123.7f, 105f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("BL2", "America", "1947-1980's", "Diesel",
+                nick, "", type, " Road Switcher",
+                40000f, 1500f, 115f, 105f, false, true, 0);
     }
 
     //F7A
@@ -360,10 +361,11 @@ public class Transport {
                 40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
 
+    //FP7
     public static Transport.LocomotiveNoBackspeed FP7A() {
-        return new Transport.LocomotiveNoBackspeed("FP7A", "America", "1949-Present", "Diesel",
-                nick, "", type, " Freight Locomotive",
-                40000f, 1500f, 123.7f, 105f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("FP7", "America", "1949-Present", "Diesel",
+                nick, "", type, " Passenger Locomotive",
+                40000f, 1500f, 129f, 105f, false, true, 0);
     }
 
     //F7B
@@ -384,21 +386,21 @@ public class Transport {
                 "", type, " Tender", 19.5f, 0f, false, true, 0, 300000);
     }
 
-    //GE AC4400 CW
+    //EMD SD70MAC
     public static Transport.LocomotiveNoBackspeed SD70Mac() {
-        return new Transport.LocomotiveNoBackspeed("SD70Mac", "America", "1993-", "Diesel",
-                "", "", type, " Freight Locomotive",
-                145000f, 4400f, 193f, 112f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("SD70Mac", "America", "1993-Present", "Diesel",
+                "", "", type, " Mainline Freight Locomotive",
+                137000f, 4000f, 207.5f, 112f, false, true, 0);
     }
 
     //GE AC4400 CW
     public static Transport.LocomotiveNoBackspeed GEAC4400CW() {
-        return new Transport.LocomotiveNoBackspeed("GEAC4400CW", "America", "1993-", "Diesel",
-                "", "", type, " Freight Locomotive",
+        return new Transport.LocomotiveNoBackspeed("GEAC4400CW", "America", "1993-Present", "Diesel",
+                "", "", type, " Mainline Freight Locomotive",
                 145000f, 4400f, 193f, 112f, false, true, 0);
     }
 
-    //GP7
+    //HS4000
     public static Transport.LocomotiveNoBackspeed HS4000() {
         return new Transport.LocomotiveNoBackspeed("HS4000", "America", "1949-Present", "Diesel",
                 nick, "", type, " Freight Locomotive",
@@ -764,10 +766,10 @@ public class Transport {
                 "", type, "Freight Loose", 24.3f, 120f, false, true, 0);
     }
 
-    //Eurofima with Compartments
+    //Amfleet 1
     public static Transport.Rollingstock Amfleet1() {
-        return new Transport.Rollingstock("Amfleet1", "Europe", "1977-", "",
-                "", type, " Passenger", 45f, 200f, false, true, 0);
+        return new Transport.Rollingstock("Amfleet1", "Europe", "1975-Present", "",
+                "", type, " Passenger", 53f, 201f, false, true, 0);
     }
 
     //Eurofima with Compartments
@@ -942,11 +944,13 @@ public class Transport {
                 "", type, " Flatcar", 75f, 0f, false, true, 0);
     }
 
+    //TTX 89ft Flatcar
     public static Transport.Rollingstock Flatcar_89ft() {
         return new Transport.Rollingstock("89ftFlatCar", "America", "1956", "",
                 "", type, " Flatcar", 75f, 0f, false, true, 0);
     }
 
+    //TTX 89ft Bi-Level Autorack
     public static Transport.Rollingstock Autorack_89ft_BiLevel() {
         return new Transport.Rollingstock("89ftBiLevelAutoRack", "America", "1956", "",
                 "", type, " Autorack", 75f, 0f, false, true, 0);

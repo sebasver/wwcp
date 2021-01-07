@@ -107,7 +107,7 @@ public class EntityAmfleet1 extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/amfleet1/Amfleet1.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/amfleet1/amfleet_Phase2.png",
                 "textures/bogies/Amfleet1_truck.png",
                 "Amfleet", "Celebration livery for 2 years WWCP");
     }
