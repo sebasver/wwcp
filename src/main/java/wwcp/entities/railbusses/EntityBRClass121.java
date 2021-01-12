@@ -85,7 +85,7 @@ public class EntityBRClass121 extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/Railbusses/BRClass121/BR_Class_121_Texture_1.png",
                 "textures/bogies/BRDMUBogie.png",
-                "default", "Used by Germany in WWI as a transport for solders and equipment");
+                "BR Blue", "Standard British Railways blue");
     }
     
     @Override
