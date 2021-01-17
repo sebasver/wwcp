@@ -81,9 +81,9 @@ public class EntityDSBFII extends EntityTrainCore {
 
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DSBFII/FII.png",
-                "default", "Used by Germany in WWI as a transport for solders and equipment");
+                "DSB Class F (II)", "Used by Danish Staterailways as station pilots.");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DSBFII/FIIHK.png",
-                "default2", "Used by Germany in WWI as a transport for solders and equipment");
+                "DSB Class F (II) Extended coal bunker", "The extended coal bunker was added when the small branchlines began to be operated by the station pilots.");
     }
 
     public int getInventoryRows() {

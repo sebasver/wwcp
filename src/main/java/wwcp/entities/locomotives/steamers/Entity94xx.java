@@ -80,14 +80,14 @@ public class Entity94xx extends EntityTrainCore {
     public float transportTopSpeed(){return accelerator<0? Transport.GWR9400().backTopSpeed: Transport.GWR9400().topSpeed;}
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X1.png", "default",
-                "Used by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X2.png", "default",
-                "Used by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X3.png", "default",
-                "Used by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X4.png", "default",
-                "Used by Germany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X1.png",
+                "GWR 1", "The famous Great Western Railway skin. You know, its not the wrong way of doing things.");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X2.png",
+                "GWR 2", "The famous Great Western Railway skin. You know, its not the wrong way of doing things.");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X3.png",
+                "GWR 3", "The famous Great Western Railway skin. You know, its not the wrong way of doing things.");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X4.png",
+                "GWR 4", "The famous Great Western Railway skin. You know, its not the wrong way of doing things.");
 
     }
 

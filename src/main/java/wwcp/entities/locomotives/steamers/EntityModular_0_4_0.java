@@ -87,7 +87,7 @@ public class EntityModular_0_4_0 extends EntityTrainCore {
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Steam/modular_0_4_0/Modular_0-4-0_Texture_1.png",
-                "Modular 040 1", "Used by the NMBS/SNCB in belgium for freight trains");
+                "Modular 040 Red", "Works great on industrial railways with sharp turns.");
     }
 
     public int getInventoryRows() {

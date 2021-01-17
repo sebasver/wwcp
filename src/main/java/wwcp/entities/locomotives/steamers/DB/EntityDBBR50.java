@@ -96,13 +96,13 @@ public class EntityDBBR50 extends EntityTrainCore {
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/DB_BR50_no_deflectors(1).png",
                 "textures/bogies/BR50/Bogie_BR50.png",
-                "DB BR 50 no deflectors", "DR BR 01 Wagner Deflectors variant 1");
+                "DB BR 50 no deflectors", "DR BR 50 Wagner Deflectors variant 1");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/DB_BR50_wagner(1).png",
                 "textures/bogies/BR50/Bogie_BR50.png",
-                "DB BR 01 Wagner 1", "DR BR 01 Wagner Deflectors variant 2");
+                "DB BR 50 Wagner deflector", "DR BR 50 Wagner Deflectors variant 2");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/DB_BR50_witte(1).png",
                 "textures/bogies/BR50/Bogie_BR50.png",
-                "DB BR 01 Witte 1", "DR BR 01 Witte Deflectors Variant 1");
+                "DB BR 50 Witte deflectors", "DR BR 50 Witte Deflectors Variant 1");
     }
 
     public int getInventoryRows() {
@@ -122,7 +122,7 @@ public class EntityDBBR50 extends EntityTrainCore {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{7.325F, 2.1F, 1.3F};
+        return new float[]{7.2F, 2.5F, 1.3F};
     }
 
     public ItemStack[] getRecipie() {
