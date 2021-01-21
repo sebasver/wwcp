@@ -1009,9 +1009,9 @@ public class Transport {
     }
 
     //BO Caboose todo fix this entry
-    public static Transport.LocomotiveNoBackspeed BOCaboose() {
+    public static Rollingstock BOCaboose() {
         return new Transport.Rollingstock("B&O_Caboose", "America", "1930-1959", "",
-                "", type, " Passenger", 12f, 0f, false, true, 0;
+                "", type, " Passenger", 12f, 0f, false, true, 0);
     }
 }
 
