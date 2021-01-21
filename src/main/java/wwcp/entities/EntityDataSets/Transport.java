@@ -942,6 +942,19 @@ public class Transport {
         return new Transport.TankCars("SGNSS 60 2 TATEU", "Europe", "2006-", "",
                 "", type, " Freight Container", 21.5f, 120f, false, true, 0, 60000);
     }
+
+    //todo fix these stats once advent is over.
+    public static Transport.TankCars ACF_Single_Dome_Tankcar() {
+        return new Transport.TankCars("ACF_Single_Dome", "America", "1930-1959", "",
+                "", type, " Tank wagon", 12f, 0f, false, true, 0,  9000);
+    }
+
+    //todo fix these stats once advent is over.
+    public static Transport.TankCars DSBCarE() {
+        return new Transport.TankCars("DBSE", "Denmark", "1930-1959", "",
+                "", type, " Freight loose", 12f, 0f, false, true, 0, 9000);
+    }
 }
+
 
 
