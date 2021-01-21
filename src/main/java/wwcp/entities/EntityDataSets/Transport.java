@@ -951,7 +951,7 @@ public class Transport {
 
     //DSB E Open Wagon
     public static Transport.TankCars DSBCarE() {
-        return new Transport.TankCars("DBSE", "Denmark", "1930-1959", "",
+        return new Transport.TankCars("DBSE", "Denmark", "1960-1990", "",
                 "", type, " Freight loose", 12f, 0f, false, true, 0, 9000);
     }
 }
