@@ -33,7 +33,8 @@ menu.item.europe=Europe
 <!-- ## Trains ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas § ## -->
 item.TraxxF140MS2E.name=F140 MS2E
-item.DRBR01.name=DRG BR 01
+item.DRGBR01.name=DRG BR 01
+item.DRBR01.name=DR BR 01
 item.DBBR01.name=DB BR 01
 item.DBBR50.name=DRG/DB BR 50
 item.ChristmasBR01Witte.name=DR BR 01 Christmas
@@ -70,7 +71,7 @@ item.VT98AD.name=VT98AD
 item.NE81.name=NE81
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
-item.EurofimaCompartments.name=Eurofima Compartment Coach
+item.EurofimaCompartments1.name=Eurofima Compartment Coach
 item.Dobbelstock4thgeneration.name=4th Generation Doubledecker
 item.TEUSmallContainercarrier.name=TEU Small container carrier
 item.GWRBrunel3rdClassChristmas.name=GWR Brunel 3rd Class Christmas
@@ -82,10 +83,10 @@ item.Zacns.name=ZACNS95
 item.EalosX.name=Ealos-X
 item.Habbiins_14.name=Habbiins-14
 item.Habbiins_17.name=Habbiins-17
-item.HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
+item.60'HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
 item.40ftBoxcar.name=40ft Boxcar
 item.89ftBiLevelAutoRack.name=89ft Autorack 2
-item.89ftFlatcar.name=89ft Flatcar
+item.89ftFlatCar.name=89ft Flatcar
 item.GSCFlatcar.name=60ft Flatcar
 item.Chaldron.name=Chaldron Wagon
 item.SGNSS603TATEU.name=Sgnss60 3 TaTeu
@@ -102,7 +103,10 @@ item.ACF_Single_Dome.name=ACF Tanker Single Dome
 item.name.OFF52Beetle.name=OFF 52 Beetle
 item.GWRToad20.name=GWR Toad Brakevan 20
 item.F7B.name=EMD F7B
-item.BOCaboose.nme=B&O Caboose
+item.B&O_Caboose.nme=B&O Caboose
+item.ACF_60seat.name=ACF 60 Seat Coach
+item.Amfleet1.name=Amfleet Coach 1
+
 
 <!-- ## Tenders ## -->
 item.T322'2'.name=T32 2'2'
