@@ -79,7 +79,7 @@ public class EntityF40ph extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F40ph/F40PH_AmtrakP2.png",
                 "textures/bogies/blombergB_black.png",
-                "EMD Demonstrator", "Standard EMD demonstrator scheme");
+                "Amtrak", "Amtrak owned a lot of the F40PH, that was some years ago now.");
 
         //todo fix above entry.
     }

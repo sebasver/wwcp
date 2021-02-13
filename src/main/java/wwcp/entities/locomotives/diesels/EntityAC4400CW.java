@@ -90,7 +90,7 @@ public class EntityAC4400CW extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_CNW.png",
                 "textures/bogies/GE_Trucky_Black.png",
-                "Bludorange", "Standard UP livery for the AC4400CW");
+                "Chicago & North Western AC4400CW", "The AC4400CW didn't live long under CNW, but some remains in the design for Heritage purposes.");
 //        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/taurus2.png",
 //                "Verkehrsrot", "Standard UP livery for the AC4400CW");
     }

@@ -88,16 +88,16 @@ public class EntityMZClassFour extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDSB.png", "textures/bogies/Mz_Bogey.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIV/MzIVDSB.png", "textures/bogies/Mz_Bogey.png",
                 "DSB Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVRDK.png", "textures/bogies/Mz_Bogey.png",
-                "Railion Scandinavia Livery", "Standard Red and Black livery for the Railion \n with blinded cab windows");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVRSC.png", "textures/bogies/Mz_Bogey.png",
-                "DB Schenker Scandinavia Livery", "Standard Red and Black livery for the DB Schenker \n with DB logo");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDBCSC.png", "textures/bogies/Mz_Bogey.png",
-                "DB Cargo Scandinavia Livery", "DB Red livery for the DB Cargo \n with blinded cab windows");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIVDBCSC1449.png", "textures/bogies/Mz_Bogey.png",
-                "DB Cargo Scandinavia Livery 1449", "DB Red livery for the DB Cargo \n with cab windows and no rear lights, only nr 1449 has this type of changes");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIV/MzIVRDK.png", "textures/bogies/Mz_Bogey.png",
+                "Railion Scandinavia Livery", "Standard Red and Black livery for the Railion with blinded cab windows");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIV/MzIVRSC.png", "textures/bogies/Mz_Bogey.png",
+                "DB Schenker Scandinavia Livery", "Standard Red and Black livery for the DB Schenker with DB logo");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIV/MzIVDBCSC1459.png", "textures/bogies/Mz_Bogey.png",
+                "DB Cargo Scandinavia Livery", "DB Red livery for the DB Cargo with blinded cab windows");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/MZ/MzIV/MzIVDBCSC.png", "textures/bogies/Mz_Bogey.png",
+                "DB Cargo Scandinavia Livery 1449", "DB Red livery for the DB Cargo with cab windows and no rear lights, only nr 1449 has this type of changes");
     }
 
     @Override
@@ -114,7 +114,7 @@ public class EntityMZClassFour extends EntityTrainCore {
 
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-4.32f,1.6f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-4.32f,1.65f, -0.25f}};}
 
     @Override
     public float[] getHitboxSize() {
