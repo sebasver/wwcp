@@ -91,8 +91,7 @@ public class EntityBOCaboose extends GenericRailTransport {
     }
 
     @Override
-    public ModelBase[] bogieModels() {
-        return new ModelBase[]{new SwingMotionBogie70Ton()};
+    public ModelBase[] bogieModels() { return new ModelBase[]{new SwingMotionBogie70Ton()};
     }
 
     /**
@@ -101,7 +100,7 @@ public class EntityBOCaboose extends GenericRailTransport {
      */
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{4f, -4f};
+        return new float[]{1.5f, -1.5f};
     }
 
     @Override
@@ -117,7 +116,7 @@ public class EntityBOCaboose extends GenericRailTransport {
     @Override
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/BOCaboose/BO_I-18_caboose_BO_blue.png",
-                "textures/bogies/70ton_swing_motion_truck.png",
+                "textures/bogies/70ton_swing_motion_truck_BO_Royal_Blue.png",
                 "Caboose", "Celebration livery for 2 years WWCP");
     }
 
@@ -156,13 +155,13 @@ public class EntityBOCaboose extends GenericRailTransport {
      */
     @Override
     public float[][] getRiderOffsets() {
-        return new float[][]{{2.2f, 1.1f, 0.2f}};
+        return new float[][]{{0f, 0.9f, 0.1f}};
     }
 
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9f, 2.1f, 1.5f};
+        return new float[]{5f, 1.75f, 1.5f};
     }
 
     @Override
