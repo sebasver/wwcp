@@ -340,18 +340,17 @@ public class Transport {
                 67000.0f, 8600.0f, 87.0f, 140f, false, true, 0);
     }
 
-    //F40ph
     public static Transport.LocomotiveNoBackspeed F40ph() {
-        return new Transport.LocomotiveNoBackspeed("F40PH", "America", "1976-Present", "Diesel",
-                nick, "", type, " Passenger Locomotive",
-                38240f, 3000f, 130f, 153f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("F40PH", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
+                40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
 
-    //BL2
+    //F7A todo fix these stats.
     public static Transport.LocomotiveNoBackspeed BL2() {
-        return new Transport.LocomotiveNoBackspeed("BL2", "America", "1947-1980's", "Diesel",
-                nick, "", type, " Road Switcher",
-                40000f, 1500f, 115f, 105f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("BL2", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
+                40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
 
     //F7A
@@ -361,11 +360,10 @@ public class Transport {
                 40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
 
-    //FP7
     public static Transport.LocomotiveNoBackspeed FP7A() {
-        return new Transport.LocomotiveNoBackspeed("FP7", "America", "1949-Present", "Diesel",
-                nick, "", type, " Passenger Locomotive",
-                40000f, 1500f, 129f, 105f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("FP7A", "America", "1949-Present", "Diesel",
+                nick, "", type, " Freight Locomotive",
+                40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
 
     //F7B
@@ -386,11 +384,11 @@ public class Transport {
                 "", type, " Tender", 19.5f, 0f, false, true, 0, 300000);
     }
 
-    //EMD SD70MAC
+    //GE AC4400 CW
     public static Transport.LocomotiveNoBackspeed SD70Mac() {
-        return new Transport.LocomotiveNoBackspeed("SD70Mac", "America", "1993-Present", "Diesel",
-                "", "", type, " Mainline Freight Locomotive",
-                137000f, 4000f, 207.5f, 112f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("SD70Mac", "America", "1993-", "Diesel",
+                "", "", type, " Freight Locomotive",
+                145000f, 4400f, 193f, 112f, false, true, 0);
     }
 
     //GE AC4400 CW
@@ -414,7 +412,7 @@ public class Transport {
                 40000f, 1500f, 123f, 105f, false, true, 0);
     }
 
-    //GWR 9400
+    //GWR 5700
     public static Transport.LocomotiveNoBackspeed GWR57() {
         return new Transport.LocomotiveNoBackspeed("GWR57", "United Kingdom", "1947-1965", "Steam",
                 "", "", type, " Shunting Locomotive",
@@ -723,15 +721,15 @@ public class Transport {
                 31473.3f, 360.3f, 43.0f, 60f, false, true, 0);
     }
 
-    //DBpza //todo unfinished
+    //ACF 60 Seat
     public static Transport.Rollingstock ACF_60Seat() {
         return new Transport.Rollingstock("ACF_60Seat", "Germany", "1997-", "",
                 "", type, " Passenger", 47.5f, 140f, false, true, 0);
     }
 
-    //DBpza //todo unfinished
+    //GWR Toad 20
     public static Transport.Rollingstock GWR_Toad20() {
-        return new Transport.Rollingstock("GWRToad20", "Germany", "1997-", "",
+        return new Transport.Rollingstock("GWRToad20", "United Kingdom", "1997-", "",
                 "", type, " Passenger", 47.5f, 140f, false, true, 0);
     }
 
@@ -767,8 +765,8 @@ public class Transport {
 
     //Amfleet 1
     public static Transport.Rollingstock Amfleet1() {
-        return new Transport.Rollingstock("Amfleet1", "Europe", "1975-Present", "",
-                "", type, " Passenger", 53f, 201f, false, true, 0);
+        return new Transport.Rollingstock("Amfleet1", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
     }
 
     //Eurofima with Compartments
@@ -908,7 +906,7 @@ public class Transport {
         return new Transport.Rollingstock("UKFlatbed", "United Kingdom", "1930-1959", "",
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
-    //todo fix stats
+    //Chaldron
     public static Transport.Rollingstock Chaldron() {
         return new Transport.Rollingstock("Chaldron", "United Kingdom", "1930-1959", "",
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
@@ -938,28 +936,31 @@ public class Transport {
                 "", type, " Boxcar", 48f, 120f, false, true, 0);
     }
 
+    //GCS Flatcar
     public static Transport.Rollingstock GSC_Flatcar() {
         return new Transport.Rollingstock("GSCFlatcar", "America", "1956", "",
                 "", type, " Flatcar", 75f, 0f, false, true, 0);
     }
 
-    //TTX 89ft Flatcar
+    //89ft Flatcar
     public static Transport.Rollingstock Flatcar_89ft() {
         return new Transport.Rollingstock("89ftFlatCar", "America", "1956", "",
                 "", type, " Flatcar", 75f, 0f, false, true, 0);
     }
 
-    //TTX 89ft Bi-Level Autorack
+    //89ft Autorack BiLvel
     public static Transport.Rollingstock Autorack_89ft_BiLevel() {
         return new Transport.Rollingstock("89ftBiLevelAutoRack", "America", "1956", "",
                 "", type, " Autorack", 75f, 0f, false, true, 0);
     }
 
+    //GCS Flatcar Bulkhead Early
     public static Transport.Rollingstock GSC_FlatcarBulkhead() {
         return new Transport.Rollingstock("GSCFlatcarBulkhead", "America", "1956", "",
                 "", type, " Flatcar", 75f, 0f, false, true, 0);
     }
 
+    //GCS Flatcar Bulkhead Late
     public static Transport.Rollingstock GSC_FlatcarBulkheadLate() {
         return new Transport.Rollingstock("GSCFlatcarBulkheadLate", "America", "1956", "",
                 "", type, " Flatcar", 75f, 0f, false, true, 0);
@@ -1001,17 +1002,24 @@ public class Transport {
                 "", type, " Freight Container", 21.5f, 120f, false, true, 0, 60000);
     }
 
-    //todo fix these stats once advent is over.
+    //ACF Single Dome Tankcar
     public static Transport.TankCars ACF_Single_Dome_Tankcar() {
         return new Transport.TankCars("ACF_Single_Dome", "America", "1930-1959", "",
                 "", type, " Tank wagon", 12f, 0f, false, true, 0,  9000);
     }
 
-    //todo fix these stats once advent is over.
+    //DSB E Open Wagon
     public static Transport.TankCars DSBCarE() {
-        return new Transport.TankCars("DBSE", "Denmark", "1930-1959", "",
+        return new Transport.TankCars("DBSE", "Denmark", "1960-1990", "",
                 "", type, " Freight loose", 12f, 0f, false, true, 0,  9000);
     }
+
+    //BO Caboose todo fix this entry
+    public static Rollingstock BOCaboose() {
+        return new Transport.Rollingstock("B&O_Caboose", "America", "1930-1959", "",
+                "", type, " Passenger", 12f, 0f, false, true, 0);
+    }
 }
+
 
 

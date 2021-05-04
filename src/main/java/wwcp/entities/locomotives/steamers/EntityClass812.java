@@ -80,8 +80,8 @@ public class EntityClass812 extends EntityTrainCore {
     public float transportTopSpeed(){return accelerator<0? Transport.CR812().backTopSpeed: Transport.CR812().topSpeed;}
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/C812/C1.png", "default",
-                "Used by Germany in WWI as a transport for solders and equipment");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/C812/C1.png",
+                "Class 812", "The Class 812 was build by John F. McIntosh for the Caledonean Railway in Scotland.");
 
     }
 

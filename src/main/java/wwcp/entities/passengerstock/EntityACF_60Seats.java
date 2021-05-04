@@ -109,7 +109,7 @@ public class EntityACF_60Seats extends GenericRailTransport {
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/ACF_60Seat.png",
                 "textures/bogies/M500_Truck.png",
-                "ACF", "Celebration livery for 2 years WWCP");
+                "Great Northern Railroad", "ACF Coach in GNR's Livery And no its not the UK GNR");
     }
 
     /*@Override

@@ -92,7 +92,7 @@ public class EntitySD70Mac extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70Mac/SD70MAC_KCS_Ghost.png",
                 "textures/bogies/HTSCtruck_Black.png",
-                "Bludorange", "Standard UP livery for the AC4400CW");
+                "Kansas City Southern Ghost", "The grey scheme of KCS was own as Ghost scheme due to its full grey, few SD70Macs remains in this scheme.");
     }
 
     /**

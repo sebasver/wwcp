@@ -94,11 +94,11 @@ public class EntityKofIII extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/KoFIII/Kof_MWB.png",
                 "MWB Livery", "MBW livery for the KoF");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/KoFIII/Kof_Danish.png",
-                "Danish Livery", "Danish livery for the KoF");
+                "NJ Livery", "Danish Nordjyske Jernbaner livery for the KoF");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/KoFIII/Kof_Red.png",
-                "Red Livery", "Red livery for the KoF");
+                "Red Livery", "DB Verkehrsrot livery for the KoF");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/KoFIII/Kof_Yellow.png",
-                "Yellow Livery", "Red livery for the KoF");
+                "Yellow Livery", "Yellow livery for the KoF");
     }
 
     @Override

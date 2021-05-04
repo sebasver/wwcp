@@ -116,8 +116,8 @@ public class EntityBOCaboose extends GenericRailTransport {
     @Override
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/BOCaboose/BO_I-18_caboose_BO_blue.png",
-                "textures/bogies/70ton_swing_motion_truck_BO_Royal_Blue.png",
-                "Caboose", "Celebration livery for 2 years WWCP");
+                "textures/bogies/70ton_swing_motion_truck.png",
+                "B&O", "B&O livery for the Caboose");
     }
 
     /*@Override
