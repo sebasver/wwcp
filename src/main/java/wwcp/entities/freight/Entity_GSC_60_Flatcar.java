@@ -118,7 +118,7 @@ public class Entity_GSC_60_Flatcar extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{8.4f, 2f, 1.6F};
+        return new float[]{8.4f, 0.75f, 1.6F};
     }
 
     public float getPistonOffset() {
