@@ -90,9 +90,16 @@ public class EntityAC4400CW extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_CNW.png",
                 "textures/bogies/GE_Trucky_Black.png",
-                "Bludorange", "Standard UP livery for the AC4400CW");
-//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/taurus2.png",
-//                "Verkehrsrot", "Standard UP livery for the AC4400CW");
+                "CNW Yellow", "CNW yellow-green with operation lifesaver");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_SP.png",
+                "textures/bogies/GE_Trucky_Black.png",
+                "Southern Pacific", "Southern Pacific Bloody Nose");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_UP_numbarboards_top.png",
+                "textures/bogies/GE_Trucky_Black.png",
+                "Union Pacific, Numberboards on Top", "Union Pacific with numberboards on cab top, block lettering");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_UP_numberboards_nose.png",
+                "textures/bogies/GE_Trucky_Black.png",
+                "Union Pacific, Numberboards on Nose", "Union Pacific with numberboards on cab nose, block lettering");
     }
 
     /**
