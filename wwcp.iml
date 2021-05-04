@@ -712,7 +712,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/Traincraft-5.0.1.jar!/"/>
+          <root url="jar://$MODULE_DIR$/libs/Traincraft.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>
