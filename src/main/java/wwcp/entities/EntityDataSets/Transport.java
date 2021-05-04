@@ -395,7 +395,7 @@ public class Transport {
 
     //GE AC4400 CW
     public static Transport.LocomotiveNoBackspeed GEAC4400CW() {
-        return new Transport.LocomotiveNoBackspeed("GEAC4400CW", "America", "1993-Present", "Diesel",
+        return new Transport.LocomotiveNoBackspeed("AC4400CW", "America", "1993-Present", "Diesel",
                 "", "", type, " Mainline Freight Locomotive",
                 145000f, 4400f, 193f, 112f, false, true, 0);
     }
@@ -452,11 +452,10 @@ public class Transport {
                 88000f, 3253f, 116.5f, 143f, false, true, 0);
     }
 
-    //BO Caboose todo fix this entry
-    public static Transport.LocomotiveNoBackspeed BOCaboose() {
-        return new Transport.LocomotiveNoBackspeed("BOCaboose", "Denmark", "1967-", "Diesel",
-                nick, " Cake Tins", type, " Universal Locomotive",
-                88000f, 3253f, 116.5f, 143f, false, true, 0);
+    //B&O Caboose
+    public static Transport.Rollingstock BOCaboose() {
+        return new Transport.Rollingstock("B&O Caboose", "America", "1977-", "",
+                "", type, " Bay Window Caboose", 45f, 200f, false, true, 0);
     }
 
     //MZ Class I
