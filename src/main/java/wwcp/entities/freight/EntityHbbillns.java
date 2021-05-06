@@ -52,16 +52,16 @@ public class EntityHbbillns extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbillns/DSBGrey.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbillns/DSB_Hbbillns_Grey.png",
                 "DSB Grey Hbbillns",
                 "The Danish Staterailays didn't had the wagon for long. In 2001 when DSB Gods were bought by Railion, so did the Hbbillns. in 2002 the last DSB Hbbillns left Denmark to return again without 'DSB' designation. The early series were delivered in Grey");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbillns/DSBBrown.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbillns/DSB_Hbbillns_Brown.png",
                 "DSB Brown Hbbillns",
                 "The Danish Staterailays didn't had the wagon for long. In 2001 when DSB Gods were bought by Railion, so did the Hbbillns. in 2002 the last DSB Hbbillns left Denmark to return again without 'DSB' designation. The late series were delivered in Brown");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbillns/TWABrown.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbillns/TWA_Hbbillns_Brown.png",
                 "Brown Transwaggon Hbbillns",
                 "Transwaggon are the biggest freightcar leasing company in europe, most of their Hbbillns like the rest of their boxcar fleet has become brown due to dirt and rust dust.");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbillns/TWAGrey.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Hbbillns/TWA_Hbbillns_Grey.png",
                 "Grey Transwaggon Hbbillns",
                 "This is how a clean Transwaggon Hbbillns looks like, they are common still");
     }
