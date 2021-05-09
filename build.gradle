@@ -1,7 +1,10 @@
 buildscript {
     repositories {
         mavenCentral()
-        maven { url = "http://files.minecraftforge.net/maven" }
+        maven {
+            name = "gt"
+            url = "https://gregtech.overminddl1.com/"
+        }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
