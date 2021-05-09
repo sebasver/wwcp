@@ -245,7 +245,7 @@ public class wwcp_registrations {
                 new EntitySGNS804TS(null),
                 new EntitySGNS801BT2TS(null),
                 new EntityZACNS95(null),
-                new EntityEALOSX(null),                
+                new EntityEALOSX(null),
                 new EntityHiCubePlateFBoxcar(null),
                 new EntityFortyFoot_Boxcar(null),
                 new EntityHabbiins_14(null),
