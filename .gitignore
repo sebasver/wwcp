@@ -9,8 +9,8 @@ eclipse
 out
 .idea
 *.iws
-*.iml
-*.ipr
+*wwcp.iml
+*wwcp.ipr
 
 # gradle
 build
