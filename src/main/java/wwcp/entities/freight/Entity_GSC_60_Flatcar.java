@@ -54,10 +54,21 @@ public class Entity_GSC_60_Flatcar extends GenericRailTransport {
         return new float[][]{{-0F, -0F, 0F}};
     }
 
-    //todo fix naming of this;
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/GSCFlatcar/GSC_60_Flatcar_BN_crooked_lettering.png", "textures/bogies/100ton_truck_black.png",
-                "CNR Maple Leaf, Aluminium Sheathed", "Canadian National Railway Red Orange Boxcar with aluminium sheathed sides");
+                "Burlington Northern crooked lettering", "BN green with crooked lettering logo");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/GSCFlatcar/GSC_60_Flatcar_BN.png", "textures/bogies/100ton_truck_black.png",
+                "Burlington Northern straight lettering", "BN green with straight lettering logo");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/GSCFlatcar/GSC_60_Flatcar_GN.png", "textures/bogies/100ton_truck_black.png",
+                "Great Northern", "GN turquoise");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/GSCFlatcar/GSC_60_Flatcar_ICG.png", "textures/bogies/100ton_truck_black.png",
+                "Illinois Central", "IC orange");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/GSCFlatcar/GSC_60_Flatcar_NW.png", "textures/bogies/100ton_truck_black.png",
+                "Norfolk & Western", "NW Black");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/GSCFlatcar/GSC_60_Flatcar_SSW.png", "textures/bogies/100ton_truck_black.png",
+                "Cotton Belt", "SSW Black");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/GSCFlatcar/GSC_60_Flatcar_UP.png", "textures/bogies/100ton_truck_black.png",
+                "Union Pacific", "UP Yellow");
     }
 
     @Override
