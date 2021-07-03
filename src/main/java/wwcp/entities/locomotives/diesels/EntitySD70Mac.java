@@ -92,8 +92,23 @@ public class EntitySD70Mac extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70Mac/SD70MAC_KCS_Ghost.png",
                 "textures/bogies/HTSCtruck_Black.png",
-                "Kansas City Southern Ghost", "The grey scheme of KCS was own as Ghost scheme due to its full grey, few SD70Macs remains in this scheme.");
+                "Kansas City Southern Ghost", "KCC grey ghost scheme, few SD70MAC's remains in this scheme.");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70Mac/SD70MAC_BN_Executive.png",
+                "textures/bogies/HTSCtruck_Black.png",
+                "BN Executive", "Burlington Northern Executive Scheme");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70Mac/SD70MAC_BNSF_Executive.png",
+                "textures/bogies/HTSCtruck_Black.png",
+                "BNSF, Ex. BN Executive w/ logo", "BNSF Ex. Burlington Northern Executive Scheme with bnsf logo on nose");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70Mac/SD70MAC_BNSF_Executive_Logo.png",
+                "textures/bogies/HTSCtruck_Black.png",
+                "BNSF, Ex. BN Executive", "BNSF Ex. Burlington Northern Executive Scheme with bnsf logo on side");
     }
+
+    @Override
+    public String getDefaultSkin() {
+        return worldwidecontentpack.MODID + ":BN Executive";
+    }
+
 
     /**
      * ETERNAL NOTE: though these two methods are marked depreciated, they will be supported long-run

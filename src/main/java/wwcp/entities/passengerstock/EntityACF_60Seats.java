@@ -107,9 +107,9 @@ public class EntityACF_60Seats extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/ACF_60Seat.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/GN_Orange.png",
                 "textures/bogies/M500_Truck.png",
-                "Great Northern Railroad", "ACF Coach in GNR's Livery And no its not the UK GNR");
+                "Great Northern Empire builder", "Great Northern empire builder orange");
     }
 
     /*@Override
@@ -140,12 +140,12 @@ public class EntityACF_60Seats extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{2.2f,1.1f, 0.2f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{0f,1.0f, 0.2f}};}
 
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9f,2.1f,1.5f};
+        return new float[]{11f,1.9f,1.5f};
     }
 
     @Override

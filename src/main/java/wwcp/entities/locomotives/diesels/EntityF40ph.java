@@ -77,11 +77,9 @@ public class EntityF40ph extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F40ph/F40PH_AmtrakP2.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F40ph/F40ph_Amtrak_phase2.png",
                 "textures/bogies/blombergB_black.png",
-                "Amtrak", "Amtrak owned a lot of the F40PH, that was some years ago now.");
-
-        //todo fix above entry.
+                "Amtrak Livery 2", "Amtrak Phase 2 Scheme");
     }
     
     @Override
