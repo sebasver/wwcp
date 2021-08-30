@@ -393,7 +393,7 @@ public class Transport {
 
     //M640 - Note, Incomplete until I find the data
     public static Transport.LocomotiveNoBackspeed M640() {
-        return new Transport.LocomotiveNoBackspeed("MM640", "Canada", "1972-1992", "Diesel",
+        return new Transport.LocomotiveNoBackspeed("M640", "Canada", "1972-1992", "Diesel",
                 "", "", type, "Mainline Locomotive",
                 53000f, 4000f, 200f, 70f, false, true, 0);
     }
@@ -962,6 +962,23 @@ public class Transport {
     public static Transport.Rollingstock Fortyfoot_Boxcar() {
         return new Transport.Rollingstock("40ft Boxcar", "America", "?", "",
                 "", type, " Boxcar", 48f, 120f, false, true, 0);
+    }
+
+    //40ft Boxcar - CP Plug Slide Boxcar
+    public static Transport.Rollingstock CP_PlugSlide() {
+        return new Transport.Rollingstock("40ft CP PlugSlide Boxcar", "Canada", "~1970-2000", "",
+                "", type, " Boxcar", 48f, 120f, false, true, 0);
+    }
+    //40ft Boxcar - CP Plugdoor Boxcar
+    public static Transport.Rollingstock CP_Plugdoor() {
+        return new Transport.Rollingstock("40ft CP Plugdoor Boxcar", "Canada", "~1970-2000", "",
+                "", type, " Boxcar", 48f, 120f, false, true, 0);
+    }
+
+    //40ft Boxcar - CP Minibox
+    public static Transport.Rollingstock CP_Minibox() {
+        return new Transport.Rollingstock("40ft CP Minibox", "Canada", "1929-1983", "",
+                "", type, " Boxcar", 36f, 120f, false, true, 0);
     }
 
     //GCS Flatcar

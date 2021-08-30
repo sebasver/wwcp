@@ -43,20 +43,21 @@ public class GP50 extends RollingStockModel {
 				.addShapeBox(0, 0, 0, 13, 18, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(31, -19, -11).setRotationAngle(0, 0, 0)
 		);
-		group0.add(new ModelRendererTurbo(group0, 233, 66, textureX, textureY).addBox(0, 0, 0, 8, 14, 14)
-				.setRotationPoint(45, -15, -7).setRotationAngle(0, 0, 0)
-		);
 		group0.add(new ModelRendererTurbo(group0, 10, 129, textureX, textureY).addCylinder(0, 0, 0, 0.95f, 1, 8, 1, 1, 3, null)
-				.setRotationPoint(58.75f, -14.5f, 0).setRotationAngle(0, 0, 0)
+				.setRotationPoint(59, -14, 0).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 16, 95, textureX, textureY).addBox(0, 0, 0, 2, 1, 2)
-				.setRotationPoint(-32, 1, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(-32, 1.5f, -1).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 317, 106, textureX, textureY).addBox(0, 0, 0, 1, 2, 6)
 				.setRotationPoint(47, -21.75f, 0.9f).setRotationAngle(0, -26.5f, 0).setName("numberboard_front_left")
 		);
 		group0.add(new ModelRendererTurbo(group0, 442, 128, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 				.setRotationPoint(-50, -24, -0.5f).setRotationAngle(0, 0, 0)
+		);
+		group0.add(new ModelRendererTurbo(group0, 233, 66, textureX, textureY)
+				.addShapeBox(0, 0, 0, 8, 14, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.setRotationPoint(45, -15, -7).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(group0);
 	}
@@ -99,9 +100,6 @@ public class GP50 extends RollingStockModel {
 		clipboard.add(new ModelRendererTurbo(clipboard, 111, 110, textureX, textureY)
 				.addShapeBox(0, 0, 0, 3, 1, 3, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0)
 				.setRotationPoint(-20, -24, 1.5f).setRotationAngle(0, 0, 0)
-		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 231, 0, textureX, textureY).addBox(0, 0, 0, 104, 1, 16)
-				.setRotationPoint(-47, 0, -8).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 349, 77, textureX, textureY)
 				.addShapeBox(0, 0, 0, 13, 4, 1, 0, 0, 0, -1, 0, 0, -1, 0, -1, 0, 0, -1, 0, 0, -0.5f, 3, 0, -0.5f, 3, 0, -0.5f, -3, 0, -0.5f, -3)
@@ -228,17 +226,17 @@ public class GP50 extends RollingStockModel {
 				.addShapeBox(0, 0, 0, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0.5f, 0, -0.5f, 0.5f)
 				.setRotationPoint(56, -4, -10.75f).setRotationAngle(0, 0, 0)
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 366, 71, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 20, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, -3)
+		clipboard.add(new ModelRendererTurbo(clipboard, 299, 165, textureX, textureY)
+				.addShapeBox(0, 0, 0, 1, 4, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2)
 				.setRotationPoint(44, -20, -7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 219, 97, textureX, textureY)
-				.addShapeBox(0, 0, 0, 3, 11, 7, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0)
-				.setRotationPoint(57, -12, -7).setRotationAngle(0, 0, 0)
+				.addShapeBox(0, 0, 0, 3, 10, 7, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0)
+				.setRotationPoint(57, -11, -7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 252, 95, textureX, textureY)
-				.addShapeBox(0, 0, 0, 3, 11, 7, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0)
-				.setRotationPoint(57, -12, 0).setRotationAngle(0, 0, 0)
+				.addShapeBox(0, 0, 0, 3, 10, 7, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0)
+				.setRotationPoint(57, -11, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 460, 100, textureX, textureY)
 				.addShapeBox(0, 0, 0, 3, 3, 6, 0, 0, 0, 0, -3, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, -0.43f, 0, 0, 0, 0, 0)
@@ -251,21 +249,18 @@ public class GP50 extends RollingStockModel {
 		clipboard.add(new ModelRendererTurbo(clipboard, 231, 4, textureX, textureY).newCylinderBuilder()
 				.setPosition(0, 0, 0).setRadius(0.95f, 0.8f).setLength(1).setSegments(10, 5).setScale(1, 1).setDirection(4)
 				.setRadialTexture(0, 0).setTopOffset(null).setTopRotation(new Vec3f(0.0, 0.0, 0.0)).build()
-				.setRotationPoint(59.85f, -14.55f, 0).setRotationAngle(0, 0, 90)
+				.setRotationPoint(60.1f, -14.05f, 0).setRotationAngle(0, 0, 90)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 150, 128, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 1, 1, 0, -0.25f, 0, 0, -0.43f, 0, 0, 0, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.43f, 0, 0, 0, 0, 0, -0.25f, 0, 0)
 				.setRotationPoint(59, -15, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 84, 128, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 1, 1, 0, -0.25f, 0, 0, 0, 0, 0, -0.43f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, 0, 0, 0, -0.43f, 0, 0, -0.25f, 0, 0)
 				.setRotationPoint(59, -15, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 0, 95, textureX, textureY).addBox(0, 0, 0, 2, 1, 2)
-				.setRotationPoint(40, 1, -1).setRotationAngle(0, 0, 0)
-		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 0, 33, textureX, textureY).addBox(0, 0, 0, 36, 3, 20)
-				.setRotationPoint(-13, 3, -10).setRotationAngle(0, 0, 0).setName("Box 41cp")
+				.setRotationPoint(40, 1.5f, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 263, 55, textureX, textureY)
 				.addShapeBox(0, 0, 0, 36, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0)
@@ -458,21 +453,13 @@ public class GP50 extends RollingStockModel {
 				.addShapeBox(0, 0, 0, 2, 2, 2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(42, -13, -10).setRotationAngle(0, 0, 0)
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 253, 127, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0)
-				.setRotationPoint(59, -15.5f, -1).setRotationAngle(0, 0, 0)
-		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 248, 127, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0)
-				.setRotationPoint(59, -15.5f, 0).setRotationAngle(0, 0, 0)
-		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 167, 127, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, -0.43f, 0, 0, -0.43f, 0, 0, 0, 0, 0)
-				.setRotationPoint(58, -15, -1).setRotationAngle(0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, 0, 0, -0.43f, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0, -0.43f, 0, 0, -0.43f, 0, 0, 0, 0, 0)
+				.setRotationPoint(59, -15, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 162, 127, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, -0.43f, 0, 0, -0.43f, 0, 0, 0, 0, 0)
-				.setRotationPoint(58, -15, 0).setRotationAngle(0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, 0, 0, -0.43f, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0, -0.43f, 0, 0, -0.43f, 0, 0, 0, 0, 0)
+				.setRotationPoint(59, -15, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 157, 127, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0)
@@ -582,28 +569,16 @@ public class GP50 extends RollingStockModel {
 				.addShapeBox(0, 0, 0, 14, 5, 1, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(14, -22.5f, 6.5f).setRotationAngle(0, 0, 0)
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 403, 99, textureX, textureY)
-				.addShapeBox(0, 0, 0, 3, 1, 6, 0, 0, -0.5f, 0, -3, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, -3, 0, 0, -0.43f, 0, 0, 0, 0, 0)
-				.setRotationPoint(57, -16, -7).setRotationAngle(0, 0, 0)
-		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 493, 95, textureX, textureY)
-				.addShapeBox(0, 0, 0, 3, 1, 6, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, -3, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, -0.43f, 0, 0, -3, 0, 0, 0, 0, 0)
-				.setRotationPoint(57, -16, 1).setRotationAngle(0, 0, 0)
-		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 456, 0, textureX, textureY)
-				.addShapeBox(0, 0, 0, 12, 1, 14, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-				.setRotationPoint(45, -16, -7).setRotationAngle(0, 0, 0)
-		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 430, 119, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0.5f, 0)
-				.setRotationPoint(57, -15.5f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(57, -15, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 129, 127, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 1, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 1, -0.5f, 0, 1, 0, 0, -0.43f, 0, 0, 0, 0, 0, 1, 0, 0)
 				.setRotationPoint(59, -14, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 124, 127, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 1, -0.5f, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, 1, -0.5f, 0, 1, 0, 0, 0, 0, 0, -0.43f, 0, 0, 1, 0, 0)
 				.setRotationPoint(59, -14, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 27, 57, textureX, textureY)
@@ -1079,31 +1054,31 @@ public class GP50 extends RollingStockModel {
 				.setRotationPoint(54, -9.5f, 6).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 287, 124, textureX, textureY).addCylinder(0, 0, 0, 0.6f, 1, 6, 1, 1, 3, new Vec3f(-0.5, 0.0, 0.0))
-				.setRotationPoint(59.35f, -15, 0).setRotationAngle(0, 0, 0).setName("mars_light")
+				.setRotationPoint(59.35f, -14.5f, 0).setRotationAngle(0, 0, 0).setName("mars_light")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 409, 118, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0.5f, 0)
-				.setRotationPoint(58, -15.5f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(58, -15, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 90, 80, textureX, textureY)
 				.addShapeBox(0, 0, 0, 2, 1, 1, 0, -0.5f, -0.1f, 0, 0, -0.1f, 0, 0, -0.3f, -0.3f, -0.5f, -0.3f, -0.3f, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0)
-				.setRotationPoint(57.75f, -16, 0).setRotationAngle(0, 0, 0)
+				.setRotationPoint(57.75f, -15.5f, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 194, 76, textureX, textureY)
 				.addShapeBox(0, 0, 0, 2, 1, 1, 0, -0.5f, -0.3f, -0.3f, 0, -0.3f, -0.3f, 0, -0.1f, 0, -0.5f, -0.1f, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0)
-				.setRotationPoint(57.75f, -16, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(57.75f, -15.5f, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 183, 76, textureX, textureY)
 				.addShapeBox(0, 0, 0, 2, 1, 1, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, -0.1f, 0, 0, -0.1f, 0, 0, -0.3f, -0.3f, -0.5f, -0.3f, -0.3f)
-				.setRotationPoint(57.75f, -15, 0).setRotationAngle(0, 0, 0)
+				.setRotationPoint(57.75f, -14.5f, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 114, 76, textureX, textureY)
 				.addShapeBox(0, 0, 0, 2, 1, 1, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, -0.3f, -0.3f, 0, -0.3f, -0.3f, 0, -0.1f, 0, -0.5f, -0.1f, 0)
-				.setRotationPoint(57.75f, -15, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(57.75f, -14.5f, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 402, 118, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 3, 2, 0, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0.5f, 0, -0.75f, 0.5f, 0, -0.75f, 0.5f, 0, 0, 0.5f, 0)
-				.setRotationPoint(59, -15.5f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(59, -15, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 282, 124, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -1661,6 +1636,50 @@ public class GP50 extends RollingStockModel {
 				.addShapeBox(0, 0, 0, 3, 1, 1, 0, 0, 0, -2, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 2, 0, 0, -2, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 2)
 				.setRotationPoint(39, -16, -4).setRotationAngle(0, 0, 0)
 		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 392, 182, textureX, textureY)
+				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0)
+				.setRotationPoint(59, -12, -1).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 358, 182, textureX, textureY)
+				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0)
+				.setRotationPoint(59, -12, 0).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 371, 182, textureX, textureY)
+				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0)
+				.setRotationPoint(59, -12.5f, -1).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 410, 183, textureX, textureY)
+				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.43f, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.43f, 0, 0, 0, 0, 0)
+				.setRotationPoint(59, -12.5f, 0).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 377, 165, textureX, textureY)
+				.addShapeBox(0, 0, 0, 3, 1, 6, 0, 0, 0, 0, -3, 0, 0, -0.43f, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, -0.43f, 0, 0, 0, 0, 0)
+				.setRotationPoint(57, -12, -7).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 358, 165, textureX, textureY)
+				.addShapeBox(0, 0, 0, 3, 1, 6, 0, 0, 0, 0, -0.43f, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, -0.43f, 0, 0, -3, 0, 0, 0, 0, 0)
+				.setRotationPoint(57, -12, 1).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 261, 176, textureX, textureY)
+				.addShapeBox(0, 0, 0, 1, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -2, 0, -0.5f, -2)
+				.setRotationPoint(44, -16, -7).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 309, 204, textureX, textureY)
+				.addShapeBox(0, 0, 0, 1, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -2, 0, -0.5f, -2)
+				.setRotationPoint(44, -15.5f, -7).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 237, 217, textureX, textureY)
+				.addShapeBox(0, 0, 0, 1, 9, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2)
+				.setRotationPoint(44, -15, -7).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 0, 33, textureX, textureY)
+				.addShapeBox(0, 0, 0, 36, 3, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.setRotationPoint(-13, 3, -10).setRotationAngle(0, 0, 0).setName("Box 41cp")
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 231, 0, textureX, textureY)
+				.addShapeBox(0, 0, 0, 104, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0.5f, 0)
+				.setRotationPoint(-47, 0, -8).setRotationAngle(0, 0, 0)
+		);
 		this.groups.add(clipboard);
 	}
 
@@ -1768,9 +1787,6 @@ public class GP50 extends RollingStockModel {
 		);
 		SD70MACcb.add(new ModelRendererTurbo(SD70MACcb, 109, 27, textureX, textureY).addBox(0, 0, 0, 36, 1, 22)
 				.setRotationPoint(-13, 2, -11).setRotationAngle(0, 0, 0).setName("Box 41")
-		);
-		SD70MACcb.add(new ModelRendererTurbo(SD70MACcb, 97, 51, textureX, textureY).addBox(0, 0, 0, 36, 3, 16)
-				.setRotationPoint(-13, 6, -8).setRotationAngle(0, 0, 0).setName("Box 41")
 		);
 		SD70MACcb.add(new ModelRendererTurbo(SD70MACcb, 238, 69, textureX, textureY).addBox(0, 0, 0, 1, 1, 3)
 				.setRotationPoint(19, 2, 8).setRotationAngle(25, 0, 0)
@@ -2176,6 +2192,10 @@ public class GP50 extends RollingStockModel {
 				.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.5f, -1, -1, -0.5f, -1, -1, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(-13.5f, -25, -5).setRotationAngle(0, 0, 0)
 		);
+		SD70MACcb.add(new ModelRendererTurbo(SD70MACcb, 97, 51, textureX, textureY)
+				.addShapeBox(0, 0, 0, 36, 3, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.setRotationPoint(-13, 6, -8).setRotationAngle(0, 0, 0).setName("Box 41cp")
+		);
 		this.groups.add(SD70MACcb);
 	}
 
@@ -2288,23 +2308,23 @@ public class GP50 extends RollingStockModel {
 		TurboList SD60MACcb = new TurboList("SD60MACcb");
 		SD60MACcb.add(new ModelRendererTurbo(SD60MACcb, 231, 49, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 3, 2, 0, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f)
-				.setRotationPoint(58.5f, -15.25f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(58.5f, -14.75f, -1).setRotationAngle(0, 0, 0)
 		);
 		SD60MACcb.add(new ModelRendererTurbo(SD60MACcb, 0, 43, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f)
-				.setRotationPoint(58.8f, -15.55f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(58.8f, -15.05f, -1).setRotationAngle(0, 0, 0)
 		);
 		SD60MACcb.add(new ModelRendererTurbo(SD60MACcb, 0, 33, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f)
-				.setRotationPoint(58.8f, -13.95f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(58.8f, -13.45f, -1).setRotationAngle(0, 0, 0)
 		);
 		SD60MACcb.add(new ModelRendererTurbo(SD60MACcb, 505, 27, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f)
-				.setRotationPoint(58.9f, -13.95f, -1).setRotationAngle(0, 0, 0).setName("noseheadlight_low")
+				.setRotationPoint(58.9f, -13.45f, -1).setRotationAngle(0, 0, 0).setName("noseheadlight_low")
 		);
 		SD60MACcb.add(new ModelRendererTurbo(SD60MACcb, 505, 16, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f)
-				.setRotationPoint(58.9f, -15.55f, -1).setRotationAngle(0, 0, 0).setName("noseheadlight_high")
+				.setRotationPoint(58.9f, -15.05f, -1).setRotationAngle(0, 0, 0).setName("noseheadlight_high")
 		);
 		this.groups.add(SD60MACcb);
 	}
@@ -2351,7 +2371,7 @@ public class GP50 extends RollingStockModel {
 		);
 		GP50_Explodecb.add(new ModelRendererTurbo(GP50_Explodecb, 113, 160, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 3, 2, 0, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0.5f, 0, -0.75f, 0.5f, 0, -0.75f, 0.5f, 0, 0, 0.5f, 0)
-				.setRotationPoint(58, -15.5f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(58, -15, -1).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(GP50_Explodecb);
 	}

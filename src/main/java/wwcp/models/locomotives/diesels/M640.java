@@ -855,25 +855,25 @@ public class M640 extends RollingStockModel {
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.3f, -0.3f, -0.1f, -0.3f, -0.3f, -0.1f, -0.3f, -0.3f, 0, -0.3f, -0.3f, 0, -0.3f, -0.3f, -0.1f, -0.3f, -0.3f, -0.1f, -0.3f, -0.3f, 0, -0.3f, -0.3f)
 				.setRotationPoint(65, -0.55f, -7.5f).setRotationAngle(0, 0, 0).setName("Box 228cp")
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 299, 89, textureX, textureY).addBox(0, 0, 0, 16, 14, 1)
-				.setRotationPoint(38, -16.5f, -11).setRotationAngle(0, 0, 0)
+		clipboard.add(new ModelRendererTurbo(clipboard, 299, 89, textureX, textureY).addBox(0, 0, 0, 16, 15, 1)
+				.setRotationPoint(38, -17.5f, -11).setRotationAngle(0, 0, 0)
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 70, 88, textureX, textureY).addBox(0, 0, 0, 16, 14, 1)
-				.setRotationPoint(38, -16.5f, 10).setRotationAngle(0, 0, 0)
+		clipboard.add(new ModelRendererTurbo(clipboard, 70, 88, textureX, textureY).addBox(0, 0, 0, 16, 15, 1)
+				.setRotationPoint(38, -17.5f, 10).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 159, 50, textureX, textureY).addBox(0, 0, 0, 16, 4, 20)
 				.setRotationPoint(38, -6.5f, -10).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 303, 66, textureX, textureY)
-				.addShapeBox(0, 0, 0, 16, 2, 1, 0, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 16, 1, 1, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0.75f, 0, 0, 0.75f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(38, -18.5f, -11).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 434, 87, textureX, textureY)
-				.addShapeBox(0, 0, 0, 16, 1, 3, 0, 0, -1, 0, 0, -1, 0, 0, 1.5f, 0, 0, 1.5f, 0, 0, 0, -1, 0, 0, -1, 0, -1.5f, 0, 0, -1.5f, 0)
-				.setRotationPoint(38, -19.5f, -10).setRotationAngle(0, 0, 0)
+				.addShapeBox(0, 0, 0, 16, 1, 3, 0, 0, -1.25f, 0.25f, 0, -1.25f, 0.25f, 0, 1.5f, 0, 0, 1.5f, 0, 0, 0.25f, -0.75f, 0, 0.25f, -0.75f, 0, -1.5f, 0, 0, -1.5f, 0)
+				.setRotationPoint(38, -19.75f, -10).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 85, 77, textureX, textureY)
-				.addShapeBox(0, 0, 0, 16, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0)
+				.addShapeBox(0, 0, 0, 16, 1, 5, 0, 0, 0.25f, 0, 0, 0.25f, 0, 0, 1, 0, 0, 1, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -1, 0, 0, -1, 0)
 				.setRotationPoint(38, -21, -7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 285, 85, textureX, textureY)
@@ -881,15 +881,15 @@ public class M640 extends RollingStockModel {
 				.setRotationPoint(38, -22, -2).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 303, 62, textureX, textureY)
-				.addShapeBox(0, 0, 0, 16, 2, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 16, 1, 1, 0, 0, 0, 0.75f, 0, 0, 0.75f, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(38, -18.5f, 10).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 0, 87, textureX, textureY)
-				.addShapeBox(0, 0, 0, 16, 1, 3, 0, 0, 1.5f, 0, 0, 1.5f, 0, 0, -1, 0, 0, -1, 0, 0, -1.5f, 0, 0, -1.5f, 0, 0, 0, -1, 0, 0, -1)
-				.setRotationPoint(38, -19.5f, 7).setRotationAngle(0, 0, 0)
+				.addShapeBox(0, 0, 0, 16, 1, 3, 0, 0, 1.5f, 0, 0, 1.5f, 0, 0, -1.25f, 0.25f, 0, -1.25f, 0.25f, 0, -1.5f, 0, 0, -1.5f, 0, 0, 0.25f, -0.75f, 0, 0.25f, -0.75f)
+				.setRotationPoint(38, -19.75f, 7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 468, 59, textureX, textureY)
-				.addShapeBox(0, 0, 0, 16, 1, 5, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 16, 1, 5, 0, 0, 1, 0, 0, 1, 0, 0, 0.25f, 0, 0, 0.25f, 0, 0, -1, 0, 0, -1, 0, 0, -0.25f, 0, 0, -0.25f, 0)
 				.setRotationPoint(38, -21, 2).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 445, 83, textureX, textureY)
@@ -897,7 +897,7 @@ public class M640 extends RollingStockModel {
 				.setRotationPoint(38, -22, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 13, 102, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(38, -21, 2).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 0, 0, textureX, textureY)
@@ -906,7 +906,7 @@ public class M640 extends RollingStockModel {
 				.setRotationPoint(38, -21, -7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 432, 93, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 1, 5, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 1, 5, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(38, -21, -7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 501, 51, textureX, textureY)
@@ -966,15 +966,15 @@ public class M640 extends RollingStockModel {
 		clipboard.add(new ModelRendererTurbo(clipboard, 447, 107, textureX, textureY).addBox(0, 0, 0, 1, 10, 3)
 				.setRotationPoint(53, -16.5f, -10).setRotationAngle(0, 0, 0)
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 237, 111, textureX, textureY).addBox(0, 0, 0, 1, 2, 2)
-				.setRotationPoint(53, -18.5f, -9).setRotationAngle(0, 0, 0)
+		clipboard.add(new ModelRendererTurbo(clipboard, 272, 153, textureX, textureY).addBox(0, 0, 0, 1, 1, 3)
+				.setRotationPoint(53, -17.5f, -10).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 230, 111, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -2, 0, 0, -2, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -2, 0.25f, 0, -2, 0.25f, 0, -0.25f, 0, 0, -0.25f, 0, 0, 0, 0.25f, 0, 0, 0.25f, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(53, -20.5f, -9).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 294, 114, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 1, 3, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(53, -18.5f, -10).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 338, 141, textureX, textureY)
@@ -985,16 +985,16 @@ public class M640 extends RollingStockModel {
 		clipboard.add(new ModelRendererTurbo(clipboard, 354, 107, textureX, textureY).addBox(-1, 0, -3, 1, 10, 3)
 				.setRotationPoint(54, -16.5f, 10).setRotationAngle(0, 0, 0).setName("Door-Front-0")
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 492, 110, textureX, textureY).addBox(-1, 0, -3, 1, 2, 2)
-				.setRotationPoint(54, -18.5f, 10).setRotationAngle(0, 0, 0).setName("Door-Front-1")
+		clipboard.add(new ModelRendererTurbo(clipboard, 296, 166, textureX, textureY).addBox(-1, 0, -3, 1, 1, 3)
+				.setRotationPoint(54, -17.5f, 10).setRotationAngle(0, 0, 0).setName("Door-Front-1")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 485, 110, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -2, 0.25f, 0, -2, 0.25f, 0, 0, 0, 0, 0, 0, 0, 0, 0.25f, 0, 0, 0.25f)
 				.setRotationPoint(53, -20.5f, 7).setRotationAngle(0, 0, 0).setName("Door-Front-2")
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 289, 114, textureX, textureY)
-				.addShapeBox(-1, 0, -1, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-				.setRotationPoint(54, -18.5f, 10).setRotationAngle(0, 0, 0).setName("Door-Front-3")
+		clipboard.add(new ModelRendererTurbo(clipboard, 289, 153, textureX, textureY)
+				.addShapeBox(-1, 0, -1, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.setRotationPoint(54, -18.5f, 8).setRotationAngle(0, 0, 0).setName("Door-Front-3")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 423, 141, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 15, 9, 0, -3, 0, 0, 3, 0, 0, 0, 0, -2, 0, 0, -2, -3, -1, 0, 3, -1, 0, 0, -1, -2, 0, -1, -2,
@@ -1002,11 +1002,11 @@ public class M640 extends RollingStockModel {
 				.setRotationPoint(53, -20, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 177, 93, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 1, 5, 0, 0, -1, 0, 0, -1, 0, 2.15f, 0, 0, -2.15f, 0, 0, 0, 0, 0, 0, 0, 0, 2.15f, 0, 0, -2.15f, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 1, 5, 0, 0, -0.75f, 0, 0, -0.75f, 0, 2.15f, 0, 0, -2.15f, 0, 0, 0, 0, 0, 0, 0, 0, 2.15f, 0, 0, -2.15f, 0, 0)
 				.setRotationPoint(53, -21, -7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 27, 92, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 1, 5, 0, -2.15f, 0, 0, 2.15f, 0, 0, 0, -1, 0, 0, -1, 0, -2.15f, 0, 0, 2.15f, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 1, 5, 0, -2.15f, 0, 0, 2.15f, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, -2.15f, 0, 0, 2.15f, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(53, -21, 2).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 370, 99, textureX, textureY)
@@ -1020,11 +1020,11 @@ public class M640 extends RollingStockModel {
 				.setRotationPoint(55, -21, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 334, 89, textureX, textureY)
-				.addShapeBox(0, 0, 0, 2, 1, 5, 0, 0, 0, 0, -2, 0, 0, 0.15f, 1, 0, 0, 1, 0, 0, 0, 0, -2, 0, 0, 0.15f, -1, 0, 0, -1, 0)
+				.addShapeBox(0, 0, 0, 2, 1, 5, 0, 0, 0.25f, 0, -2, 0.25f, 0, 0.15f, 1, 0, 0, 1, 0, 0, -0.25f, 0, -2, -0.25f, 0, 0.15f, -1, 0, 0, -1, 0)
 				.setRotationPoint(54, -21, -7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 468, 87, textureX, textureY)
-				.addShapeBox(0, 0, 0, 2, 1, 5, 0, 0, 1, 0, 0.15f, 1, 0, -2, 0, 0, 0, 0, 0, 0, -1, 0, 0.15f, -1, 0, -2, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 2, 1, 5, 0, 0, 1, 0, 0.15f, 1, 0, -2, 0.25f, 0, 0, 0.25f, 0, 0, -1, 0, 0.15f, -1, 0, -2, -0.25f, 0, 0, -0.25f, 0)
 				.setRotationPoint(54, -21, 2).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 185, 93, textureX, textureY)
@@ -1038,30 +1038,30 @@ public class M640 extends RollingStockModel {
 		clipboard.add(new ModelRendererTurbo(clipboard, 179, 107, textureX, textureY).addBox(0, 0, 0, 1, 10, 3)
 				.setRotationPoint(38, -16.5f, -10).setRotationAngle(0, 0, 0).setName("Door-Back-0")
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 459, 92, textureX, textureY).addBox(0, 0, 1, 1, 2, 2)
-				.setRotationPoint(38, -18.5f, -10).setRotationAngle(0, 0, 0).setName("Door-Back-1")
+		clipboard.add(new ModelRendererTurbo(clipboard, 310, 155, textureX, textureY).addBox(0, 0, 1, 1, 1, 3)
+				.setRotationPoint(38, -17.5f, -11).setRotationAngle(0, 0, 0).setName("Door-Back-1")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 449, 92, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -2, 0, 0, -2, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -2, 0.25f, 0, -2, 0.25f, 0, -0.25f, 0, 0, -0.25f, 0, 0, 0, 0.25f, 0, 0, 0.25f, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(38, -20.5f, -9).setRotationAngle(0, 0, 0).setName("Door-Back-2")
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 284, 114, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+		clipboard.add(new ModelRendererTurbo(clipboard, 277, 166, textureX, textureY)
+				.addShapeBox(0, 0, 0, 1, 1, 3, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(38, -18.5f, -10).setRotationAngle(0, 0, 0).setName("Door-Back-3")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 0, 107, textureX, textureY).addBox(0, 0, 0, 1, 10, 3)
 				.setRotationPoint(38, -16.5f, 7).setRotationAngle(0, 0, 0)
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 35, 92, textureX, textureY).addBox(0, 0, 0, 1, 2, 2)
-				.setRotationPoint(38, -18.5f, 7).setRotationAngle(0, 0, 0)
+		clipboard.add(new ModelRendererTurbo(clipboard, 248, 172, textureX, textureY).addBox(0, 0, 0, 1, 1, 3)
+				.setRotationPoint(38, -17.5f, 7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 344, 89, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -2, 0.25f, 0, -2, 0.25f, 0, 0, 0, 0, 0, 0, 0, 0, 0.25f, 0, 0, 0.25f)
 				.setRotationPoint(38, -20.5f, 7).setRotationAngle(0, 0, 0)
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 279, 114, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-				.setRotationPoint(38, -18.5f, 9).setRotationAngle(0, 0, 0)
+		clipboard.add(new ModelRendererTurbo(clipboard, 293, 143, textureX, textureY)
+				.addShapeBox(0, 0, 0, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.setRotationPoint(38, -18.5f, 7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 265, 89, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.375f, -0.375f, 0, -0.375f, -0.375f, 0, -0.375f, -0.375f, 0, -0.375f, -0.375f, 0, -0.375f, -0.375f, 0, -0.375f, -0.375f, 0, -0.375f, -0.375f, 0, -0.375f, -0.375f)

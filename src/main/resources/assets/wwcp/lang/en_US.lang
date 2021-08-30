@@ -50,21 +50,24 @@ item.MZIV.name=MZ IV
 item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
 item.ES64U2.name=ES64U2
 item.ES64U4.name=ES64U4
-item.F7A.name=EMD F7A
-item.GP7.name=EMD GP7
-item.FP7A.name=EMD FP7A
-item.RS18.name=MLW RS18
-item.AC4400CW.name=GE AC4400CW
+item.F7A.name=F7A
+item.GP7.name=GP7
+item.GP50.name=GP50
+item.FP7A.name=FP7A
+item.RS18.name=RS18
+item.M640.name=M640
+item.AC4400CW.name=AC4400CW
+item.SD70Mac.name=SD70MAC
+item.SD60Mac.name=SD60MAC
 item.GWR57.name=GWR 57xx
 item.GWR9400Class.name=GWR 94xx
 item.Class812.name=CR Class 812/652
 item.DSBFII.name=DSB Class F (II)
-item.BL2.name=EMD BL2
-item.SD70Mac.name=EMD SD70Mac
+item.BL2.name=BL2
 item.HS4000.name=HS4000
 item.V36.name=DRG V36
 item.Class37.name=BR Class 37
-item.F40PH.name=EMD F40PH
+item.F40PH.name=F40PH
 item.RE484.name=RE484
 item.BRClass121.name=BR Class 121
 item.VT98.name=VT98
@@ -105,8 +108,9 @@ item.name.OFF52Beetle.name=OFF 52 Beetle
 item.GWRToad20.name=GWR Toad Brakevan 20
 item.F7B.name=EMD F7B
 item.B&O_Caboose.nme=B&O Caboose
-item.ACF_60seat.name=ACF 60 Seat Coach
+item.ACF_60Seat.name=ACF 60 Seat Coach
 item.Amfleet1.name=Amfleet Coach 1
+
 
 
 <!-- ## Tenders ## -->

@@ -196,7 +196,7 @@ public class EntityGP50 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0f,0.05F,0.F}};}
+        return new float[][]{{-0f,0.F,0.F}};}
         
     /**
      * <h2>Fluid Tank Capacity</h2>

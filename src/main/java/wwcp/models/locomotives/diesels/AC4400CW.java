@@ -56,7 +56,7 @@ public class AC4400CW extends RollingStockModel {
 		);
 		group0.add(new ModelRendererTurbo(group0, 192, 121, textureX, textureY)
 				.addShapeBox(0, 0, 0, 3, 2, 6, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0)
-				.setRotationPoint(-28, -22, -3).setRotationAngle(0, 0, 0)
+				.setRotationPoint(-28.5f, -22, -3).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 168, 90, textureX, textureY).addBox(0, 0, 0, 25, 5, 4)
 				.setRotationPoint(17, -7, -11).setRotationAngle(0, 0, 0)
@@ -490,25 +490,25 @@ public class AC4400CW extends RollingStockModel {
 		group0.add(new ModelRendererTurbo(group0, 319, 6, textureX, textureY).addBox(0, 0, 0, 65, 18, 14)
 				.setRotationPoint(-64, -20, -7).setRotationAngle(0, 0, 0)
 		);
-		group0.add(new ModelRendererTurbo(group0, 108, 122, textureX, textureY)
-				.addShapeBox(0, 0, 0, 2, 19, 4, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-				.setRotationPoint(-69.5f, -21, -5).setRotationAngle(0, 0, 0)
+		group0.add(new ModelRendererTurbo(group0, 423, 275, textureX, textureY)
+				.addShapeBox(0, 0, 0, 3, 19, 6, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+				.setRotationPoint(-69.5f, -21, -7).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 222, 128, textureX, textureY)
 				.addShapeBox(0, 0, 0, 2, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(-69.5f, -21, -1).setRotationAngle(0, 0, 0)
 		);
-		group0.add(new ModelRendererTurbo(group0, 95, 122, textureX, textureY)
-				.addShapeBox(0, 0, 0, 4, 18, 2, 0, -0.5f, 0, -2, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -2, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0)
-				.setRotationPoint(-68, -20, -7).setRotationAngle(0, 0, 0)
+		group0.add(new ModelRendererTurbo(group0, 396, 288, textureX, textureY)
+				.addShapeBox(0, 0, 0, 3, 18, 2, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0)
+				.setRotationPoint(-67, -20, -7).setRotationAngle(0, 0, 0)
 		);
-		group0.add(new ModelRendererTurbo(group0, 499, 119, textureX, textureY)
-				.addShapeBox(0, 0, 0, 2, 19, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0)
+		group0.add(new ModelRendererTurbo(group0, 462, 247, textureX, textureY)
+				.addShapeBox(0, 0, 0, 3, 19, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0)
 				.setRotationPoint(-69.5f, -21, 1).setRotationAngle(0, 0, 0)
 		);
-		group0.add(new ModelRendererTurbo(group0, 23, 118, textureX, textureY)
-				.addShapeBox(0, 0, 0, 4, 18, 2, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, -2, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, -2)
-				.setRotationPoint(-68, -20, 5).setRotationAngle(0, 0, 0)
+		group0.add(new ModelRendererTurbo(group0, 369, 278, textureX, textureY)
+				.addShapeBox(0, 0, 0, 3, 18, 2, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0)
+				.setRotationPoint(-67, -20, 5).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 476, 119, textureX, textureY)
 				.addShapeBox(0, 0, 0, 5, 18, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -519,7 +519,7 @@ public class AC4400CW extends RollingStockModel {
 				.setRotationPoint(-68, -20.5f, -10).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 113, 76, textureX, textureY)
-				.addShapeBox(0, 0, 0, 31, 2, 10, 0, 0, -2, 0, 0, -2, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f)
+				.addShapeBox(0, 0, 0, 31, 2, 10, 0, 0, -1.9f, 0, 0, -1.9f, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f)
 				.setRotationPoint(-68, -22.5f, -10).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 113, 67, textureX, textureY)
@@ -531,7 +531,7 @@ public class AC4400CW extends RollingStockModel {
 				.setRotationPoint(-37, -21, 0).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 267, 74, textureX, textureY)
-				.addShapeBox(0, 0, 0, 31, 2, 10, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -2, 0, 0, -2, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 31, 2, 10, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -1.9f, 0, 0, -1.9f, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(-68, -22.5f, 0).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 391, 68, textureX, textureY)
@@ -1159,11 +1159,11 @@ public class AC4400CW extends RollingStockModel {
 		);
 		group0.add(new ModelRendererTurbo(group0, 72, 132, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 8, 1, 0, -0.5f, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f)
-				.setRotationPoint(24, -14, -11.5f).setRotationAngle(0, 0, 0)
+				.setRotationPoint(25, -14, -11.5f).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 374, 131, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 7, 1, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f)
-				.setRotationPoint(32, -13.5f, -11.5f).setRotationAngle(0, 0, 0)
+				.setRotationPoint(33, -13.5f, -11.5f).setRotationAngle(0, 0, 0)
 		);
 		group0.add(new ModelRendererTurbo(group0, 186, 80, textureX, textureY)
 				.addShapeBox(0, 0, 0, 31, 1, 4, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, -0.9f, 0, 0, -0.9f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)

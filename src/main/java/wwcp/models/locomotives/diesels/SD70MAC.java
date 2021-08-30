@@ -617,10 +617,10 @@ public class SD70MAC extends RollingStockModel {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 343, 109, textureX, textureY)
 				.addShapeBox(0, 0, 0, 3, 12, 10, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0)
-				.setRotationPoint(69, -13, 0).setRotationAngle(0, 0, 0)
+				.setRotationPoint(68, -13, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 250, 127, textureX, textureY)
-				.addShapeBox(0, 0, 0, 8, 12, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 8, 12, 1, 0, 0, 0, 0, -1, 0, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, -1, 0, 0, 0)
 				.setRotationPoint(61, -13, 10).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 185, 113, textureX, textureY).newBoxBuilder()
@@ -632,14 +632,14 @@ public class SD70MAC extends RollingStockModel {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 392, 50, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(8, 2, 1)
-				.setCorners(0, 0, 0, 0.3f, 0, 1, 0.3f, 0, -2, 0, 0, -1, 0, 0, 0, 0.3f, 0, 1, 0, 0, -1, 0, 0, 0)
+				.setCorners(0, 0, 0, -0.7f, 0, 1, -0.7f, 0, -2, 0, 0, -1, 0, 0, 0, -0.7f, 0, 1, -1, 0, -1, 0, 0, 0)
 				.setPolygonUV(5, new float[]{ 18.2f, 1.0f, 10.0f, 1.0f, 10.0f, 3.0f, 18.0f, 3.0f })
 				.setPolygonUV(4, new float[]{ 9.0f, 1.0f, 1.0f, 1.0f, 1.0f, 3.0f, 9.0f, 3.0f }).build()
 				.setRotationPoint(61, -15, 10).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 326, 109, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(8, 2, 5)
-				.setCorners(0, 0, -1, 1.8f, 0, 0, 0.3f, -2, 0, 0, -2, 1, 0, 0, -1, 1.8f, 0, 0, 0.3f, 0, 0, 0, 0, 1)
+				.setCorners(0, 0, -1, 0.8f, 0, 0, -0.7f, -2, 0, 0, -2, 1, 0, 0, -1, 0.8f, 0, 0, -0.7f, 0, 0, 0, 0, 1)
 				.setPolygonUV(0, new float[]{ 18.0f, 5.0f, 13.0f, 5.0f, 13.0f, 7.0f, 18.0f, 7.0f })
 				.setPolygonUV(2, new float[]{ 13.0f, 0.0f, 4.8f, 0.0f, 3.4f, 5.0f, 13.0f, 5.0f }).build()
 				.setRotationPoint(61, -17, 4).setRotationAngle(0, 0, 0)
@@ -659,10 +659,10 @@ public class SD70MAC extends RollingStockModel {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 92, 109, textureX, textureY)
 				.addShapeBox(0, 0, 0, 3, 12, 10, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0)
-				.setRotationPoint(69, -13, -10).setRotationAngle(0, 0, 0)
+				.setRotationPoint(68, -13, -10).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 447, 125, textureX, textureY)
-				.addShapeBox(0, 0, 0, 8, 12, 1, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 8, 12, 1, 0, 0, 0, 0, -1, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, -1, -1, 0, 0, 0, 0, 0)
 				.setRotationPoint(61, -13, -11).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 310, 112, textureX, textureY).newBoxBuilder()
@@ -674,14 +674,14 @@ public class SD70MAC extends RollingStockModel {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 392, 46, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(8, 2, 1)
-				.setCorners(0, 0, -1, 0.3f, 0, -2, 0.3f, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0.3f, 0, 1, 0, 0, 0)
+				.setCorners(0, 0, -1, -0.7f, 0, -2, -0.7f, 0, 1, 0, 0, 0, 0, 0, 0, -1, 0, -1, -0.7f, 0, 1, 0, 0, 0)
 				.setPolygonUV(5, new float[]{ 18.2f, 1.0f, 10.0f, 1.0f, 10.0f, 3.0f, 18.0f, 3.0f })
 				.setPolygonUV(4, new float[]{ 9.0f, 1.0f, 0.8f, 1.0f, 1.0f, 3.0f, 9.0f, 3.0f }).build()
 				.setRotationPoint(61, -15, -11).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 271, 42, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(8, 2, 5)
-				.setCorners(0, -2, 1, 0.3f, -2, 0, 1.8f, 0, 0, 0, 0, -1, 0, 0, 1, 0.3f, 0, 0, 1.8f, 0, 0, 0, 0, -1)
+				.setCorners(0, -2, 1, -0.7f, -2, 0, 0.8f, 0, 0, 0, 0, -1, 0, 0, 1, -0.7f, 0, 0, 0.8f, 0, 0, 0, 0, -1)
 				.setPolygonUV(0, new float[]{ 18.0f, 5.0f, 13.0f, 7.0f, 13.0f, 7.0f, 18.0f, 7.0f })
 				.setPolygonUV(2, new float[]{ 13.0f, 0.0f, 3.4f, 0.0f, 4.8f, 5.0f, 13.0f, 5.0f }).build()
 				.setRotationPoint(61, -17, -9).setRotationAngle(0, 0, 0)
@@ -759,10 +759,6 @@ public class SD70MAC extends RollingStockModel {
 		clipboard.add(new ModelRendererTurbo(clipboard, 55, 94, textureX, textureY).addBox(0, 0, 0, 1, 20, 17)
 				.setRotationPoint(44, -21, -7).setRotationAngle(0, 0, 0)
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 295, 81, textureX, textureY)
-				.addBox(0, 0, 0, 24, 6, 8, 0, 1f, new boolean[]{ true, false, false, false, false, false })
-				.setRotationPoint(45, -7, -10).setRotationAngle(0, 0, 0)
-		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 365, 142, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 				.setRotationPoint(44, -7, -10).setRotationAngle(0, 0, 0)
@@ -817,9 +813,6 @@ public class SD70MAC extends RollingStockModel {
 		clipboard.add(new ModelRendererTurbo(clipboard, 330, 136, textureX, textureY)
 				.addShapeBox(-0.75f, 0, -0.5f, 1, 2, 4, 0, -0.75f, -2, -0.5f, 0, -2, -0.5f, 0, -0.5f, 0, -0.75f, -0.5f, 0, -0.75f, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, -0.75f, 0, 0)
 				.setRotationPoint(43.75f, -23, -10.5f).setRotationAngle(0, 0, 0).setName("Door1")
-		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 69, 79, textureX, textureY).addBox(0, 0, 0, 24, 6, 8)
-				.setRotationPoint(45, -7, 2).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 483, 46, textureX, textureY).addBox(0, 0, 0, 10, 6, 4)
 				.setRotationPoint(45, -7, -2).setRotationAngle(0, 0, 0)
@@ -942,7 +935,7 @@ public class SD70MAC extends RollingStockModel {
 				.setRotationPoint(68, 0, -6).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 206, 69, textureX, textureY)
-				.addShapeBox(0, 0, 0, 5, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0)
+				.addShapeBox(0, 0, 0, 5, 1, 1, 0, -1.2f, 0, 0, 0, 0, 0, 0, 0, 0, -0.9f, 0, 0, -1.2f, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.9f, -0.5f, 0)
 				.setRotationPoint(69, -1, 6).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 156, 101, textureX, textureY)
@@ -962,7 +955,7 @@ public class SD70MAC extends RollingStockModel {
 				.setRotationPoint(68, 7.5f, 6).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 0, 64, textureX, textureY)
-				.addShapeBox(0, 0, 0, 5, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0)
+				.addShapeBox(0, 0, 0, 5, 1, 1, 0, -0.9f, 0, 0, 0, 0, 0, 0, 0, 0, -1.2f, 0, 0, -0.9f, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, -1.2f, -0.5f, 0)
 				.setRotationPoint(69, -1, -7).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 283, 35, textureX, textureY)
@@ -1019,10 +1012,10 @@ public class SD70MAC extends RollingStockModel {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 251, 146, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 6, 1, 0, 0, -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, 0, 0, -0.5f, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0)
-				.setRotationPoint(69.75f, -16, 5.75f).setRotationAngle(0, 0, 0)
+				.setRotationPoint(68.75f, -16, 5.75f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 143, 146, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 8, 1, 0, -1, -0.5f, 3.5f, 0.5f, -0.5f, 3.5f, 0.5f, -0.5f, -4, -1, -0.5f, -4, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0)
+				.addShapeBox(0, 0, 0, 1, 8, 1, 0, 0, -0.5f, 3.5f, -0.5f, -0.5f, 3.5f, -0.5f, -0.5f, -4, 0, -0.5f, -4, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0)
 				.setRotationPoint(68.75f, -10.5f, 9.75f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 80, 146, textureX, textureY)
@@ -1031,24 +1024,24 @@ public class SD70MAC extends RollingStockModel {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 75, 146, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 6, 1, 0, 0, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.5f, 0, 0, -0.5f)
-				.setRotationPoint(69.75f, -16, -6.75f).setRotationAngle(0, 0, 0)
+				.setRotationPoint(68.75f, -16, -6.75f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 70, 146, textureX, textureY)
-				.addShapeBox(0, 0, 0, 1, 8, 1, 0, -1, -0.5f, -4, 0.5f, -0.5f, -4, 0.5f, -0.5f, 3.5f, -1, -0.5f, 3.5f, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.5f, 0, 0, -0.5f)
+				.addShapeBox(0, 0, 0, 1, 8, 1, 0, 0, -0.5f, -4, -0.5f, -0.5f, -4, -0.5f, -0.5f, 3.5f, 0, -0.5f, 3.5f, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.5f, 0, 0, -0.5f)
 				.setRotationPoint(68.75f, -10.5f, -10.75f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 497, 73, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
-				.setRotationPoint(67, -17, 5.5f).setRotationAngle(0, 0, 0)
+				.setRotationPoint(66.5f, -16.75f, 5.5f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 47, 104, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(8, 1, 4)
-				.setCorners(0, 0, 1, 1.8f, 0, 0, 3, 0, 0, 0, 0, 0, 0, -0.5f, 1, 1.8f, -0.5f, 0, 3, -0.5f, 0, 0, -0.5f, 0)
+				.setCorners(0, 0, 1, 0.8f, 0, 0, 2, 0, 0, 0, 0, 0, 0, -0.5f, 1, 0.8f, -0.5f, 0, 2, -0.5f, 0, 0, -0.5f, 0)
 				.setPolygonUV(2, new float[]{ 12.0f, 0.0f, 1.2f, 0.0f, 2.4f, 4.6f, 12.0f, 4.0f }).build()
 				.setRotationPoint(61, -17, -4).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 221, 110, textureX, textureY)
 				.addShapeBox(0, 0, 0, 3, 2, 8, 0, 0, 0, 0, -2.7f, 0, 0, -0.3f, 0, 0, 0, 0, 0, 0, 0, 0, -2.7f, 0, 0, -0.3f, 0, 0, 0, 0, 0)
-				.setRotationPoint(69, -15, -9).setRotationAngle(0, 0, 0)
+				.setRotationPoint(68, -15, -9).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 62, 96, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(1, 1, 3)
@@ -1056,11 +1049,11 @@ public class SD70MAC extends RollingStockModel {
 				.setPolygonUV(0, new float[]{ 74.0f, 189.0f })
 				.setPolygonUV(2, new float[]{ 21.0f, 104.0f, 10.2f, 104.0f, 11.4f, 108.6f, 21.0f, 108.0f })
 				.setDetachedUV(0).build()
-				.setRotationPoint(68, -16, -4).setRotationAngle(0, 0, 0)
+				.setRotationPoint(67, -16, -4).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 469, 106, textureX, textureY)
 				.addShapeBox(0, 0, 0, 3, 2, 8, 0, 0, 0, 0, -0.3f, 0, 0, -2.7f, 0, 0, 0, 0, 0, 0, 0, 0, -0.3f, 0, 0, -2.7f, 0, 0, 0, 0, 0)
-				.setRotationPoint(69, -15, 1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(68, -15, 1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 102, 42, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(1, 1, 3)
@@ -1068,16 +1061,16 @@ public class SD70MAC extends RollingStockModel {
 				.setPolygonUV(0, new float[]{ 121.0f, 165.0f })
 				.setPolygonUV(2, new float[]{ 30.0f, 129.0f, 19.199997f, 129.0f, 20.400002f, 133.6f, 30.0f, 133.0f })
 				.setDetachedUV(0).build()
-				.setRotationPoint(68, -16, 1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(67, -16, 1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 372, 71, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(8, 1, 4)
-				.setCorners(0, 0, 0, 3, 0, 0, 1.8f, 0, 0, 0, 0, 1, 0, -0.5f, 0, 3, -0.5f, 0, 1.8f, -0.5f, 0, 0, -0.5f, 1)
+				.setCorners(0, 0, 0, 2, 0, 0, 0.8f, 0, 0, 0, 0, 1, 0, -0.5f, 0, 2, -0.5f, 0, 0.8f, -0.5f, 0, 0, -0.5f, 1)
 				.setPolygonUV(2, new float[]{ 12.0f, 0.0f, 2.4f, 0.0f, 1.2f, 5.0f, 12.0f, 4.0f }).build()
 				.setRotationPoint(61, -17, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 63, 145, textureX, textureY).addBox(0, 0, 0, 1, 4, 2)
-				.setRotationPoint(70.5f, -16.5f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(69.5f, -16.5f, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 25, 174, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(1, 1, 3)
@@ -1085,7 +1078,7 @@ public class SD70MAC extends RollingStockModel {
 				.setPolygonUV(0, new float[]{ 26.0f, 168.0f })
 				.setPolygonUV(2, new float[]{ 6.0f, 11.0f, -4.799999f, 11.0f, -3.5999985f, 15.600006f, 6.0f, 15.0f })
 				.setDetachedUV(0).build()
-				.setRotationPoint(68, -17, -4).setRotationAngle(0, 0, 0)
+				.setRotationPoint(67, -17, -4).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 176, 172, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(1, 1, 3)
@@ -1093,27 +1086,27 @@ public class SD70MAC extends RollingStockModel {
 				.setPolygonUV(0, new float[]{ 184.0f, 175.0f })
 				.setPolygonUV(2, new float[]{ 17.0f, 10.0f, 6.199997f, 10.0f, 7.399994f, 14.600006f, 17.0f, 14.0f })
 				.setDetachedUV(0).build()
-				.setRotationPoint(68, -17, 1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(67, -17, 1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 56, 145, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 3, 2, 0, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f, 0, 0.2f, -0.1f)
-				.setRotationPoint(70.6f, -16.25f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(69.6f, -16.25f, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 0, 145, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f)
-				.setRotationPoint(71, -16.55f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(70, -16.55f, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 504, 141, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f)
-				.setRotationPoint(71, -14.95f, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(70, -14.95f, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 504, 136, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f)
-				.setRotationPoint(71.1f, -14.95f, -1).setRotationAngle(0, 0, 0).setName("noseheadlight_low")
+				.setRotationPoint(70.1f, -14.95f, -1).setRotationAngle(0, 0, 0).setName("noseheadlight_low")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 168, 135, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f)
-				.setRotationPoint(71.1f, -16.55f, -1).setRotationAngle(0, 0, 0).setName("noseheadlight_high")
+				.setRotationPoint(70.1f, -16.55f, -1).setRotationAngle(0, 0, 0).setName("noseheadlight_high")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 151, 167, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(2, 1, 1)
@@ -1121,7 +1114,7 @@ public class SD70MAC extends RollingStockModel {
 				.setPolygonUV(0, new float[]{ 159.0f, 166.0f })
 				.setPolygonUV(2, new float[]{ 11.0f, 4.0f, 0.19999695f, 4.0f, 1.3999939f, 8.600006f, 11.0f, 8.0f })
 				.setDetachedUV(0).build()
-				.setRotationPoint(69.7f, -17, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(68.7f, -17, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 38, 162, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(2, 1, 1)
@@ -1129,7 +1122,7 @@ public class SD70MAC extends RollingStockModel {
 				.setPolygonUV(0, new float[]{ 58.0f, 177.0f })
 				.setPolygonUV(2, new float[]{ 18.0f, 7.0f, 7.200001f, 7.0f, 8.400002f, 11.600006f, 18.0f, 11.0f })
 				.setDetachedUV(0).build()
-				.setRotationPoint(69.7f, -17, 0).setRotationAngle(0, 0, 0)
+				.setRotationPoint(68.7f, -17, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 4, 170, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(1, 3, 1)
@@ -1137,7 +1130,7 @@ public class SD70MAC extends RollingStockModel {
 				.setPolygonUV(0, new float[]{ 6.0f, 177.0f })
 				.setPolygonUV(2, new float[]{ 7.0f, 17.0f, -3.8000002f, 17.0f, -2.6f, 21.599998f, 7.0f, 21.0f })
 				.setDetachedUV(0).build()
-				.setRotationPoint(70.7f, -16, -1).setRotationAngle(0, 0, 0)
+				.setRotationPoint(69.7f, -16, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 94, 166, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(1, 3, 1)
@@ -1145,7 +1138,7 @@ public class SD70MAC extends RollingStockModel {
 				.setPolygonUV(0, new float[]{ 98.0f, 182.0f })
 				.setPolygonUV(2, new float[]{ 11.0f, 8.0f, 0.19999981f, 8.0f, 1.3999996f, 12.600006f, 11.0f, 12.0f })
 				.setDetachedUV(0).build()
-				.setRotationPoint(70.7f, -16, 0).setRotationAngle(0, 0, 0)
+				.setRotationPoint(69.7f, -16, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 0, 69, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 5, 0, 0, -0.1f, 0, 0, -0.1f, 0, 0, -0.1f, 0, 0, -0.1f, 0, 0, -0.1f, 0, 0, -0.1f, 0, 0, -0.1f, 0, 0, -0.1f, 0)
@@ -1474,19 +1467,19 @@ public class SD70MAC extends RollingStockModel {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 114, 139, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 1, 3, 0, -0.5f, -0.5f, 0.5f, 0, -0.5f, 0.5f, 0, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0, -0.5f, 0, 0)
-				.setRotationPoint(70.75f, -16, 2).setRotationAngle(0, -17, 0)
+				.setRotationPoint(69.75f, -16, 2).setRotationAngle(0, -17, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 357, 132, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 1, 3, 0, -0.5f, -0.5f, 0.5f, 0, -0.5f, 0.5f, 0, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0, -0.5f, 0, 0)
-				.setRotationPoint(70.75f, -12, 2).setRotationAngle(0, -17, 0)
+				.setRotationPoint(69.75f, -12, 2).setRotationAngle(0, -17, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 437, 130, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 1, 3, 0, -0.5f, -0.5f, 0.5f, 0, -0.5f, 0.5f, 0, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0, -0.5f, 0, 0)
-				.setRotationPoint(70.75f, -8, 2).setRotationAngle(0, -17, 0)
+				.setRotationPoint(69.75f, -8, 2).setRotationAngle(0, -17, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 12, 125, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 1, 3, 0, -0.5f, -0.5f, 0.5f, 0, -0.5f, 0.5f, 0, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0, -0.5f, 0, 0)
-				.setRotationPoint(70.75f, -4, 2).setRotationAngle(0, -17, 0)
+				.setRotationPoint(69.75f, -4, 2).setRotationAngle(0, -17, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 312, 118, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 1, 3, 0, 0, -0.5f, 0.5f, -0.5f, -0.5f, 0.5f, -0.5f, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0.5f, -0.5f, 0, 0.5f, -0.5f, 0, 0, 0, 0, 0)
@@ -1540,13 +1533,13 @@ public class SD70MAC extends RollingStockModel {
 				.setOffset(0, 0, 0).setSize(1, 15, 3)
 				.setPolygonUV(0, new float[]{ 7.0f, 3.5f, 4.0f, 3.5f, 4.0f, 18.5f, 7.0f, 18.5f })
 				.setPolygonUV(5, new float[]{ 8.0f, 3.5f, 7.0f, 3.5f, 7.0f, 18.5f, 8.0f, 18.5f }).build()
-				.setRotationPoint(70.1f, -16.5f, -3.75f).setRotationAngle(0, 18, 0)
+				.setRotationPoint(69.1f, -16.5f, -3.75f).setRotationAngle(0, 18, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 156, 140, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(1, 14, 1)
 				.setPolygonUV(0, new float[]{ 3.0f, 1.5f, 2.0f, 1.5f, 2.0f, 15.5f, 3.0f, 15.5f })
 				.setPolygonUV(4, new float[]{ 2.0f, 1.5f, 1.0f, 1.5f, 1.0f, 15.5f, 2.0f, 15.5f }).build()
-				.setRotationPoint(69.79f, -15.5f, -4.7f).setRotationAngle(0, 18, 0)
+				.setRotationPoint(68.79f, -15.5f, -4.7f).setRotationAngle(0, 18, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 507, 16, textureX, textureY).newBoxBuilder()
 				.setOffset(0, 0, 0).setSize(1, 1, 1)
@@ -1555,7 +1548,7 @@ public class SD70MAC extends RollingStockModel {
 				.setPolygonUV(5, new float[]{ 4.0f, 1.0f, 3.0f, 1.0f, 3.0f, 2.0f, 4.0f, 2.0f })
 				.setPolygonUV(4, new float[]{ 2.0f, 1.0f, 1.0f, 1.0f, 1.0f, 2.0f, 2.0f, 2.0f })
 				.setPolygonUV(2, new float[]{ 2.0f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f, 2.0f, 2.0f }).build()
-				.setRotationPoint(69.79f, -16.5f, -4.7f).setRotationAngle(0, 18, 0)
+				.setRotationPoint(68.79f, -16.5f, -4.7f).setRotationAngle(0, 18, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 47, 110, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.5f, -0.5f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.35f, -0.35f, 0, -0.35f, -0.35f, 0, -0.5f, -0.5f)
@@ -1671,7 +1664,7 @@ public class SD70MAC extends RollingStockModel {
 				.setRotationPoint(46, -21, -12).setRotationAngle(0, 0, 0).setName("Box 168cp")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 497, 73, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
-				.setRotationPoint(67, -17, -6.5f).setRotationAngle(0, 0, 0)
+				.setRotationPoint(66.5f, -16.75f, -6.5f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 25, 226, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 4, 2, 0, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0)
@@ -1745,6 +1738,14 @@ public class SD70MAC extends RollingStockModel {
 		clipboard.add(new ModelRendererTurbo(clipboard, 200, 217, textureX, textureY)
 				.addShapeBox(0, 0, 0, 1, 2, 1, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, -0.75f, 0, 0)
 				.setRotationPoint(-72, 6, 10).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 295, 81, textureX, textureY)
+				.addShapeBox(0, 0, 0, 24, 6, 8, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0)
+				.setRotationPoint(45, -7, -10).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 69, 79, textureX, textureY)
+				.addShapeBox(0, 0, 0, 24, 6, 8, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0)
+				.setRotationPoint(45, -7, 2).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(clipboard);
 	}
