@@ -271,7 +271,10 @@ public class wwcp_registrations {
                 new Entity_89ft_Flatcar(null),
                 new Entity_GSC_60_Flatcar(null),
                 new EntityACF_SingleDomeTankCar(null),
-                new EntityPRR_Gla_Hopper(null)
+                new EntityPRR_Gla_Hopper(null),
+                new EntityCP_Plug_Slide(null),
+                new EntityCP_Minibox(null),
+                new EntityCP_Plugdoor(null)
         };
     }
 }

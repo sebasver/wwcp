@@ -88,18 +88,26 @@ public class EntityAC4400CW extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_CNW.png",
-                "textures/bogies/GE_Trucky_Black.png",
-                "CNW Yellow", "CNW yellow-green with operation lifesaver");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_SP.png",
                 "textures/bogies/GE_Trucky_Black.png",
                 "Southern Pacific", "Southern Pacific Bloody Nose");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_UP_numbarboards_top.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_CNW.png",
                 "textures/bogies/GE_Trucky_Black.png",
-                "Union Pacific, Numberboards on Top", "Union Pacific with numberboards on cab top, block lettering");
+                "CNW Yellow", "CNW yellow-green with operation lifesaver");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_UP_numberboards_nose.png",
                 "textures/bogies/GE_Trucky_Black.png",
                 "Union Pacific, Numberboards on Nose", "Union Pacific with numberboards on cab nose, block lettering");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_UP_Weathered.png",
+                "textures/bogies/GE_Trucky_Black.png",
+                "Union Pacific, Numberboards on Nose - Weathered", "Union Pacific with numberboards on cab nose, block lettering. Weathered");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_SP_Weathered.png",
+                "textures/bogies/GE_Trucky_Black.png",
+                "Southern Pacific - Weathered", "Southern Pacific Bloody Nose. Weathered");
+    }
+
+    @Override
+    public String getDefaultSkin() {
+        return worldwidecontentpack.MODID + ":Southern Pacific";
     }
 
     /**
@@ -133,11 +141,11 @@ public class EntityAC4400CW extends EntityTrainCore {
     public float getMaxFuel(){return 1;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.3f,1.2f, 0f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.15f,1.5f, -0.35f}};}
 
     @Override
     public boolean shouldRiderSit(){
-        return false;
+        return true;
     }
 
     @Override
@@ -145,7 +153,7 @@ public class EntityAC4400CW extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9f,2f,1.5f};
+        return new float[]{9.5f,2.15f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
@@ -192,7 +200,7 @@ public class EntityAC4400CW extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,-0F,0.F}};}
+        return new float[][]{{-0.025f,-0F,0.F}};}
         
     /**
      * <h2>Fluid Tank Capacity</h2>

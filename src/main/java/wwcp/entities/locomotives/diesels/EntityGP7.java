@@ -82,10 +82,26 @@ public class EntityGP7 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/EMD_GP7_Demo.png", "textures/bogies/blombergB_black.png",
-                "EMD Demonstrator", "Standard EMD demonstrator scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_CNW_Stripes.png", "textures/bogies/blombergB_black.png",
-                "CNW Yellow Green Stripes", "CNW in yellow green scheme with stripes");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_BRC_2_No.png", "textures/bogies/blombergB_black.png",
+                "BRC", "Belt Railway of Chicago scheme");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_Algoma_Central_No.png", "textures/bogies/blombergB_black.png",
+                "Algoma Central", "Algoma Central classic road diesel scheme");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_BN_No.png", "textures/bogies/blombergB_black.png",
+                "Burlington Northern", "Burlington Northern with beacon & tanks");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_CN_Black_No.png", "textures/bogies/blombergB_black.png",
+                "CN Noodle", "Canadian National with CN noodle logo on the side");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_CP_Action_Red_No.png", "textures/bogies/blombergB_black.png",
+                "CP Rail 8'inch Stripe", "CP Rail Action Red with 8'inch stripe");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_Mopac_White_No.png", "textures/bogies/blombergB_black.png",
+                "Mopac Grey & Blue", "Mopac grey & blue, sued for passenger service");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_NYC_Lightning_Stripe_No.png", "textures/bogies/blombergB_black.png",
+                "NYC Lightning Stripe", "New York Central lightning stripe, used for passenger");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_PRR_No.png", "textures/bogies/blombergB_black.png",
+                "PRR Early", "Pennsylvania railroad in early black scheme");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_SLSF_Orange_N.png", "textures/bogies/blombergB_black.png",
+                "SLSF Orange", "Frisco in orange & white");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_THB_No.png", "textures/bogies/blombergB_black.png",
+                "TH&B", "Toronto, Hamilton & Buffalo maroon & cream");
     }
 
     @Override

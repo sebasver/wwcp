@@ -102,6 +102,9 @@ public class EntitySD70Mac extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70Mac/SD70MAC_BNSF_Executive_Logo.png",
                 "textures/bogies/HTSCtruck_Black.png",
                 "BNSF, Ex. BN Executive", "BNSF Ex. Burlington Northern Executive Scheme with bnsf logo on side");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70Mac/SD70MAC_Conrail.png",
+                "textures/bogies/HTSCtruck_Black.png",
+                "Conrail", "Conrail with late scheme & AC Traction");
     }
 
     @Override

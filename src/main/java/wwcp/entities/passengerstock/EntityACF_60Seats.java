@@ -110,6 +110,15 @@ public class EntityACF_60Seats extends GenericRailTransport {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/GN_Orange.png",
                 "textures/bogies/M500_Truck.png",
                 "Great Northern Empire builder", "Great Northern empire builder orange");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/GN_Blue.png",
+                "textures/bogies/M500_Truck.png",
+                "Great Northern Blue", "GN Blue and white scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/BN_Green.png",
+                "textures/bogies/M500_Truck.png",
+                "Burlington Northern", "BN Green with curved line");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/BN_Green_Straight.png",
+                "textures/bogies/M500_Truck.png",
+                "Burlington Northern Straight Line", "BN Green with straight line");
     }
 
     /*@Override
