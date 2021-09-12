@@ -13,12 +13,12 @@ package wwcp.models.locomotives.electrics; //Path where the model is located
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
-public class ModelV36Electric extends ModelBase //Same as Filename
+public class V36Electric extends ModelBase //Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public ModelV36Electric() //Same as Filename
+	public V36Electric() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[198];
 

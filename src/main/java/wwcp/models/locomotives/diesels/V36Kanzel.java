@@ -13,12 +13,12 @@ package wwcp.models.locomotives.diesels; //Path where the model is located
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
-public class ModelV36Kanzel extends ModelBase //Same as Filename
+public class V36Kanzel extends ModelBase //Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public ModelV36Kanzel() //Same as Filename
+	public V36Kanzel() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[204];
 

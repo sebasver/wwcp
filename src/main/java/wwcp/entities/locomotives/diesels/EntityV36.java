@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.locomotives.diesels.ModelV36;
+import wwcp.models.locomotives.diesels.V36;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -171,7 +171,7 @@ public class EntityV36 extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new ModelV36()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new V36()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>
