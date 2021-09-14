@@ -118,7 +118,7 @@ public class EntityAmfleet1 extends GenericRailTransport {
     }*/
     
     @Override
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 DefineStack(Items.bed, 1), null, null,
                 null, null, null,

@@ -15,7 +15,7 @@ import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.EUBogies.GorlitzBack;
 import wwcp.models.bogies.EUBogies.GorlitzFront;
-import wwcp.models.passengerStock.ChristmasSpeise2;
+import wwcp.models.passengerStock.Christmas.ChristmasSpeise2;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -84,7 +84,7 @@ public class EntityRheingoldSpeiseTwoChristmas extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{3.70f,0.12f,0},{-3.70f,0.12f,0}};
+        return new float[][]{{3.70f,0,0},{-3.70f,0,0}};
     }
 
     @Override
@@ -105,16 +105,16 @@ public class EntityRheingoldSpeiseTwoChristmas extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.225f,-0.125F,0.F}};
+        return new float[][]{{-0.225f,-0,0.F}};
     }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ChristmasStock/ChristmasSpeise2.png", "textures/bogies/RheingoldBogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ChristmasStock/ChristmasSpeise2.png", "textures/bogies/EUBogies/RheingoldBogie.png",
                 "NAME", "Description");
     }
     @Override
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 DefineStack(Items.bed, 1), null, null,
                 null, null, null,

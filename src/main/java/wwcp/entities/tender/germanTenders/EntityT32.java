@@ -62,7 +62,7 @@ public class EntityT32 extends GenericRailTransport {
                 RailUtility.translate(Transport.T32().additionalTextTitle2) + Transport.T32().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
-        return new float[][]{{1.01f, 0.12F, 0.0F}, {-0.66F, 0.12F, 0.0F}};
+        return new float[][]{{1.01f, 0f, 0.0F}, {-0.66F, 0f, 0.0F}};
     }
 
     public ModelBase[] bogieModels() {
@@ -78,13 +78,13 @@ public class EntityT32 extends GenericRailTransport {
     }
 
     public float[][] modelOffsets() {
-        return new float[][]{{-0.395f,-0.12F,0F}};
+        return new float[][]{{-0.395f,0f,0F}};
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T32DB.png", new String[]{"textures/bogies/germanTenderBogies/T32BogieBlack.png"},
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T32DB.png", new String[]{"textures/bogies/EUBogies/germanTenderBogies/T32BogieBlack.png"},
                 "DB Livery", "The standarized T32 tender paint while in use for the DB");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T32DR.png", new String[]{"textures/bogies/germanTenderBogies/T32BogieBlack.png"},
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T32DR.png", new String[]{"textures/bogies/EUBogies/germanTenderBogies/T32BogieBlack.png"},
                 "DRG Livery", "The standarized T32 tender paint while in use for the DRG");
     }
 
@@ -124,7 +124,7 @@ public class EntityT32 extends GenericRailTransport {
         return Transport.T32().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Items.bed, 1), null, null, null, null, null, null, null, null};
     }
 

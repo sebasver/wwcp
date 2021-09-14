@@ -119,7 +119,7 @@ public class EntityVT98AD extends EntityTrainCore {
         return new float[]{8.05f,2.2f,1.7f};
     }
     
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,
@@ -171,7 +171,7 @@ public class EntityVT98AD extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,-0.07F,0.F}};}
+        return new float[][]{{0f,-0,0.F}};}
 
 
     /**

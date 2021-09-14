@@ -88,7 +88,7 @@ public class EntityKabinTenderT26 extends GenericRailTransport {
 
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/KabinenTender_T26.png",
-                "textures/bogies/germanTenderBogies/T26BogieBlack.png",
+                "textures/bogies/EUBogies/germanTenderBogies/T26BogieBlack.png",
                 "DB Livery", "The standarized T26 tender paint while in use for the DB");
     }
 
@@ -124,7 +124,7 @@ public class EntityKabinTenderT26 extends GenericRailTransport {
         FuelHandler.manageTanker(this);
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Items.bed, 1), null, null, null, null, null, null, null, null};
     }
 

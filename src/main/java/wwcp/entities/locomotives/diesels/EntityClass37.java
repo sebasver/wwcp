@@ -143,7 +143,7 @@ import java.util.UUID;
             return new float[]{9.5f,2f,1.5f};
         }
 
-        public ItemStack[] getRecipie() {
+        public ItemStack[] getRecipe() {
             return new ItemStack[]{
                     null, null, null,
                     null, null, null,

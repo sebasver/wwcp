@@ -74,7 +74,7 @@ public class EntityPRR_Gla_Hopper extends GenericRailTransport {
         return Transport.PRR_Gla_Hopper().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

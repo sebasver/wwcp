@@ -115,7 +115,7 @@ public class EntityModular_0_4_0 extends EntityTrainCore {
         return new float[][]{{0f,0F,0.065f}};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{null, null, null, null, null, null, null, null, null};
     }
 

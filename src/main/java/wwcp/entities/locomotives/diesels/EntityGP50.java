@@ -152,7 +152,7 @@ public class EntityGP50 extends EntityTrainCore {
         return new float[]{6f,2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

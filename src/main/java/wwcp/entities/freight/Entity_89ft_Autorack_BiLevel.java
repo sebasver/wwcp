@@ -73,7 +73,7 @@ public class Entity_89ft_Autorack_BiLevel extends GenericRailTransport {
         return Transport.Autorack_89ft_BiLevel().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

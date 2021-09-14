@@ -83,7 +83,7 @@ public class EntityHabbiins_17 extends GenericRailTransport {
             return Transport.Habbiins_17().weightinKGs;
         }
 
-        public ItemStack[] getRecipie() {
+        public ItemStack[] getRecipe() {
             return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
         }
 

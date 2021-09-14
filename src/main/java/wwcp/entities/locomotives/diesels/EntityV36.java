@@ -80,9 +80,28 @@ public class EntityV36 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/V2.png",
-                "default", "Used by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/V1.png", "Black", "Used by germany");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_black.png",
+                "V36 Black", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_black_DB.png",
+                "V36 DB Black", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_black_DR.png",
+                "V36 DR Black", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_black_yellow_strip.png",
+                "V36 Black with yellow strip", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_cyan.png",
+                "V36 Cyan", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_green.png",
+                "V36 Green", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_green_DB.png",
+                "V36 DB Green", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_green_DR.png",
+                "V36 DR Green", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_red.png",
+                "V36 Red", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_red_DB.png",
+                "V36 DB Red", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Normal/Skin_V36_red_DR.png",
+                "V36 DR Red", "");
     }
 
     @Override
@@ -97,10 +116,10 @@ public class EntityV36 extends EntityTrainCore {
     public float[][] getRiderOffsets(){return new float[][]{{1.6f,1.5f, 0f}};}
     @Override
     public float[] getHitboxSize() {
-        return new float[]{4.05f,2.2f,1.5f};
+        return new float[]{4.35f,2.2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,
@@ -120,7 +139,7 @@ public class EntityV36 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{1.25f,-0.05F,0F}};}
+        return new float[][]{{-0.155f,0F,0F}};}
 
     /**
      * <h2>rider sit or stand</h2>
