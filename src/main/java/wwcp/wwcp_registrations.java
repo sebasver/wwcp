@@ -10,23 +10,14 @@ import net.minecraft.item.ItemStack;
 import wwcp.blockEntities.platform.*;
 import wwcp.entities.freight.*;
 import wwcp.entities.locomotives.diesels.*;
-import wwcp.entities.locomotives.electrics.EntityES64U2;
-import wwcp.entities.locomotives.electrics.EntityES64U4;
-import wwcp.entities.locomotives.electrics.EntityTraxxF140MS2E;
-import wwcp.entities.locomotives.electrics.EntityV36Electric;
+import wwcp.entities.locomotives.electrics.*;
+import wwcp.entities.locomotives.steamers.*;
+import wwcp.entities.locomotives.steamers.BR01.DRG.*;
+import wwcp.entities.locomotives.steamers.BR01.DR.*;
 import wwcp.entities.locomotives.steamers.BR01.DB.*;
-import wwcp.entities.locomotives.steamers.BR01.DR.EntityDRBR01;
-import wwcp.entities.locomotives.steamers.BR01.DR.EntityDRBR01_5;
-import wwcp.entities.locomotives.steamers.BR01.DR.EntityDRBR01_5Oil;
-import wwcp.entities.locomotives.steamers.BR01.DR.EntityDRBR01_5SD;
-import wwcp.entities.locomotives.steamers.BR01.DRG.EntityDRGBR01;
-import wwcp.entities.locomotives.steamers.BR01.DRG.EntityDRGBR01_10_Streamlined;
-import wwcp.entities.locomotives.steamers.BR01.DRG.EntityDRGBR01_10_Unstreamlined;
-import wwcp.entities.locomotives.steamers.BR01.DRG.EntityDRGBR01_850mm;
-import wwcp.entities.locomotives.steamers.Entity94xx;
-import wwcp.entities.locomotives.steamers.EntityClass812;
-import wwcp.entities.locomotives.steamers.EntityDRBR01WitteChristmas;
-import wwcp.entities.locomotives.steamers.EntitySentinel100HPChristmas;
+import wwcp.entities.locomotives.steamers.BR50.DRG.*;
+import wwcp.entities.locomotives.steamers.BR50.DR.*;
+import wwcp.entities.locomotives.steamers.BR50.DB.*;
 import wwcp.entities.passengerstock.*;
 import wwcp.entities.railbusses.EntityNE81;
 import wwcp.entities.railbusses.EntityVT98;
@@ -138,6 +129,14 @@ public class wwcp_registrations {
                 new EntityDRGBR01_850mm(null),
                 new EntityDRGBR01_10_Streamlined(null),
                 new EntityDRGBR01_10_Unstreamlined(null),
+                new EntityDRGBR50(null),
+                new EntityDRGBR50Kriegslok(null),
+                new EntityDRBR50(null),
+                new EntityDRBR50_35(null),
+                new EntityDRBR50_40(null),
+                new EntityDRBR50_50(null),
+                new EntityDBBR50(null),
+                new EntityDBBR50_40(null),
                 new EntityDRBR01WitteChristmas(null),
                 new EntitySentinel100HPChristmas(null)
         };

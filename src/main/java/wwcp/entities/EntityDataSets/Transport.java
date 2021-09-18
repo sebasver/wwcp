@@ -283,9 +283,46 @@ public class Transport {
 
     //BR50
     public static Transport.LocomotiveWithBackspeed DBBR50() {
-        return new Transport.LocomotiveWithBackspeed("DBBR50", "Germany", "1926-1982", "Steam",
-                "", "", type, " Passenger Locomotive",
-                0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
+        return new Transport.LocomotiveWithBackspeed("DBBR50", "Germany", "1939-1987", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1625f, 86.9f, 80f, 80f, false, true, 0);
+    }
+
+    public static Transport.LocomotiveWithBackspeed DBBR50_40() {
+        return new Transport.LocomotiveWithBackspeed("DBBR50_40", "Germany", "1954-1967", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1520f, 90.6f, 80f, 80f, false, true, 0);
+    }//noted in KN Tractive effort.
+
+    public static Transport.LocomotiveWithBackspeed DRBR50() {
+        return new Transport.LocomotiveWithBackspeed("DRBR50", "Germany", "1939-1987", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1625f, 86.9f, 80f, 80f, false, true, 0);
+    }
+    public static Transport.LocomotiveWithBackspeed DRBR50_35() {
+        return new Transport.LocomotiveWithBackspeed("DRBR50_35", "Germany", "1956-1989", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1760f, 88.2f, 80f, 80f, false, true, 0);
+    }
+    public static Transport.LocomotiveWithBackspeed DRBR50_40() {
+        return new Transport.LocomotiveWithBackspeed("DRBR50_40", "Germany", "1956-1980", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1760f, 85.9f, 80f, 80f, false, true, 0);
+    }
+    public static Transport.LocomotiveWithBackspeed DRBR50_50() {
+        return new Transport.LocomotiveWithBackspeed("DRBR50_50", "Germany", "1966-1981", "Steam (Oil)",
+                "", "", type, " Freight Locomotive",
+                48109f, 1760f, 88.2f, 80f, 80f, false, true, 0);
+    }
+    public static Transport.LocomotiveWithBackspeed DRGBR50() {
+        return new Transport.LocomotiveWithBackspeed("DRGBR50", "Germany", "1939-1987", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1625f, 86.9f, 80f, 80f, false, true, 0);
+    }
+    public static Transport.LocomotiveWithBackspeed DRGBR50Kriegslok() {
+        return new Transport.LocomotiveWithBackspeed("DRGBR50kriegslok", "Germany", "1939-1960", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1760f, 80.9f, 80f, 80f, false, true, 0);
     }
 
     //BR 798 / VT 98

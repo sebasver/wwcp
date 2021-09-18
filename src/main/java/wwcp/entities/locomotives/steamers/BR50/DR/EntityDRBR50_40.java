@@ -1,4 +1,4 @@
-package wwcp.entities.locomotives.steamers;
+package wwcp.entities.locomotives.steamers.BR50.DR;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -19,20 +19,21 @@ import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GermanBRBogies.BR50Bogie;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DB.DB_BR50;
+import wwcp.models.locomotives.steamers.GermanBR.BR50.DB.DB_BR_50_40;
+import wwcp.models.locomotives.steamers.GermanBR.BR50.DR.DR_BR_50_40;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityDBBR50 extends EntityTrainCore {
+public class EntityDRBR50_40 extends EntityTrainCore {
 
-    public EntityDBBR50(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityDRBR50_40(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityDBBR50(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityDRBR50_40(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
-    public EntityDBBR50(World world) {
+    public EntityDRBR50_40(World world) {
         super(world);
     }
 
@@ -41,68 +42,65 @@ public class EntityDBBR50 extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return Transport.DBBR50().name;
+        return Transport.DRBR50_40().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.DBBR50().country;
+        return Transport.DRBR50_40().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.DBBR50().year;
+        return Transport.DRBR50_40().year;
     }
 
     @Override
     public String transportFuelType() {
-        return Transport.DBBR50().fuel;
+        return Transport.DRBR50_40().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.DBBR50().fictional;
+        return Transport.DRBR50_40().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return Transport.DBBR50().tractive_effort;
+        return Transport.DRBR50_40().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return Transport.DBBR50().metric_horsepower;
+        return Transport.DRBR50_40().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return Transport.DBBR50().weightinKGs;
+        return Transport.DRBR50_40().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(Transport.DBBR50().additionalTextTitle) + Transport.DBBR50().additionalText,
-                    RailUtility.translate(Transport.DBBR50().additionalTextTitle2) + Transport.DBBR50().additionalText2};
+            return new String[]{RailUtility.translate(Transport.DRBR50_40().additionalTextTitle) + Transport.DRBR50_40().additionalText,
+                    RailUtility.translate(Transport.DRBR50_40().additionalTextTitle2) + Transport.DRBR50_40().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? Transport.DBBR50().backTopSpeed : Transport.DBBR50().topSpeed;
+        return accelerator < 0 ? Transport.DRBR50_40().backTopSpeed : Transport.DRBR50_40().topSpeed;
     }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/DB_BR50_no_deflectors(1).png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DR/Skin_DR_BR50_40(1).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DB BR 50 no deflectors", "DR BR 50 Wagner Deflectors variant 1");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/DB_BR50_wagner(1).png",
+                "DR BR 50.40 1", "DR BR 50.40 variant 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DR/Skin_DR_BR50_40(2).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DB BR 50 Wagner deflector", "DR BR 50 Wagner Deflectors variant 2");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/DB_BR50_witte(1).png",
-                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DB BR 50 Witte deflectors", "DR BR 50 Witte Deflectors Variant 1");
+                "DR BR 50.40 2", "DR BR 50.40 variant 2");
     }
 
     public int getInventoryRows() {
@@ -118,11 +116,11 @@ public class EntityDBBR50 extends EntityTrainCore {
     }
 
     public float[][] getRiderOffsets() {
-        return new float[][]{{3.3F, 1.6F, 0.0F}};
+        return new float[][]{{3.3F, 1.25F, 0.0F}};
     }
 
     public float[] getHitboxSize() {
-        return new float[]{7.2F, 2.5F, 1.3F};
+        return new float[]{6.85F, 2.5F, 1.3F};
     }
 
     public ItemStack[] getRecipe() {
@@ -135,7 +133,7 @@ public class EntityDBBR50 extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.38f, 0f, 0}};
+        return new float[][]{{2.38f, -0.05f, 0}};
     }
 
     @Override
@@ -153,7 +151,7 @@ public class EntityDBBR50 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.165f, 0F, 0.F}};
+        return new float[][]{{-0.025f, 0.05F, 0.F}};
     }
 
     public boolean shouldRiderSit() {
@@ -161,7 +159,7 @@ public class EntityDBBR50 extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return Transport.DBBR50().reinforced;
+        return Transport.DRBR50_40().reinforced;
     }
 
     public int[] getTankCapacity() {
@@ -201,7 +199,7 @@ public class EntityDBBR50 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new DB_BR50()};
+        return new ModelBase[]{new DR_BR_50_40()};
     }
 
     @SideOnly(Side.CLIENT)
