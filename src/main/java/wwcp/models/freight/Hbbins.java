@@ -20,6 +20,7 @@ public class Hbbins extends ModelBase //Same as Filename
 
 	public Hbbins() //Same as Filename
 	{
+		bodyModel = new ModelRendererTurbo[230];
 
 		initbodyModel_1();
 
