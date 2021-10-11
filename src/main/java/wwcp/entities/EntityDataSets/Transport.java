@@ -486,10 +486,17 @@ public class Transport {
                 88000f, 3854f, 121.2f, 165f, false, true, 0);
     }
 
+    //MZ Class III 1972
+    public static Transport.LocomotiveNoBackspeed MZIII1972() {
+        return new Transport.LocomotiveNoBackspeed("MZIII1972", "Denmark", "1972-", "Diesel",
+                nick, " Cake Tins", type, " Universal Locomotive",
+                88000f, 3854f, 121.2f, 165f, false, true, 0);
+    }
+
     //MZ Class IV
     public static Transport.LocomotiveNoBackspeed MZIV() {
         return new Transport.LocomotiveNoBackspeed("MZIV", "Denmark", "1977-", "Diesel",
-                nick, " Cake Tins", type, " Universal Locomotive",
+                nick, " Cake Tins, Beagle Boys", type, " Universal Locomotive",
                 88000f, 3854f, 123f, 165f, false, true, 0);
     }
 
