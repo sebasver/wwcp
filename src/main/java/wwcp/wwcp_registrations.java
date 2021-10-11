@@ -14,6 +14,7 @@ import wwcp.entities.locomotives.electrics.EntityES64U2;
 import wwcp.entities.locomotives.electrics.EntityES64U4;
 import wwcp.entities.locomotives.electrics.EntityTraxxF140MS2E;
 import wwcp.entities.locomotives.electrics.EntityV36Electric;
+import wwcp.entities.locomotives.steamers.*;
 import wwcp.entities.locomotives.steamers.DB.*;
 import wwcp.entities.locomotives.steamers.DR.EntityDRBR01;
 import wwcp.entities.locomotives.steamers.DR.EntityDRBR01_5;
@@ -23,15 +24,13 @@ import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Streamlined;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Unstreamlined;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_850mm;
-import wwcp.entities.locomotives.steamers.Entity94xx;
-import wwcp.entities.locomotives.steamers.EntityClass812;
-import wwcp.entities.locomotives.steamers.EntityDRBR01WitteChristmas;
-import wwcp.entities.locomotives.steamers.EntitySentinel100HPChristmas;
 import wwcp.entities.passengerstock.*;
+import wwcp.entities.railbusses.EntityBRClass121;
 import wwcp.entities.railbusses.EntityNE81;
 import wwcp.entities.railbusses.EntityVT98;
 import wwcp.entities.railbusses.EntityVT98AD;
 import wwcp.entities.tender.Entity3000GalonTender;
+import wwcp.entities.tender.EntityMakeshiftTender;
 import wwcp.entities.tender.EntityT32Christmas;
 import wwcp.entities.tender.germanTenders.*;
 
@@ -139,7 +138,11 @@ public class wwcp_registrations {
                 new EntityDRGBR01_10_Streamlined(null),
                 new EntityDRGBR01_10_Unstreamlined(null),
                 new EntityDRBR01WitteChristmas(null),
-                new EntitySentinel100HPChristmas(null)
+                new EntitySentinel100HPChristmas(null),
+                new EntityModular_0_4_0(null),
+                new Entity57(null),
+                new EntityDSBFII(null),
+                new EntityDBBR50(null)
         };
     }
 
@@ -158,7 +161,9 @@ public class wwcp_registrations {
                 new EntityT37(null),
                 new EntityT37DRG(null),
                 new EntityT38(null),
-                new EntityT38Oil(null)
+                new EntityT38Oil(null),
+                new EntityMakeshiftTender(null),
+                new EntityKabinTenderT26(null)
         };
     }
 
@@ -174,12 +179,18 @@ public class wwcp_registrations {
                 new EntityMZClassTwo(null),
                 new EntityMZClassTwo1970(null),
                 new EntityMZClassThree(null),
+                new EntityMZClassThree1972(null),
                 new EntityMZClassFour(null),
                 new EntityKofIII(null),
                 new EntityKofIII2(null),
                 new EntityF7A(null),
                 new EntityF7B(null),
-                new EntityGP7(null)
+                new EntityGP7(null),
+                new EntityFP7A(null),
+                new EntityHS4000(null),
+                new EntitySD70Mac(null),
+                new EntityF40ph(null),
+                new EntityBL2(null)
         };
     }
 
@@ -188,7 +199,8 @@ public class wwcp_registrations {
         return new GenericRailTransport[]{
                 new EntityNE81(null),
                 new EntityVT98AD(null),
-                new EntityVT98(null)
+                new EntityVT98(null),
+                new EntityBRClass121(null)
         };
     }
 
@@ -227,9 +239,11 @@ public class wwcp_registrations {
                 new EntityRheingoldSalonTwoChristmas(null),
                 new EntityRheingoldSpeiseOneChristmas(null),
                 new EntityRheingoldSpeiseTwoChristmas(null),
-                new EntityGWRThirdChristmas(null)
-
-
+                new EntityGWRThirdChristmas(null),
+                new EntityAmfleet1(null),
+                new EntityACF_60Seats(null),
+                new EntityGWR_Toad20(null),
+                new EntityBOCaboose(null)
         };
     }
 
@@ -256,7 +270,13 @@ public class wwcp_registrations {
                 new EntityUKTanker(null),
                 new EntityUKVan(null),
                 new EntityHbbins(null),
-                new EntityHbbillns(null)
+                new EntityHbbillns(null),
+                new Entity_GSC_60_Flatcar(null),
+                new EntityACF_SingleDomeTankCar(null),
+                new EntityDSBCarE(null),
+                new Entity_89ft_Flatcar(null),
+                new Entity_89ft_Autorack_BiLevel(null),
+                new EntityChaldron(null)
         };
     }
 }
