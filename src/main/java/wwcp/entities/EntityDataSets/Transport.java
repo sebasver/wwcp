@@ -281,9 +281,16 @@ public class Transport {
                 0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
     }
 
-    //BR50
+    //BR50DB
     public static Transport.LocomotiveWithBackspeed DBBR50() {
         return new Transport.LocomotiveWithBackspeed("DBBR50", "Germany", "1926-1982", "Steam",
+                "", "", type, " Passenger Locomotive",
+                0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
+    }
+
+    //BR50DR
+    public static Transport.LocomotiveWithBackspeed DRBR50() {
+        return new Transport.LocomotiveWithBackspeed("DRBR50", "Germany", "1926-1982", "Steam",
                 "", "", type, " Passenger Locomotive",
                 0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
     }
