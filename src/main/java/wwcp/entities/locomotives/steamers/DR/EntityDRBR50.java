@@ -89,7 +89,7 @@ public class EntityDRBR50 extends EntityTrainCore {
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? Transport.DBBR50().backTopSpeed : Transport.DBBR50().topSpeed;
+        return accelerator < 0 ? Transport.DRBR50().backTopSpeed : Transport.DRBR50().topSpeed;
     }
 
     @Override
@@ -161,7 +161,7 @@ public class EntityDRBR50 extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return Transport.DBBR50().reinforced;
+        return Transport.DRBR50().reinforced;
     }
 
     public int[] getTankCapacity() {

@@ -41,55 +41,55 @@ public class EntityDRGBR50 extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return Transport.DBBR50().name;
+        return Transport.DRGBR50().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.DBBR50().country;
+        return Transport.DRGBR50().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.DBBR50().year;
+        return Transport.DRGBR50().year;
     }
 
     @Override
     public String transportFuelType() {
-        return Transport.DBBR50().fuel;
+        return Transport.DRGBR50().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.DBBR50().fictional;
+        return Transport.DRGBR50().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return Transport.DBBR50().tractive_effort;
+        return Transport.DRGBR50().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return Transport.DBBR50().metric_horsepower;
+        return Transport.DRGBR50().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return Transport.DBBR50().weightinKGs;
+        return Transport.DRGBR50().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(Transport.DBBR50().additionalTextTitle) + Transport.DBBR50().additionalText,
-                    RailUtility.translate(Transport.DBBR50().additionalTextTitle2) + Transport.DBBR50().additionalText2};
+            return new String[]{RailUtility.translate(Transport.DRGBR50().additionalTextTitle) + Transport.DRGBR50().additionalText,
+                    RailUtility.translate(Transport.DRGBR50().additionalTextTitle2) + Transport.DRGBR50().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? Transport.DBBR50().backTopSpeed : Transport.DBBR50().topSpeed;
+        return accelerator < 0 ? Transport.DRGBR50().backTopSpeed : Transport.DRGBR50().topSpeed;
     }
 
     @Override
@@ -161,7 +161,7 @@ public class EntityDRGBR50 extends EntityTrainCore {
     }
 
     public boolean isReinforced() {
-        return Transport.DBBR50().reinforced;
+        return Transport.DRGBR50().reinforced;
     }
 
     public int[] getTankCapacity() {
