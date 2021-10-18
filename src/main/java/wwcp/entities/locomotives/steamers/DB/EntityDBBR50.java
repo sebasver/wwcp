@@ -96,13 +96,13 @@ public class EntityDBBR50 extends EntityTrainCore {
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/DB_BR50_no_deflectors(1).png",
                 "textures/bogies/BR50/Bogie_BR50.png",
-                "DB BR 50 no deflectors", "DR BR 50 Wagner Deflectors variant 1");
+                "DB BR 50 no deflectors", "DB BR 50 Wagner Deflectors variant 1");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/DB_BR50_wagner(1).png",
                 "textures/bogies/BR50/Bogie_BR50.png",
-                "DB BR 50 Wagner deflector", "DR BR 50 Wagner Deflectors variant 2");
+                "DB BR 50 Wagner deflector", "DB BR 50 Wagner Deflectors variant 2");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/DB_BR50_witte(1).png",
                 "textures/bogies/BR50/Bogie_BR50.png",
-                "DB BR 50 Witte deflectors", "DR BR 50 Witte Deflectors Variant 1");
+                "DB BR 50 Witte deflectors", "DB BR 50 Witte Deflectors Variant 1");
     }
 
     public int getInventoryRows() {
