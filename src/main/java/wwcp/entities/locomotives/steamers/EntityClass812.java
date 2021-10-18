@@ -105,7 +105,7 @@ public class EntityClass812 extends EntityTrainCore {
         return new float[]{4.45F, 2.1F, 1.3F};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{null, null, null, null, null, null, null, null, null};
     }
 

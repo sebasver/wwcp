@@ -113,7 +113,7 @@ public class EntityEurofimaSleeper extends GenericRailTransport {
                 "Fictional British Rail Livery", "Fake livery");
     }
     @Override
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 DefineStack(Items.bed, 1), null, null,
                 null, null, null,

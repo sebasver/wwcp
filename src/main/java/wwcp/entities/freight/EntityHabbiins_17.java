@@ -61,10 +61,8 @@ public class EntityHabbiins_17 extends GenericRailTransport {
                 "Habbiins 17 TWA Grey", "This is the most common livery to see in real life");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_DB.png", "textures/bogies/SGNSSBogie2.png",
                 "Habbiins 17 DB", "This is the most common livery to see in real life, though more dirty");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_DSB_Grey.png", "textures/bogies/SGNSSBogie2.png",
-                "Habbiins 17 DSB", "This is the least known livery, only existed for two years");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_SJ.png", "textures/bogies/SGNSSBogie2.png",
-                "Habbiins 17 SJ", "This is a known livery, existed for a few years");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_DSB.png", "textures/bogies/SGNSSBogie2.png",
+                "Habbiins 17 DSB", "This is the most common livery to see in real life, though more dirty");
     }
 
     @Override
@@ -85,7 +83,7 @@ public class EntityHabbiins_17 extends GenericRailTransport {
             return Transport.Habbiins_17().weightinKGs;
         }
 
-        public ItemStack[] getRecipie() {
+        public ItemStack[] getRecipe() {
             return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
         }
 

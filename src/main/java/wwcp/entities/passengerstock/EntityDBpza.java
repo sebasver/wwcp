@@ -46,7 +46,7 @@ public class EntityDBpza extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{5f, 0.12f, 0}, {-5.5f, 0.12f, 0}};
+        return new float[][]{{5f, 0f, 0}, {-5.5f, 0f, 0}};
     }
 
     @Override
@@ -77,7 +77,7 @@ public class EntityDBpza extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.025f, -0.17F, 0.F}};
+        return new float[][]{{-0.025f, -0.075F, 0.F}};
     }
 
     @Override
@@ -105,7 +105,7 @@ public class EntityDBpza extends GenericRailTransport {
         return Transport.DBpza().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

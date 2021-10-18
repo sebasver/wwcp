@@ -105,7 +105,7 @@ public class EntityMZClassThree extends EntityTrainCore {
     public float getMaxFuel(){return 20;}
 
 
-    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.DIESEL;
+    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class EntityMZClassThree extends EntityTrainCore {
         return new float[]{10.25f,2.2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

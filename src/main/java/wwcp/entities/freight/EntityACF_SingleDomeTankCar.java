@@ -43,7 +43,7 @@ public class EntityACF_SingleDomeTankCar extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{3.4F, -3.4F};
+        return new float[]{2.2F, -2.2F};
     }
 
     public float getRenderScale() {
@@ -73,7 +73,7 @@ public class EntityACF_SingleDomeTankCar extends GenericRailTransport {
         return Transport.ACF_Single_Dome_Tankcar().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 
@@ -111,7 +111,7 @@ public class EntityACF_SingleDomeTankCar extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{2.95f, 1.4f, 1.4F};
+        return new float[]{5.5f, 2.0f, 1.4F};
     }
 
     public float getPistonOffset() {

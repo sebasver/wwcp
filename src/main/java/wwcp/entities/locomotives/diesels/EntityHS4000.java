@@ -98,7 +98,7 @@ public class EntityHS4000 extends EntityTrainCore {
     public float getMaxFuel(){return 20;}
 
 
-    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.DIESEL;
+    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
     }
 
 
@@ -111,7 +111,7 @@ public class EntityHS4000 extends EntityTrainCore {
         return new float[]{6.6f,2.2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

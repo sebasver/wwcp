@@ -77,23 +77,21 @@ public class EntityF40ph extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F40ph/F40PH_AmtrakP2.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F40ph/F40ph_Amtrak_phase2.png",
                 "textures/bogies/blombergB_black.png",
-                "Amtrak", "Amtrak owned a lot of the F40PH, that was some years ago now.");
-
-        //todo fix above entry.
+                "Amtrak Livery 2", "Amtrak Phase 2 Scheme");
     }
     
     @Override
     public String getDefaultSkin() {
-        return "wwcp:EMD Demonstrator";
+        return "wwcp:Amtrak Livery 2";
     }
 
     @Override
     public float getMaxFuel(){return 20;}
 
 
-    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.DIESEL;
+    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
     }
 
     @Override
@@ -104,7 +102,7 @@ public class EntityF40ph extends EntityTrainCore {
         return new float[]{6.6f,2.2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

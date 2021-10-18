@@ -84,7 +84,7 @@ public class EntitySGNS801BT2TT extends GenericRailTransport {
         return Transport.Sggnss80Load1().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

@@ -99,7 +99,7 @@ public class EntityKofIII2 extends EntityTrainCore {
     public float getMaxFuel(){return 20;}
 
 
-    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.DIESEL;
+    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
     }
 
     @Override
@@ -115,7 +115,7 @@ public class EntityKofIII2 extends EntityTrainCore {
         return new float[]{3.95f,1.8f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

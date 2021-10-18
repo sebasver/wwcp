@@ -48,7 +48,7 @@ public class EntityOFF52Beetle extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.1f,-0.05F,0F}};
+        return new float[][]{{-0.1f,0.05f,0F}};
     }
 
     public void registerSkins() {
@@ -70,7 +70,7 @@ public class EntityOFF52Beetle extends GenericRailTransport {
         return Transport.OFF52().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

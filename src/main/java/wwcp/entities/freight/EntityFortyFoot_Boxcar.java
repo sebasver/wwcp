@@ -33,7 +33,7 @@ public class EntityFortyFoot_Boxcar extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.05f,0.08f,0},{-2.05f,0.08f,0}};
+        return new float[][]{{1.90f,0.0f,0},{-2.1f,0.0f,0}};
     }
 
     @Override
@@ -51,7 +51,7 @@ public class EntityFortyFoot_Boxcar extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0F,-0.1F,0F}};
+        return new float[][]{{-0F,0.0F,0F}};
     }
 
     public void registerSkins() {
@@ -89,16 +89,18 @@ public class EntityFortyFoot_Boxcar extends GenericRailTransport {
                 "Burlington Route, Red", "Burlington Route Logo with red body");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CN Regular.png", "textures/bogies/70ton_truck_black.png",
                 "Canadian National, Wet Noodle, brown", "Canadian National with wet noodle logo and brown body");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CPR regular.png", "textures/bogies/70ton_truck_black.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar- CPR regular.png", "textures/bogies/70ton_truck_black.png",
                 "Canadian Pacific, block lettering", "Canadian Pacific block lettering and brown body");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CNR Red Orange, White Leaf.png", "textures/bogies/70ton_truck_black.png",
-                "CNR, Red Orange, White Maple Leaf", "Canadian National Railway boxcar with white maple leaf logo in red/orange scheme");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CNR Red Orange.png", "textures/bogies/70ton_truck_black.png",
                 "CNR, Red Orange", "Canadian National Railway boxcar with maple leaf logo in red/orange scheme");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CNR Regular.png", "textures/bogies/70ton_truck_black.png",
                 "CNR, Brown, Maple Leaf", "Canadian National Railway boxcar with maple leaf logo in brown scheme");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CNR White Leaf.png", "textures/bogies/70ton_truck_black.png",
                 "CNR, Brown, White Leaf", "Canadian National Railway boxcar with white maple leaf logo in brown scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CNR regular_newdoor.png", "textures/bogies/70ton_truck_black.png",
+                "CNR, Brown, Maple leaf, New Door", "Canadian National Railway boxcar with a new door");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Boxcar_CNR Regular_yellowdoor.png", "textures/bogies/70ton_truck_black.png",
+                "CNR, Brown, Maple leaf, Yellow Door", "Canadian National Railway boxcar with a yellow door");
     }
 
     @Override
@@ -114,7 +116,7 @@ public class EntityFortyFoot_Boxcar extends GenericRailTransport {
         return Transport.Fortyfoot_Boxcar().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

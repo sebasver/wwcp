@@ -107,9 +107,18 @@ public class EntityACF_60Seats extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/ACF_60Seat.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/GN_Orange.png",
                 "textures/bogies/M500_Truck.png",
-                "Great Northern Railroad", "ACF Coach in GNR's Livery And no its not the UK GNR");
+                "Great Northern Empire builder", "Great Northern empire builder orange");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/GN_Blue.png",
+                "textures/bogies/M500_Truck.png",
+                "Great Northern Blue", "GN Blue and white scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/BN_Green.png",
+                "textures/bogies/M500_Truck.png",
+                "Burlington Northern", "BN Green with curved line");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/ACF_60Seat/BN_Green_Straight.png",
+                "textures/bogies/M500_Truck.png",
+                "Burlington Northern Straight Line", "BN Green with straight line");
     }
 
     /*@Override
@@ -118,7 +127,7 @@ public class EntityACF_60Seats extends GenericRailTransport {
     }*/
     
     @Override
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 DefineStack(Items.bed, 1), null, null,
                 null, null, null,
@@ -140,12 +149,12 @@ public class EntityACF_60Seats extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{2.2f,1.1f, 0.2f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{0f,1.0f, 0.2f}};}
 
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9f,2.1f,1.5f};
+        return new float[]{11f,1.9f,1.5f};
     }
 
     @Override

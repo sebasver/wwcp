@@ -81,7 +81,7 @@ public class EntityAmfleet1 extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{3.975f,0f,0},{-3.975f,0f,0}};
+        return new float[][]{{3.94f,0f,0},{-4f,0f,0}};
     }
 
     @Override
@@ -93,7 +93,7 @@ public class EntityAmfleet1 extends GenericRailTransport {
      * <h2>Bogie Offset</h2>
      */
     @Override
-    public float[] bogieLengthFromCenter(){return new float[]{4f,-4f};}
+    public float[] bogieLengthFromCenter(){return new float[]{4f,-3.94f};}
 
     @Override
     public float getRenderScale() {
@@ -102,7 +102,7 @@ public class EntityAmfleet1 extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.4f,0.05F,0.F}};
+        return new float[][]{{0f,0.05F,0.F}};
     }
 
     @Override
@@ -118,7 +118,7 @@ public class EntityAmfleet1 extends GenericRailTransport {
     }*/
     
     @Override
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 DefineStack(Items.bed, 1), null, null,
                 null, null, null,
@@ -140,12 +140,12 @@ public class EntityAmfleet1 extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{2.2f,1.1f, 0.2f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{0f,1f, 0.2f}};}
 
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9f,2.1f,1.5f};
+        return new float[]{11f,1.75f,1.5f};
     }
 
     @Override

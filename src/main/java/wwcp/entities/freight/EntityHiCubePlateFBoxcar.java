@@ -33,7 +33,7 @@ public class EntityHiCubePlateFBoxcar extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{3f,0.08f,0},{-3f,0.08f,0}};
+        return new float[][]{{3f,0.0f,0},{-3f,0.0f,0}};
     }
 
     @Override
@@ -51,7 +51,7 @@ public class EntityHiCubePlateFBoxcar extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0F,-0.1F,0F}};
+        return new float[][]{{-0F,-0.0F,0F}};
     }
 
     public void registerSkins() {
@@ -74,7 +74,7 @@ public class EntityHiCubePlateFBoxcar extends GenericRailTransport {
         return Transport.Hi_Cube_Plate_F_Boxcar().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

@@ -61,7 +61,7 @@ public class EntityDonder2 extends GenericRailTransport {
         return Transport.Donderbus1().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 
@@ -110,7 +110,7 @@ public class EntityDonder2 extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0f,-0.05F,0.F}};
+        return new float[][]{{-0f,0.075F,0.F}};
     }
 
     public TrainsInMotion.transportTypes getType() {
