@@ -181,6 +181,7 @@ public class wwcp_registrations {
                 new EntityMZClassThree(null),
                 new EntityMZClassThree1972(null),
                 new EntityMZClassFour(null),
+                new EntityClassME(null),
                 new EntityKofIII(null),
                 new EntityKofIII2(null),
                 new EntityF7A(null),
