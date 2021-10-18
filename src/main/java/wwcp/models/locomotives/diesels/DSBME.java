@@ -12,12 +12,12 @@ package wwcp.models.locomotives.diesels; //Path where the model is located
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
-public class DBSME extends ModelBase //Same as Filename
+public class DSBME extends ModelBase //Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public DBSME() //Same as Filename
+	public DSBME() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[230];
 
