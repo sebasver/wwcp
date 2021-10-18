@@ -500,6 +500,13 @@ public class Transport {
                 88000f, 3854f, 123f, 165f, false, true, 0);
     }
 
+    //Class ME
+    public static Transport.LocomotiveNoBackspeed ClassME() {
+        return new Transport.LocomotiveNoBackspeed("ClassME", "Denmark", "1981-", "Diesel",
+                nick, "", type, " Universal Locomotive",
+                88000f, 3854f, 122f, 175f, false, true, 0);
+    }
+
     //MZ Class Australia
     public static Transport.LocomotiveNoBackspeed MZAustralia() {
         return new Transport.LocomotiveNoBackspeed("MZIII", "Australia", "1972-", "Diesel",
