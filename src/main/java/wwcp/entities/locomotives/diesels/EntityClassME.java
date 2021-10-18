@@ -44,43 +44,43 @@ public class EntityClassME extends EntityTrainCore {
     }
 
     @Override
-    public String transportName() { return Transport.MZI().name; }
+    public String transportName() { return Transport.ClassME().name; }
 
     @Override
-    public String transportcountry() { return Transport.MZI().country; }
+    public String transportcountry() { return Transport.ClassME().country; }
 
     @Override
-    public String transportYear() { return Transport.MZI().year; }
+    public String transportYear() { return Transport.ClassME().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.MZI().fuel;
+        return Transport.ClassME().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.MZI().fictional;
+        return Transport.ClassME().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.MZI().tractive_effort;
+        return Transport.ClassME().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.MZI().metric_horsepower;
+        return Transport.ClassME().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  Transport.MZI().weightinKGs;
+        return  Transport.ClassME().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.MZI().reinforced;
+        return Transport.ClassME().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.MZI().additionalTextTitle) + Transport.MZI().additionalText,
-                RailUtility.translate(Transport.MZI().additionalTextTitle2) + Transport.MZI().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.ClassME().additionalTextTitle) + Transport.ClassME().additionalText,
+                RailUtility.translate(Transport.ClassME().additionalTextTitle2) + Transport.ClassME().additionalText2};}
     }
 
     @Override
