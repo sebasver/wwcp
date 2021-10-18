@@ -281,25 +281,48 @@ public class Transport {
                 0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
     }
 
-    //BR50DB
+    //BR50
     public static Transport.LocomotiveWithBackspeed DBBR50() {
-        return new Transport.LocomotiveWithBackspeed("DBBR50", "Germany", "1926-1982", "Steam",
-                "", "", type, " Passenger Locomotive",
-                0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
+        return new Transport.LocomotiveWithBackspeed("DBBR50", "Germany", "1939-1987", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1625f, 86.9f, 80f, 80f, false, true, 0);
     }
 
-    //BR50DR
+    public static Transport.LocomotiveWithBackspeed DBBR50_40() {
+        return new Transport.LocomotiveWithBackspeed("DBBR50_40", "Germany", "1954-1967", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1520f, 90.6f, 80f, 80f, false, true, 0);
+    }//noted in KN Tractive effort.
+
     public static Transport.LocomotiveWithBackspeed DRBR50() {
-        return new Transport.LocomotiveWithBackspeed("DRBR50", "Germany", "1926-1982", "Steam",
-                "", "", type, " Passenger Locomotive",
-                0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
+        return new Transport.LocomotiveWithBackspeed("DRBR50", "Germany", "1939-1987", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1625f, 86.9f, 80f, 80f, false, true, 0);
     }
-
-    //BR50DRG
+    public static Transport.LocomotiveWithBackspeed DRBR50_35() {
+        return new Transport.LocomotiveWithBackspeed("DRBR50_35", "Germany", "1956-1989", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1760f, 88.2f, 80f, 80f, false, true, 0);
+    }
+    public static Transport.LocomotiveWithBackspeed DRBR50_40() {
+        return new Transport.LocomotiveWithBackspeed("DRBR50_40", "Germany", "1956-1980", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1760f, 85.9f, 80f, 80f, false, true, 0);
+    }
+    public static Transport.LocomotiveWithBackspeed DRBR50_50() {
+        return new Transport.LocomotiveWithBackspeed("DRBR50_50", "Germany", "1966-1981", "Steam (Oil)",
+                "", "", type, " Freight Locomotive",
+                48109f, 1760f, 88.2f, 80f, 80f, false, true, 0);
+    }
     public static Transport.LocomotiveWithBackspeed DRGBR50() {
-        return new Transport.LocomotiveWithBackspeed("DRGBR50", "Germany", "1926-1982", "Steam",
-                "", "", type, " Passenger Locomotive",
-                0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
+        return new Transport.LocomotiveWithBackspeed("DRGBR50", "Germany", "1939-1987", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1625f, 86.9f, 80f, 80f, false, true, 0);
+    }
+    public static Transport.LocomotiveWithBackspeed DRGBR50Kriegslok() {
+        return new Transport.LocomotiveWithBackspeed("DRGBR50kriegslok", "Germany", "1939-1960", "Steam",
+                "", "", type, " Freight Locomotive",
+                48109f, 1760f, 80.9f, 80f, 80f, false, true, 0);
     }
 
     //BR 798 / VT 98
@@ -398,17 +421,45 @@ public class Transport {
                 "", type, " Tender", 19.5f, 0f, false, true, 0, 300000);
     }
 
-    //GE AC4400 CW
+    //RS18
+    public static Transport.LocomotiveNoBackspeed RS18() {
+        return new Transport.LocomotiveNoBackspeed("RS18", "Canada", "1956-1993", "Diesel",
+                "", "", type, "Road Switcher",
+                53000f, 1800f, 124f, 80f, false, true, 0);
+    }
+
+    //M640 - Note, Incomplete until I find the data
+    public static Transport.LocomotiveNoBackspeed M640() {
+        return new Transport.LocomotiveNoBackspeed("M640", "Canada", "1972-1992", "Diesel",
+                "", "", type, "Mainline Locomotive",
+                53000f, 4000f, 200f, 70f, false, true, 0);
+    }
+
+    //GP50
+    public static Transport.LocomotiveNoBackspeed GP50() {
+        return new Transport.LocomotiveNoBackspeed("GP50", "America", "1980-", "Diesel",
+                "", "", type, "General Purpose Locomotive",
+                62400f, 3600f, 125f, 65f, false, true, 0);
+    }
+
+    //SD70MAC
     public static Transport.LocomotiveNoBackspeed SD70Mac() {
         return new Transport.LocomotiveNoBackspeed("SD70Mac", "America", "1993-", "Diesel",
-                "", "", type, " Freight Locomotive",
+                "", "", type, "Special Duty Locomotive",
                 145000f, 4400f, 193f, 112f, false, true, 0);
     }
 
-    //GE AC4400 CW
+    //SD60MAC
+    public static Transport.LocomotiveNoBackspeed SD60Mac() {
+        return new Transport.LocomotiveNoBackspeed("SD60Mac", "America", "1993-", "Diesel",
+                "", "", type, "Special Duty Locomotive",
+                145000f, 4400f, 193f, 112f, false, true, 0);
+    }
+
+    //AC4400CW
     public static Transport.LocomotiveNoBackspeed GEAC4400CW() {
-        return new Transport.LocomotiveNoBackspeed("GEAC4400CW", "America", "1993-", "Diesel",
-                "", "", type, " Freight Locomotive",
+        return new Transport.LocomotiveNoBackspeed("AC4400CW", "America", "1993-Present", "Diesel",
+                "", "", type, " Mainline Freight Locomotive",
                 145000f, 4400f, 193f, 112f, false, true, 0);
     }
 
@@ -459,9 +510,15 @@ public class Transport {
 
     //DSB FII todo fix this entry
     public static Transport.LocomotiveNoBackspeed DSBFII() {
-        return new Transport.LocomotiveNoBackspeed("DSBFII", "Denmark", "1898-1970", "Steam",
-                nick, "F Maskine", type, "Shunting Locomotive",
-                22515f, 3253f, 37.0f, 50f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("DSBFII", "Denmark", "1967-", "Diesel",
+                nick, " Cake Tins", type, " Universal Locomotive",
+                88000f, 3253f, 116.5f, 143f, false, true, 0);
+    }
+
+    //B&O Caboose
+    public static Transport.Rollingstock BOCaboose() {
+        return new Transport.Rollingstock("B&O Caboose", "America", "1977-", "",
+                "", type, " Bay Window Caboose", 45f, 200f, false, true, 0);
     }
 
     //MZ Class I
@@ -500,25 +557,11 @@ public class Transport {
                 88000f, 3854f, 121.2f, 165f, false, true, 0);
     }
 
-    //MZ Class III 1972
-    public static Transport.LocomotiveNoBackspeed MZIII1972() {
-        return new Transport.LocomotiveNoBackspeed("MZIII1972", "Denmark", "1972-", "Diesel",
-                nick, " Cake Tins", type, " Universal Locomotive",
-                88000f, 3854f, 121.2f, 165f, false, true, 0);
-    }
-
     //MZ Class IV
     public static Transport.LocomotiveNoBackspeed MZIV() {
         return new Transport.LocomotiveNoBackspeed("MZIV", "Denmark", "1977-", "Diesel",
-                nick, " Cake Tins, Beagle Boys", type, " Universal Locomotive",
+                nick, " Cake Tins", type, " Universal Locomotive",
                 88000f, 3854f, 123f, 165f, false, true, 0);
-    }
-
-    //Class ME
-    public static Transport.LocomotiveNoBackspeed ClassME() {
-        return new Transport.LocomotiveNoBackspeed("ClassME", "Denmark", "1981-", "Diesel",
-                nick, "", type, " Universal Locomotive",
-                88000f, 3854f, 122f, 175f, false, true, 0);
     }
 
     //MZ Class Australia
@@ -958,10 +1001,33 @@ public class Transport {
                 "", type, " Boxcar", 48f, 120f, false, true, 0);
     }
 
+    //40ft Boxcar - CP Plug Slide Boxcar
+    public static Transport.Rollingstock CP_PlugSlide() {
+        return new Transport.Rollingstock("40ft CP PlugSlide Boxcar", "Canada", "~1970-2000", "",
+                "", type, " Boxcar", 48f, 120f, false, true, 0);
+    }
+    //40ft Boxcar - CP Plugdoor Boxcar
+    public static Transport.Rollingstock CP_Plugdoor() {
+        return new Transport.Rollingstock("40ft CP Plugdoor Boxcar", "Canada", "~1970-2000", "",
+                "", type, " Boxcar", 48f, 120f, false, true, 0);
+    }
+
+    //40ft Boxcar - CP Minibox
+    public static Transport.Rollingstock CP_Minibox() {
+        return new Transport.Rollingstock("40ft CP Minibox", "Canada", "1929-1983", "",
+                "", type, " Boxcar", 36f, 120f, false, true, 0);
+    }
+
     //GCS Flatcar
     public static Transport.Rollingstock GSC_Flatcar() {
         return new Transport.Rollingstock("GSCFlatcar", "America", "1956", "",
-                "", type, " Flatcar", 75f, 0f, false, true, 0);
+                "", type, " Flatcar", 75f, 120f, false, true, 0);
+    }
+
+    //PRR Gla Hopper
+    public static Transport.Rollingstock PRR_Gla_Hopper() {
+        return new Transport.Rollingstock("PRR Gla Hopper", "America", "1956", "",
+                "", type, " Hopper", 75f, 120f, false, true, 0);
     }
 
     //89ft Flatcar
@@ -1035,13 +1101,8 @@ public class Transport {
         return new Transport.TankCars("DBSE", "Denmark", "1960-1990", "",
                 "", type, " Freight loose", 12f, 0f, false, true, 0,  9000);
     }
-
-    //BO Caboose todo fix this entry
-    public static Rollingstock BOCaboose() {
-        return new Transport.Rollingstock("B&O_Caboose", "America", "1930-1959", "",
-                "", type, " Passenger", 12f, 0f, false, true, 0);
-    }
 }
+
 
 
 
