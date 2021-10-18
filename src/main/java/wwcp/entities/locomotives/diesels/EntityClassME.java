@@ -88,17 +88,17 @@ public class EntityClassME extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/Me/MeDSBRedBlack1.png", "textures/bogies/MeBogie.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/DSBMe/MeDSBRedBlack1.png", "textures/bogies/MeBogie.png",
                 "DSB Red and Black Livery", "Standard Red and Black livery for the DSB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/Me/MeDSBRedBlack2.png", "textures/bogies/MeBogie.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/DSBMe/MeDSBRedBlack2.png", "textures/bogies/MeBogie.png",
                 "DSB Red and Black Livery 2", "Standard Red and Black livery for the DSB, but the red was extended");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/Me/MeDSBBlue.png", "textures/bogies/MeBogie.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/DSBMe/MeDSBBlue.png", "textures/bogies/MeBogie.png",
                 "DSB Blue", "New blue livery adopted in the early 2000's. All Class ME except one have had this blue livery");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/Me/MeDSBRed1.png", "textures/bogies/MeBogie.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/DSBMe/MeDSBRed1.png", "textures/bogies/MeBogie.png",
                 "DSB Red", "Two locomotives were given this trial livery, its a contrast of the blue livery");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/Me/MeDSBRed2.png", "textures/bogies/MeBogie.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/DSBMe/MeDSBRed2.png", "textures/bogies/MeBogie.png",
                 "DSB Red 2", "From 2016 to 2018 some of the Class ME were given a new coat of red, its still current in use, even on the ones sold to NRFAB");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/Me/NRFABTME.png", "textures/bogies/MeBogie.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/DSBMe/NRFABTME.png", "textures/bogies/MeBogie.png",
                 "NRFAB TME", "NRFAB's livery to the Class ME that was sold from 2020 - 2021");
     }
 
