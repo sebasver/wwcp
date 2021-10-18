@@ -16,10 +16,7 @@ import wwcp.entities.locomotives.electrics.EntityTraxxF140MS2E;
 import wwcp.entities.locomotives.electrics.EntityV36Electric;
 import wwcp.entities.locomotives.steamers.*;
 import wwcp.entities.locomotives.steamers.DB.*;
-import wwcp.entities.locomotives.steamers.DR.EntityDRBR01;
-import wwcp.entities.locomotives.steamers.DR.EntityDRBR01_5;
-import wwcp.entities.locomotives.steamers.DR.EntityDRBR01_5Oil;
-import wwcp.entities.locomotives.steamers.DR.EntityDRBR01_5SD;
+import wwcp.entities.locomotives.steamers.DR.*;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Streamlined;
 import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Unstreamlined;
@@ -142,7 +139,8 @@ public class wwcp_registrations {
                 new EntityModular_0_4_0(null),
                 new Entity57(null),
                 new EntityDSBFII(null),
-                new EntityDBBR50(null)
+                new EntityDBBR50(null),
+                new EntityDRBR50(null)
         };
     }
 
