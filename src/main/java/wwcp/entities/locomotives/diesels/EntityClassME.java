@@ -15,8 +15,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.EUBogies.MeBogie;
-import wwcp.models.locomotives.diesels.DSBMe;
+import wwcp.models.bogies.EUBogies.DSBMEBogie;
+import wwcp.models.locomotives.diesels.DSBME;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -141,7 +141,7 @@ public class EntityClassME extends EntityTrainCore {
     public float[][] bogieModelOffsets(){return new float[][]{{3f,0.05f,0},{-3f,0.05f,0}};
     }
     @Override
-    public ModelBase[] bogieModels() {return new ModelBase[]{new MeBogie()}; }
+    public ModelBase[] bogieModels() {return new ModelBase[]{new DSBMEBogie()}; }
 
     @Override
     public float[] bogieLengthFromCenter() {
@@ -203,7 +203,7 @@ public class EntityClassME extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new DSBMe()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new DSBME()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>
