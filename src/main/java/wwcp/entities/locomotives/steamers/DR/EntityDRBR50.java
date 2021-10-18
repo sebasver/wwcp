@@ -41,49 +41,49 @@ public class EntityDRBR50 extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return Transport.DBBR50().name;
+        return Transport.DRBR50().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.DBBR50().country;
+        return Transport.DRBR50().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.DBBR50().year;
+        return Transport.DRBR50().year;
     }
 
     @Override
     public String transportFuelType() {
-        return Transport.DBBR50().fuel;
+        return Transport.DRBR50().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.DBBR50().fictional;
+        return Transport.DRBR50().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return Transport.DBBR50().tractive_effort;
+        return Transport.DRBR50().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return Transport.DBBR50().metric_horsepower;
+        return Transport.DRBR50().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return Transport.DBBR50().weightinKGs;
+        return Transport.DRBR50().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(Transport.DBBR50().additionalTextTitle) + Transport.DBBR50().additionalText,
-                    RailUtility.translate(Transport.DBBR50().additionalTextTitle2) + Transport.DBBR50().additionalText2};
+            return new String[]{RailUtility.translate(Transport.DRBR50().additionalTextTitle) + Transport.DRBR50().additionalText,
+                    RailUtility.translate(Transport.DRBR50().additionalTextTitle2) + Transport.DRBR50().additionalText2};
         }
     }
 
