@@ -17,10 +17,7 @@ import wwcp.entities.locomotives.electrics.EntityV36Electric;
 import wwcp.entities.locomotives.steamers.*;
 import wwcp.entities.locomotives.steamers.DB.*;
 import wwcp.entities.locomotives.steamers.DR.*;
-import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01;
-import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Streamlined;
-import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_10_Unstreamlined;
-import wwcp.entities.locomotives.steamers.DRG.EntityDRGBR01_850mm;
+import wwcp.entities.locomotives.steamers.DRG.*;
 import wwcp.entities.passengerstock.*;
 import wwcp.entities.railbusses.EntityBRClass121;
 import wwcp.entities.railbusses.EntityNE81;
@@ -140,7 +137,8 @@ public class wwcp_registrations {
                 new Entity57(null),
                 new EntityDSBFII(null),
                 new EntityDBBR50(null),
-                new EntityDRBR50(null)
+                new EntityDRBR50(null),
+                new EntityDRGBR50(null)
         };
     }
 
