@@ -121,7 +121,7 @@ public class EntityClassME extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{10.23f,2.2f,1.5f};
+        return new float[]{10.25f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipie() {
