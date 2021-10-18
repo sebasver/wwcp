@@ -295,6 +295,13 @@ public class Transport {
                 0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
     }
 
+    //BR50DRG
+    public static Transport.LocomotiveWithBackspeed DRGBR50() {
+        return new Transport.LocomotiveWithBackspeed("DRGBR50", "Germany", "1926-1982", "Steam",
+                "", "", type, " Passenger Locomotive",
+                0.0f, 2210f, 108.9f, 130f, 50f, false, true, 0);
+    }
+
     //BR 798 / VT 98
     public static Transport.LocomotiveNoBackspeed BR798() {
         return new Transport.LocomotiveNoBackspeed("VT98", "Germany", "1953-2000", "Diesel",
