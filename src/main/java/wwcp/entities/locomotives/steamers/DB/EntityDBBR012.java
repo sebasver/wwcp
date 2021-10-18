@@ -95,17 +95,17 @@ public class EntityDBBR012 extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_1.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_Skin(1)_BR012.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "DB BR 01.10 1", "DB BR 01.10 variant 1");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_2.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_Skin(2)_BR012.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "DB BR 01.10 2", "DB BR 01.10 variant 2");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_3.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_Skin(3)_BR012.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "DB BR 01.10 3", "DB BR 01.10 variant 3");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_4.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_Skin(4)_BR012.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "DB BR 01.10 4", "DB BR 01.10 variant 4");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_5.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_Skin(5)_BR012.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "DB BR 01.10 5", "DB BR 01.10 variant 5");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_BR012_6.png", "textures/bogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/DBBR01/DB_Skin(6)_BR012.png", "textures/bogies/BR01/BR01BogieBlack.png",
                 "DB BR 01.10 6", "DB BR 01.10 variant 6");
     }
 
