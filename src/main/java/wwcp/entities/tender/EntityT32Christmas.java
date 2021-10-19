@@ -122,7 +122,7 @@ public class EntityT32Christmas extends GenericRailTransport {
         return Transport.T32TenderChristmas().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Items.bed, 1), null, null, null, null, null, null, null, null};
     }
 

@@ -22,6 +22,7 @@ wwcp.era=Era:
 wwcp.nick=Nickname:
 menu.item.weighttons=Weight
 menu.item.tractiveeffort=Tractive Effort
+menu.item.steam (oil)=Steam (Oil)
 wwcp.type=Type:
 wwcp.aditional=Aditional Names:
 gui.skin=Skin
@@ -29,6 +30,8 @@ gui.owner=Owner
 
 <!-- ## Extra countries ## --!>
 menu.item.europe=Europe
+menu.item.america=America
+menu.item.united_kingdom=United Kingdom
 
 <!-- ## Trains ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas § ## -->
@@ -41,6 +44,8 @@ item.DRBR50.name=DR BR 50
 item.DRGBR50.name=DRG BR 50
 item.ChristmasBR01Witte.name=DR BR 01 Christmas
 item.WehrmachtslokomotiveWR360C14.name=Wehrmachtslokomotive WR 360 C 14
+item.WehrmachtslokomotiveWR360C14Kanzel.name=Wehrmachtslokomotive WR 360 C 14 Kanzel
+item.WehrmachtslokomotiveWR360C14Electric.name=Wehrmachtslokomotive WR 360 C 14 Electric
 item.KoFIII1.name=KoF III Type 1
 item.KoFIII2.name=KoF III Type 2
 item.MZI.name=MZ I
@@ -54,25 +59,46 @@ item.MZIV.name=MZ IV
 item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
 item.ES64U2.name=ES64U2
 item.ES64U4.name=ES64U4
-item.F7A.name=EMD F7A
-item.GP7.name=EMD GP7
-item.FP7A.name=EMD FP7A
-item.AC4400CW.name=GE AC4400CW
+item.F7A.name=F7A
+item.GP7.name=GP7
+item.GP50.name=GP50
+item.FP7A.name=FP7A
+item.RS18.name=RS18
+item.M640.name=M640
+item.AC4400CW.name=AC4400CW
+item.SD70Mac.name=SD70MAC
+item.SD60Mac.name=SD60MAC
 item.GWR57.name=GWR 57xx
 item.GWR9400Class.name=GWR 94xx
 item.Class812.name=CR Class 812/652
 item.DSBFII.name=DSB Class F (II)
-item.BL2.name=EMD BL2
-item.SD70Mac.name=EMD SD70Mac
+item.BL2.name=BL2
 item.HS4000.name=HS4000
 item.V36.name=DRG V36
 item.Class37.name=BR Class 37
-item.F40PH.name=EMD F40PH
+item.F40PH.name=F40PH
 item.RE484.name=RE484
 item.BRClass121.name=BR Class 121
 item.VT98.name=VT98
 item.VT98AD.name=VT98AD
 item.NE81.name=NE81
+item.DRBR01_5.name=DR BR 01.5
+item.DRBR01_5Oil.name=DR BR 01.5 Oil
+item.DRBR01_5SD.name=DR BR 01.5 SD
+item.DBBR01_10Streamlined.name=DB BR 01.10 Streamlined
+item.DBBR01NeuKessel.name=DB BR 01 Neu Kessel
+item.DBBR01NeuKesselOil.name=DB BR 01 Neu Kessel Oil
+item.DBBR01Umbau.name=DB BR 01 Umbau
+item.DBBR01_10.name=DB BR 01.10
+item.DBBR01_10Oil.name=DB BR 01.10 Oil
+item.DBBR01_10NeuKessel.name=DB BR 01.10 Neu Kessel
+item.DBBR01_10NeuKesselOil.name=DB BR 01.10 Neu Kessel Oil
+item.DRGBR01(850mm).name=DRG BR 01 (850mm)
+item.DRGBR01_10Streamlined.name=DRG BR 01.10 Streamlined
+item.DRGBR01_10UnStreamlined.name=DRG BR 01.10
+
+
+
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
 item.EurofimaCompartments1.name=Eurofima Compartment Coach
@@ -108,14 +134,53 @@ item.name.OFF52Beetle.name=OFF 52 Beetle
 item.GWRToad20.name=GWR Toad Brakevan 20
 item.F7B.name=EMD F7B
 item.B&O_Caboose.nme=B&O Caboose
-item.ACF_60seat.name=ACF 60 Seat Coach
+item.ACF_60Seat.name=ACF 60 Seat Coach
 item.Amfleet1.name=Amfleet Coach 1
+item.OFF52withbeetles.name=OFF 52 (Beetles)
+item.Donnerbüchse2ndclass.name=Donnerbüsche 2nd class
+item.Donnerbüchse3rdclass.name=Donnerbüsche 3rd class
+item.Donnerbüchse4thclass.name=Donnerbüsche 4th class
+item.SA4u28.name=SA4u28
+item.SB4u28.name=SB4u28
+item.SA4uk28.name=SA4uk28
+item.SB4uk28.name=SB4uk28
+item.SPw4u28.name=SPw4u28
+item.UKWindcutter.name= UK Windcutter
+item.B&OCaboose.name=B&O Caboose
+item.PRRGlaHopper.name=PRR Gla Hopper
+item.40ftCPPlugSlideBoxCar.name=40ft CP Plug slide Box car
+item.40ftCPMiniBox.name=40ft CP Mini box
+item.40ftCPPlugdoorBoxcar.name=40ft CP Plug door Box Car
+item.F140MS2E.name=F140 MS2E
+item.SGNSS80Load1.name=Sggns(s) 80' Load 1
+item.SGNSS80Load2.name=Sggns(s) 80' Load 2
+item.SGNSS80Load3.name=Sggns(s) 80' Load 3
+item.SGNSS80Load4.name=Sggns(s) 80' Load 4
+item.Zacns95.name=Zacns 95
+item.Ealos-X.name=Ealos-x
 
+
+
+<!-- ## Railbusses ## -->
+item.BR626.name=BR 626
+item.BR798Advertising.name=BR 798 Advertising
 
 <!-- ## Tenders ## -->
 item.T322'2'.name=T32 2'2'
+item.T32.name=T32 Tender
+item.T26.name=T26 Tender
+item.T34.name=T34 Tender
+item.T34AditionalOil.name=T34 Aditional Oil Tender
+item.T34Oil.name=T34 Oil
+item.T34Streamline.name=T34 Streamlined Tender
+item.T34StreamlineDRG=T34 DRG Streamlined Tender
+item.T37.name=T37 Tender
+item.T37DRG.name=T37 DRG Tender
+item.T38.name=T38 Tender
+item.T38Oil.name=T38 Oil Tender
 T322'2'.name=T32 2'2'
 item.T322'2'Christmas.name=T32 2'2' Christmas
+item.Class812Tender.name=Class 812 Tender
 
 <!-- ## Blocks ## --!>
 tile.wwcp.blockBorderPlatform.name=Boarding Platform
