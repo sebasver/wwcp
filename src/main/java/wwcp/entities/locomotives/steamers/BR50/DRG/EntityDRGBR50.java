@@ -18,7 +18,7 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DRG.DRG_BR50
+import wwcp.models.locomotives.steamers.GermanBR.BR50.DRG.DRG_BR50;
 import wwcp.models.bogies.GermanBRBogies.BR50Bogie;
 import wwcp.worldwidecontentpack;
 
