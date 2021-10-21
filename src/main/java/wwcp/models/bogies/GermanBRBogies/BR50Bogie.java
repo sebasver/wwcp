@@ -43,31 +43,31 @@ public class BR50Bogie extends ModelBase //Same as Filename
 		bodyModel[8] = new ModelRendererTurbo(this, 113, 1, textureX, textureY); // Box 338
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 4, 2, 4, 0F,0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F); // Box 16
-		bodyModel[0].setRotationPoint(-2F, 5F, -2F);
+		bodyModel[0].setRotationPoint(5.5F, 5F, -2F);
 
 		bodyModel[1].addShapeBox(-3F, -3F, 0F, 6, 6, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 6
-		bodyModel[1].setRotationPoint(-7.5F, 6.5F, 6F);
+		bodyModel[1].setRotationPoint(0F, 6.5F, 6F);
 
 		bodyModel[2].addShapeBox(-3F, -3F, 0F, 6, 6, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 8
-		bodyModel[2].setRotationPoint(-7.5F, 6.5F, -6F);
+		bodyModel[2].setRotationPoint(0F, 6.5F, -6F);
 
 		bodyModel[3].addShapeBox(-0.5F, -0.5F, 0F, 1, 1, 12, 0F,0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F); // Box 127
-		bodyModel[3].setRotationPoint(-7.5F, 6.5F, -6F);
+		bodyModel[3].setRotationPoint(0F, 6.5F, -6F);
 		bodyModel[3].rotateAngleZ = 1.57079633F;
 
 		bodyModel[4].addShapeBox(0F, 0F, 0F, 3, 2, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 28
-		bodyModel[4].setRotationPoint(-1.5F, 3F, -1F);
+		bodyModel[4].setRotationPoint(6F, 3F, -1F);
 
 		bodyModel[5].addShapeBox(0F, 0F, 0F, 2, 2, 12, 0F,0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F); // Box 16
-		bodyModel[5].setRotationPoint(-8.5F, 5.5F, -6F);
+		bodyModel[5].setRotationPoint(-1F, 5.5F, -6F);
 
 		bodyModel[6].addShapeBox(0F, 0F, 0F, 5, 2, 4, 0F,-0.5F, -0.5F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, -0.5F, -0.5F, -0.05F, -0.5F, 0.5F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, -0.5F, 0.5F, -0.05F); // Box 16
-		bodyModel[6].setRotationPoint(-7F, 5F, -2F);
+		bodyModel[6].setRotationPoint(0.5F, 5F, -2F);
 
 		bodyModel[7].addShapeBox(0F, 0F, 0F, 1, 6, 1, 0F,0F, 0F, 1.5F, 0F, 0F, 1.5F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, -2F, -0.5F, 0F, -2F, -0.5F, 0F, -2F, 0F, 0F, -2F, 0F); // Box 296
-		bodyModel[7].setRotationPoint(-8F, 1.5F, 4.25F);
+		bodyModel[7].setRotationPoint(-0.5F, 1.5F, 4.25F);
 
 		bodyModel[8].addShapeBox(0F, 0F, 0F, 1, 6, 1, 0F,0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 1.5F, 0F, 0F, 1.5F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, -2F, -0.5F, 0F, -2F, -0.5F); // Box 338
-		bodyModel[8].setRotationPoint(-8F, 1.5F, -5.25F);
+		bodyModel[8].setRotationPoint(-0.5F, 1.5F, -5.25F);
 	}
 }
