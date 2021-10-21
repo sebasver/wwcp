@@ -19,8 +19,7 @@ import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GermanBRBogies.BR50Bogie;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DB.DB_BR_50_40;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DR.DR_BR_50_50;
+import wwcp.models.locomotives.steamers.GermanBR.BR50.DR.DR_BR50_50;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -217,7 +216,7 @@ public class EntityDRBR50_50 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new DR_BR_50_50()};
+        return new ModelBase[]{new DR_BR50_50()};
     }
 
     @SideOnly(Side.CLIENT)
