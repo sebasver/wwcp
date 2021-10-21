@@ -124,8 +124,8 @@ public class DSBMEBogie extends ModelBase //Same as Filename
 		bodyModel[6].addBox(0F, 0F, 0F, 8, 8, 0, 0F); // Box 126
 		bodyModel[6].setRotationPoint(11F, 2F, 5.5F);
 
-		bodyModel[7].addBox(0F, 0F, 0F, 4, 2, 4, 0F); // Box 112
-		bodyModel[7].setRotationPoint(-2F, 1F, -2F);
+		bodyModel[7].addBox(0F, 0F, 0F, 4, 3, 4, 0F); // Box 112
+		bodyModel[7].setRotationPoint(-1.75F, 0F, -2F);
 
 		bodyModel[8].addBox(0F, 0F, 0F, 8, 8, 0, 0F); // Box 17
 		bodyModel[8].setRotationPoint(11F, 2F, -5.5F);
