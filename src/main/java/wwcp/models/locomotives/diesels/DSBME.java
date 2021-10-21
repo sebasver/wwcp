@@ -620,10 +620,10 @@ public class DSBME extends ModelBase //Same as Filename
 		bodyModel[91].setRotationPoint(72.9F, -10F, -3F);
 
 		bodyModel[92].addBox(0F, 0F, 0F, 4, 1, 4, 0F); // Box 112
-		bodyModel[92].setRotationPoint(-49F, 0F, -2F);
+		bodyModel[92].setRotationPoint(-49F, -1F, -2F);
 
 		bodyModel[93].addBox(0F, 0F, 0F, 4, 1, 4, 0F); // Box 219
-		bodyModel[93].setRotationPoint(45F, 0F, -2F);
+		bodyModel[93].setRotationPoint(45F, -1F, -2F);
 
 		bodyModel[94].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,0.2F, 0F, 0F, -0.2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.3F, 0F, 0F, 0.3F, 0F, 0F, 0.4F, 0F, 0F, -0.4F, 0F, 0F); // Box 220
 		bodyModel[94].setRotationPoint(-77.1F, -3F, 7F);
