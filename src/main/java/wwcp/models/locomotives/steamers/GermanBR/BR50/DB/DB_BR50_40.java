@@ -12,12 +12,12 @@ package wwcp.models.locomotives.steamers.GermanBR.BR50.DB; //Path where the mode
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
-public class DB_BR_50_40 extends ModelBase //Same as Filename
+public class DB_BR50_40 extends ModelBase //Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public DB_BR_50_40() //Same as Filename
+	public DB_BR50_40() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[435];
 
