@@ -18,9 +18,8 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
+import wwcp.models.locomotives.steamers.GermanBR.BR50.DRG.DRG_BR50_Kriegslok;
 import wwcp.models.bogies.GermanBRBogies.BR50Bogie;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DB.DB_BR_50_40;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DRG.DRG_BR_50_Kriegslok;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -196,7 +195,7 @@ public class EntityDRGBR50Kriegslok extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new DRG_BR_50_Kriegslok()};
+        return new ModelBase[]{new DRG_BR50_Kriegslok()};
     }
 
     @SideOnly(Side.CLIENT)
