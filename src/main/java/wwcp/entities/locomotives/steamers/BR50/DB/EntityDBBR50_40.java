@@ -94,7 +94,7 @@ public class EntityDBBR50_40 extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/Skin_DB_BR50_40.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/Skin_DB_BR50.40.png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
                 "DB BR 50.40 ", "DB BR 50.40");
     }
