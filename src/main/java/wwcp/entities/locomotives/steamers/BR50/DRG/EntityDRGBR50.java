@@ -18,9 +18,8 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
+import wwcp.models.locomotives.steamers.GermanBR.BR50.DRG.DRG_BR50;
 import wwcp.models.bogies.GermanBRBogies.BR50Bogie;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DB.DB_BR50;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DRG.DRG_BR_50;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -95,48 +94,132 @@ public class EntityDRGBR50 extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(1).png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(1)_no_plow.png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 no deflectors 1", "DRG BR 50 no Deflectors variant 1");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_BR50_no_deflectors(2).png",
+                "DRG BR 50 no deflectors 1.1", "DRG BR 50 no Deflectors variant 1 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(1)_plow(1).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 no deflectors 2", "DRG BR 50 no Deflectors variant 2");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(3).png",
+                "DRG BR 50 no deflectors 1.2", "DRG BR 50 no Deflectors variant 1 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(1)_plow(2).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 no deflectors 3", "DRG BR 50 no Deflectors variant 3");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(4).png",
+                "DRG BR 50 no deflectors 1.3", "DRG BR 50 no Deflectors variant 1 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(2)_no_plow.png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 no deflectors 4", "DRG BR 50 no Deflectors variant 4");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(5).png",
+                "DRG BR 50 no deflectors 2.1", "DRG BR 50 no Deflectors variant 2 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(2)_plow(1).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 no deflectors 5", "DRG BR 50 no Deflectors variant 5");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(6).png",
+                "DRG BR 50 no deflectors 2.2", "DRG BR 50 no Deflectors variant 2 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(2)_plow(2).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 no deflectors 6", "DRG BR 50 no Deflectors variant 6");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_wagner(1).png",
+                "DRG BR 50 no deflectors 2.3", "DRG BR 50 no Deflectors variant 2 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(3)_no_plow.png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 Wagner deflector 1", "DRG BR 50 Wagner Deflectors variant 1");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_wagner(2).png",
+                "DRG BR 50 no deflectors 3.1", "DRG BR 50 no Deflectors variant 3 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(3)_plow(1).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 Wagner deflector 2", "DRG BR 50 Wagner Deflectors variant 2");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(1).png",
+                "DRG BR 50 no deflectors 3.2", "DRG BR 50 no Deflectors variant 3 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(3)_plow(2).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 Witte deflectors 1", "DRG BR 50 Witte Deflectors Variant 1");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(2).png",
+                "DRG BR 50 no deflectors 3.3", "DRG BR 50 no Deflectors variant 3 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(4)_no_plow.png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 Witte deflectors 2", "DRG BR 50 Witte Deflectors Variant 2");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(3).png",
+                "DRG BR 50 no deflectors 4.1", "DRG BR 50 no Deflectors variant 4 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(4)_plow(1).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 Witte deflectors 3", "DRG BR 50 Witte Deflectors Variant 3");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(4).png",
+                "DRG BR 50 no deflectors 4.2", "DRG BR 50 no Deflectors variant 4 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(4)_plow(2).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 Witte deflectors 4", "DRG BR 50 Witte Deflectors Variant 4");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(5).png",
+                "DRG BR 50 no deflectors 4.3", "DRG BR 50 no Deflectors variant 4 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(5)_no_plow.png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 Witte deflectors 5", "DRG BR 50 Witte Deflectors Variant 5");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(6).png",
+                "DRG BR 50 no deflectors 5.1", "DRG BR 50 no Deflectors variant 5 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(5)_plow(1).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DRG BR 50 Witte deflectors 6", "DRG BR 50 Witte Deflectors Variant 6");
+                "DRG BR 50 no deflectors 5.2", "DRG BR 50 no Deflectors variant 5 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(5)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 no deflectors 5.3", "DRG BR 50 no Deflectors variant 5 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(6)_no_plow.png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 no deflectors 6.1", "DRG BR 50 no Deflectors variant 6 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(6)_plow(1).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 no deflectors 6.2", "DRG BR 50 no Deflectors variant 6 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_no_deflectors(6)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 no deflectors 6.3", "DRG BR 50 no Deflectors variant 6 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_wagner(1)_no_plow.png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Wagner 1.1", "DRG BR 50 Wagner variant 1 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_wagner(1)_plow(1).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Wagner 1.2", "DRG BR 50 Wagner variant 1 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_wagner(1)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Wagner 1.3", "DRG BR 50 Wagner variant 1 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_wagner(2)_no_plow.png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Wagner 2.1", "DRG BR 50 Wagner variant 2 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_wagner(2)_plow(1).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Wagner 2.2", "DRG BR 50 Wagner variant 2 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_wagner(2)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Wagner 2.3", "DRG BR 50 Wagner variant 2 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(1)_no_plow.png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 1.1", "DRG BR 50 Witte variant 1 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(1)_plow(1).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 1.2", "DRG BR 50 Witte variant 1 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(1)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 1.3", "DRG BR 50 Witte variant 1 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(2)_no_plow.png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 2.1", "DRG BR 50 Witte variant 2 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(2)_plow(1).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 2.2", "DRG BR 50 Witte variant 2 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(2)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 2.3", "DRG BR 50 Witte variant 2 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(3)_no_plow.png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 3.1", "DRG BR 50 Witte variant 3 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(3)_plow(1).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 3.2", "DRG BR 50 Witte variant 3 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(3)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 3.3", "DRG BR 50 Witte variant 3 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(4)_no_plow.png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 4.1", "DRG BR 50 Witte variant 4 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(4)_plow(1).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 4.2", "DRG BR 50 Witte variant 4 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(4)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 4.3", "DRG BR 50 Witte variant 4 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(5)_no_plow.png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 5.1", "DRG BR 50 Witte variant 5 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(5)_plow(1).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 5.2", "DRG BR 50 Witte variant 5 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(5)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 5.3", "DRG BR 50 Witte variant 5 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(6)_no_plow.png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 6.1", "DRG BR 50 Witte variant 6 No Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(6)_plow(1).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 6.2", "DRG BR 50 Witte variant 6 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DRG/Skin_DRG_BR50_witte(6)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DRG BR 50 Witte 6.3", "DRG BR 50 Witte variant 6 with Plow 2");
     }
 
     public int getInventoryRows() {
@@ -235,7 +318,7 @@ public class EntityDRGBR50 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new DRG_BR_50()};
+        return new ModelBase[]{new DRG_BR50()};
     }
 
     @SideOnly(Side.CLIENT)

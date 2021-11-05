@@ -19,8 +19,7 @@ import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GermanBRBogies.BR50Bogie;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DB.DB_BR50;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DB.DB_BR_50_40;
+import wwcp.models.locomotives.steamers.GermanBR.BR50.DB.DB_BR50_40;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -95,7 +94,7 @@ public class EntityDBBR50_40 extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/Skin_DB_BR50_40.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DB/Skin_DB_BR50.40.png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
                 "DB BR 50.40 ", "DB BR 50.40");
     }
@@ -196,7 +195,7 @@ public class EntityDBBR50_40 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new DB_BR_50_40()};
+        return new ModelBase[]{new DB_BR50_40()};
     }
 
     @SideOnly(Side.CLIENT)
