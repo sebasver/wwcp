@@ -19,8 +19,7 @@ import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.GermanBRBogies.BR50Bogie;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DB.DB_BR_50_40;
-import wwcp.models.locomotives.steamers.GermanBR.BR50.DR.DR_BR_50_40;
+import wwcp.models.locomotives.steamers.GermanBR.BR50.DR.DR_BR50_40;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -95,12 +94,24 @@ public class EntityDRBR50_40 extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DR/Skin_DR_BR50_40(1).png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DR/Skin_DR_BR50.40(1)_no_plow.png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DR BR 50.40 1", "DR BR 50.40 variant 1");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DR/Skin_DR_BR50_40(2).png",
+                "DR BR 50.40 1.1", "DR BR 50.40 variant 1 no Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DR/Skin_DR_BR50.40(1)_plow(1).png",
                 "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
-                "DR BR 50.40 2", "DR BR 50.40 variant 2");
+                "DR BR 50.40 1.2", "DR BR 50.40 variant 1 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DR/Skin_DR_BR50.40(1)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DR BR 50.40 1.3", "DR BR 50.40 variant 1 with Plow 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DR/Skin_DR_BR50.40(2)_no_plow.png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DR BR 50.40 2.1", "DR BR 50.40 variant 2 no Plow");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DR/Skin_DR_BR50.40(2)_plow(1).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DR BR 50.40 2.2", "DR BR 50.40 variant 2 with Plow 1");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR50/DR/Skin_DR_BR50.40(2)_plow(2).png",
+                "textures/bogies/EUBogies/BR50/Bogie_BR50.png",
+                "DR BR 50.40 2.3", "DR BR 50.40 variant 2 with Plow 2");
     }
 
     public int getInventoryRows() {
@@ -199,7 +210,7 @@ public class EntityDRBR50_40 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new DR_BR_50_40()};
+        return new ModelBase[]{new DR_BR50_40()};
     }
 
     @SideOnly(Side.CLIENT)

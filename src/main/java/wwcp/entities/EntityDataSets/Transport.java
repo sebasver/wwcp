@@ -557,6 +557,13 @@ public class Transport {
                 88000f, 3854f, 121.2f, 165f, false, true, 0);
     }
 
+    //MZ Class III 1972
+    public static Transport.LocomotiveNoBackspeed MZIII1972() {
+        return new Transport.LocomotiveNoBackspeed("MZIII1972", "Denmark", "1972-", "Diesel",
+                nick, " Cake Tins", type, " Universal Locomotive",
+                88000f, 3854f, 121.2f, 165f, false, true, 0);
+    }
+
     //MZ Class IV
     public static Transport.LocomotiveNoBackspeed MZIV() {
         return new Transport.LocomotiveNoBackspeed("MZIV", "Denmark", "1977-", "Diesel",
@@ -569,6 +576,13 @@ public class Transport {
         return new Transport.LocomotiveNoBackspeed("MZIII", "Australia", "1972-", "Diesel",
                 nick, " Cake Tins", type, " Universal Locomotive",
                 88000f, 3854f, 121.2f, 105f, false, true, 0);
+    }
+
+    //Class Me
+    public static Transport.LocomotiveNoBackspeed ClassME() {
+        return new Transport.LocomotiveNoBackspeed("ClassME", "Denmark", "1981-", "Diesel",
+                nick, "", type, " Universal Locomotive",
+                88000f, 3253f, 116.5f, 143f, false, true, 0);
     }
 
     //NE 81 / BR626
