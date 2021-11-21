@@ -585,6 +585,13 @@ public class Transport {
                 88000f, 3253f, 116.5f, 143f, false, true, 0);
     }
 
+    //Class MK
+    public static Transport.LocomotiveNoBackspeed ClassMK() {
+        return new Transport.LocomotiveNoBackspeed("ClassMK", "Denmark", "1996-", "Diesel",
+                nick, "Duplo Block", type, " Shunting Locomotive",
+                130f, 530f, 40f, 60f, false, true, 0);
+    }
+
     //NE 81 / BR626
     public static Transport.LocomotiveNoBackspeed BRClass121() {
         return new Transport.LocomotiveNoBackspeed("BRClass121", "Germany", "1981-1995", "Diesel",
