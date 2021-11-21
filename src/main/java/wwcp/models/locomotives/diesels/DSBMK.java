@@ -421,7 +421,7 @@ public class DSBMK extends ModelBase //Same as Filename
 		bodyModel[30].setRotationPoint(2F, -14F, -6F);
 
 		bodyModel[31].addShapeBox(0F, 0F, 0F, 1, 6, 15, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 31
-		bodyModel[31].setRotationPoint(2F, -20F, -5F)
+		bodyModel[31].setRotationPoint(2F, -20F, -5F);
 
 		bodyModel[32].addShapeBox(0F, 0F, 0F, 1, 6, 15, 0F,0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 32
 		bodyModel[32].setRotationPoint(14.5F, -20F, -10F);
