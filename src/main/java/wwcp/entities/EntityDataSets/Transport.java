@@ -339,6 +339,18 @@ public class Transport {
                 0f, 299.12f, 18.9f, 90f, false, true, 0);
     }
 
+    public static Transport.LocomotiveNoBackspeed TEERAeSteurWagen() {
+        return new Transport.LocomotiveNoBackspeed("RaeTEEIISteuer", "Switzerland", "1961-1999", "Electric",
+                nick, "RABe EC", type, " Passenger Multiple Unit Locomotive",
+                18300f, 3100f, 51.8f, 160f, false, true, 0);
+    }
+
+    public static Transport.LocomotiveNoBackspeed V200() {
+        return new Transport.LocomotiveNoBackspeed("V200", "Germany", "1953-", "Diesel",
+                nick, " Taurus", type, " Universal Locomotive",
+                39791f, 2170f, 80.0f, 140f, false, true, 0);
+    }
+
     //Class 37
     public static Transport.LocomotiveNoBackspeed Class37() {
         return new Transport.LocomotiveNoBackspeed("Class37", "United Kingdom", "1960-", "Diesel",

@@ -7,8 +7,10 @@ import net.minecraft.block.Block;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import train.entity.rollingStock.EntityTenderEr_Ussr;
 import wwcp.blockEntities.platform.*;
 import wwcp.entities.freight.*;
+import wwcp.entities.Advent.*;
 import wwcp.entities.locomotives.diesels.*;
 import wwcp.entities.locomotives.electrics.*;
 import wwcp.entities.locomotives.steamers.*;
@@ -138,7 +140,9 @@ public class wwcp_registrations {
                 new EntityDBBR50(null),
                 new EntityDBBR50_40(null),
                 new EntityDRBR01WitteChristmas(null),
-                new EntitySentinel100HPChristmas(null)
+                new EntitySentinel100HPChristmas(null),
+                new EntityTEESteuerWagen(null),
+                new EntityV200(null)
         };
     }
 
@@ -277,7 +281,4 @@ public class wwcp_registrations {
         };
     }
 }
-© 2021 GitHub, Inc.
-        Terms
-        Privacy
-        Security
+
