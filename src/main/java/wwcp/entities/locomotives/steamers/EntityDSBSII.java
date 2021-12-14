@@ -1,10 +1,10 @@
-//This is a documentation file for copy pasting into a steam locomotive.
 package wwcp.entities.locomotives.steamers;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion.transportTypes;
 import ebf.tim.api.SkinRegistry;
+import ebf.tim.api.TransportSkin;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
@@ -19,70 +19,88 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.locomotives.steamers.GWR57;
-import wwcp.models.locomotives.steamers.UK94;
+import wwcp.models.bogies.DSBSBogieLeading;
+import wwcp.models.bogies.DSBSBogieTrailing;
+import wwcp.models.bogies.X10a_Front_Truck;
+import wwcp.models.bogies.X10a_Rear_Truck;
+import wwcp.models.locomotives.steamers.DSBSII;
+import wwcp.models.locomotives.steamers.X10a;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class Entity57 extends EntityTrainCore {
+public class EntityDSBSII extends EntityTrainCore {
 
-    public Entity57(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityDSBSII(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new Entity57(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new WWCPTransport(new EntityDSBSII(null), worldwidecontentpack.MODID, worldwidecontentpack.Denmark);
 
-    public Entity57(World world) {
+    public EntityDSBSII(World world) {
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.GWR57().name; }
+    public float getPlayerScale(){return 0.65f;}
 
     @Override
-    public String transportcountry() { return Transport.GWR57().country; }
+    public String transportName() {
+        return Transport.DSBSII().name;
+    }
 
     @Override
-    public String transportYear() { return Transport.GWR57().year; }
+    public String transportcountry() {
+        return Transport.DSBSII().country;
+    }
+
+    @Override
+    public String transportYear() {
+        return Transport.DSBSII().year;
+    }
 
     @Override
     public String transportFuelType() {
-        return Transport.GWR57().fuel;
-    }
-    @Override
-    public boolean isFictional() {
-        return Transport.GWR57().fictional;
-    }
-    @Override
-    public float transportTractiveEffort() {
-        return Transport.GWR57().tractive_effort;
-    }
-    @Override
-    public float transportMetricHorsePower() {
-        return Transport.GWR57().metric_horsepower;
-    }
-    @Override
-    public float weightKg() {
-        return  Transport.GWR57().weightinKGs;
+        return Transport.DSBSII().fuel;
     }
 
-    public boolean isReinforced() {
-        return Transport.GWR57().reinforced;
+    @Override
+    public boolean isFictional() {
+        return Transport.DSBSII().fictional;
+    }
+
+    @Override
+    public float transportTractiveEffort() {
+        return Transport.DSBSII().tractive_effort;
+    }
+
+    @Override
+    public float transportMetricHorsePower() {
+        return Transport.DSBSII().metric_horsepower;
+    }
+
+    @Override
+    public float weightKg() {
+        return Transport.DSBSII().weightinKGs;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.GWR57().additionalTextTitle) + Transport.GWR57().additionalText,
-                RailUtility.translate(Transport.GWR57().additionalTextTitle2) + Transport.GWR57().additionalText2};}
+        {
+            return new String[]{RailUtility.translate(Transport.DSBSII().additionalTextTitle) + Transport.DSBSII().additionalText,
+                    RailUtility.translate(Transport.DSBSII().additionalTextTitle2) + Transport.DSBSII().additionalText2};
+        }
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.GWR57().backTopSpeed: Transport.GWR57().topSpeed;}
+    public float transportTopSpeed() {
+        return accelerator < 0 ? Transport.DSBSII().backTopSpeed : Transport.DSBSII().topSpeed;
+    }
 
+    @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR57/GWR57.png", 
-                "GWR", "There are two ways of doing things, the Great Western way, or the wrong way.");
+        SkinRegistry.addSkin(this.getClass(),new TransportSkin( worldwidecontentpack.MODID, "textures/locomotive/Steam/LitraS/SBody.png",
+                "DSB SII", "X10a").setBogieTextures(new String[]{"textures/locomotive/Steam/LitraS/SLeading.png","textures/locomotive/Steam/LitraS/STrailing.png"}));
     }
 
     public int getInventoryRows() {
@@ -98,11 +116,11 @@ public class Entity57 extends EntityTrainCore {
     }
 
     public float[][] getRiderOffsets() {
-        return new float[][]{{1.3F, 1.2F, 0.0F}};
+        return new float[][]{{3.3F, 1.6F, 0.0F}};
     }
 
     public float[] getHitboxSize() {
-        return new float[]{6F, 2.1F, 1.3F};
+        return new float[]{7.325F, 2.1F, 1.3F};
     }
 
     public ItemStack[] getRecipe() {
@@ -113,21 +131,18 @@ public class Entity57 extends EntityTrainCore {
         return 0.5F;
     }
 
-    public float[][] getSmokeOffset() {
-        return new float[][]{{-1.0F, 0.0F, 0.5F, 1.1711154E7F, 30.0F}, {-1.0F, 0.0F, -0.5F, 1.1711154E7F, 30.0F}, {-1.4F, 2.0F, 0.0F, 3947580.0F, 500.0F}};
-    }
-
+    @Override
     public float[][] bogieModelOffsets() {
-        return null;
-
+        return new float[][]{{2.10f, -0f, 0}, {-2.30f, -0f, 0}};
     }
 
+    @Override
     public ModelBase[] bogieModels() {
-        return null;
+        return new ModelBase[]{new DSBSBogieLeading(), new DSBSBogieTrailing()};
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, 0.1F};
+        return new float[]{2.20F, -2.31F};
     }
 
     public float getRenderScale() {
@@ -136,12 +151,17 @@ public class Entity57 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,-0F,0.F}};}
+        return new float[][]{{0.165f, -.0f, 0.F}};
+    }
 
     public boolean shouldRiderSit() {
         return false;
     }
-    
+
+    public boolean isReinforced() {
+        return Transport.DSBSII().reinforced;
+    }
+
     public int[] getTankCapacity() {
         return new int[]{9161, 800};
     }
@@ -179,7 +199,7 @@ public class Entity57 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new GWR57()};
+        return new ModelBase[]{new DSBSII()};
     }
 
     @SideOnly(Side.CLIENT)
@@ -192,3 +212,4 @@ public class Entity57 extends EntityTrainCore {
         return URIRegistry.SOUND_RUNNING.getResource("XXXXXXX.ogg");
     }
 }
+

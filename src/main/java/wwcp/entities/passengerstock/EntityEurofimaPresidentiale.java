@@ -15,6 +15,7 @@ import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.EUBogies.EurofimaBogie;
 import wwcp.models.passengerStock.EurofimaCompartment1;
+import wwcp.models.passengerStock.EurofimaPresidentiale;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -22,55 +23,55 @@ import java.util.UUID;
 import static ebf.tim.utility.RailUtility.DefineStack;
 
 
-public class EntityEurofimaCompartment1 extends GenericRailTransport {
+public class EntityEurofimaPresidentiale extends GenericRailTransport {
     private static final String[] itemDescription = new String[]{
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityEurofimaCompartment1(null), worldwidecontentpack.MODID , worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityEurofimaPresidentiale(null), worldwidecontentpack.MODID , worldwidecontentpack.European);
 
 
-    public EntityEurofimaCompartment1(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityEurofimaPresidentiale(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityEurofimaCompartment1(World world){
+    public EntityEurofimaPresidentiale(World world){
         super(world);
     }
 
     @Override
     public boolean isReinforced() {
-        return Transport.EurofimaCompartment1().reinforced;
+        return Transport.EurofimaPresidentiale().reinforced;
     }
 
     @Override
     public String transportName() {
-        return Transport.EurofimaCompartment1().name;
+        return Transport.EurofimaPresidentiale().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.EurofimaCompartment1().country;
+        return Transport.EurofimaPresidentiale().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.EurofimaCompartment1().year;
+        return Transport.EurofimaPresidentiale().year;
     }
 
     @Override
     public float weightKg() {
-        return Transport.EurofimaCompartment1().weightinKGs;
+        return Transport.EurofimaPresidentiale().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.EurofimaCompartment1().fictional;
+        return Transport.EurofimaPresidentiale().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.EurofimaCompartment1().additionalTextTitle) + Transport.EurofimaCompartment1().additionalText,
-                RailUtility.translate(Transport.EurofimaCompartment1().additionalTextTitle2) + Transport.EurofimaCompartment1().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.EurofimaPresidentiale().additionalTextTitle) + Transport.EurofimaPresidentiale().additionalText,
+                RailUtility.translate(Transport.EurofimaPresidentiale().additionalTextTitle2) + Transport.EurofimaPresidentiale().additionalText2};}
     }
 
     @Override
@@ -107,7 +108,7 @@ public class EntityEurofimaCompartment1 extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/Eurofima/EurofimaCompartment/1/2Years_WWCP.png", "textures/bogies/Eurofimabogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/Eurofima/Presidentiale/el_presidentiale.png", "textures/bogies/Eurofimabogie.png",
                 "2 Years WWCP", "Celebration livery for 2 years WWCP");
     }
 
@@ -153,7 +154,7 @@ public class EntityEurofimaCompartment1 extends GenericRailTransport {
     }
 
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new EurofimaCompartment1()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new EurofimaPresidentiale()};}
 
     /**
      * <h2>pre-asigned values</h2>

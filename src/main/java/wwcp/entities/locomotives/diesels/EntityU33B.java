@@ -2,6 +2,7 @@ package wwcp.entities.locomotives.diesels;
 //This is a documentation class for copy pasting into a Diesel train class.
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
@@ -16,19 +17,20 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.AmericanTrucks.ModelBackGEBogie;
-import wwcp.models.bogies.AmericanTrucks.ModelFrontGEBogie;
-import wwcp.models.locomotives.diesels.AC4400CW;
+import wwcp.models.bogies.AmericanTrucks.Type_B;
+import wwcp.models.locomotives.diesels.RS18;
+import wwcp.models.locomotives.diesels.U33B;
 import wwcp.worldwidecontentpack;
 
+import java.util.List;
 import java.util.UUID;
 
 /**
  * ETERNAL NOTE: anything that applies to GenericRailTransport also applies to EntityTrain core.
  */
-public class EntityAC4400CW extends EntityTrainCore {
+public class EntityU33B extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityAC4400CW(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntityU33B(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -36,86 +38,60 @@ public class EntityAC4400CW extends EntityTrainCore {
      * @see EntityTrainCore
      */
 
-    public EntityAC4400CW(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityU33B(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityAC4400CW(World world){
+    public EntityU33B(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.GEAC4400CW().name; }
+    public String transportName() { return Transport.U33B().name; }
 
     @Override
-    public String transportcountry() { return Transport.GEAC4400CW().country; }
+    public String transportcountry() { return Transport.U33B().country; }
 
     @Override
-    public String transportYear() { return Transport.GEAC4400CW().year; }
+    public String transportYear() { return Transport.U33B().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.GEAC4400CW().fuel;
+        return Transport.U33B().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.GEAC4400CW().fictional;
+        return Transport.U33B().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.GEAC4400CW().tractive_effort;
+        return Transport.U33B().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.GEAC4400CW().metric_horsepower;
+        return Transport.U33B().metric_horsepower;
     }
     @Override
-    public float weightKg() {
-        return  Transport.GEAC4400CW().weightinKGs;
+    public float weightKg() { return  Transport.U33B().weightinKGs;
     }
-
-    public boolean isReinforced() {
-        return Transport.GEAC4400CW().reinforced;
+    public boolean isReinforced() { return Transport.U33B().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.GEAC4400CW().additionalTextTitle) + Transport.GEAC4400CW().additionalText,
-                RailUtility.translate(Transport.GEAC4400CW().additionalTextTitle2) + Transport.GEAC4400CW().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.U33B().additionalTextTitle) + Transport.U33B().additionalText,
+                RailUtility.translate(Transport.U33B().additionalTextTitle2) + Transport.U33B().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.GEAC4400CW().backTopSpeed: Transport.GEAC4400CW().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.U33B().backTopSpeed: Transport.U33B().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_SP.png",
-                "textures/bogies/GE_Trucky_Black.png",
-                "Southern Pacific", "Southern Pacific Bloody Nose");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_CNW.png",
-                "textures/bogies/GE_Trucky_Black.png",
-                "CNW Yellow", "CNW yellow-green with operation lifesaver");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_UP_numberboards_nose.png",
-                "textures/bogies/GE_Trucky_Black.png",
-                "Union Pacific, Numberboards on Nose", "Union Pacific with numberboards on cab nose, block lettering");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_UP_Weathered.png",
-                "textures/bogies/GE_Trucky_Black.png",
-                "Union Pacific, Numberboards on Nose - Weathered", "Union Pacific with numberboards on cab nose, block lettering. Weathered");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_SP_Weathered.png",
-                "textures/bogies/GE_Trucky_Black.png",
-                "Southern Pacific - Weathered", "Southern Pacific Bloody Nose. Weathered");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_CP_Modern.png",
-                "textures/bogies/GE_Trucky_Black.png",
-                "CP Modern", "Southern Pacific Bloody Nose. Weathered");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_CP_Modern_Weathered.png",
-                "textures/bogies/GE_Trucky_Black.png",
-                "CP Modern - Weathered", "Southern Pacific Bloody Nose. Weathered");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/U33B/U33B_RI_Blue_N.png",
+                "textures/bogies/Type_B_Truck.png",
+                "RI Stripped", "Canadian National Standard stripped scheme with red nose");
     }
-
-    @Override
-    public String getDefaultSkin() {
-        return worldwidecontentpack.MODID + ":Southern Pacific";
-    }
-
+    
     /**
      * ETERNAL NOTE: though these two methods are marked depreciated, they will be supported long-run
      * the replacement method is
@@ -129,17 +105,20 @@ public class EntityAC4400CW extends EntityTrainCore {
      * @return
      */
     @Override
-    public ModelBase[] bogieModels() {
-        return new ModelBase[] {new ModelFrontGEBogie(), new ModelBackGEBogie()};
-    }
+    public ModelBase[] bogieModels() {return new ModelBase[]{new Type_B()}; }
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.9f,0f,0},{-3f,0f,0}};
+        return new float[][]{{2.5f,0f,0},{-2.05f,0f,0}};
     }
 
     @Override
     public float[] bogieLengthFromCenter(){return new float[]{3f,-3f};}
+
+    @Override
+    public List<TrainsInMotion.transportTypes> getTypes() {
+        return TrainsInMotion.transportTypes.PASSENGER.singleton();
+    }
 
     //in what units is this?
     //ETERNAL NOTE: millibuckets, so 1000 is a bucket.
@@ -147,19 +126,17 @@ public class EntityAC4400CW extends EntityTrainCore {
     public float getMaxFuel(){return 1;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-3.15f,1.5f, -0.35f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{1.5f,1.2f, 0.35f}};}
+
 
     @Override
     public boolean shouldRiderSit(){
-        return true;
+        return false;
     }
 
     @Override
-    public float[][] modelRotations(){return new float[][]{{0.0f, 180.0f, 0.0f}};}
-
-    @Override
     public float[] getHitboxSize() {
-        return new float[]{9.5f,2.15f,1.5f};
+        return new float[]{7f,2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -206,7 +183,7 @@ public class EntityAC4400CW extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.025f,-0F,0.F}};}
+        return new float[][]{{-0f,-0F,0.F}};}
         
     /**
      * <h2>Fluid Tank Capacity</h2>
@@ -288,7 +265,7 @@ public class EntityAC4400CW extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new AC4400CW()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new U33B()};}
 
     //For sound effects
     @SideOnly(Side.CLIENT)
