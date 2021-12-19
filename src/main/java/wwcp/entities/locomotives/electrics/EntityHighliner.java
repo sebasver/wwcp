@@ -16,10 +16,10 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
+import wwcp.models.bogies.AmericanTrucks.HighlinerTruck;
 import wwcp.models.bogies.Class87Bogie;
-import wwcp.models.bogies.EUBogies.flexxpower;
 import wwcp.models.locomotives.electrics.Class87;
-import wwcp.models.locomotives.electrics.Traxx2ndGen;
+import wwcp.models.locomotives.electrics.Highliner;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -30,9 +30,9 @@ import java.util.UUID;
 // ZZZZ
 // QQQQ
 
-public class EntityClass87 extends EntityTrainCore {
+public class EntityHighliner extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityClass87(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new WWCPTransport(new EntityHighliner(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -40,89 +40,80 @@ public class EntityClass87 extends EntityTrainCore {
      *
      * @see EntityTrainCore
      */
-    public EntityClass87(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityHighliner(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityClass87(World world) {
+    public EntityHighliner(World world) {
         super(world);
     }
 
     @Override
     public String transportName() {
-        return Transport.Class87().name;
+        return Transport.HiglinerLocomotive().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.Class87().country;
+        return Transport.HiglinerLocomotive().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.Class87().year;
+        return Transport.HiglinerLocomotive().year;
     }
 
     @Override
     public String transportFuelType() {
-        return Transport.Class87().fuel;
+        return Transport.HiglinerLocomotive().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.Class87().fictional;
+        return Transport.HiglinerLocomotive().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return Transport.Class87().tractive_effort;
+        return Transport.HiglinerLocomotive().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return Transport.Class87().metric_horsepower;
+        return Transport.HiglinerLocomotive().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return Transport.Class87().weightinKGs;
+        return Transport.HiglinerLocomotive().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.Class87().reinforced;
+        return Transport.HiglinerLocomotive().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(Transport.Class87().additionalTextTitle) + Transport.Class87().additionalText,
-                    RailUtility.translate(Transport.Class87().additionalTextTitle2) + Transport.Class87().additionalText2};
+            return new String[]{RailUtility.translate(Transport.HiglinerLocomotive().additionalTextTitle) + Transport.HiglinerLocomotive().additionalText,
+                    RailUtility.translate(Transport.HiglinerLocomotive().additionalTextTitle2) + Transport.HiglinerLocomotive().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? Transport.Class87().backTopSpeed : Transport.Class87().topSpeed;
+        return accelerator < 0 ? Transport.HiglinerLocomotive().backTopSpeed : Transport.HiglinerLocomotive().topSpeed;
     }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Class87/Class87BRBlue.png",
-                "textures/locomotive/Electric/Class87/Class87Bogies.png",
-                "BR Blue", "Blue");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Class87/Class87First.png",
-                "textures/locomotive/Electric/Class87/Class87Bogies.png",
-                "First", "Blue");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Class87/Class87ICE.png",
-                "textures/locomotive/Electric/Class87/Class87Bogies.png",
-                "ICE", "Blue");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Class87/Class87ICS.png",
-                "textures/locomotive/Electric/Class87/Class87Bogies.png",
-                "ICS", "Blue");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Class87/Class87Virgin.png",
-                "textures/locomotive/Electric/Class87/Class87Bogies.png",
-                "Virgin", "Blue");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Highliner/Highliner.png",
+                "textures/bogies/AmericanTrucks/HighlinerTrucks.png",
+                "Highliner", "Blue");
     }
+
+    @Override
+    public float[][] modelRotations(){return new float[][]{{0.0f, 180.0f, 0.0f}};}
 
     @Override
     public float getMaxFuel() {
@@ -160,12 +151,12 @@ public class EntityClass87 extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.45f, 0f, 0}, {-2.55f, 0f, 0}};
+        return new float[][]{{4f, 0f, 0}, {-4f, 0f, 0}};
     }
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new Class87Bogie()};
+        return new ModelBase[]{new HighlinerTruck()};
     }
 
     @Override
@@ -180,7 +171,7 @@ public class EntityClass87 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f, -0.05F, 0.F}};
+        return new float[][]{{0f, 0.0F, 0.F}};
     }
 
     /**
@@ -238,7 +229,7 @@ public class EntityClass87 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new Class87()};
+        return new ModelBase[]{new Highliner()};
     }
 
     /**

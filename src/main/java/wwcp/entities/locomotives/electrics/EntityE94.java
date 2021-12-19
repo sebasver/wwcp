@@ -16,10 +16,12 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.Class87Bogie;
+import wwcp.models.bogies.EUBogies.E94BogieBack;
+import wwcp.models.bogies.EUBogies.E94BogieFront;
+import wwcp.models.bogies.EUBogies.FlexxLoad;
 import wwcp.models.bogies.EUBogies.flexxpower;
-import wwcp.models.locomotives.electrics.Class87;
-import wwcp.models.locomotives.electrics.Traxx2ndGen;
+import wwcp.models.locomotives.electrics.E94;
+import wwcp.models.locomotives.electrics.ES64U2;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -30,9 +32,9 @@ import java.util.UUID;
 // ZZZZ
 // QQQQ
 
-public class EntityClass87 extends EntityTrainCore {
+public class EntityE94 extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityClass87(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new WWCPTransport(new EntityE94(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -40,88 +42,76 @@ public class EntityClass87 extends EntityTrainCore {
      *
      * @see EntityTrainCore
      */
-    public EntityClass87(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityE94(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityClass87(World world) {
+    public EntityE94(World world) {
         super(world);
     }
 
     @Override
     public String transportName() {
-        return Transport.Class87().name;
+        return Transport.E94().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.Class87().country;
+        return Transport.E94().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.Class87().year;
+        return Transport.E94().year;
     }
 
     @Override
     public String transportFuelType() {
-        return Transport.Class87().fuel;
+        return Transport.E94().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.Class87().fictional;
+        return Transport.E94().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return Transport.Class87().tractive_effort;
+        return Transport.E94().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return Transport.Class87().metric_horsepower;
+        return Transport.E94().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return Transport.Class87().weightinKGs;
+        return Transport.E94().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.Class87().reinforced;
+        return Transport.E94().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(Transport.Class87().additionalTextTitle) + Transport.Class87().additionalText,
-                    RailUtility.translate(Transport.Class87().additionalTextTitle2) + Transport.Class87().additionalText2};
+            return new String[]{RailUtility.translate(Transport.E94().additionalTextTitle) + Transport.E94().additionalText,
+                    RailUtility.translate(Transport.E94().additionalTextTitle2) + Transport.E94().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? Transport.Class87().backTopSpeed : Transport.Class87().topSpeed;
+        return accelerator < 0 ? Transport.E94().backTopSpeed : Transport.E94().topSpeed;
     }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Class87/Class87BRBlue.png",
-                "textures/locomotive/Electric/Class87/Class87Bogies.png",
-                "BR Blue", "Blue");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Class87/Class87First.png",
-                "textures/locomotive/Electric/Class87/Class87Bogies.png",
-                "First", "Blue");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Class87/Class87ICE.png",
-                "textures/locomotive/Electric/Class87/Class87Bogies.png",
-                "ICE", "Blue");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Class87/Class87ICS.png",
-                "textures/locomotive/Electric/Class87/Class87Bogies.png",
-                "ICS", "Blue");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/Class87/Class87Virgin.png",
-                "textures/locomotive/Electric/Class87/Class87Bogies.png",
-                "Virgin", "Blue");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/E94/E94.png",
+                "textures/bogies/EUBogies/E94_bogies.png",
+                "OBB Livery", "Used by the OBB");
     }
 
     @Override
@@ -160,12 +150,12 @@ public class EntityClass87 extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.45f, 0f, 0}, {-2.55f, 0f, 0}};
+        return new float[][]{{2.3f, 0f, 0}, {-2.3f, 0f, 0}};
     }
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new Class87Bogie()};
+        return new ModelBase[]{new E94BogieFront(), new E94BogieBack()};
     }
 
     @Override
@@ -180,7 +170,7 @@ public class EntityClass87 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f, -0.05F, 0.F}};
+        return new float[][]{{0f, -0F, 0.F}};
     }
 
     /**
@@ -238,7 +228,7 @@ public class EntityClass87 extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new Class87()};
+        return new ModelBase[]{new E94()};
     }
 
     /**

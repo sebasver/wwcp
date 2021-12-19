@@ -380,6 +380,20 @@ public class Transport {
                 20170f, 0f, 46.38f, 88.51f, false, true, 0);
     }
 
+    //todo E44
+    public static Transport.LocomotiveNoBackspeed E44DB() {
+        return new Transport.LocomotiveNoBackspeed("E44DB", "Europe", "2000-", "Electric",
+                nick, " Taurus", type, " Universal Locomotive",
+                67000.0f, 8600.0f, 86.0f, 230f, false, true, 0);
+    }
+
+    //todo E94
+    public static Transport.LocomotiveNoBackspeed E94() {
+        return new Transport.LocomotiveNoBackspeed("E94", "Europe", "2000-", "Electric",
+                nick, " Taurus", type, " Universal Locomotive",
+                67000.0f, 8600.0f, 86.0f, 230f, false, true, 0);
+    }
+
     public static Transport.LocomotiveNoBackspeed ES64U2() {
         return new Transport.LocomotiveNoBackspeed("ES64U2", "Europe", "2000-", "Electric",
                 nick, " Taurus", type, " Universal Locomotive",
@@ -455,6 +469,13 @@ public class Transport {
                 53000f, 1800f, 124f, 80f, false, true, 0);
     }
 
+    //todo Highliner Locomotive
+    public static Transport.LocomotiveNoBackspeed HiglinerLocomotive() {
+        return new Transport.LocomotiveNoBackspeed("HighlinerLocomotive", "Canada", "1956-1993", "Electric",
+                "", "", type, "Road Switcher",
+                53000f, 1800f, 124f, 80f, false, true, 0);
+    }
+
     //todo u33b
     public static Transport.LocomotiveNoBackspeed U33B() {
         return new Transport.LocomotiveNoBackspeed("U33B", "Canada", "1956-1993", "Diesel",
@@ -479,6 +500,13 @@ public class Transport {
     //SD70MAC
     public static Transport.LocomotiveNoBackspeed SD70Mac() {
         return new Transport.LocomotiveNoBackspeed("SD70Mac", "America", "1993-", "Diesel",
+                "", "", type, "Special Duty Locomotive",
+                145000f, 4400f, 193f, 112f, false, true, 0);
+    }
+
+    //SD70ACU todo fix this one
+    public static Transport.LocomotiveNoBackspeed SD70ACU() {
+        return new Transport.LocomotiveNoBackspeed("SD70ACU", "America", "1993-", "Diesel",
                 "", "", type, "Special Duty Locomotive",
                 145000f, 4400f, 193f, 112f, false, true, 0);
     }

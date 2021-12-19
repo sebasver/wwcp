@@ -1,5 +1,5 @@
-package wwcp.entities.Advent;
-    //This is a documentation class for copy pasting into a Diesel train class.
+package wwcp.entities.locomotives.diesels;
+//This is a documentation class for copy pasting into a Diesel train class.
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
@@ -17,9 +17,10 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.Advent.*;
-import wwcp.models.bogies.Class87Bogie;
-import wwcp.models.bogies.EUBogies.V200Bogie;
+import wwcp.models.bogies.AmericanTrucks.MacBogieBack;
+import wwcp.models.bogies.AmericanTrucks.MacBogieFront;
+import wwcp.models.locomotives.diesels.SD70ACU;
+import wwcp.models.locomotives.diesels.SD70MAC;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -28,9 +29,9 @@ import java.util.UUID;
 /**
  * ETERNAL NOTE: anything that applies to GenericRailTransport also applies to EntityTrain core.
  */
-public class EntityV200 extends EntityTrainCore {
+public class EntitySD70ACU extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityV200(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntitySD70ACU(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -38,60 +39,61 @@ public class EntityV200 extends EntityTrainCore {
      * @see EntityTrainCore
      */
 
-    public EntityV200(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntitySD70ACU(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityV200(World world){
+    public EntitySD70ACU(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.V200().name; }
+    public String transportName() { return Transport.SD70ACU().name; }
 
     @Override
-    public String transportcountry() { return Transport.V200().country; }
+    public String transportcountry() { return Transport.SD70ACU().country; }
 
     @Override
-    public String transportYear() { return Transport.V200().year; }
+    public String transportYear() { return Transport.SD70ACU().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.V200().fuel;
+        return Transport.SD70ACU().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.V200().fictional;
+        return Transport.SD70ACU().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.V200().tractive_effort;
+        return Transport.SD70ACU().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.V200().metric_horsepower;
+        return Transport.SD70ACU().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  Transport.V200().weightinKGs;
+        return  Transport.SD70ACU().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.V200().reinforced;
+        return Transport.SD70ACU().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.V200().additionalTextTitle) + Transport.V200().additionalText,
-                RailUtility.translate(Transport.V200().additionalTextTitle2) + Transport.V200().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.SD70ACU().additionalTextTitle) + Transport.SD70ACU().additionalText,
+                RailUtility.translate(Transport.SD70ACU().additionalTextTitle2) + Transport.SD70ACU().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.V200().backTopSpeed: Transport.V200().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.SD70ACU().backTopSpeed: Transport.SD70ACU().topSpeed;}
+
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V200/V200_purpurrot.png",
-                "textures/bogies/EUBogies/V200_bogies.png",
-                "BR Livery", "Standard commissioned British Rail livery");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70ACU/SD70ACU_CP_N.png",
+                "textures/bogies/HTSCtruck_Black.png",
+                "CP N", "Canadian Pacific");
     }
 
     /**
@@ -107,13 +109,11 @@ public class EntityV200 extends EntityTrainCore {
      * @return
      */
     @Override
-    public float[][] bogieModelOffsets() {
-        return new float[][]{{2.8f, 0f, 0}, {-2.8f, 0f, 0}};
-    }
+    public ModelBase[] bogieModels() {return new ModelBase[]{new MacBogieFront(), new MacBogieBack()}; }
 
     @Override
-    public ModelBase[] bogieModels() {
-        return new ModelBase[]{new V200Bogie()};
+    public float[][] bogieModelOffsets() {
+        return new float[][]{{2.9f,0f,0},{-3.7f,0f,0}};
     }
 
     @Override
@@ -140,7 +140,7 @@ public class EntityV200 extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.5f,2f,1.5f};
+        return new float[]{7f,2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -187,8 +187,8 @@ public class EntityV200 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,0F,0F}};}
-
+        return new float[][]{{-0f,-0F,0.F}};}
+        
     /**
      * <h2>Fluid Tank Capacity</h2>
      */
@@ -255,6 +255,9 @@ public class EntityV200 extends EntityTrainCore {
         }
     }
 
+    @Override
+    public float[][] modelRotations(){return new float[][]{{0.0f, 180.0f, 0.0f}};}
+
     /**
      * <h2>fuel management</h2>
      * defines how the transport manages burnHeat, both in consuming items, and in managing the burnHeat.
@@ -269,7 +272,7 @@ public class EntityV200 extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new V200Teaser()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new SD70ACU()};}
 
     //For sound effects
     @SideOnly(Side.CLIENT)

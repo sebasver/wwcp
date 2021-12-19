@@ -9,7 +9,6 @@
 
 package wwcp.models.locomotives.electrics; //Path where the model is located
 
-
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
