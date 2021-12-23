@@ -95,11 +95,11 @@ public class EntityDRGBR01 extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRGBR01/DRG_BR01_Wagner.png", "textures/bogies/EUBogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRGBR01/DRG_BR01_Wagner.png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_black.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_black.png"},
                 "DB BR 01 Wagner", "DR BR 01 Wagner Deflectors");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRGBR01/DRG_BR01_Witte_1.png", "textures/bogies/EUBogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRGBR01/DRG_BR01_Witte_1.png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_black.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_black.png"},
                 "DB BR 01 Witte 1", "DR BR 01 Witte Deflectors Variant 1");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRGBR01/DRG_BR01_Witte_2.png", "textures/bogies/EUBogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRGBR01/DRG_BR01_Witte_2.png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_black.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_black.png"},
                 "DB BR 01 Witte 2", "DR BR 01 Witte Deflectors Variant 2");
     }
 

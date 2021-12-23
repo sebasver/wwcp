@@ -95,10 +95,14 @@ public class EntityDRBR01_5Oil extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRBR01/DR_BR01_5_Oil_1.png", "textures/bogies/EUBogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRBR01/DR_Skin_BR01.5(1).png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_black.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_black.png"},
                 "DR BR 01.5 1", "DR BR 01.5 variant 1");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRBR01/DR_BR01_5_Oil_2.png", "textures/bogies/EUBogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRBR01/DR_Skin_BR01.5(2).png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_black.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_black.png"},
                 "DR BR 01.5 2", "DR BR 01.5 variant 2");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRBR01/DR_Skin_BR01.5(3).png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_black.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_black.png"},
+                "DR BR 01.5 3", "DR BR 01.5 variant 3");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DRBR01/DR_Skin_BR01.5(4).png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_black.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_black.png"},
+                "DR BR 01.5 4", "DR BR 01.5 variant 4");
     }
 
     public int getInventoryRows() {
@@ -108,7 +112,7 @@ public class EntityDRBR01_5Oil extends EntityTrainCore {
     public transportTypes getType() {
         return transportTypes.STEAM;
     }
- 
+
     public float getMaxFuel() {
         return 1.0F;
     }

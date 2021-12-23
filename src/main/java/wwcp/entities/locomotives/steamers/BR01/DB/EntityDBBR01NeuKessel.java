@@ -95,13 +95,13 @@ public class EntityDBBR01NeuKessel extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01/DB_BR01_NeuKessel_1.png", "textures/bogies/EUBogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01/DB_Skin_BR01_Neubaukessel(1).png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_black.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_black.png"},
                 "DB BR 01 Neubaukessel 1", "DB BR 01 Neubaukessel variant 1");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01/DB_BR01_NeuKessel_2.png", "textures/bogies/EUBogies/BR01/BR01BogieBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01/DB_Skin_BR01_Neubaukessel(2).png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_black.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_black.png"},
                 "DB BR 01 Neubaukessel 2", "DB BR 01 Neubaukessel variant 2");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01/DB_BR01_NeuKessel_3.png", "textures/bogies/EUBogies/BR01/BR01BogieWhite.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01/DB_Skin_BR01_Neubaukessel(3).png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_white.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_white.png"},
                 "DB BR 01 Neubaukessel 3", "DB BR 01 Neubaukessel variant 3");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01/DB_BR01_NeuKessel_4.png", "textures/bogies/EUBogies/BR01/BR01BogieWhite.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01/DB_Skin_BR01_Neubaukessel(4).png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_white.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_white.png"},
                 "DB BR 01 Neubaukessel 4", "DB BR 01 Neubaukessel variant 4");
     }
 
