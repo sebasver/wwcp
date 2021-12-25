@@ -19,7 +19,7 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 
 	public DB_BR01_10_Streamlined_Oil() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[420];
+		bodyModel = new ModelRendererTurbo[419];
 
 		initbodyModel_1();
 
@@ -37,12 +37,12 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[3] = new ModelRendererTurbo(this, 265, 1, textureX, textureY); // Box 106
 		bodyModel[4] = new ModelRendererTurbo(this, 297, 1, textureX, textureY); // Box 107
 		bodyModel[5] = new ModelRendererTurbo(this, 345, 1, textureX, textureY); // Box 122
-		bodyModel[6] = new ModelRendererTurbo(this, 409, 1, textureX, textureY); // Wheel
-		bodyModel[7] = new ModelRendererTurbo(this, 441, 1, textureX, textureY); // Wheel
-		bodyModel[8] = new ModelRendererTurbo(this, 473, 1, textureX, textureY); // Wheel
-		bodyModel[9] = new ModelRendererTurbo(this, 1, 17, textureX, textureY); // Wheel
-		bodyModel[10] = new ModelRendererTurbo(this, 361, 17, textureX, textureY); // Wheel
-		bodyModel[11] = new ModelRendererTurbo(this, 393, 17, textureX, textureY); // Wheel
+		bodyModel[6] = new ModelRendererTurbo(this, 409, 1, textureX, textureY); // Box 2
+		bodyModel[7] = new ModelRendererTurbo(this, 441, 1, textureX, textureY); // Box 127
+		bodyModel[8] = new ModelRendererTurbo(this, 473, 1, textureX, textureY); // Box 128
+		bodyModel[9] = new ModelRendererTurbo(this, 1, 17, textureX, textureY); // Box 117
+		bodyModel[10] = new ModelRendererTurbo(this, 361, 17, textureX, textureY); // Box 118
+		bodyModel[11] = new ModelRendererTurbo(this, 393, 17, textureX, textureY); // Box 120
 		bodyModel[12] = new ModelRendererTurbo(this, 401, 1, textureX, textureY); // Box 88
 		bodyModel[13] = new ModelRendererTurbo(this, 425, 17, textureX, textureY); // Box 91
 		bodyModel[14] = new ModelRendererTurbo(this, 345, 9, textureX, textureY); // Box 93
@@ -321,7 +321,7 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[287] = new ModelRendererTurbo(this, 329, 33, textureX, textureY); // Box 248
 		bodyModel[288] = new ModelRendererTurbo(this, 217, 41, textureX, textureY); // Box 249
 		bodyModel[289] = new ModelRendererTurbo(this, 313, 41, textureX, textureY); // Box 250
-		bodyModel[290] = new ModelRendererTurbo(this, 329, 41, textureX, textureY); // FrontLamp
+		bodyModel[290] = new ModelRendererTurbo(this, 329, 41, textureX, textureY); // Lamp Yellow
 		bodyModel[291] = new ModelRendererTurbo(this, 1, 233, textureX, textureY); // Box 107
 		bodyModel[292] = new ModelRendererTurbo(this, 289, 73, textureX, textureY); // Box 216
 		bodyModel[293] = new ModelRendererTurbo(this, 393, 233, textureX, textureY); // Box 112
@@ -363,8 +363,8 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[329] = new ModelRendererTurbo(this, 177, 265, textureX, textureY); // Box 136
 		bodyModel[330] = new ModelRendererTurbo(this, 385, 265, textureX, textureY); // Box 218
 		bodyModel[331] = new ModelRendererTurbo(this, 489, 57, textureX, textureY); // Box 85
-		bodyModel[332] = new ModelRendererTurbo(this, 489, 49, textureX, textureY); // FrontLamp
-		bodyModel[333] = new ModelRendererTurbo(this, 41, 57, textureX, textureY); // FrontLamp
+		bodyModel[332] = new ModelRendererTurbo(this, 489, 49, textureX, textureY); // Lamp Yellow
+		bodyModel[333] = new ModelRendererTurbo(this, 41, 57, textureX, textureY); // Lamp Yellow
 		bodyModel[334] = new ModelRendererTurbo(this, 401, 161, textureX, textureY); // Box 297
 		bodyModel[335] = new ModelRendererTurbo(this, 473, 265, textureX, textureY); // Box 298
 		bodyModel[336] = new ModelRendererTurbo(this, 313, 65, textureX, textureY); // Box 122
@@ -401,7 +401,7 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[367] = new ModelRendererTurbo(this, 145, 57, textureX, textureY); // Box 219
 		bodyModel[368] = new ModelRendererTurbo(this, 201, 129, textureX, textureY); // Box 221
 		bodyModel[369] = new ModelRendererTurbo(this, 481, 73, textureX, textureY); // Box 222
-		bodyModel[370] = new ModelRendererTurbo(this, 185, 177, textureX, textureY); // WhiteSteam
+		bodyModel[370] = new ModelRendererTurbo(this, 185, 177, textureX, textureY); // Box 223
 		bodyModel[371] = new ModelRendererTurbo(this, 417, 273, textureX, textureY); // Box 182
 		bodyModel[372] = new ModelRendererTurbo(this, 105, 105, textureX, textureY); // Box 182
 		bodyModel[373] = new ModelRendererTurbo(this, 121, 105, textureX, textureY); // Box 182
@@ -417,7 +417,7 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[383] = new ModelRendererTurbo(this, 217, 105, textureX, textureY); // Box 246
 		bodyModel[384] = new ModelRendererTurbo(this, 289, 73, textureX, textureY); // Box 251
 		bodyModel[385] = new ModelRendererTurbo(this, 489, 137, textureX, textureY); // Box 141
-		bodyModel[386] = new ModelRendererTurbo(this, 489, 233, textureX, textureY); // WhiteSteam
+		bodyModel[386] = new ModelRendererTurbo(this, 489, 233, textureX, textureY); // Box 166
 		bodyModel[387] = new ModelRendererTurbo(this, 145, 89, textureX, textureY); // Box 166
 		bodyModel[388] = new ModelRendererTurbo(this, 505, 97, textureX, textureY); // Box 166
 		bodyModel[389] = new ModelRendererTurbo(this, 281, 177, textureX, textureY); // Box 166
@@ -450,7 +450,6 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[416] = new ModelRendererTurbo(this, 297, 105, textureX, textureY); // Box 424
 		bodyModel[417] = new ModelRendererTurbo(this, 17, 9, textureX, textureY); // Box 226
 		bodyModel[418] = new ModelRendererTurbo(this, 265, 9, textureX, textureY); // Box 227
-		bodyModel[419] = new ModelRendererTurbo(this, 6, 508, textureX, textureY); // Steam
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 4, 6, 12, 0F,0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F); // Box 6
 		bodyModel[0].setRotationPoint(19F, -1F, -6F);
@@ -470,23 +469,23 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[5].addShapeBox(0F, 0F, 0F, 4, 3, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 122
 		bodyModel[5].setRotationPoint(-42F, -25F, -1F);
 
-		bodyModel[6].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Wheel
+		bodyModel[6].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 2
 		bodyModel[6].setRotationPoint(-17F, 2F, -6F);
 
-		bodyModel[7].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Wheel
+		bodyModel[7].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 127
 		bodyModel[7].setRotationPoint(21F, 2F, -6F);
 
-		bodyModel[8].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Wheel
+		bodyModel[8].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 128
 		bodyModel[8].setRotationPoint(-17F, 2F, 6F);
 		bodyModel[8].rotateAngleZ = 1.57079633F;
 
-		bodyModel[9].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Wheel
+		bodyModel[9].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 117
 		bodyModel[9].setRotationPoint(2F, 2F, -6F);
 
-		bodyModel[10].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Wheel
+		bodyModel[10].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 118
 		bodyModel[10].setRotationPoint(21F, 2F, 6F);
 
-		bodyModel[11].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Wheel
+		bodyModel[11].addShapeBox(-7.5F, -7.5F, 0F, 15, 15, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 120
 		bodyModel[11].setRotationPoint(2F, 2F, 6F);
 
 		bodyModel[12].addShapeBox(0F, 0F, 0F, 2, 2, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 88
@@ -1378,7 +1377,7 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[289].addShapeBox(0F, 0F, 0F, 3, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F); // Box 250
 		bodyModel[289].setRotationPoint(23F, 1F, -11F);
 
-		bodyModel[290].addShapeBox(0F, 0F, -1F, 1, 2, 2, 0F,-2.75F, -0.125F, -0.125F, 1.875F, -0.125F, -0.125F, 0.125F, -0.125F, -0.125F, -1F, -0.125F, -0.125F, -2.75F, -0.125F, -0.125F, 1.875F, -0.125F, -0.125F, 0.125F, -0.125F, -0.125F, -1F, -0.125F, -0.125F); // FrontLamp
+		bodyModel[290].addShapeBox(0F, 0F, -1F, 1, 2, 2, 0F,-2.75F, -0.125F, -0.125F, 1.875F, -0.125F, -0.125F, 0.125F, -0.125F, -0.125F, -1F, -0.125F, -0.125F, -2.75F, -0.125F, -0.125F, 1.875F, -0.125F, -0.125F, 0.125F, -0.125F, -0.125F, -1F, -0.125F, -0.125F); // Lamp Yellow
 		bodyModel[290].setRotationPoint(-60F, -3F, -7.5F);
 
 		bodyModel[291].addShapeBox(0F, 0F, 0F, 87, 5, 22, 0F,0F, 0F, -3F, 0F, 0F, -3F, 0F, 0F, -3F, 0F, 0F, -3F, 0F, 0F, -3F, 0F, 0F, -3F, 0F, 0F, -3F, 0F, 0F, -3F); // Box 107
@@ -1504,10 +1503,10 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[331].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 85
 		bodyModel[331].setRotationPoint(-55F, -21F, -1F);
 
-		bodyModel[332].addShapeBox(0F, 0F, -1F, 1, 2, 2, 0F,-0.875F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, -0.875F, -0.125F, -0.125F, -0.875F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, -0.875F, -0.125F, -0.125F); // FrontLamp
+		bodyModel[332].addShapeBox(0F, 0F, -1F, 1, 2, 2, 0F,-0.875F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, -0.875F, -0.125F, -0.125F, -0.875F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, 0F, -0.125F, -0.125F, -0.875F, -0.125F, -0.125F); // Lamp Yellow
 		bodyModel[332].setRotationPoint(-56F, -21F, 0F);
 
-		bodyModel[333].addShapeBox(0F, 0F, -1F, 1, 2, 2, 0F,-1F, -0.125F, -0.125F, 0.125F, -0.125F, -0.125F, 1.875F, -0.125F, -0.125F, -2.75F, -0.125F, -0.125F, -1F, -0.125F, -0.125F, 0.125F, -0.125F, -0.125F, 1.875F, -0.125F, -0.125F, -2.75F, -0.125F, -0.125F); // FrontLamp
+		bodyModel[333].addShapeBox(0F, 0F, -1F, 1, 2, 2, 0F,-1F, -0.125F, -0.125F, 0.125F, -0.125F, -0.125F, 1.875F, -0.125F, -0.125F, -2.75F, -0.125F, -0.125F, -1F, -0.125F, -0.125F, 0.125F, -0.125F, -0.125F, 1.875F, -0.125F, -0.125F, -2.75F, -0.125F, -0.125F); // Lamp Yellow
 		bodyModel[333].setRotationPoint(-60F, -3F, 7.5F);
 
 		bodyModel[334].addShapeBox(0F, 0F, 0F, 3, 7, 4, 0F,-0.27F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, -3F, 0F, -1F, 2F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, -3F, -1F, 0F); // Box 297
@@ -1619,7 +1618,7 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[369].addShapeBox(0F, 0F, 0F, 1, 3, 3, 0F,0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 1F, 0F, 0F, 1F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, 0F, 0.7F, 0F, 0F, 0.7F); // Box 222
 		bodyModel[369].setRotationPoint(-36F, -4F, 7F);
 
-		bodyModel[370].addShapeBox(0F, 0F, 0F, 1, 5, 5, 0F,-0.5F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 1F, -0.5F, 0F, 1F, -0.5F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0.5F, -0.5F, 0F, 0.5F); // WhiteSteam
+		bodyModel[370].addShapeBox(0F, 0F, 0F, 1, 5, 5, 0F,-0.5F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 1F, -0.5F, 0F, 1F, -0.5F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0.5F, -0.5F, 0F, 0.5F); // Box 223
 		bodyModel[370].setRotationPoint(-36.5F, 1F, 4.5F);
 
 		bodyModel[371].addShapeBox(0F, 0F, 0F, 14, 9, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 182
@@ -1667,7 +1666,7 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[385].addShapeBox(0F, 0F, 0F, 5, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 141
 		bodyModel[385].setRotationPoint(-47F, 3F, -8F);
 
-		bodyModel[386].addShapeBox(0F, 0F, 0F, 6, 10, 5, 0F,0F, 0F, 1F, 0F, 0F, 1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // WhiteSteam
+		bodyModel[386].addShapeBox(0F, 0F, 0F, 6, 10, 5, 0F,0F, 0F, 1F, 0F, 0F, 1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 166
 		bodyModel[386].setRotationPoint(-42F, -4F, -10F);
 
 		bodyModel[387].addShapeBox(0F, 0F, 0F, 2, 3, 3, 0F,0F, 0F, 1F, 0F, 0F, 1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0.7F, 0F, 0F, 0.7F, 0F, 0F, -0.7F, 0F, 0F, -0.7F); // Box 166
@@ -1772,8 +1771,5 @@ public class DB_BR01_10_Streamlined_Oil extends ModelBase //Same as Filename
 		bodyModel[418].addShapeBox(0F, 0F, -2F, 1, 3, 2, 0F,0F, 0F, -1.5F, 0F, 0F, -1.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -1F, 0F, 0F, -1F); // Box 227
 		bodyModel[418].setRotationPoint(-35F, -25F, -5F);
 		bodyModel[418].rotateAngleX = 1.20427718F;
-
-		bodyModel[419].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Steam
-		bodyModel[419].setRotationPoint(-40.5F, -25.5F, -0.5F);
 	}
 }
