@@ -95,7 +95,7 @@ public class EntityDBBR01_10Streamlined_Oil extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01/DB_BR01_10_Streamlined_Oil.png", "textures/bogies/EUBogies/BR01/BR01BogieWhite.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/BR01/DBBR01/DB_Skin_01.10_stromlinie.png", new String[]{"textures/bogies/EUBogies/BR01/Skin_BR01_bogie_front_white.png","textures/bogies/EUBogies/BR01/Skin_BR01_bogie_rear_white.png"},
                 "DB BR 01.10", "DB BR 01.10 Streamlined");
     }
 
