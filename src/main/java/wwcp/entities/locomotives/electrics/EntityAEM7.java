@@ -1,4 +1,4 @@
-package wwcp.entities.Advent;//This is a documentation class for copy pasting into an electric train class.
+package wwcp.entities.locomotives.electrics;//This is a documentation class for copy pasting into an electric train class.
 
 
 import cpw.mods.fml.relauncher.Side;
@@ -16,10 +16,11 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.EUBogies.TEEBogie;
-import wwcp.models.railbusses.TEESteuerWagen;
+import wwcp.models.bogies.AmericanTrucks.AEM_7Trucks;
+import wwcp.models.bogies.AmericanTrucks.HighlinerTruck;
+import wwcp.models.locomotives.electrics.AEM_7;
+import wwcp.models.locomotives.electrics.Highliner;
 import wwcp.worldwidecontentpack;
-import wwcp.models.Advent.*;
 
 import java.util.UUID;
 
@@ -29,9 +30,9 @@ import java.util.UUID;
 // ZZZZ
 // QQQQ
 
-public class EntityTEESteuerWagen extends EntityTrainCore {
+public class EntityAEM7 extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityTEESteuerWagen(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityAEM7(null), worldwidecontentpack.MODID, worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -39,82 +40,80 @@ public class EntityTEESteuerWagen extends EntityTrainCore {
      *
      * @see EntityTrainCore
      */
-    public EntityTEESteuerWagen(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityAEM7(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityTEESteuerWagen(World world) {
+    public EntityAEM7(World world) {
         super(world);
     }
 
     @Override
     public String transportName() {
-        return Transport.TEERAeSteurWagen().name;
+        return Transport.AEM7().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.TEERAeSteurWagen().country;
+        return Transport.AEM7().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.TEERAeSteurWagen().year;
+        return Transport.AEM7().year;
     }
 
     @Override
     public String transportFuelType() {
-        return Transport.TEERAeSteurWagen().fuel;
+        return Transport.AEM7().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.TEERAeSteurWagen().fictional;
+        return Transport.AEM7().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return Transport.TEERAeSteurWagen().tractive_effort;
+        return Transport.AEM7().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return Transport.TEERAeSteurWagen().metric_horsepower;
+        return Transport.AEM7().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return Transport.TEERAeSteurWagen().weightinKGs;
+        return Transport.AEM7().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.TEERAeSteurWagen().reinforced;
+        return Transport.AEM7().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(Transport.TEERAeSteurWagen().additionalTextTitle) + Transport.TEERAeSteurWagen().additionalText,
-                    RailUtility.translate(Transport.TEERAeSteurWagen().additionalTextTitle2) + Transport.TEERAeSteurWagen().additionalText2};
+            return new String[]{RailUtility.translate(Transport.AEM7().additionalTextTitle) + Transport.AEM7().additionalText,
+                    RailUtility.translate(Transport.AEM7().additionalTextTitle2) + Transport.AEM7().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? Transport.TEERAeSteurWagen().backTopSpeed : Transport.TEERAeSteurWagen().topSpeed;
+        return accelerator < 0 ? Transport.AEM7().backTopSpeed : Transport.AEM7().topSpeed;
     }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/Railbusses/TEESchweizz/TeeSteuerWagen.png",
-                "textures/Railbusses/TEESchweizz/TeeBogie.png",
-                "Belgian Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/AEM_7/Toaster.png",
+                "textures/bogies/AmericanTrucks/ToasterTrucks.png",
+                "Highliner", "Blue");
     }
 
-//    @Override
-//    public String getDefaultSkin() {
-//        return "wwcp:HLE28 NMBS Cargo";
-//    }
+    @Override
+    public float[][] modelRotations(){return new float[][]{{0.0f, 180.0f, 0.0f}};}
 
     @Override
     public float getMaxFuel() {
@@ -133,7 +132,7 @@ public class EntityTEESteuerWagen extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.075f, 2.5f, 1.5f};
+        return new float[]{6.6f, 2.5f, 1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -152,12 +151,12 @@ public class EntityTEESteuerWagen extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{4f,0f,0},{-4f,0f,0}};
+        return new float[][]{{1.75f, 0f, 0}, {-1.75f, 0f, 0}};
     }
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new TEEBogie()};
+        return new ModelBase[]{new AEM_7Trucks()};
     }
 
     @Override
@@ -172,7 +171,7 @@ public class EntityTEESteuerWagen extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f, -0.05F, 0.F}};
+        return new float[][]{{0f, 0F, 0.F}};
     }
 
     /**
@@ -230,7 +229,7 @@ public class EntityTEESteuerWagen extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new TEESteuerWagen()};
+        return new ModelBase[]{new AEM_7()};
     }
 
     /**

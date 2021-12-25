@@ -24,8 +24,7 @@ import wwcp.entities.railbusses.EntityNE81;
 import wwcp.entities.railbusses.EntitySeries4000;
 import wwcp.entities.railbusses.EntityVT98;
 import wwcp.entities.railbusses.EntityVT98AD;
-import wwcp.entities.tender.Entity3000GalonTender;
-import wwcp.entities.tender.EntityT32Christmas;
+import wwcp.entities.tender.*;
 import wwcp.entities.tender.germanTenders.*;
 
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
@@ -146,7 +145,10 @@ public class wwcp_registrations {
                 new EntityX10a(null),
                 new EntityDSBFIII(null),
                 new EntityDSBSII(null),
-                new EntityGWR57(null)
+                new EntityGWR57(null),
+                new EntityJ38(null),
+                new EntityJ39(null),
+                new EntityU1F(null)
         };
     }
 
@@ -165,7 +167,9 @@ public class wwcp_registrations {
                 new EntityT37(null),
                 new EntityT37DRG(null),
                 new EntityT38(null),
-                new EntityT38Oil(null)
+                new EntityT38Oil(null),
+                new EntityG4200Tender(null),
+                new EntityVanderBuiltTender(null)
         };
     }
 
@@ -196,7 +200,10 @@ public class wwcp_registrations {
                 new EntityM640(null),
                 new EntityGP7HighHood(null),
                 new EntityU33B(null),
-                new EntitySD70ACU(null)
+                new EntitySD70ACU(null),
+                new EntityAlco_PA(null),
+                new EntityAlco_PB(null),
+                new EntityRS3(null)
         };
     }
 
@@ -206,7 +213,8 @@ public class wwcp_registrations {
                 new EntityNE81(null),
                 new EntityVT98AD(null),
                 new EntityVT98(null),
-                new EntitySeries4000(null)
+                new EntitySeries4000(null),
+                new EntityTEESchweizzBar(null)
         };
     }
 
@@ -227,7 +235,8 @@ public class wwcp_registrations {
                 new EntityClass87(null),
                 new EntityHighliner(null),
                 new EntityE44DB(null),
-                new EntityE94(null)
+                new EntityE94(null),
+                new EntityAEM7(null)
         };
     }
 
@@ -293,7 +302,8 @@ public class wwcp_registrations {
                 new EntityUKCattleWagen(null),
                 new EntityUKGasWagen(null),
                 new EntityDSBZETanker(null),
-                new EntityDSB735Tanker(null)
+                new EntityDSB735Tanker(null),
+                new Entity40ftAAR_Boxcar(null)
         };
     }
 }

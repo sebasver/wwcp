@@ -1,4 +1,4 @@
-package wwcp.entities.passengerstock;
+package wwcp.entities.Advent;
 
 
 import ebf.tim.TrainsInMotion;
@@ -13,8 +13,10 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.AmericanTrucks.Amfleet1_truck;
-import wwcp.models.passengerStock.Amfleet1;
+import wwcp.models.bogies.EUBogies.EurofimaBogie;
+import wwcp.models.bogies.EUBogies.TEEBogie;
+import wwcp.models.passengerStock.EurofimaCompartment1;
+import wwcp.models.railbusses.TEEBarWagon;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -22,55 +24,55 @@ import java.util.UUID;
 import static ebf.tim.utility.RailUtility.DefineStack;
 
 
-public class EntityAmfleet1 extends GenericRailTransport {
+public class EntityTEESchweizzBar extends GenericRailTransport {
     private static final String[] itemDescription = new String[]{
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityAmfleet1(null), worldwidecontentpack.MODID , worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntityTEESchweizzBar(null), worldwidecontentpack.MODID , worldwidecontentpack.European);
 
 
-    public EntityAmfleet1(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityTEESchweizzBar(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityAmfleet1(World world){
+    public EntityTEESchweizzBar(World world){
         super(world);
     }
 
     @Override
     public boolean isReinforced() {
-        return Transport.Amfleet1().reinforced;
+        return Transport.TEESchweizzBarCar().reinforced;
     }
 
     @Override
     public String transportName() {
-        return Transport.Amfleet1().name;
+        return Transport.TEESchweizzBarCar().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.Amfleet1().country;
+        return Transport.TEESchweizzBarCar().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.Amfleet1().year;
+        return Transport.TEESchweizzBarCar().year;
     }
 
     @Override
     public float weightKg() {
-        return Transport.Amfleet1().weightinKGs;
+        return Transport.TEESchweizzBarCar().weightinKGs;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.Amfleet1().fictional;
+        return Transport.TEESchweizzBarCar().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.Amfleet1().additionalTextTitle) + Transport.Amfleet1().additionalText,
-                RailUtility.translate(Transport.Amfleet1().additionalTextTitle2) + Transport.Amfleet1().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.TEESchweizzBarCar().additionalTextTitle) + Transport.TEESchweizzBarCar().additionalText,
+                RailUtility.translate(Transport.TEESchweizzBarCar().additionalTextTitle2) + Transport.TEESchweizzBarCar().additionalText2};}
     }
 
     @Override
@@ -81,19 +83,19 @@ public class EntityAmfleet1 extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{3.94f,0f,0},{-4f,0f,0}};
+        return new float[][]{{4.5f,0f,0},{-4.5f,0f,0}};
     }
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new Amfleet1_truck()};
+        return new ModelBase[]{new TEEBogie()};
     }
 
     /**
      * <h2>Bogie Offset</h2>
      */
     @Override
-    public float[] bogieLengthFromCenter(){return new float[]{4f,-3.94f};}
+    public float[] bogieLengthFromCenter(){return new float[]{3f,-3f};}
 
     @Override
     public float getRenderScale() {
@@ -102,17 +104,14 @@ public class EntityAmfleet1 extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.65f,0.05F,0.F}};
+        return new float[][]{{0.03f,-0F,0.F}};
     }
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/amfleet1/amfleet_Phase2.png",
-                "textures/bogies/Amfleet1_truck.png",
-                "Amfleet", "Amtrak's livery for the coach");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/amfleet1/Amfleet1_Phase3.png",
-                "textures/bogies/Amfleet1_truck.png",
-                "Phase3", "Amtrak's livery for the coach");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/Railbusses/TEESchweizz/TEEBar.png",
+                "textures/Railbusses/TEESchweizz/TeeBogie.png",
+                "Belgian Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
     }
 
     /*@Override
@@ -143,12 +142,12 @@ public class EntityAmfleet1 extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0f,1f, 0.2f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{2.2f,1.1f, 0.2f}};}
 
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{11f,1.75f,1.5f};
+        return new float[]{12.9f,2.1f,1.5f};
     }
 
     @Override
@@ -157,7 +156,7 @@ public class EntityAmfleet1 extends GenericRailTransport {
     }
 
     @Override
-    public ModelBase[] getModel(){return new ModelBase[]{new Amfleet1()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new TEEBarWagon()};}
 
     /**
      * <h2>pre-asigned values</h2>
