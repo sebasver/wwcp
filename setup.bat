@@ -89,7 +89,7 @@ goto quit
 
 :build
 @echo on
-start call gradlew setupDecompWorkspace --refresh-dependencies build
+start call gradlew setupDecompWorkspace --refresh-dependencies build --stacktrace --debug
 @echo off
 @ECHO.
 @ECHO.
