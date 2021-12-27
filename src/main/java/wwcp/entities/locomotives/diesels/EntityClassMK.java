@@ -24,7 +24,7 @@ import java.util.UUID;
 
 public class EntityClassMK extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityClassMK(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityClassMK(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
 
     public EntityClassMK(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
@@ -79,27 +79,32 @@ public class EntityClassMK extends EntityTrainCore {
     @Override
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/MKYellowDSB.png",
-                "Original DSB Gods Yellow", "As the Class MK was new to DSB, they used a new design over the usual Red/Black which the predecessors Class MH and MT got.");
+                "DSB Gods Yellow", "As the Class MK was new to DSB, they used a new design over the usual Red/Black which the predecessors Class MH and MT got.");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/MKYellowDSB625.png",
                 "DSB MK 625 Yellow", "Used for shunting coaches, number 625 had shortly after the writing 'gods' removed");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/MKYellowDB.png",
                 "DB Scandinavia Class MK", "After Railion's purchase of the DSB Gods division, most of the Class MKs were followed. Today they are still seen in Yellow with DB logo on it");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/MKDBRed.png",
                 "DB Scandinavia Class MK Red", "Number 621 is the only Class MK to be repainted from Yellow to Verkehrsrot");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/NRail322.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/MWBG322.png",
                 "MWB V601", "DSBs first Class MK were sold in 2002 to Mittelweserbah as V601");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/VFST322.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/VFSTG322.png",
                 "Siemens prototype nr 350 001-2", "Siemens first prototype of the Class MK, later owned by Vossloh and today owned by Northrail GmbH");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/NRail322.png",
                 "Northrail G322", "Almost all of Northrail's G322's are former Class MKs");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/VSFT400B.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/VSFTG400B.png",
                 "Vossloh G400B", "Almost identical to the 322s, the 400Bs were sold to Ned Train (Nederlandske Spoorwegen)");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/NTG400B.png",
                 "Ned Train G400B", "Like DSBs MK 625, the NT 400Bs were used to shunt passenger stock");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/NS400B.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/NSG400B.png",
                 "Nederlandske Spoorwegen G400B", "During the transfer into NS, some of the G400Bs were carried over to NS, while others were sold to Northrail GmbH");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/G322-400B/NRail400B.png",
                 "Northrail G400B", "The 400Bs in Northrail can easily be confused with their G322s");
+    }
+
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:DSB Gods Yellow";
     }
 
     @Override
@@ -111,10 +116,10 @@ public class EntityClassMK extends EntityTrainCore {
     public float getMaxFuel(){return 5000;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.6f,1.5f, 0f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{0.6f,1.45f,-0.35f}};}
     @Override
     public float[] getHitboxSize() {
-        return new float[]{4.35f,2.2f,1.5f};
+        return new float[]{4.3f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -127,7 +132,7 @@ public class EntityClassMK extends EntityTrainCore {
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{2, -2};
+        return new float[]{0.8955f, -0.9255f};
     }
 
     @Override
@@ -137,7 +142,7 @@ public class EntityClassMK extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.155f,0F,0F}};}
+        return new float[][]{{-0.0f,-0.05F,0F}};}
 
     /**
      * <h2>rider sit or stand</h2>

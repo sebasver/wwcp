@@ -78,8 +78,12 @@ public class EntityClassMH extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/DSBMH/MhGreen.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/DSBMH/DSBMhGreen.png",
                 "DSB Green", "When the first diesel shunters rolled out in the 1950, DSB decided that all shunters was painted in a green color.");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/DSBMH/DSBMhRedBlack.png",
+                "DSB Red Black", "Around the late 1980s and early 1990s most shunting locomotives in DSB were painted Red and Black");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/DSBMH/DSBRedBlack374.png",
+                "DSB MH 374", "MH 374 was slightly rebuilt, for use of snowplows in the 1980s and 1990s");
     }
 
     @Override
@@ -96,10 +100,10 @@ public class EntityClassMH extends EntityTrainCore {
     public float getMaxFuel(){return 5000;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{0.6f,1.45f,-0.35f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-0.15f,1.47f,-0.35f}};}
     @Override
     public float[] getHitboxSize() {
-        return new float[]{4.3f,2.2f,1.5f};
+        return new float[]{4.65f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -112,7 +116,7 @@ public class EntityClassMH extends EntityTrainCore {
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, -1.0F};
+        return new float[]{1.150F, -1.155F};
     }
 
     @Override
