@@ -111,7 +111,7 @@ public class EntityMZClassOne1967 extends EntityTrainCore {
         return new float[]{10.23f,2.2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

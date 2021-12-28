@@ -55,13 +55,13 @@ public class EntityHabbiins_17 extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_TWA_Brown.png", "textures/bogies/SGNSSBogie2.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/TWA_Brown.png", "textures/bogies/SGNSSBogie2.png",
                 "Habbiins 17 TWA Brown", "This is the most common livery to see in real life");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_TWA_Grey.png", "textures/bogies/SGNSSBogie2.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/TWA_Grey.png", "textures/bogies/SGNSSBogie2.png",
                 "Habbiins 17 TWA Grey", "This is the most common livery to see in real life");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_DB.png", "textures/bogies/SGNSSBogie2.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/DB.png", "textures/bogies/SGNSSBogie2.png",
                 "Habbiins 17 DB", "This is the most common livery to see in real life, though more dirty");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/Habbiins_17_DSB.png", "textures/bogies/SGNSSBogie2.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Habbiins_17/DSB_Grey.png", "textures/bogies/SGNSSBogie2.png",
                 "Habbiins 17 DSB", "This is the most common livery to see in real life, though more dirty");
     }
 
@@ -83,7 +83,7 @@ public class EntityHabbiins_17 extends GenericRailTransport {
             return Transport.Habbiins_17().weightinKGs;
         }
 
-        public ItemStack[] getRecipie() {
+        public ItemStack[] getRecipe() {
             return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
         }
 

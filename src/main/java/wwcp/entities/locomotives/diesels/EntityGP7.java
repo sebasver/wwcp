@@ -119,7 +119,7 @@ public class EntityGP7 extends EntityTrainCore {
         return new float[]{7.3f,2.2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

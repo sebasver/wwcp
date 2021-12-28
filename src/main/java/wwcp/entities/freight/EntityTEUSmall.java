@@ -78,7 +78,7 @@ public class EntityTEUSmall extends GenericRailTransport {
         return 1814.3F;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

@@ -121,7 +121,7 @@ public class EntityMZClassFour extends EntityTrainCore {
         return new float[]{10.25f,2.2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

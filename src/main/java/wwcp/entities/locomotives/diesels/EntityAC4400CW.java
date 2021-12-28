@@ -103,6 +103,12 @@ public class EntityAC4400CW extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_SP_Weathered.png",
                 "textures/bogies/GE_Trucky_Black.png",
                 "Southern Pacific - Weathered", "Southern Pacific Bloody Nose. Weathered");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_CP_Modern.png",
+                "textures/bogies/GE_Trucky_Black.png",
+                "CP Modern", "Southern Pacific Bloody Nose. Weathered");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/AC4400CW/AC4400CW_CP_Modern_Weathered.png",
+                "textures/bogies/GE_Trucky_Black.png",
+                "CP Modern - Weathered", "Southern Pacific Bloody Nose. Weathered");
     }
 
     @Override
@@ -156,7 +162,7 @@ public class EntityAC4400CW extends EntityTrainCore {
         return new float[]{9.5f,2.15f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

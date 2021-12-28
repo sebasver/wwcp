@@ -73,7 +73,7 @@ public class EntityACF_SingleDomeTankCar extends GenericRailTransport {
         return Transport.ACF_Single_Dome_Tankcar().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

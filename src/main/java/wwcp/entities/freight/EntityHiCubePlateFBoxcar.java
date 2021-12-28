@@ -74,7 +74,7 @@ public class EntityHiCubePlateFBoxcar extends GenericRailTransport {
         return Transport.Hi_Cube_Plate_F_Boxcar().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

@@ -102,7 +102,7 @@ public class EntityNE81 extends EntityTrainCore {
         return new float[]{9.3f,2.2f,1.7f};
     }
     
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,
@@ -135,7 +135,7 @@ public class EntityNE81 extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.8f,0.07f,0},{-2.2f,0.07f,0}};
+        return new float[][]{{2.8f,-0.05f,0},{-2.2f,-0.05f,0}};
     }
 
     @Override
@@ -155,7 +155,7 @@ public class EntityNE81 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,-0.07F,0.F}};}
+        return new float[][]{{0f,-0,0.F}};}
 
 
     /**

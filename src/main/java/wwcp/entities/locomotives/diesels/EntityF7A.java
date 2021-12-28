@@ -137,7 +137,7 @@ public class EntityF7A extends EntityTrainCore {
         return new float[]{6.6f,2.2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

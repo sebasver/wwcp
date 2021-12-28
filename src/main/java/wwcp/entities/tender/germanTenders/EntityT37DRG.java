@@ -67,7 +67,7 @@ public class EntityT37DRG extends GenericRailTransport {
                 RailUtility.translate(Transport.T37DRG().additionalTextTitle2) + Transport.T37DRG().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
-        return new float[][]{{1.20f, 0.12F, 0.0F}, {-0.60F, 0.12F, 0.0F}};
+        return new float[][]{{1.20f, 0, 0.0F}, {-0.60F, 0, 0.0F}};
     }
 
     public ModelBase[] bogieModels() {
@@ -83,11 +83,11 @@ public class EntityT37DRG extends GenericRailTransport {
     }
 
     public float[][] modelOffsets() {
-        return new float[][]{{-0.235f,-0.1F,0F}};
+        return new float[][]{{-0.235f,0,0F}};
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T37DRG.png", new String[]{"textures/bogies/germanTenderBogies/T37BogieBlack.png"},
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T37DRG.png", new String[]{"textures/bogies/EUBogies/germanTenderBogies/T37BogieBlack.png"},
                 "DB Livery", "The standarized T32 tender paint while in use for the DB");
     }
 
@@ -123,7 +123,7 @@ public class EntityT37DRG extends GenericRailTransport {
         FuelHandler.manageTanker(this);
     }
     
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Items.bed, 1), null, null, null, null, null, null, null, null};
     }
 

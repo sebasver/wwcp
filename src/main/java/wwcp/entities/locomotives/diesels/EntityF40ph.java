@@ -84,7 +84,7 @@ public class EntityF40ph extends EntityTrainCore {
     
     @Override
     public String getDefaultSkin() {
-        return "wwcp:EMD Demonstrator";
+        return "wwcp:Amtrak Livery 2";
     }
 
     @Override
@@ -102,7 +102,7 @@ public class EntityF40ph extends EntityTrainCore {
         return new float[]{6.6f,2.2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

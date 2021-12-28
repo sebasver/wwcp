@@ -121,7 +121,7 @@ public class EntityKofIII extends EntityTrainCore {
         return new float[]{3.95f,1.8f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

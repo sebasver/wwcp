@@ -115,7 +115,7 @@ public class EntitySentinel100HPChristmas extends EntityTrainCore {
         return new float[][]{{-1.345f,-0.12F,0F}};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{null, null, null, null, null, null, null, null, null};
     }
 

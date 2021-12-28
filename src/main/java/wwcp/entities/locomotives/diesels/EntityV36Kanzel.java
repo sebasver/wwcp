@@ -16,8 +16,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.locomotives.diesels.ModelV36;
-import wwcp.models.locomotives.diesels.ModelV36Kanzel;
+import wwcp.models.locomotives.diesels.V36Kanzel;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -81,9 +80,12 @@ public class EntityV36Kanzel extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/V2.png",
-                "default", "Used by Germany in WWI as a transport for solders and equipment");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/V1.png", "Black", "Used by germany");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Kanzel/Skin_V36_black_door.png",
+                "V36 Kanzel back door", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Kanzel/Skin_V36_black_kanzel.png",
+                "V36 Kanzel black", "");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V36/Kanzel/Skin_V36_black_kanzel_door.png",
+                "V36 Kanzel black back door", "");
     }
 
     @Override
@@ -98,10 +100,10 @@ public class EntityV36Kanzel extends EntityTrainCore {
     public float[][] getRiderOffsets(){return new float[][]{{1.6f,1.5f, 0f}};}
     @Override
     public float[] getHitboxSize() {
-        return new float[]{4.05f,2.2f,1.5f};
+        return new float[]{4.35f,2.2f,1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,
@@ -121,7 +123,7 @@ public class EntityV36Kanzel extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{1.25f,-0.05F,0F}};}
+        return new float[][]{{-0.155f,0F,0F}};}
 
     /**
      * <h2>rider sit or stand</h2>
@@ -172,7 +174,7 @@ public class EntityV36Kanzel extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new ModelV36Kanzel()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new V36Kanzel()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

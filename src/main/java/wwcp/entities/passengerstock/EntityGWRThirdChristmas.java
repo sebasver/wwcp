@@ -13,7 +13,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.passengerStock.GWROpenXmas;
+import wwcp.models.passengerStock.Christmas.GWROpenXmas;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -108,7 +108,7 @@ public class EntityGWRThirdChristmas extends GenericRailTransport {
                 "NAME", "Description");
     }
     @Override
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 DefineStack(Items.bed, 1), null, null,
                 null, null, null,

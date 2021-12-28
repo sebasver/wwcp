@@ -105,7 +105,7 @@ public class EntityYYYY extends WWCPItemTransport {
         return SuperStat.XXXX().reinforced;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.field_150364_r, 1), null, null, null, null, null, null, null, null};
     }
 

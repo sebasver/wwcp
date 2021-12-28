@@ -84,7 +84,7 @@ public class EntityHbbillns extends GenericRailTransport {
         return Transport.Hbbillns().weightinKGs;
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Blocks.iron_ore, 1), null, null, null, null, null, null, null, null};
     }
 

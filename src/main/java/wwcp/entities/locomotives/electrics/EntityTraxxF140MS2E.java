@@ -132,7 +132,11 @@ public class EntityTraxxF140MS2E extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT13.png", "textures/bogies/Flexxpower.png",
                 "Railpool", "Special New Years skin to celebrate 2020");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT14.png", "textures/bogies/Flexxpower.png",
-                "DB", "Special New Years skin to celebrate 2020");
+                "DB", "Verkehrsrot, 4 pantograph variant");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT142.png", "textures/bogies/Flexxpower.png",
+                "DB 2", "Verkehrsrot, 2 pantograph variant");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/Traxx241.png", "textures/bogies/Flexxpower.png",
+                "HectorRail 241", "HectorRail, 2 pantograph variant");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT15.png", "textures/bogies/Flexxpower.png",
                 "RER", "Special New Years skin to celebrate 2020");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT16.png", "textures/bogies/Flexxpower.png",
@@ -166,7 +170,7 @@ public class EntityTraxxF140MS2E extends EntityTrainCore {
         return new float[]{9.075f, 2.5f, 1.5f};
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 null, null, null,
                 null, null, null,

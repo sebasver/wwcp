@@ -67,12 +67,13 @@ public class EntityT26 extends GenericRailTransport {
                 RailUtility.translate(Transport.T26().additionalTextTitle2) + Transport.T26().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
-        return new float[][]{{0.55f, 0.12F, 0.0F}, {-.87F, 0.12F, 0.0F}};
+        return new float[][]{{0.73f, 0, 0.0F}, {-0.73F, 0, 0.0F}};
     }
 
     public ModelBase[] bogieModels() {
         return new ModelBase[]{new T26BogieFront(), new T26BogieBack()};
     }
+
 
     public float[] bogieLengthFromCenter() {
         return new float[]{0.87F, -0.55F};
@@ -83,11 +84,11 @@ public class EntityT26 extends GenericRailTransport {
     }
 
     public float[][] modelOffsets() {
-        return new float[][]{{-0.11f,-0.1F,0F}};
+        return new float[][]{{-0.11f,0,0F}};
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T26Tender.png", new String[]{"textures/bogies/germanTenderBogies/T26BogieBlack.png"},
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T26Tender.png", new String[]{"textures/bogies/EUBogies/germanTenderBogies/T26BogieBlack.png"},
                 "DB Livery", "The standarized T32 tender paint while in use for the DB");
     }
 
@@ -123,7 +124,7 @@ public class EntityT26 extends GenericRailTransport {
         FuelHandler.manageTanker(this);
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Items.bed, 1), null, null, null, null, null, null, null, null};
     }
 

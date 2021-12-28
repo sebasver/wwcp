@@ -119,7 +119,7 @@ import static ebf.tim.utility.RailUtility.DefineStack;
         }*/
 
         @Override
-        public ItemStack[] getRecipie() {
+        public ItemStack[] getRecipe() {
             return new ItemStack[]{
                     DefineStack(Items.bed, 1), null, null,
                     null, null, null,

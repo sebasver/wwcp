@@ -67,7 +67,7 @@ public class EntityT38Oil extends GenericRailTransport {
                 RailUtility.translate(Transport.T38Oil().additionalTextTitle2) + Transport.T38Oil().additionalText2};}
     }
     public float[][] bogieModelOffsets() {
-        return new float[][]{{1.2f, 0.12F, 0.0F}, {-0.73F, 0.12F, 0.0F}};
+        return new float[][]{{1.2f, 0, 0.0F}, {-0.73F, 0, 0.0F}};
     }
 
     public ModelBase[] bogieModels() {
@@ -83,13 +83,13 @@ public class EntityT38Oil extends GenericRailTransport {
     }
 
     public float[][] modelOffsets() {
-        return new float[][]{{-0.42f,-0.1F,0F}};
+        return new float[][]{{-0.42f,0,0F}};
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T38Oil.png", new String[]{"textures/bogies/germanTenderBogies/T37BogieBlack.png"},
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T38Oil.png", new String[]{"textures/bogies/EUBogies/germanTenderBogies/T37BogieBlack.png"},
                 "DB", "The standarized T38 tender paint while in use for the DB");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T38OilDRG.png", new String[]{"textures/bogies/germanTenderBogies/T37BogieBlack.png"},
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/germanTenders/T38OilDRG.png", new String[]{"textures/bogies/EUBogies/germanTenderBogies/T37BogieBlack.png"},
                 "DRG", "The standarized T38 tender paint while in use for the DRG");
     }
 
@@ -125,7 +125,7 @@ public class EntityT38Oil extends GenericRailTransport {
         FuelHandler.manageTanker(this);
     }
 
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{RailUtility.DefineStack(Items.bed, 1), null, null, null, null, null, null, null, null};
     }
 

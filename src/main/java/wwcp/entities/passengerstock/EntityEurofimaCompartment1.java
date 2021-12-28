@@ -107,7 +107,7 @@ public class EntityEurofimaCompartment1 extends GenericRailTransport {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/EurofimaCompartment/1/2Years_WWCP.png", "textures/bogies/Eurofimabogie.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/Eurofima/EurofimaCompartment/1/2Years_WWCP.png", "textures/bogies/Eurofimabogie.png",
                 "2 Years WWCP", "Celebration livery for 2 years WWCP");
     }
 
@@ -117,7 +117,7 @@ public class EntityEurofimaCompartment1 extends GenericRailTransport {
     }*/
     
     @Override
-    public ItemStack[] getRecipie() {
+    public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 DefineStack(Items.bed, 1), null, null,
                 null, null, null,
