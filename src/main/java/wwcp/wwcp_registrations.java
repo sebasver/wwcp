@@ -138,7 +138,9 @@ public class wwcp_registrations {
                 new EntityDBBR50(null),
                 new EntityDBBR50_40(null),
                 new EntityDRBR01WitteChristmas(null),
-                new EntitySentinel100HPChristmas(null)
+                new EntitySentinel100HPChristmas(null),
+                new EntityDSBFII(null)
+
         };
     }
 
@@ -173,7 +175,9 @@ public class wwcp_registrations {
                 new EntityMZClassTwo(null),
                 new EntityMZClassTwo1970(null),
                 new EntityMZClassThree(null),
+                new EntityMZClassThree1972(null),
                 new EntityMZClassFour(null),
+                new EntityClassME(null),
                 new EntityKofIII(null),
                 new EntityKofIII2(null),
                 new EntityF7A(null),
@@ -185,7 +189,10 @@ public class wwcp_registrations {
                 new EntityRS18(null),
                 new EntitySD60Mac(null),
                 new EntityGP50(null),
-                new EntityM640(null)
+                new EntityM640(null),
+                new EntityClassMK(null),
+                new EntityClassMH(null),
+                new EntityHLD55(null),
         };
     }
 
@@ -273,11 +280,9 @@ public class wwcp_registrations {
                 new EntityPRR_Gla_Hopper(null),
                 new EntityCP_Plug_Slide(null),
                 new EntityCP_Minibox(null),
-                new EntityCP_Plugdoor(null)
+                new EntityCP_Plugdoor(null),
+                new EntityDSBCarE(null),
+                new EntityLgns(null)
         };
     }
 }
-© 2021 GitHub, Inc.
-        Terms
-        Privacy
-        Security
