@@ -89,7 +89,7 @@ public class EntityLgns extends GenericRailTransport {
 
     @Override
     public String getDefaultSkin() {
-        return "wwcp:Lgns Empty Brown";
+        return "wwcp:Lgns Brown Empty";
     }
 
     @Override
