@@ -102,7 +102,7 @@ public class EntityAmfleet1 extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,0.05F,0.F}};
+        return new float[][]{{-0.65f,0.05F,0.F}};
     }
 
     @Override
@@ -110,6 +110,9 @@ public class EntityAmfleet1 extends GenericRailTransport {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/amfleet1/amfleet_Phase2.png",
                 "textures/bogies/Amfleet1_truck.png",
                 "Amfleet", "Amtrak's livery for the coach");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/amfleet1/Amfleet1_Phase3.png",
+                "textures/bogies/Amfleet1_truck.png",
+                "Phase3", "Amtrak's livery for the coach");
     }
 
     /*@Override
