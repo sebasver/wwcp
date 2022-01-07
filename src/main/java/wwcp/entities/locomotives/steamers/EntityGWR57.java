@@ -9,8 +9,6 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
-
-import java.util.UUID;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityFurnace;
@@ -21,74 +19,71 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.locomotives.steamers.UK94;
+import wwcp.models.locomotives.steamers.GWR57;
 import wwcp.worldwidecontentpack;
 
-public class Entity94xx extends EntityTrainCore {
+import java.util.UUID;
 
-    public Entity94xx(UUID owner, World world, double xPos, double yPos, double zPos) {
+public class EntityGWR57 extends EntityTrainCore {
+
+    public EntityGWR57(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new Entity94xx(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new WWCPTransport(new EntityGWR57(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
-    public Entity94xx(World world) {
+    public EntityGWR57(World world) {
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.GWR9400().name; }
+    public String transportName() { return Transport.GWR57().name; }
 
     @Override
-    public String transportcountry() { return Transport.GWR9400().country; }
+    public String transportcountry() { return Transport.GWR57().country; }
 
     @Override
-    public String transportYear() { return Transport.GWR9400().year; }
+    public String transportYear() { return Transport.GWR57().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.GWR9400().fuel;
+        return Transport.GWR57().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.GWR9400().fictional;
+        return Transport.GWR57().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.GWR9400().tractive_effort;
+        return Transport.GWR57().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.GWR9400().metric_horsepower;
+        return Transport.GWR57().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  Transport.GWR9400().weightinKGs;
+        return  Transport.GWR57().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.GWR9400().reinforced;
+        return Transport.GWR57().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.GWR9400().additionalTextTitle) + Transport.GWR9400().additionalText,
-                RailUtility.translate(Transport.GWR9400().additionalTextTitle2) + Transport.GWR9400().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.GWR57().additionalTextTitle) + Transport.GWR57().additionalText,
+                RailUtility.translate(Transport.GWR57().additionalTextTitle2) + Transport.GWR57().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.GWR9400().backTopSpeed: Transport.GWR9400().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.GWR57().backTopSpeed: Transport.GWR57().topSpeed;}
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X1.png",
-                "GWR 1", "The famous Great Western Railway skin. You know, its not the wrong way of doing things.");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X2.png",
-                "GWR 2", "The famous Great Western Railway skin. You know, its not the wrong way of doing things.");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X3.png",
-                "GWR 3", "The famous Great Western Railway skin. You know, its not the wrong way of doing things.");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR94XX/X4.png",
-                "GWR 4", "The famous Great Western Railway skin. You know, its not the wrong way of doing things.");
-
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR57/GWR57.png", 
+                "GWR", "There are two ways of doing things, the Great Western way, or the wrong way.");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/GWR57/GWR57xx.png",
+                "GWR Black", "");
     }
 
     public int getInventoryRows() {
@@ -142,7 +137,7 @@ public class Entity94xx extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.15f,-0.12F,0.F}};}
+        return new float[][]{{0f,-0F,0.F}};}
 
     public boolean shouldRiderSit() {
         return false;
@@ -185,7 +180,7 @@ public class Entity94xx extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new UK94 ()};
+        return new ModelBase[]{new GWR57()};
     }
 
     @SideOnly(Side.CLIENT)
