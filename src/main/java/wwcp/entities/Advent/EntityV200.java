@@ -4,8 +4,11 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
+import ebf.tim.api.TransportSkin;
 import ebf.tim.entities.EntityTrainCore;
+import ebf.tim.models.Bogie;
 import ebf.tim.registry.URIRegistry;
+import ebf.tim.utility.CommonUtil;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.item.Item;
@@ -81,8 +84,8 @@ public class EntityV200 extends EntityTrainCore {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.V200().additionalTextTitle) + Transport.V200().additionalText,
-                RailUtility.translate(Transport.V200().additionalTextTitle2) + Transport.V200().additionalText2};}
+        {return new String[]{CommonUtil.translate(Transport.V200().additionalTextTitle) + Transport.V200().additionalText,
+                CommonUtil.translate(Transport.V200().additionalTextTitle2) + Transport.V200().additionalText2};}
     }
 
     @Override
@@ -92,32 +95,24 @@ public class EntityV200 extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V200/V200_purpurrot.png",
                 "textures/bogies/EUBogies/V200_bogies.png",
                 "BR Livery", "Standard commissioned British Rail livery");
-    }
-
-    /**
-     * ETERNAL NOTE: though these two methods are marked depreciated, they will be supported long-run
-     * the replacement method is
-     *     public Bogie[] bogies()
-     *     a new bogie is defined like
-     *         new Bogie(ModelBase MODEL, float[] OFFSET)
-     *         the reason for this new method is so bogies can have their subBogie[] variable set
-     *         to add bogies on your bogie that have similar independent rotation-
-     *         to the host bogie, as the host bogie has to the train.
-     *
-     * @return
-     */
-    @Override
-    public float[][] bogieModelOffsets() {
-        return new float[][]{{2.8f, 0f, 0}, {-2.8f, 0f, 0}};
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(
+                worldwidecontentpack.MODID,"textures/locomotive/Diesel/V200/V200_purpurrot.png",
+                "Green", "Standard commissioned British Rail livery")
+                .setBogieTextures("textures/bogies/EUBogies/V200_bogies.png")
+                .setSubBogieTextures("textures/subGreen.png"));
     }
 
     @Override
-    public ModelBase[] bogieModels() {
-        return new ModelBase[]{new V200Bogie()};
+    @SideOnly(Side.CLIENT)
+    public Bogie[] bogies(){
+        return new Bogie[]{
+                new Bogie(new V200Bogie(),2.8f,0f,0f),
+                new Bogie(new V200Bogie(),-2.8f,0f,0f)
+        };
     }
 
     @Override
-    public float[] bogieLengthFromCenter(){return new float[]{3f,-3f};}
+    public float[] bogieLengthFromCenter(){return new float[]{2.8f,-2.8f};}
 
     @Override
     public List<TrainsInMotion.transportTypes> getTypes() {
@@ -127,7 +122,7 @@ public class EntityV200 extends EntityTrainCore {
     //in what units is this?
     //ETERNAL NOTE: millibuckets, so 1000 is a bucket.
     @Override
-    public float getMaxFuel(){return 1;}
+    public float getMaxFuel(){return 1000;}
 
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{1.3f,1.2f, 0f}};}
