@@ -181,7 +181,7 @@ public class EntityClassMK extends EntityTrainCore {
      */
     @Override
     public void manageFuel(){
-        fuelHandler.manageElectric(this);
+        fuelHandler.manageDiesel(this);
     }
 
     /**

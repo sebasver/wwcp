@@ -7,17 +7,17 @@
 // Created on: 17.06.2021 - 22:19:10
 // Last changed on: 17.06.2021 - 22:19:10
 
-package wwcp.models.bogies; //Path where the model is located
+package wwcp.models.bogies.EUBogies; //Path where the model is located
 
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
-public class DSBSBogieTrailing extends ModelBase //Same as Filename
+public class DSBSBogieLeading extends ModelBase //Same as Filename
 {
 	int textureX = 128;
 	int textureY = 32;
 
-	public DSBSBogieTrailing() //Same as Filename
+	public DSBSBogieLeading() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[8];
 

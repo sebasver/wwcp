@@ -111,11 +111,11 @@ public class EntityHLD55 extends EntityTrainCore {
 
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-4.25f,1.55f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.5f,1.6f, -0.3f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.35f,2.2f,1.5f};
+        return new float[]{9.5f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {

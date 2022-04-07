@@ -49,7 +49,7 @@ public class EntityUKCattleWagen extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.625f,0F,0.065F}};
+        return new float[][]{{0f,0F,0.065F}};
     }
 
     public void registerSkins() {
@@ -109,7 +109,7 @@ public class EntityUKCattleWagen extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{2.95f, 1.4f, 1.4F};
+        return new float[]{2.95f, 2f, 1.4F};
     }
 
     public float getPistonOffset() {

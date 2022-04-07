@@ -49,65 +49,75 @@ public class EntityDSBClassEA extends EntityTrainCore {
 
     @Override
     public String transportName() {
-        return Transport.F140MS2E().name;
+        return Transport.DSBClassEA().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.F140MS2E().country;
+        return Transport.DSBClassEA().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.F140MS2E().year;
+        return Transport.DSBClassEA().year;
     }
 
     @Override
     public String transportFuelType() {
-        return Transport.F140MS2E().fuel;
+        return Transport.DSBClassEA().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.F140MS2E().fictional;
+        return Transport.DSBClassEA().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return Transport.F140MS2E().tractive_effort;
+        return Transport.DSBClassEA().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return Transport.F140MS2E().metric_horsepower;
+        return Transport.DSBClassEA().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return Transport.F140MS2E().weightinKGs;
+        return Transport.DSBClassEA().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.F140MS2E().reinforced;
+        return Transport.DSBClassEA().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(Transport.F140MS2E().additionalTextTitle) + Transport.F140MS2E().additionalText,
-                    RailUtility.translate(Transport.F140MS2E().additionalTextTitle2) + Transport.F140MS2E().additionalText2};
+            return new String[]{RailUtility.translate(Transport.DSBClassEA().additionalTextTitle) + Transport.DSBClassEA().additionalText,
+                    RailUtility.translate(Transport.DSBClassEA().additionalTextTitle2) + Transport.DSBClassEA().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? Transport.F140MS2E().backTopSpeed : Transport.F140MS2E().topSpeed;
+        return accelerator < 0 ? Transport.DSBClassEA().backTopSpeed : Transport.DSBClassEA().topSpeed;
     }
 
     @Override
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/DSBClassEA/EA_DSB1.png", "textures/bogies//EUBogies/EABogie.png",
                 "DSB Red/Black", "Used to be the first design for the Class EA Locomotives. The Red/Black can still be seen on the locomotives that was sold to Bulmarket");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/DSBClassEA/EA_DSB2.png", "textures/bogies//EUBogies/EABogie.png",
+                "DSB Blue", "Used to be the second design for the Class EA Locomotives. Unlike the Class ME, the 5 remaining EA's lost their blue livery in 2016");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/DSBClassEA/EA_DSB3.png", "textures/bogies//EUBogies/EABogie.png",
+                "DSB Red", "Last design for the Class EA Locomotives before their retirements in 2020.");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/DSBClassEA/EA_RDK.png", "textures/bogies//EUBogies/EABogie.png",
+                "Railion DK", "When Railion Dk was formed in 2001, the Class EA's were not repainted, only lost the DSB marker");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/DSBClassEA/86_DB1.png", "textures/bogies//EUBogies/EABogie.png",
+                "DB Schenker", "The EA's that were sold to Bulmarket were given new DB Schenker logo. Bulmarket is a part of DB Schenker in Bulgaria.");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/DSBClassEA/86_DB2.png", "textures/bogies//EUBogies/EABogie.png",
+                "DB Cargo", "Some of the EA's was painted in DB Schenker Livery");
     }
 
     @Override
@@ -132,7 +142,7 @@ public class EntityDSBClassEA extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.075f, 2.5f, 1.5f};
+        return new float[]{10f, 2.5f, 1.5f};
     }
 
     public ItemStack[] getRecipe() {

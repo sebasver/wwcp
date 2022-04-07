@@ -1,4 +1,4 @@
-package wwcp.entities.Advent;
+package wwcp.entities.locomotives.diesels;
     //This is a documentation class for copy pasting into a Diesel train class.
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -17,11 +17,9 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.Advent.*;
-import wwcp.models.bogies.Class87Bogie;
 import wwcp.models.bogies.EUBogies.V200Bogie;
 import wwcp.worldwidecontentpack;
-
+import wwcp.models.locomotives.diesels.V200;
 import java.util.List;
 import java.util.UUID;
 
@@ -130,7 +128,7 @@ public class EntityV200 extends EntityTrainCore {
     public float getMaxFuel(){return 1;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.3f,1.2f, 0f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.15f,1.35f, -0.275f}};}
 
 
     @Override
@@ -140,7 +138,7 @@ public class EntityV200 extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.5f,2f,1.5f};
+        return new float[]{8.9f,2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -269,7 +267,7 @@ public class EntityV200 extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new V200Teaser()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new V200()};}
 
     //For sound effects
     @SideOnly(Side.CLIENT)
