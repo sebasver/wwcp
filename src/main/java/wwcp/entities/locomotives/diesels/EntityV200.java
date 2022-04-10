@@ -1,4 +1,4 @@
-package wwcp.entities.Advent;
+package wwcp.entities.locomotives.diesels;
     //This is a documentation class for copy pasting into a Diesel train class.
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
