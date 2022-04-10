@@ -19,7 +19,7 @@ public class V160_164 extends ModelBase //Same as Filename
 
 	public V160_164() //Same as Filename
 	{
-        bodyModel = new ModelRendererTurbo[347];
+        bodyModel = new ModelRendererTurbo[350];
 
         initbodyModel_1();
 
@@ -378,6 +378,9 @@ public class V160_164 extends ModelBase //Same as Filename
         bodyModel[344] = new ModelRendererTurbo(this, 308, 241, textureX, textureY); // Smoke 03
         bodyModel[345] = new ModelRendererTurbo(this, 308, 241, textureX, textureY); // Smoke 04
         bodyModel[346] = new ModelRendererTurbo(this, 308, 241, textureX, textureY); // Smoke 05
+        bodyModel[347] = new ModelRendererTurbo(this, 485, 181, textureX, textureY); // Box 0
+        bodyModel[348] = new ModelRendererTurbo(this, 4, 289, textureX, textureY); // Box 109
+        bodyModel[349] = new ModelRendererTurbo(this, 4, 318, textureX, textureY); // Box 109
 
         bodyModel[0].addBox(0F, 0F, 0F, 74, 12, 1, 0F); // Box 0
         bodyModel[0].setRotationPoint(-32F, -13F, 10F);
@@ -1439,5 +1442,14 @@ public class V160_164 extends ModelBase //Same as Filename
 
         bodyModel[346].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Smoke 05
         bodyModel[346].setRotationPoint(-28.5F, -25.25F, 1F);
+
+        bodyModel[347].addShapeBox(0F, 0F, 0F, 9, 9, 1, 0F,0F, -0.5F, -1F, -3F, -0.5F, -1F, -3F, -0.5F, 0.25F, 0F, -0.5F, 0.25F, 0F, -3F, 0F, -3F, -3F, 0F, -3F, -3F, -0.75F, 0F, -3F, -0.75F); // Box 0
+        bodyModel[347].setRotationPoint(-37F, -19F, -11.25F);
+
+        bodyModel[348].addShapeBox(0F, 0F, 0F, 42, 24, 0, 0F,0F, 0F, 0F, -22F, 0F, 0F, -22F, 0F, 0F, 0F, 0F, 0F, 0F, -13F, 0F, -22F, -13F, 0F, -22F, -13F, 0F, 0F, -13F, 0F); // Box 109
+        bodyModel[348].setRotationPoint(37F, -13F, -11.25F);
+
+        bodyModel[349].addShapeBox(0F, 0F, 0F, 42, 24, 0, 0F,0F, 0F, 0F, -22F, 0F, 0F, -22F, 0F, 0F, 0F, 0F, 0F, 0F, -13F, 0F, -22F, -13F, 0F, -22F, -13F, 0F, 0F, -13F, 0F); // Box 109
+        bodyModel[349].setRotationPoint(-56F, -13F, 11.25F);
     }
 }
