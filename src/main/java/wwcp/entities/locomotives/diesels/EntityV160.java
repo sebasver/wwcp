@@ -102,6 +102,9 @@ public class EntityV160 extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V160/215/BR215VR.png",
                 "textures/bogies/EUBogies/V160/V160BogieGray.png",
                 "215 DB Verkehrsrot", "The last design the 215's got in DBAG");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V160/215/BR215VRSS.png",
+                "textures/bogies/EUBogies/V160/V160BogieGray.png",
+                "215 DB SyltShuttle", "14 locomotives were from 2000 to 2007 used on the Sylt Shuttle trains");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V160/217/BR217OB.png",
                 "textures/bogies/EUBogies/V160/V160BogieGrayBrown.png",
                 "217 DB Oceanblau", "The Oceanblau and Beige colors");
@@ -158,7 +161,19 @@ public class EntityV160 extends EntityTrainCore {
                 "218 V2 DB Verkehrsrot", "The last design the 218's got in DBAG");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V160/218/BR218VR2P.png",
                 "textures/bogies/EUBogies/V160/V160BogieGray.png",
-                "218 V2P DB Verkehrsrot", "The last design the 218's got in DBAG");
+                "218 V2 Plow DB Verkehrsrot", "The last design the 218's got in DBAG");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V160/218/BR218VR1SS.png",
+                "textures/bogies/EUBogies/V160/V160BogieGray.png",
+                "218 V1 DB SyltShuttle", "Some of the 218's were carrying SyltShuttle logo");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V160/218/BR218VR1PSS.png",
+                "textures/bogies/EUBogies/V160/V160BogieGray.png",
+                "218 V1 Plow DB SyltShuttle", "Some of the 218's were carrying SyltShuttle logo");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V160/218/BR218VR2SS.png",
+                "textures/bogies/EUBogies/V160/V160BogieGray.png",
+                "218 V2 DB SyltShuttle", "Some of the 218's were carrying SyltShuttle logo");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V160/218/BR218VR2PSS.png",
+                "textures/bogies/EUBogies/V160/V160BogieGray.png",
+                "218 V2 Plow DB SyltShuttle", "Some of the 218's were carrying SyltShuttle logo");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/V160/218/BR218DI.png",
                 "textures/bogies/EUBogies/V160/V160BogieRedGray.png",
                 "218 Märklin & Piko", "Special livery of a collaportation between Märklin and Piko");
