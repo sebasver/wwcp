@@ -424,6 +424,12 @@ public class Transport {
                 67000.0f, 8600.0f, 87.0f, 140f, false, true, 0);
     }
 
+    public static Transport.LocomotiveNoBackspeed DSBClassEA() {
+        return new Transport.LocomotiveNoBackspeed("Class EA", "Denmark, Bulgaria, Romainia", "1984-", "Electric",
+                "", "", type, " Universal Locomotive",
+                45000.0f, 5030.0f, 84.0f, 175f, false, true, 0);
+    }
+
     public static Transport.LocomotiveNoBackspeed F40ph() {
         return new Transport.LocomotiveNoBackspeed("F40PH", "America", "1949-Present", "Diesel",
                 nick, "", type, " Freight Locomotive",
@@ -739,6 +745,20 @@ public class Transport {
                 130f, 530f, 40f, 60f, false, true, 0);
     }
 
+    //Class MH
+    public static Transport.LocomotiveNoBackspeed ClassMH() {
+        return new Transport.LocomotiveNoBackspeed("ClassMH", "Denmark", "1960-2001", "Diesel",
+                nick, "", type, " Shunting Locomotive",
+                130f, 440f, 40.5f, 60f, false, true, 0);
+    }
+
+    //V160 215 - 218
+    public static Transport.LocomotiveNoBackspeed V160() {
+        return new Transport.LocomotiveNoBackspeed("V160", "Germany", "1968-2022", "Diesel",
+                nick, "", type, " Universal Locomotive",
+                40000f, 2470f, 79f, 140f, false, true, 0);
+    }
+
     //NE 81 / BR626
     public static Transport.LocomotiveNoBackspeed BRClass121() {
         return new Transport.LocomotiveNoBackspeed("BRClass121", "Germany", "1981-1995", "Diesel",
@@ -746,6 +766,12 @@ public class Transport {
                 0f, 679.81f, 46.0f, 100f, false, true, 0);
     }
 
+    //HLD55
+    public static Transport.LocomotiveNoBackspeed HLD55() {
+        return new Transport.LocomotiveNoBackspeed("HLD55", "Belgium, Luxembourg, Denmark, Germany, Sweden", "1961-", "Diesel",
+                nick, "", type, " Universal Locomotive",
+                77000f, 1951f, 110f, 120f, false, true, 0);
+    }
 
     //NE 81 / BR626
     public static Transport.LocomotiveNoBackspeed NE81() {
@@ -1316,6 +1342,12 @@ public class Transport {
     public static Transport.TankCars DSBCarE() {
         return new Transport.TankCars("DBSE", "Denmark", "1960-1990", "",
                 "", type, " Freight loose", 12f, 0f, false, true, 0,  9000);
+    }
+
+    //Lgns
+    public static Transport.Rollingstock Lgns() {
+        return new Transport.Rollingstock("Lgns", "Europe", "1980s", "",
+                "", type, " Flatcar", 15f, 120f, false, true, 0);
     }
 }
 

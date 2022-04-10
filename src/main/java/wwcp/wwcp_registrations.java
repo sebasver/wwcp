@@ -9,7 +9,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import wwcp.blockEntities.platform.*;
 import wwcp.entities.freight.*;
-import wwcp.entities.Advent.*;
 import wwcp.entities.locomotives.diesels.*;
 import wwcp.entities.locomotives.electrics.*;
 import wwcp.entities.locomotives.steamers.*;
@@ -21,10 +20,10 @@ import wwcp.entities.locomotives.steamers.BR50.DR.*;
 import wwcp.entities.locomotives.steamers.BR50.DB.*;
 import wwcp.entities.passengerstock.*;
 import wwcp.entities.railbusses.EntityNE81;
-import wwcp.entities.railbusses.EntitySeries4000;
 import wwcp.entities.railbusses.EntityVT98;
 import wwcp.entities.railbusses.EntityVT98AD;
-import wwcp.entities.tender.*;
+import wwcp.entities.tender.Entity3000GalonTender;
+import wwcp.entities.tender.EntityT32Christmas;
 import wwcp.entities.tender.germanTenders.*;
 
 import static ebf.tim.registry.TiMGenericRegistry.registerTransports;
@@ -111,7 +110,7 @@ public class wwcp_registrations {
     // Steam trains
     public static GenericRailTransport[] listSteamTrains() {
         return new GenericRailTransport[]{
-                new EntityGWR94xx(null),
+                new Entity94xx(null),
                 new EntityClass812(null),
                 new EntityDRBR01(null),
                 new EntityDRBR01_5(null),
@@ -140,15 +139,8 @@ public class wwcp_registrations {
                 new EntityDBBR50_40(null),
                 new EntityDRBR01WitteChristmas(null),
                 new EntitySentinel100HPChristmas(null),
-                new EntityTEESteuerWagen(null),
-                new EntityV200(null),
-                new EntityX10a(null),
-                new EntityDSBFIII(null),
-                new EntityDSBSII(null),
-                new EntityGWR57(null),
-                new EntityJ38(null),
-                new EntityJ39(null),
-                new EntityU1F(null)
+                new EntityDSBFII(null)
+
         };
     }
 
@@ -167,9 +159,7 @@ public class wwcp_registrations {
                 new EntityT37(null),
                 new EntityT37DRG(null),
                 new EntityT38(null),
-                new EntityT38Oil(null),
-                new EntityG4200Tender(null),
-                new EntityVanderBuiltTender(null)
+                new EntityT38Oil(null)
         };
     }
 
@@ -185,7 +175,9 @@ public class wwcp_registrations {
                 new EntityMZClassTwo(null),
                 new EntityMZClassTwo1970(null),
                 new EntityMZClassThree(null),
+                new EntityMZClassThree1972(null),
                 new EntityMZClassFour(null),
+                new EntityClassME(null),
                 new EntityKofIII(null),
                 new EntityKofIII2(null),
                 new EntityF7A(null),
@@ -198,12 +190,9 @@ public class wwcp_registrations {
                 new EntitySD60Mac(null),
                 new EntityGP50(null),
                 new EntityM640(null),
-                new EntityGP7HighHood(null),
-                new EntityU33B(null),
-                new EntitySD70ACU(null),
-                new EntityAlco_PA(null),
-                new EntityAlco_PB(null),
-                new EntityRS3(null)
+                new EntityClassMK(null),
+                new EntityClassMH(null),
+                new EntityHLD55(null),
         };
     }
 
@@ -212,9 +201,7 @@ public class wwcp_registrations {
         return new GenericRailTransport[]{
                 new EntityNE81(null),
                 new EntityVT98AD(null),
-                new EntityVT98(null),
-                new EntitySeries4000(null),
-                new EntityTEESchweizzBar(null)
+                new EntityVT98(null)
         };
     }
 
@@ -230,13 +217,7 @@ public class wwcp_registrations {
                 new EntityTraxxF140MS2E(null),
                 new EntityV36Electric(null),
                 new EntityES64U2(null),
-                new EntityES64U4(null),
-                new EntitySteepleCab(null),
-                new EntityClass87(null),
-                new EntityHighliner(null),
-                new EntityE44DB(null),
-                new EntityE94(null),
-                new EntityAEM7(null)
+                new EntityES64U4(null)
         };
     }
 
@@ -262,8 +243,9 @@ public class wwcp_registrations {
                 new EntityGWRThirdChristmas(null),
                 new EntityACF_60Seats(null),
                 new EntityAmfleet1(null),
-                new EntityBOCaboose(null),
-                new EntityEurofimaPresidentiale(null)
+                new EntityBOCaboose(null)
+
+
         };
     }
 
@@ -299,12 +281,8 @@ public class wwcp_registrations {
                 new EntityCP_Plug_Slide(null),
                 new EntityCP_Minibox(null),
                 new EntityCP_Plugdoor(null),
-                new EntityUKCattleWagen(null),
-                new EntityUKGasWagen(null),
-                new EntityDSBZETanker(null),
-                new EntityDSB735Tanker(null),
-                new Entity40ftAAR_Boxcar(null)
+                new EntityDSBCarE(null),
+                new EntityLgns(null)
         };
     }
 }
-

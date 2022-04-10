@@ -53,14 +53,15 @@ item.WehrmachtslokomotiveWR360C14Kanzel.name=Wehrmachtslokomotive WR 360 C 14 Ka
 item.WehrmachtslokomotiveWR360C14Electric.name=Wehrmachtslokomotive WR 360 C 14 Electric
 item.KoFIII1.name=KoF III Type 1
 item.KoFIII2.name=KoF III Type 2
-item.MZI.name=MZ I
-item.MZI1967.name= MZ I 1967
-item.MZII.name=MZ II
-item.MZII1970.name=MZ II 1970
-item.MZIII.name=MZ III
+item.MZI.name=Class MZ I
+item.MZI1967.name=Class MZ I 1967
+item.MZII.name=Class MZ II
+item.MZII1970.name=Class MZ II 1970
+item.MZIII.name=Class MZ III
 item.MZIII1972.name=MZ III 1972
 item.ClassME.name=Class ME
-item.MZIV.name=MZ IV
+item.HLD55.name=HLD55
+item.MZIV.name=Class MZ IV
 item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
 item.ES64U2.name=ES64U2
 item.ES64U4.name=ES64U4
@@ -101,6 +102,8 @@ item.DBBR01_10NeuKesselOil.name=DB BR 01.10 Neu Kessel Oil
 item.DRGBR01(850mm).name=DRG BR 01 (850mm)
 item.DRGBR01_10Streamlined.name=DRG BR 01.10 Streamlined
 item.DRGBR01_10UnStreamlined.name=DRG BR 01.10
+item.ClassMK.name=G322/G400B
+item.ClassMH.name=DSB Class MH
 
 
 
@@ -163,6 +166,7 @@ item.SGNSS80Load3.name=Sggns(s) 80' Load 3
 item.SGNSS80Load4.name=Sggns(s) 80' Load 4
 item.Zacns95.name=Zacns 95
 item.Ealos-X.name=Ealos-x
+item.Lgns.name=Lgns
 
 
 
