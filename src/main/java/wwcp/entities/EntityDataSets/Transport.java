@@ -424,6 +424,12 @@ public class Transport {
                 67000.0f, 8600.0f, 87.0f, 140f, false, true, 0);
     }
 
+    public static Transport.LocomotiveNoBackspeed DSBClassEA() {
+        return new Transport.LocomotiveNoBackspeed("Class EA", "Denmark, Bulgaria, Romainia", "1984-", "Electric",
+                "", "", type, " Universal Locomotive",
+                45000.0f, 5030.0f, 84.0f, 175f, false, true, 0);
+    }
+
     public static Transport.LocomotiveNoBackspeed F40ph() {
         return new Transport.LocomotiveNoBackspeed("F40PH", "America", "1949-Present", "Diesel",
                 nick, "", type, " Freight Locomotive",
@@ -746,6 +752,13 @@ public class Transport {
                 130f, 440f, 40.5f, 60f, false, true, 0);
     }
 
+    //V160 215 - 218
+    public static Transport.LocomotiveNoBackspeed V160() {
+        return new Transport.LocomotiveNoBackspeed("V160", "Germany", "1968-2022", "Diesel",
+                nick, "", type, " Universal Locomotive",
+                40000f, 2470f, 79f, 140f, false, true, 0);
+    }
+
     //NE 81 / BR626
     public static Transport.LocomotiveNoBackspeed BRClass121() {
         return new Transport.LocomotiveNoBackspeed("BRClass121", "Germany", "1981-1995", "Diesel",
@@ -757,7 +770,7 @@ public class Transport {
     public static Transport.LocomotiveNoBackspeed HLD55() {
         return new Transport.LocomotiveNoBackspeed("HLD55", "Belgium, Luxembourg, Denmark, Germany, Sweden", "1961-", "Diesel",
                 nick, "", type, " Universal Locomotive",
-                88000f, 1951f, 110f, 120f, false, true, 0);
+                77000f, 1951f, 110f, 120f, false, true, 0);
     }
 
     //NE 81 / BR626
