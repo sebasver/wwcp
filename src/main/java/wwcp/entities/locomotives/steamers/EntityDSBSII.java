@@ -19,12 +19,9 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.DSBSBogieLeading;
-import wwcp.models.bogies.DSBSBogieTrailing;
-import wwcp.models.bogies.X10a_Front_Truck;
-import wwcp.models.bogies.X10a_Rear_Truck;
+import wwcp.models.bogies.EUBogies.DSBSBogieLeading;
+import wwcp.models.bogies.EUBogies.DSBSBogieTrailing;
 import wwcp.models.locomotives.steamers.DSBSII;
-import wwcp.models.locomotives.steamers.X10a;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;

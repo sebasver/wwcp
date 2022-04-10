@@ -138,7 +138,7 @@ public class EntityUKTanker extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{2.95f, 1.4f, 1.4F};
+        return new float[]{2.95f, 2f, 1.4F};
     }
 
     public float getPistonOffset() {

@@ -25,7 +25,7 @@ import java.util.UUID;
 
 public class EntitySeries4000 extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntitySeries4000(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntitySeries4000(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
