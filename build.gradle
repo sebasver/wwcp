@@ -5,6 +5,10 @@ buildscript {
             name = "gt"
             url = "https://gregtech.overminddl1.com/"
         }
+	maven {
+	    url = "http://files.minecraftforge.net/maven"
+	}
+
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'

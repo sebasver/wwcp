@@ -6,6 +6,7 @@ import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
+import ebf.tim.utility.CommonUtil;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
 import net.minecraft.item.Item;
@@ -69,8 +70,8 @@ public class EntityClassMH extends EntityTrainCore {
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.ClassMH().additionalTextTitle) + Transport.ClassMH().additionalText,
-                RailUtility.translate(Transport.ClassMH().additionalTextTitle2) + Transport.ClassMH().additionalText2};}
+        {return new String[]{CommonUtil.translate(Transport.ClassMH().additionalTextTitle) + Transport.ClassMH().additionalText,
+                CommonUtil.translate(Transport.ClassMH().additionalTextTitle2) + Transport.ClassMH().additionalText2};}
     }
 
     @Override
