@@ -203,7 +203,18 @@ public class wwcp_registrations {
                 new EntitySD70ACU(null),
                 new EntityAlco_PA(null),
                 new EntityAlco_PB(null),
-                new EntityRS3(null)
+                new EntityRS3(null),
+                new EntitySD7(null),
+                new EntityCPA164(null),
+                new EntityRS23(null),
+                new EntitySD90MACH(null),
+                new EntityCFA164(null),
+                new EntitySD452(null),
+                new EntityGP9R(null),
+                new EntitySD402W(null),
+                new EntitySD382(null),
+                new EntityBL2(null)
+
         };
     }
 
@@ -263,7 +274,8 @@ public class wwcp_registrations {
                 new EntityACF_60Seats(null),
                 new EntityAmfleet1(null),
                 new EntityBOCaboose(null),
-                new EntityEurofimaPresidentiale(null)
+                new EntityEurofimaPresidentiale(null),
+                new EntityCPMetalVan(null)
         };
     }
 
@@ -303,7 +315,8 @@ public class wwcp_registrations {
                 new EntityUKGasWagen(null),
                 new EntityDSBZETanker(null),
                 new EntityDSB735Tanker(null),
-                new Entity40ftAAR_Boxcar(null)
+                new Entity40ftAAR_Boxcar(null),
+                new EntityCP40ftMechanicalReefer(null)
         };
     }
 }

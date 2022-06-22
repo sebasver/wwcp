@@ -65,7 +65,7 @@ item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
 item.ES64U2.name=ES64U2
 item.ES64U4.name=ES64U4
 item.F7A.name=F7A
-item.GP7.name=GP7
+item.GP7HighHood.name=GP7
 item.GP50.name=GP50
 item.FP7A.name=FP7A
 item.RS18.name=RS18
@@ -101,6 +101,25 @@ item.DBBR01_10NeuKesselOil.name=DB BR 01.10 Neu Kessel Oil
 item.DRGBR01(850mm).name=DRG BR 01 (850mm)
 item.DRGBR01_10Streamlined.name=DRG BR 01.10 Streamlined
 item.DRGBR01_10UnStreamlined.name=DRG BR 01.10
+item.X10A.name=CNR X10A
+item.U1F.name=CNR U-1-F
+item.SD7.name=SD7
+item.RS3.name=RS3
+item.AlcoPA.name=PA
+item.AlcoPB.name=PB
+item.U33B.name=U33B
+item.SD70ACU.name=SD70ACU
+item.SteepleCab.name=Steeple Cab
+item.AEM7.name=AEM-7
+item.HighlinerLocomotive.name=Highliner Cab Car
+item.CPA-16-4.name=CPA-16-4
+item.RS23.name=RS23
+item.SD90MACH.name=SD90MAC-H
+item.CFA-16-4.name=CFA-16-4
+item.SD45-2.name=SD45-2
+item.GP9R.name=GP9R
+item.SD40-2W.name=SD40-2W
+item.SD38-2.name=SD38-2
 
 
 
@@ -153,8 +172,8 @@ item.SPw4u28.name=SPw4u28
 item.UKWindcutter.name= UK Windcutter
 item.B&OCaboose.name=B&O Caboose
 item.PRRGlaHopper.name=PRR Gla Hopper
-item.40ftCPPlugSlideBoxCar.name=40ft CP Plug slide Box car
-item.40ftCPMiniBox.name=40ft CP Mini box
+item.40ftCPPlugSlideBoxcar.name=40ft CP Plug slide Box car
+item.40ftCPMinibox.name=40ft CP Minibox
 item.40ftCPPlugdoorBoxcar.name=40ft CP Plug door Box Car
 item.F140MS2E.name=F140 MS2E
 item.SGNSS80Load1.name=Sggns(s) 80' Load 1
@@ -163,6 +182,9 @@ item.SGNSS80Load3.name=Sggns(s) 80' Load 3
 item.SGNSS80Load4.name=Sggns(s) 80' Load 4
 item.Zacns95.name=Zacns 95
 item.Ealos-X.name=Ealos-x
+item.40ftAARBoxcar.name=40ft AAR Standard Boxcar
+item.CP40ftMechanicalRefrigerator.name=CP 40ft Mechanical Refrigerator
+item.CPMetalVan.name=CP Metal Van
 
 
 
@@ -186,6 +208,7 @@ item.T38Oil.name=T38 Oil Tender
 T322'2'.name=T32 2'2'
 item.T322'2'Christmas.name=T32 2'2' Christmas
 item.Class812Tender.name=Class 812 Tender
+item.VanderBuilt.name=CNR Vanderbuilt Tender
 
 <!-- ## Blocks ## --!>
 tile.wwcp.blockBorderPlatform.name=Boarding Platform

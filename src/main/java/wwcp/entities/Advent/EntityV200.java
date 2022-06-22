@@ -17,9 +17,10 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.Advent.*;
+import wwcp.entities.Advent.*;
 import wwcp.models.bogies.Class87Bogie;
 import wwcp.models.bogies.EUBogies.V200Bogie;
+import wwcp.models.locomotives.diesels.V200;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -269,7 +270,7 @@ public class EntityV200 extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new V200Teaser()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new V200()};}
 
     //For sound effects
     @SideOnly(Side.CLIENT)
