@@ -7,7 +7,7 @@
 // Created on: 04.03.2019 - 13:12:58
 // Last changed on: 04.03.2019 - 13:12:58
 
-package java.wwcp.models.passengerStock; //Path where the model is located
+package wwcp.models.passengerStock; //Path where the model is located
 
 
 import fexcraft.tmt.slim.ModelBase;
