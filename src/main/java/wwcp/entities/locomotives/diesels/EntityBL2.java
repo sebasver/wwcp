@@ -78,9 +78,9 @@ public class EntityBL2 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/BL2/BL2.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/BL2/BL2_RI_Freight.png",
                 "textures/bogies/blombergB_silver.png",
-                "BL2", "Standard EMD demonstrator scheme");
+                "CRI&P Freight", "Chicago, Rock Island and Pacific in freight scheme");
 
         //todo fix above entry.
     }
