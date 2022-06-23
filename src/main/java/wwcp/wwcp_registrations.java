@@ -111,7 +111,7 @@ public class wwcp_registrations {
     // Steam trains
     public static GenericRailTransport[] listSteamTrains() {
         return new GenericRailTransport[]{
-                new EntityGWR94xx(null),
+                new Entity94xx(null),
                 new EntityClass812(null),
                 new EntityDRBR01(null),
                 new EntityDRBR01_5(null),
@@ -140,6 +140,7 @@ public class wwcp_registrations {
                 new EntityDBBR50_40(null),
                 new EntityDRBR01WitteChristmas(null),
                 new EntitySentinel100HPChristmas(null),
+                new EntityDSBFII(null),
                 new EntityTEESteuerWagen(null),
                 new EntityV200(null),
                 new EntityX10a(null),
@@ -185,7 +186,9 @@ public class wwcp_registrations {
                 new EntityMZClassTwo(null),
                 new EntityMZClassTwo1970(null),
                 new EntityMZClassThree(null),
+                new EntityMZClassThree1972(null),
                 new EntityMZClassFour(null),
+                new EntityClassME(null),
                 new EntityKofIII(null),
                 new EntityKofIII2(null),
                 new EntityF7A(null),
@@ -213,7 +216,10 @@ public class wwcp_registrations {
                 new EntityGP9R(null),
                 new EntitySD402W(null),
                 new EntitySD382(null),
-                new EntityBL2(null)
+                new EntityBL2(null),
+                new EntityClassMK(null),
+                new EntityClassMH(null),
+                new EntityHLD55(null)
 
         };
     }
@@ -316,7 +322,9 @@ public class wwcp_registrations {
                 new EntityDSBZETanker(null),
                 new EntityDSB735Tanker(null),
                 new Entity40ftAAR_Boxcar(null),
-                new EntityCP40ftMechanicalReefer(null)
+                new EntityCP40ftMechanicalReefer(null),
+                new EntityDSBCarE(null),
+                new EntityLgns(null)
         };
     }
 }

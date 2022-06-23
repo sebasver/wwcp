@@ -19,7 +19,7 @@ public class DSBMK extends ModelBase //Same as Filename
 
 	public DSBMK() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[295];
+		bodyModel = new ModelRendererTurbo[299];
 
 		initbodyModel_1();
 
@@ -326,6 +326,10 @@ public class DSBMK extends ModelBase //Same as Filename
 		bodyModel[292] = new ModelRendererTurbo(this, 214, 134, textureX, textureY); // Import Box3
 		bodyModel[293] = new ModelRendererTurbo(this, 214, 145, textureX, textureY); // Import Box3
 		bodyModel[294] = new ModelRendererTurbo(this, 214, 145, textureX, textureY); // Import Box3
+		bodyModel[295] = new ModelRendererTurbo(this, 494, 88, textureX, textureY); // Import Box28
+		bodyModel[296] = new ModelRendererTurbo(this, 500, 88, textureX, textureY); // Import Box28
+		bodyModel[297] = new ModelRendererTurbo(this, 482, 88, textureX, textureY); // Import Box28
+		bodyModel[298] = new ModelRendererTurbo(this, 488, 88, textureX, textureY); // Import Box28
 
 		bodyModel[0].addBox(0F, 0F, 0F, 42, 2, 22, 0F); // Import Box0
 		bodyModel[0].setRotationPoint(-21F, 0F, -11F);
@@ -1217,5 +1221,17 @@ public class DSBMK extends ModelBase //Same as Filename
 		bodyModel[294].addShapeBox(-17F, 0F, 0F, 37, 7, 0, 0F,-16.25F, -3F, 0F, -16.25F, -3F, 0F, -16.25F, -3F, 0F, -16.25F, -3F, 0F, -16.25F, -3F, 0F, -16.25F, -3F, 0F, -16.25F, -3F, 0F, -16.25F, -3F, 0F); // Import Box3
 		bodyModel[294].setRotationPoint(27.7F, -16F, 1.9F);
 		bodyModel[294].rotateAngleY = 1.57079633F;
+
+		bodyModel[295].addShapeBox(0F, 0F, 0F, 1, 12, 1, 0F,0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 2F, 0F, 0F, 2F, 0F, -6F, 0F, 0F, -6F, 0F, 0F, -6F, 0F, 0F, -6F, 0F); // Import Box28
+		bodyModel[295].setRotationPoint(3F, -20F, -11F);
+
+		bodyModel[296].addShapeBox(0F, 0F, 0F, 1, 12, 1, 0F,0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 2F, 0F, 0F, 2F, 0F, -6F, 0F, 0F, -6F, 0F, 0F, -6F, 0F, 0F, -6F, 0F); // Import Box28
+		bodyModel[296].setRotationPoint(15.5F, -20F, -11F);
+
+		bodyModel[297].addShapeBox(0F, 0F, 0F, 1, 12, 1, 0F,0F, 0F, 2F, 0F, 0F, 2F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, -6F, 0F, 0F, -6F, 0F, 0F, -6F, 0F, 0F, -6F, 0F); // Import Box28
+		bodyModel[297].setRotationPoint(3F, -20F, 10F);
+
+		bodyModel[298].addShapeBox(0F, 0F, 0F, 1, 12, 1, 0F,0F, 0F, 2F, 0F, 0F, 2F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, -6F, 0F, 0F, -6F, 0F, 0F, -6F, 0F, 0F, -6F, 0F); // Import Box28
+		bodyModel[298].setRotationPoint(15.5F, -20F, 10F);
 	}
 }

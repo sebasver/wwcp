@@ -19,7 +19,7 @@ public class DSBMH extends ModelBase //Same as Filename
 
 	public DSBMH() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[323];
+		bodyModel = new ModelRendererTurbo[327];
 
 		initbodyModel_1();
 
@@ -354,6 +354,10 @@ public class DSBMH extends ModelBase //Same as Filename
 		bodyModel[320] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // Box 0
 		bodyModel[321] = new ModelRendererTurbo(this, 105, 89, textureX, textureY); // Box 22
 		bodyModel[322] = new ModelRendererTurbo(this, 105, 89, textureX, textureY); // Box 22
+		bodyModel[323] = new ModelRendererTurbo(this, 424, 108, textureX, textureY); // Box 60
+		bodyModel[324] = new ModelRendererTurbo(this, 430, 108, textureX, textureY); // Box 60
+		bodyModel[325] = new ModelRendererTurbo(this, 436, 108, textureX, textureY); // Box 60
+		bodyModel[326] = new ModelRendererTurbo(this, 442, 108, textureX, textureY); // Box 60
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 64, 1, 22, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-32F, -1.5F, -11F);
@@ -1330,5 +1334,17 @@ public class DSBMH extends ModelBase //Same as Filename
 
 		bodyModel[322].addShapeBox(0F, 0F, 0F, 5, 4, 2, 0F,0F, 0.25F, 0F, 0F, 0.25F, 0F, 0F, 0.25F, 0F, 0F, 0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 22
 		bodyModel[322].setRotationPoint(-7.95F, -5.5F, -0.5F);
+
+		bodyModel[323].addShapeBox(0F, 0F, 0F, 1, 6, 1, 0F,0F, 0.5F, 1.5F, 0F, 0.5F, 1.5F, -0.05F, 0.5F, -1.5F, 0F, 0.5F, -1.5F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, -0.05F, -0.25F, 0F, 0F, -0.25F, 0F); // Box 60
+		bodyModel[323].setRotationPoint(-8.95F, -19.5F, 9.5F);
+
+		bodyModel[324].addShapeBox(0F, 0F, 0F, 1, 6, 1, 0F,0F, 0.5F, 1.5F, 0F, 0.5F, 1.5F, 0F, 0.5F, -1.5F, -0.05F, 0.5F, -1.5F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, -0.05F, -0.25F, 0F); // Box 60
+		bodyModel[324].setRotationPoint(6.55F, -19.5F, 9.5F);
+
+		bodyModel[325].addShapeBox(0F, 0F, 0F, 1, 6, 1, 0F,0F, 0.5F, -1.5F, -0.05F, 0.5F, -1.5F, 0F, 0.5F, 1.5F, 0F, 0.5F, 1.5F, 0F, -0.25F, 0F, -0.05F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F); // Box 60
+		bodyModel[325].setRotationPoint(-8.95F, -19.5F, -10.5F);
+
+		bodyModel[326].addShapeBox(0F, 0F, 0F, 1, 6, 1, 0F,-0.05F, 0.5F, -1.5F, 0F, 0.5F, -1.5F, 0F, 0.5F, 1.5F, 0F, 0.5F, 1.5F, -0.05F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F); // Box 60
+		bodyModel[326].setRotationPoint(6.55F, -19.5F, -10.5F);
 	}
 }
