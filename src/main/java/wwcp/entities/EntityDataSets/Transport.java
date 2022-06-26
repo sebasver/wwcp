@@ -745,13 +745,6 @@ public class Transport {
                 130f, 530f, 40f, 60f, false, true, 0);
     }
 
-    //Class MH
-    public static Transport.LocomotiveNoBackspeed ClassMH() {
-        return new Transport.LocomotiveNoBackspeed("ClassMH", "Denmark", "1960-2001", "Diesel",
-                nick, "", type, " Shunting Locomotive",
-                130f, 440f, 40.5f, 60f, false, true, 0);
-    }
-
     //V160 215 - 218
     public static Transport.LocomotiveNoBackspeed V160() {
         return new Transport.LocomotiveNoBackspeed("V160", "Germany", "1968-2022", "Diesel",
@@ -961,9 +954,9 @@ public class Transport {
 
     //todo right stats
     public static Transport.LocomotiveNoBackspeed ClassMH() {
-        return new Transport.LocomotiveNoBackspeed("ClassMH", "Europe", "2012-", "Diesel-Multi-Engine",
-                "", "", type, " Passenger Locomotive",
-                6744.26f, 3061.86f, 81.0f, 160f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("ClassMH", "Denmark", "1960-2001", "Diesel",
+                "", "", type, "Shunting Locomotive",
+                130f, 440f, 45.50f, 60f, false, true, 0);
     }
 
     //Wehrmachtslokomotive WR 360 C 14 / V36
@@ -1062,6 +1055,30 @@ public class Transport {
     public static Transport.Rollingstock EurofimaSleeper() {
         return new Transport.Rollingstock("EurofimaSleeper", "Europe", "1977-", "",
                 "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //APO_BFS
+    public static Transport.Rollingstock APO_BFS() {
+        return new Transport.Rollingstock("APO BFs", "Denmark", "1981-1995", "",
+                "Control Coach", type, " Passenger", 54f, 160f, false, true, 0);
+    }
+
+    //APO_BFM todo unfinished
+    public static Transport.Rollingstock APO_BFM() {
+        return new Transport.Rollingstock("APO BFm", "Denmark", "1981-1995", "",
+                "", type, " Passenger", 54f, 160f, false, true, 0);
+    }
+
+    //APO_AFM todo unfinished
+    public static Transport.Rollingstock APO_AFM() {
+        return new Transport.Rollingstock("APO AFm", "Denmark", "1981-1995", "",
+                "", type, " Passenger", 54f, 160f, false, true, 0);
+    }
+
+    //APO_CFM todo unfinished
+    public static Transport.Rollingstock APO_CFM() {
+        return new Transport.Rollingstock("APO CFm", "Denmark", "1981-1995", "",
+                "", type, " Passenger", 54f, 160f, false, true, 0);
     }
 
     //GWR Third
@@ -1209,13 +1226,13 @@ public class Transport {
 
     //DSB ZE Tanker todo right stats
     public static Transport.Rollingstock DSBZETanker() {
-        return new Transport.Rollingstock("DSBZETanker", "United Kingdom", "1930-1959", "",
+        return new Transport.Rollingstock("DSBZETanker", "Denmark", "1930-1959", "",
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
 
     //DSB735Tanker todo right stats
     public static Transport.Rollingstock DSB735Tanker() {
-        return new Transport.Rollingstock("DSB735Tanker", "United Kingdom", "1930-1959", "",
+        return new Transport.Rollingstock("DSB735Tanker", "Denmark", "1990-2000s", "",
                 "", type, " Freight Loose", 10f, 0f, false, true, 0);
     }
 
@@ -1308,6 +1325,12 @@ public class Transport {
                 "", type, " Boxcar", 26f, 120f, false, true, 0);
     }
 
+    //Habiins_12
+    public static Transport.Rollingstock Habiins_12() {
+        return new Transport.Rollingstock("Habiins_12", "Europe", "2000s", "",
+                "", type, " Boxcar", 26f, 120f, false, true, 0);
+    }
+
     //Hbbins
     public static Transport.Rollingstock Hbbins() {
         return new Transport.Rollingstock("Hbbins", "Europe", "1990s", "",
@@ -1340,7 +1363,13 @@ public class Transport {
 
     //DSB E Open Wagon
     public static Transport.TankCars DSBCarE() {
-        return new Transport.TankCars("DBSE", "Denmark", "1960-1990", "",
+        return new Transport.TankCars("DSBE", "Denmark", "1960-1990", "",
+                "", type, " Freight loose", 12f, 0f, false, true, 0,  9000);
+    }
+
+    //GS Van
+    public static Transport.TankCars GSVan() {
+        return new Transport.TankCars("GS", "Denmark", "1960-1990", "",
                 "", type, " Freight loose", 12f, 0f, false, true, 0,  9000);
     }
 
