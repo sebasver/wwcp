@@ -111,7 +111,7 @@ public class wwcp_registrations {
     // Steam trains
     public static GenericRailTransport[] listSteamTrains() {
         return new GenericRailTransport[]{
-                new Entity94xx(null),
+                new EntityGWR94xx(null),
                 new EntityClass812(null),
                 new EntityDRBR01(null),
                 new EntityDRBR01_5(null),

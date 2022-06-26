@@ -128,7 +128,7 @@ public class EntityE44DB extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.075f, 2.5f, 1.5f};
+        return new float[]{7.2f, 2.5f, 1.5f};
     }
 
     public ItemStack[] getRecipe() {

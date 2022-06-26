@@ -1425,7 +1425,7 @@ public class Transport {
         return new Transport.TankCars("DBSE", "Denmark", "1960-1990", "",
                 "", type, " Freight loose", 12f, 0f, false, true, 0,  9000);
     }
-    
+
     //Lgns
     public static Transport.Rollingstock Lgns() {
         return new Transport.Rollingstock("Lgns", "Europe", "1980s", "",
