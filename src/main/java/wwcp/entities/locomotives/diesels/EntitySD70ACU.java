@@ -93,7 +93,7 @@ public class EntitySD70ACU extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70ACU/SD70ACU_CP_N.png",
                 "textures/bogies/HTSCtruck_Black.png",
-                "CP N", "Canadian Pacific");
+                "CP Beaver", "Canadian Pacific with beaver logo");
     }
 
     /**
@@ -113,11 +113,11 @@ public class EntitySD70ACU extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.9f,0f,0},{-3.7f,0f,0}};
+        return new float[][]{{3.3f,0f,0},{-3.3f,0f,0}};
     }
 
     @Override
-    public float[] bogieLengthFromCenter(){return new float[]{3f,-3f};}
+    public float[] bogieLengthFromCenter(){return new float[]{3.3f,-3.3f};}
 
     @Override
     public List<TrainsInMotion.transportTypes> getTypes() {
@@ -130,17 +130,17 @@ public class EntitySD70ACU extends EntityTrainCore {
     public float getMaxFuel(){return 1;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.3f,1.2f, 0f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.6f,1.45f, -0.3f}};}
 
 
     @Override
     public boolean shouldRiderSit(){
-        return false;
+        return true;
     }
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{7f,2f,1.5f};
+        return new float[]{10.3f,2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -187,7 +187,7 @@ public class EntitySD70ACU extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0f,-0F,0.F}};}
+        return new float[][]{{-0.35f,-0F,0.F}};}
         
     /**
      * <h2>Fluid Tank Capacity</h2>

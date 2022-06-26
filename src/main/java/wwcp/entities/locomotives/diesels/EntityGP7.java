@@ -82,7 +82,7 @@ public class EntityGP7 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_BRC_2_No.png", "textures/bogies/blombergB_black.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_BRC-2_N.png", "textures/bogies/blombergB_black.png",
                 "BRC", "Belt Railway of Chicago scheme");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_Algoma_Central_No.png", "textures/bogies/blombergB_black.png",
                 "Algoma Central", "Algoma Central classic road diesel scheme");
@@ -90,7 +90,7 @@ public class EntityGP7 extends EntityTrainCore {
                 "Burlington Northern", "Burlington Northern with beacon & tanks");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_CN_Black_No.png", "textures/bogies/blombergB_black.png",
                 "CN Noodle", "Canadian National with CN noodle logo on the side");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_CP_Action_Red_No.png", "textures/bogies/blombergB_black.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_CP_Action_Red_N.png", "textures/bogies/blombergB_black.png",
                 "CP Rail 8'inch Stripe", "CP Rail Action Red with 8'inch stripe");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_Mopac_White_No.png", "textures/bogies/blombergB_black.png",
                 "Mopac Grey & Blue", "Mopac grey & blue, sued for passenger service");
@@ -102,6 +102,13 @@ public class EntityGP7 extends EntityTrainCore {
                 "SLSF Orange", "Frisco in orange & white");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_THB_No.png", "textures/bogies/blombergB_black.png",
                 "TH&B", "Toronto, Hamilton & Buffalo maroon & cream");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_WP_Green.png", "textures/bogies/blombergB_black.png",
+                "WP Green", "Western Pacific in Green");
+    }
+
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:WP Green";
     }
 
     @Override
