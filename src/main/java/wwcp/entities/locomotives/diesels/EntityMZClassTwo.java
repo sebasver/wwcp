@@ -19,6 +19,7 @@ import wwcp.models.bogies.EUBogies.MzBogie;
 import wwcp.models.locomotives.diesels.DSBMzII;
 import wwcp.worldwidecontentpack;
 
+import java.util.List;
 import java.util.UUID;
 
 
@@ -108,8 +109,8 @@ public class EntityMZClassTwo extends EntityTrainCore {
     @Override
     public float getMaxFuel(){return 20;}
 
-
-    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.DIESEL;
+    @Override
+    public List<TrainsInMotion.transportTypes> getTypes() { return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
 
     @Override
@@ -134,7 +135,7 @@ public class EntityMZClassTwo extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{3f,0.05f,0},{-3f,0.05f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{3f,0.0f,0},{-3f,0.0f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new MzBogie()}; }
@@ -151,7 +152,7 @@ public class EntityMZClassTwo extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.03f,-0.05F,0.F}};}
+        return new float[][]{{0.03f,-0.0F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>
@@ -172,14 +173,26 @@ public class EntityMZClassTwo extends EntityTrainCore {
      * <h2>Fluid Tank Capacity</h2>
      */
     //@Override
-    public int[] getTankCapacity(){return new int[]{9161, 800};}
+    public int[] getTankCapacity(){return new int[]{9161};}
 
-    @Override
-    public boolean isItemValidForSlot(int slot, ItemStack stack){
-        switch (slot){
-            case 400:{return stack!=null && stack.getItem() ==Items.redstone;}
-            default:{return true;}
-        }}
+    public int[] getParticleData(int id) {
+        switch (id){
+            case 0:{return new int[]{1, 50, 0x6a6a6a};}//EMD smoke
+            case 1:{return super.getParticleData(id);}//heavy smoke
+            case 2:{return super.getParticleData(id);}//steam
+            case 3:{return super.getParticleData(id);}//led lamp
+            case 4:{return super.getParticleData(id);}//reverse lamp
+            case 5:{return super.getParticleData(id);}//small sphere lamp
+
+            default:{return new int[]{5, 100, 0xf3da90};}
+        }
+    }
+
+    public String[] setParticles(){
+
+        return new String[]{"smoke ,0,2,1.15,0,0,0,0"};
+
+    }
 
     /**
      * <h2>fuel management</h2>
@@ -187,7 +200,7 @@ public class EntityMZClassTwo extends EntityTrainCore {
      */
 
     public void manageFuel() {
-        this.fuelHandler.manageElectric(this);
+        this.fuelHandler.manageDiesel(this);
     }
 
     /**

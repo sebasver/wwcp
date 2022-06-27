@@ -78,6 +78,8 @@ item.GWR57.name=GWR 57xx
 item.GWR9400Class.name=GWR 94xx
 item.Class812.name=CR Class 812/652
 item.DSBFII.name=DSB Class F (II)
+item.DSBFIII.name=DSB Class F (III)
+item.DSBSII.name=DSB Class S (II)
 item.BL2.name=BL2
 item.HS4000.name=HS4000
 item.V36.name=DRG V36
@@ -104,6 +106,9 @@ item.DRGBR01_10Streamlined.name=DRG BR 01.10 Streamlined
 item.DRGBR01_10UnStreamlined.name=DRG BR 01.10
 item.ClassMK.name=G322/G400B
 item.ClassMH.name=DSB Class MH
+item.DSBClassEA.name=DSB Class EA
+item.V200.name=V200
+item.V160.name=V160
 
 
 
@@ -121,6 +126,7 @@ item.Zacns.name=ZACNS95
 item.EalosX.name=Ealos-X
 item.Habbiins_14.name=Habbiins-14
 item.Habbiins_17.name=Habbiins-17
+item.Habiins_12.name=Habiins-12
 item.60'HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
 item.40ftBoxcar.name=40ft Boxcar
 item.89ftBiLevelAutoRack.name=89ft Autorack 2
@@ -167,6 +173,10 @@ item.SGNSS80Load4.name=Sggns(s) 80' Load 4
 item.Zacns95.name=Zacns 95
 item.Ealos-X.name=Ealos-x
 item.Lgns.name=Lgns
+item.APO_BFS.name=APO BFS
+item.APO_BFM.name=APO BFM
+item.APO_AFM.name=APO AFM
+item.APO_CFM.name=APO CFM
 
 
 

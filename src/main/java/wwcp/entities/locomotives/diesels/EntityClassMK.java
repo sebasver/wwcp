@@ -142,7 +142,7 @@ public class EntityClassMK extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.0f,-0.05F,0F}};}
+        return new float[][]{{-0.0f,-0.0F,0F}};}
 
     /**
      * <h2>rider sit or stand</h2>
