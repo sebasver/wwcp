@@ -127,7 +127,7 @@ public class EntityJ38 extends EntityTrainCore {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, 0.1F};
+        return new float[]{1.4F, -1.1F};
     }
 
     public float getRenderScale() {

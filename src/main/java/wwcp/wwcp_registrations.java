@@ -20,6 +20,8 @@ import wwcp.entities.locomotives.steamers.BR50.DRG.*;
 import wwcp.entities.locomotives.steamers.BR50.DR.*;
 import wwcp.entities.locomotives.steamers.BR50.DB.*;
 import wwcp.entities.passengerstock.*;
+import wwcp.entities.passengerstock.Eurofima.*;
+import wwcp.entities.passengerstock.RheingoldOld.*;
 import wwcp.entities.railbusses.EntityNE81;
 import wwcp.entities.railbusses.EntitySeries4000;
 import wwcp.entities.railbusses.EntityVT98;
@@ -141,8 +143,6 @@ public class wwcp_registrations {
                 new EntityDRBR01WitteChristmas(null),
                 new EntitySentinel100HPChristmas(null),
                 new EntityDSBFII(null),
-                new EntityTEESteuerWagen(null),
-                new EntityV200(null),
                 new EntityX10a(null),
                 new EntityDSBFIII(null),
                 new EntityDSBSII(null),
@@ -219,7 +219,8 @@ public class wwcp_registrations {
                 new EntityBL2(null),
                 new EntityClassMK(null),
                 new EntityClassMH(null),
-                new EntityHLD55(null)
+                new EntityHLD55(null),
+                new EntityV200(null)
 
         };
     }
@@ -231,7 +232,6 @@ public class wwcp_registrations {
                 new EntityVT98AD(null),
                 new EntityVT98(null),
                 new EntitySeries4000(null),
-                new EntityTEESchweizzBar(null)
         };
     }
 
@@ -253,7 +253,8 @@ public class wwcp_registrations {
                 new EntityHighliner(null),
                 new EntityE44DB(null),
                 new EntityE94(null),
-                new EntityAEM7(null)
+                new EntityAEM7(null),
+                new EntityTEESteuerWagen(null),
         };
     }
 
@@ -281,7 +282,14 @@ public class wwcp_registrations {
                 new EntityAmfleet1(null),
                 new EntityBOCaboose(null),
                 new EntityEurofimaPresidentiale(null),
-                new EntityCPMetalVan(null)
+                new EntityTEESchweizzBar(null),
+                new EntityCPMetalVan(null),
+                new EntityEurofimaFlatConstruction(null),
+                new EntityEurofimaAssembling(null),
+                new EntityEurofimaGettingPaint(null),
+                new EntityEurofimaInteriorFitting(null),
+                new EntityEurofimaCompartment1_2(null),
+                new EntityEurofimaCompartment2(null)
         };
     }
 

@@ -1122,9 +1122,45 @@ public class Transport {
                 "", type, " Passenger", 45f, 200f, false, true, 0);
     }
 
-    //todo Eurofima with Compartments
+    //Eurofima with Compartments
+    public static Transport.Rollingstock EurofimaCompartment1_2() {
+        return new Transport.Rollingstock("EurofimaCompartments1_2", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //Eurofima with Compartments
+    public static Transport.Rollingstock EurofimaCompartment2() {
+        return new Transport.Rollingstock("EurofimaCompartments2", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //todo Eurofima
     public static Transport.Rollingstock EurofimaPresidentiale() {
         return new Transport.Rollingstock("EurofimaPresidentiale", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //todo Eurofima
+    public static Transport.Rollingstock EurofimaAssemblingBase() {
+        return new Transport.Rollingstock("EurofimaAssemblingBase", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //todo Eurofima
+    public static Transport.Rollingstock EurofimaInteriorFitting() {
+        return new Transport.Rollingstock("EurofimaInteriorFitting", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //todo Eurofima
+    public static Transport.Rollingstock EurofimaFlatConstruction() {
+        return new Transport.Rollingstock("EurofimaFlatConstruction", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //todo Eurofima
+    public static Transport.Rollingstock EurofimaGettingPaint() {
+        return new Transport.Rollingstock("EurofimaGettingPaint", "Europe", "1977-", "",
                 "", type, " Passenger", 45f, 200f, false, true, 0);
     }
 

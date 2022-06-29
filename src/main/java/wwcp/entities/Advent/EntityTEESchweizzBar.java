@@ -13,9 +13,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.EUBogies.EurofimaBogie;
 import wwcp.models.bogies.EUBogies.TEEBogie;
-import wwcp.models.passengerStock.EurofimaCompartment1;
 import wwcp.models.railbusses.TEEBarWagon;
 import wwcp.worldwidecontentpack;
 

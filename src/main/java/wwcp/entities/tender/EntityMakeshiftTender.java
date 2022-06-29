@@ -14,10 +14,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidRegistry;
-import scala.tools.ant.sabbus.Make;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.tenders.Class812Tender;
 import wwcp.models.tenders.MakeshiftTender;
 import wwcp.worldwidecontentpack;
 
