@@ -143,7 +143,7 @@ public class EntityDSB_AFM extends GenericRailTransport {
      * <h2>Rider offsets</h2>
      */
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-5.75f,1.2f, -0.25f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{2.2f,0.90f, -0.45f}};}
 
     @Override
     public float[] getHitboxSize() {
