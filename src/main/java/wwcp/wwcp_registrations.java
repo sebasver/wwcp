@@ -144,6 +144,7 @@ public class wwcp_registrations {
                 new EntitySentinel100HPChristmas(null),
                 new EntityDSBFII(null),
                 new EntityX10a(null),
+                new EntityDSBFII(null),
                 new EntityDSBFIII(null),
                 new EntityDSBSII(null),
                 new EntityGWR57(null),
@@ -189,6 +190,9 @@ public class wwcp_registrations {
                 new EntityMZClassThree1972(null),
                 new EntityMZClassFour(null),
                 new EntityClassME(null),
+                new EntityClassMH(null),
+                new EntityClassMK(null),
+                new EntityHLD55(null),
                 new EntityKofIII(null),
                 new EntityKofIII2(null),
                 new EntityF7A(null),
@@ -220,8 +224,9 @@ public class wwcp_registrations {
                 new EntityClassMK(null),
                 new EntityClassMH(null),
                 new EntityHLD55(null),
-                new EntityV200(null)
-
+                new EntityV200(null),
+                new EntityV160(null),
+                new EntityRS3(null)
         };
     }
 
@@ -253,6 +258,8 @@ public class wwcp_registrations {
                 new EntityHighliner(null),
                 new EntityE44DB(null),
                 new EntityE94(null),
+                new EntityAEM7(null),
+                new EntityDSBClassEA(null),
                 new EntityAEM7(null),
                 new EntityTEESteuerWagen(null),
         };
@@ -289,7 +296,11 @@ public class wwcp_registrations {
                 new EntityEurofimaGettingPaint(null),
                 new EntityEurofimaInteriorFitting(null),
                 new EntityEurofimaCompartment1_2(null),
-                new EntityEurofimaCompartment2(null)
+                new EntityEurofimaCompartment2(null),
+                new EntityDSB_BFS(null),
+                new EntityDSB_BFM(null),
+                new EntityDSB_AFM(null),
+                new EntityDSB_CFM(null)
         };
     }
 
@@ -310,6 +321,7 @@ public class wwcp_registrations {
                 new EntityFortyFoot_Boxcar(null),
                 new EntityHabbiins_14(null),
                 new EntityHabbiins_17(null),
+                new EntityHabiins_12(null),
                 new EntitySGNSS603TATEU(null),
                 new EntitySGNSS602TATEU(null),
                 new EntityUKFlatbed(null),
@@ -329,10 +341,10 @@ public class wwcp_registrations {
                 new EntityUKGasWagen(null),
                 new EntityDSBZETanker(null),
                 new EntityDSB735Tanker(null),
+                new EntityLgns(null),
                 new Entity40ftAAR_Boxcar(null),
-                new EntityCP40ftMechanicalReefer(null),
-                new EntityDSBCarE(null),
-                new EntityLgns(null)
+                new EntityGS(null),
+                new EntityDSBCarE(null)
         };
     }
 }

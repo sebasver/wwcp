@@ -1,7 +1,6 @@
 package wwcp.models.bogies.AmericanTrucks;
 
 
-import ebf.tim.render.StaticModelAnimator;
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
@@ -32,10 +31,10 @@ public class Type_B extends ModelBase
 		bodyModel[5] = new ModelRendererTurbo(this, 49, 1, textureX, textureY); // Box 110
 		bodyModel[6] = new ModelRendererTurbo(this, 57, 1, textureX, textureY); // Box 172
 		bodyModel[7] = new ModelRendererTurbo(this, 73, 1, textureX, textureY); // Box 173
-		bodyModel[8] = new ModelRendererTurbo(this, 81, 1, textureX, textureY).setName(StaticModelAnimator.tagWheel); // Box 9
-		bodyModel[9] = new ModelRendererTurbo(this, 97, 1, textureX, textureY).setName(StaticModelAnimator.tagWheel); // Box 39
-		bodyModel[10] = new ModelRendererTurbo(this, 113, 1, textureX, textureY).setName(StaticModelAnimator.tagWheel); // Box 6
-		bodyModel[11] = new ModelRendererTurbo(this, 129, 1, textureX, textureY).setName(StaticModelAnimator.tagWheel); // Box 8
+		bodyModel[8] = new ModelRendererTurbo(this, 81, 1, textureX, textureY); // Box 9
+		bodyModel[9] = new ModelRendererTurbo(this, 97, 1, textureX, textureY); // Box 39
+		bodyModel[10] = new ModelRendererTurbo(this, 113, 1, textureX, textureY); // Box 6
+		bodyModel[11] = new ModelRendererTurbo(this, 129, 1, textureX, textureY); // Box 8
 		bodyModel[12] = new ModelRendererTurbo(this, 145, 1, textureX, textureY); // Box 120
 		bodyModel[13] = new ModelRendererTurbo(this, 153, 1, textureX, textureY); // Box 138
 		bodyModel[14] = new ModelRendererTurbo(this, 177, 1, textureX, textureY); // Box 139

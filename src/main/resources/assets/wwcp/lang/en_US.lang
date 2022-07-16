@@ -58,6 +58,7 @@ item.MZI1967.name=Class MZ I 1967
 item.MZII.name=Class MZ II
 item.MZII1970.name=Class MZ II 1970
 item.MZIII.name=Class MZ III
+item.MZIII1972.name=MZ III 1972
 item.ClassME.name=Class ME
 item.HLD55.name=HLD55
 item.MZIV.name=Class MZ IV
@@ -65,7 +66,7 @@ item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
 item.ES64U2.name=ES64U2
 item.ES64U4.name=ES64U4
 item.F7A.name=F7A
-item.GP7HighHood.name=GP7
+item.GP7.name=GP7
 item.GP50.name=GP50
 item.FP7A.name=FP7A
 item.RS18.name=RS18
@@ -77,6 +78,8 @@ item.GWR57.name=GWR 57xx
 item.GWR9400Class.name=GWR 94xx
 item.Class812.name=CR Class 812/652
 item.DSBFII.name=DSB Class F (II)
+item.DSBFIII.name=DSB Class F (III)
+item.DSBSII.name=DSB Class S (II)
 item.BL2.name=BL2
 item.HS4000.name=HS4000
 item.V36.name=DRG V36
@@ -103,25 +106,9 @@ item.DRGBR01_10Streamlined.name=DRG BR 01.10 Streamlined
 item.DRGBR01_10UnStreamlined.name=DRG BR 01.10
 item.ClassMK.name=G322/G400B
 item.ClassMH.name=DSB Class MH
-item.X10A.name=CNR X10A
-item.U1F.name=CNR U-1-F
-item.SD7.name=SD7
-item.RS3.name=RS3
-item.AlcoPA.name=PA
-item.AlcoPB.name=PB
-item.U33B.name=U33B
-item.SD70ACU.name=SD70ACU
-item.SteepleCab.name=Steeple Cab
-item.AEM7.name=AEM-7
-item.HighlinerLocomotive.name=Highliner Cab Car
-item.CPA-16-4.name=CPA-16-4
-item.RS23.name=RS23
-item.SD90MACH.name=SD90MAC-H
-item.CFA-16-4.name=CFA-16-4
-item.SD45-2.name=SD45-2
-item.GP9R.name=GP9R
-item.SD40-2W.name=SD40-2W
-item.SD38-2.name=SD38-2
+item.DSBClassEA.name=DSB Class EA
+item.V200.name=V200
+item.V160.name=V160
 
 
 
@@ -139,6 +126,7 @@ item.Zacns.name=ZACNS95
 item.EalosX.name=Ealos-X
 item.Habbiins_14.name=Habbiins-14
 item.Habbiins_17.name=Habbiins-17
+item.Habiins_12.name=Habiins-12
 item.60'HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
 item.40ftBoxcar.name=40ft Boxcar
 item.89ftBiLevelAutoRack.name=89ft Autorack 2
@@ -174,8 +162,8 @@ item.SPw4u28.name=SPw4u28
 item.UKWindcutter.name= UK Windcutter
 item.B&OCaboose.name=B&O Caboose
 item.PRRGlaHopper.name=PRR Gla Hopper
-item.40ftCPPlugSlideBoxcar.name=40ft CP Plug slide Box car
-item.40ftCPMinibox.name=40ft CP Minibox
+item.40ftCPPlugSlideBoxCar.name=40ft CP Plug slide Box car
+item.40ftCPMiniBox.name=40ft CP Mini box
 item.40ftCPPlugdoorBoxcar.name=40ft CP Plug door Box Car
 item.F140MS2E.name=F140 MS2E
 item.SGNSS80Load1.name=Sggns(s) 80' Load 1
@@ -184,10 +172,12 @@ item.SGNSS80Load3.name=Sggns(s) 80' Load 3
 item.SGNSS80Load4.name=Sggns(s) 80' Load 4
 item.Zacns95.name=Zacns 95
 item.Ealos-X.name=Ealos-x
-item.40ftAARBoxcar.name=40ft AAR Standard Boxcar
-item.CP40ftMechanicalRefrigerator.name=CP 40ft Mechanical Refrigerator
-item.CPMetalVan.name=CP Metal Van
 item.Lgns.name=Lgns
+item.APO_BFS.name=APO BFS
+item.APO_BFM.name=APO BFM
+item.APO_AFM.name=APO AFM
+item.APO_CFM.name=APO CFM
+
 
 
 <!-- ## Railbusses ## -->
@@ -210,7 +200,6 @@ item.T38Oil.name=T38 Oil Tender
 T322'2'.name=T32 2'2'
 item.T322'2'Christmas.name=T32 2'2' Christmas
 item.Class812Tender.name=Class 812 Tender
-item.VanderBuilt.name=CNR Vanderbuilt Tender
 
 <!-- ## Blocks ## --!>
 tile.wwcp.blockBorderPlatform.name=Boarding Platform

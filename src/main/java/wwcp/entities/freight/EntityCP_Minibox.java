@@ -58,8 +58,6 @@ public class EntityCP_Minibox extends GenericRailTransport {
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/CP_Minibox/Minibox_CP_Script_Noise.png", "textures/bogies/70ton_truck_black.png",
                 "CP Script", "Canadian Pacific in script writing");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/CP_Minibox/CP_Minibox_STW.png", "textures/bogies/70ton_truck_black.png",
-                "CPR Spans The World", "Early CPR Scheme with Spans The World Advertising");
     }
 
     @Override

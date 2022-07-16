@@ -135,7 +135,7 @@ public class EntityMZClassFour extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{3.05f,0.05f,0},{-3.05f,0.05f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{3.05f,0.0f,0},{-3.05f,0.0f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new MzBogie()}; }
@@ -150,7 +150,7 @@ public class EntityMZClassFour extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.0f,-0.05F,0.0F}};}
+        return new float[][]{{-0.0f,-0.0F,0.0F}};}
 
     /**
      * <h2>rider sit or stand</h2>
@@ -186,7 +186,7 @@ public class EntityMZClassFour extends EntityTrainCore {
      */
 
     public void manageFuel() {
-        this.fuelHandler.manageElectric(this);
+        this.fuelHandler.manageDiesel(this);
     }
 
     /**
