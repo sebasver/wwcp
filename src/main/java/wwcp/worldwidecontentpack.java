@@ -7,7 +7,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import ebf.tim.items.TiMTab;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
-import wwcp.proxy.ClientProxy;
 import wwcp.proxy.CommonProxy;
 
 
@@ -44,7 +43,7 @@ public class worldwidecontentpack {
         Denmark = new TiMTab("Danish models", MODID, "myTab10");
         European = new TiMTab("Inter European models", MODID, "myTab9");
         BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
-        FestivitiesTab = new TiMTab("Festive Models", MODID, "festivetab");
+        WWCPTab = new TiMTab("Festive Models", MODID, "WWCPTab");
         //for the eventhandler
         MinecraftForge.EVENT_BUS.register(eventManager);
         wwcp_registrations.registerItems();
@@ -53,7 +52,7 @@ public class worldwidecontentpack {
     }
 
     // declaring of the creative tabs I will be using
-    public static CreativeTabs Belgium, Germany, United_Kingdom, France, Netherlands, America, Austria, Switzerland, Denmark, European, BlocksWWCP, FestivitiesTab;
+    public static CreativeTabs Belgium, Germany, United_Kingdom, France, Netherlands, America, Austria, Switzerland, Denmark, European, BlocksWWCP, WWCPTab;
 
     @SidedProxy(clientSide = "wwcp.proxy.ClientProxy", serverSide = "wwcp.proxy.CommonProxy")
     public static CommonProxy proxy;

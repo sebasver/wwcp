@@ -29,7 +29,7 @@ public class EntityRheingoldSalonOneChristmas extends GenericRailTransport {
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityRheingoldSalonOneChristmas(null), worldwidecontentpack.MODID , worldwidecontentpack.FestivitiesTab);
+    public static final Item thisItem = new WWCPTransport(new EntityRheingoldSalonOneChristmas(null), worldwidecontentpack.MODID , worldwidecontentpack.WWCPTab);
 
 
     public EntityRheingoldSalonOneChristmas(UUID owner, World world, double xPos, double yPos, double zPos) {

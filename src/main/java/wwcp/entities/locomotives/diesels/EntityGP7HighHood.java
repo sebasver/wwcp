@@ -1,4 +1,4 @@
-package wwcp.entities.Advent;
+package wwcp.entities.locomotives.diesels;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -16,7 +16,6 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.AmericanTrucks.Blomberg_B;
-import wwcp.models.locomotives.diesels.GP7;
 import wwcp.models.locomotives.diesels.HighoodGP7;
 import wwcp.worldwidecontentpack;
 

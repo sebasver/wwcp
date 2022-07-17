@@ -10,6 +10,7 @@ import net.minecraft.item.ItemStack;
 import wwcp.blockEntities.platform.*;
 import wwcp.entities.freight.*;
 import wwcp.entities.Advent.*;
+import wwcp.entities.locomotives.diesels.EntityGP7HighHood;
 import wwcp.entities.locomotives.diesels.*;
 import wwcp.entities.locomotives.electrics.*;
 import wwcp.entities.locomotives.steamers.*;
@@ -142,7 +143,6 @@ public class wwcp_registrations {
                 new EntityDBBR50_40(null),
                 new EntityDRBR01WitteChristmas(null),
                 new EntitySentinel100HPChristmas(null),
-                new EntityDSBFII(null),
                 new EntityX10a(null),
                 new EntityDSBFII(null),
                 new EntityDSBFIII(null),
@@ -221,12 +221,8 @@ public class wwcp_registrations {
                 new EntitySD402W(null),
                 new EntitySD382(null),
                 new EntityBL2(null),
-                new EntityClassMK(null),
-                new EntityClassMH(null),
-                new EntityHLD55(null),
                 new EntityV200(null),
                 new EntityV160(null),
-                new EntityRS3(null)
         };
     }
 
@@ -258,7 +254,6 @@ public class wwcp_registrations {
                 new EntityHighliner(null),
                 new EntityE44DB(null),
                 new EntityE94(null),
-                new EntityAEM7(null),
                 new EntityDSBClassEA(null),
                 new EntityAEM7(null),
                 new EntityTEESteuerWagen(null),

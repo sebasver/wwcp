@@ -1,4 +1,4 @@
-package wwcp.entities.Advent;
+package wwcp.entities.freight;
 
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
@@ -12,23 +12,22 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.freight.CattleWagonUK;
-import wwcp.models.freight.UKopenwagon;
+import wwcp.models.freight.UK_GasWagon;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityUKCattleWagen extends GenericRailTransport {
+public class EntityUKGasWagen extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityUKCattleWagen((World)null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
+    public static final Item thisItem = new WWCPTransport(new EntityUKGasWagen((World)null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
-    public EntityUKCattleWagen(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityUKGasWagen(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityUKCattleWagen(World world) {
+    public EntityUKGasWagen(World world) {
         super(world);
     }
 
@@ -49,12 +48,12 @@ public class EntityUKCattleWagen extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,0F,0.065F}};
+        return new float[][]{{0f,0.05F,0F}};
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/cattlewagon/CattleWagon.png",
-                "Default Cattle wagon",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/UKGasWagon/UKGasWagon.png",
+                "Default Gas wagon",
                 "This was the factory skin of the car");
     }
 
@@ -64,11 +63,11 @@ public class EntityUKCattleWagen extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return Transport.UKCattlewagen().reinforced;
+        return Transport.UKGasWagon().reinforced;
     }
 
     public float weightKg() {
-        return Transport.UKCattlewagen().weightinKGs;
+        return Transport.UKGasWagon().weightinKGs;
     }
 
     public ItemStack[] getRecipe() {
@@ -76,28 +75,28 @@ public class EntityUKCattleWagen extends GenericRailTransport {
     }
 
     public String transportName() {
-        return Transport.UKCattlewagen().name;
+        return Transport.UKGasWagon().name;
     }
 
-    public String transportcountry() { return Transport.UKCattlewagen().country; }
+    public String transportcountry() { return Transport.UKGasWagon().country; }
 
-    public String transportYear() { return Transport.UKCattlewagen().year; }
+    public String transportYear() { return Transport.UKGasWagon().year; }
 
     public float transportTopSpeed() {
-        return Transport.UKCattlewagen().topSpeed;
+        return Transport.UKGasWagon().topSpeed;
     }
 
     public boolean isFictional() {
-        return Transport.UKCattlewagen().fictional;
+        return Transport.UKGasWagon().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.UKCattlewagen().additionalTextTitle) + Transport.UKCattlewagen().additionalText,
-                RailUtility.translate(Transport.UKCattlewagen().additionalTextTitle2) + Transport.UKCattlewagen().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.UKGasWagon().additionalTextTitle) + Transport.UKGasWagon().additionalText,
+                RailUtility.translate(Transport.UKGasWagon().additionalTextTitle2) + Transport.UKGasWagon().additionalText2};}
     }
     public int getInventoryRows() {
-        return Transport.UKCattlewagen().rows;
+        return Transport.UKGasWagon().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {
@@ -109,7 +108,7 @@ public class EntityUKCattleWagen extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{2.95f, 2f, 1.4F};
+        return new float[]{3f, 2f, 1.4F};
     }
 
     public float getPistonOffset() {
@@ -117,7 +116,7 @@ public class EntityUKCattleWagen extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new CattleWagonUK()};
+        return new ModelBase[]{new UK_GasWagon()};
     }
 
     public Item getItem() {
