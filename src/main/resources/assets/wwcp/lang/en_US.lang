@@ -64,20 +64,10 @@ item.MZIV.name=MZ IV
 item.Sentinel100HPChristmas.name=Sentinel 100HP Christmas
 item.ES64U2.name=ES64U2
 item.ES64U4.name=ES64U4
-item.F7A.name=F7A
-item.GP7HighHood.name=GP7
-item.GP50.name=GP50
-item.FP7A.name=FP7A
-item.RS18.name=RS18
-item.M640.name=M640
-item.AC4400CW.name=AC4400CW
-item.SD70Mac.name=SD70MAC
-item.SD60Mac.name=SD60MAC
 item.GWR57.name=GWR 57xx
 item.GWR9400Class.name=GWR 94xx
 item.Class812.name=CR Class 812/652
 item.DSBFII.name=DSB Class F (II)
-item.BL2.name=BL2
 item.HS4000.name=HS4000
 item.V36.name=DRG V36
 item.Class37.name=BR Class 37
@@ -101,26 +91,73 @@ item.DBBR01_10NeuKesselOil.name=DB BR 01.10 Neu Kessel Oil
 item.DRGBR01(850mm).name=DRG BR 01 (850mm)
 item.DRGBR01_10Streamlined.name=DRG BR 01.10 Streamlined
 item.DRGBR01_10UnStreamlined.name=DRG BR 01.10
+
+//American Tab
+
 item.X10A.name=CNR X10A
 item.U1F.name=CNR U-1-F
-item.SD7.name=SD7
-item.RS3.name=RS3
+
+item.F7A.name=F7A
+item.F7B.name=EMD F7B
+item.FP7A.name=FP7A
+item.CFA-16-4.name=CFA-16-4
+item.CPA-16-4.name=CPA-16-4
 item.AlcoPA.name=PA
 item.AlcoPB.name=PB
-item.U33B.name=U33B
+item.BL2.name=BL2
+
+item.GP7.name=GP7
+item.GP7RRI.name=GP7R CRI&P
+item.GP9R.name=GP9R
+item.GP40-2LW.name=GP40-2LW
+item.GP50.name=GP50
+
+
+item.SD7.name=SD7
+item.SD38-2.name=SD38-2
+item.SD40-2W.name=SD40-2W
+item.SD45-2.name=SD45-2
+item.SD50.name=SD50
+item.SD60Mac.name=SD60MAC
+item.SD70Mac.name=SD70MAC
+item.SD90MACH.name=SD90MAC-H
 item.SD70ACU.name=SD70ACU
+
+item.RS3.name=RS3
+item.RS18.name=RS18
+item.RS23.name=RS23
+
+item.M640.name=M640
+
+item.U33B.name=U33B
+item.B307a.name=B30-7a
+
+item.AC4400CW.name=AC4400CW
+
 item.SteepleCab.name=Steeple Cab
 item.AEM7.name=AEM-7
 item.HighlinerLocomotive.name=Highliner Cab Car
-item.CPA-16-4.name=CPA-16-4
-item.RS23.name=RS23
-item.SD90MACH.name=SD90MAC-H
-item.CFA-16-4.name=CFA-16-4
-item.SD45-2.name=SD45-2
-item.GP9R.name=GP9R
-item.SD40-2W.name=SD40-2W
-item.SD38-2.name=SD38-2
 
+
+item.40ftBoxcar.name=40ft Boxcar
+item.40ftAARBoxcar.name=40ft AAR Standard Boxcar
+item.CP40ftMechanicalRefrigerator.name=CP 40ft Mechanical Refrigerator
+item.60'HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
+
+item.GSCFlatcar.name=60ft Flatcar
+item.89ftFlatCar.name=89ft Flatcar
+item.89ftBiLevelAutoRack.name=89ft Autorack 2
+
+item.PRRGlaHopper.name=PRR Gla Hopper
+
+item.ACF_Single_Dome.name=ACF Tanker Single Dome
+
+item.CPMetalVan.name=CP Metal Van
+item.B&O_Caboose.nme=B&O Caboose
+item.B&OCaboose.name=B&O Caboose
+
+item.ACF_60Seat.name=ACF 60 Seat Coach
+item.Amfleet1.name=Amfleet Coach 1
 
 
 <!-- ## Rollingstock ## -->
@@ -137,11 +174,6 @@ item.Zacns.name=ZACNS95
 item.EalosX.name=Ealos-X
 item.Habbiins_14.name=Habbiins-14
 item.Habbiins_17.name=Habbiins-17
-item.60'HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
-item.40ftBoxcar.name=40ft Boxcar
-item.89ftBiLevelAutoRack.name=89ft Autorack 2
-item.89ftFlatCar.name=89ft Flatcar
-item.GSCFlatcar.name=60ft Flatcar
 item.Chaldron.name=Chaldron Wagon
 item.SGNSS603TATEU.name=Sgnss60 3 TaTeu
 item.SGNSS602TATEU.name=Sgnss60 2 TaTeu
@@ -153,13 +185,8 @@ item.UKOpenwagon2.name=UK Windcutter Truck
 item.Hbbins.name=Hbbins
 item.Hbbillns.name=Hbbillns
 item.DBSE.name=DSB E Open Wagon
-item.ACF_Single_Dome.name=ACF Tanker Single Dome
 item.name.OFF52Beetle.name=OFF 52 Beetle
 item.GWRToad20.name=GWR Toad Brakevan 20
-item.F7B.name=EMD F7B
-item.B&O_Caboose.nme=B&O Caboose
-item.ACF_60Seat.name=ACF 60 Seat Coach
-item.Amfleet1.name=Amfleet Coach 1
 item.OFF52withbeetles.name=OFF 52 (Beetles)
 item.Donnerbüchse2ndclass.name=Donnerbüsche 2nd class
 item.Donnerbüchse3rdclass.name=Donnerbüsche 3rd class
@@ -170,8 +197,6 @@ item.SA4uk28.name=SA4uk28
 item.SB4uk28.name=SB4uk28
 item.SPw4u28.name=SPw4u28
 item.UKWindcutter.name= UK Windcutter
-item.B&OCaboose.name=B&O Caboose
-item.PRRGlaHopper.name=PRR Gla Hopper
 item.40ftCPPlugSlideBoxcar.name=40ft CP Plug slide Box car
 item.40ftCPMinibox.name=40ft CP Minibox
 item.40ftCPPlugdoorBoxcar.name=40ft CP Plug door Box Car
@@ -182,9 +207,6 @@ item.SGNSS80Load3.name=Sggns(s) 80' Load 3
 item.SGNSS80Load4.name=Sggns(s) 80' Load 4
 item.Zacns95.name=Zacns 95
 item.Ealos-X.name=Ealos-x
-item.40ftAARBoxcar.name=40ft AAR Standard Boxcar
-item.CP40ftMechanicalRefrigerator.name=CP 40ft Mechanical Refrigerator
-item.CPMetalVan.name=CP Metal Van
 
 
 

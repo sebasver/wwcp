@@ -99,14 +99,10 @@ public class EntityCFA164 extends EntityTrainCore {
     @Override
     public float getMaxFuel(){return 20;}
 
-
     @Override
     public List<TrainsInMotion.transportTypes> getTypes(){
         return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
-
-
-
 
     @Override
     public float[][] getRiderOffsets(){return new float[][]{{2.4f, 1.274f, 0.35f}};}

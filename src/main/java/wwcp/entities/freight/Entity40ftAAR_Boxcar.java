@@ -83,6 +83,12 @@ public class Entity40ftAAR_Boxcar extends GenericRailTransport {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_SPS.png",
                 "textures/bogies/70ton_truck_black.png",
                 "SP&S", "Spokane, Portland & Seattle");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_CN.png",
+                "textures/bogies/70ton_truck_black.png",
+                "CN Noodle", "Canadian National in noodle scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_RI.png",
+                "textures/bogies/70ton_truck_black.png",
+                "CRI&P", "Chicago, Rock Island block lettering");
 
     }
 

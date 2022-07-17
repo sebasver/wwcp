@@ -130,11 +130,11 @@ public class EntityU33B extends EntityTrainCore {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.5f,0f,0},{-2.05f,0f,0}};
+        return new float[][]{{2.35f,0f,0},{-2.35f,0f,0}};
     }
 
     @Override
-    public float[] bogieLengthFromCenter(){return new float[]{3f,-3f};}
+    public float[] bogieLengthFromCenter(){return new float[]{2.35f,-2.35f};}
 
     @Override
     public List<TrainsInMotion.transportTypes> getTypes() {
@@ -157,7 +157,7 @@ public class EntityU33B extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{7f,2f,1.5f};
+        return new float[]{7.9f,2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {

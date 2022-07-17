@@ -20,6 +20,7 @@ import wwcp.models.bogies.AmericanTrucks.Blomberg_B;
 import wwcp.models.locomotives.diesels.BL2;
 import wwcp.worldwidecontentpack;
 
+import java.util.List;
 import java.util.UUID;
 
 
@@ -84,25 +85,21 @@ public class EntityBL2 extends EntityTrainCore {
 
         //todo fix above entry.
     }
-    
-    /*@Override
-    public String getDefaultSkin() {
-        return "wwcp:EMD Demonstrator";
-    }*/
 
     @Override
     public float getMaxFuel(){return 20;}
 
-
-    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
+    @Override
+    public List<TrainsInMotion.transportTypes> getTypes(){
+        return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-1.9f, 1.45f, -0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-1.9f, 1.27f, -0.3f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{6.6f,2.2f,1.5f};
+        return new float[]{7.5f,2.2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -138,18 +135,32 @@ public class EntityBL2 extends EntityTrainCore {
         return true;
     }
 
-    //@Override
-    public int[] getTankCapacity(){return new int[]{9161, 800};}
+    public int[] getParticleData(int id) {
+        switch (id){
+            case 0:{return new int[]{1, 40, 0x6a6a6a};}//EMD smoke
+            case 1:{return super.getParticleData(id);}//heavy smoke
+            case 2:{return super.getParticleData(id);}//steam
+            case 3:{return super.getParticleData(id);}//led lamp
+            case 4:{return super.getParticleData(id);}//reverse lamp
+            case 5:{return super.getParticleData(id);}//small sphere lamp
 
-    @Override
-    public boolean isItemValidForSlot(int slot, ItemStack stack){
-        switch (slot){
-            case 400:{return stack!=null && stack.getItem() ==Items.redstone;}
-            default:{return true;}
-        }}
+            default:{return new int[]{5, 100, 0xf3da90};}
+        }
+    }
+
+    public String[] setParticles(){
+
+        return new String[]{"smoke ,0,0.05,0.9,0,0,0,0",
+                "smoke ,0,1,0.9,0,0,0,0"};
+
+    }
+
+    //@Override
+    public int[] getTankCapacity(){return new int[]{9161};}
+
 
     public void manageFuel() {
-        this.fuelHandler.manageElectric(this);
+        this.fuelHandler.manageDiesel(this);
     }
 
     @Override
