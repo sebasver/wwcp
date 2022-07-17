@@ -109,7 +109,7 @@ public class EntityDSBZETanker extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{2.95f, 1.4f, 1.4F};
+        return new float[]{4f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {

@@ -109,7 +109,7 @@ public class EntityMZClassTwo extends EntityTrainCore {
     public float getMaxFuel(){return 20;}
 
 
-    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.ELECTRIC;
+    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.DIESEL;
     }
 
     @Override

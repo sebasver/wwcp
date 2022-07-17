@@ -346,11 +346,11 @@ public class Transport {
                 18300f, 3100f, 51.8f, 160f, false, true, 0);
     }
 
-    //todo stats class 87
+    //class 87
     public static Transport.LocomotiveNoBackspeed Class87() {
-        return new Transport.LocomotiveNoBackspeed("Class87", "Switzerland", "1961-1999", "Electric",
-                nick, "RABe EC", type, " Passenger Multiple Unit Locomotive",
-                18300f, 3100f, 51.8f, 160f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("Class87", "United Kingdom", "1973-Present", "Electric",
+                nick, "", type, " Passenger Locomotive",
+                58000f, 5000f, 81f, 180f, false, true, 0);
     }
 
 
@@ -362,19 +362,19 @@ public class Transport {
 
     //todo TEE bar car
     public static Transport.Rollingstock TEESchweizzBarCar() {
-        return new Transport.Rollingstock("TEESchweizzBarCar", "Europe", "1977-", "",
+        return new Transport.Rollingstock("TEESchweizzBarCar", "Europe", "1977-Present", "",
                 "", type, " Passenger", 45f, 200f, false, true, 0);
     }
 
     public static Transport.LocomotiveNoBackspeed V200() {
-        return new Transport.LocomotiveNoBackspeed("V200", "Germany", "1953-", "Diesel",
+        return new Transport.LocomotiveNoBackspeed("V200", "Germany", "1953-Present", "Diesel",
                 nick, " Taurus", type, " Universal Locomotive",
                 39791f, 2170f, 80.0f, 140f, false, true, 0);
     }
 
     //Class 37
     public static Transport.LocomotiveNoBackspeed Class37() {
-        return new Transport.LocomotiveNoBackspeed("Class37", "United Kingdom", "1960-", "Diesel",
+        return new Transport.LocomotiveNoBackspeed("Class37", "United Kingdom", "1960-Present", "Diesel",
                 nick, " Tractors", type, " Universal Locomotive",
                 55000f, 1750f, 102f, 140f, false, true, 0);
     }
@@ -386,42 +386,48 @@ public class Transport {
                 20170f, 0f, 46.38f, 88.51f, false, true, 0);
     }
 
-    //todo E44
+    //E44
     public static Transport.LocomotiveNoBackspeed E44DB() {
-        return new Transport.LocomotiveNoBackspeed("E44DB", "Europe", "2000-", "Electric",
-                nick, " Taurus", type, " Universal Locomotive",
-                67000.0f, 8600.0f, 86.0f, 230f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("E44DB", "Germany", "1932-1991", "Electric",
+                nick, "", type, " Passenger Locomotive",
+                44062.5f, 2528.9f, 78.0f, 90f, false, true, 0);
     }
 
-    //todo E94
+    //E94
     public static Transport.LocomotiveNoBackspeed E94() {
-        return new Transport.LocomotiveNoBackspeed("E94", "Europe", "2000-", "Electric",
-                nick, " Taurus", type, " Universal Locomotive",
-                67000.0f, 8600.0f, 86.0f, 230f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("E94", "Europe", "1940-1995", "Electric",
+                nick, " Green Crocodile", type, " Freight Locomotive",
+                40000.0f, 4429.0f, 118.5f, 100f, false, true, 0);
     }
 
     public static Transport.LocomotiveNoBackspeed ES64U2() {
-        return new Transport.LocomotiveNoBackspeed("ES64U2", "Europe", "2000-", "Electric",
+        return new Transport.LocomotiveNoBackspeed("ES64U2", "Europe", "2000-Present", "Electric",
                 nick, " Taurus", type, " Universal Locomotive",
                 67000.0f, 8600.0f, 86.0f, 230f, false, true, 0);
     }
 
     public static Transport.LocomotiveNoBackspeed ES64U4() {
-        return new Transport.LocomotiveNoBackspeed("ES64U4", "Europe", "2005-", "Electric",
+        return new Transport.LocomotiveNoBackspeed("ES64U4", "Europe", "2005-Present", "Electric",
                 nick, " Taurus", type, " Universal Locomotive",
                 67000.0f, 8600.0f, 87.0f, 230f, false, true, 0);
     }
 
     public static Transport.LocomotiveNoBackspeed ES64U4Record() {
-        return new Transport.LocomotiveNoBackspeed("ES64U4", "Europe", "2006-", "Electric",
+        return new Transport.LocomotiveNoBackspeed("ES64U4", "Europe", "2006-Present", "Electric",
                 nick, " World Speed Record Taurus", type, " Universal Locomotive",
                 67000.0f, 8600.0f, 87.0f, 357f, false, true, 0);
     }
 
     public static Transport.LocomotiveNoBackspeed ES64F4() {
-        return new Transport.LocomotiveNoBackspeed("ES64F4", "Europe", "2003-", "Electric",
+        return new Transport.LocomotiveNoBackspeed("ES64F4", "Europe", "2003-Present", "Electric",
                 "", "", type, " Freight Locomotive",
                 67000.0f, 8600.0f, 87.0f, 140f, false, true, 0);
+    }
+
+    public static Transport.LocomotiveNoBackspeed DSBClassEA() {
+        return new Transport.LocomotiveNoBackspeed("Class EA", "Denmark, Bulgaria, Romainia", "1984-", "Electric",
+                "", "", type, " Universal Locomotive",
+                45000.0f, 5030.0f, 84.0f, 175f, false, true, 0);
     }
 
     public static Transport.LocomotiveNoBackspeed F40ph() {
@@ -430,11 +436,11 @@ public class Transport {
                 40000f, 1500f, 123.7f, 105f, false, true, 0);
     }
 
-    //F7A todo fix these stats.
+    //BL2
     public static Transport.LocomotiveNoBackspeed BL2() {
-        return new Transport.LocomotiveNoBackspeed("BL2", "America", "1949-Present", "Diesel",
-                nick, "", type, " Freight Locomotive",
-                40000f, 1500f, 123.7f, 105f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("BL2", "America", "1948-Present", "Diesel",
+                nick, "", type, " Universal Locomotive",
+                56200f, 1500f, 104.32f, 105f, false, true, 0);
     }
 
     //CPA-16-4
@@ -834,11 +840,18 @@ public class Transport {
                 130f, 530f, 40f, 60f, false, true, 0);
     }
 
-    //Class MH **PLACEHOLDER**
+    //Class MH
     public static Transport.LocomotiveNoBackspeed ClassMH() {
-        return new Transport.LocomotiveNoBackspeed("ClassMK", "Denmark", "1996-", "Diesel",
-                nick, "Duplo Block", type, " Shunting Locomotive",
-                130f, 530f, 40f, 60f, false, true, 0);
+        return new Transport.LocomotiveNoBackspeed("ClassMH", "Denmark", "1960-2001", "Diesel",
+                nick, "", type, " Shunting Locomotive",
+                130f, 440f, 40.5f, 60f, false, true, 0);
+    }
+
+    //V160 215 - 218
+    public static Transport.LocomotiveNoBackspeed V160() {
+        return new Transport.LocomotiveNoBackspeed("V160", "Germany", "1968-2022", "Diesel",
+                nick, "", type, " Universal Locomotive",
+                40000f, 2470f, 79f, 140f, false, true, 0);
     }
 
     //NE 81 / BR626
@@ -854,6 +867,13 @@ public class Transport {
         return new Transport.LocomotiveNoBackspeed("BR626", "Germany", "1981-1995", "Diesel",
                 aditional, " BR 626", type, " Passenger Railbus",
                 0f, 679.81f, 46.0f, 100f, false, true, 0);
+    }
+
+    //HLD55
+    public static Transport.LocomotiveNoBackspeed HLD55() {
+        return new Transport.LocomotiveNoBackspeed("HLD55", "Belgium, Luxembourg, Denmark, Germany, Sweden", "1961-", "Diesel",
+                nick, "", type, " Universal Locomotive",
+                77000f, 1951f, 110f, 120f, false, true, 0);
     }
 
     //Sentinel 100 HP
@@ -1038,9 +1058,16 @@ public class Transport {
 
     //X10a
     public static Transport.LocomotiveNoBackspeed X10a() {
-        return new Transport.LocomotiveNoBackspeed("X10A", "Canada", "1914-1959", "Steam",
+        return new Transport.LocomotiveNoBackspeed("X10A", "Europe", "2012-", "Diesel-Multi-Engine",
                 "", "", type, " Passenger Locomotive",
-                32487f, 2000f, 124.7f, 100f, false, true, 0);
+                6744.26f, 3061.86f, 81.0f, 160f, false, true, 0);
+    }
+
+    //todo right stats
+    public static Transport.LocomotiveNoBackspeed UnknownOne() {
+        return new Transport.LocomotiveNoBackspeed("ClassMH", "Europe", "2012-", "Diesel-Multi-Engine",
+                "", "", type, " Passenger Locomotive",
+                6744.26f, 3061.86f, 81.0f, 160f, false, true, 0);
     }
 
     //Wehrmachtslokomotive WR 360 C 14 / V36
@@ -1425,6 +1452,12 @@ public class Transport {
     public static Transport.TankCars DSBCarE() {
         return new Transport.TankCars("DBSE", "Denmark", "1960-1990", "",
                 "", type, " Freight loose", 12f, 0f, false, true, 0,  9000);
+    }
+    
+    //Lgns
+    public static Transport.Rollingstock Lgns() {
+        return new Transport.Rollingstock("Lgns", "Europe", "1980s", "",
+                "", type, " Flatcar", 15f, 120f, false, true, 0);
     }
 }
 

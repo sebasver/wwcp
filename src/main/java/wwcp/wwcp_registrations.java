@@ -111,7 +111,7 @@ public class wwcp_registrations {
     // Steam trains
     public static GenericRailTransport[] listSteamTrains() {
         return new GenericRailTransport[]{
-                new EntityGWR94xx(null),
+              //  new Entity94xx(null),
                 new EntityClass812(null),
                 new EntityDRBR01(null),
                 new EntityDRBR01_5(null),
@@ -140,6 +140,7 @@ public class wwcp_registrations {
                 new EntityDBBR50_40(null),
                 new EntityDRBR01WitteChristmas(null),
                 new EntitySentinel100HPChristmas(null),
+                new EntityDSBFII(null),
                 new EntityTEESteuerWagen(null),
                 new EntityV200(null),
                 new EntityX10a(null),
@@ -179,14 +180,20 @@ public class wwcp_registrations {
                 new EntityV36(null),
                 new EntityV36Kanzel(null),
                 new EntityClass37(null),
-                new EntityMZClassOne(null),
+               // new EntityMZClassOne(null),
                 new EntityMZClassOne1967(null),
                 new EntityMZClassTwo(null),
                 new EntityMZClassTwo1970(null),
                 new EntityMZClassThree(null),
+                new EntityMZClassThree1972(null),
                 new EntityMZClassFour(null),
+                new EntityClassME(null),
                 new EntityKofIII(null),
                 new EntityKofIII2(null),
+
+                new EntityClassMK(null),
+                new EntityClassMH(null),
+                new EntityHLD55(null),
 
               //American Diesels
                 // new EntityAC4400CW(null),
@@ -219,16 +226,6 @@ public class wwcp_registrations {
                 new EntityB307a(null),
                 new EntityRS3(null),
                 new EntityRS23(null)
-
-
-
-
-
-
-
-
-
-
 
         };
     }
@@ -328,6 +325,8 @@ public class wwcp_registrations {
                 new EntityUKGasWagen(null),
                 new EntityDSBZETanker(null),
                 new EntityDSB735Tanker(null),
+                new EntityDSBCarE(null),
+                new EntityLgns(null),
 
                //American Stock
                 new Entity40ftAAR_Boxcar(null),
@@ -342,7 +341,6 @@ public class wwcp_registrations {
                 new Entity_GSC_60_Flatcar(null),
                 new EntityACF_SingleDomeTankCar(null),
                 new EntityPRR_Gla_Hopper(null)
-
 
         };
     }

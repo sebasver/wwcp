@@ -120,6 +120,7 @@ public class EntityGP7 extends EntityTrainCore {
     @Override
     public List<TrainsInMotion.transportTypes> getTypes(){
         return TrainsInMotion.transportTypes.DIESEL.singleton();
+
     }
 
     @Override

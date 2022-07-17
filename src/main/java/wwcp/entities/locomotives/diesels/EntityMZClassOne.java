@@ -229,5 +229,3 @@ public class EntityMZClassOne extends EntityTrainCore {
     @Override
     public ResourceLocation getRunningSound(){return URIRegistry.SOUND_RUNNING.getResource("xxxxxxx.ogg");}
 }
-
-

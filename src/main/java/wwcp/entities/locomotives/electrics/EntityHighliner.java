@@ -1,6 +1,5 @@
 package wwcp.entities.locomotives.electrics;//This is a documentation class for copy pasting into an electric train class.
 
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
@@ -247,5 +246,3 @@ public class EntityHighliner extends EntityTrainCore {
         return URIRegistry.SOUND_RUNNING.getResource("xxxxxxx.ogg");
     }
 }
-
-
