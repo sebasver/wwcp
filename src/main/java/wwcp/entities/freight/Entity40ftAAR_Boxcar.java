@@ -58,8 +58,43 @@ public class Entity40ftAAR_Boxcar extends GenericRailTransport {
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_Pacemaker_N.png",
                 "textures/bogies/70ton_truck_black.png",
-                "CNR Maple Leaf, Aluminium Sheathed", "Canadian National Railway Red Orange Boxcar with aluminium sheathed sides");
+                "NYC Pacemaker", "New York Central Pacemaker livery for passenger service");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_SLSF_N.png",
+                "textures/bogies/70ton_truck_black.png",
+                "SLSF", "Ship it on the Frisco! slogan");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_WP_N.png",
+                "textures/bogies/70ton_truck_black.png",
+                "WP", "Large WP logo");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_THB.png",
+                "textures/bogies/70ton_truck_black.png",
+                "TH&B", "Toronto, Hamilton & Buffalo in Yellow with patched numbers");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_CP_Script.png",
+                "textures/bogies/70ton_truck_black.png",
+                "CPR Script", "Canadian Pacific in Script Lettering");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_CBQ.png",
+                "textures/bogies/70ton_truck_black.png",
+                "CB&Q", "Chicago, Burlington & Quincy in chinese red 'way of the zephyrs'");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_NP.png",
+                "textures/bogies/70ton_truck_black.png",
+                "NP", "Northern Pacific arc lettering");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_WP_Feather.png",
+                "textures/bogies/70ton_truck_black.png",
+                "WP Feather", "Western Pacific - Rides Like a Feather");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_SPS.png",
+                "textures/bogies/70ton_truck_black.png",
+                "SP&S", "Spokane, Portland & Seattle");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_CN.png",
+                "textures/bogies/70ton_truck_black.png",
+                "CN Noodle", "Canadian National in noodle scheme");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/Boxcar_40ft/40ft_AAR_Standard_Boxcar_RI.png",
+                "textures/bogies/70ton_truck_black.png",
+                "CRI&P", "Chicago, Rock Island block lettering");
 
+    }
+
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:WP";
     }
 
     @Override

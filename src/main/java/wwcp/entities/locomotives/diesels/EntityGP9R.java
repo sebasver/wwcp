@@ -85,6 +85,12 @@ public class EntityGP9R extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP9R/GP9R_GT.png", "textures/bogies/blombergB_black.png",
                 "GTW Blue", "Grand Trunk Western in Blue");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP9R/GP9R_CN.png", "textures/bogies/blombergB_black.png",
+                "CN", "Canadian National in noodle");
+    }
+
+    @Override
+    public String getDefaultSkin() { return "wwcp:GTW Blue";
     }
 
     @Override
