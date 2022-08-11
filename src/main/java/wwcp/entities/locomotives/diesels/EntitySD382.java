@@ -91,6 +91,8 @@ public class EntitySD382 extends EntityTrainCore {
                 "NAR", "Northern Alberta Railways");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_CN.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
                 "CN", "Canadian National stripped");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_EJE.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
+                "EJ&E Early", "Elgin, Joliet and Eastern in early scheme");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_EJEB.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
                 "EJ&E Bicentennial", "Elgin, Joliet and Eastern Bicentennial Unit");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_CNW.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
