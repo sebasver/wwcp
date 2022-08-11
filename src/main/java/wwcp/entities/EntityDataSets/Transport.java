@@ -666,6 +666,19 @@ public class Transport {
                 82100f, 3500f, 184f, 112f, false, true, 0);
     }
 
+    //SD60
+    public static Transport.LocomotiveNoBackspeed SD60() {
+        return new Transport.LocomotiveNoBackspeed("SD60", "America", "1984-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                100000f, 3800f, 184f, 112f, false, true, 0);
+    }
+    //SD60M2
+    public static Transport.LocomotiveNoBackspeed SD60M2() {
+        return new Transport.LocomotiveNoBackspeed("SD60M2", "America", "1991-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                100000f, 3800f, 184f, 112f, false, true, 0);
+    }
+
     //SD38-2
     public static Transport.LocomotiveNoBackspeed SD382() {
         return new Transport.LocomotiveNoBackspeed("SD38-2", "America", "1972-Present", "Diesel",

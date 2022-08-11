@@ -99,8 +99,8 @@ public class EntityX10a extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(),new TransportSkin( worldwidecontentpack.MODID, "textures/locomotive/Steam/X10a/X10a_Square_Logo.png",
-                "X10a", "X10a").setBogieTextures(new String[]{"textures/locomotive/Steam/X10a/X10a_Front_Truck.png","textures/locomotive/Steam/X10a/X10a_Rear_Truck.png"}));
+        SkinRegistry.addSkin(this.getClass(),new TransportSkin( worldwidecontentpack.MODID, "textures/locomotive/Steam/X10a/X10a_Square_Logo_N.png",
+                "X10a", "X10a").setBogieTextures(new String[]{"textures/locomotive/Steam/X10a/X10a_Front_Truck.png","textures/locomotive/Steam/X10a/X10a_Rear_Truck_N.png"}));
     }
 
     public int getInventoryRows() {
@@ -116,11 +116,11 @@ public class EntityX10a extends EntityTrainCore {
     }
 
     public float[][] getRiderOffsets() {
-        return new float[][]{{3.3F, 1.6F, 0.0F}};
+        return new float[][]{{1.4F, 1.2F, 0F}};
     }
 
     public float[] getHitboxSize() {
-        return new float[]{7.325F, 2.1F, 1.3F};
+        return new float[]{6.5F, 2.1F, 1.3F};
     }
 
     public ItemStack[] getRecipe() {
@@ -154,11 +154,11 @@ public class EntityX10a extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.165f, -0f, 0.F}};
+        return new float[][]{{0f, -0f, 0.F}};
     }
 
     public boolean shouldRiderSit() {
-        return false;
+        return true;
     }
 
     public boolean isReinforced() {
