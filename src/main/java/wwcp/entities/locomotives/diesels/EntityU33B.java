@@ -147,7 +147,7 @@ public class EntityU33B extends EntityTrainCore {
     public float getMaxFuel(){return 1;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-2.95f,1.25f, -0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-2.65f,1.25f, -0.3f}};}
 
 
     @Override
