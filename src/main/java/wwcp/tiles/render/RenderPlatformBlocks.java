@@ -6,9 +6,11 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
 import wwcp.models.block.platform.*;
 import wwcp.tiles.platforms.*;
@@ -17,7 +19,7 @@ import wwcp.worldwidecontentpack;
 
 //Class made by Oskiek (with little help from Eternal).
 @SideOnly(Side.CLIENT)
-public class RenderPlatformBlocks extends TileEntitySpecialRenderer {
+public class RenderPlatformBlocks extends TileEntitySpecialRenderer implements IItemRenderer {
 
     public static int type;
 
@@ -128,4 +130,18 @@ public class RenderPlatformBlocks extends TileEntitySpecialRenderer {
     }
 
 
+    @Override
+    public boolean handleRenderType(ItemStack item, ItemRenderType type) {
+        return true;
+    }
+
+    @Override
+    public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item, ItemRendererHelper helper) {
+        return true;
+    }
+
+    @Override
+    public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
+
+    }
 }

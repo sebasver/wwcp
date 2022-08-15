@@ -83,6 +83,10 @@ public class EntitySD402W extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402W/SD402W_CN.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "CN Stripped", "Canadian National in As Delivered, stripped");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402W/SD402W_CN2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "CN Stripped w/o Dynamic Brake", "Canadian National in stripped, without dynamic brake");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402W/SD402W_NA.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
                 "CN NA", "Canadian National in North America Scheme");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402W/SD402W_NA_W.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
@@ -91,7 +95,7 @@ public class EntitySD402W extends EntityTrainCore {
 
     @Override
     public String getDefaultSkin() {
-        return "wwcp:CN NA";
+        return "wwcp:CN Stripped";
     }
 
     @Override

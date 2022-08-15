@@ -89,9 +89,44 @@ public class EntityRS3 extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_NYC_Lightning_Stripe_N.png",
                 "textures/bogies/Type_B_Truck.png",
-                "RI Stripped", "Canadian National Standard stripped scheme with red nose");
+                "NYC Lightning Stripe", "New York Central Lightning Stripe for Passenger Service");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_Cotton_Belt-Bow_Wave-N.png",
+                "textures/bogies/Type_B_Truck.png",
+                "SSW Bow Wave", "Cotton Belt Bow Wave, only applied to few select units");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_SSW_Black_Widow.png",
+                "textures/bogies/Type_B_Truck.png",
+                "SSW Black Widow w/ marslight", "Cotton belt black widow with marslight for passenger service");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_CP_Script.png",
+                "textures/bogies/Type_B_Truck.png",
+                "CP Maroon Script", "Canadian Pacific Script writing w/ winterization hatch");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_CP_AR.png",
+                "textures/bogies/Type_B_Truck.png",
+                "CP Action Red", "CP Rail with 5' stripe");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_PRR.png",
+                "textures/bogies/Type_B_Truck.png",
+                "PRR", "Pennsylvania Railroad with trainphone with Herald");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_SPS.png",
+                "textures/bogies/Type_B_Truck.png",
+                "SP&S", "Spokane, Portland & Seattle in yellow");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_NP.png",
+                "textures/bogies/Type_B_Truck.png",
+                "NP", "Northern Pacific");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_RI_P.png",
+                "textures/bogies/Type_B_S.png",
+                "CRI&P Passenger", "Chicago, Rock Island & Pacific in passenger scheme");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_RI_P_Early.png",
+                "textures/bogies/Type_B_S.png",
+                "CRI&P Passenger Early", "Chicago, Rock Island & Pacific in early passenger scheme");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/RS3/RS3_RI.png",
+                "textures/bogies/Type_B_Truck.png",
+                "CRI&P", "Chicago, Rock Island & Pacific in maroon");
     }
-    
+
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:SP&S";
+    }
+
     /**
      * ETERNAL NOTE: though these two methods are marked depreciated, they will be supported long-run
      * the replacement method is
@@ -116,8 +151,8 @@ public class EntityRS3 extends EntityTrainCore {
     public float[] bogieLengthFromCenter(){return new float[]{3f,-3f};}
 
     @Override
-    public List<TrainsInMotion.transportTypes> getTypes() {
-        return TrainsInMotion.transportTypes.PASSENGER.singleton();
+    public List<TrainsInMotion.transportTypes> getTypes(){
+        return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
 
     //in what units is this?
@@ -126,17 +161,17 @@ public class EntityRS3 extends EntityTrainCore {
     public float getMaxFuel(){return 1;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{1.5f,1.2f, 0.35f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{1.5f,1.3f, -0.35f}};}
 
 
     @Override
     public boolean shouldRiderSit(){
-        return false;
+        return true;
     }
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{7f,2f,1.5f};
+        return new float[]{7.4f,2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -156,9 +191,6 @@ public class EntityRS3 extends EntityTrainCore {
      * the forth number defines the grayscale color from 255 (white) to 0 (black)
      * the 5th number is for density, there's no min/max but larger numbers will create more lag.
      */
-
-    //Is this three different smoke offset effects?
-    public float[][] getSmokeOffset(){return new float[][]{{-1,0,0.5f,0xB2B2B2,30},{-1,0,-0.5f,0xB2B2B2,30},{-1.4f,2f,0,0x3C3C3C,500}};}
 
     /**
      * ETERNAL NOTE
@@ -184,7 +216,7 @@ public class EntityRS3 extends EntityTrainCore {
     @Override
     public float[][] modelOffsets() {
         return new float[][]{{-0f,-0F,0.F}};}
-        
+
     /**
      * <h2>Fluid Tank Capacity</h2>
      */
@@ -192,10 +224,31 @@ public class EntityRS3 extends EntityTrainCore {
     //once more what do the numbers mean
     //ETERNAL NOTE 1000 is a bucket, each number represents a new tank.
     @Override
-    public int[] getTankCapacity(){return new int[]{9161, 800};}
+    public int[] getTankCapacity(){return new int[]{9161};}
     //once more idem dito
     //ETERNAL NOTE RF capacity is being moved to a fluid tank, one redstone has the value of 250.
     //as of writing this the RF tank uses water, but later there will be a redstone dust fluid for it
+
+
+    public int[] getParticleData(int id) {
+        switch (id){
+            case 0:{return new int[]{2, 50, 0x555555};}//ALCO smoke
+            case 1:{return super.getParticleData(id);}//heavy smoke
+            case 2:{return super.getParticleData(id);}//steam
+            case 3:{return super.getParticleData(id);}//led lamp
+            case 4:{return super.getParticleData(id);}//reverse lamp
+            case 5:{return super.getParticleData(id);}//small sphere lamp
+
+            default:{return new int[]{5, 100, 0xf3da90};}
+        }
+    }
+
+    public String[] setParticles(){
+
+        return new String[]{"smoke ,0,-1.5,0.82,0,0,0,0",};
+
+    }
+
 
     public int getRFCapacity() {
         return 1110000;
@@ -206,19 +259,6 @@ public class EntityRS3 extends EntityTrainCore {
      * defines what fluids can and can't be stored in the tank.
      * for instance if you have a wooden tanker car, you can deny fluids that are fire sources (like lava).
      */
-
-    //eeeh what
-
-    public String[] getTankFilters(int tank){
-        switch (tank){
-            case 0:{
-                return new String[]{FluidRegistry.WATER.getName()};
-            }
-            default:{
-                return new String[]{FluidRegistry.LAVA.getName()};
-            }
-        }
-    }
 
     /**
      * ETERNAL NOTE: tank filters is being moved to a double array
@@ -235,21 +275,6 @@ public class EntityRS3 extends EntityTrainCore {
      *
      */
 
-    //eeeh what
-    //ETERNAL NOTE this returns if the inventory slot will accept an item.
-    // slot 400 is the fuel slot. 401 is the second fuel slot if there is one. 402 is the third etc.
-    // custom slots with their own slot numbers can be defined in public void initInventorySlots()
-    // NOTE 2: when overriding initInventorySlots() be sure to call the super method, also always use numbers over 400
-    // to prevent conflicts with other inventory functionality.
-    // later on i'll need to implement an easier system for custom inventory slots.
-    @Override
-    public boolean isItemValidForSlot(int slot, ItemStack stack){
-        switch (slot){
-            case 400:{return TileEntityFurnace.getItemBurnTime(stack)>0;}
-            case 401:{return FluidContainerRegistry.getFluidForFilledItem(stack)!=null && canFill(null, FluidContainerRegistry.getFluidForFilledItem(stack).getFluid());}
-            default:{return true;}
-        }
-    }
 
     /**
      * <h2>fuel management</h2>
@@ -257,7 +282,7 @@ public class EntityRS3 extends EntityTrainCore {
      */
     @Override
     public void manageFuel(){
-        fuelHandler.manageElectric(this);
+        fuelHandler.manageDiesel(this);
     }
 
 

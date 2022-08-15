@@ -89,8 +89,20 @@ public class EntitySD382 extends EntityTrainCore {
                 "BC Hydro", "British Columbia Hydro yellow");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_NAR.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
                 "NAR", "Northern Alberta Railways");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_CN.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "CN", "Canadian National stripped");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_EJE.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
+                "EJ&E Early", "Elgin, Joliet and Eastern in early scheme");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_EJEB.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
                 "EJ&E Bicentennial", "Elgin, Joliet and Eastern Bicentennial Unit");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_CNW.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "CNW", "Chicago & North Western Yellow");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_CNW2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "CNW w/ Special Bell", "Chicago & North Western with special outdented bell");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_UP.png", "textures/bogies/AmericanTrucks/Flexicoil_UP.png",
+                "UP", "Union Pacific Yellow");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD382/SD382_SP.png", "textures/bogies/AmericanTrucks/Flexicoil_SP.png",
+                "SP", "Southern Pacific");
 
     }
 

@@ -101,7 +101,7 @@ public class EntitySeries4000 extends EntityTrainCore {
     public float[][] getRiderOffsets(){return new float[][]{{-4.2f,1.3f, -0.2f}};}
     @Override
     public float[] getHitboxSize() {
-        return new float[]{5f,2.2f,1.7f};
+        return new float[]{6.4f,2.2f,1.7f};
     }
     
     public ItemStack[] getRecipe() {

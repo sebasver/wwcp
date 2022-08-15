@@ -90,7 +90,7 @@ public class EntityU1F extends EntityTrainCore {
     }
 
     @Override
-    public float[][] modelRotations(){return new float[][]{{0.0f, 180.0f, 0.0f}};}
+    public float[][] modelRotations(){return new float[][]{{0f, 180.0f, 0.0f}};}
 
     public int getInventoryRows() {
         return 1;
@@ -105,11 +105,11 @@ public class EntityU1F extends EntityTrainCore {
     }
 
     public float[][] getRiderOffsets() {
-        return new float[][]{{1.3F, 1.2F, 0.0F}};
+        return new float[][]{{3.3F, 1.2F, 0.25F}};
     }
 
     public float[] getHitboxSize() {
-        return new float[]{4.8F, 2.1F, 1.3F};
+        return new float[]{7.45F, 2.1F, 1.3F};
     }
 
     public ItemStack[] getRecipe() {
@@ -144,7 +144,7 @@ public class EntityU1F extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.05f,-0F,0F}};}
+        return new float[][]{{0.45f,-0F,0F}};}
 
     public boolean shouldRiderSit() {
         return false;
