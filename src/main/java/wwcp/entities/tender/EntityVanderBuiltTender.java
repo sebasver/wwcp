@@ -99,7 +99,7 @@ public class EntityVanderBuiltTender extends GenericRailTransport {
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{1.10f, 0f, 0}, {-1.10f, 0f, 0}};
+        return new float[][]{{1.2f, 0f, 0}, {-1.0f, 0f, 0}};
     }
 
     public ModelBase[] bogieModels() {
@@ -115,7 +115,7 @@ public class EntityVanderBuiltTender extends GenericRailTransport {
     }
 //todo change bogie length from center
     public float[][] modelOffsets() {
-        return new float[][]{{0f,0F,0F}};
+        return new float[][]{{-0.1f,0F,0F}};
     }
 
     @Override
@@ -137,7 +137,7 @@ public class EntityVanderBuiltTender extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{3.8F, 1.6F, 1.2F};
+        return new float[]{5.2F, 1.6F, 1.2F};
     }
 
     public Item getItem() {

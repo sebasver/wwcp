@@ -8,6 +8,8 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import wwcp.blockEntities.platform.*;
+import wwcp.entities.WWCPFictional.EntityWWCPShopShunter;
+import wwcp.entities.WWCPFictional.EntityWWCPStandard_0_6_2T;
 import wwcp.entities.freight.*;
 import wwcp.entities.Advent.*;
 import wwcp.entities.locomotives.diesels.EntityGP7HighHood;
@@ -150,7 +152,8 @@ public class wwcp_registrations {
                 new EntityGWR57(null),
                 new EntityJ38(null),
                 new EntityJ39(null),
-                new EntityU1F(null)
+                new EntityU1F(null),
+                new EntityWWCPStandard_0_6_2T(null)
         };
     }
 
@@ -197,7 +200,6 @@ public class wwcp_registrations {
                 new EntityKofIII2(null),
                 new EntityV200(null),
                 new EntityV160(null),
-
                 //American Diesels
                 // new EntityAC4400CW(null),
                 new EntityF7A(null),
@@ -230,7 +232,8 @@ public class wwcp_registrations {
                 new EntityU33B(null),
                 new EntityB307a(null),
                 new EntityRS3(null),
-                new EntityRS23(null)
+                new EntityRS23(null),
+                new EntityWWCPShopShunter(null)
         };
     }
 
@@ -278,8 +281,6 @@ public class wwcp_registrations {
     public static GenericRailTransport[] listpassenger() {
         return new GenericRailTransport[]{
                 new EntityEurofimaCompartment1(null),
-                new EntityEurofimaRows(null),
-                new EntityEurofimaSleeper(null),
                 new EntityDBpza(null),
                 new EntityDonder2(null),
                 new EntityDonder3(null),

@@ -15,6 +15,7 @@ item.myTab9=Inter European
 item.myTab10=Denmark
 item.blockTab=Blocks
 item.festivetab=Festive Content
+item.WWCPTab=WWCP
 
 
 <!-- ## Extra Declarations ##--!>
@@ -32,6 +33,7 @@ gui.owner=Owner
 menu.item.europe=Europe
 menu.item.america=America
 menu.item.united_kingdom=United Kingdom
+menu.item.switzerland=Switzerland
 
 <!-- ## Trains ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas § ## -->
@@ -104,11 +106,18 @@ item.DBBR01_10NeuKesselOil.name=DB BR 01.10 Neu Kessel Oil
 item.DRGBR01(850mm).name=DRG BR 01 (850mm)
 item.DRGBR01_10Streamlined.name=DRG BR 01.10 Streamlined
 item.DRGBR01_10UnStreamlined.name=DRG BR 01.10
+item.DRGBR50kriegslok.name=DRG BR 50 Kriegslok
 item.ClassMK.name=G322/G400B
 item.ClassMH.name=DSB Class MH
 item.DSBClassEA.name=DSB Class EA
 item.V200.name=V200
 item.V160.name=V160
+item.WWCPShopShunter.name=WWCP Shop shunter
+item.WWCPStandard0_6_2T.name=WWCP Standard 0-6-2 T
+item.J38.name=J38
+item.J39.name=J39
+item.Class87.name=Class 87
+item.ClassEA.name=Class EA
 
 //American Tab
 
@@ -182,7 +191,10 @@ item.Amfleet1.name=Amfleet Coach 1
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
-item.EurofimaCompartments1.name=Eurofima Compartment Coach
+item.EurofimaCompartments1.name=Eurofima Compartment 1st class
+item.EurofimaCompartments1_2.name=Eurofima Compartment 1st and 2nd class
+item.EurofimaCompartments2.name=Eurofima Compartment 2nd class
+
 item.Dobbelstock4thgeneration.name=4th Generation Doubledecker
 item.TEUSmallContainercarrier.name=TEU Small container carrier
 item.GWRBrunel3rdClassChristmas.name=GWR Brunel 3rd Class Christmas
@@ -207,6 +219,8 @@ item.UKOpenwagon.name=UK 6 Plank Truck
 item.UKFlatbed.name=UK Flatbed
 item.UKTanker.name=UK Tanker
 item.UKVan.name=UK Van
+item.UKCattlewagen.name=UK Cattle wagon
+item.UKGasWagon.name=UK Gas wagon
 item.UKOpenwagon2.name=UK Windcutter Truck
 item.Hbbins.name=Hbbins
 item.Hbbillns.name=Hbbillns
@@ -242,18 +256,29 @@ item.SGNSS80Load3.name=Sggns(s) 80' Load 3
 item.SGNSS80Load4.name=Sggns(s) 80' Load 4
 item.Zacns95.name=Zacns 95
 item.Ealos-X.name=Ealos-x
-
+item.G4200.name=4200 Gallon tender
 item.Lgns.name=Lgns
-item.APO_BFS.name=APO BFS
-item.APO_BFM.name=APO BFM
-item.APO_AFM.name=APO AFM
-item.APO_CFM.name=APO CFM
-
+item.APOBFs.name=APO BFS
+item.APOBFm.name=APO BFM
+item.APOAFm.name=APO AFM
+item.APOCFm.name=APO CFM
+item.DSB735Tanker.name=DSB 735 Tanker wagon
+item.DSBZETanker.name=DSB ZE Tanker wagon
+item.EurofimaPresidentiale.name=Eurofima Presidential wagon
+item.TEESchweizzBarCar.name=TEE Schweizz Bar wagon
+item.E44DB.name=E44
+item.E94.name=E94
+item.EurofimaFlatConstruction.name=Eurofima first construction stage
+item.EurofimaGettingPaint.name=Eurofima undergoing painting
+item.EurofimaInteriorFitting.name=Eurofima last construction stage
+item.EurofimaAssemblingBase.name=Eurofima second construction stage
+item.GS.name=GS Wagon
 
 
 <!-- ## Railbusses ## -->
 item.BR626.name=BR 626
 item.BR798Advertising.name=BR 798 Advertising
+item.RaeTEEIISteuer=RAE TEEII Control wagon
 
 <!-- ## Tenders ## -->
 item.T322'2'.name=T32 2'2'

@@ -1084,6 +1084,13 @@ public class Transport {
     }
 
     //todo right stats
+    public static Transport.LocomotiveNoBackspeed WWCPStandard0_6_2T() {
+        return new Transport.LocomotiveNoBackspeed("WWCPStandard0_6_2T", "Europe", "2012-", "Diesel",
+                "", "", type, " Shunter Locomotive",
+                6744.26f, 75f, 15.0f, 30f, true, true, 0);
+    }
+
+    //todo right stats
     public static Transport.LocomotiveNoBackspeed UnknownOne() {
         return new Transport.LocomotiveNoBackspeed("ClassMH", "Europe", "2012-", "Diesel-Multi-Engine",
                 "", "", type, " Passenger Locomotive",

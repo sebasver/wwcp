@@ -130,6 +130,10 @@ public class EntityEurofimaCompartment1 extends GenericRailTransport {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/Eurofima/EurofimaCompartment/Class1/C1_BaseLivery.png",
                 "textures/bogies/Eurofimabogie.png",
                 "Factory Livery", "Factory livery of a Eurofima car");
+
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/passengerstock/Eurofima/EurofimaCompartment/Class1/C1_IC.png",
+                "textures/bogies/Eurofimabogie.png",
+                "Inter City Livery", "Intercity livery as used by the Deutsche Bahn on passenger cars");
     }
 
     @Override

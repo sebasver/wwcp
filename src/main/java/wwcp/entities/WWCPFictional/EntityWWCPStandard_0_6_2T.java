@@ -1,5 +1,5 @@
 //This is a documentation file for copy pasting into a steam locomotive.
-package wwcp.entities.locomotives.steamers;
+package wwcp.entities.WWCPFictional;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -19,78 +19,72 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.AmericanTrucks.U_1_F_Front_Bogie;
-import wwcp.models.bogies.AmericanTrucks.U_1_F_Rear_Bogie;
-import wwcp.models.locomotives.steamers.LNERJ38_39;
-import wwcp.models.locomotives.steamers.U_1_F;
+import wwcp.models.WWCPFictional.WWCPStandard0_6_2T;
+import wwcp.models.locomotives.steamers.Class812;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityU1F extends EntityTrainCore {
+public class EntityWWCPStandard_0_6_2T extends EntityTrainCore {
 
-    public EntityU1F(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityWWCPStandard_0_6_2T(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityU1F(null), worldwidecontentpack.MODID, worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntityWWCPStandard_0_6_2T(null), worldwidecontentpack.MODID, worldwidecontentpack.WWCPTab);
 
-    public EntityU1F(World world) {
+    public EntityWWCPStandard_0_6_2T(World world) {
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.U1F().name; }
+    public String transportName() { return Transport.WWCPStandard0_6_2T().name; }
 
     @Override
-    public String transportcountry() { return Transport.U1F().country; }
+    public String transportcountry() { return Transport.WWCPStandard0_6_2T().country; }
 
     @Override
-    public String transportYear() { return Transport.U1F().year; }
+    public String transportYear() { return Transport.WWCPStandard0_6_2T().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.U1F().fuel;
+        return Transport.WWCPStandard0_6_2T().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.U1F().fictional;
+        return Transport.WWCPStandard0_6_2T().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.U1F().tractive_effort;
+        return Transport.WWCPStandard0_6_2T().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.U1F().metric_horsepower;
+        return Transport.WWCPStandard0_6_2T().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  Transport.U1F().weightinKGs;
+        return  Transport.WWCPStandard0_6_2T().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.U1F().reinforced;
+        return Transport.WWCPStandard0_6_2T().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.U1F().additionalTextTitle) + Transport.U1F().additionalText,
-                RailUtility.translate(Transport.U1F().additionalTextTitle2) + Transport.U1F().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.WWCPStandard0_6_2T().additionalTextTitle) + Transport.WWCPStandard0_6_2T().additionalText,
+                RailUtility.translate(Transport.WWCPStandard0_6_2T().additionalTextTitle2) + Transport.WWCPStandard0_6_2T().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.U1F().backTopSpeed: Transport.U1F().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.WWCPStandard0_6_2T().backTopSpeed: Transport.WWCPStandard0_6_2T().topSpeed;}
 
-    @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/U1F/U-1-F_DItchlights_N.png",
-                new String[]{"textures/bogies/AmericanTrucks/U-1-F_Front_Bogie_Black_N.png","textures/bogies/AmericanTrucks/U-1-F_Rear_Bogie_Black_N.png"},
-                "Highliner", "Blue");
-    }
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/WWCPFictional/WWCP_Standard_0-6-2T_Texture_1_Noised.png",
+                "WWCP 0-6-2 T", "WWCP Company tanker engine livery");
 
-    @Override
-    public float[][] modelRotations(){return new float[][]{{0f, 180.0f, 0.0f}};}
+    }
 
     public int getInventoryRows() {
         return 1;
@@ -105,11 +99,11 @@ public class EntityU1F extends EntityTrainCore {
     }
 
     public float[][] getRiderOffsets() {
-        return new float[][]{{3.3F, 1.2F, 0.25F}};
+        return new float[][]{{1.3F, 1.2F, 0.0F}};
     }
 
     public float[] getHitboxSize() {
-        return new float[]{7.45F, 2.1F, 1.3F};
+        return new float[]{5.7F, 2.1F, 1.3F};
     }
 
     public ItemStack[] getRecipe() {
@@ -120,22 +114,17 @@ public class EntityU1F extends EntityTrainCore {
         return 0.5F;
     }
 
-    public float[][] getSmokeOffset() {
-        return new float[][]{{-1.0F, 0.0F, 0.5F, 1.1711154E7F, 30.0F}, {-1.0F, 0.0F, -0.5F, 1.1711154E7F, 30.0F}, {-1.4F, 2.0F, 0.0F, 3947580.0F, 500.0F}};
-    }
-
-
-    @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.95f, 0f, 0}, {-1.90f, 0f, 0}};
+        return null;
+
     }
 
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new U_1_F_Front_Bogie(), new U_1_F_Rear_Bogie()};
+        return null;
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, 0.1F};
+        return new float[]{1.7F, -1.2F};
     }
 
     public float getRenderScale() {
@@ -144,7 +133,7 @@ public class EntityU1F extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.45f,-0F,0F}};}
+        return new float[][]{{-0.41f,0F,0.F}};}
 
     public boolean shouldRiderSit() {
         return false;
@@ -187,7 +176,7 @@ public class EntityU1F extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new U_1_F()};
+        return new ModelBase[]{new WWCPStandard0_6_2T()};
     }
 
     @SideOnly(Side.CLIENT)

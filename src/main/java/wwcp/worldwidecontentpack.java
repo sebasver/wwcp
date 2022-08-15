@@ -42,7 +42,7 @@ public class worldwidecontentpack {
         //Switzerland = new TiMTab("Swiss models", MODID, "myTab8");
         Denmark = new TiMTab("Danish models", MODID, "myTab10");
         European = new TiMTab("Inter European models", MODID, "myTab9");
-        BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
+        //BlocksWWCP = new TiMTab("Blocks", MODID, "blockTab");
         WWCPTab = new TiMTab("Festive Models", MODID, "WWCPTab");
         //for the eventhandler
         MinecraftForge.EVENT_BUS.register(eventManager);
