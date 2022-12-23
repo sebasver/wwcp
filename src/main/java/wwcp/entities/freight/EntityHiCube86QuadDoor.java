@@ -13,28 +13,27 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.AmericanTrucks.truck_70ton;
-import wwcp.models.freight.CP_Minibox;
-import wwcp.models.freight.CP_PlugSlide_Boxcar;
+import wwcp.models.freight.HiCube86QuadDoor;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityCP_Minibox extends GenericRailTransport {
+public class EntityHiCube86QuadDoor extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityCP_Minibox((World)null), worldwidecontentpack.MODID, worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntityHiCube86QuadDoor((World)null), worldwidecontentpack.MODID, worldwidecontentpack.America);
 
-    public EntityCP_Minibox(UUID owner, World world, double xPos, double yPos, double zPos) {super(owner, world, xPos, yPos, zPos);
+    public EntityHiCube86QuadDoor(UUID owner, World world, double xPos, double yPos, double zPos) {super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityCP_Minibox(World world) {
+    public EntityHiCube86QuadDoor(World world) {
         super(world);
     }
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{1.90f,0.0f,0},{-2.1f,0.0f,0}};
+        return new float[][]{{4.25f,0.0f,0},{-4.25f,0.0f,0}};
     }
 
     @Override
@@ -43,7 +42,7 @@ public class EntityCP_Minibox extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{2.0F, -2.0F};
+        return new float[]{4.25F, -4.25F};
     }
 
     public float getRenderScale() {
@@ -56,10 +55,8 @@ public class EntityCP_Minibox extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/CP_Minibox/CP_Minibox_Script_N.png", "textures/bogies/70ton_truck_black.png",
-                "CP Script", "Canadian Pacific in script writing");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/CP_Minibox/CP_Minibox_STW.png", "textures/bogies/70ton_truck_black.png",
-                "CPR Spans The World", "Early CPR Scheme with Spans The World Advertising");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/HiCube86QuadDoor/HiCube86Quad_Door_PC.png", "textures/bogies/70ton_truck_black.png",
+                "PC", "Penn Central in Jade Green");
     }
 
     @Override
@@ -68,11 +65,11 @@ public class EntityCP_Minibox extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return Transport.CP_Minibox().reinforced;
+        return Transport.HiCube86QuadDoor().reinforced;
     }
 
     public float weightKg() {
-        return Transport.CP_Minibox().weightinKGs;
+        return Transport.HiCube86QuadDoor().weightinKGs;
     }
 
     public ItemStack[] getRecipe() {
@@ -80,28 +77,28 @@ public class EntityCP_Minibox extends GenericRailTransport {
     }
 
     public String transportName() {
-        return Transport.CP_Minibox().name;
+        return Transport.HiCube86QuadDoor().name;
     }
 
-    public String transportcountry() { return Transport.CP_Minibox().country; }
+    public String transportcountry() { return Transport.HiCube86QuadDoor().country; }
 
-    public String transportYear() { return Transport.CP_Minibox().year; }
+    public String transportYear() { return Transport.HiCube86QuadDoor().year; }
 
     public float transportTopSpeed() {
-        return Transport.CP_Minibox().topSpeed;
+        return Transport.HiCube86QuadDoor().topSpeed;
     }
 
     public boolean isFictional() {
-        return Transport.CP_Minibox().fictional;
+        return Transport.HiCube86QuadDoor().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.CP_Minibox().additionalTextTitle) + Transport.CP_Minibox().additionalText,
-                RailUtility.translate(Transport.CP_Minibox().additionalTextTitle2) + Transport.CP_Minibox().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.HiCube86QuadDoor().additionalTextTitle) + Transport.HiCube86QuadDoor().additionalText,
+                RailUtility.translate(Transport.HiCube86QuadDoor().additionalTextTitle2) + Transport.HiCube86QuadDoor().additionalText2};}
     }
     public int getInventoryRows() {
-        return Transport.CP_Minibox().rows;
+        return Transport.HiCube86QuadDoor().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {
@@ -113,7 +110,7 @@ public class EntityCP_Minibox extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{5.9f, 2f, 1.6F};
+        return new float[]{12.05f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
@@ -121,7 +118,7 @@ public class EntityCP_Minibox extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new CP_Minibox()};
+        return new ModelBase[]{new HiCube86QuadDoor()};
     }
 
     public Item getItem() {

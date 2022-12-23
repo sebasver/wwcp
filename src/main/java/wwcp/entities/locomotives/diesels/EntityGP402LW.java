@@ -89,6 +89,10 @@ public class EntityGP402LW extends EntityTrainCore {
                 "CN NA", "Canadian National in North American scheme");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP402LW/GP402LW_GOT.png", "textures/bogies/blombergB_black.png",
                 "GO Transit", "Goverment of Ontario Transit Green");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP402LW/GP402LW_Guilford.png", "textures/bogies/blombergB_black.png",
+                "Guilford Rail System", "Guilford Rail System in Orange & Grey");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP402LW/GP402LW_MEC.png", "textures/bogies/blombergB_black.png",
+                "MEC", "Pan Am Railways Blue");
     }
 
     @Override

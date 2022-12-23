@@ -8,7 +8,6 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -16,7 +15,7 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.AmericanTrucks.FlexicoilC2;
-import wwcp.models.locomotives.diesels.SD402W;
+import wwcp.models.locomotives.diesels.SD402Snoot;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -28,74 +27,79 @@ import java.util.UUID;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntitySD402W extends EntityTrainCore {
+public class EntitySD402Snoot extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntitySD402W(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntitySD402Snoot(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntitySD402W(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntitySD402Snoot(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntitySD402W(World world){
+    public EntitySD402Snoot(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.SD402W().name; }
+    public String transportName() { return Transport.SD402Snoot().name; }
 
     @Override
-    public String transportcountry() { return Transport.SD402W().country; }
+    public String transportcountry() { return Transport.SD402Snoot().country; }
 
     @Override
-    public String transportYear() { return Transport.SD402W().year; }
+    public String transportYear() { return Transport.SD402Snoot().year; }
 
     @Override
-    public String transportFuelType() { return Transport.SD402W().fuel;
+    public String transportFuelType() { return Transport.SD402Snoot().fuel;
     }
     @Override
-    public boolean isFictional() { return Transport.SD402W().fictional;
+    public boolean isFictional() { return Transport.SD402Snoot().fictional;
     }
     @Override
-    public float transportTractiveEffort() { return Transport.SD402W().tractive_effort;
+    public float transportTractiveEffort() { return Transport.SD402Snoot().tractive_effort;
     }
     @Override
-    public float transportMetricHorsePower() { return Transport.SD402W().metric_horsepower;
+    public float transportMetricHorsePower() { return Transport.SD402Snoot().metric_horsepower;
     }
     @Override
-    public float weightKg() { return  Transport.SD402W().weightinKGs;
+    public float weightKg() { return  Transport.SD402Snoot().weightinKGs;
     }
 
-    public boolean isReinforced() { return Transport.SD402W().reinforced;
+    public boolean isReinforced() { return Transport.SD402Snoot().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.SD402W().additionalTextTitle) + Transport.SD402W().additionalText,
-                RailUtility.translate(Transport.SD402W().additionalTextTitle2) + Transport.SD402W().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.SD402Snoot().additionalTextTitle) + Transport.SD402Snoot().additionalText,
+                RailUtility.translate(Transport.SD402Snoot().additionalTextTitle2) + Transport.SD402Snoot().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.SD402W().backTopSpeed: Transport.SD402W().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.SD402Snoot().backTopSpeed: Transport.SD402Snoot().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402W/SD402W_CN.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "CN Stripped", "Canadian National in As Delivered, stripped");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402W/SD402W_CN2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "CN Stripped w/o Dynamic Brake", "Canadian National in stripped, without dynamic brake");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402W/SD402W_NA.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "CN NA", "Canadian National in North America Scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402W/SD402W_NA_W.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "CN NA Faded", "Canadian National in North America Scheme, Sun Faded");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_ATSF.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
+                "ATSF Yellowbonnet", "Atchison, Topeka and Santa Fe Railway Yellowbonnet");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_ATSF_Kodachrome.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
+                "ATSF Kodachrome", "ATSF in pre merger SF Kodachrome");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_KCSG.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "KCS Ghost", "Kansas City Southern Ghost");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_KCSG2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "KCS Ghost w/ mars light", "Kansas City Southern Ghost with nose mars light");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_KCSGG.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "KCS Grey Ghost", "Kansas City Southern Grey Ghost");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_MEC.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "MEC", "Pan Am Railways Blue");
+
     }
 
     @Override
     public String getDefaultSkin() {
-        return "wwcp:CN Stripped";
+        return "wwcp:ATSF Yellowbonnet";
     }
 
     @Override
@@ -206,7 +210,7 @@ public class EntitySD402W extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new SD402W()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new SD402Snoot()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

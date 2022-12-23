@@ -2,6 +2,7 @@ package wwcp.entities.freight;
 
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
+import ebf.tim.api.TransportSkin;
 import ebf.tim.entities.GenericRailTransport;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
@@ -12,37 +13,37 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.AmericanTrucks.truck_70ton;
-import wwcp.models.freight.HiCube86QuadDoor;
+import wwcp.models.bogies.AmericanTrucks.Roadrailer_Truck;
+import wwcp.models.freight.Roadrailer53Dryvan;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
 
-public class EntityHiCube86QuadDoor extends GenericRailTransport {
+public class EntityRoadrailer53Dryvan extends GenericRailTransport {
 
     public static final String[] itemDescription = new String[]{"§7" + StatCollector.translateToLocal("menu.item.weight") + ": 2" + StatCollector.translateToLocal("menu.item.tons"), "§7" + StatCollector.translateToLocal("menu.item.sizeof") + ": 27" + StatCollector.translateToLocal("menu.item.slots")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityHiCube86QuadDoor((World)null), worldwidecontentpack.MODID, worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntityRoadrailer53Dryvan((World)null), worldwidecontentpack.MODID, worldwidecontentpack.America);
 
-    public EntityHiCube86QuadDoor(UUID owner, World world, double xPos, double yPos, double zPos) {super(owner, world, xPos, yPos, zPos);
+    public EntityRoadrailer53Dryvan(UUID owner, World world, double xPos, double yPos, double zPos) {super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityHiCube86QuadDoor(World world) {
+    public EntityRoadrailer53Dryvan(World world) {
         super(world);
     }
 
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{4.25f,0.0f,0},{-4.25f,0.0f,0}};
+        return new float[][]{{-3.75f,0.0f,0},{-3.22f,0.0f,0}};
     }
 
     @Override
     public ModelBase[] bogieModels() {
-        return new ModelBase[]{new truck_70ton()};
+        return new ModelBase[]{new Roadrailer_Truck()};
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{4.25F, -4.25F};
+        return new float[]{3.75F, -3.22F};
     }
 
     public float getRenderScale() {
@@ -55,8 +56,8 @@ public class EntityHiCube86QuadDoor extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/freightskins/HiCube86QuadDoor/HiCube86Quad_Door_PC.png", "textures/bogies/70ton_truck_black.png",
-                "PC", "Penn Central in Jade Green");
+        SkinRegistry.addSkin(this.getClass(),new TransportSkin( worldwidecontentpack.MODID, "textures/freightskins/Roadrailer53Dryvan/TripleCrown_Large.png",
+                "Triple Crown Large", "Large Triple Crown logo in Dual ownership NS-CR logos").setBogieTextures(new String[]{"textures/bogies/AmericanTrucks/Clear_Truck.png","textures/bogies/AmericanTrucks/RoadRailer_Truck_Black.png"}));
     }
 
     @Override
@@ -65,11 +66,11 @@ public class EntityHiCube86QuadDoor extends GenericRailTransport {
     }
 
     public boolean isReinforced() {
-        return Transport.HiCube86QuadDoor().reinforced;
+        return Transport.Roadrailer53Dryvan().reinforced;
     }
 
     public float weightKg() {
-        return Transport.HiCube86QuadDoor().weightinKGs;
+        return Transport.Roadrailer53Dryvan().weightinKGs;
     }
 
     public ItemStack[] getRecipe() {
@@ -77,28 +78,28 @@ public class EntityHiCube86QuadDoor extends GenericRailTransport {
     }
 
     public String transportName() {
-        return Transport.HiCube86QuadDoor().name;
+        return Transport.Roadrailer53Dryvan().name;
     }
 
-    public String transportcountry() { return Transport.HiCube86QuadDoor().country; }
+    public String transportcountry() { return Transport.Roadrailer53Dryvan().country; }
 
-    public String transportYear() { return Transport.HiCube86QuadDoor().year; }
+    public String transportYear() { return Transport.Roadrailer53Dryvan().year; }
 
     public float transportTopSpeed() {
-        return Transport.HiCube86QuadDoor().topSpeed;
+        return Transport.Roadrailer53Dryvan().topSpeed;
     }
 
     public boolean isFictional() {
-        return Transport.HiCube86QuadDoor().fictional;
+        return Transport.Roadrailer53Dryvan().fictional;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.HiCube86QuadDoor().additionalTextTitle) + Transport.HiCube86QuadDoor().additionalText,
-                RailUtility.translate(Transport.HiCube86QuadDoor().additionalTextTitle2) + Transport.HiCube86QuadDoor().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.Roadrailer53Dryvan().additionalTextTitle) + Transport.Roadrailer53Dryvan().additionalText,
+                RailUtility.translate(Transport.Roadrailer53Dryvan().additionalTextTitle2) + Transport.Roadrailer53Dryvan().additionalText2};}
     }
     public int getInventoryRows() {
-        return Transport.HiCube86QuadDoor().rows;
+        return Transport.Roadrailer53Dryvan().rows;
     }
 
     public TrainsInMotion.transportTypes getType() {
@@ -110,7 +111,7 @@ public class EntityHiCube86QuadDoor extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{12.05f, 2f, 1.6F};
+        return new float[]{7.1f, 2f, 1.6F};
     }
 
     public float getPistonOffset() {
@@ -118,7 +119,7 @@ public class EntityHiCube86QuadDoor extends GenericRailTransport {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new HiCube86QuadDoor()};
+        return new ModelBase[]{new Roadrailer53Dryvan()};
     }
 
     public Item getItem() {

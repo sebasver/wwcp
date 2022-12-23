@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.AmericanTrucks.FlexicoilC2;
-import wwcp.models.locomotives.diesels.SD60M2;
+import wwcp.models.locomotives.diesels.JT26C;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -27,86 +27,68 @@ import java.util.UUID;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntitySD60M2 extends EntityTrainCore {
+public class EntityJT26C extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntitySD60M2(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntityJT26C(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntitySD60M2(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityJT26C(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntitySD60M2(World world){
+    public EntityJT26C(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.SD60M2().name; }
+    public String transportName() { return Transport.JT26C().name; }
 
     @Override
-    public String transportcountry() { return Transport.SD60M2().country; }
+    public String transportcountry() { return Transport.JT26C().country; }
 
     @Override
-    public String transportYear() { return Transport.SD60M2().year; }
+    public String transportYear() { return Transport.JT26C().year; }
 
     @Override
-    public String transportFuelType() { return Transport.SD60M2().fuel;
+    public String transportFuelType() { return Transport.JT26C().fuel;
     }
     @Override
-    public boolean isFictional() { return Transport.SD60M2().fictional;
+    public boolean isFictional() { return Transport.JT26C().fictional;
     }
     @Override
-    public float transportTractiveEffort() { return Transport.SD60M2().tractive_effort;
+    public float transportTractiveEffort() { return Transport.JT26C().tractive_effort;
     }
     @Override
-    public float transportMetricHorsePower() { return Transport.SD60M2().metric_horsepower;
+    public float transportMetricHorsePower() { return Transport.JT26C().metric_horsepower;
     }
     @Override
-    public float weightKg() { return  Transport.SD60M2().weightinKGs;
+    public float weightKg() { return  Transport.JT26C().weightinKGs;
     }
 
-    public boolean isReinforced() { return Transport.SD60M2().reinforced;
+    public boolean isReinforced() { return Transport.JT26C().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.SD60M2().additionalTextTitle) + Transport.SD60M2().additionalText,
-                RailUtility.translate(Transport.SD60M2().additionalTextTitle2) + Transport.SD60M2().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.JT26C().additionalTextTitle) + Transport.JT26C().additionalText,
+                RailUtility.translate(Transport.JT26C().additionalTextTitle2) + Transport.JT26C().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.SD60M2().backTopSpeed: Transport.SD60M2().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.JT26C().backTopSpeed: Transport.JT26C().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_BN.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "BN Whiteface, as Delivered", "Burlington Northern Whiteface, as delivered, w/ beacon");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_BN2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "BN Whiteface", "Burlington Northern Whiteface");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_BNBNSF.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "BN/BNSF Patched", "Burlington Northern Santa Fe Patched BN SD60M");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_BNSFH2.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
-                "BNSF H2 w/ Toplight", "Burlington Northern Santa Fe heritage 2 w/ toplight");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_BNSFH22.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
-                "BNSF H2 w/ Noselight", "Burlington Northern Santa Fe heritage 2 w/ noselight");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_BNSFH1.png", "textures/bogies/AmericanTrucks/Flexicoil_Green.png",
-                "BNSF H1", "Burlington Northern Santa Fe heritage 1, Only 1 unit ever painted in H1");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_BNSFH1M.png", "textures/bogies/AmericanTrucks/Flexicoil_Green.png",
-                "BNSF H1 Modernized", "Burlington Northern Santa Fe heritage 1, Only 1 unit ever painted in H1, Modernized");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_UP.png", "textures/bogies/AmericanTrucks/Flexicoil_UP.png",
-                "UP", "Union Pacific yellow");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_NS.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "NS", "Norfolk Southern ex. Conrail");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_NS2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "NS Modern", "Norfolk Southern ex. Conrail, modern");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/JT26C/JT26C_VLine.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "V/Line", "V/Line in orange and grey");
     }
 
     @Override
     public String getDefaultSkin() {
-        return "wwcp:BN Whiteface, as Delivered";
+        return "wwcp:V/Line";
     }
 
     @Override
@@ -119,7 +101,7 @@ public class EntitySD60M2 extends EntityTrainCore {
     }
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-3.15f, 1.45f, -0.35f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.9f, 1.2f, 0.35f}};}
 
     @Override
     public float[] getHitboxSize() {
@@ -204,7 +186,7 @@ public class EntitySD60M2 extends EntityTrainCore {
 
     public String[] setParticles(){
 
-        return new String[]{"smoke ,0,-0.35,0.95,0,0,0,0"};
+        return new String[]{"smoke ,0,-0.8,0.90,0,0,0,0"};
 
     }
 
@@ -217,7 +199,7 @@ public class EntitySD60M2 extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new SD60M2()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new JT26C()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

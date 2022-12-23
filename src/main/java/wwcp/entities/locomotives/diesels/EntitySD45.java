@@ -14,8 +14,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
+import wwcp.models.bogies.AmericanTrucks.FlexicoilC1;
 import wwcp.models.bogies.AmericanTrucks.FlexicoilC2;
-import wwcp.models.locomotives.diesels.SD45X;
+import wwcp.models.locomotives.diesels.SD45;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -27,69 +28,72 @@ import java.util.UUID;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntitySD45X extends EntityTrainCore {
+public class EntitySD45 extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntitySD45X(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntitySD45(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
+     * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntitySD45X(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntitySD45(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntitySD45X(World world){
+    public EntitySD45(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.SD45X().name; }
+    public String transportName() { return Transport.SD45().name; }
 
     @Override
-    public String transportcountry() { return Transport.SD45X().country; }
+    public String transportcountry() { return Transport.SD45().country; }
 
     @Override
-    public String transportYear() { return Transport.SD45X().year; }
+    public String transportYear() { return Transport.SD45().year; }
 
     @Override
-    public String transportFuelType() { return Transport.SD45X().fuel;
+    public String transportFuelType() { return Transport.SD45().fuel;
     }
     @Override
-    public boolean isFictional() { return Transport.SD45X().fictional;
+    public boolean isFictional() { return Transport.SD45().fictional;
     }
     @Override
-    public float transportTractiveEffort() { return Transport.SD45X().tractive_effort;
+    public float transportTractiveEffort() { return Transport.SD45().tractive_effort;
     }
     @Override
-    public float transportMetricHorsePower() { return Transport.SD45X().metric_horsepower;
+    public float transportMetricHorsePower() { return Transport.SD45().metric_horsepower;
     }
     @Override
-    public float weightKg() { return  Transport.SD45X().weightinKGs;
+    public float weightKg() { return  Transport.SD45().weightinKGs;
     }
 
-    public boolean isReinforced() { return Transport.SD45X().reinforced;
+    public boolean isReinforced() { return Transport.SD45().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.SD45X().additionalTextTitle) + Transport.SD45X().additionalText,
-                RailUtility.translate(Transport.SD45X().additionalTextTitle2) + Transport.SD45X().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.SD45().additionalTextTitle) + Transport.SD45().additionalText,
+                RailUtility.translate(Transport.SD45().additionalTextTitle2) + Transport.SD45().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.SD45X().backTopSpeed: Transport.SD45X().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.SD45().backTopSpeed: Transport.SD45().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45X/SD45X_SP.png", "textures/bogies/AmericanTrucks/Flexicoil_SP.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_SP.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_SP.png",
                 "SP", "Southern Pacific Bloody Nose");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45X/SD45X_SP_Early.png", "textures/bogies/AmericanTrucks/Flexicoil_SP.png",
-                "SP Early", "Southern Pacific Bloody Nose Early");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45X/SD45X_SP_Ears.png", "textures/bogies/AmericanTrucks/Flexicoil_SP.png",
-                "SP Ears", "Southern Pacific Bloody Nose w/ tunnel motor ears, only 1 produced, briefly used in 1971");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45X/SD45X_SP_Demo.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
-                "SP Demo", "Southern Pacific ex. GM Demonstrator");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_SP_Elephant.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_SP.png",
+                "SP Ears", "Southern Pacific Bloody Nose with emd tunnel motor ears, 3 produced");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45R_SP.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_SP.png",
+                "SP Rebuilt", "Southern Pacific Bloody Nose Rebuilt w/o L window and w/ rear mars light configuration");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_DRGW_Early.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "D&RGW Early", "Denver & Rio Grande Western Early");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_DRGW_Late.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "D&RGW Late", "Denver & Rio Grande Western w/ speed lettering");
             }
 
     @Override
@@ -111,7 +115,7 @@ public class EntitySD45X extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.4f,2.25f,1.5f};
+        return new float[]{8.6f,2.25f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -128,14 +132,14 @@ public class EntitySD45X extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{2.9f,0f,0},{-2.65f,0f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{2.6f,0f,0},{-2.5f,0f,0}};
     }
     @Override
-    public ModelBase[] bogieModels() {return new ModelBase[]{new FlexicoilC2()}; }
+    public ModelBase[] bogieModels() {return new ModelBase[]{new FlexicoilC1()}; }
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{2.9f, -2.65f};
+        return new float[]{2.6f, -2.5f};
     }
 
     @Override
@@ -205,7 +209,7 @@ public class EntitySD45X extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new SD45X()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new SD45()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

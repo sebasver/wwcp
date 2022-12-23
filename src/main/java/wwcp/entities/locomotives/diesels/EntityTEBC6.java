@@ -8,17 +8,14 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.AmericanTrucks.Blomberg_B;
 import wwcp.models.bogies.AmericanTrucks.Early_Flexicoil;
-import wwcp.models.locomotives.diesels.GP7;
-import wwcp.models.locomotives.diesels.SD7;
+import wwcp.models.locomotives.diesels.TEBC6;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -30,84 +27,68 @@ import java.util.UUID;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntitySD7 extends EntityTrainCore {
+public class EntityTEBC6 extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntitySD7(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntityTEBC6(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntitySD7(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityTEBC6(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntitySD7(World world){
+    public EntityTEBC6(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.SD7().name; }
+    public String transportName() { return Transport.TEBC6().name; }
 
     @Override
-    public String transportcountry() { return Transport.SD7().country; }
+    public String transportcountry() { return Transport.TEBC6().country; }
 
     @Override
-    public String transportYear() { return Transport.SD7().year; }
+    public String transportYear() { return Transport.TEBC6().year; }
 
     @Override
-    public String transportFuelType() { return Transport.SD7().fuel;
+    public String transportFuelType() { return Transport.TEBC6().fuel;
     }
     @Override
-    public boolean isFictional() { return Transport.SD7().fictional;
+    public boolean isFictional() { return Transport.TEBC6().fictional;
     }
     @Override
-    public float transportTractiveEffort() { return Transport.SD7().tractive_effort;
+    public float transportTractiveEffort() { return Transport.TEBC6().tractive_effort;
     }
     @Override
-    public float transportMetricHorsePower() { return Transport.SD7().metric_horsepower;
+    public float transportMetricHorsePower() { return Transport.TEBC6().metric_horsepower;
     }
     @Override
-    public float weightKg() { return  Transport.SD7().weightinKGs;
+    public float weightKg() { return  Transport.TEBC6().weightinKGs;
     }
 
-    public boolean isReinforced() { return Transport.SD7().reinforced;
+    public boolean isReinforced() { return Transport.TEBC6().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.SD7().additionalTextTitle) + Transport.SD7().additionalText,
-                RailUtility.translate(Transport.SD7().additionalTextTitle2) + Transport.SD7().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.TEBC6().additionalTextTitle) + Transport.TEBC6().additionalText,
+                RailUtility.translate(Transport.TEBC6().additionalTextTitle2) + Transport.TEBC6().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.SD7().backTopSpeed: Transport.SD7().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.TEBC6().backTopSpeed: Transport.TEBC6().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD7/SD7_BO_Early_N.png", "textures/bogies/AmericanTrucks/Early_Flexicoil_Silver_N.png",
-                "B&O", "Baltimore & Ohio in early configuration");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD7/SD7_SP_Bloody_Nose_N.png", "textures/bogies/AmericanTrucks/Early_Flexicoil_SP_N.png",
-                "SP Bloody Nose", "Southern Pacific Bloody Nose");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD7/SD7_SP_Halloween__N.png", "textures/bogies/AmericanTrucks/Early_Flexicoil_Black_N.png",
-                "SP Halloween", "Southern Pacific Halloween scheme, only applied to 3 SD7's on the SP ever");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD7/SD7_CBQ_WOTZ.png", "textures/bogies/AmericanTrucks/Early_Flexicoil_Black_N.png",
-                "CB&Q Way Of The Zephyrs", "Chicago, Burlington & Quincy decorated as Way of the Zephyrs");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD7/SD7_CBQ.png", "textures/bogies/AmericanTrucks/Early_Flexicoil_Black_N.png",
-                "CB&Q", "Chicago, Burlington & Quincy in chinese red");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD7/SD7_GN_Blue.png", "textures/bogies/AmericanTrucks/Early_Flexicoil_Black_N.png",
-                "GN Blue", "Great Northern in Big Sky Blue");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD7/SD7_GN_Simplified_Empire_Builder.png", "textures/bogies/AmericanTrucks/Early_Flexicoil_Black_N.png",
-                "GN Simplified Empire Builder", "Great Northern in Simplified Empire Builder");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD7/SD7_MILW.png", "textures/bogies/AmericanTrucks/Early_Flexicoil_Black_N.png",
-                "MILW", "Milwaukee Road");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD7/SD7_MILW2.png", "textures/bogies/AmericanTrucks/Early_Flexicoil_Black_N.png",
-                "MILW Low Black", "Milwaukee Road w/ larger black top");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/TEBC6/TEBC6_BN.png", "textures/bogies/AmericanTrucks/Early_Flexicoil_Black_N.png",
+                "BN", "Burlington Northern whiteface");
     }
 
     @Override
     public String getDefaultSkin() {
-        return "wwcp:GN Blue";
+        return "wwcp:BN";
     }
 
     @Override
@@ -159,7 +140,7 @@ public class EntitySD7 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.35f,-0F,-0.05F}};}
+        return new float[][]{{-0.0f,-0F,-0.0F}};}
 
     /**
      * <h2>rider sit or stand</h2>
@@ -220,7 +201,7 @@ public class EntitySD7 extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new SD7()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new TEBC6()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

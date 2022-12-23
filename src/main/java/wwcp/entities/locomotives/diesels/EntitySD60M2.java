@@ -92,6 +92,10 @@ public class EntitySD60M2 extends EntityTrainCore {
                 "BNSF H2 w/ Toplight", "Burlington Northern Santa Fe heritage 2 w/ toplight");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_BNSFH22.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
                 "BNSF H2 w/ Noselight", "Burlington Northern Santa Fe heritage 2 w/ noselight");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_BNSFH1.png", "textures/bogies/AmericanTrucks/Flexicoil_Green.png",
+                "BNSF H1", "Burlington Northern Santa Fe heritage 1, Only 1 unit ever painted in H1");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_BNSFH1M.png", "textures/bogies/AmericanTrucks/Flexicoil_Green.png",
+                "BNSF H1 Modernized", "Burlington Northern Santa Fe heritage 1, Only 1 unit ever painted in H1, Modernized");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_UP.png", "textures/bogies/AmericanTrucks/Flexicoil_UP.png",
                 "UP", "Union Pacific yellow");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_NS.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
