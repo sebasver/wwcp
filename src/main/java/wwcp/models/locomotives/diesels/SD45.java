@@ -20,7 +20,7 @@ public class SD45 extends ModelBase //Same as Filename
 
 	public SD45() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[695];
+		bodyModel = new ModelRendererTurbo[696];
 
 		initbodyModel_1();
 		initbodyModel_2();
@@ -2297,6 +2297,7 @@ public class SD45 extends ModelBase //Same as Filename
 		bodyModel[692] = new ModelRendererTurbo(this, 470, 267, textureX, textureY); // Box 692
 		bodyModel[693] = new ModelRendererTurbo(this, 355, 270, textureX, textureY); // Box 168
 		bodyModel[694] = new ModelRendererTurbo(this, 411, 268, textureX, textureY); // Box 168
+		bodyModel[695] = new ModelRendererTurbo(this, 1, 20, textureX, textureY); // Box 697
 
 		bodyModel[500].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 501
 		bodyModel[500].setRotationPoint(54F, -3.5F, 6F);
@@ -2890,5 +2891,9 @@ public class SD45 extends ModelBase //Same as Filename
 
 		bodyModel[694].addShapeBox(0F, 0F, 0F, 20, 7, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 168
 		bodyModel[694].setRotationPoint(-2F, -7F, -11.51F);
+
+		bodyModel[695].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,0F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, 0F); // Box 697
+		bodyModel[695].setRotationPoint(-47F, -23.5F, -3F);
+		bodyModel[695].rotateAngleY = -0.95993109F;
 	}
 }

@@ -94,6 +94,10 @@ public class EntitySD45 extends EntityTrainCore {
                 "D&RGW Early", "Denver & Rio Grande Western Early");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_DRGW_Late.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
                 "D&RGW Late", "Denver & Rio Grande Western w/ speed lettering");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_MILW_Early.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "MILW Early", "Milwaukee Road in early scheme w/o lettering");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_CBQ.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "CB&Q", "Chicago, Burlington & Quincy in burlington green");
             }
 
     @Override
