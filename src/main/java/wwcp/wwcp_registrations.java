@@ -227,6 +227,8 @@ public class wwcp_registrations {
                 new EntitySD50(null),
                 new EntitySD60(null),
                 new EntitySD60M2(null),
+                new EntitySD70(null),
+                new EntitySD70MP2(null),
                 new EntitySD90MACH(null),
                 new EntitySD70ACU(null),
                 new EntityU33B(null),

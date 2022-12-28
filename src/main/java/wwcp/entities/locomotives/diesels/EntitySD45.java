@@ -94,10 +94,24 @@ public class EntitySD45 extends EntityTrainCore {
                 "D&RGW Early", "Denver & Rio Grande Western Early");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_DRGW_Late.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
                 "D&RGW Late", "Denver & Rio Grande Western w/ speed lettering");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_DRGW_Late_W.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "D&RGW Late, Weathered", "Denver & Rio Grande Western w/ speed lettering, heavy dynamic brake useage");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_MILW_Early.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
                 "MILW Early", "Milwaukee Road in early scheme w/o lettering");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_CBQ.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
                 "CB&Q", "Chicago, Burlington & Quincy in burlington green");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_BN.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "BN", "Burlington Northern Green");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_NP.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Silver.png",
+                "NP", "Northern Pacific Black");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_SLSF_1.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "SLSF", "St.Louis-San Francisco Railway orange & white");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_SLSF_2.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "SLSF w/ Logo", "St.Louis-San Francisco Railway orange & white w/ frico logo");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_SLSF_3.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "SLSF w/ Mars Light", "St.Louis-San Francisco Railway orange & white w/ nose mars light");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_ICG.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "ICG", "Ex EMD Demo unit, in ICG orange & white");
             }
 
     @Override
