@@ -17,6 +17,7 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.EUBogies.flexxpower;
+import wwcp.models.locomotives.electrics.Traxx.TraxxFirstGen;
 import wwcp.models.locomotives.electrics.Traxx2ndGen;
 import wwcp.worldwidecontentpack;
 
@@ -28,9 +29,9 @@ import java.util.UUID;
 // ZZZZ
 // QQQQ
 
-public class EntityTraxxF140MS2E extends EntityTrainCore {
+public class EntityTraxxF140AC1 extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityTraxxF140MS2E(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityTraxxF140AC1(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -38,69 +39,69 @@ public class EntityTraxxF140MS2E extends EntityTrainCore {
      *
      * @see EntityTrainCore
      */
-    public EntityTraxxF140MS2E(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityTraxxF140AC1(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public EntityTraxxF140MS2E(World world) {
+    public EntityTraxxF140AC1(World world) {
         super(world);
     }
 
     @Override
     public String transportName() {
-        return Transport.F140MS2E().name;
+        return Transport.F140AC1().name;
     }
 
     @Override
     public String transportcountry() {
-        return Transport.F140MS2E().country;
+        return Transport.F140AC1().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.F140MS2E().year;
+        return Transport.F140AC1().year;
     }
 
     @Override
     public String transportFuelType() {
-        return Transport.F140MS2E().fuel;
+        return Transport.F140AC1().fuel;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.F140MS2E().fictional;
+        return Transport.F140AC1().fictional;
     }
 
     @Override
     public float transportTractiveEffort() {
-        return Transport.F140MS2E().tractive_effort;
+        return Transport.F140AC1().tractive_effort;
     }
 
     @Override
     public float transportMetricHorsePower() {
-        return Transport.F140MS2E().metric_horsepower;
+        return Transport.F140AC1().metric_horsepower;
     }
 
     @Override
     public float weightKg() {
-        return Transport.F140MS2E().weightinKGs;
+        return Transport.F140AC1().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.F140MS2E().reinforced;
+        return Transport.F140AC1().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
         {
-            return new String[]{RailUtility.translate(Transport.F140MS2E().additionalTextTitle) + Transport.F140MS2E().additionalText,
-                    RailUtility.translate(Transport.F140MS2E().additionalTextTitle2) + Transport.F140MS2E().additionalText2};
+            return new String[]{RailUtility.translate(Transport.F140AC1().additionalTextTitle) + Transport.F140AC1().additionalText,
+                    RailUtility.translate(Transport.F140AC1().additionalTextTitle2) + Transport.F140AC1().additionalText2};
         }
     }
 
     @Override
     public float transportTopSpeed() {
-        return accelerator < 0 ? Transport.F140MS2E().backTopSpeed : Transport.F140MS2E().topSpeed;
+        return accelerator < 0 ? Transport.F140AC1().backTopSpeed : Transport.F140AC1().topSpeed;
     }
 
     @Override
@@ -264,7 +265,7 @@ public class EntityTraxxF140MS2E extends EntityTrainCore {
     }
 
     public ModelBase[] getModel() {
-        return new ModelBase[]{new Traxx2ndGen()};
+        return new ModelBase[]{new TraxxFirstGen()};
     }
 
     /**

@@ -353,6 +353,13 @@ public class Transport {
                 58000f, 5000f, 81f, 180f, false, true, 0);
     }
 
+    //todo class 76
+    public static Transport.LocomotiveNoBackspeed Class76() {
+        return new Transport.LocomotiveNoBackspeed("Class76", "United Kingdom", "1973-Present", "Electric",
+                nick, "", type, " Passenger Locomotive",
+                58000f, 5000f, 81f, 180f, false, true, 0);
+    }
+
 
     public static Transport.LocomotiveNoBackspeed TEERAeSteurWagen() {
         return new Transport.LocomotiveNoBackspeed("RaeTEEIISteuer", "Switzerland", "1961-1999", "Electric",
@@ -386,6 +393,27 @@ public class Transport {
                 20170f, 0f, 46.38f, 88.51f, false, true, 0);
     }
 
+    //todo CR C812 "CRClass812"
+    public static Transport.LocomotiveNoBackspeed RoyalScot() {
+        return new Transport.LocomotiveNoBackspeed("RoyalScot", "United Kingdom", "1899-1963", "Steam",
+                nick, " Jumbos", type, " Universal Locomotive",
+                20170f, 0f, 46.38f, 88.51f, false, true, 0);
+    }
+
+    //todo BO LE 1 unit
+    public static Transport.LocomotiveNoBackspeed BO_LE_1_FirstUnit() {
+        return new Transport.LocomotiveNoBackspeed("BO LE 1 First", "Germany", "1932-1991", "Electric",
+                nick, "", type, " Passenger Locomotive",
+                44062.5f, 2528.9f, 78.0f, 90f, false, true, 0);
+    }
+
+    //todo BO LE
+    public static Transport.LocomotiveNoBackspeed BO_LE_1_SecondUnit() {
+        return new Transport.LocomotiveNoBackspeed("BO LE 1 Second", "Germany", "1932-1991", "Electric",
+                nick, "", type, " Passenger Locomotive",
+                44062.5f, 2528.9f, 78.0f, 90f, false, true, 0);
+    }
+
     //E44
     public static Transport.LocomotiveNoBackspeed E44DB() {
         return new Transport.LocomotiveNoBackspeed("E44DB", "Germany", "1932-1991", "Electric",
@@ -396,6 +424,13 @@ public class Transport {
     //E94
     public static Transport.LocomotiveNoBackspeed E94() {
         return new Transport.LocomotiveNoBackspeed("E94", "Europe", "1940-1995", "Electric",
+                nick, " Green Crocodile", type, " Freight Locomotive",
+                40000.0f, 4429.0f, 118.5f, 100f, false, true, 0);
+    }
+
+    //E94
+    public static Transport.LocomotiveNoBackspeed BR103() {
+        return new Transport.LocomotiveNoBackspeed("BR103", "Europe", "1940-1995", "Electric",
                 nick, " Green Crocodile", type, " Freight Locomotive",
                 40000.0f, 4429.0f, 118.5f, 100f, false, true, 0);
     }
@@ -479,6 +514,12 @@ public class Transport {
     //CR C812 Tender "Mcintosh3000Gallon"
     public static Transport.TankCars Mcintosh3000Galon() {
         return new Transport.TankCars("Class812Tender", "United_Kingdom", "1899-1963", "",
+                "", type, " Tender", 19.5f, 0f, false, true, 0, 300000);
+    }
+
+    //todo fix these stats
+    public static Transport.TankCars FowlerTender() {
+        return new Transport.TankCars("Fowlertender", "United_Kingdom", "1899-1963", "",
                 "", type, " Tender", 19.5f, 0f, false, true, 0, 300000);
     }
 
@@ -748,7 +789,12 @@ public class Transport {
                 18726.58f, 240f, 22f, 30f, false, true, 0);
     }
 
-
+    //todod FrichsKoef
+    public static Transport.LocomotiveNoBackspeed FrichsKoef() {
+        return new Transport.LocomotiveNoBackspeed("FrichsKoef", "Germany", "1959-", "Diesel",
+                nick, " Klein Lokomotive", type, " Shunting Locomotive",
+                18726.58f, 240f, 22f, 30f, false, true, 0);
+    }
 
     //DSB FII todo fix this entry
     public static Transport.LocomotiveNoBackspeed DSBFII() {
@@ -1005,7 +1051,7 @@ public class Transport {
     }
 
     public static Transport.LocomotiveNoBackspeed BR146() {
-        return new Transport.LocomotiveNoBackspeed("BR146_0", "Europe", "1997-", "Electric",
+        return new Transport.LocomotiveNoBackspeed("BR146", "Europe", "1997-", "Electric",
                 "", "", type, " Passenger Locomotive",
                 67442.68f, 5710.41f, 82.0f, 160f, false, true, 0);
     }
@@ -1180,6 +1226,18 @@ public class Transport {
     //Eurofima with Compartments
     public static Transport.Rollingstock EurofimaCompartment1_2() {
         return new Transport.Rollingstock("EurofimaCompartments1_2", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //Eurofima with Compartments
+    public static Transport.Rollingstock EurofimaOpen1() {
+        return new Transport.Rollingstock("Eurofima Open 1", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //Eurofima with Compartments
+    public static Transport.Rollingstock EurofimaPanorama() {
+        return new Transport.Rollingstock("Eurofima Panorama", "Europe", "1977-", "",
                 "", type, " Passenger", 45f, 200f, false, true, 0);
     }
 

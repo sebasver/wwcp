@@ -34,6 +34,7 @@ menu.item.europe=Europe
 menu.item.america=America
 menu.item.united_kingdom=United Kingdom
 menu.item.switzerland=Switzerland
+menu.item.belgium=Belgium
 
 <!-- ## Trains ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas § ## -->

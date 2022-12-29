@@ -15,7 +15,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.locomotives.diesels.KoFIII1;
+import wwcp.models.locomotives.diesels.FrichsKoef;
+import wwcp.models.locomotives.diesels.FrichsKoef;
 import wwcp.worldwidecontentpack;
 
 import java.util.UUID;
@@ -26,79 +27,71 @@ import java.util.UUID;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntityKofIII extends EntityTrainCore {
+public class EntityFrichsKoef extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityKofIII(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityFrichsKoef(null), worldwidecontentpack.MODID,worldwidecontentpack.European);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntityKofIII(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityFrichsKoef(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityKofIII(World world){
+    public EntityFrichsKoef(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.KoFIII1().name; }
+    public String transportName() { return Transport.FrichsKoef().name; }
 
     @Override
-    public String transportcountry() { return Transport.KoFIII1().country; }
+    public String transportcountry() { return Transport.FrichsKoef().country; }
 
     @Override
-    public String transportYear() { return Transport.KoFIII1().year; }
+    public String transportYear() { return Transport.FrichsKoef().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.KoFIII1().fuel;
+        return Transport.FrichsKoef().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.KoFIII1().fictional;
+        return Transport.FrichsKoef().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.KoFIII1().tractive_effort;
+        return Transport.FrichsKoef().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.KoFIII1().metric_horsepower;
+        return Transport.FrichsKoef().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  Transport.KoFIII1().weightinKGs;
+        return  Transport.FrichsKoef().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.KoFIII1().reinforced;
+        return Transport.FrichsKoef().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.KoFIII1().additionalTextTitle) + Transport.KoFIII1().additionalText,
-                RailUtility.translate(Transport.KoFIII1().additionalTextTitle2) + Transport.KoFIII1().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.FrichsKoef().additionalTextTitle) + Transport.FrichsKoef().additionalText,
+                RailUtility.translate(Transport.FrichsKoef().additionalTextTitle2) + Transport.FrichsKoef().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.KoFIII1().backTopSpeed: Transport.KoFIII1().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.FrichsKoef().backTopSpeed: Transport.FrichsKoef().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/KoFIII/KofAltRot.png",
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/FrichsKoef/FrichsKoef.png",
                 "Alt Rot", "Alt Rot livery for the KoF");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/KoFIII/KofBlue.png",
-                "Ocean Blue", "Ocean Blue livery for the KoF");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/KoFIII/Kof_MWB.png",
-                "MWB Livery", "MBW livery for the KoF");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/KoFIII/Kof_Danish.png",
-                "NJ Livery", "Danish Nordjyske Jernbaner livery for the KoF");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/KoFIII/Kof_Red.png",
-                "Red Livery", "DB Verkehrsrot livery for the KoF");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/KoFIII/Kof_Yellow.png",
-                "Yellow Livery", "Yellow livery for the KoF");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/FrichsKoef/DSBGreen1.png",
+                "DSB Green", "Alt Rot livery for the KoF");
     }
 
     @Override
@@ -118,7 +111,7 @@ public class EntityKofIII extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{3.95f,1.8f,1.5f};
+        return new float[]{2.4f,1.8f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -152,7 +145,7 @@ public class EntityKofIII extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,0F,0.F}};}
+        return new float[][]{{0.025f,0F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>
@@ -200,7 +193,7 @@ public class EntityKofIII extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new KoFIII1()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new FrichsKoef()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>

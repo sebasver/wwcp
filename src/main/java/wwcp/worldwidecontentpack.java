@@ -20,7 +20,7 @@ import wwcp.proxy.CommonProxy;
 
 public class worldwidecontentpack {
     public static final String MODID = "wwcp";
-    public static final String MOD_VERSION = "0.12.08 Alpha";
+    public static final String MOD_VERSION = "0.12.10 Alpha";
 
 
     @Mod.EventHandler
