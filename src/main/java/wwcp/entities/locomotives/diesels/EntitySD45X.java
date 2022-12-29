@@ -8,16 +8,14 @@ import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.AmericanTrucks.Early_Flexicoil;
 import wwcp.models.bogies.AmericanTrucks.FlexicoilC2;
-import wwcp.models.locomotives.diesels.SD452;
+import wwcp.models.locomotives.diesels.SD45X;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -29,86 +27,74 @@ import java.util.UUID;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntitySD452 extends EntityTrainCore {
+public class EntitySD45X extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntitySD452(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntitySD45X(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntitySD452(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntitySD45X(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntitySD452(World world){
+    public EntitySD45X(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.SD452().name; }
+    public String transportName() { return Transport.SD45X().name; }
 
     @Override
-    public String transportcountry() { return Transport.SD452().country; }
+    public String transportcountry() { return Transport.SD45X().country; }
 
     @Override
-    public String transportYear() { return Transport.SD452().year; }
+    public String transportYear() { return Transport.SD45X().year; }
 
     @Override
-    public String transportFuelType() { return Transport.SD452().fuel;
+    public String transportFuelType() { return Transport.SD45X().fuel;
     }
     @Override
-    public boolean isFictional() { return Transport.SD452().fictional;
+    public boolean isFictional() { return Transport.SD45X().fictional;
     }
     @Override
-    public float transportTractiveEffort() { return Transport.SD452().tractive_effort;
+    public float transportTractiveEffort() { return Transport.SD45X().tractive_effort;
     }
     @Override
-    public float transportMetricHorsePower() { return Transport.SD452().metric_horsepower;
+    public float transportMetricHorsePower() { return Transport.SD45X().metric_horsepower;
     }
     @Override
-    public float weightKg() { return  Transport.SD452().weightinKGs;
+    public float weightKg() { return  Transport.SD45X().weightinKGs;
     }
 
-    public boolean isReinforced() { return Transport.SD452().reinforced;
+    public boolean isReinforced() { return Transport.SD45X().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.SD452().additionalTextTitle) + Transport.SD452().additionalText,
-                RailUtility.translate(Transport.SD452().additionalTextTitle2) + Transport.SD452().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.SD45X().additionalTextTitle) + Transport.SD45X().additionalText,
+                RailUtility.translate(Transport.SD45X().additionalTextTitle2) + Transport.SD45X().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.SD452().backTopSpeed: Transport.SD452().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.SD45X().backTopSpeed: Transport.SD45X().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_ATSF.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
-                "ATSF Yellowbonnet", "Atchison, Topeka and Santa Fe Railway Yellowbonnet");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_BNSF_H1.png", "textures/bogies/AmericanTrucks/Flexicoil_Green.png",
-                "BNSF H1", "Burlington Northern Santa Fe in Heritage 1 Scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_MRL.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "MRL ex.SCL", "Montana Rail Link w/ beacon and top headlight");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_MRL2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "MRL ex.ATSF", "Montana Rail Link w/ noselight");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_CRR.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "CRR", "Clinchfield in black scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_CR_Early.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "CR Early", "Conrail Ex. EL w/ larger fuel tank");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_SBD.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "SBD", "Seaboard System grey w/ nose light");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_SBD_YN1.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "SBD YN1", "SBD patched in CSX YN1");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_CSX_GreyGhost.png", "textures/bogies/AmericanTrucks/Flexicoil_Blue.png",
-                "CSX Grey Ghost", "CSX in full grey ghost scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_CSX_YN2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "CSX YN2", "CSX in YN2 scheme");
-    }
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45X/SD45X_SP.png", "textures/bogies/AmericanTrucks/Flexicoil_SP.png",
+                "SP", "Southern Pacific Bloody Nose");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45X/SD45X_SP_Early.png", "textures/bogies/AmericanTrucks/Flexicoil_SP.png",
+                "SP Early", "Southern Pacific Bloody Nose Early");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45X/SD45X_SP_Ears.png", "textures/bogies/AmericanTrucks/Flexicoil_SP.png",
+                "SP Ears", "Southern Pacific Bloody Nose w/ tunnel motor ears, only 1 produced, briefly used in 1971");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45X/SD45X_SP_Demo.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
+                "SP Demo", "Southern Pacific ex. GM Demonstrator");
+            }
 
     @Override
     public String getDefaultSkin() {
-        return "wwcp:ATSF Yellowbonnet";
+        return "wwcp:SP";
     }
 
     @Override
@@ -121,11 +107,11 @@ public class EntitySD452 extends EntityTrainCore {
     }
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-2.7f, 1.30f, -0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-2.9f, 1.30f, -0.3f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9f,2.25f,1.5f};
+        return new float[]{9.4f,2.25f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -142,14 +128,14 @@ public class EntitySD452 extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{2.8f,0f,0},{-2.55f,0f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{2.9f,0f,0},{-2.65f,0f,0}};
     }
     @Override
     public ModelBase[] bogieModels() {return new ModelBase[]{new FlexicoilC2()}; }
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{2.8f, -2.55f};
+        return new float[]{2.9f, -2.65f};
     }
 
     @Override
@@ -219,7 +205,7 @@ public class EntitySD452 extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new SD452()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new SD45X()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>
