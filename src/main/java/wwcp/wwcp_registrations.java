@@ -227,12 +227,19 @@ public class wwcp_registrations {
                 new EntitySD50(null),
                 new EntitySD60(null),
                 new EntitySD60M2(null),
+                new EntitySD70(null),
+                new EntitySD70MP2(null),
                 new EntitySD90MACH(null),
                 new EntitySD70ACU(null),
                 new EntityU33B(null),
                 new EntityB307a(null),
                 new EntityRS3(null),
                 new EntityRS23(null),
+                new EntityJT26C(null),
+                new EntityTEBC6(null),
+                new EntitySD402Snoot(null),
+                new EntitySD45(null),
+                new EntitySD45X(null),
                 new EntityWWCPShopShunter(null)
         };
     }
@@ -350,6 +357,7 @@ public class wwcp_registrations {
 
                //American Stock
                 new Entity40ftAAR_Boxcar(null),
+                new EntityGN40HomebuiltBoxcar(null),
                 new EntityCP_Minibox(null),
                 // new EntityCP_Plug_Slide(null),
                 // new EntityCP_Plugdoor(null),
@@ -360,7 +368,13 @@ public class wwcp_registrations {
                // new Entity_89ft_Flatcar(null),
                 new Entity_GSC_60_Flatcar(null),
                 new EntityACF_SingleDomeTankCar(null),
-                new EntityPRR_Gla_Hopper(null)
+                new EntityPRR_Gla_Hopper(null),
+                new EntityRoadrailer53Dryvan(null),
+                new EntityHiCube86QuadDoor(null),
+                new EntityThrall616Bulkhead(null),
+                new EntityThrall616BoeingFlatcar(null),
+                new EntityGunderson596Woodchip(null),
+                new EntityBay2ConcreteHopper(null)
         };
     }
 }

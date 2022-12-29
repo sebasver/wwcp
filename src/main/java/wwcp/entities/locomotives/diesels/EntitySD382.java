@@ -131,7 +131,7 @@ public class EntitySD382 extends EntityTrainCore {
     public ItemStack[] getRecipe() {
         return new ItemStack[]{
                 new ItemStack(TiMItems.controlPanel, 2), new ItemStack(TiMItems.chimneySteelShort, 2), new ItemStack(TiMItems.cabinSteel, 1),
-                new ItemStack(TiMItems.generator, 1), new ItemStack(TiMItems.smallElectricEngine, 6), new ItemStack(TiMItems.mediumDieselEngine, 4),
+                new ItemStack(TiMItems.generator, 1), new ItemStack(TiMItems.smallElectricEngine, 6), new ItemStack(TiMItems.mediumDieselEngine, 3),
                 new ItemStack(TiMItems.wheelSteel, 6), new ItemStack(TiMItems.frameSteel, 4), new ItemStack(TiMOres.ingotSteel, 4)
         };
     }

@@ -14,9 +14,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.bogies.AmericanTrucks.Blomberg_B;
 import wwcp.models.bogies.AmericanTrucks.FlexicoilC2;
-import wwcp.models.locomotives.diesels.GP402LW;
+import wwcp.models.locomotives.diesels.JT26C;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -28,76 +27,68 @@ import java.util.UUID;
 // ZZZZ -> Country for tab
 // QQQQ -> Bogies
 
-public class EntityGP402LW extends EntityTrainCore {
+public class EntityJT26C extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityGP402LW(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntityJT26C(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
      * Be sure the one that takes more than a world is always first, unless you wanna compensate for that in the item declaration.
      * @see EntityTrainCore
      */
-    public EntityGP402LW(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntityJT26C(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntityGP402LW(World world){
+    public EntityJT26C(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.GP402LW().name; }
+    public String transportName() { return Transport.JT26C().name; }
 
     @Override
-    public String transportcountry() { return Transport.GP402LW().country; }
+    public String transportcountry() { return Transport.JT26C().country; }
 
     @Override
-    public String transportYear() { return Transport.GP402LW().year; }
+    public String transportYear() { return Transport.JT26C().year; }
 
     @Override
-    public String transportFuelType() { return Transport.GP402LW().fuel;
+    public String transportFuelType() { return Transport.JT26C().fuel;
     }
     @Override
-    public boolean isFictional() { return Transport.GP402LW().fictional;
+    public boolean isFictional() { return Transport.JT26C().fictional;
     }
     @Override
-    public float transportTractiveEffort() { return Transport.GP402LW().tractive_effort;
+    public float transportTractiveEffort() { return Transport.JT26C().tractive_effort;
     }
     @Override
-    public float transportMetricHorsePower() { return Transport.GP402LW().metric_horsepower;
+    public float transportMetricHorsePower() { return Transport.JT26C().metric_horsepower;
     }
     @Override
-    public float weightKg() { return  Transport.GP402LW().weightinKGs;
+    public float weightKg() { return  Transport.JT26C().weightinKGs;
     }
 
-    public boolean isReinforced() { return Transport.GP402LW().reinforced;
+    public boolean isReinforced() { return Transport.JT26C().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.GP402LW().additionalTextTitle) + Transport.GP402LW().additionalText,
-                RailUtility.translate(Transport.GP402LW().additionalTextTitle2) + Transport.GP402LW().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.JT26C().additionalTextTitle) + Transport.JT26C().additionalText,
+                RailUtility.translate(Transport.JT26C().additionalTextTitle2) + Transport.JT26C().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.GP402LW().backTopSpeed: Transport.GP402LW().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.JT26C().backTopSpeed: Transport.JT26C().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP402LW/GP402LW_CN_Stripped.png", "textures/bogies/blombergB_black.png",
-                "CN Stripped", "Canadian National in As Delivered, stripped");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP402LW/GP402LW_CN_NA.png", "textures/bogies/blombergB_black.png",
-                "CN NA", "Canadian National in North American scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP402LW/GP402LW_GOT.png", "textures/bogies/blombergB_black.png",
-                "GO Transit", "Goverment of Ontario Transit Green");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP402LW/GP402LW_Guilford.png", "textures/bogies/blombergB_black.png",
-                "Guilford Rail System", "Guilford Rail System in Orange & Grey");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP402LW/GP402LW_MEC.png", "textures/bogies/blombergB_black.png",
-                "MEC", "Pan Am Railways Blue");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/JT26C/JT26C_VLine.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "V/Line", "V/Line in orange and grey");
     }
 
     @Override
     public String getDefaultSkin() {
-        return "wwcp:CN Stripped";
+        return "wwcp:V/Line";
     }
 
     @Override
@@ -110,11 +101,11 @@ public class EntityGP402LW extends EntityTrainCore {
     }
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-2.2f, 1.40f, -0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.9f, 1.2f, 0.35f}};}
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{7.5f,2.25f,1.5f};
+        return new float[]{9.3f,2.25f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -131,14 +122,14 @@ public class EntityGP402LW extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{2.25f,0f,0},{-2.25f,0f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{2.95f,0f,0},{-2.65f,0f,0}};
     }
     @Override
-    public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
+    public ModelBase[] bogieModels() {return new ModelBase[]{new FlexicoilC2()}; }
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{2.25f, -2.25f};
+        return new float[]{2.95f, -2.65f};
     }
 
     @Override
@@ -171,6 +162,15 @@ public class EntityGP402LW extends EntityTrainCore {
     //@Override
     public int[] getTankCapacity(){return new int[]{9161};}
 
+    /**
+     * <h2>fuel management</h2>
+     * defines how the transport manages burnHeat, both in consuming items, and in managing the burnHeat.
+     */
+
+    public void manageFuel() {
+        this.fuelHandler.manageDiesel(this);
+    }
+
     public int[] getParticleData(int id) {
         switch (id){
             case 0:{return new int[]{1, 50, 0x6a6a6a};}//EMD smoke
@@ -186,17 +186,8 @@ public class EntityGP402LW extends EntityTrainCore {
 
     public String[] setParticles(){
 
-        return new String[]{"smoke ,0,-0.65,0.95,0,0,0,0"};
+        return new String[]{"smoke ,0,-0.8,0.90,0,0,0,0"};
 
-    }
-
-    /**
-     * <h2>fuel management</h2>
-     * defines how the transport manages burnHeat, both in consuming items, and in managing the burnHeat.
-     */
-
-    public void manageFuel() {
-        this.fuelHandler.manageDiesel(this);
     }
 
     /**
@@ -208,7 +199,7 @@ public class EntityGP402LW extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new GP402LW()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new JT26C()};}
 
     /**
      * <h2>sets the resource location for sounds, like horn and the sound made for the engine running</h2>
