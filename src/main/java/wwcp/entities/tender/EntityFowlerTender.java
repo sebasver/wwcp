@@ -126,7 +126,7 @@ public class EntityFowlerTender extends GenericRailTransport {
                 "LMS Postwar Black", "LMS postwar black livery");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/FowlerTender/tenderLmsUs.png",
                 "LMS American Tour", "Modified for LMS American tour");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/FowlerTender/tenderLmsBr.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/FowlerTender/tenderBr.png",
                 "British Railways", "Post-nationalisation British Railways livery (1940s)");
     }
 
