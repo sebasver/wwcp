@@ -116,12 +116,18 @@ public class EntityFowlerTender extends GenericRailTransport {
     }
 
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/FowlerTender/tenderLmsBlack.png",
-                "LMS Black", "One of their smaller tanker cars, usually used for " +
-                        "commodities such as molten sulfur, clay slurry, caustic soda and corn syrup.");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/FowlerTender/tenderLmsCrimson.png",
-                "Early Crimson", "One of their smaller tanker cars, usually used for " +
-                        "commodities such as molten sulfur, clay slurry, caustic soda and corn syrup.");
+                "LMS Crimson Early", "LMS early crimson livery");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/FowlerTender/tenderLmsBlack.png",
+                "LMS Wartime Black", "Standard LMS WWII livery");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/FowlerTender/tenderLmsCrimsonLate.png",
+                "LMS Crimson Late", "LMS late crimson livery");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/FowlerTender/tenderLmsPostwarBlack.png",
+                "LMS Postwar Black", "LMS postwar black livery");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/FowlerTender/tenderLmsUs.png",
+                "LMS American Tour", "Modified for LMS American tour");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/tenders/FowlerTender/tenderLmsBr.png",
+                "British Railways", "Post-nationalisation British Railways livery (1940s)");
     }
 
     public List<transportTypes> getTypes() {
