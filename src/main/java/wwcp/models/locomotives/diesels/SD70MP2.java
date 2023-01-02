@@ -20,7 +20,7 @@ public class SD70MP2 extends ModelBase //Same as Filename
 
 	public SD70MP2() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[448];
+		bodyModel = new ModelRendererTurbo[449];
 
 		initbodyModel_1();
 
@@ -480,6 +480,7 @@ public class SD70MP2 extends ModelBase //Same as Filename
 		bodyModel[445] = new ModelRendererTurbo(this, 418, 261, textureX, textureY); // Box 474
 		bodyModel[446] = new ModelRendererTurbo(this, 247, 430, textureX, textureY); // Door_Rear
 		bodyModel[447] = new ModelRendererTurbo(this, 264, 407, textureX, textureY); // Door_Rear
+		bodyModel[448] = new ModelRendererTurbo(this, 258, 305, textureX, textureY); // Box 448
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // box
 		bodyModel[0].setRotationPoint(-74F, 3.5F, -0.5F);
@@ -1855,5 +1856,9 @@ public class SD70MP2 extends ModelBase //Same as Filename
 
 		bodyModel[447].addShapeBox(-1F, 0F, -3F, 1, 1, 3, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Door_Rear
 		bodyModel[447].setRotationPoint(-43F, -21F, 10F);
+
+		bodyModel[448].addShapeBox(0F, 0F, -4F, 1, 1, 4, 0F,0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 448
+		bodyModel[448].setRotationPoint(-69.05F, -16F, 5F);
+		bodyModel[448].rotateAngleY = -0.29670597F;
 	}
 }

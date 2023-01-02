@@ -112,7 +112,15 @@ public class EntitySD45 extends EntityTrainCore {
                 "SLSF w/ Mars Light", "St.Louis-San Francisco Railway orange & white w/ nose mars light");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_ICG.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
                 "ICG", "Ex EMD Demo unit, in ICG orange & white");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_PC.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "PC", "Penn Central Black");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_PC_R.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
+                "PC Red", "Penn Central Black w/ Red P, 1 unit existed #6125");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_UP_Early2.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Silver.png",
+                "UP Early", "Union Pacific early scheme w/ roof antenna");
+
             }
+
 
     @Override
     public String getDefaultSkin() {

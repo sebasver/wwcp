@@ -102,7 +102,7 @@ public class EntityTEBC6 extends EntityTrainCore {
 
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{2f, 1.250f, 0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{2.5f, 1.5f, -0.3f}};}
 
     @Override
     public float[] getHitboxSize() {

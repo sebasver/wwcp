@@ -548,10 +548,17 @@ public class Transport {
                 64000f, 3300f, 127.4f, 112.6f, false, true, 0);
     }
 
-    //B30-7a
+    //B30-7a Highood
     public static Transport.LocomotiveNoBackspeed B307a() {
         return new Transport.LocomotiveNoBackspeed("B307a", "America", "1977-Present", "Diesel",
-                "", "", type, "Road Switcher",
+                "", "", type, "Road Diesel",
+                63250f, 3000f, 129.4f, 112.6f, false, true, 0);
+    }
+
+    //B30-7
+    public static Transport.LocomotiveNoBackspeed B307() {
+        return new Transport.LocomotiveNoBackspeed("B307", "America", "1977-Present", "Diesel",
+                "", "", type, "Road Diesel",
                 63250f, 3000f, 129.4f, 112.6f, false, true, 0);
     }
 
@@ -727,6 +734,13 @@ public class Transport {
         return new Transport.LocomotiveNoBackspeed("SD70MP2", "America", "1992-Present", "Diesel",
                 nick, "", type, " Special Duty Locomotive",
                 109000f, 4000f, 197f, 121f, false, true, 0);
+    }
+
+    //SD75M
+    public static Transport.LocomotiveNoBackspeed SD75M() {
+        return new Transport.LocomotiveNoBackspeed("SD75M", "America", "1994-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                137000f, 4300f, 197f, 121f, false, true, 0);
     }
 
     //SD38-2
@@ -1552,19 +1566,31 @@ public class Transport {
     //Thrall 61'6 Bulkhead
     public static Transport.Rollingstock Thrall616Bulkhead() {
         return new Transport.Rollingstock("Thrall616Bulkhead", "America", "1986-Present", "",
-                "", type, " Bulkhead Flatcar", 3f, 120f, false, true, 0);
+                "", type, " Bulkhead Flatcar", 15f, 120f, false, true, 0);
     }
 
     //Thrall 61'6 Boeing Flatcar
     public static Transport.Rollingstock Thrall616BoeingFlatcar() {
         return new Transport.Rollingstock("Thrall616BoeingFlatcar", "America", "1986-Present", "",
-                "", type, " Flatcar", 3f, 120f, false, true, 0);
+                "", type, " Flatcar", 30f, 120f, false, true, 0);
     }
 
     //Gunderson 59'6 Woodchip
     public static Transport.Rollingstock Gunderson596Woodchip() {
         return new Transport.Rollingstock("Gunderson596Woodchip", "America", "1986-Present", "",
-                "", type, " Gondola", 3f, 120f, false, true, 0);
+                "", type, " Gondola", 25f, 120f, false, true, 0);
+    }
+
+    //Paccar 64' Woodchip
+    public static Transport.Rollingstock Paccar64Woodchip() {
+        return new Transport.Rollingstock("Paccar64Woodchip", "America", "1975-Present", "",
+                "", type, " Gondola", 30f, 120f, false, true, 0);
+    }
+
+    //NSC 53' Wellcar
+    public static Transport.Rollingstock NSC53Wellcar() {
+        return new Transport.Rollingstock("NSC53Wellcar", "America", "1990-Present", "",
+                "", type, " Wellcar", 15f, 120f, false, true, 0);
     }
 
     //HiCube86QuadDoor

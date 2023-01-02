@@ -107,6 +107,8 @@ public class EntityGP7 extends EntityTrainCore {
                 "WP Green", "Western Pacific in Green");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7RIBankruptcyBlue.png", "textures/bogies/blombergB_black.png",
                 "CRI&P Blue", "Chicago, Rock island & Pacific, in blue");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_CNW.png", "textures/bogies/blombergB_black.png",
+                "CNW", "Chicago & North Western Yellow");
     }
 
     @Override
