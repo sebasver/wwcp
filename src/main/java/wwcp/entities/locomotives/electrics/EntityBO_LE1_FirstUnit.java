@@ -25,7 +25,7 @@ import java.util.UUID;
 
 public class EntityBO_LE1_FirstUnit extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityBO_LE1_FirstUnit(null), worldwidecontentpack.MODID,worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityBO_LE1_FirstUnit(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     public EntityBO_LE1_FirstUnit(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);

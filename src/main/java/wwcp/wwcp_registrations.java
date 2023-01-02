@@ -242,7 +242,6 @@ public class wwcp_registrations {
                 new EntitySD402Snoot(null),
                 new EntitySD45(null),
                 new EntitySD45X(null),
-                new EntityWWCPShopShunter(null)
                 new EntityWWCPShopShunter(null),
                 new EntityFrichsKoef(null),
                 new EntityTraxxP160DE(null),

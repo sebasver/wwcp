@@ -32,7 +32,7 @@ public class EntityRoyalScot extends EntityTrainCore {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityRoyalScot(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
+    public static final Item thisItem = new WWCPTransport(new EntityRoyalScot(null), worldwidecontentpack.MODID, worldwidecontentpack.United_Kingdom);
 
     public EntityRoyalScot(World world) {
         super(world);

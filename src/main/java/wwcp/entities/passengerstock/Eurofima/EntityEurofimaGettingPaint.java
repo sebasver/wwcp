@@ -28,7 +28,7 @@ public class EntityEurofimaGettingPaint extends GenericRailTransport {
             "\u00A77" + StatCollector.translateToLocal("menu.item.weight") +": 2 " + StatCollector.translateToLocal("menu.item.tons"),
             "\u00A77" + StatCollector.translateToLocal("menu.item.seats") +": 4 " + StatCollector.translateToLocal("menu.item.players")};
 
-    public static final Item thisItem = new WWCPTransport(new EntityEurofimaGettingPaint(null), worldwidecontentpack.MODID , worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityEurofimaGettingPaint(null), worldwidecontentpack.MODID , worldwidecontentpack.WWCPTab);
 
 
     public EntityEurofimaGettingPaint(UUID owner, World world, double xPos, double yPos, double zPos) {
