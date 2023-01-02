@@ -114,7 +114,7 @@ public class EntityRoyalScot extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotUs.png",
                 "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
                 "LMS American Tour", "Modified Royal Scot from the LMS American tour");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotPostwarBlack.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotLmsPostwarBlack.png",
                 "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
                 "LMS Postwar Black", "LMS postwar livery");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotBr.png",
