@@ -126,7 +126,7 @@ public class EntityE94 extends EntityTrainCore {
 
     @Override
     public float[][] getRiderOffsets() {
-        return new float[][]{{-3.6f, 1.25f, -0.25f},{3.6f, 1.25f, 0.25f}};
+        return new float[][]{{-2.2f, 1.25f, -0.25f},{2.2f, 1.25f, 0.25f}};
     }
 
     @Override
@@ -180,7 +180,7 @@ public class EntityE94 extends EntityTrainCore {
      */
     @Override
     public boolean shouldRiderSit() {
-        return true;
+        return false;
     }
     /**
      * <h2>reinforced transport</h2>

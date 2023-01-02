@@ -460,7 +460,7 @@ public class Transport {
     }
 
     public static Transport.LocomotiveNoBackspeed DSBClassEA() {
-        return new Transport.LocomotiveNoBackspeed("Class EA", "Denmark, Bulgaria, Romainia", "1984-", "Electric",
+        return new Transport.LocomotiveNoBackspeed("Class EA", "DenmarkBulgariaRomainia", "1984-", "Electric",
                 "", "", type, " Universal Locomotive",
                 45000.0f, 5030.0f, 84.0f, 175f, false, true, 0);
     }
@@ -994,7 +994,7 @@ public class Transport {
 
     //HLD55
     public static Transport.LocomotiveNoBackspeed HLD55() {
-        return new Transport.LocomotiveNoBackspeed("HLD55", "Belgium, Luxembourg, Denmark, Germany, Sweden", "1961-", "Diesel",
+        return new Transport.LocomotiveNoBackspeed("HLD55", "BelgiumLuxembourgDenmarkGermanySweden", "1961-", "Diesel",
                 nick, "", type, " Universal Locomotive",
                 77000f, 1951f, 110f, 120f, false, true, 0);
     }

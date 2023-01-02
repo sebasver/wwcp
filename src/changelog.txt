@@ -1,7 +1,10 @@
-Following models were added:
+Following models were added in Alpha 12.11:
 
 Coronation
 E44
 DSB ME
 DSB MH
 BR 50 + variants
+E94
+Traxx Variants
+BR 103

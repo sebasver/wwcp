@@ -28,6 +28,7 @@ wwcp.type=Type:
 wwcp.aditional=Aditional Names:
 gui.skin=Skin
 gui.owner=Owner
+menu.item.diesel-multi-engine=Diesel Multi-engine
 
 <!-- ## Extra countries ## --!>
 menu.item.europe=Europe
@@ -35,6 +36,8 @@ menu.item.america=America
 menu.item.united_kingdom=United Kingdom
 menu.item.switzerland=Switzerland
 menu.item.belgium=Belgium
+menu.item.BelgiumLuxembourgDenmarkGermanySweden=Belgium, Luxembourg, Denmark, Germany, Sweden
+menu.item.DenmarkBulgariaRomainia=Denmark, Bulgaria, Romainia
 
 <!-- ## Trains ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas § ## -->
@@ -119,7 +122,23 @@ item.J38.name=J38
 item.J39.name=J39
 item.Class87.name=Class 87
 item.ClassEA.name=Class EA
-
+item.P160AC1.name=P160 AC1
+item.P140DC2.name=F140 DC2
+item.F140DE.name=F140 DE
+item.F140AC1.name=F140 AC1
+item.F140AC2.name=F140 AC2
+item.P160DE.name=P160 DE
+item.P160DEME.name=P160 DEME
+item.P140AC1.name=P140 AC1
+item.EurofimaPanorama.name=Eurofima Panorama 1st Class
+item.EurofimaOpen1.name=Eurofima Open Configuration 1st Class
+item.DSBE.name=DSBE Open Freight
+item.FrichsKoef.name=Frichs Koef
+item.BR103.name=BR 103
+item.BR145.name=BR 145
+item.Class76.name=Class 76
+item.RoyalScot.name=Royal Scot
+item.Fowlertender.name=Fowler Tender
 //American Tab
 
 item.X10A.name=CNR X10A
@@ -207,6 +226,8 @@ item.B&OCaboose.name=B&O Caboose
 
 item.ACF_60Seat.name=ACF 60 Seat Coach
 item.Amfleet1.name=Amfleet Coach 1
+item.BOLE1First.name=BO LE1 (1st unit)
+item.BOLE1Second.name=BO LE1 (2nd unit)
 
 
 <!-- ## Rollingstock ## -->
