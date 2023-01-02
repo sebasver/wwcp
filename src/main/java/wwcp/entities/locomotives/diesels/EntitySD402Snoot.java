@@ -96,6 +96,10 @@ public class EntitySD402Snoot extends EntityTrainCore {
                 "KCS Grey Ghost", "Kansas City Southern Grey Ghost");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_MEC.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
                 "MEC", "Pan Am Railways Blue");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_UP_Early.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
+                "UP Early", "Union Pacific w/ early small lettering");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_UP_Early2.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
+                "UP Early 2", "Union Pacific w/ early large lettering");
 
     }
 

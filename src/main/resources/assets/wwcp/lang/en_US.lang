@@ -166,7 +166,8 @@ item.RS23.name=RS23
 item.M640.name=M640
 
 item.U33B.name=U33B
-item.B307a.name=B30-7a
+item.B307a.name=B30-7a Highood
+item.B307.name=B30-7
 
 item.AC4400CW.name=AC4400CW
 
@@ -180,6 +181,7 @@ item.40ftBoxcar.name=40ft Boxcar
 item.40ftAARBoxcar.name=40ft AAR Standard Boxcar
 item.GN40HomebuiltBoxcar.name=GN 40' Homebuilt Boxcar
 item.Gunderson596Woodchip.name=Gunderson 59'6 Woodchip Gondola
+item.Paccar64Woodchip.name=Paccar/Gunderson 64' Woodchip Gondola
 item.Bay2ConcreteHopper.name=2 Bay Concrete Hopper
 item.HiCube86QuadDoor.name=86' Hi-Cube Quad Door Autoparts Boxcar
 item.Thrall616Bulkhead.name=Thrall 61'6 Bulkhead
