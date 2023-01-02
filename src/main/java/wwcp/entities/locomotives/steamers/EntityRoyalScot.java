@@ -96,12 +96,30 @@ public class EntityRoyalScot extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotLmsBlack.png",
-                "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
-                "LMS Wartime Black", "Standard LMS livery during WWII");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotLmsCrimson.png",
                 "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
                 "LMS Crimson Early", "LMS early crimson livery");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotLmsBlack.png",
+                "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
+                "LMS Wartime Black", "Standard LMS livery during WWII");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotLmsCrimsonLate1.png",
+                "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
+                "LMS Crimson Late 1", "LMS late crimson livery with no smoke deflectors");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotLmsCrimsonLate2.png",
+                "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
+                "LMS Crimson Late 2", "LMS late crimson livery with original smoke deflectors");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotLmsCrimsonLate3.png",
+                "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
+                "LMS Crimson Late 3", "LMS late crimson livery with modified smoke deflectors");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotUs.png",
+                "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
+                "LMS American Tour", "Modified Royal Scot from the LMS American tour");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotPostwarBlack.png",
+                "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
+                "LMS Postwar Black", "LMS postwar livery");
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotBr.png",
+                "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
+                "British Railways Livery", "Post-nationalisation British Railways livery");
     }
 
     public int getInventoryRows() {
