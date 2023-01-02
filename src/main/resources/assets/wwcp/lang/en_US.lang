@@ -152,7 +152,8 @@ item.SD50.name=SD50
 item.SD60.name=SD60
 item.SD60M2.name=SD60M
 item.SD70.name=SD70
-item.SD70MP2.name=SD70MP2
+item.SD70MP2.name=SD70M Phase 2 Cab
+item.SD75M.name=SD75M
 item.TEBC6.name=TEBC6
 item.SD60Mac.name=SD60MAC
 item.SD70Mac.name=SD70MAC
@@ -166,7 +167,8 @@ item.RS23.name=RS23
 item.M640.name=M640
 
 item.U33B.name=U33B
-item.B307a.name=B30-7a
+item.B307a.name=B30-7a Highood
+item.B307.name=B30-7
 
 item.AC4400CW.name=AC4400CW
 
@@ -180,12 +182,14 @@ item.40ftBoxcar.name=40ft Boxcar
 item.40ftAARBoxcar.name=40ft AAR Standard Boxcar
 item.GN40HomebuiltBoxcar.name=GN 40' Homebuilt Boxcar
 item.Gunderson596Woodchip.name=Gunderson 59'6 Woodchip Gondola
+item.Paccar64Woodchip.name=Paccar/Gunderson 64' Woodchip Gondola
 item.Bay2ConcreteHopper.name=2 Bay Concrete Hopper
 item.HiCube86QuadDoor.name=86' Hi-Cube Quad Door Autoparts Boxcar
 item.Thrall616Bulkhead.name=Thrall 61'6 Bulkhead
 item.Roadrailer53Dryvan.name=53' Roadrailer Dryvan
 item.Thrall616Bulkhead.name=Thrall 61'6 Bulkhead
 item.Thrall616BoeingFlatcar.name=Thrall 61'6 Boeing Flatcar
+item.NSC53Wellcar.name=NSC 53' Wellcar
 item.CP40ftMechanicalRefrigerator.name=CP 40ft Mechanical Refrigerator
 item.60'HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
 

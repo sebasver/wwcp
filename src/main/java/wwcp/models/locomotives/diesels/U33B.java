@@ -9,6 +9,7 @@
 
 package wwcp.models.locomotives.diesels; //Path where the model is located
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import fexcraft.tmt.slim.ModelBase;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 
@@ -19,7 +20,7 @@ public class U33B extends ModelBase //Same as Filename
 
 	public U33B() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[383];
+		bodyModel = new ModelRendererTurbo[388];
 
 		initbodyModel_1();
 
@@ -414,6 +415,11 @@ public class U33B extends ModelBase //Same as Filename
 		bodyModel[380] = new ModelRendererTurbo(this, 160, 241, textureX, textureY); // Box 14
 		bodyModel[381] = new ModelRendererTurbo(this, 158, 206, textureX, textureY); // Box 14
 		bodyModel[382] = new ModelRendererTurbo(this, 203, 215, textureX, textureY); // Box 14
+		bodyModel[383] = new ModelRendererTurbo(this, 6, 280, textureX, textureY); // Box 383
+		bodyModel[384] = new ModelRendererTurbo(this, 8, 254, textureX, textureY); // Box 384
+		bodyModel[385] = new ModelRendererTurbo(this, 14, 234, textureX, textureY); // Box 385
+		bodyModel[386] = new ModelRendererTurbo(this, 444, 187, textureX, textureY); // Box 386
+		bodyModel[387] = new ModelRendererTurbo(this, 444, 187, textureX, textureY); // Box 387
 
 		bodyModel[0].addBox(0F, 0F, 0F, 110, 2, 22, 0F); // Box 1
 		bodyModel[0].setRotationPoint(-55F, -1.5F, -11F);
@@ -1186,16 +1192,16 @@ public class U33B extends ModelBase //Same as Filename
 		bodyModel[250].setRotationPoint(-33F, -10.5F, -11F);
 
 		bodyModel[251].addShapeBox(0F, 0F, 0F, 2, 2, 3, 0F,0F, 0.05F, 0.3F, 0F, 0.05F, 0.3F, 0F, 0.05F, 0.3F, 0F, 0.05F, 0.3F, 0F, 0F, 0.3F, 0F, 0F, 0.3F, 0F, 0F, 0.3F, 0F, 0F, 0.3F); // Box 61
-		bodyModel[251].setRotationPoint(-56F, -12.55F, -1.5F);
+		bodyModel[251].setRotationPoint(-56F, -13.55F, -1.5F);
 
 		bodyModel[252].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.75F, -0.275F, -0.275F, 0F, -0.275F, -0.275F, 0F, -0.275F, -0.275F, -0.75F, -0.275F, -0.275F, -0.75F, -0.275F, -0.275F, 0F, -0.275F, -0.275F, 0F, -0.275F, -0.275F, -0.75F, -0.275F, -0.275F); // Headlight-Top-Front-right
-		bodyModel[252].setRotationPoint(-57.25F, -12.6F, -0.1F);
+		bodyModel[252].setRotationPoint(-57.25F, -13.6F, -0.1F);
 
 		bodyModel[253].addShapeBox(0F, 0F, 0F, 1, 2, 4, 0F,-0.25F, -0.2F, -0.3F, -0.25F, -0.2F, -0.3F, -0.25F, -0.2F, -0.3F, -0.25F, -0.2F, -0.3F, -0.25F, -0.2F, -0.3F, -0.25F, -0.2F, -0.3F, -0.25F, -0.2F, -0.3F, -0.25F, -0.2F, -0.3F); // Box 28
-		bodyModel[253].setRotationPoint(-56.5F, -12.6F, -2F);
+		bodyModel[253].setRotationPoint(-56.5F, -13.6F, -2F);
 
 		bodyModel[254].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.75F, -0.275F, -0.275F, 0F, -0.275F, -0.275F, 0F, -0.275F, -0.275F, -0.75F, -0.275F, -0.275F, -0.75F, -0.275F, -0.275F, 0F, -0.275F, -0.275F, 0F, -0.275F, -0.275F, -0.75F, -0.275F, -0.275F); // Headlight-Top-Front-left
-		bodyModel[254].setRotationPoint(-57.25F, -12.6F, -1.9F);
+		bodyModel[254].setRotationPoint(-57.25F, -13.6F, -1.9F);
 
 		bodyModel[255].addShapeBox(0F, 0F, 0F, 1, 3, 3, 0F,0F, 0F, 0F, -0.75F, 0F, 0F, -0.75F, 0F, 0F, 0F, 0F, 0F, 0.75F, 0F, 0F, -1.5F, 0F, 0F, -1.5F, 0F, 0F, 0.75F, 0F, 0F); // Box 2
 		bodyModel[255].setRotationPoint(-59.75F, 2.5F, 4.5F);
@@ -1398,10 +1404,10 @@ public class U33B extends ModelBase //Same as Filename
 		bodyModel[318].setRotationPoint(-61.25F, 8F, -9F);
 
 		bodyModel[319].addShapeBox(0F, 0F, 0F, 1, 1, 7, 0F,0F, -0.75F, 0F, 0F, -0.75F, 0F, 0F, -0.75F, 0F, 0F, -0.75F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 131
-		bodyModel[319].setRotationPoint(-61.25F, 8F, 1F);
+		bodyModel[319].setRotationPoint(-61.25F, 8F, 2F);
 
 		bodyModel[320].addShapeBox(0F, 0F, 0F, 1, 1, 7, 0F,0F, 0F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 132
-		bodyModel[320].setRotationPoint(-60.25F, 8F, 1F);
+		bodyModel[320].setRotationPoint(-60.25F, 8F, 2F);
 
 		bodyModel[321].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 123
 		bodyModel[321].setRotationPoint(-60F, -1F, 4.5F);
@@ -1591,5 +1597,20 @@ public class U33B extends ModelBase //Same as Filename
 
 		bodyModel[382].addShapeBox(0F, 0F, 0F, 1, 1, 17, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, -3F, 0F, -0.5F, -3F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -3F, 0F, 0F, -3F); // Box 14
 		bodyModel[382].setRotationPoint(-49F, -13.5F, -7F);
+
+		bodyModel[383].addShapeBox(0F, 0F, 0F, 5, 2, 20, 0F,0F, 0F, -3F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -3F, 0F, 0F, -3F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -3F); // Box 383
+		bodyModel[383].setRotationPoint(23F, -19F, -10F);
+
+		bodyModel[384].addShapeBox(0F, 0F, 0F, 5, 1, 18, 0F,0F, -0.5F, -2F, 0F, 0.25F, -3F, 0F, 0.25F, -3F, 0F, -0.5F, -2F, 0F, 0F, -2F, 0F, 0F, 1F, 0F, 0F, 1F, 0F, 0F, -2F); // Box 384
+		bodyModel[384].setRotationPoint(23F, -20F, -9F);
+
+		bodyModel[385].addShapeBox(0F, 0F, 0F, 5, 5, 12, 0F,1F, -5F, -5F, 0F, -4F, -5F, 0F, -4F, -5F, 1F, -5F, -5F, 0F, 0.25F, 1F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0.25F, 1F); // Box 385
+		bodyModel[385].setRotationPoint(23F, -24.75F, -6F);
+
+		bodyModel[386].addShapeBox(0F, 0F, 0F, 1, 1, 5, 0F,0F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F); // Box 386
+		bodyModel[386].setRotationPoint(-60F, -9.5F, -2.5F);
+
+		bodyModel[387].addShapeBox(0F, 0F, 0F, 1, 1, 5, 0F,-0.5F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 387
+		bodyModel[387].setRotationPoint(59F, -9.5F, -2.5F);
 	}
 }

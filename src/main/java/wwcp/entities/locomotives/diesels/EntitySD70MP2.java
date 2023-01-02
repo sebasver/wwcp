@@ -128,7 +128,7 @@ public class EntitySD70MP2 extends EntityTrainCore {
     public float getMaxFuel(){return 1;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-3.05f,1.35f, -0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.15f,1.5f, -0.3f}};}
 
 
     @Override

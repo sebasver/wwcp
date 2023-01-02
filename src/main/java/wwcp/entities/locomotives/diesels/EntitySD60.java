@@ -90,12 +90,16 @@ public class EntitySD60 extends EntityTrainCore {
                 "CSX Ghost", "CSX in grey ghost scheme");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60/SD60_CSXYG.png", "textures/bogies/AmericanTrucks/Flexicoil_Blue.png",
                 "CSX Y-Ghost", "CSX in grey ghost scheme w/ yellow ends");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60/SD60_CSXYN3.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "CSX YN3", "CSX in YN3 Blue");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60/SD60_CNW.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
                 "CNW", "Chicago & North Western Delivery");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60/SD60_UP.png", "textures/bogies/AmericanTrucks/Flexicoil_UP.png",
                 "UP", "Union Pacific yellow");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60/SD60_NS.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
                 "NS", "Norfolk Southern as delivered");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60/SD60_Oakway.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "Oakway", "EMDX Oakway Leaser");
 
 
     }
