@@ -98,10 +98,10 @@ public class EntityRoyalScot extends EntityTrainCore {
     public void registerSkins() {
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotLmsBlack.png",
                 "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
-                "LMS Black", "DRG BR 50 no Deflectors variant 1 No Plow");
+                "LMS Wartime Black", "Standard LMS livery during WWII");
         SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Steam/RoyalScot/royalScotLmsCrimson.png",
                 "textures/locomotive/Steam/RoyalScot/royalScotBogie.png",
-                "Early Crimson", "DRG BR 50 no Deflectors variant 1 No Plow");
+                "LMS Crimson Early", "LMS early crimson livery");
     }
 
     public int getInventoryRows() {
