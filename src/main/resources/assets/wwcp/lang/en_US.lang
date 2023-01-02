@@ -151,7 +151,8 @@ item.SD50.name=SD50
 item.SD60.name=SD60
 item.SD60M2.name=SD60M
 item.SD70.name=SD70
-item.SD70MP2.name=SD70MP2
+item.SD70MP2.name=SD70M Phase 2 Cab
+item.SD75M.name=SD75M
 item.TEBC6.name=TEBC6
 item.SD60Mac.name=SD60MAC
 item.SD70Mac.name=SD70MAC
@@ -185,6 +186,7 @@ item.Thrall616Bulkhead.name=Thrall 61'6 Bulkhead
 item.Roadrailer53Dryvan.name=53' Roadrailer Dryvan
 item.Thrall616Bulkhead.name=Thrall 61'6 Bulkhead
 item.Thrall616BoeingFlatcar.name=Thrall 61'6 Boeing Flatcar
+item.NSC53Wellcar.name=NSC 53' Wellcar
 item.CP40ftMechanicalRefrigerator.name=CP 40ft Mechanical Refrigerator
 item.60'HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
 

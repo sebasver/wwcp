@@ -16,8 +16,7 @@ import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.AmericanTrucks.MacBogieBack;
 import wwcp.models.bogies.AmericanTrucks.MacBogieFront;
-import wwcp.models.locomotives.diesels.SD70;
-import wwcp.models.locomotives.diesels.SD70MP2;
+import wwcp.models.locomotives.diesels.SD75M;
 import wwcp.worldwidecontentpack;
 
 import java.util.List;
@@ -26,9 +25,9 @@ import java.util.UUID;
 /**
  * ETERNAL NOTE: anything that applies to GenericRailTransport also applies to EntityTrain core.
  */
-public class EntitySD70MP2 extends EntityTrainCore {
+public class EntitySD75M extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntitySD70MP2(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
+    public static final Item thisItem = new WWCPTransport(new EntitySD75M(null), worldwidecontentpack.MODID,worldwidecontentpack.America);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -36,63 +35,68 @@ public class EntitySD70MP2 extends EntityTrainCore {
      * @see EntityTrainCore
      */
 
-    public EntitySD70MP2(UUID owner, World world, double xPos, double yPos, double zPos) {
+    public EntitySD75M(UUID owner, World world, double xPos, double yPos, double zPos) {
         super(owner, world, xPos, yPos, zPos);
     }
-    public EntitySD70MP2(World world){
+    public EntitySD75M(World world){
         super(world);
     }
 
     @Override
-    public String transportName() { return Transport.SD70MP2().name; }
+    public String transportName() { return Transport.SD75M().name; }
 
     @Override
-    public String transportcountry() { return Transport.SD70MP2().country; }
+    public String transportcountry() { return Transport.SD75M().country; }
 
     @Override
-    public String transportYear() { return Transport.SD70MP2().year; }
+    public String transportYear() { return Transport.SD75M().year; }
 
     @Override
     public String transportFuelType() {
-        return Transport.SD70MP2().fuel;
+        return Transport.SD75M().fuel;
     }
     @Override
     public boolean isFictional() {
-        return Transport.SD70MP2().fictional;
+        return Transport.SD75M().fictional;
     }
     @Override
     public float transportTractiveEffort() {
-        return Transport.SD70MP2().tractive_effort;
+        return Transport.SD75M().tractive_effort;
     }
     @Override
     public float transportMetricHorsePower() {
-        return Transport.SD70MP2().metric_horsepower;
+        return Transport.SD75M().metric_horsepower;
     }
     @Override
     public float weightKg() {
-        return  Transport.SD70MP2().weightinKGs;
+        return  Transport.SD75M().weightinKGs;
     }
 
     public boolean isReinforced() {
-        return Transport.SD70MP2().reinforced;
+        return Transport.SD75M().reinforced;
     }
 
     @Override
     public String[] additionalItemText() {
-        {return new String[]{RailUtility.translate(Transport.SD70MP2().additionalTextTitle) + Transport.SD70MP2().additionalText,
-                RailUtility.translate(Transport.SD70MP2().additionalTextTitle2) + Transport.SD70MP2().additionalText2};}
+        {return new String[]{RailUtility.translate(Transport.SD75M().additionalTextTitle) + Transport.SD75M().additionalText,
+                RailUtility.translate(Transport.SD75M().additionalTextTitle2) + Transport.SD75M().additionalText2};}
     }
 
     @Override
-    public float transportTopSpeed(){return accelerator<0? Transport.SD70MP2().backTopSpeed: Transport.SD70MP2().topSpeed;}
+    public float transportTopSpeed(){return accelerator<0? Transport.SD75M().backTopSpeed: Transport.SD75M().topSpeed;}
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70MP2/SD70MP2_NS.png", "textures/bogies/HTSCtruck_Black.png",
-                "NS", "Norfolk Southern Black");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD70MP2/SD70MP2_NS2.png", "textures/bogies/HTSCtruck_Black.png",
-                "NS w/ Whiteface", "Norfolk Southern Black w/ White front");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD75M/SD75M_ATSF.png", "textures/bogies/HTSCtruck_Silver.png",
+                "ATSF", "Atchison, Topeka and Santa Fe Railway Warbonnet");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD75M/SD75M_NS.png", "textures/bogies/HTSCtruck_Black.png",
+                "NS", "Norfolk Southern Black w/ white top");
 
+    }
+
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:ATSF";
     }
 
     /**
@@ -261,7 +265,7 @@ public class EntitySD70MP2 extends EntityTrainCore {
         return thisItem;
     }
 
-    public ModelBase[] getModel(){return new ModelBase[]{new SD70MP2()};}
+    public ModelBase[] getModel(){return new ModelBase[]{new SD75M()};}
 
     //For sound effects
     @SideOnly(Side.CLIENT)

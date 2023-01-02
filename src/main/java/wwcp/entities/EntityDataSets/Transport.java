@@ -729,6 +729,13 @@ public class Transport {
                 109000f, 4000f, 197f, 121f, false, true, 0);
     }
 
+    //SD75M
+    public static Transport.LocomotiveNoBackspeed SD75M() {
+        return new Transport.LocomotiveNoBackspeed("SD75M", "America", "1994-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                137000f, 4300f, 197f, 121f, false, true, 0);
+    }
+
     //SD38-2
     public static Transport.LocomotiveNoBackspeed SD382() {
         return new Transport.LocomotiveNoBackspeed("SD38-2", "America", "1972-Present", "Diesel",
@@ -1565,6 +1572,12 @@ public class Transport {
     public static Transport.Rollingstock Gunderson596Woodchip() {
         return new Transport.Rollingstock("Gunderson596Woodchip", "America", "1986-Present", "",
                 "", type, " Gondola", 3f, 120f, false, true, 0);
+    }
+
+    //NSC 53' Wellcar
+    public static Transport.Rollingstock NSC53Wellcar() {
+        return new Transport.Rollingstock("NSC53Wellcar", "America", "1990-Present", "",
+                "", type, " Wellcar", 20f, 120f, false, true, 0);
     }
 
     //HiCube86QuadDoor

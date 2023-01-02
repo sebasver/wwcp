@@ -105,6 +105,9 @@ public class EntityU33B extends EntityTrainCore {
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/U33B/U33B_RI_Red.png",
                 "textures/bogies/Type_B_Truck.png",
                 "CRI&P Red w/ Large Lettering", "Chicago, Rock Island and Pacific in red with large lettering");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/U33B/U33B_NYC.png",
+                "textures/bogies/Type_B_Truck.png",
+                "NYC Cigar Band", "New York Central in black w/ cigar band, 2 units produced");
     }
 
 

@@ -86,6 +86,8 @@ public class EntitySD402Snoot extends EntityTrainCore {
                 "ATSF Yellowbonnet", "Atchison, Topeka and Santa Fe Railway Yellowbonnet");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_ATSF_Kodachrome.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
                 "ATSF Kodachrome", "ATSF in pre merger SF Kodachrome");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_BNSFH1.png", "textures/bogies/AmericanTrucks/Flexicoil_Green.png",
+                "BNSF H1", "Burlington Northern Santa Fe in Heritage 1");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_KCSG.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
                 "KCS Ghost", "Kansas City Southern Ghost");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD402Snoot/SD402_Snoot_KCSG2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",

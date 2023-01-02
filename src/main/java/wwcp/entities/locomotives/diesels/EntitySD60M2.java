@@ -102,6 +102,8 @@ public class EntitySD60M2 extends EntityTrainCore {
                 "NS", "Norfolk Southern ex. Conrail");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_NS2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
                 "NS Modern", "Norfolk Southern ex. Conrail, modern");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD60M2/SD60M_CR.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "CR", "Conrail Quality Scheme");
     }
 
     @Override

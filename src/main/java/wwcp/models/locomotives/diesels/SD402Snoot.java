@@ -20,7 +20,7 @@ public class SD402Snoot extends ModelBase //Same as Filename
 
 	public SD402Snoot() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[559];
+		bodyModel = new ModelRendererTurbo[563];
 
 		initbodyModel_1();
 		initbodyModel_2();
@@ -876,11 +876,11 @@ public class SD402Snoot extends ModelBase //Same as Filename
 		bodyModel[113].addShapeBox(0F, 0F, 0F, 3, 1, 3, 0F,-3F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -3F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 180
 		bodyModel[113].setRotationPoint(4.75F, -22.5F, -4.5F);
 
-		bodyModel[114].addBox(0F, 0F, 0F, 8, 11, 2, 0F); // Box 11
-		bodyModel[114].setRotationPoint(-21F, -13.5F, -9F);
+		bodyModel[114].addBox(0F, 0F, 0F, 9, 11, 2, 0F); // Box 11
+		bodyModel[114].setRotationPoint(-22F, -13.5F, -9F);
 
-		bodyModel[115].addShapeBox(0F, 0F, 0F, 8, 2, 2, 0F,0F, -0.5F, -0.75F, 0F, -0.5F, -0.75F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[115].setRotationPoint(-21F, -15.5F, -9F);
+		bodyModel[115].addShapeBox(0F, 0F, 0F, 9, 2, 2, 0F,0F, -0.5F, -0.75F, 0F, -0.5F, -0.75F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[115].setRotationPoint(-22F, -15.5F, -9F);
 
 		bodyModel[116].addBox(0F, 0F, 0F, 2, 7, 3, 0F); // Box 11
 		bodyModel[116].setRotationPoint(-32F, -9.5F, -10F);
@@ -1869,10 +1869,10 @@ public class SD402Snoot extends ModelBase //Same as Filename
 		bodyModel[424].setRotationPoint(-67.58F, -13.5F, -1F);
 
 		bodyModel[425].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F); // Light_Nose_Top-Top
-		bodyModel[425].setRotationPoint(-67.7F, -13.5F, -1F);
+		bodyModel[425].setRotationPoint(-67.75F, -13.5F, -1F);
 
 		bodyModel[426].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F); // Light_Nose_Top-Bottom
-		bodyModel[426].setRotationPoint(-67.7F, -11.8F, -1F);
+		bodyModel[426].setRotationPoint(-67.75F, -11.8F, -1F);
 
 		bodyModel[427].addShapeBox(0F, 0F, 0F, 1, 3, 2, 0F,-0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F, -0.43F, 0.75F, 0F, 0F, 0.75F, 0F, 0F, 0.75F, 0F, -0.43F, 0.75F, 0F); // Box 11
 		bodyModel[427].setRotationPoint(-67F, -13.5F, -1F);
@@ -2159,6 +2159,10 @@ public class SD402Snoot extends ModelBase //Same as Filename
 		bodyModel[556] = new ModelRendererTurbo(this, 347, 383, textureX, textureY); // Box 149
 		bodyModel[557] = new ModelRendererTurbo(this, 269, 304, textureX, textureY); // Box 149
 		bodyModel[558] = new ModelRendererTurbo(this, 78, 1, textureX, textureY); // Box 551
+		bodyModel[559] = new ModelRendererTurbo(this, 350, 235, textureX, textureY); // Box 559
+		bodyModel[560] = new ModelRendererTurbo(this, 338, 252, textureX, textureY); // Box 560
+		bodyModel[561] = new ModelRendererTurbo(this, 344, 235, textureX, textureY); // Box 561
+		bodyModel[562] = new ModelRendererTurbo(this, 332, 252, textureX, textureY); // Box 562
 
 		bodyModel[500].addShapeBox(0F, 0F, 0F, 1, 1, 4, 0F,-0.5F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, -0.5F, 0F, -1F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 557
 		bodyModel[500].setRotationPoint(30.5F, -24.75F, -2F);
@@ -2336,5 +2340,17 @@ public class SD402Snoot extends ModelBase //Same as Filename
 
 		bodyModel[558].addBox(0F, 0F, 0F, 1, 2, 0, 0F); // Box 551
 		bodyModel[558].setRotationPoint(-37F, -23.25F, 4.5F);
+
+		bodyModel[559].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.25F, 0F, -0.5F, -0.25F, 0F, -0.5F, -0.25F, 0F, -0.43F, -0.25F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.43F, 0F, 0F); // Box 559
+		bodyModel[559].setRotationPoint(-67F, -9.75F, 0F);
+
+		bodyModel[560].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.43F, -0.25F, 0F, -0.5F, -0.25F, 0F, -0.5F, -0.25F, 0F, 0F, -0.25F, 0F, -0.43F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F); // Box 560
+		bodyModel[560].setRotationPoint(-67F, -9.75F, -1F);
+
+		bodyModel[561].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.25F, 0F, -0.5F, -0.25F, 0F, -0.5F, -0.25F, 0F, -0.43F, -0.25F, 0F, 0F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.43F, -0.5F, 0F); // Box 561
+		bodyModel[561].setRotationPoint(-67F, -10F, 0F);
+
+		bodyModel[562].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.43F, -0.25F, 0F, -0.5F, -0.25F, 0F, -0.5F, -0.25F, 0F, 0F, -0.25F, 0F, -0.43F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 562
+		bodyModel[562].setRotationPoint(-67F, -10F, -1F);
 	}
 }
