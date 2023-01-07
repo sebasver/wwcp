@@ -146,7 +146,7 @@ public class EntityKofIII2 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,-0.05F,0.F}};}
+        return new float[][]{{0f,0F,0.F}};}
 
     /**
      * <h2>rider sit or stand</h2>

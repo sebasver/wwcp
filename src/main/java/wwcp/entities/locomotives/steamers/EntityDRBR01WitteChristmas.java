@@ -31,7 +31,7 @@ public class EntityDRBR01WitteChristmas extends EntityTrainCore {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntityDRBR01WitteChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.FestivitiesTab);
+    public static final Item thisItem = new WWCPTransport(new EntityDRBR01WitteChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.WWCPTab);
 
     public EntityDRBR01WitteChristmas(World world) {
         super(world);

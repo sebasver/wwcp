@@ -353,6 +353,13 @@ public class Transport {
                 58000f, 5000f, 81f, 180f, false, true, 0);
     }
 
+    //todo class 76
+    public static Transport.LocomotiveNoBackspeed Class76() {
+        return new Transport.LocomotiveNoBackspeed("Class76", "United Kingdom", "1973-Present", "Electric",
+                nick, "", type, " Passenger Locomotive",
+                58000f, 5000f, 81f, 180f, false, true, 0);
+    }
+
 
     public static Transport.LocomotiveNoBackspeed TEERAeSteurWagen() {
         return new Transport.LocomotiveNoBackspeed("RaeTEEIISteuer", "Switzerland", "1961-1999", "Electric",
@@ -386,6 +393,27 @@ public class Transport {
                 20170f, 0f, 46.38f, 88.51f, false, true, 0);
     }
 
+    //todo CR C812 "CRClass812"
+    public static Transport.LocomotiveNoBackspeed RoyalScot() {
+        return new Transport.LocomotiveNoBackspeed("RoyalScot", "United Kingdom", "1899-1963", "Steam",
+                nick, " Jumbos", type, " Universal Locomotive",
+                20170f, 0f, 46.38f, 88.51f, false, true, 0);
+    }
+
+    //todo BO LE 1 unit
+    public static Transport.LocomotiveNoBackspeed BO_LE_1_FirstUnit() {
+        return new Transport.LocomotiveNoBackspeed("BO LE 1 First", "Germany", "1932-1991", "Electric",
+                nick, "", type, " Passenger Locomotive",
+                44062.5f, 2528.9f, 78.0f, 90f, false, true, 0);
+    }
+
+    //todo BO LE
+    public static Transport.LocomotiveNoBackspeed BO_LE_1_SecondUnit() {
+        return new Transport.LocomotiveNoBackspeed("BO LE 1 Second", "Germany", "1932-1991", "Electric",
+                nick, "", type, " Passenger Locomotive",
+                44062.5f, 2528.9f, 78.0f, 90f, false, true, 0);
+    }
+
     //E44
     public static Transport.LocomotiveNoBackspeed E44DB() {
         return new Transport.LocomotiveNoBackspeed("E44DB", "Germany", "1932-1991", "Electric",
@@ -396,6 +424,13 @@ public class Transport {
     //E94
     public static Transport.LocomotiveNoBackspeed E94() {
         return new Transport.LocomotiveNoBackspeed("E94", "Europe", "1940-1995", "Electric",
+                nick, " Green Crocodile", type, " Freight Locomotive",
+                40000.0f, 4429.0f, 118.5f, 100f, false, true, 0);
+    }
+
+    //E94
+    public static Transport.LocomotiveNoBackspeed BR103() {
+        return new Transport.LocomotiveNoBackspeed("BR103", "Europe", "1940-1995", "Electric",
                 nick, " Green Crocodile", type, " Freight Locomotive",
                 40000.0f, 4429.0f, 118.5f, 100f, false, true, 0);
     }
@@ -425,7 +460,7 @@ public class Transport {
     }
 
     public static Transport.LocomotiveNoBackspeed DSBClassEA() {
-        return new Transport.LocomotiveNoBackspeed("Class EA", "Denmark, Bulgaria, Romainia", "1984-", "Electric",
+        return new Transport.LocomotiveNoBackspeed("Class EA", "DenmarkBulgariaRomainia", "1984-", "Electric",
                 "", "", type, " Universal Locomotive",
                 45000.0f, 5030.0f, 84.0f, 175f, false, true, 0);
     }
@@ -482,6 +517,12 @@ public class Transport {
                 "", type, " Tender", 19.5f, 0f, false, true, 0, 300000);
     }
 
+    //todo fix these stats
+    public static Transport.TankCars FowlerTender() {
+        return new Transport.TankCars("Fowlertender", "United_Kingdom", "1899-1963", "",
+                "", type, " Tender", 19.5f, 0f, false, true, 0, 300000);
+    }
+
     //todo G4200
     public static Transport.TankCars G4200() {
         return new Transport.TankCars("G4200", "United_Kingdom", "1899-1963", "",
@@ -529,7 +570,7 @@ public class Transport {
 
     //Highliner
     public static Transport.LocomotiveNoBackspeed HiglinerLocomotive() {
-        return new Transport.LocomotiveNoBackspeed("HighlinerLocomotive", "America", "1971-2016", "Electric",
+        return new Transport.LocomotiveNoBackspeed("Highliner Locomotive", "America", "1971-2016", "Electric",
                 "", "", type, " Cab Car",
                 25000f, 1800f, 70.5f, 130f, false, true, 0);
     }
@@ -543,9 +584,23 @@ public class Transport {
 
     //U33B
     public static Transport.LocomotiveNoBackspeed U33B() {
-        return new Transport.LocomotiveNoBackspeed("U33B", "Canada", "1956-1988", "Diesel",
-                "", "", type, "Road Switcher",
+        return new Transport.LocomotiveNoBackspeed("U33B", "America", "1966-2005", "Diesel",
+                "", "", type, "Universal locomotive",
                 64000f, 3300f, 127.4f, 112.6f, false, true, 0);
+    }
+
+    //B30-7a Highood
+    public static Transport.LocomotiveNoBackspeed B307a() {
+        return new Transport.LocomotiveNoBackspeed("B307a", "America", "1977-Present", "Diesel",
+                "", "", type, "Road Diesel",
+                63250f, 3000f, 129.4f, 112.6f, false, true, 0);
+    }
+
+    //B30-7
+    public static Transport.LocomotiveNoBackspeed B307() {
+        return new Transport.LocomotiveNoBackspeed("B307", "America", "1977-Present", "Diesel",
+                "", "", type, "Road Diesel",
+                63250f, 3000f, 129.4f, 112.6f, false, true, 0);
     }
 
     //M640 - Note, Incomplete until I find the data
@@ -624,6 +679,13 @@ public class Transport {
                 40000f, 1500f, 123f, 105f, false, true, 0);
     }
 
+    //GP7R RI
+    public static Transport.LocomotiveNoBackspeed GP7RRI() {
+        return new Transport.LocomotiveNoBackspeed("GP7R RI", "America", "1952-2014", "Diesel",
+                nick, "", type, " General Purpose Locomotive",
+                40000f, 1500f, 123f, 105f, false, true, 0);
+    }
+
     //GP9R
     public static Transport.LocomotiveNoBackspeed GP9R() {
         return new Transport.LocomotiveNoBackspeed("GP9R", "America", "1992-Present", "Diesel",
@@ -638,11 +700,88 @@ public class Transport {
                 77250f, 1500f, 154.5f, 105f, false, true, 0);
     }
 
+    //TEBC6
+    public static Transport.LocomotiveNoBackspeed TEBC6() {
+        return new Transport.LocomotiveNoBackspeed("TEBC6", "America", "1993-Present", "Diesel",
+                nick, "", type, " Slug",
+                77250f, 1500f, 154.5f, 105f, false, true, 0);
+    }
+
     //SD45-2
     public static Transport.LocomotiveNoBackspeed SD452() {
         return new Transport.LocomotiveNoBackspeed("SD45-2", "America", "1972-Present", "Diesel",
                 nick, "", type, " Special Duty Locomotive",
                 82100f, 3600f, 184f, 112f, false, true, 0);
+    }
+
+    //SD45
+    public static Transport.LocomotiveNoBackspeed SD45() {
+        return new Transport.LocomotiveNoBackspeed("SD45", "America", "1965-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                82100f, 3600f, 184f, 112f, false, true, 0);
+    }
+
+    //SD45X
+    public static Transport.LocomotiveNoBackspeed SD45X() {
+        return new Transport.LocomotiveNoBackspeed("SD45X", "America", "1971-1980", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                82100f, 4200f, 184f, 112f, false, true, 0);
+    }
+
+    //SD40-2 Snoot
+    public static Transport.LocomotiveNoBackspeed SD402Snoot() {
+        return new Transport.LocomotiveNoBackspeed("SD402Snoot", "America", "1972-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                82100f, 3000f, 184f, 112f, false, true, 0);
+    }
+
+    //SD50
+    public static Transport.LocomotiveNoBackspeed SD50() {
+        return new Transport.LocomotiveNoBackspeed("SD50", "America", "1980-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                82100f, 3500f, 184f, 112f, false, true, 0);
+    }
+
+    //SD60
+    public static Transport.LocomotiveNoBackspeed SD60() {
+        return new Transport.LocomotiveNoBackspeed("SD60", "America", "1984-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                100000f, 3800f, 184f, 112f, false, true, 0);
+    }
+
+    //JT26C
+    public static Transport.LocomotiveNoBackspeed JT26C() {
+        return new Transport.LocomotiveNoBackspeed("JT26C", "Australia", "1984-Present", "Diesel",
+                nick, "", type, " Road Diesel",
+                82100f, 3000f, 184f, 112f, false, true, 0);
+    }
+
+    //SD60M2
+    public static Transport.LocomotiveNoBackspeed SD60M2() {
+        return new Transport.LocomotiveNoBackspeed("SD60M2", "America", "1991-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                100000f, 3800f, 184f, 112f, false, true, 0);
+    }
+
+    //SD70
+    public static Transport.LocomotiveNoBackspeed SD70() {
+        return new Transport.LocomotiveNoBackspeed("SD70", "America", "1992-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                109000f, 4000f, 197f, 121f, false, true, 0);
+    }
+
+    //SD70MP2
+    public static Transport.LocomotiveNoBackspeed SD70MP2() {
+        return new Transport.LocomotiveNoBackspeed("SD70MP2", "America", "1992-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                109000f, 4000f, 197f, 121f, false, true, 0);
+    }
+
+    //SD75M
+    public static Transport.LocomotiveNoBackspeed SD75M() {
+        return new Transport.LocomotiveNoBackspeed("SD75M", "America", "1994-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                137000f, 4300f, 197f, 121f, false, true, 0);
     }
 
     //SD38-2
@@ -657,6 +796,13 @@ public class Transport {
         return new Transport.LocomotiveNoBackspeed("SD40-2W", "Canada", "1972-Present", "Diesel",
                 nick, "", type, " Special Duty Locomotive",
                 82100f, 3000f, 184f, 112f, false, true, 0);
+    }
+
+    //GP40-2LW
+    public static Transport.LocomotiveNoBackspeed GP402LW() {
+        return new Transport.LocomotiveNoBackspeed("GP40-2LW", "Canada", "1972-Present", "Diesel",
+                nick, "", type, " General Purpose Locomotive",
+                54700f, 3000f, 125f, 112f, false, true, 0);
     }
 
     public static Transport.LocomotiveNoBackspeed GP7HighHood() {
@@ -707,7 +853,12 @@ public class Transport {
                 18726.58f, 240f, 22f, 30f, false, true, 0);
     }
 
-
+    //todod FrichsKoef
+    public static Transport.LocomotiveNoBackspeed FrichsKoef() {
+        return new Transport.LocomotiveNoBackspeed("FrichsKoef", "Germany", "1959-", "Diesel",
+                nick, " Klein Lokomotive", type, " Shunting Locomotive",
+                18726.58f, 240f, 22f, 30f, false, true, 0);
+    }
 
     //DSB FII todo fix this entry
     public static Transport.LocomotiveNoBackspeed DSBFII() {
@@ -843,7 +994,7 @@ public class Transport {
 
     //HLD55
     public static Transport.LocomotiveNoBackspeed HLD55() {
-        return new Transport.LocomotiveNoBackspeed("HLD55", "Belgium, Luxembourg, Denmark, Germany, Sweden", "1961-", "Diesel",
+        return new Transport.LocomotiveNoBackspeed("HLD55", "BelgiumLuxembourgDenmarkGermanySweden", "1961-", "Diesel",
                 nick, "", type, " Universal Locomotive",
                 77000f, 1951f, 110f, 120f, false, true, 0);
     }
@@ -964,7 +1115,7 @@ public class Transport {
     }
 
     public static Transport.LocomotiveNoBackspeed BR146() {
-        return new Transport.LocomotiveNoBackspeed("BR146_0", "Europe", "1997-", "Electric",
+        return new Transport.LocomotiveNoBackspeed("BR146", "Europe", "1997-", "Electric",
                 "", "", type, " Passenger Locomotive",
                 67442.68f, 5710.41f, 82.0f, 160f, false, true, 0);
     }
@@ -1038,6 +1189,13 @@ public class Transport {
     //todo right stats
     public static Transport.LocomotiveNoBackspeed WWCPShopShunter() {
         return new Transport.LocomotiveNoBackspeed("WWCPShopShunter", "Europe", "2012-", "Diesel",
+                "", "", type, " Shunter Locomotive",
+                6744.26f, 75f, 15.0f, 30f, true, true, 0);
+    }
+
+    //todo right stats
+    public static Transport.LocomotiveNoBackspeed WWCPStandard0_6_2T() {
+        return new Transport.LocomotiveNoBackspeed("WWCPStandard0_6_2T", "Europe", "2012-", "Diesel",
                 "", "", type, " Shunter Locomotive",
                 6744.26f, 75f, 15.0f, 30f, true, true, 0);
     }
@@ -1132,6 +1290,18 @@ public class Transport {
     //Eurofima with Compartments
     public static Transport.Rollingstock EurofimaCompartment1_2() {
         return new Transport.Rollingstock("EurofimaCompartments1_2", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //Eurofima with Compartments
+    public static Transport.Rollingstock EurofimaOpen1() {
+        return new Transport.Rollingstock("Eurofima Open 1", "Europe", "1977-", "",
+                "", type, " Passenger", 45f, 200f, false, true, 0);
+    }
+
+    //Eurofima with Compartments
+    public static Transport.Rollingstock EurofimaPanorama() {
+        return new Transport.Rollingstock("Eurofima Panorama", "Europe", "1977-", "",
                 "", type, " Passenger", 45f, 200f, false, true, 0);
     }
 
@@ -1392,6 +1562,18 @@ public class Transport {
                 "", type, " Boxcar", 48f, 120f, false, true, 0);
     }
 
+    //2 Bay Concrete Hopper
+    public static Transport.Rollingstock Bay2ConcreteHopper() {
+        return new Transport.Rollingstock("Bay2ConcreteHopper", "America", "?", "",
+                "", type, " Hopper", 48f, 120f, false, true, 0);
+    }
+
+    //40ft Boxcar
+    public static Transport.Rollingstock GN40HomebuiltBoxcar() {
+        return new Transport.Rollingstock("GN40HomebuiltBoxcar", "America", "?", "",
+                "", type, " Boxcar", 48f, 120f, false, true, 0);
+    }
+
     //40ft CP Mechanical Plug Door Refrigerated Boxcar
     public static Transport.Rollingstock CP_Mechanical_Reefer_40ft() {
         return new Transport.Rollingstock("CP 40ft Mechanical Refrigerator", "Canada", "?", "",
@@ -1431,6 +1613,48 @@ public class Transport {
     public static Transport.Rollingstock Flatcar_89ft() {
         return new Transport.Rollingstock("89ftFlatCar", "America", "1956", "",
                 "", type, " Flatcar", 75f, 0f, false, true, 0);
+    }
+
+    //Roadrailer53Dryvan
+    public static Transport.Rollingstock Roadrailer53Dryvan() {
+        return new Transport.Rollingstock("Roadrailer53Dryvan", "America", "1986-Present", "",
+                "", type, " Roadrailer", 3f, 120f, false, true, 0);
+    }
+
+    //Thrall 61'6 Bulkhead
+    public static Transport.Rollingstock Thrall616Bulkhead() {
+        return new Transport.Rollingstock("Thrall616Bulkhead", "America", "1986-Present", "",
+                "", type, " Bulkhead Flatcar", 15f, 120f, false, true, 0);
+    }
+
+    //Thrall 61'6 Boeing Flatcar
+    public static Transport.Rollingstock Thrall616BoeingFlatcar() {
+        return new Transport.Rollingstock("Thrall616BoeingFlatcar", "America", "1986-Present", "",
+                "", type, " Flatcar", 30f, 120f, false, true, 0);
+    }
+
+    //Gunderson 59'6 Woodchip
+    public static Transport.Rollingstock Gunderson596Woodchip() {
+        return new Transport.Rollingstock("Gunderson596Woodchip", "America", "1986-Present", "",
+                "", type, " Gondola", 25f, 120f, false, true, 0);
+    }
+
+    //Paccar 64' Woodchip
+    public static Transport.Rollingstock Paccar64Woodchip() {
+        return new Transport.Rollingstock("Paccar64Woodchip", "America", "1975-Present", "",
+                "", type, " Gondola", 30f, 120f, false, true, 0);
+    }
+
+    //NSC 53' Wellcar
+    public static Transport.Rollingstock NSC53Wellcar() {
+        return new Transport.Rollingstock("NSC53Wellcar", "America", "1990-Present", "",
+                "", type, " Wellcar", 15f, 120f, false, true, 0);
+    }
+
+    //HiCube86QuadDoor
+    public static Transport.Rollingstock HiCube86QuadDoor() {
+        return new Transport.Rollingstock("HiCube86QuadDoor", "America", "1969-Present", "",
+                "", type, " Boxcar", 38f, 0f, false, true, 0);
     }
 
     //89ft Autorack BiLvel

@@ -105,43 +105,43 @@ public class EntityTraxxF140MS2E extends EntityTrainCore {
 
     @Override
     public void registerSkins() {
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT1.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT1.png", "textures/bogies/Flexxpower.png",
                 "Belgian Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT2.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT2.png", "textures/bogies/Flexxpower.png",
                 "NS Livery", "Used by the NS in their regular service");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT3.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT3.png", "textures/bogies/Flexxpower.png",
                 "Polish Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT4.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT4.png", "textures/bogies/Flexxpower.png",
                 "Easter Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT5.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT5.png", "textures/bogies/Flexxpower.png",
                 "Silesian Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT6.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT6.png", "textures/bogies/Flexxpower.png",
                 "HLE28 NMBS Cargo", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT7.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT7.png", "textures/bogies/Flexxpower.png",
                 "Valentines Day Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT8.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT8.png", "textures/bogies/Flexxpower.png",
                 "WWCP Commercial Livery", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT9.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT9.png", "textures/bogies/Flexxpower.png",
                 "StPatricks Day Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT10.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT10.png", "textures/bogies/Flexxpower.png",
                 "Halloween Theme Skin", "Used by the NMBS/SNCB in belgium for freight trains");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT11.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT11.png", "textures/bogies/Flexxpower.png",
                 "New Years Skin", "Special New Years skin to celebrate 2020");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT12.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT12.png", "textures/bogies/Flexxpower.png",
                 "Metronom", "Special New Years skin to celebrate 2020");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT13.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT13.png", "textures/bogies/Flexxpower.png",
                 "Railpool", "Special New Years skin to celebrate 2020");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT14.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT14.png", "textures/bogies/Flexxpower.png",
                 "DB", "Verkehrsrot, 4 pantograph variant");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT142.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT142.png", "textures/bogies/Flexxpower.png",
                 "DB 2", "Verkehrsrot, 2 pantograph variant");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/Traxx241.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/Traxx241.png", "textures/bogies/Flexxpower.png",
                 "HectorRail 241", "HectorRail, 2 pantograph variant");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT15.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT15.png", "textures/bogies/Flexxpower.png",
                 "RER", "Special New Years skin to celebrate 2020");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT16.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT16.png", "textures/bogies/Flexxpower.png",
                 "WWCP 2 Years", "Special New Years skin to celebrate 2020");
-        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/F140MS2E/TraxxT17.png", "textures/bogies/Flexxpower.png",
+        SkinRegistry.addSkin(this.getClass(), worldwidecontentpack.MODID, "textures/locomotive/Electric/TraxxFamily/TraxxT17.png", "textures/bogies/Flexxpower.png",
                 "Chemoil SBB", "Special New Years skin to celebrate 2020");
     }
 

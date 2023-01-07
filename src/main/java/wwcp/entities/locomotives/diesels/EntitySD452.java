@@ -84,10 +84,14 @@ public class EntitySD452 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_ATSF.png", "textures/bogies/AmericanTrucks/Flexicoil_Silver.png",
+                "ATSF Yellowbonnet", "Atchison, Topeka and Santa Fe Railway Yellowbonnet");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_BNSF_H1.png", "textures/bogies/AmericanTrucks/Flexicoil_Green.png",
                 "BNSF H1", "Burlington Northern Santa Fe in Heritage 1 Scheme");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_MRL.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
-                "MRL", "Montana Rail Link w/ beacon");
+                "MRL ex.SCL", "Montana Rail Link w/ beacon and top headlight");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_MRL2.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
+                "MRL ex.ATSF", "Montana Rail Link w/ noselight");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_CRR.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
                 "CRR", "Clinchfield in black scheme");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD452/SD452_CR_Early.png", "textures/bogies/AmericanTrucks/Flexicoil_Black.png",
@@ -104,7 +108,7 @@ public class EntitySD452 extends EntityTrainCore {
 
     @Override
     public String getDefaultSkin() {
-        return "wwcp:BNSF H1";
+        return "wwcp:ATSF Yellowbonnet";
     }
 
     @Override

@@ -8,8 +8,11 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import wwcp.blockEntities.platform.*;
+import wwcp.entities.WWCPFictional.EntityWWCPShopShunter;
+import wwcp.entities.WWCPFictional.EntityWWCPStandard_0_6_2T;
 import wwcp.entities.freight.*;
 import wwcp.entities.Advent.*;
+import wwcp.entities.locomotives.diesels.EntityGP7HighHood;
 import wwcp.entities.locomotives.diesels.*;
 import wwcp.entities.locomotives.electrics.*;
 import wwcp.entities.locomotives.steamers.*;
@@ -20,6 +23,8 @@ import wwcp.entities.locomotives.steamers.BR50.DRG.*;
 import wwcp.entities.locomotives.steamers.BR50.DR.*;
 import wwcp.entities.locomotives.steamers.BR50.DB.*;
 import wwcp.entities.passengerstock.*;
+import wwcp.entities.passengerstock.Eurofima.*;
+import wwcp.entities.passengerstock.RheingoldOld.*;
 import wwcp.entities.railbusses.EntityNE81;
 import wwcp.entities.railbusses.EntitySeries4000;
 import wwcp.entities.railbusses.EntityVT98;
@@ -140,7 +145,6 @@ public class wwcp_registrations {
                 new EntityDBBR50_40(null),
                 new EntityDRBR01WitteChristmas(null),
                 new EntitySentinel100HPChristmas(null),
-                new EntityTEESteuerWagen(null),
                 new EntityX10a(null),
                 new EntityDSBFII(null),
                 new EntityDSBFIII(null),
@@ -148,7 +152,9 @@ public class wwcp_registrations {
                 new EntityGWR57(null),
                 new EntityJ38(null),
                 new EntityJ39(null),
-                new EntityU1F(null)
+                new EntityU1F(null),
+                new EntityWWCPStandard_0_6_2T(null),
+                new EntityRoyalScot(null)
         };
     }
 
@@ -169,7 +175,8 @@ public class wwcp_registrations {
                 new EntityT38(null),
                 new EntityT38Oil(null),
                 new EntityG4200Tender(null),
-                new EntityVanderBuiltTender(null)
+                new EntityVanderBuiltTender(null),
+                new EntityFowlerTender(null)
         };
     }
 
@@ -179,7 +186,7 @@ public class wwcp_registrations {
                 new EntityV36(null),
                 new EntityV36Kanzel(null),
                 new EntityClass37(null),
-                new EntityAC4400CW(null),
+                //new EntityAC4400CW(null),
                 new EntityMZClassOne(null),
                 new EntityMZClassOne1967(null),
                 new EntityMZClassTwo(null),
@@ -193,24 +200,55 @@ public class wwcp_registrations {
                 new EntityHLD55(null),
                 new EntityKofIII(null),
                 new EntityKofIII2(null),
-                new EntityF7A(null),
-                new EntityF7B(null),
-                new EntityGP7(null),
-                new EntityFP7A(null),
-                new EntitySD70Mac(null),
-                new EntityF40ph(null),
-                new EntityRS18(null),
-                new EntitySD60Mac(null),
-                new EntityGP50(null),
-                new EntityM640(null),
-                new EntityGP7HighHood(null),
-                new EntityU33B(null),
-                new EntitySD70ACU(null),
-                new EntityAlco_PA(null),
-                new EntityAlco_PB(null),
                 new EntityV200(null),
                 new EntityV160(null),
-                new EntityRS3(null)
+                //American Diesels
+                // new EntityAC4400CW(null),
+                new EntityF7A(null),
+                new EntityF7B(null),
+                new EntityAlco_PA(null),
+                new EntityAlco_PB(null),
+                new EntityCFA164(null),
+                new EntityCPA164(null),
+                // new EntityFP7A(null),
+                // new EntitySD70Mac(null),
+                //  new EntityF40ph(null),
+                // new EntityRS18(null),
+                // new EntitySD60Mac(null),
+                // new EntityGP50(null),
+                // new EntityM640(null),
+                new EntityBL2(null),
+                new EntityGP7(null),
+                new EntityGP7RRI(null),
+                new EntityGP9R(null),
+                new EntityGP402LW(null),
+                new EntitySD7(null),
+                new EntitySD382(null),
+                new EntitySD402W(null),
+                new EntitySD452(null),
+                new EntitySD50(null),
+                new EntitySD60(null),
+                new EntitySD60M2(null),
+                new EntitySD70(null),
+                new EntitySD70MP2(null),
+                new EntitySD75M(null),
+                new EntitySD90MACH(null),
+                new EntitySD70ACU(null),
+                new EntityU33B(null),
+                new EntityB307(null),
+                new EntityB307a(null),
+                new EntityRS3(null),
+                new EntityRS23(null),
+                new EntityJT26C(null),
+                new EntityTEBC6(null),
+                new EntitySD402Snoot(null),
+                new EntitySD45(null),
+                new EntitySD45X(null),
+                new EntityWWCPShopShunter(null),
+                new EntityFrichsKoef(null),
+                new EntityTraxxP160DE(null),
+                new EntityTraxxP160DEME(null),
+                new EntityTraxxF140DE(null)
         };
     }
 
@@ -221,7 +259,6 @@ public class wwcp_registrations {
                 new EntityVT98AD(null),
                 new EntityVT98(null),
                 new EntitySeries4000(null),
-                new EntityTEESchweizzBar(null)
         };
     }
 
@@ -234,17 +271,33 @@ public class wwcp_registrations {
     //Electric List
     public static GenericRailTransport[] listelectric() {
         return new GenericRailTransport[]{
+                //European Stock
                 new EntityTraxxF140MS2E(null),
                 new EntityV36Electric(null),
                 new EntityES64U2(null),
                 new EntityES64U4(null),
-                new EntitySteepleCab(null),
                 new EntityClass87(null),
-                new EntityHighliner(null),
                 new EntityE44DB(null),
                 new EntityE94(null),
+                new EntityDSBClassEA(null),
+                new EntityTEESteuerWagen(null),
+                new EntityClass76(null),
+
+                //American Stock
+                new EntitySteepleCab(null),
+                new EntityHighliner(null),
                 new EntityAEM7(null),
-                new EntityDSBClassEA(null)
+                new EntityBO_LE1_FirstUnit(null),
+                new EntityBO_LE1_SecondUnit(null),
+                new EntityBR103(null),
+                new EntityTraxxBR145(null),
+                new EntityTraxxF140AC1(null),
+                new EntityTraxxF140AC2(null),
+                new EntityTraxxP140AC1(null),
+                new EntityTraxxF140DC2(null),
+                new EntityTraxxP160AC1(null),
+
+
         };
     }
 
@@ -252,8 +305,6 @@ public class wwcp_registrations {
     public static GenericRailTransport[] listpassenger() {
         return new GenericRailTransport[]{
                 new EntityEurofimaCompartment1(null),
-                new EntityEurofimaRows(null),
-                new EntityEurofimaSleeper(null),
                 new EntityDBpza(null),
                 new EntityDonder2(null),
                 new EntityDonder3(null),
@@ -268,14 +319,27 @@ public class wwcp_registrations {
                 new EntityRheingoldSpeiseOneChristmas(null),
                 new EntityRheingoldSpeiseTwoChristmas(null),
                 new EntityGWRThirdChristmas(null),
-                new EntityACF_60Seats(null),
-                new EntityAmfleet1(null),
-                new EntityBOCaboose(null),
                 new EntityEurofimaPresidentiale(null),
+                new EntityTEESchweizzBar(null),
+                new EntityEurofimaFlatConstruction(null),
+                new EntityEurofimaAssembling(null),
+                new EntityEurofimaGettingPaint(null),
+                new EntityEurofimaInteriorFitting(null),
+                new EntityEurofimaCompartment1_2(null),
+                new EntityEurofimaCompartment2(null),
                 new EntityDSB_BFS(null),
                 new EntityDSB_BFM(null),
                 new EntityDSB_AFM(null),
-                new EntityDSB_CFM(null)
+                new EntityDSB_CFM(null),
+
+                //American Stock
+                new EntityACF_60Seats(null),
+                new EntityAmfleet1(null),
+                new EntityBOCaboose(null),
+                new EntityCPMetalVan(null),
+                new EntityEurofimaOpen1(null),
+                new EntityEurofimaPanorama(null)
+
         };
     }
 
@@ -292,8 +356,6 @@ public class wwcp_registrations {
                 new EntitySGNS801BT2TS(null),
                 new EntityZACNS95(null),
                 new EntityEALOSX(null),
-                new EntityHiCubePlateFBoxcar(null),
-                new EntityFortyFoot_Boxcar(null),
                 new EntityHabbiins_14(null),
                 new EntityHabbiins_17(null),
                 new EntityHabiins_12(null),
@@ -304,22 +366,36 @@ public class wwcp_registrations {
                 new EntityUKVan(null),
                 new EntityHbbins(null),
                 new EntityHbbillns(null),
-                new Entity_89ft_Autorack_BiLevel(null),
-                new Entity_89ft_Flatcar(null),
-                new Entity_GSC_60_Flatcar(null),
-                new EntityACF_SingleDomeTankCar(null),
-                new EntityPRR_Gla_Hopper(null),
-                new EntityCP_Plug_Slide(null),
-                new EntityCP_Minibox(null),
-                new EntityCP_Plugdoor(null),
                 new EntityUKCattleWagen(null),
                 new EntityUKGasWagen(null),
                 new EntityDSBZETanker(null),
                 new EntityDSB735Tanker(null),
+                new EntityDSBCarE(null),
                 new EntityLgns(null),
-                new Entity40ftAAR_Boxcar(null),
                 new EntityGS(null),
-                new EntityDSBCarE(null)
+
+               //American Stock
+                new Entity40ftAAR_Boxcar(null),
+                new EntityGN40HomebuiltBoxcar(null),
+                new EntityCP_Minibox(null),
+                // new EntityCP_Plug_Slide(null),
+                // new EntityCP_Plugdoor(null),
+                new EntityCP40ftMechanicalReefer(null),
+                new EntityHiCubePlateFBoxcar(null),
+                //new EntityFortyFoot_Boxcar(null),
+                //new Entity_89ft_Autorack_BiLevel(null),
+               // new Entity_89ft_Flatcar(null),
+                new Entity_GSC_60_Flatcar(null),
+                new EntityACF_SingleDomeTankCar(null),
+                new EntityPRR_Gla_Hopper(null),
+                new EntityRoadrailer53Dryvan(null),
+                new EntityHiCube86QuadDoor(null),
+                new EntityThrall616Bulkhead(null),
+                new EntityThrall616BoeingFlatcar(null),
+                new EntityGunderson596Woodchip(null),
+                new EntityBay2ConcreteHopper(null),
+                new EntityNSC53Wellcar(null),
+                new EntityPaccar64Woodchip(null)
         };
     }
 }

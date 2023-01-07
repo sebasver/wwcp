@@ -19,6 +19,7 @@ import wwcp.models.bogies.AmericanTrucks.Blomberg_B;
 import wwcp.models.locomotives.diesels.GP7;
 import wwcp.worldwidecontentpack;
 
+import java.util.List;
 import java.util.UUID;
 
 
@@ -82,33 +83,46 @@ public class EntityGP7 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_BRC_2_No.png", "textures/bogies/blombergB_black.png",
-                "BRC", "Belt Railway of Chicago scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_Algoma_Central_No.png", "textures/bogies/blombergB_black.png",
-                "Algoma Central", "Algoma Central classic road diesel scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_BN_No.png", "textures/bogies/blombergB_black.png",
-                "Burlington Northern", "Burlington Northern with beacon & tanks");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_CN_Black_No.png", "textures/bogies/blombergB_black.png",
-                "CN Noodle", "Canadian National with CN noodle logo on the side");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_CP_Action_Red_No.png", "textures/bogies/blombergB_black.png",
-                "CP Rail 8'inch Stripe", "CP Rail Action Red with 8'inch stripe");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_Mopac_White_No.png", "textures/bogies/blombergB_black.png",
-                "Mopac Grey & Blue", "Mopac grey & blue, sued for passenger service");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_NYC_Lightning_Stripe_No.png", "textures/bogies/blombergB_black.png",
-                "NYC Lightning Stripe", "New York Central lightning stripe, used for passenger");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_PRR_No.png", "textures/bogies/blombergB_black.png",
-                "PRR Early", "Pennsylvania railroad in early black scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_SLSF_Orange_N.png", "textures/bogies/blombergB_black.png",
-                "SLSF Orange", "Frisco in orange & white");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_THB_No.png", "textures/bogies/blombergB_black.png",
-                "TH&B", "Toronto, Hamilton & Buffalo maroon & cream");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_BRC-2_N.png", "textures/bogies/blombergB_black.png",
+//                "BRC", "Belt Railway of Chicago scheme");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_Algoma_Central_No.png", "textures/bogies/blombergB_black.png",
+//                "Algoma Central", "Algoma Central classic road diesel scheme");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_BN_No.png", "textures/bogies/blombergB_black.png",
+//                "Burlington Northern", "Burlington Northern with beacon & tanks");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_CN_Black_No.png", "textures/bogies/blombergB_black.png",
+//                "CN Noodle", "Canadian National with CN noodle logo on the side");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_CP_Action_Red_N.png", "textures/bogies/blombergB_black.png",
+//                "CP Rail 8'inch Stripe", "CP Rail Action Red with 8'inch stripe");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_Mopac_White_No.png", "textures/bogies/blombergB_black.png",
+//                "Mopac Grey & Blue", "Mopac grey & blue, sued for passenger service");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_NYC_Lightning_Stripe_No.png", "textures/bogies/blombergB_black.png",
+//                "NYC Lightning Stripe", "New York Central lightning stripe, used for passenger");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_PRR_No.png", "textures/bogies/blombergB_black.png",
+//                "PRR Early", "Pennsylvania railroad in early black scheme");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_SLSF_Orange_N.png", "textures/bogies/blombergB_black.png",
+//                "SLSF Orange", "Frisco in orange & white");
+//        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_Highood_THB_No.png", "textures/bogies/blombergB_black.png",
+//                "TH&B", "Toronto, Hamilton & Buffalo maroon & cream");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_WP_Green.png", "textures/bogies/blombergB_black.png",
+                "WP Green", "Western Pacific in Green");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7RIBankruptcyBlue.png", "textures/bogies/blombergB_black.png",
+                "CRI&P Blue", "Chicago, Rock island & Pacific, in blue");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/GP7/GP7_CNW.png", "textures/bogies/blombergB_black.png",
+                "CNW", "Chicago & North Western Yellow");
+    }
+
+    @Override
+    public String getDefaultSkin() {
+        return "wwcp:WP Green";
     }
 
     @Override
     public float getMaxFuel(){return 20;}
 
+    @Override
+    public List<TrainsInMotion.transportTypes> getTypes(){
+        return TrainsInMotion.transportTypes.DIESEL.singleton();
 
-    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.DIESEL;
     }
 
     @Override
@@ -171,14 +185,28 @@ public class EntityGP7 extends EntityTrainCore {
      * <h2>Fluid Tank Capacity</h2>
      */
     //@Override
-    public int[] getTankCapacity(){return new int[]{9161, 800};}
+    public int[] getTankCapacity(){return new int[]{9161};}
 
-    @Override
-    public boolean isItemValidForSlot(int slot, ItemStack stack){
-        switch (slot){
-            case 400:{return stack!=null && stack.getItem() ==Items.redstone;}
-            default:{return true;}
-        }}
+
+    public int[] getParticleData(int id) {
+        switch (id){
+            case 0:{return new int[]{1, 40, 0x6a6a6a};}//EMD smoke
+            case 1:{return super.getParticleData(id);}//heavy smoke
+            case 2:{return super.getParticleData(id);}//steam
+            case 3:{return super.getParticleData(id);}//led lamp
+            case 4:{return super.getParticleData(id);}//reverse lamp
+            case 5:{return super.getParticleData(id);}//small sphere lamp
+
+            default:{return new int[]{5, 100, 0xf3da90};}
+        }
+    }
+
+    public String[] setParticles(){
+
+        return new String[]{"smoke ,0,-1.35,0.95,0,0,0,0",
+                "smoke ,0,-0.3,0.95,0,0,0,0"};
+
+    }
 
     /**
      * <h2>fuel management</h2>
@@ -186,7 +214,7 @@ public class EntityGP7 extends EntityTrainCore {
      */
 
     public void manageFuel() {
-        this.fuelHandler.manageElectric(this);
+        this.fuelHandler.manageDiesel(this);
     }
 
     /**

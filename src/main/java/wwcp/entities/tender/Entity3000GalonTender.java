@@ -104,7 +104,7 @@ public class Entity3000GalonTender extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{5.0F, -5.0F};
+        return new float[]{1.0F, -1.0F};
     }
 
     public float getRenderScale() {
@@ -112,7 +112,7 @@ public class Entity3000GalonTender extends GenericRailTransport {
     }
 //todo change bogie length from center
     public float[][] modelOffsets() {
-        return new float[][]{{0.06f,-0.12F,0F}};
+        return new float[][]{{-0.025f,0F,0F}};
     }
 
     public void registerSkins() {
@@ -129,7 +129,7 @@ public class Entity3000GalonTender extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{4.325F, 1.6F, 1.2F};
+        return new float[]{4F, 1.6F, 1.2F};
     }
 
     public Item getItem() {

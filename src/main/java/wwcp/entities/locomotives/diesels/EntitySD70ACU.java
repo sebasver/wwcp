@@ -140,7 +140,7 @@ public class EntitySD70ACU extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{7f,2f,1.5f};
+        return new float[]{10f,2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {

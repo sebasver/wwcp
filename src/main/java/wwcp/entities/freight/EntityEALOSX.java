@@ -33,7 +33,7 @@ public class EntityEALOSX extends GenericRailTransport {
     }
     @Override
     public float[][] bogieModelOffsets() {
-        return new float[][]{{2.05F,0.08f,0},{-2.05F,0.08f,0}};
+        return new float[][]{{2.05F,0f,0},{-2.05F,0f,0}};
     }
 
     @Override
@@ -51,7 +51,7 @@ public class EntityEALOSX extends GenericRailTransport {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0.06f,-0.12F,0F}};
+        return new float[][]{{0.06f,-0.01F,0F}};
     }
 
     public void registerSkins() {

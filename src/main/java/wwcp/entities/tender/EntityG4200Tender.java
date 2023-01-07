@@ -16,7 +16,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.fluids.FluidRegistry;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
-import wwcp.models.tenders.Class812Tender;
 import wwcp.models.tenders.G4200Tender;
 import wwcp.worldwidecontentpack;
 
@@ -104,7 +103,7 @@ public class EntityG4200Tender extends GenericRailTransport {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{5.0F, -5.0F};
+        return new float[]{1.0F, -1.0F};
     }
 
     public float getRenderScale() {
@@ -112,7 +111,7 @@ public class EntityG4200Tender extends GenericRailTransport {
     }
 //todo change bogie length from center
     public float[][] modelOffsets() {
-        return new float[][]{{0f,0F,0F}};
+        return new float[][]{{-0.075f,0F,0F}};
     }
 
     public void registerSkins() {
@@ -133,7 +132,7 @@ public class EntityG4200Tender extends GenericRailTransport {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{3.8F, 1.6F, 1.2F};
+        return new float[]{4F, 1.6F, 1.2F};
     }
 
     public Item getItem() {

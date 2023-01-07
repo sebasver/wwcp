@@ -15,6 +15,7 @@ item.myTab9=Inter European
 item.myTab10=Denmark
 item.blockTab=Blocks
 item.festivetab=Festive Content
+item.WWCPTab=WWCP
 
 
 <!-- ## Extra Declarations ##--!>
@@ -27,11 +28,16 @@ wwcp.type=Type:
 wwcp.aditional=Aditional Names:
 gui.skin=Skin
 gui.owner=Owner
+menu.item.diesel-multi-engine=Diesel Multi-engine
 
 <!-- ## Extra countries ## --!>
 menu.item.europe=Europe
 menu.item.america=America
 menu.item.united_kingdom=United Kingdom
+menu.item.switzerland=Switzerland
+menu.item.belgium=Belgium
+menu.item.BelgiumLuxembourgDenmarkGermanySweden=Belgium, Luxembourg, Denmark, Germany, Sweden
+menu.item.DenmarkBulgariaRomainia=Denmark, Bulgaria, Romainia
 
 <!-- ## Trains ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas § ## -->
@@ -104,17 +110,132 @@ item.DBBR01_10NeuKesselOil.name=DB BR 01.10 Neu Kessel Oil
 item.DRGBR01(850mm).name=DRG BR 01 (850mm)
 item.DRGBR01_10Streamlined.name=DRG BR 01.10 Streamlined
 item.DRGBR01_10UnStreamlined.name=DRG BR 01.10
+item.DRGBR50kriegslok.name=DRG BR 50 Kriegslok
 item.ClassMK.name=G322/G400B
 item.ClassMH.name=DSB Class MH
 item.DSBClassEA.name=DSB Class EA
 item.V200.name=V200
 item.V160.name=V160
+item.WWCPShopShunter.name=WWCP Shop shunter
+item.WWCPStandard0_6_2T.name=WWCP Standard 0-6-2 T
+item.J38.name=J38
+item.J39.name=J39
+item.Class87.name=Class 87
+item.ClassEA.name=Class EA
+item.P160AC1.name=P160 AC1
+item.P140DC2.name=F140 DC2
+item.F140DE.name=F140 DE
+item.F140AC1.name=F140 AC1
+item.F140AC2.name=F140 AC2
+item.P160DE.name=P160 DE
+item.P160DEME.name=P160 DEME
+item.P140AC1.name=P140 AC1
+item.EurofimaPanorama.name=Eurofima Panorama 1st Class
+item.EurofimaOpen1.name=Eurofima Open Configuration 1st Class
+item.DSBE.name=DSBE Open Freight
+item.FrichsKoef.name=Frichs Koef
+item.BR103.name=BR 103
+item.BR145.name=BR 145
+item.Class76.name=Class 76
+item.RoyalScot.name=LMS Original Royal Scot
+item.Fowlertender.name=LMS Fowler 3000 Gallon Tender
+//American Tab
 
+item.X10A.name=CNR X10A
+item.U1F.name=CNR U-1-F
+
+item.F7A.name=F7A
+item.F7B.name=EMD F7B
+item.FP7A.name=FP7A
+item.CFA-16-4.name=CFA-16-4
+item.CPA-16-4.name=CPA-16-4
+item.AlcoPA.name=PA
+item.AlcoPB.name=PB
+item.BL2.name=BL2
+
+item.GP7.name=GP7
+item.GP7RRI.name=GP7R CRI&P
+item.GP9R.name=GP9R
+item.GP40-2LW.name=GP40-2LW
+item.GP50.name=GP50
+
+
+item.SD7.name=SD7
+item.SD45.name=SD45
+item.SD45X.name=SD45X
+item.SD38-2.name=SD38-2
+item.SD40-2W.name=SD40-2W
+item.SD402Snoot.name=SD40-2 Snoot
+item.SD45-2.name=SD45-2
+item.SD50.name=SD50
+item.SD60.name=SD60
+item.SD60M2.name=SD60M
+item.SD70.name=SD70
+item.SD70MP2.name=SD70M Phase 2 Cab
+item.SD75M.name=SD75M
+item.TEBC6.name=TEBC6
+item.SD60Mac.name=SD60MAC
+item.SD70Mac.name=SD70MAC
+item.SD90MACH.name=SD90MAC-H
+item.SD70ACU.name=SD70ACU
+
+item.RS3.name=RS3
+item.RS18.name=RS18
+item.RS23.name=RS23
+
+item.M640.name=M640
+
+item.U33B.name=U33B
+item.B307a.name=B30-7a Highood
+item.B307.name=B30-7
+
+item.AC4400CW.name=AC4400CW
+
+item.SteepleCab.name=Steeple Cab
+item.AEM7.name=AEM-7
+item.HighlinerLocomotive.name=Highliner Cab Car
+
+item.JT26C.name=JT26C
+
+item.40ftBoxcar.name=40ft Boxcar
+item.40ftAARBoxcar.name=40ft AAR Standard Boxcar
+item.GN40HomebuiltBoxcar.name=GN 40' Homebuilt Boxcar
+item.Gunderson596Woodchip.name=Gunderson 59'6 Woodchip Gondola
+item.Paccar64Woodchip.name=Paccar/Gunderson 64' Woodchip Gondola
+item.Bay2ConcreteHopper.name=2 Bay Concrete Hopper
+item.HiCube86QuadDoor.name=86' Hi-Cube Quad Door Autoparts Boxcar
+item.Thrall616Bulkhead.name=Thrall 61'6 Bulkhead
+item.Roadrailer53Dryvan.name=53' Roadrailer Dryvan
+item.Thrall616Bulkhead.name=Thrall 61'6 Bulkhead
+item.Thrall616BoeingFlatcar.name=Thrall 61'6 Boeing Flatcar
+item.NSC53Wellcar.name=NSC 53' Wellcar
+item.CP40ftMechanicalRefrigerator.name=CP 40ft Mechanical Refrigerator
+item.60'HiCubePlateFBoxcar.name=60' Hi Cube Plate F Boxcar
+
+item.GSCFlatcar.name=60ft Flatcar
+item.89ftFlatCar.name=89ft Flatcar
+item.89ftBiLevelAutoRack.name=89ft Autorack 2
+
+item.PRRGlaHopper.name=PRR Gla Hopper
+
+item.ACF_Single_Dome.name=ACF Tanker Single Dome
+
+item.CPMetalVan.name=CP Metal Van
+item.B&O_Caboose.nme=B&O Caboose
+item.B&OCaboose.name=B&O Caboose
+
+item.ACF_60Seat.name=ACF 60 Seat Coach
+item.Amfleet1.name=Amfleet Coach 1
+item.BOLE1First.name=BO LE1 (1st unit)
+item.BOLE1Second.name=BO LE1 (2nd unit)
 
 
 <!-- ## Rollingstock ## -->
 <!-- ## These are actually defined from the item name, so one name covers all areas ## -->
-item.EurofimaCompartments1.name=Eurofima Compartment Coach
+item.EurofimaCompartments1.name=Eurofima Compartment 1st class
+item.EurofimaCompartments1_2.name=Eurofima Compartment 1st and 2nd class
+item.EurofimaCompartments2.name=Eurofima Compartment 2nd class
+
 item.Dobbelstock4thgeneration.name=4th Generation Doubledecker
 item.TEUSmallContainercarrier.name=TEU Small container carrier
 item.GWRBrunel3rdClassChristmas.name=GWR Brunel 3rd Class Christmas
@@ -139,6 +260,8 @@ item.UKOpenwagon.name=UK 6 Plank Truck
 item.UKFlatbed.name=UK Flatbed
 item.UKTanker.name=UK Tanker
 item.UKVan.name=UK Van
+item.UKCattlewagen.name=UK Cattle wagon
+item.UKGasWagon.name=UK Gas wagon
 item.UKOpenwagon2.name=UK Windcutter Truck
 item.Hbbins.name=Hbbins
 item.Hbbillns.name=Hbbillns
@@ -164,6 +287,8 @@ item.B&OCaboose.name=B&O Caboose
 item.PRRGlaHopper.name=PRR Gla Hopper
 item.40ftCPPlugSlideBoxCar.name=40ft CP Plug slide Box car
 item.40ftCPMiniBox.name=40ft CP Mini box
+item.40ftCPPlugSlideBoxcar.name=40ft CP Plug slide Box car
+item.40ftCPMinibox.name=40ft CP Minibox
 item.40ftCPPlugdoorBoxcar.name=40ft CP Plug door Box Car
 item.F140MS2E.name=F140 MS2E
 item.SGNSS80Load1.name=Sggns(s) 80' Load 1
@@ -172,17 +297,29 @@ item.SGNSS80Load3.name=Sggns(s) 80' Load 3
 item.SGNSS80Load4.name=Sggns(s) 80' Load 4
 item.Zacns95.name=Zacns 95
 item.Ealos-X.name=Ealos-x
+item.G4200.name=4200 Gallon tender
 item.Lgns.name=Lgns
-item.APO_BFS.name=APO BFS
-item.APO_BFM.name=APO BFM
-item.APO_AFM.name=APO AFM
-item.APO_CFM.name=APO CFM
-
+item.APOBFs.name=APO BFS
+item.APOBFm.name=APO BFM
+item.APOAFm.name=APO AFM
+item.APOCFm.name=APO CFM
+item.DSB735Tanker.name=DSB 735 Tanker wagon
+item.DSBZETanker.name=DSB ZE Tanker wagon
+item.EurofimaPresidentiale.name=Eurofima Presidential wagon
+item.TEESchweizzBarCar.name=TEE Schweizz Bar wagon
+item.E44DB.name=E44
+item.E94.name=E94
+item.EurofimaFlatConstruction.name=Eurofima first construction stage
+item.EurofimaGettingPaint.name=Eurofima undergoing painting
+item.EurofimaInteriorFitting.name=Eurofima last construction stage
+item.EurofimaAssemblingBase.name=Eurofima second construction stage
+item.GS.name=GS Wagon
 
 
 <!-- ## Railbusses ## -->
 item.BR626.name=BR 626
 item.BR798Advertising.name=BR 798 Advertising
+item.RaeTEEIISteuer=RAE TEEII Control wagon
 
 <!-- ## Tenders ## -->
 item.T322'2'.name=T32 2'2'
@@ -200,6 +337,7 @@ item.T38Oil.name=T38 Oil Tender
 T322'2'.name=T32 2'2'
 item.T322'2'Christmas.name=T32 2'2' Christmas
 item.Class812Tender.name=Class 812 Tender
+item.VanderBuilt.name=CNR Vanderbuilt Tender
 
 <!-- ## Blocks ## --!>
 tile.wwcp.blockBorderPlatform.name=Boarding Platform

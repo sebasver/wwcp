@@ -1,10 +1,14 @@
 package wwcp.blockEntities.platform;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import wwcp.tiles.platforms.TileEntityBorderPlatform;
@@ -12,13 +16,25 @@ import wwcp.tiles.platforms.TileEntityBorderPlatform;
 
 //Class made by Oskiek.
 public class BlockBorderPlatform extends BlockContainer {
+
 	public BlockBorderPlatform(){
 		super(Material.iron);
 		 this.setBlockBounds(0F, 0.0F, 0F, 1F, 0.25F, 1F);
 	}
 
+    private IIcon texture;
 
-	 
+    @Override
+    public IIcon getIcon(int i, int j) {
+        return texture;
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerBlockIcons(IIconRegister iconRegister) {
+        texture = iconRegister.registerIcon("wwcp:icon/borderSlab");
+    }
+
     public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLivingBase par5EntityLivingBase, ItemStack par6ItemStack)
     {
         int l = MathHelper.floor_double((double)(par5EntityLivingBase.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;

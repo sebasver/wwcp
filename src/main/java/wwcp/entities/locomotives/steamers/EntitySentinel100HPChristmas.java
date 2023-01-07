@@ -35,7 +35,7 @@ public class EntitySentinel100HPChristmas extends EntityTrainCore {
         super(owner, world, xPos, yPos, zPos);
     }
 
-    public static final Item thisItem = new WWCPTransport(new EntitySentinel100HPChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.FestivitiesTab);
+    public static final Item thisItem = new WWCPTransport(new EntitySentinel100HPChristmas(null), worldwidecontentpack.MODID, worldwidecontentpack.WWCPTab);
 
     public EntitySentinel100HPChristmas(World world) {
         super(world);

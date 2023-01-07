@@ -22,7 +22,7 @@ public class SD382 extends ModelBase //Same as Filename
 
 	public SD382() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[619];
+		bodyModel = new ModelRendererTurbo[669];
 
 		initbodyModel_1();
 		initbodyModel_2();
@@ -497,44 +497,44 @@ public class SD382 extends ModelBase //Same as Filename
 		bodyModel[459] = new ModelRendererTurbo(this, 65, 225, textureX, textureY); // Box 11
 		bodyModel[460] = new ModelRendererTurbo(this, 97, 225, textureX, textureY); // Box 11
 		bodyModel[461] = new ModelRendererTurbo(this, 289, 177, textureX, textureY); // Box 11
-		bodyModel[462] = new ModelRendererTurbo(this, 137, 177, textureX, textureY).setName(StaticModelAnimator.tagLamp(0, 6)); // Light_Nose_Top-Top2
-		bodyModel[463] = new ModelRendererTurbo(this, 145, 177, textureX, textureY).setName(StaticModelAnimator.tagLamp(0,6)); // Light_Nose_Top-Bottom2
+		bodyModel[462] = new ModelRendererTurbo(this, 137, 177, textureX, textureY); // Light_Nose_Top-Top2
+		bodyModel[463] = new ModelRendererTurbo(this, 145, 177, textureX, textureY); // Light_Nose_Top-Bottom2
 		bodyModel[464] = new ModelRendererTurbo(this, 89, 145, textureX, textureY); // Box 11
 		bodyModel[465] = new ModelRendererTurbo(this, 153, 145, textureX, textureY); // Box 11
 		bodyModel[466] = new ModelRendererTurbo(this, 169, 145, textureX, textureY); // Box 11
 		bodyModel[467] = new ModelRendererTurbo(this, 185, 145, textureX, textureY); // Box 11
 		bodyModel[468] = new ModelRendererTurbo(this, 297, 177, textureX, textureY); // Box 11
 		bodyModel[469] = new ModelRendererTurbo(this, 313, 177, textureX, textureY); // Box 52
-		bodyModel[470] = new ModelRendererTurbo(this, 217, 145, textureX, textureY); // Box 11
-		bodyModel[471] = new ModelRendererTurbo(this, 233, 145, textureX, textureY); // Box 11
-		bodyModel[472] = new ModelRendererTurbo(this, 249, 145, textureX, textureY); // Box 11
-		bodyModel[473] = new ModelRendererTurbo(this, 265, 145, textureX, textureY); // Box 11
-		bodyModel[474] = new ModelRendererTurbo(this, 417, 177, textureX, textureY); // Light_Nose_Middle-Top
-		bodyModel[475] = new ModelRendererTurbo(this, 441, 177, textureX, textureY); // Light_Nose_Middle-Top
-		bodyModel[476] = new ModelRendererTurbo(this, 153, 177, textureX, textureY); // Box 11
-		bodyModel[477] = new ModelRendererTurbo(this, 273, 177, textureX, textureY); // Box 11
-		bodyModel[478] = new ModelRendererTurbo(this, 329, 177, textureX, textureY); // Box 11
-		bodyModel[479] = new ModelRendererTurbo(this, 425, 177, textureX, textureY); // Box 11
-		bodyModel[480] = new ModelRendererTurbo(this, 281, 145, textureX, textureY); // Box 11
-		bodyModel[481] = new ModelRendererTurbo(this, 289, 145, textureX, textureY); // Box 11
-		bodyModel[482] = new ModelRendererTurbo(this, 465, 177, textureX, textureY); // Box 11
-		bodyModel[483] = new ModelRendererTurbo(this, 1, 185, textureX, textureY); // Ditchlight_right_rear_eje
-		bodyModel[484] = new ModelRendererTurbo(this, 9, 185, textureX, textureY); // box
-		bodyModel[485] = new ModelRendererTurbo(this, 105, 185, textureX, textureY); // Ditchlight_left_rear_eje
-		bodyModel[486] = new ModelRendererTurbo(this, 113, 185, textureX, textureY); // box
-		bodyModel[487] = new ModelRendererTurbo(this, 449, 177, textureX, textureY); // Box 11
-		bodyModel[488] = new ModelRendererTurbo(this, 465, 145, textureX, textureY); // Box 11
-		bodyModel[489] = new ModelRendererTurbo(this, 473, 145, textureX, textureY); // Box 11
-		bodyModel[490] = new ModelRendererTurbo(this, 137, 185, textureX, textureY); // Box 11
-		bodyModel[491] = new ModelRendererTurbo(this, 145, 185, textureX, textureY); // Ditchlight_Right_Bottom_ble
-		bodyModel[492] = new ModelRendererTurbo(this, 233, 185, textureX, textureY); // box
-		bodyModel[493] = new ModelRendererTurbo(this, 241, 185, textureX, textureY); // Ditchlight_Left_Bottom_ble
-		bodyModel[494] = new ModelRendererTurbo(this, 249, 185, textureX, textureY); // Ditchlight_Left_Bottom_ble
-		bodyModel[495] = new ModelRendererTurbo(this, 257, 185, textureX, textureY); // Box 180
-		bodyModel[496] = new ModelRendererTurbo(this, 17, 153, textureX, textureY); // Box 180
-		bodyModel[497] = new ModelRendererTurbo(this, 417, 185, textureX, textureY); // Box 180
-		bodyModel[498] = new ModelRendererTurbo(this, 33, 153, textureX, textureY); // Box 180
-		bodyModel[499] = new ModelRendererTurbo(this, 433, 185, textureX, textureY); // Box 209
+		bodyModel[470] = new ModelRendererTurbo(this, 249, 145, textureX, textureY); // Box 11
+		bodyModel[471] = new ModelRendererTurbo(this, 265, 145, textureX, textureY); // Box 11
+		bodyModel[472] = new ModelRendererTurbo(this, 441, 177, textureX, textureY); // Light_Nose_Middle-Top
+		bodyModel[473] = new ModelRendererTurbo(this, 153, 177, textureX, textureY); // Box 11
+		bodyModel[474] = new ModelRendererTurbo(this, 273, 177, textureX, textureY); // Box 11
+		bodyModel[475] = new ModelRendererTurbo(this, 329, 177, textureX, textureY); // Box 11
+		bodyModel[476] = new ModelRendererTurbo(this, 425, 177, textureX, textureY); // Box 11
+		bodyModel[477] = new ModelRendererTurbo(this, 281, 145, textureX, textureY); // Box 11
+		bodyModel[478] = new ModelRendererTurbo(this, 289, 145, textureX, textureY); // Box 11
+		bodyModel[479] = new ModelRendererTurbo(this, 465, 177, textureX, textureY); // Box 11
+		bodyModel[480] = new ModelRendererTurbo(this, 1, 185, textureX, textureY); // Ditchlight_right_rear_eje
+		bodyModel[481] = new ModelRendererTurbo(this, 9, 185, textureX, textureY); // box
+		bodyModel[482] = new ModelRendererTurbo(this, 105, 185, textureX, textureY); // Ditchlight_left_rear_eje
+		bodyModel[483] = new ModelRendererTurbo(this, 113, 185, textureX, textureY); // box
+		bodyModel[484] = new ModelRendererTurbo(this, 449, 177, textureX, textureY); // Box 11
+		bodyModel[485] = new ModelRendererTurbo(this, 465, 145, textureX, textureY); // Box 11
+		bodyModel[486] = new ModelRendererTurbo(this, 473, 145, textureX, textureY); // Box 11
+		bodyModel[487] = new ModelRendererTurbo(this, 137, 185, textureX, textureY); // Box 11
+		bodyModel[488] = new ModelRendererTurbo(this, 145, 185, textureX, textureY); // Ditchlight_Right_Bottom_ble
+		bodyModel[489] = new ModelRendererTurbo(this, 233, 185, textureX, textureY); // box
+		bodyModel[490] = new ModelRendererTurbo(this, 241, 185, textureX, textureY); // Ditchlight_Left_Bottom_ble
+		bodyModel[491] = new ModelRendererTurbo(this, 249, 185, textureX, textureY); // Ditchlight_Left_Bottom_ble
+		bodyModel[492] = new ModelRendererTurbo(this, 257, 185, textureX, textureY); // Box 180
+		bodyModel[493] = new ModelRendererTurbo(this, 17, 153, textureX, textureY); // Box 180
+		bodyModel[494] = new ModelRendererTurbo(this, 417, 185, textureX, textureY); // Box 180
+		bodyModel[495] = new ModelRendererTurbo(this, 33, 153, textureX, textureY); // Box 180
+		bodyModel[496] = new ModelRendererTurbo(this, 433, 185, textureX, textureY); // Box 209
+		bodyModel[497] = new ModelRendererTurbo(this, 49, 153, textureX, textureY); // Box 88
+		bodyModel[498] = new ModelRendererTurbo(this, 321, 185, textureX, textureY); // Box 91
+		bodyModel[499] = new ModelRendererTurbo(this, 441, 185, textureX, textureY); // Box 95
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // box
 		bodyModel[0].setRotationPoint(-70F, 3.5F, -0.5F);
@@ -1374,7 +1374,7 @@ public class SD382 extends ModelBase //Same as Filename
 		bodyModel[275].setRotationPoint(-60.2F, -12.5F, 0F);
 		bodyModel[275].rotateAngleY = 0.40142573F;
 
-		bodyModel[276].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.75F, 0F, 0F, -0.75F, 0F, 0F, -0.75F, 0F, 0F, -0.75F, 0F); // Box 11
+		bodyModel[276].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, -0.25F, 0F, -0.5F, -0.25F, 0F, -0.5F, -0.25F, 0F, -0.5F, -0.25F); // Box 11
 		bodyModel[276].setRotationPoint(-48F, -18F, -1F);
 
 		bodyModel[277].addShapeBox(0F, 0F, 0F, 2, 2, 4, 0F,0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F); // Box 128
@@ -1403,11 +1403,11 @@ public class SD382 extends ModelBase //Same as Filename
 		bodyModel[283].rotateAngleY = 0.40142573F;
 
 		bodyModel[284].addShapeBox(0F, 0F, 4.6F, 1, 2, 2, 0F,0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F); // Marker_Right_Rear
-		bodyModel[284].setRotationPoint(55.25F, -14.5F, 0F);
+		bodyModel[284].setRotationPoint(55.25F, -14F, 0F);
 		bodyModel[284].rotateAngleY = 0.41887902F;
 
 		bodyModel[285].addShapeBox(0F, 0F, -6.6F, 1, 2, 2, 0F,0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F); // Marker_Left_Rear
-		bodyModel[285].setRotationPoint(55.25F, -14.5F, 0F);
+		bodyModel[285].setRotationPoint(55.25F, -14F, 0F);
 		bodyModel[285].rotateAngleY = -0.41887902F;
 
 		bodyModel[286].addBox(0F, 0F, 0F, 1, 4, 1, 0F); // Box 11
@@ -2001,582 +2001,782 @@ public class SD382 extends ModelBase //Same as Filename
 		bodyModel[469].setRotationPoint(53.85F, -7.75F, 5F);
 		bodyModel[469].rotateAngleY = 0.40142573F;
 
-		bodyModel[470].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.43F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, -0.5F, 0F, -0.43F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[470].setRotationPoint(-60F, -10F, -1F);
+		bodyModel[470].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.43F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[470].setRotationPoint(-60F, -9.5F, -1F);
 
-		bodyModel[471].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.5F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
-		bodyModel[471].setRotationPoint(-60F, -10F, 0F);
+		bodyModel[471].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.43F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
+		bodyModel[471].setRotationPoint(-60F, -9.5F, 0F);
 
-		bodyModel[472].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.43F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[472].setRotationPoint(-60F, -9.5F, -1F);
+		bodyModel[472].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F); // Light_Nose_Middle-Top
+		bodyModel[472].setRotationPoint(-60.5F, -13.6F, -1F);
 
-		bodyModel[473].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.43F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
-		bodyModel[473].setRotationPoint(-60F, -9.5F, 0F);
+		bodyModel[473].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[473].setRotationPoint(-60F, -13.5F, -1F);
 
-		bodyModel[474].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F); // Light_Nose_Middle-Top
-		bodyModel[474].setRotationPoint(-60.5F, -12.1F, -1F);
+		bodyModel[474].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
+		bodyModel[474].setRotationPoint(-60F, -13.5F, 0F);
 
-		bodyModel[475].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F); // Light_Nose_Middle-Top
-		bodyModel[475].setRotationPoint(-60.5F, -13.6F, -1F);
+		bodyModel[475].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[475].setRotationPoint(-60F, -11.5F, -1F);
 
-		bodyModel[476].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[476].setRotationPoint(-60F, -13.5F, -1F);
+		bodyModel[476].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
+		bodyModel[476].setRotationPoint(-60F, -11.5F, 0F);
 
-		bodyModel[477].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
-		bodyModel[477].setRotationPoint(-60F, -13.5F, 0F);
+		bodyModel[477].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.43F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[477].setRotationPoint(-60F, -12.5F, -1F);
 
-		bodyModel[478].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[478].setRotationPoint(-60F, -11.5F, -1F);
+		bodyModel[478].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, -0.43F, -0.8F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
+		bodyModel[478].setRotationPoint(-60F, -12.5F, 0F);
 
-		bodyModel[479].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
-		bodyModel[479].setRotationPoint(-60F, -11.5F, 0F);
+		bodyModel[479].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,-0.44F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.44F, 0F, 0F, -0.44F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.44F, -0.5F, 0F); // Box 11
+		bodyModel[479].setRotationPoint(-60F, -13.5F, -1F);
 
-		bodyModel[480].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.43F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[480].setRotationPoint(-60F, -12.5F, -1F);
+		bodyModel[480].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Ditchlight_right_rear_eje
+		bodyModel[480].setRotationPoint(69F, -3F, 6F);
 
-		bodyModel[481].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, -0.43F, -0.8F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
-		bodyModel[481].setRotationPoint(-60F, -12.5F, 0F);
+		bodyModel[481].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, 0.35F, -0.1F, 0F, 0.35F, -0.1F, 0F, 0.35F, -0.1F, -0.5F, 0.35F, -0.1F, -0.5F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, -0.5F, 0F, -0.1F); // box
+		bodyModel[481].setRotationPoint(68.25F, -2.5F, 6F);
 
-		bodyModel[482].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,-0.44F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.44F, 0F, 0F, -0.44F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.44F, -0.5F, 0F); // Box 11
-		bodyModel[482].setRotationPoint(-60F, -13.5F, -1F);
+		bodyModel[482].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Ditchlight_left_rear_eje
+		bodyModel[482].setRotationPoint(69F, -3F, -8F);
 
-		bodyModel[483].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Ditchlight_right_rear_eje
-		bodyModel[483].setRotationPoint(69F, -3F, 6F);
+		bodyModel[483].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, 0.35F, -0.1F, 0F, 0.35F, -0.1F, 0F, 0.35F, -0.1F, -0.5F, 0.35F, -0.1F, -0.5F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, -0.5F, 0F, -0.1F); // box
+		bodyModel[483].setRotationPoint(68.25F, -2.5F, -8F);
 
-		bodyModel[484].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, 0.35F, -0.1F, 0F, 0.35F, -0.1F, 0F, 0.35F, -0.1F, -0.5F, 0.35F, -0.1F, -0.5F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, -0.5F, 0F, -0.1F); // box
-		bodyModel[484].setRotationPoint(68.25F, -2.5F, 6F);
+		bodyModel[484].addBox(0F, 0F, 0F, 1, 2, 1, 0F); // Box 11
+		bodyModel[484].setRotationPoint(-60.5F, -12.25F, -0.5F);
+		bodyModel[484].rotateAngleZ = 0.78539816F;
 
-		bodyModel[485].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Ditchlight_left_rear_eje
-		bodyModel[485].setRotationPoint(69F, -3F, -8F);
+		bodyModel[485].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.43F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[485].setRotationPoint(-60F, -13.5F, -1F);
 
-		bodyModel[486].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, 0.35F, -0.1F, 0F, 0.35F, -0.1F, 0F, 0.35F, -0.1F, -0.5F, 0.35F, -0.1F, -0.5F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, -0.5F, 0F, -0.1F); // box
-		bodyModel[486].setRotationPoint(68.25F, -2.5F, -8F);
+		bodyModel[486].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.43F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
+		bodyModel[486].setRotationPoint(-60F, -13.5F, 0F);
 
-		bodyModel[487].addBox(0F, 0F, 0F, 1, 2, 1, 0F); // Box 11
-		bodyModel[487].setRotationPoint(-60.5F, -12.25F, -0.5F);
-		bodyModel[487].rotateAngleZ = 0.78539816F;
+		bodyModel[487].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.44F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.44F, -0.5F, 0F, -0.44F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.44F, 0F, 0F); // Box 11
+		bodyModel[487].setRotationPoint(-60F, -13.5F, -1F);
 
-		bodyModel[488].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.43F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.43F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[488].setRotationPoint(-60F, -13.5F, -1F);
+		bodyModel[488].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F); // Ditchlight_Right_Bottom_ble
+		bodyModel[488].setRotationPoint(-69.5F, -0.5F, 7F);
 
-		bodyModel[489].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.43F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.43F, 0F, 0F); // Box 11
-		bodyModel[489].setRotationPoint(-60F, -13.5F, 0F);
+		bodyModel[489].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, 0.4F, -0.1F, -0.5F, 0.4F, -0.1F, -0.5F, 0.4F, -0.1F, 0F, 0.4F, -0.1F, 0F, -0.6F, -0.1F, -0.5F, -0.6F, -0.1F, -0.5F, -0.6F, -0.1F, 0F, -0.6F, -0.1F); // box
+		bodyModel[489].setRotationPoint(-68.75F, 0F, 7F);
 
-		bodyModel[490].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.44F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.44F, -0.5F, 0F, -0.44F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.44F, 0F, 0F); // Box 11
-		bodyModel[490].setRotationPoint(-60F, -13.5F, -1F);
+		bodyModel[490].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F); // Ditchlight_Left_Bottom_ble
+		bodyModel[490].setRotationPoint(-69.5F, -0.5F, -9F);
 
-		bodyModel[491].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F); // Ditchlight_Right_Bottom_ble
-		bodyModel[491].setRotationPoint(-69.5F, -0.5F, 7F);
+		bodyModel[491].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, 0.4F, -0.1F, -0.5F, 0.4F, -0.1F, -0.5F, 0.4F, -0.1F, 0F, 0.4F, -0.1F, 0F, -0.6F, -0.1F, -0.5F, -0.6F, -0.1F, -0.5F, -0.6F, -0.1F, 0F, -0.6F, -0.1F); // Ditchlight_Left_Bottom_ble
+		bodyModel[491].setRotationPoint(-68.75F, 0F, -9F);
 
-		bodyModel[492].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, 0.4F, -0.1F, -0.5F, 0.4F, -0.1F, -0.5F, 0.4F, -0.1F, 0F, 0.4F, -0.1F, 0F, -0.6F, -0.1F, -0.5F, -0.6F, -0.1F, -0.5F, -0.6F, -0.1F, 0F, -0.6F, -0.1F); // box
-		bodyModel[492].setRotationPoint(-68.75F, 0F, 7F);
+		bodyModel[492].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F); // Box 180
+		bodyModel[492].setRotationPoint(-6.88F, -22.5F, -1F);
 
-		bodyModel[493].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F); // Ditchlight_Left_Bottom_ble
-		bodyModel[493].setRotationPoint(-69.5F, -0.5F, -9F);
+		bodyModel[493].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,-0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F); // Box 180
+		bodyModel[493].setRotationPoint(-6.88F, -23F, -0.5F);
 
-		bodyModel[494].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, 0.4F, -0.1F, -0.5F, 0.4F, -0.1F, -0.5F, 0.4F, -0.1F, 0F, 0.4F, -0.1F, 0F, -0.6F, -0.1F, -0.5F, -0.6F, -0.1F, -0.5F, -0.6F, -0.1F, 0F, -0.6F, -0.1F); // Ditchlight_Left_Bottom_ble
-		bodyModel[494].setRotationPoint(-68.75F, 0F, -9F);
+		bodyModel[494].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F); // Box 180
+		bodyModel[494].setRotationPoint(13.88F, -22.5F, -1F);
 
-		bodyModel[495].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F); // Box 180
-		bodyModel[495].setRotationPoint(-6.88F, -22.5F, -1F);
+		bodyModel[495].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,-0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F); // Box 180
+		bodyModel[495].setRotationPoint(13.88F, -23F, -0.5F);
 
-		bodyModel[496].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,-0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F); // Box 180
-		bodyModel[496].setRotationPoint(-6.88F, -23F, -0.5F);
+		bodyModel[496].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
+		bodyModel[496].setRotationPoint(29F, -24.25F, -1F);
 
-		bodyModel[497].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F); // Box 180
-		bodyModel[497].setRotationPoint(13.88F, -22.5F, -1F);
+		bodyModel[497].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 88
+		bodyModel[497].setRotationPoint(28F, -22.5F, -0.5F);
 
-		bodyModel[498].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,-0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F, -0.15F, 0F, 0.1F); // Box 180
-		bodyModel[498].setRotationPoint(13.88F, -23F, -0.5F);
+		bodyModel[498].addBox(0F, 0F, 0F, 1, 1, 3, 0F); // Box 91
+		bodyModel[498].setRotationPoint(28F, -23.5F, -1.5F);
 
-		bodyModel[499].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
-		bodyModel[499].setRotationPoint(29F, -24.25F, -1F);
+		bodyModel[499].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 95
+		bodyModel[499].setRotationPoint(26F, -24F, -2F);
 	}
 
 	private void initbodyModel_2()
 	{
-		bodyModel[500] = new ModelRendererTurbo(this, 49, 153, textureX, textureY); // Box 88
-		bodyModel[501] = new ModelRendererTurbo(this, 321, 185, textureX, textureY); // Box 91
-		bodyModel[502] = new ModelRendererTurbo(this, 441, 185, textureX, textureY); // Box 95
-		bodyModel[503] = new ModelRendererTurbo(this, 65, 153, textureX, textureY); // Box 96
-		bodyModel[504] = new ModelRendererTurbo(this, 465, 185, textureX, textureY); // Box 95
-		bodyModel[505] = new ModelRendererTurbo(this, 97, 153, textureX, textureY); // Box 96
-		bodyModel[506] = new ModelRendererTurbo(this, 185, 153, textureX, textureY); // Flashers_ns
-		bodyModel[507] = new ModelRendererTurbo(this, 209, 153, textureX, textureY); // Beacon_1
-		bodyModel[508] = new ModelRendererTurbo(this, 17, 185, textureX, textureY); // Box 11
-		bodyModel[509] = new ModelRendererTurbo(this, 137, 225, textureX, textureY); // Box 11
-		bodyModel[510] = new ModelRendererTurbo(this, 473, 185, textureX, textureY); // Box 209
-		bodyModel[511] = new ModelRendererTurbo(this, 233, 153, textureX, textureY); // Box 88
-		bodyModel[512] = new ModelRendererTurbo(this, 497, 185, textureX, textureY); // Box 91
-		bodyModel[513] = new ModelRendererTurbo(this, 1, 193, textureX, textureY); // Box 95
-		bodyModel[514] = new ModelRendererTurbo(this, 481, 153, textureX, textureY); // Box 96
-		bodyModel[515] = new ModelRendererTurbo(this, 9, 193, textureX, textureY); // Box 95
-		bodyModel[516] = new ModelRendererTurbo(this, 497, 153, textureX, textureY); // Box 96
-		bodyModel[517] = new ModelRendererTurbo(this, 105, 193, textureX, textureY); // Box 11
-		bodyModel[518] = new ModelRendererTurbo(this, 113, 193, textureX, textureY); // Light_Top-Top_ble
-		bodyModel[519] = new ModelRendererTurbo(this, 137, 193, textureX, textureY); // Light_Top-Bottom_ble
-		bodyModel[520] = new ModelRendererTurbo(this, 145, 161, textureX, textureY); // Box 11
-		bodyModel[521] = new ModelRendererTurbo(this, 321, 169, textureX, textureY); // Flashers_ns
-		bodyModel[522] = new ModelRendererTurbo(this, 321, 177, textureX, textureY); // Beacon_2
-		bodyModel[523] = new ModelRendererTurbo(this, 145, 193, textureX, textureY); // Bell
-		bodyModel[524] = new ModelRendererTurbo(this, 121, 185, textureX, textureY); // Box 150
-		bodyModel[525] = new ModelRendererTurbo(this, 169, 193, textureX, textureY); // Box 145
-		bodyModel[526] = new ModelRendererTurbo(this, 193, 193, textureX, textureY); // Box 209
-		bodyModel[527] = new ModelRendererTurbo(this, 65, 57, textureX, textureY); // Box 209
-		bodyModel[528] = new ModelRendererTurbo(this, 201, 193, textureX, textureY); // Box 209
-		bodyModel[529] = new ModelRendererTurbo(this, 225, 193, textureX, textureY); // Box 209
-		bodyModel[530] = new ModelRendererTurbo(this, 153, 185, textureX, textureY); // Box 209
-		bodyModel[531] = new ModelRendererTurbo(this, 257, 193, textureX, textureY); // Box 209
-		bodyModel[532] = new ModelRendererTurbo(this, 281, 193, textureX, textureY); // Box 209
-		bodyModel[533] = new ModelRendererTurbo(this, 289, 193, textureX, textureY); // Box 209
-		bodyModel[534] = new ModelRendererTurbo(this, 297, 193, textureX, textureY); // Exhaust
-		bodyModel[535] = new ModelRendererTurbo(this, 497, 193, textureX, textureY); // Beacon3
-		bodyModel[536] = new ModelRendererTurbo(this, 169, 225, textureX, textureY); // Box 170
-		bodyModel[537] = new ModelRendererTurbo(this, 337, 225, textureX, textureY); // Box 170
-		bodyModel[538] = new ModelRendererTurbo(this, 1, 201, textureX, textureY); // Box 95
-		bodyModel[539] = new ModelRendererTurbo(this, 9, 201, textureX, textureY); // Bell
-		bodyModel[540] = new ModelRendererTurbo(this, 89, 1, textureX, textureY); // Bell
-		bodyModel[541] = new ModelRendererTurbo(this, 9, 137, textureX, textureY); // Bell
-		bodyModel[542] = new ModelRendererTurbo(this, 121, 1, textureX, textureY); // Bell
-		bodyModel[543] = new ModelRendererTurbo(this, 105, 201, textureX, textureY); // Exhaust
-		bodyModel[544] = new ModelRendererTurbo(this, 137, 201, textureX, textureY); // Beacon4
-		bodyModel[545] = new ModelRendererTurbo(this, 409, 1, textureX, textureY); // Bell
-		bodyModel[546] = new ModelRendererTurbo(this, 409, 9, textureX, textureY); // Bell
-		bodyModel[547] = new ModelRendererTurbo(this, 449, 9, textureX, textureY); // Bell
-		bodyModel[548] = new ModelRendererTurbo(this, 169, 201, textureX, textureY); // Marker_Right_top
-		bodyModel[549] = new ModelRendererTurbo(this, 193, 201, textureX, textureY); // Marker_Left_top
-		bodyModel[550] = new ModelRendererTurbo(this, 281, 201, textureX, textureY); // Box 11
-		bodyModel[551] = new ModelRendererTurbo(this, 201, 201, textureX, textureY); // Light_Top-rear
-		bodyModel[552] = new ModelRendererTurbo(this, 225, 201, textureX, textureY); // Light_Bottom-rear
-		bodyModel[553] = new ModelRendererTurbo(this, 257, 201, textureX, textureY); // Box 95
-		bodyModel[554] = new ModelRendererTurbo(this, 273, 185, textureX, textureY); // Box 96
-		bodyModel[555] = new ModelRendererTurbo(this, 289, 201, textureX, textureY); // Box 95
-		bodyModel[556] = new ModelRendererTurbo(this, 313, 201, textureX, textureY); // Box 95
-		bodyModel[557] = new ModelRendererTurbo(this, 321, 201, textureX, textureY); // Box 11
-		bodyModel[558] = new ModelRendererTurbo(this, 369, 217, textureX, textureY); // Box 11
-		bodyModel[559] = new ModelRendererTurbo(this, 337, 201, textureX, textureY); // Box 11
-		bodyModel[560] = new ModelRendererTurbo(this, 241, 225, textureX, textureY); // Box 11
-		bodyModel[561] = new ModelRendererTurbo(this, 409, 17, textureX, textureY); // Box 11
-		bodyModel[562] = new ModelRendererTurbo(this, 305, 137, textureX, textureY); // Box 11
-		bodyModel[563] = new ModelRendererTurbo(this, 329, 185, textureX, textureY); // Flashers_ns
-		bodyModel[564] = new ModelRendererTurbo(this, 449, 185, textureX, textureY); // Beacon_Left
-		bodyModel[565] = new ModelRendererTurbo(this, 1, 25, textureX, textureY); // Box 11
-		bodyModel[566] = new ModelRendererTurbo(this, 313, 137, textureX, textureY); // Box 11
-		bodyModel[567] = new ModelRendererTurbo(this, 481, 185, textureX, textureY); // Flashers_ns
-		bodyModel[568] = new ModelRendererTurbo(this, 505, 185, textureX, textureY); // Beacon_Right
-		bodyModel[569] = new ModelRendererTurbo(this, 401, 225, textureX, textureY); // Box 11
-		bodyModel[570] = new ModelRendererTurbo(this, 321, 201, textureX, textureY); // Box 180
-		bodyModel[571] = new ModelRendererTurbo(this, 337, 201, textureX, textureY); // Box 180
-		bodyModel[572] = new ModelRendererTurbo(this, 385, 201, textureX, textureY); // Box 11
-		bodyModel[573] = new ModelRendererTurbo(this, 289, 25, textureX, textureY); // Box 11
-		bodyModel[574] = new ModelRendererTurbo(this, 305, 25, textureX, textureY); // Box 11
-		bodyModel[575] = new ModelRendererTurbo(this, 17, 193, textureX, textureY); // Box 88
-		bodyModel[576] = new ModelRendererTurbo(this, 369, 201, textureX, textureY); // Box 91
-		bodyModel[577] = new ModelRendererTurbo(this, 417, 201, textureX, textureY); // Box 95
-		bodyModel[578] = new ModelRendererTurbo(this, 121, 193, textureX, textureY); // Box 96
-		bodyModel[579] = new ModelRendererTurbo(this, 425, 201, textureX, textureY); // Box 95
-		bodyModel[580] = new ModelRendererTurbo(this, 177, 193, textureX, textureY); // Box 96
-		bodyModel[581] = new ModelRendererTurbo(this, 441, 201, textureX, textureY); // Box 209
-		bodyModel[582] = new ModelRendererTurbo(this, 457, 201, textureX, textureY); // Box 209
-		bodyModel[583] = new ModelRendererTurbo(this, 465, 201, textureX, textureY); // Box 209
-		bodyModel[584] = new ModelRendererTurbo(this, 209, 193, textureX, textureY); // Box 88
-		bodyModel[585] = new ModelRendererTurbo(this, 481, 201, textureX, textureY); // Box 91
-		bodyModel[586] = new ModelRendererTurbo(this, 497, 201, textureX, textureY); // Box 95
-		bodyModel[587] = new ModelRendererTurbo(this, 233, 193, textureX, textureY); // Box 96
-		bodyModel[588] = new ModelRendererTurbo(this, 505, 201, textureX, textureY); // Box 95
-		bodyModel[589] = new ModelRendererTurbo(this, 1, 209, textureX, textureY); // Box 95
-		bodyModel[590] = new ModelRendererTurbo(this, 17, 225, textureX, textureY); // Box 11
-		bodyModel[591] = new ModelRendererTurbo(this, 49, 225, textureX, textureY); // Box 11
-		bodyModel[592] = new ModelRendererTurbo(this, 81, 225, textureX, textureY); // Box 11
-		bodyModel[593] = new ModelRendererTurbo(this, 473, 225, textureX, textureY); // Box 11
-		bodyModel[594] = new ModelRendererTurbo(this, 345, 201, textureX, textureY); // Box 11
-		bodyModel[595] = new ModelRendererTurbo(this, 9, 209, textureX, textureY); // Bell
-		bodyModel[596] = new ModelRendererTurbo(this, 265, 193, textureX, textureY); // Box 150
-		bodyModel[597] = new ModelRendererTurbo(this, 33, 25, textureX, textureY); // Box 11
-		bodyModel[598] = new ModelRendererTurbo(this, 425, 25, textureX, textureY); // Box 11
-		bodyModel[599] = new ModelRendererTurbo(this, 329, 137, textureX, textureY); // Box 11
-		bodyModel[600] = new ModelRendererTurbo(this, 337, 137, textureX, textureY); // Box 11
-		bodyModel[601] = new ModelRendererTurbo(this, 169, 209, textureX, textureY); // Box 11
-		bodyModel[602] = new ModelRendererTurbo(this, 113, 201, textureX, textureY); // Box 11
-		bodyModel[603] = new ModelRendererTurbo(this, 193, 209, textureX, textureY); // Box 11
-		bodyModel[604] = new ModelRendererTurbo(this, 153, 233, textureX, textureY); // Box 180
-		bodyModel[605] = new ModelRendererTurbo(this, 177, 209, textureX, textureY); // Box 52
-		bodyModel[606] = new ModelRendererTurbo(this, 225, 209, textureX, textureY); // Box 52
-		bodyModel[607] = new ModelRendererTurbo(this, 449, 25, textureX, textureY); // Box 11
-		bodyModel[608] = new ModelRendererTurbo(this, 25, 145, textureX, textureY); // Box 11
-		bodyModel[609] = new ModelRendererTurbo(this, 153, 201, textureX, textureY); // Flashers_ns
-		bodyModel[610] = new ModelRendererTurbo(this, 177, 201, textureX, textureY); // Beacon_Right_brc
-		bodyModel[611] = new ModelRendererTurbo(this, 1, 33, textureX, textureY); // Box 11
-		bodyModel[612] = new ModelRendererTurbo(this, 33, 145, textureX, textureY); // Box 11
-		bodyModel[613] = new ModelRendererTurbo(this, 209, 201, textureX, textureY); // Flashers_ns
-		bodyModel[614] = new ModelRendererTurbo(this, 233, 201, textureX, textureY); // Beacon_Left_brc
-		bodyModel[615] = new ModelRendererTurbo(this, 214, 238, textureX, textureY); // Box 123
-		bodyModel[616] = new ModelRendererTurbo(this, 238, 239, textureX, textureY); // Box 123
-		bodyModel[617] = new ModelRendererTurbo(this, 313, 169, textureX, textureY); // Box 68
-		bodyModel[618] = new ModelRendererTurbo(this, 201, 113, textureX, textureY); // Box 52
+		bodyModel[500] = new ModelRendererTurbo(this, 65, 153, textureX, textureY); // Box 96
+		bodyModel[501] = new ModelRendererTurbo(this, 465, 185, textureX, textureY); // Box 95
+		bodyModel[502] = new ModelRendererTurbo(this, 97, 153, textureX, textureY); // Box 96
+		bodyModel[503] = new ModelRendererTurbo(this, 185, 153, textureX, textureY); // Flashers_ns
+		bodyModel[504] = new ModelRendererTurbo(this, 209, 153, textureX, textureY); // Beacon_1
+		bodyModel[505] = new ModelRendererTurbo(this, 17, 185, textureX, textureY); // Box 11
+		bodyModel[506] = new ModelRendererTurbo(this, 137, 225, textureX, textureY); // Box 11
+		bodyModel[507] = new ModelRendererTurbo(this, 473, 185, textureX, textureY); // Box 209
+		bodyModel[508] = new ModelRendererTurbo(this, 233, 153, textureX, textureY); // Box 88
+		bodyModel[509] = new ModelRendererTurbo(this, 497, 185, textureX, textureY); // Box 91
+		bodyModel[510] = new ModelRendererTurbo(this, 1, 193, textureX, textureY); // Box 95
+		bodyModel[511] = new ModelRendererTurbo(this, 481, 153, textureX, textureY); // Box 96
+		bodyModel[512] = new ModelRendererTurbo(this, 9, 193, textureX, textureY); // Box 95
+		bodyModel[513] = new ModelRendererTurbo(this, 497, 153, textureX, textureY); // Box 96
+		bodyModel[514] = new ModelRendererTurbo(this, 105, 193, textureX, textureY); // Box 11
+		bodyModel[515] = new ModelRendererTurbo(this, 113, 193, textureX, textureY); // Light_Top-Top_ble
+		bodyModel[516] = new ModelRendererTurbo(this, 137, 193, textureX, textureY); // Light_Top-Bottom_ble
+		bodyModel[517] = new ModelRendererTurbo(this, 145, 161, textureX, textureY); // Box 11
+		bodyModel[518] = new ModelRendererTurbo(this, 321, 169, textureX, textureY); // Flashers_ns
+		bodyModel[519] = new ModelRendererTurbo(this, 321, 177, textureX, textureY); // Beacon_2
+		bodyModel[520] = new ModelRendererTurbo(this, 145, 193, textureX, textureY); // Bell
+		bodyModel[521] = new ModelRendererTurbo(this, 121, 185, textureX, textureY); // Box 150
+		bodyModel[522] = new ModelRendererTurbo(this, 169, 193, textureX, textureY); // Box 145
+		bodyModel[523] = new ModelRendererTurbo(this, 193, 193, textureX, textureY); // Box 209
+		bodyModel[524] = new ModelRendererTurbo(this, 65, 57, textureX, textureY); // Box 209
+		bodyModel[525] = new ModelRendererTurbo(this, 201, 193, textureX, textureY); // Box 209
+		bodyModel[526] = new ModelRendererTurbo(this, 225, 193, textureX, textureY); // Box 209
+		bodyModel[527] = new ModelRendererTurbo(this, 153, 185, textureX, textureY); // Box 209
+		bodyModel[528] = new ModelRendererTurbo(this, 257, 193, textureX, textureY); // Box 209
+		bodyModel[529] = new ModelRendererTurbo(this, 281, 193, textureX, textureY); // Box 209
+		bodyModel[530] = new ModelRendererTurbo(this, 289, 193, textureX, textureY); // Box 209
+		bodyModel[531] = new ModelRendererTurbo(this, 297, 193, textureX, textureY); // Exhaust
+		bodyModel[532] = new ModelRendererTurbo(this, 497, 193, textureX, textureY); // Beacon3
+		bodyModel[533] = new ModelRendererTurbo(this, 169, 225, textureX, textureY); // Box 170
+		bodyModel[534] = new ModelRendererTurbo(this, 337, 225, textureX, textureY); // Box 170
+		bodyModel[535] = new ModelRendererTurbo(this, 1, 201, textureX, textureY); // Box 95
+		bodyModel[536] = new ModelRendererTurbo(this, 9, 201, textureX, textureY); // Bell
+		bodyModel[537] = new ModelRendererTurbo(this, 89, 1, textureX, textureY); // Bell
+		bodyModel[538] = new ModelRendererTurbo(this, 9, 137, textureX, textureY); // Bell
+		bodyModel[539] = new ModelRendererTurbo(this, 121, 1, textureX, textureY); // Bell
+		bodyModel[540] = new ModelRendererTurbo(this, 105, 201, textureX, textureY); // Exhaust
+		bodyModel[541] = new ModelRendererTurbo(this, 137, 201, textureX, textureY); // Beacon4
+		bodyModel[542] = new ModelRendererTurbo(this, 409, 1, textureX, textureY); // Bell
+		bodyModel[543] = new ModelRendererTurbo(this, 409, 9, textureX, textureY); // Bell
+		bodyModel[544] = new ModelRendererTurbo(this, 449, 9, textureX, textureY); // Bell
+		bodyModel[545] = new ModelRendererTurbo(this, 169, 201, textureX, textureY); // Marker_Right_top
+		bodyModel[546] = new ModelRendererTurbo(this, 193, 201, textureX, textureY); // Marker_Left_top
+		bodyModel[547] = new ModelRendererTurbo(this, 281, 201, textureX, textureY); // Box 11
+		bodyModel[548] = new ModelRendererTurbo(this, 201, 201, textureX, textureY); // Light_Top-rear
+		bodyModel[549] = new ModelRendererTurbo(this, 225, 201, textureX, textureY); // Light_Bottom-rear
+		bodyModel[550] = new ModelRendererTurbo(this, 257, 201, textureX, textureY); // Box 95
+		bodyModel[551] = new ModelRendererTurbo(this, 273, 185, textureX, textureY); // Box 96
+		bodyModel[552] = new ModelRendererTurbo(this, 289, 201, textureX, textureY); // Box 95
+		bodyModel[553] = new ModelRendererTurbo(this, 313, 201, textureX, textureY); // Box 95
+		bodyModel[554] = new ModelRendererTurbo(this, 321, 201, textureX, textureY); // Box 11
+		bodyModel[555] = new ModelRendererTurbo(this, 369, 217, textureX, textureY); // Box 11
+		bodyModel[556] = new ModelRendererTurbo(this, 337, 201, textureX, textureY); // Box 11
+		bodyModel[557] = new ModelRendererTurbo(this, 241, 225, textureX, textureY); // Box 11
+		bodyModel[558] = new ModelRendererTurbo(this, 409, 17, textureX, textureY); // Box 11
+		bodyModel[559] = new ModelRendererTurbo(this, 305, 137, textureX, textureY); // Box 11
+		bodyModel[560] = new ModelRendererTurbo(this, 329, 185, textureX, textureY); // Flashers_ns
+		bodyModel[561] = new ModelRendererTurbo(this, 449, 185, textureX, textureY); // Beacon_Left
+		bodyModel[562] = new ModelRendererTurbo(this, 1, 25, textureX, textureY); // Box 11
+		bodyModel[563] = new ModelRendererTurbo(this, 313, 137, textureX, textureY); // Box 11
+		bodyModel[564] = new ModelRendererTurbo(this, 481, 185, textureX, textureY); // Flashers_ns
+		bodyModel[565] = new ModelRendererTurbo(this, 505, 185, textureX, textureY); // Beacon_Right
+		bodyModel[566] = new ModelRendererTurbo(this, 401, 225, textureX, textureY); // Box 11
+		bodyModel[567] = new ModelRendererTurbo(this, 321, 201, textureX, textureY); // Box 180
+		bodyModel[568] = new ModelRendererTurbo(this, 337, 201, textureX, textureY); // Box 180
+		bodyModel[569] = new ModelRendererTurbo(this, 385, 201, textureX, textureY); // Box 11
+		bodyModel[570] = new ModelRendererTurbo(this, 289, 25, textureX, textureY); // Box 11
+		bodyModel[571] = new ModelRendererTurbo(this, 305, 25, textureX, textureY); // Box 11
+		bodyModel[572] = new ModelRendererTurbo(this, 17, 193, textureX, textureY); // Box 88
+		bodyModel[573] = new ModelRendererTurbo(this, 369, 201, textureX, textureY); // Box 91
+		bodyModel[574] = new ModelRendererTurbo(this, 417, 201, textureX, textureY); // Box 95
+		bodyModel[575] = new ModelRendererTurbo(this, 121, 193, textureX, textureY); // Box 96
+		bodyModel[576] = new ModelRendererTurbo(this, 425, 201, textureX, textureY); // Box 95
+		bodyModel[577] = new ModelRendererTurbo(this, 177, 193, textureX, textureY); // Box 96
+		bodyModel[578] = new ModelRendererTurbo(this, 441, 201, textureX, textureY); // Box 209
+		bodyModel[579] = new ModelRendererTurbo(this, 457, 201, textureX, textureY); // Box 209
+		bodyModel[580] = new ModelRendererTurbo(this, 465, 201, textureX, textureY); // Box 209
+		bodyModel[581] = new ModelRendererTurbo(this, 209, 193, textureX, textureY); // Box 88
+		bodyModel[582] = new ModelRendererTurbo(this, 481, 201, textureX, textureY); // Box 91
+		bodyModel[583] = new ModelRendererTurbo(this, 497, 201, textureX, textureY); // Box 95
+		bodyModel[584] = new ModelRendererTurbo(this, 233, 193, textureX, textureY); // Box 96
+		bodyModel[585] = new ModelRendererTurbo(this, 505, 201, textureX, textureY); // Box 95
+		bodyModel[586] = new ModelRendererTurbo(this, 1, 209, textureX, textureY); // Box 95
+		bodyModel[587] = new ModelRendererTurbo(this, 17, 225, textureX, textureY); // Box 11
+		bodyModel[588] = new ModelRendererTurbo(this, 49, 225, textureX, textureY); // Box 11
+		bodyModel[589] = new ModelRendererTurbo(this, 81, 225, textureX, textureY); // Box 11
+		bodyModel[590] = new ModelRendererTurbo(this, 473, 225, textureX, textureY); // Box 11
+		bodyModel[591] = new ModelRendererTurbo(this, 345, 201, textureX, textureY); // Box 11
+		bodyModel[592] = new ModelRendererTurbo(this, 9, 209, textureX, textureY); // Bell
+		bodyModel[593] = new ModelRendererTurbo(this, 265, 193, textureX, textureY); // Box 150
+		bodyModel[594] = new ModelRendererTurbo(this, 33, 25, textureX, textureY); // Box 11
+		bodyModel[595] = new ModelRendererTurbo(this, 425, 25, textureX, textureY); // Box 11
+		bodyModel[596] = new ModelRendererTurbo(this, 329, 137, textureX, textureY); // Box 11
+		bodyModel[597] = new ModelRendererTurbo(this, 337, 137, textureX, textureY); // Box 11
+		bodyModel[598] = new ModelRendererTurbo(this, 169, 209, textureX, textureY); // Box 11
+		bodyModel[599] = new ModelRendererTurbo(this, 113, 201, textureX, textureY); // Box 11
+		bodyModel[600] = new ModelRendererTurbo(this, 193, 209, textureX, textureY); // Box 11
+		bodyModel[601] = new ModelRendererTurbo(this, 153, 233, textureX, textureY); // Box 180
+		bodyModel[602] = new ModelRendererTurbo(this, 177, 209, textureX, textureY); // Box 52
+		bodyModel[603] = new ModelRendererTurbo(this, 225, 209, textureX, textureY); // Box 52
+		bodyModel[604] = new ModelRendererTurbo(this, 449, 25, textureX, textureY); // Box 11
+		bodyModel[605] = new ModelRendererTurbo(this, 25, 145, textureX, textureY); // Box 11
+		bodyModel[606] = new ModelRendererTurbo(this, 153, 201, textureX, textureY); // Flashers_ns
+		bodyModel[607] = new ModelRendererTurbo(this, 177, 201, textureX, textureY); // Beacon_Right_brc
+		bodyModel[608] = new ModelRendererTurbo(this, 1, 33, textureX, textureY); // Box 11
+		bodyModel[609] = new ModelRendererTurbo(this, 33, 145, textureX, textureY); // Box 11
+		bodyModel[610] = new ModelRendererTurbo(this, 209, 201, textureX, textureY); // Flashers_ns
+		bodyModel[611] = new ModelRendererTurbo(this, 233, 201, textureX, textureY); // Beacon_Left_brc
+		bodyModel[612] = new ModelRendererTurbo(this, 214, 238, textureX, textureY); // Box 123
+		bodyModel[613] = new ModelRendererTurbo(this, 238, 239, textureX, textureY); // Box 123
+		bodyModel[614] = new ModelRendererTurbo(this, 313, 169, textureX, textureY); // Box 68
+		bodyModel[615] = new ModelRendererTurbo(this, 201, 113, textureX, textureY); // Box 52
+		bodyModel[616] = new ModelRendererTurbo(this, 105, 262, textureX, textureY); // Exhaust
+		bodyModel[617] = new ModelRendererTurbo(this, 137, 244, textureX, textureY); // BeaconCNW
+		bodyModel[618] = new ModelRendererTurbo(this, 331, 255, textureX, textureY); // Box 11
+		bodyModel[619] = new ModelRendererTurbo(this, 457, 431, textureX, textureY); // Box 11
+		bodyModel[620] = new ModelRendererTurbo(this, 45, 419, textureX, textureY); // Box 11
+		bodyModel[621] = new ModelRendererTurbo(this, 450, 405, textureX, textureY); // Box 11
+		bodyModel[622] = new ModelRendererTurbo(this, 27, 424, textureX, textureY); // Box 11
+		bodyModel[623] = new ModelRendererTurbo(this, 432, 384, textureX, textureY); // Box 11
+		bodyModel[624] = new ModelRendererTurbo(this, 50, 398, textureX, textureY); // Box 11
+		bodyModel[625] = new ModelRendererTurbo(this, 455, 366, textureX, textureY); // Box 11
+		bodyModel[626] = new ModelRendererTurbo(this, 43, 406, textureX, textureY); // Box 11
+		bodyModel[627] = new ModelRendererTurbo(this, 481, 396, textureX, textureY); // Box 11
+		bodyModel[628] = new ModelRendererTurbo(this, 299, 260, textureX, textureY); // Box 11
+		bodyModel[629] = new ModelRendererTurbo(this, 297, 279, textureX, textureY); // Box 11
+		bodyModel[630] = new ModelRendererTurbo(this, 328, 277, textureX, textureY); // Box 11
+		bodyModel[631] = new ModelRendererTurbo(this, 438, 427, textureX, textureY); // Box 11
+		bodyModel[632] = new ModelRendererTurbo(this, 31, 412, textureX, textureY); // Box 11
+		bodyModel[633] = new ModelRendererTurbo(this, 430, 416, textureX, textureY); // Box 11
+		bodyModel[634] = new ModelRendererTurbo(this, 17, 411, textureX, textureY); // Box 11
+		bodyModel[635] = new ModelRendererTurbo(this, 427, 405, textureX, textureY); // Box 11
+		bodyModel[636] = new ModelRendererTurbo(this, 30, 396, textureX, textureY); // Box 11
+		bodyModel[637] = new ModelRendererTurbo(this, 478, 410, textureX, textureY); // Box 11
+		bodyModel[638] = new ModelRendererTurbo(this, 17, 402, textureX, textureY); // Box 11
+		bodyModel[639] = new ModelRendererTurbo(this, 461, 419, textureX, textureY); // Box 11
+		bodyModel[640] = new ModelRendererTurbo(this, 267, 259, textureX, textureY); // Box 11
+		bodyModel[641] = new ModelRendererTurbo(this, 276, 291, textureX, textureY); // Box 11
+		bodyModel[642] = new ModelRendererTurbo(this, 328, 277, textureX, textureY); // Box 11
+		bodyModel[643] = new ModelRendererTurbo(this, 438, 427, textureX, textureY); // Box 11
+		bodyModel[644] = new ModelRendererTurbo(this, 31, 412, textureX, textureY); // Box 11
+		bodyModel[645] = new ModelRendererTurbo(this, 430, 416, textureX, textureY); // Box 11
+		bodyModel[646] = new ModelRendererTurbo(this, 17, 411, textureX, textureY); // Box 11
+		bodyModel[647] = new ModelRendererTurbo(this, 30, 396, textureX, textureY); // Box 11
+		bodyModel[648] = new ModelRendererTurbo(this, 478, 410, textureX, textureY); // Box 11
+		bodyModel[649] = new ModelRendererTurbo(this, 17, 402, textureX, textureY); // Box 11
+		bodyModel[650] = new ModelRendererTurbo(this, 461, 419, textureX, textureY); // Box 11
+		bodyModel[651] = new ModelRendererTurbo(this, 267, 259, textureX, textureY); // Box 11
+		bodyModel[652] = new ModelRendererTurbo(this, 276, 291, textureX, textureY); // Box 11
+		bodyModel[653] = new ModelRendererTurbo(this, 331, 255, textureX, textureY); // Box 11
+		bodyModel[654] = new ModelRendererTurbo(this, 457, 431, textureX, textureY); // Box 11
+		bodyModel[655] = new ModelRendererTurbo(this, 45, 419, textureX, textureY); // Box 11
+		bodyModel[656] = new ModelRendererTurbo(this, 450, 405, textureX, textureY); // Box 11
+		bodyModel[657] = new ModelRendererTurbo(this, 27, 424, textureX, textureY); // Box 11
+		bodyModel[658] = new ModelRendererTurbo(this, 432, 384, textureX, textureY); // Box 11
+		bodyModel[659] = new ModelRendererTurbo(this, 50, 398, textureX, textureY); // Box 11
+		bodyModel[660] = new ModelRendererTurbo(this, 455, 366, textureX, textureY); // Box 11
+		bodyModel[661] = new ModelRendererTurbo(this, 43, 406, textureX, textureY); // Box 11
+		bodyModel[662] = new ModelRendererTurbo(this, 481, 396, textureX, textureY); // Box 11
+		bodyModel[663] = new ModelRendererTurbo(this, 299, 260, textureX, textureY); // Box 11
+		bodyModel[664] = new ModelRendererTurbo(this, 297, 279, textureX, textureY); // Box 11
+		bodyModel[665] = new ModelRendererTurbo(this, 417, 177, textureX, textureY); // Light_Nose_Middle-Top
+		bodyModel[666] = new ModelRendererTurbo(this, 424, 272, textureX, textureY); // Box 11
+		bodyModel[667] = new ModelRendererTurbo(this, 424, 272, textureX, textureY); // Box 11
+		bodyModel[668] = new ModelRendererTurbo(this, 427, 405, textureX, textureY); // Box 11
+
+		bodyModel[500].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
+		bodyModel[500].setRotationPoint(27F, -23.5F, -1.5F);
+
+		bodyModel[501].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F); // Box 95
+		bodyModel[501].setRotationPoint(26F, -24F, 0F);
+
+		bodyModel[502].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
+		bodyModel[502].setRotationPoint(27F, -23.5F, 0.5F);
+
+		bodyModel[503].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
+		bodyModel[503].setRotationPoint(-47.5F, -22.5F, -0.25F);
+
+		bodyModel[504].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_1
+		bodyModel[504].setRotationPoint(-47.5F, -22.5F, -0.25F);
+
+		bodyModel[505].addBox(-1F, 0.5F, 0F, 1, 2, 1, 0F); // Box 11
+		bodyModel[505].setRotationPoint(57.25F, -13F, -0.5F);
+		bodyModel[505].rotateAngleZ = -0.87266463F;
+
+		bodyModel[506].addBox(0F, 0F, 0F, 9, 7, 4, 0F); // Box 11
+		bodyModel[506].setRotationPoint(-54F, -11.5F, 7F);
+
+		bodyModel[507].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
+		bodyModel[507].setRotationPoint(-46F, -23.75F, -1F);
+
+		bodyModel[508].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 88
+		bodyModel[508].setRotationPoint(-47F, -22F, -0.5F);
+
+		bodyModel[509].addBox(0F, 0F, 0F, 1, 1, 3, 0F); // Box 91
+		bodyModel[509].setRotationPoint(-47F, -23F, -1.5F);
+
+		bodyModel[510].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 95
+		bodyModel[510].setRotationPoint(-49F, -23.5F, -2F);
+
+		bodyModel[511].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
+		bodyModel[511].setRotationPoint(-48F, -23F, -1.5F);
+
+		bodyModel[512].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F); // Box 95
+		bodyModel[512].setRotationPoint(-49F, -23.5F, 0F);
+
+		bodyModel[513].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
+		bodyModel[513].setRotationPoint(-48F, -23F, 0.5F);
+
+		bodyModel[514].addShapeBox(0F, 0F, 0F, 1, 4, 2, 0F,0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F); // Box 11
+		bodyModel[514].setRotationPoint(-49F, -21.48F, -1F);
+
+		bodyModel[515].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F); // Light_Top-Top_ble
+		bodyModel[515].setRotationPoint(-50F, -21.48F, -1F);
+
+		bodyModel[516].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F); // Light_Top-Bottom_ble
+		bodyModel[516].setRotationPoint(-50F, -19.78F, -1F);
+
+		bodyModel[517].addShapeBox(0F, 0F, 0F, 2, 0, 2, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 11
+		bodyModel[517].setRotationPoint(-50F, -21.5F, -1F);
+
+		bodyModel[518].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
+		bodyModel[518].setRotationPoint(-49.5F, -22.51F, -0.25F);
+
+		bodyModel[519].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_2
+		bodyModel[519].setRotationPoint(-49.5F, -22.51F, -0.25F);
+
+		bodyModel[520].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F); // Bell
+		bodyModel[520].setRotationPoint(23.5F, -20.25F, -8.85F);
+
+		bodyModel[521].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, 0F, 0F, 0F, 0F); // Box 150
+		bodyModel[521].setRotationPoint(24.4F, -20.5F, -8.75F);
+
+		bodyModel[522].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F); // Box 145
+		bodyModel[522].setRotationPoint(24F, -21.5F, -8.37F);
+
+		bodyModel[523].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 209
+		bodyModel[523].setRotationPoint(-48F, -23.5F, -2.4F);
+
+		bodyModel[524].addShapeBox(0F, 0F, 0F, 1, 1, 4, 0F,-0.5F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, -0.5F, 0F, -1F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 209
+		bodyModel[524].setRotationPoint(-47.5F, -23.5F, -2F);
+
+		bodyModel[525].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
+		bodyModel[525].setRotationPoint(-46.5F, -24.25F, -1.65F);
+
+		bodyModel[526].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.15F, -0.15F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.15F, -0.15F, 0F, -0.15F, -0.15F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.15F, -0.15F); // Box 209
+		bodyModel[526].setRotationPoint(-49F, -23.5F, -1F);
+
+		bodyModel[527].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 209
+		bodyModel[527].setRotationPoint(-48F, -23F, -0.5F);
+
+		bodyModel[528].addShapeBox(0F, 0F, 0F, 1, 1, 4, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, -0.5F, 0F, -1F); // Box 209
+		bodyModel[528].setRotationPoint(-47.5F, -22.5F, -2F);
+
+		bodyModel[529].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 209
+		bodyModel[529].setRotationPoint(-48F, -23.5F, 0.4F);
+
+		bodyModel[530].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
+		bodyModel[530].setRotationPoint(-46.5F, -24.25F, -0.35F);
+
+		bodyModel[531].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F); // Exhaust
+		bodyModel[531].setRotationPoint(-42F, -22F, -1F);
+
+		bodyModel[532].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon3
+		bodyModel[532].setRotationPoint(-42F, -24F, -1F);
+
+		bodyModel[533].addShapeBox(0F, 0F, -0.25F, 34, 3, 1, 0F,0F, 0F, 0F, -15F, 0F, 0F, -15F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -15F, 0F, 0F, -15F, 0F, 0F, 0F, 0F, 0F); // Box 170
+		bodyModel[533].setRotationPoint(-4.5F, -20.65F, 8.5F);
+		bodyModel[533].rotateAngleX = -0.40142573F;
+
+		bodyModel[534].addShapeBox(0F, 0F, -0.75F, 34, 3, 1, 0F,0F, 0F, 0F, -15F, 0F, 0F, -15F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -15F, 0F, 0F, -15F, 0F, 0F, 0F, 0F, 0F); // Box 170
+		bodyModel[534].setRotationPoint(-4.5F, -20.65F, -8.5F);
+		bodyModel[534].rotateAngleX = 0.40142573F;
+
+		bodyModel[535].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F); // Box 95
+		bodyModel[535].setRotationPoint(-46F, -23.5F, -1F);
+
+		bodyModel[536].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F); // Bell
+		bodyModel[536].setRotationPoint(-43.82F, -23.25F, -0.98F);
+
+		bodyModel[537].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
+		bodyModel[537].setRotationPoint(-43.32F, -23.75F, 0.02F);
+
+		bodyModel[538].addShapeBox(0F, 0F, 0F, 1, 0, 1, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
+		bodyModel[538].setRotationPoint(-43.32F, -23.75F, -0.98F);
+
+		bodyModel[539].addShapeBox(0F, 0F, 0F, 1, 3, 0, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
+		bodyModel[539].setRotationPoint(-43.32F, -23.75F, -0.98F);
 
-		bodyModel[500].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 88
-		bodyModel[500].setRotationPoint(28F, -22.5F, -0.5F);
+		bodyModel[540].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F); // Exhaust
+		bodyModel[540].setRotationPoint(-34F, -22.5F, -1F);
 
-		bodyModel[501].addBox(0F, 0F, 0F, 1, 1, 3, 0F); // Box 91
-		bodyModel[501].setRotationPoint(28F, -23.5F, -1.5F);
+		bodyModel[541].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon4
+		bodyModel[541].setRotationPoint(-34F, -24.5F, -1F);
 
-		bodyModel[502].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 95
-		bodyModel[502].setRotationPoint(26F, -24F, -2F);
+		bodyModel[542].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
+		bodyModel[542].setRotationPoint(-33.5F, -22.6F, 0.66F);
 
-		bodyModel[503].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
-		bodyModel[503].setRotationPoint(27F, -23.5F, -1.5F);
+		bodyModel[543].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
+		bodyModel[543].setRotationPoint(-33.5F, -22.6F, 0F);
 
-		bodyModel[504].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F); // Box 95
-		bodyModel[504].setRotationPoint(26F, -24F, 0F);
+		bodyModel[544].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
+		bodyModel[544].setRotationPoint(-33.5F, -22.6F, -0.66F);
 
-		bodyModel[505].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
-		bodyModel[505].setRotationPoint(27F, -23.5F, 0.5F);
+		bodyModel[545].addShapeBox(0F, 0F, 5F, 1, 2, 2, 0F,0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F); // Marker_Right_top
+		bodyModel[545].setRotationPoint(-48.6F, -21.85F, 0F);
+		bodyModel[545].rotateAngleY = -0.45378561F;
 
-		bodyModel[506].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
-		bodyModel[506].setRotationPoint(-47.5F, -22.5F, -0.25F);
+		bodyModel[546].addShapeBox(0F, 0F, -7F, 1, 2, 2, 0F,0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F); // Marker_Left_top
+		bodyModel[546].setRotationPoint(-48.6F, -21.85F, 0F);
+		bodyModel[546].rotateAngleY = 0.45378561F;
 
-		bodyModel[507].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_1
-		bodyModel[507].setRotationPoint(-47.5F, -22.5F, -0.25F);
+		bodyModel[547].addShapeBox(0F, 0F, 0F, 1, 4, 2, 0F,0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F); // Box 11
+		bodyModel[547].setRotationPoint(55.05F, -20F, -1F);
 
-		bodyModel[508].addBox(-1F, 0.5F, 0F, 1, 2, 1, 0F); // Box 11
-		bodyModel[508].setRotationPoint(57.25F, -13F, -0.5F);
-		bodyModel[508].rotateAngleZ = -0.87266463F;
+		bodyModel[548].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Light_Top-rear
+		bodyModel[548].setRotationPoint(56.05F, -20F, -1F);
 
-		bodyModel[509].addBox(0F, 0F, 0F, 9, 7, 4, 0F); // Box 11
-		bodyModel[509].setRotationPoint(-54F, -11.5F, 7F);
+		bodyModel[549].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Light_Bottom-rear
+		bodyModel[549].setRotationPoint(56.05F, -18.3F, -1F);
 
-		bodyModel[510].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
-		bodyModel[510].setRotationPoint(-46F, -23.75F, -1F);
+		bodyModel[550].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 95
+		bodyModel[550].setRotationPoint(-49F, -23.5F, -1.5F);
 
-		bodyModel[511].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 88
-		bodyModel[511].setRotationPoint(-47F, -22F, -0.5F);
+		bodyModel[551].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
+		bodyModel[551].setRotationPoint(-48F, -23F, -1F);
 
-		bodyModel[512].addBox(0F, 0F, 0F, 1, 1, 3, 0F); // Box 91
-		bodyModel[512].setRotationPoint(-47F, -23F, -1.5F);
+		bodyModel[552].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F); // Box 95
+		bodyModel[552].setRotationPoint(-48F, -23.5F, 0F);
 
-		bodyModel[513].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 95
-		bodyModel[513].setRotationPoint(-49F, -23.5F, -2F);
+		bodyModel[553].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F); // Box 95
+		bodyModel[553].setRotationPoint(-46F, -23.5F, -2F);
 
-		bodyModel[514].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
-		bodyModel[514].setRotationPoint(-48F, -23F, -1.5F);
+		bodyModel[554].addShapeBox(0F, 0F, 0F, 0, 4, 4, 0F,0F, 0F, -4F, 0F, 0F, -4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[554].setRotationPoint(-14.99F, -21.5F, -11F);
 
-		bodyModel[515].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F); // Box 95
-		bodyModel[515].setRotationPoint(-49F, -23.5F, 0F);
+		bodyModel[555].addShapeBox(0F, 0F, 0F, 17, 4, 0, 0F,0F, 0F, -4F, 0F, 0F, -4F, 0F, 0F, 4F, 0F, 0F, 4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[555].setRotationPoint(-32F, -21.5F, -11F);
 
-		bodyModel[516].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
-		bodyModel[516].setRotationPoint(-48F, -23F, 0.5F);
+		bodyModel[556].addShapeBox(0F, 0F, 0F, 0, 4, 4, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -4F, 0F, 0F, -4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[556].setRotationPoint(-14.99F, -21.5F, 7F);
 
-		bodyModel[517].addShapeBox(0F, 0F, 0F, 1, 4, 2, 0F,0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F); // Box 11
-		bodyModel[517].setRotationPoint(-49F, -21.48F, -1F);
+		bodyModel[557].addShapeBox(0F, 0F, 0F, 17, 4, 0, 0F,0F, 0F, 4F, 0F, 0F, 4F, 0F, 0F, -4F, 0F, 0F, -4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[557].setRotationPoint(-32F, -21.5F, 11F);
 
-		bodyModel[518].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F); // Light_Top-Top_ble
-		bodyModel[518].setRotationPoint(-50F, -21.48F, -1F);
+		bodyModel[558].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[558].setRotationPoint(-39F, -19.5F, -10F);
 
-		bodyModel[519].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F); // Light_Top-Bottom_ble
-		bodyModel[519].setRotationPoint(-50F, -19.78F, -1F);
+		bodyModel[559].addShapeBox(0F, 0F, 0F, 1, 0, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[559].setRotationPoint(-39F, -19.5F, -10F);
 
-		bodyModel[520].addShapeBox(0F, 0F, 0F, 2, 0, 2, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 11
-		bodyModel[520].setRotationPoint(-50F, -21.5F, -1F);
+		bodyModel[560].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
+		bodyModel[560].setRotationPoint(-39.25F, -20.51F, -9.75F);
 
-		bodyModel[521].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
-		bodyModel[521].setRotationPoint(-49.5F, -22.51F, -0.25F);
+		bodyModel[561].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_Left
+		bodyModel[561].setRotationPoint(-39.25F, -20.51F, -9.75F);
 
-		bodyModel[522].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_2
-		bodyModel[522].setRotationPoint(-49.5F, -22.51F, -0.25F);
+		bodyModel[562].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[562].setRotationPoint(-39F, -19.5F, 10F);
 
-		bodyModel[523].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F); // Bell
-		bodyModel[523].setRotationPoint(23.5F, -20.25F, -8.85F);
+		bodyModel[563].addShapeBox(0F, 0F, 0F, 1, 0, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[563].setRotationPoint(-39F, -19.5F, 9F);
 
-		bodyModel[524].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, 0F, 0F, 0F, 0F); // Box 150
-		bodyModel[524].setRotationPoint(24.4F, -20.5F, -8.75F);
+		bodyModel[564].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
+		bodyModel[564].setRotationPoint(-39.25F, -20.51F, 9.25F);
 
-		bodyModel[525].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F); // Box 145
-		bodyModel[525].setRotationPoint(24F, -21.5F, -8.37F);
+		bodyModel[565].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_Right
+		bodyModel[565].setRotationPoint(-39.25F, -20.51F, 9.25F);
 
-		bodyModel[526].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 209
-		bodyModel[526].setRotationPoint(-48F, -23.5F, -2.4F);
+		bodyModel[566].addBox(0F, 0F, 0F, 7, 2, 10, 0F); // Box 11
+		bodyModel[566].setRotationPoint(-44F, -23F, -5F);
 
-		bodyModel[527].addShapeBox(0F, 0F, 0F, 1, 1, 4, 0F,-0.5F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, -0.5F, 0F, -1F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 209
-		bodyModel[527].setRotationPoint(-47.5F, -23.5F, -2F);
+		bodyModel[567].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 180
+		bodyModel[567].setRotationPoint(-6.5F, -23.75F, -1F);
 
-		bodyModel[528].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
-		bodyModel[528].setRotationPoint(-46.5F, -24.25F, -1.65F);
+		bodyModel[568].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 180
+		bodyModel[568].setRotationPoint(14.5F, -23.75F, -1F);
 
-		bodyModel[529].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.15F, -0.15F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.15F, -0.15F, 0F, -0.15F, -0.15F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.15F, -0.15F); // Box 209
-		bodyModel[529].setRotationPoint(-49F, -23.5F, -1F);
+		bodyModel[569].addBox(0F, 0F, 0F, 7, 0, 3, 0F); // Box 11
+		bodyModel[569].setRotationPoint(-44F, -23F, -8F);
 
-		bodyModel[530].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 209
-		bodyModel[530].setRotationPoint(-48F, -23F, -0.5F);
+		bodyModel[570].addBox(0F, 0F, 0F, 1, 3, 0, 0F); // Box 11
+		bodyModel[570].setRotationPoint(-43.5F, -23F, -8F);
 
-		bodyModel[531].addShapeBox(0F, 0F, 0F, 1, 1, 4, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, -0.5F, 0F, -1F); // Box 209
-		bodyModel[531].setRotationPoint(-47.5F, -22.5F, -2F);
+		bodyModel[571].addBox(0F, 0F, 0F, 1, 3, 0, 0F); // Box 11
+		bodyModel[571].setRotationPoint(-38.5F, -23F, -8F);
 
-		bodyModel[532].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 209
-		bodyModel[532].setRotationPoint(-48F, -23.5F, 0.4F);
+		bodyModel[572].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 88
+		bodyModel[572].setRotationPoint(19.5F, -22F, 5F);
 
-		bodyModel[533].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
-		bodyModel[533].setRotationPoint(-46.5F, -24.25F, -0.35F);
+		bodyModel[573].addBox(0F, 0F, 0F, 1, 1, 3, 0F); // Box 91
+		bodyModel[573].setRotationPoint(19.5F, -23F, 4F);
 
-		bodyModel[534].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F); // Exhaust
-		bodyModel[534].setRotationPoint(-42F, -22F, -1F);
+		bodyModel[574].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 95
+		bodyModel[574].setRotationPoint(17.5F, -23.5F, 3F);
 
-		bodyModel[535].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon3
-		bodyModel[535].setRotationPoint(-42F, -24F, -1F);
+		bodyModel[575].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
+		bodyModel[575].setRotationPoint(18.5F, -23F, 3.5F);
 
-		bodyModel[536].addShapeBox(0F, 0F, -0.25F, 34, 3, 1, 0F,0F, 0F, 0F, -15F, 0F, 0F, -15F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -15F, 0F, 0F, -15F, 0F, 0F, 0F, 0F, 0F); // Box 170
-		bodyModel[536].setRotationPoint(-4.5F, -20.65F, 8.5F);
-		bodyModel[536].rotateAngleX = -0.40142573F;
+		bodyModel[576].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F); // Box 95
+		bodyModel[576].setRotationPoint(17.5F, -24F, 4.5F);
 
-		bodyModel[537].addShapeBox(0F, 0F, -0.75F, 34, 3, 1, 0F,0F, 0F, 0F, -15F, 0F, 0F, -15F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -15F, 0F, 0F, -15F, 0F, 0F, 0F, 0F, 0F); // Box 170
-		bodyModel[537].setRotationPoint(-4.5F, -20.65F, -8.5F);
-		bodyModel[537].rotateAngleX = 0.40142573F;
+		bodyModel[577].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
+		bodyModel[577].setRotationPoint(18.5F, -23.5F, 5F);
 
-		bodyModel[538].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F); // Box 95
-		bodyModel[538].setRotationPoint(-46F, -23.5F, -1F);
+		bodyModel[578].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F); // Box 209
+		bodyModel[578].setRotationPoint(18.5F, -23.75F, 5.75F);
 
-		bodyModel[539].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F); // Bell
-		bodyModel[539].setRotationPoint(-43.82F, -23.25F, -0.98F);
+		bodyModel[579].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
+		bodyModel[579].setRotationPoint(20.5F, -23.75F, 3.25F);
 
-		bodyModel[540].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
-		bodyModel[540].setRotationPoint(-43.32F, -23.75F, 0.02F);
+		bodyModel[580].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
+		bodyModel[580].setRotationPoint(20.5F, -23.75F, 4.75F);
 
-		bodyModel[541].addShapeBox(0F, 0F, 0F, 1, 0, 1, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
-		bodyModel[541].setRotationPoint(-43.32F, -23.75F, -0.98F);
+		bodyModel[581].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 88
+		bodyModel[581].setRotationPoint(27.75F, -22.25F, -6F);
 
-		bodyModel[542].addShapeBox(0F, 0F, 0F, 1, 3, 0, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
-		bodyModel[542].setRotationPoint(-43.32F, -23.75F, -0.98F);
+		bodyModel[582].addBox(0F, 0F, 0F, 1, 1, 3, 0F); // Box 91
+		bodyModel[582].setRotationPoint(27.75F, -23.25F, -7F);
 
-		bodyModel[543].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, 0.15F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F, -0.35F, -0.5F, -0.35F); // Exhaust
-		bodyModel[543].setRotationPoint(-34F, -22.5F, -1F);
+		bodyModel[583].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 95
+		bodyModel[583].setRotationPoint(25.75F, -23.75F, -6.5F);
 
-		bodyModel[544].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, -0.95F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon4
-		bodyModel[544].setRotationPoint(-34F, -24.5F, -1F);
+		bodyModel[584].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
+		bodyModel[584].setRotationPoint(26.75F, -23.25F, -6F);
 
-		bodyModel[545].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
-		bodyModel[545].setRotationPoint(-33.5F, -22.6F, 0.66F);
+		bodyModel[585].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F); // Box 95
+		bodyModel[585].setRotationPoint(26.75F, -23.75F, -5.25F);
 
-		bodyModel[546].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
-		bodyModel[546].setRotationPoint(-33.5F, -22.6F, 0F);
+		bodyModel[586].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F); // Box 95
+		bodyModel[586].setRotationPoint(28.75F, -23.75F, -7.5F);
 
-		bodyModel[547].addShapeBox(0F, 0F, 0F, 1, 2, 0, 0F,-0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F); // Bell
-		bodyModel[547].setRotationPoint(-33.5F, -22.6F, -0.66F);
+		bodyModel[587].addBox(0F, 0F, 0F, 6, 1, 5, 0F); // Box 11
+		bodyModel[587].setRotationPoint(-43F, -22.5F, -5.25F);
 
-		bodyModel[548].addShapeBox(0F, 0F, 5F, 1, 2, 2, 0F,0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F); // Marker_Right_top
-		bodyModel[548].setRotationPoint(-48.6F, -21.85F, 0F);
-		bodyModel[548].rotateAngleY = -0.45378561F;
+		bodyModel[588].addBox(0F, 0F, 0F, 6, 1, 5, 0F); // Box 11
+		bodyModel[588].setRotationPoint(-43F, -22.5F, 0.25F);
 
-		bodyModel[549].addShapeBox(0F, 0F, -7F, 1, 2, 2, 0F,0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F, 0F, -0.55F, -0.55F); // Marker_Left_top
-		bodyModel[549].setRotationPoint(-48.6F, -21.85F, 0F);
-		bodyModel[549].rotateAngleY = 0.45378561F;
+		bodyModel[589].addShapeBox(0F, 0F, 0F, 6, 1, 5, 0F,-1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[589].setRotationPoint(-43F, -23.5F, -5.25F);
 
-		bodyModel[550].addShapeBox(0F, 0F, 0F, 1, 4, 2, 0F,0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.1F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F, 0F, -0.4F, -0.1F); // Box 11
-		bodyModel[550].setRotationPoint(55.05F, -20F, -1F);
+		bodyModel[590].addShapeBox(0F, 0F, 0F, 6, 1, 5, 0F,-1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[590].setRotationPoint(-43F, -23.5F, 0.25F);
 
-		bodyModel[551].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Light_Top-rear
-		bodyModel[551].setRotationPoint(56.05F, -20F, -1F);
+		bodyModel[591].addShapeBox(0F, 0F, 0F, 2, 0, 2, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 11
+		bodyModel[591].setRotationPoint(-50F, -21F, -1F);
 
-		bodyModel[552].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Light_Bottom-rear
-		bodyModel[552].setRotationPoint(56.05F, -18.3F, -1F);
+		bodyModel[592].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F); // Bell
+		bodyModel[592].setRotationPoint(-50F, -20.74F, -1F);
 
-		bodyModel[553].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 95
-		bodyModel[553].setRotationPoint(-49F, -23.5F, -1.5F);
+		bodyModel[593].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, 0F, 0F, 0F, 0F); // Box 150
+		bodyModel[593].setRotationPoint(-49.1F, -20.99F, -0.9F);
 
-		bodyModel[554].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
-		bodyModel[554].setRotationPoint(-48F, -23F, -1F);
+		bodyModel[594].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F); // Box 11
+		bodyModel[594].setRotationPoint(-49F, -20.5F, -1F);
 
-		bodyModel[555].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F); // Box 95
-		bodyModel[555].setRotationPoint(-48F, -23.5F, 0F);
+		bodyModel[595].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F); // Box 11
+		bodyModel[595].setRotationPoint(-49F, -20.5F, 1F);
 
-		bodyModel[556].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F); // Box 95
-		bodyModel[556].setRotationPoint(-46F, -23.5F, -2F);
+		bodyModel[596].addShapeBox(0F, 0F, 0F, 2, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[596].setRotationPoint(-49.5F, -21F, 1F);
 
-		bodyModel[557].addShapeBox(0F, 0F, 0F, 0, 4, 4, 0F,0F, 0F, -4F, 0F, 0F, -4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[557].setRotationPoint(-14.99F, -21.5F, -11F);
+		bodyModel[597].addShapeBox(0F, 0F, 0F, 2, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[597].setRotationPoint(-49.5F, -21F, -1F);
 
-		bodyModel[558].addShapeBox(0F, 0F, 0F, 17, 4, 0, 0F,0F, 0F, -4F, 0F, 0F, -4F, 0F, 0F, 4F, 0F, 0F, 4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[558].setRotationPoint(-32F, -21.5F, -11F);
+		bodyModel[598].addBox(0F, 0F, 0F, 2, 2, 1, 0F); // Box 11
+		bodyModel[598].setRotationPoint(-56F, -10.5F, -7F);
 
-		bodyModel[559].addShapeBox(0F, 0F, 0F, 0, 4, 4, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -4F, 0F, 0F, -4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[559].setRotationPoint(-14.99F, -21.5F, 7F);
+		bodyModel[599].addShapeBox(0F, 0F, 0F, 2, 1, 4, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[599].setRotationPoint(-32F, -2.75F, 6.5F);
 
-		bodyModel[560].addShapeBox(0F, 0F, 0F, 17, 4, 0, 0F,0F, 0F, 4F, 0F, 0F, 4F, 0F, 0F, -4F, 0F, 0F, -4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[560].setRotationPoint(-32F, -21.5F, 11F);
+		bodyModel[600].addShapeBox(0F, 0F, 0F, 2, 1, 4, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[600].setRotationPoint(-33F, -4.25F, 6.5F);
 
-		bodyModel[561].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[561].setRotationPoint(-39F, -19.5F, -10F);
+		bodyModel[601].addShapeBox(0F, 0F, 0F, 7, 2, 14, 0F,0F, 0.25F, -2F, 0F, 0.25F, -2F, 0F, 0.25F, -2F, 0F, 0.25F, -2F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F); // Box 180
+		bodyModel[601].setRotationPoint(-14F, -22.5F, -7F);
 
-		bodyModel[562].addShapeBox(0F, 0F, 0F, 1, 0, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[562].setRotationPoint(-39F, -19.5F, -10F);
+		bodyModel[602].addShapeBox(0F, 0F, 0.25F, 1, 1, 3, 0F,-0.5F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 52
+		bodyModel[602].setRotationPoint(-60.15F, -8.5F, 2F);
+		bodyModel[602].rotateAngleY = -0.40142573F;
 
-		bodyModel[563].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
-		bodyModel[563].setRotationPoint(-39.25F, -20.51F, -9.75F);
+		bodyModel[603].addShapeBox(0F, 0F, -3.25F, 1, 1, 3, 0F,-0.5F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 52
+		bodyModel[603].setRotationPoint(-60.15F, -8.5F, -2F);
+		bodyModel[603].rotateAngleY = 0.40142573F;
 
-		bodyModel[564].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_Left
-		bodyModel[564].setRotationPoint(-39.25F, -20.51F, -9.75F);
+		bodyModel[604].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[604].setRotationPoint(-43F, -21.5F, 8F);
 
-		bodyModel[565].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[565].setRotationPoint(-39F, -19.5F, 10F);
+		bodyModel[605].addShapeBox(0F, 0F, 0F, 1, 0, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[605].setRotationPoint(-43F, -21.5F, 7F);
 
-		bodyModel[566].addShapeBox(0F, 0F, 0F, 1, 0, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[566].setRotationPoint(-39F, -19.5F, 9F);
+		bodyModel[606].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
+		bodyModel[606].setRotationPoint(-43.25F, -22.51F, 7.25F);
 
-		bodyModel[567].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
-		bodyModel[567].setRotationPoint(-39.25F, -20.51F, 9.25F);
+		bodyModel[607].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_Right_brc
+		bodyModel[607].setRotationPoint(-43.25F, -22.51F, 7.25F);
 
-		bodyModel[568].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_Right
-		bodyModel[568].setRotationPoint(-39.25F, -20.51F, 9.25F);
+		bodyModel[608].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[608].setRotationPoint(-43F, -21.5F, -8F);
 
-		bodyModel[569].addBox(0F, 0F, 0F, 7, 2, 10, 0F); // Box 11
-		bodyModel[569].setRotationPoint(-44F, -23F, -5F);
+		bodyModel[609].addShapeBox(0F, 0F, 0F, 1, 0, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[609].setRotationPoint(-43F, -21.5F, -8F);
 
-		bodyModel[570].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 180
-		bodyModel[570].setRotationPoint(-6.5F, -23.75F, -1F);
+		bodyModel[610].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
+		bodyModel[610].setRotationPoint(-43.25F, -22.51F, -7.75F);
 
-		bodyModel[571].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 180
-		bodyModel[571].setRotationPoint(14.5F, -23.75F, -1F);
+		bodyModel[611].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_Left_brc
+		bodyModel[611].setRotationPoint(-43.25F, -22.51F, -7.75F);
 
-		bodyModel[572].addBox(0F, 0F, 0F, 7, 0, 3, 0F); // Box 11
-		bodyModel[572].setRotationPoint(-44F, -23F, -8F);
+		bodyModel[612].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0.2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F, -0.15F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 123
+		bodyModel[612].setRotationPoint(-69.25F, 4F, -9F);
 
-		bodyModel[573].addBox(0F, 0F, 0F, 1, 3, 0, 0F); // Box 11
-		bodyModel[573].setRotationPoint(-43.5F, -23F, -8F);
+		bodyModel[613].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.2F, 0F, 0F, 0.2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.15F, 0F, 0F); // Box 123
+		bodyModel[613].setRotationPoint(-69.25F, 4F, 8F);
 
-		bodyModel[574].addBox(0F, 0F, 0F, 1, 3, 0, 0F); // Box 11
-		bodyModel[574].setRotationPoint(-38.5F, -23F, -8F);
+		bodyModel[614].addBox(0F, 0F, 0F, 37, 3, 22, 0F); // Box 68
+		bodyModel[614].setRotationPoint(-17F, 2.5F, -11F);
 
-		bodyModel[575].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 88
-		bodyModel[575].setRotationPoint(19.5F, -22F, 5F);
+		bodyModel[615].addShapeBox(0F, 0F, 0F, 1, 8, 1, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, -0.5F, 0F, -0.5F); // Box 52
+		bodyModel[615].setRotationPoint(-61.5F, -7.5F, 11F);
 
-		bodyModel[576].addBox(0F, 0F, 0F, 1, 1, 3, 0F); // Box 91
-		bodyModel[576].setRotationPoint(19.5F, -23F, 4F);
+		bodyModel[616].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,-0.45F, 0.15F, -0.45F, -0.45F, 0.15F, -0.45F, -0.45F, 0.15F, -0.45F, -0.45F, 0.15F, -0.45F, -0.45F, -0.5F, -0.45F, -0.45F, -0.5F, -0.45F, -0.45F, -0.5F, -0.45F, -0.45F, -0.5F, -0.45F); // Exhaust
+		bodyModel[616].setRotationPoint(-36F, -21.75F, -6F);
 
-		bodyModel[577].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 95
-		bodyModel[577].setRotationPoint(17.5F, -23.5F, 3F);
+		bodyModel[617].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.5F, -0.95F, -0.5F, -0.5F, -0.95F, -0.5F, -0.5F, -0.95F, -0.5F, -0.5F, -0.95F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F); // BeaconCNW
+		bodyModel[617].setRotationPoint(-36F, -23.65F, -6F);
 
-		bodyModel[578].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
-		bodyModel[578].setRotationPoint(18.5F, -23F, 3.5F);
+		bodyModel[618].addBox(0F, 0F, 0F, 1, 6, 4, 0F); // Box 11
+		bodyModel[618].setRotationPoint(-63F, 1.5F, 7F);
 
-		bodyModel[579].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F); // Box 95
-		bodyModel[579].setRotationPoint(17.5F, -24F, 4.5F);
+		bodyModel[619].addShapeBox(0F, 0F, 0F, 5, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[619].setRotationPoint(-68F, 7F, 9F);
 
-		bodyModel[580].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
-		bodyModel[580].setRotationPoint(18.5F, -23.5F, 5F);
+		bodyModel[620].addShapeBox(0F, 0F, 0F, 5, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[620].setRotationPoint(-68F, 6F, 9F);
 
-		bodyModel[581].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F); // Box 209
-		bodyModel[581].setRotationPoint(18.5F, -23.75F, 5.75F);
+		bodyModel[621].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[621].setRotationPoint(-67.5F, 5.35F, 7F);
 
-		bodyModel[582].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
-		bodyModel[582].setRotationPoint(20.5F, -23.75F, 3.25F);
+		bodyModel[622].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[622].setRotationPoint(-67.5F, 4.35F, 7F);
 
-		bodyModel[583].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, -0.6F, -0.6F, 0F, -0.6F, -0.6F, 0F, -0.75F, -0.75F); // Box 209
-		bodyModel[583].setRotationPoint(20.5F, -23.75F, 4.75F);
+		bodyModel[623].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[623].setRotationPoint(-67.5F, 3.22F, 7F);
 
-		bodyModel[584].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 88
-		bodyModel[584].setRotationPoint(27.75F, -22.25F, -6F);
+		bodyModel[624].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[624].setRotationPoint(-67.5F, 2.22F, 7F);
 
-		bodyModel[585].addBox(0F, 0F, 0F, 1, 1, 3, 0F); // Box 91
-		bodyModel[585].setRotationPoint(27.75F, -23.25F, -7F);
+		bodyModel[625].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[625].setRotationPoint(-67.5F, 1.1F, 7F);
 
-		bodyModel[586].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.25F, -0.25F); // Box 95
-		bodyModel[586].setRotationPoint(25.75F, -23.75F, -6.5F);
+		bodyModel[626].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[626].setRotationPoint(-67.5F, 0.1F, 7F);
 
-		bodyModel[587].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 96
-		bodyModel[587].setRotationPoint(26.75F, -23.25F, -6F);
+		bodyModel[627].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[627].setRotationPoint(-67.5F, -0.5F, 7F);
 
-		bodyModel[588].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F); // Box 95
-		bodyModel[588].setRotationPoint(26.75F, -23.75F, -5.25F);
+		bodyModel[628].addShapeBox(0F, 0F, 0F, 1, 6, 2, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.5F, 0.5F, 0F); // Box 11
+		bodyModel[628].setRotationPoint(-64F, -0.5F, 7F);
 
-		bodyModel[589].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.35F, -0.35F, 0F, -0.35F, -0.35F, 0F, -0.5F, -0.5F); // Box 95
-		bodyModel[589].setRotationPoint(28.75F, -23.75F, -7.5F);
+		bodyModel[629].addShapeBox(0F, 0F, 0F, 1, 6, 2, 0F,0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, -0.5F, 0.5F, 0F, -0.5F, 0.5F, 0F, 0F, 0.5F, 0F); // Box 11
+		bodyModel[629].setRotationPoint(-68F, -0.5F, 7F);
 
-		bodyModel[590].addBox(0F, 0F, 0F, 6, 1, 5, 0F); // Box 11
-		bodyModel[590].setRotationPoint(-43F, -22.5F, -5.25F);
+		bodyModel[630].addBox(0F, 0F, 0F, 1, 6, 4, 0F); // Box 11
+		bodyModel[630].setRotationPoint(-63F, 1.5F, -11F);
 
-		bodyModel[591].addBox(0F, 0F, 0F, 6, 1, 5, 0F); // Box 11
-		bodyModel[591].setRotationPoint(-43F, -22.5F, 0.25F);
+		bodyModel[631].addShapeBox(0F, 0F, 0F, 5, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[631].setRotationPoint(-68F, 7F, -11F);
 
-		bodyModel[592].addShapeBox(0F, 0F, 0F, 6, 1, 5, 0F,-1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[592].setRotationPoint(-43F, -23.5F, -5.25F);
+		bodyModel[632].addShapeBox(0F, 0F, 0F, 5, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[632].setRotationPoint(-68F, 6F, -9F);
 
-		bodyModel[593].addShapeBox(0F, 0F, 0F, 6, 1, 5, 0F,-1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[593].setRotationPoint(-43F, -23.5F, 0.25F);
+		bodyModel[633].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[633].setRotationPoint(-67.5F, 5.35F, -9F);
 
-		bodyModel[594].addShapeBox(0F, 0F, 0F, 2, 0, 2, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 11
-		bodyModel[594].setRotationPoint(-50F, -21F, -1F);
+		bodyModel[634].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[634].setRotationPoint(-67.5F, 4.35F, -7F);
 
-		bodyModel[595].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,-0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F, -0.25F, -0.5F, -0.25F); // Bell
-		bodyModel[595].setRotationPoint(-50F, -20.74F, -1F);
+		bodyModel[635].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[635].setRotationPoint(-67.5F, 3.22F, -9F);
 
-		bodyModel[596].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.75F, -0.75F, 0F, -0.75F, -0.75F, 0F, 0F, 0F, 0F, 0F); // Box 150
-		bodyModel[596].setRotationPoint(-49.1F, -20.99F, -0.9F);
+		bodyModel[636].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[636].setRotationPoint(-67.5F, 2.22F, -7F);
 
-		bodyModel[597].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F); // Box 11
-		bodyModel[597].setRotationPoint(-49F, -20.5F, -1F);
+		bodyModel[637].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[637].setRotationPoint(-67.5F, 1.1F, -9F);
 
-		bodyModel[598].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F); // Box 11
-		bodyModel[598].setRotationPoint(-49F, -20.5F, 1F);
+		bodyModel[638].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[638].setRotationPoint(-67.5F, 0.1F, -7F);
 
-		bodyModel[599].addShapeBox(0F, 0F, 0F, 2, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
-		bodyModel[599].setRotationPoint(-49.5F, -21F, 1F);
+		bodyModel[639].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[639].setRotationPoint(-67.5F, -0.5F, -9F);
 
-		bodyModel[600].addShapeBox(0F, 0F, 0F, 2, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
-		bodyModel[600].setRotationPoint(-49.5F, -21F, -1F);
+		bodyModel[640].addShapeBox(0F, 0F, 0F, 1, 6, 2, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.5F, 0.5F, 0F); // Box 11
+		bodyModel[640].setRotationPoint(-64F, -0.5F, -9F);
 
-		bodyModel[601].addBox(0F, 0F, 0F, 2, 2, 1, 0F); // Box 11
-		bodyModel[601].setRotationPoint(-56F, -10.5F, -7F);
+		bodyModel[641].addShapeBox(0F, 0F, 0F, 1, 6, 2, 0F,0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, -0.5F, 0.5F, 0F, -0.5F, 0.5F, 0F, 0F, 0.5F, 0F); // Box 11
+		bodyModel[641].setRotationPoint(-68F, -0.5F, -9F);
 
-		bodyModel[602].addShapeBox(0F, 0F, 0F, 2, 1, 4, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[602].setRotationPoint(-32F, -2.75F, 6.5F);
+		bodyModel[642].addBox(0F, 0F, 0F, 1, 6, 4, 0F); // Box 11
+		bodyModel[642].setRotationPoint(62F, 1.5F, -11F);
 
-		bodyModel[603].addShapeBox(0F, 0F, 0F, 2, 1, 4, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[603].setRotationPoint(-33F, -4.25F, 6.5F);
+		bodyModel[643].addShapeBox(0F, 0F, 0F, 5, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[643].setRotationPoint(63F, 7F, -11F);
 
-		bodyModel[604].addShapeBox(0F, 0F, 0F, 7, 2, 14, 0F,0F, 0.25F, -2F, 0F, 0.25F, -2F, 0F, 0.25F, -2F, 0F, 0.25F, -2F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F); // Box 180
-		bodyModel[604].setRotationPoint(-14F, -22.5F, -7F);
+		bodyModel[644].addShapeBox(0F, 0F, 0F, 5, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[644].setRotationPoint(63F, 6F, -9F);
 
-		bodyModel[605].addShapeBox(0F, 0F, 0.25F, 1, 1, 3, 0F,-0.5F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 52
-		bodyModel[605].setRotationPoint(-60.15F, -8.5F, 2F);
-		bodyModel[605].rotateAngleY = -0.40142573F;
+		bodyModel[645].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[645].setRotationPoint(63.5F, 5.35F, -9F);
 
-		bodyModel[606].addShapeBox(0F, 0F, -3.25F, 1, 1, 3, 0F,-0.5F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 52
-		bodyModel[606].setRotationPoint(-60.15F, -8.5F, -2F);
-		bodyModel[606].rotateAngleY = 0.40142573F;
+		bodyModel[646].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[646].setRotationPoint(63.5F, 4.35F, -7F);
 
-		bodyModel[607].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[607].setRotationPoint(-43F, -21.5F, 8F);
+		bodyModel[647].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[647].setRotationPoint(63.5F, 2.22F, -7F);
 
-		bodyModel[608].addShapeBox(0F, 0F, 0F, 1, 0, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[608].setRotationPoint(-43F, -21.5F, 7F);
+		bodyModel[648].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[648].setRotationPoint(63.5F, 1.1F, -9F);
 
-		bodyModel[609].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
-		bodyModel[609].setRotationPoint(-43.25F, -22.51F, 7.25F);
+		bodyModel[649].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[649].setRotationPoint(63.5F, 0.1F, -7F);
 
-		bodyModel[610].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_Right_brc
-		bodyModel[610].setRotationPoint(-43.25F, -22.51F, 7.25F);
+		bodyModel[650].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[650].setRotationPoint(63.5F, -0.5F, -9F);
 
-		bodyModel[611].addShapeBox(0F, 0F, 0F, 1, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[611].setRotationPoint(-43F, -21.5F, -8F);
+		bodyModel[651].addShapeBox(0F, 0F, 0F, 1, 6, 2, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.5F, 0.5F, 0F); // Box 11
+		bodyModel[651].setRotationPoint(67F, -0.5F, -9F);
 
-		bodyModel[612].addShapeBox(0F, 0F, 0F, 1, 0, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
-		bodyModel[612].setRotationPoint(-43F, -21.5F, -8F);
+		bodyModel[652].addShapeBox(0F, 0F, 0F, 1, 6, 2, 0F,0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, -0.5F, 0.5F, 0F, -0.5F, 0.5F, 0F, 0F, 0.5F, 0F); // Box 11
+		bodyModel[652].setRotationPoint(63F, -0.5F, -9F);
 
-		bodyModel[613].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
-		bodyModel[613].setRotationPoint(-43.25F, -22.51F, -7.75F);
+		bodyModel[653].addBox(0F, 0F, 0F, 1, 6, 4, 0F); // Box 11
+		bodyModel[653].setRotationPoint(62F, 1.5F, 7F);
 
-		bodyModel[614].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_Left_brc
-		bodyModel[614].setRotationPoint(-43.25F, -22.51F, -7.75F);
+		bodyModel[654].addShapeBox(0F, 0F, 0F, 5, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[654].setRotationPoint(63F, 7F, 9F);
 
-		bodyModel[615].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0.2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F, -0.15F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 123
-		bodyModel[615].setRotationPoint(-69.25F, 4F, -9F);
+		bodyModel[655].addShapeBox(0F, 0F, 0F, 5, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[655].setRotationPoint(63F, 6F, 9F);
 
-		bodyModel[616].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.2F, 0F, 0F, 0.2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.15F, 0F, 0F); // Box 123
-		bodyModel[616].setRotationPoint(-69.25F, 4F, 8F);
+		bodyModel[656].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[656].setRotationPoint(63.5F, 5.35F, 7F);
 
-		bodyModel[617].addBox(0F, 0F, 0F, 37, 3, 22, 0F); // Box 68
-		bodyModel[617].setRotationPoint(-17F, 2.5F, -11F);
+		bodyModel[657].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[657].setRotationPoint(63.5F, 4.35F, 7F);
 
-		bodyModel[618].addShapeBox(0F, 0F, 0F, 1, 8, 1, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, -0.5F, 0F, -0.5F); // Box 52
-		bodyModel[618].setRotationPoint(-61.5F, -7.5F, 11F);
+		bodyModel[658].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[658].setRotationPoint(63.5F, 3.22F, 7F);
+
+		bodyModel[659].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[659].setRotationPoint(63.5F, 2.22F, 7F);
+
+		bodyModel[660].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[660].setRotationPoint(63.5F, 1.1F, 7F);
+
+		bodyModel[661].addShapeBox(0F, 0F, 0F, 4, 1, 0, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[661].setRotationPoint(63.5F, 0.1F, 7F);
+
+		bodyModel[662].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[662].setRotationPoint(63.5F, -0.5F, 7F);
+
+		bodyModel[663].addShapeBox(0F, 0F, 0F, 1, 6, 2, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.5F, 0.5F, 0F); // Box 11
+		bodyModel[663].setRotationPoint(67F, -0.5F, 7F);
+
+		bodyModel[664].addShapeBox(0F, 0F, 0F, 1, 6, 2, 0F,0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, -0.5F, 0.5F, 0F, -0.5F, 0.5F, 0F, 0F, 0.5F, 0F); // Box 11
+		bodyModel[664].setRotationPoint(63F, -0.5F, 7F);
+
+		bodyModel[665].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.5F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, -0.5F, -0.2F, -0.2F); // Light_Nose_Middle-Top
+		bodyModel[665].setRotationPoint(-61.5F, -12.1F, -1F);
+
+		bodyModel[666].addShapeBox(0F, 0F, 0F, 1, 3, 1, 0F,0F, -0.25F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, -0.5F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[666].setRotationPoint(-60.5F, -12.5F, 0F);
+
+		bodyModel[667].addShapeBox(0F, 0F, 0F, 1, 3, 1, 0F,0F, -0.5F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, -0.5F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F); // Box 11
+		bodyModel[667].setRotationPoint(-60.5F, -12.5F, -1F);
+
+		bodyModel[668].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 11
+		bodyModel[668].setRotationPoint(63.5F, 3.22F, -9F);
 	}
 }

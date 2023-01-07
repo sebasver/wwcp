@@ -103,7 +103,7 @@ public class EntityGWR57 extends EntityTrainCore {
     }
 
     public float[] getHitboxSize() {
-        return new float[]{6F, 2.1F, 1.3F};
+        return new float[]{4.4F, 2.1F, 1.3F};
     }
 
     public ItemStack[] getRecipe() {
@@ -128,7 +128,7 @@ public class EntityGWR57 extends EntityTrainCore {
     }
 
     public float[] bogieLengthFromCenter() {
-        return new float[]{1.0F, 0.1F};
+        return new float[]{1.0F, -1.3F};
     }
 
     public float getRenderScale() {
@@ -137,7 +137,7 @@ public class EntityGWR57 extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{0f,-0F,0.F}};}
+        return new float[][]{{-0.225f,0F,0.F}};}
 
     public boolean shouldRiderSit() {
         return false;

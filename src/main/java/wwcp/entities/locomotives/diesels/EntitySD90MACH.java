@@ -90,9 +90,12 @@ public class EntitySD90MACH extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD90MACH/SD90MACH_UP.png",
+                "textures/bogies/HTSCtruck_UP.png", "UP", "Union Pacific w/ herald");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD90MACH/SD90MACH_UP_Wings.png",
+                "textures/bogies/HTSCtruck_UP.png", "UP Wings", "Union Pacific w/ wings");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD90MACH/SD90MACH_CP.png",
-                "textures/bogies/HTSCtruck_Black.png",
-                "CP Beaver", "Canadian Pacific with beaver logo");
+                "textures/bogies/HTSCtruck_Black.png", "CP Beaver", "Canadian Pacific with beaver logo");
     }
 
     /**
@@ -119,8 +122,7 @@ public class EntitySD90MACH extends EntityTrainCore {
     public float[] bogieLengthFromCenter(){return new float[]{3.3f,-3.3f};}
 
     @Override
-    public List<TrainsInMotion.transportTypes> getTypes() {
-        return TrainsInMotion.transportTypes.PASSENGER.singleton();
+    public List<TrainsInMotion.transportTypes> getTypes() { return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
 
     //in what units is this?
@@ -129,7 +131,7 @@ public class EntitySD90MACH extends EntityTrainCore {
     public float getMaxFuel(){return 1;}
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-3.6f,1.45f, -0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-3.6f,1.55f, -0.3f}};}
 
 
     @Override
@@ -139,7 +141,7 @@ public class EntitySD90MACH extends EntityTrainCore {
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{10.3f,2f,1.5f};
+        return new float[]{10.5f,2f,1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -159,9 +161,6 @@ public class EntitySD90MACH extends EntityTrainCore {
      * the forth number defines the grayscale color from 255 (white) to 0 (black)
      * the 5th number is for density, there's no min/max but larger numbers will create more lag.
      */
-
-    //Is this three different smoke offset effects?
-    public float[][] getSmokeOffset(){return new float[][]{{-1,0,0.5f,0xB2B2B2,30},{-1,0,-0.5f,0xB2B2B2,30},{-1.4f,2f,0,0x3C3C3C,500}};}
 
     /**
      * ETERNAL NOTE
@@ -186,7 +185,7 @@ public class EntitySD90MACH extends EntityTrainCore {
 
     @Override
     public float[][] modelOffsets() {
-        return new float[][]{{-0.35f,-0F,0.F}};}
+        return new float[][]{{-0.35f,0.0F,0.F}};}
         
     /**
      * <h2>Fluid Tank Capacity</h2>
@@ -195,14 +194,10 @@ public class EntitySD90MACH extends EntityTrainCore {
     //once more what do the numbers mean
     //ETERNAL NOTE 1000 is a bucket, each number represents a new tank.
     @Override
-    public int[] getTankCapacity(){return new int[]{9161, 800};}
+    public int[] getTankCapacity(){return new int[]{9161};}
     //once more idem dito
     //ETERNAL NOTE RF capacity is being moved to a fluid tank, one redstone has the value of 250.
     //as of writing this the RF tank uses water, but later there will be a redstone dust fluid for it
-
-    public int getRFCapacity() {
-        return 1110000;
-    }
 
     /**
      * <h2>fluid filter</h2>
@@ -210,17 +205,23 @@ public class EntitySD90MACH extends EntityTrainCore {
      * for instance if you have a wooden tanker car, you can deny fluids that are fire sources (like lava).
      */
 
-    //eeeh what
+    public int[] getParticleData(int id) {
+        switch (id){
+            case 0:{return new int[]{1, 50, 0x555555};}//EMD smoke
+            case 1:{return super.getParticleData(id);}//heavy smoke
+            case 2:{return super.getParticleData(id);}//steam
+            case 3:{return super.getParticleData(id);}//led lamp
+            case 4:{return super.getParticleData(id);}//reverse lamp
+            case 5:{return super.getParticleData(id);}//small sphere lamp
 
-    public String[] getTankFilters(int tank){
-        switch (tank){
-            case 0:{
-                return new String[]{FluidRegistry.WATER.getName()};
-            }
-            default:{
-                return new String[]{FluidRegistry.LAVA.getName()};
-            }
+            default:{return new int[]{5, 100, 0xf3da90};}
         }
+    }
+
+    public String[] setParticles(){
+
+        return new String[]{"smoke ,0,-0.15,1,0,0,0,0"};
+
     }
 
     /**
@@ -245,14 +246,6 @@ public class EntitySD90MACH extends EntityTrainCore {
     // NOTE 2: when overriding initInventorySlots() be sure to call the super method, also always use numbers over 400
     // to prevent conflicts with other inventory functionality.
     // later on i'll need to implement an easier system for custom inventory slots.
-    @Override
-    public boolean isItemValidForSlot(int slot, ItemStack stack){
-        switch (slot){
-            case 400:{return TileEntityFurnace.getItemBurnTime(stack)>0;}
-            case 401:{return FluidContainerRegistry.getFluidForFilledItem(stack)!=null && canFill(null, FluidContainerRegistry.getFluidForFilledItem(stack).getFluid());}
-            default:{return true;}
-        }
-    }
 
     @Override
     public float[][] modelRotations(){return new float[][]{{0.0f, 180.0f, 0.0f}};}
@@ -263,7 +256,7 @@ public class EntitySD90MACH extends EntityTrainCore {
      */
     @Override
     public void manageFuel(){
-        fuelHandler.manageElectric(this);
+        fuelHandler.manageDiesel(this);
     }
 
 

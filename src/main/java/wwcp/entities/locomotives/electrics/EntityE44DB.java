@@ -31,7 +31,7 @@ import java.util.UUID;
 
 public class EntityE44DB extends EntityTrainCore {
 
-    public static final Item thisItem = new WWCPTransport(new EntityE44DB(null), worldwidecontentpack.MODID, worldwidecontentpack.European);
+    public static final Item thisItem = new WWCPTransport(new EntityE44DB(null), worldwidecontentpack.MODID, worldwidecontentpack.Germany);
 
     /**
      * these basic constructors only need to have their names changed to that of this class, that is assuming your editor doesn't automatically do that.
@@ -123,12 +123,12 @@ public class EntityE44DB extends EntityTrainCore {
 
     @Override
     public float[][] getRiderOffsets() {
-        return new float[][]{{-3.6f, 1.25f, -0.25f},{3.6f, 1.25f, 0.25f}};
+        return new float[][]{{-2.0f, 1.25f, -0.3f},{2.0f, 1.25f, 0.3f}};
     }
 
     @Override
     public float[] getHitboxSize() {
-        return new float[]{9.075f, 2.5f, 1.5f};
+        return new float[]{7.2f, 2.5f, 1.5f};
     }
 
     public ItemStack[] getRecipe() {
@@ -177,7 +177,7 @@ public class EntityE44DB extends EntityTrainCore {
      */
     @Override
     public boolean shouldRiderSit() {
-        return true;
+        return false;
     }
     /**
      * <h2>reinforced transport</h2>
