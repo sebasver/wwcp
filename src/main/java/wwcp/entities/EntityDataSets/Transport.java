@@ -603,6 +603,27 @@ public class Transport {
                 63250f, 3000f, 129.4f, 112.6f, false, true, 0);
     }
 
+    //B40-8
+    public static Transport.LocomotiveNoBackspeed B408() {
+        return new Transport.LocomotiveNoBackspeed("B408", "America", "1988-Present", "Diesel",
+                "", "", type, "Road Diesel",
+                68000f, 4000f, 140f, 112.6f, false, true, 0);
+    }
+
+    //B39-8
+    public static Transport.LocomotiveNoBackspeed B398() {
+        return new Transport.LocomotiveNoBackspeed("B398", "America", "1984-Present", "Diesel",
+                "", "", type, "Road Diesel",
+                68000f, 3900f, 140f, 112.6f, false, true, 0);
+    }
+
+    //MK5000C
+    public static Transport.LocomotiveNoBackspeed MK5000C() {
+        return new Transport.LocomotiveNoBackspeed("MK5000C", "America", "1985-Present", "Diesel",
+                "", "", type, "Road Diesel",
+                55000f, 5000f, 210f, 112.6f, false, true, 0);
+    }
+
     //M640 - Note, Incomplete until I find the data
     public static Transport.LocomotiveNoBackspeed M640() {
         return new Transport.LocomotiveNoBackspeed("M640", "Canada", "1972-1992", "Diesel",
