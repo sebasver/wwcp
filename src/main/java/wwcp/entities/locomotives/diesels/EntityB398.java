@@ -86,6 +86,8 @@ public class EntityB398 extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B408/B398_ATSF.png", "textures/bogies/AmericanTrucks/FB2_Truck_Silver.png",
                 "ATSF", "Atchison, Topeka and Santa Fe Railway Yellowbonnet");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B408/B398_ATSF2.png", "textures/bogies/AmericanTrucks/FB2_Truck_Silver.png",
+                "ATSF w/ noselight", "Atchison, Topeka and Santa Fe Railway Yellowbonnet w/ noselight");
     }
 
     @Override

@@ -693,6 +693,41 @@ public class Transport {
                 40000f, 1500f, 123f, 105f, false, true, 0);
     }
 
+    //SLRV
+    public static Transport.LocomotiveNoBackspeed SLRV() {
+        return new Transport.LocomotiveNoBackspeed("SLRV", "America", "1996-Present", "Electric",
+                nick, "", type, " Light Rail",
+                10000f, 750f, 70f, 116f, false, true, 0);
+    }
+
+    //C424
+    public static Transport.LocomotiveNoBackspeed C424() {
+        return new Transport.LocomotiveNoBackspeed("C424", "America", "1963-Present", "Diesel",
+                nick, "", type, " Road Diesel",
+                47000f, 2400f, 130f, 105f, false, true, 0);
+    }
+
+    //C425
+    public static Transport.LocomotiveNoBackspeed C425() {
+        return new Transport.LocomotiveNoBackspeed("C425", "America", "1964-Present", "Diesel",
+                nick, "", type, " Road Diesel",
+                50000f, 2500f, 130f, 105f, false, true, 0);
+    }
+
+    //C430
+    public static Transport.LocomotiveNoBackspeed C430() {
+        return new Transport.LocomotiveNoBackspeed("C430", "America", "1966-Present", "Diesel",
+                nick, "", type, " Road Diesel",
+                57200f, 3000f, 136f, 105f, false, true, 0);
+    }
+
+    //C630M
+    public static Transport.LocomotiveNoBackspeed C630M() {
+        return new Transport.LocomotiveNoBackspeed("C630M", "Canada", "1965-Present", "Diesel",
+                nick, "", type, " Road Diesel",
+                79500f, 3000f, 197f, 105f, false, true, 0);
+    }
+
     //GP7
     public static Transport.LocomotiveNoBackspeed GP7() {
         return new Transport.LocomotiveNoBackspeed("GP7", "America", "1949-Present", "Diesel",
@@ -798,6 +833,13 @@ public class Transport {
                 109000f, 4000f, 197f, 121f, false, true, 0);
     }
 
+    //SD70M
+    public static Transport.LocomotiveNoBackspeed SD70M() {
+        return new Transport.LocomotiveNoBackspeed("SD70M", "America", "1992-Present", "Diesel",
+                nick, "", type, " Special Duty Locomotive",
+                113100f, 4000f, 197f, 121f, false, true, 0);
+    }
+
     //SD75M
     public static Transport.LocomotiveNoBackspeed SD75M() {
         return new Transport.LocomotiveNoBackspeed("SD75M", "America", "1994-Present", "Diesel",
@@ -824,6 +866,13 @@ public class Transport {
         return new Transport.LocomotiveNoBackspeed("GP40-2LW", "Canada", "1972-Present", "Diesel",
                 nick, "", type, " General Purpose Locomotive",
                 54700f, 3000f, 125f, 112f, false, true, 0);
+    }
+
+    //GP30
+    public static Transport.LocomotiveNoBackspeed GP30() {
+        return new Transport.LocomotiveNoBackspeed("GP30", "America", "1961-Present", "Diesel",
+                nick, "", type, " General Purpose Locomotive",
+                50000f, 2250f, 130f, 112f, false, true, 0);
     }
 
     public static Transport.LocomotiveNoBackspeed GP7HighHood() {
@@ -1260,10 +1309,28 @@ public class Transport {
                 "", type, " Passenger", 47.5f, 140f, false, true, 0);
     }
 
+    //SLRV C
+    public static Transport.Rollingstock SLRVC() {
+        return new Transport.Rollingstock("SLRVC", "America", "1996-Present", "",
+                "", type, " Passenger", 50f, 116f, false, true, 0);
+    }
+
+    //Budd Bilevel
+    public static Transport.Rollingstock BuddBilevel() {
+        return new Transport.Rollingstock("BuddBilevel", "America", "1950-Present", "",
+                "", type, " Passenger", 47.5f, 140f, false, true, 0);
+    }
+
+    //Budd Bilevel Cab
+    public static Transport.Rollingstock BuddBilevelCab() {
+        return new Transport.Rollingstock("BuddBilevelCab", "America", "1950-Present", "",
+                "", type, " Passenger", 47.5f, 140f, false, true, 0);
+    }
+
     //GWR Toad 20
     public static Transport.Rollingstock GWR_Toad20() {
         return new Transport.Rollingstock("GWRToad20", "United Kingdom", "1997-", "",
-                "", type, " Passenger", 47.5f, 140f, false, true, 0);
+                "", type, " Passenger", 60f, 140f, false, true, 0);
     }
 
     //DBpza
@@ -1571,34 +1638,46 @@ public class Transport {
                 "", type, " Boxcar", 80.9f, 120f, false, true, 0);
     }
 
-    //todo 40ft aar check stats
+    //AAR 40ft Boxcar
     public static Transport.Rollingstock AAR40ft() {
         return new Transport.Rollingstock("40ft AAR Boxcar", "America", "?", "",
-                "", type, " Boxcar", 48f, 120f, false, true, 0);
+                "", type, " Boxcar", 20f, 120f, false, true, 0);
     }
 
-    //40ft Boxcar
+    //40ft Boxcar old
     public static Transport.Rollingstock Fortyfoot_Boxcar() {
         return new Transport.Rollingstock("40ft Boxcar", "America", "?", "",
-                "", type, " Boxcar", 48f, 120f, false, true, 0);
+                "", type, " Boxcar", 20f, 120f, false, true, 0);
     }
 
     //2 Bay Concrete Hopper
     public static Transport.Rollingstock Bay2ConcreteHopper() {
         return new Transport.Rollingstock("Bay2ConcreteHopper", "America", "?", "",
-                "", type, " Hopper", 48f, 120f, false, true, 0);
+                "", type, " Hopper", 20f, 120f, false, true, 0);
     }
 
-    //40ft Boxcar
+    //PS2Early3Bay
+    public static Transport.Rollingstock PS2Early3Bay() {
+        return new Transport.Rollingstock("PS2Early3Bay", "America", "1965-2000~", "",
+                "", type, " Hopper", 31.7f, 120f, false, true, 0);
+    }
+
+    //GN 40ft Homebuilt Boxcar
     public static Transport.Rollingstock GN40HomebuiltBoxcar() {
         return new Transport.Rollingstock("GN40HomebuiltBoxcar", "America", "?", "",
-                "", type, " Boxcar", 48f, 120f, false, true, 0);
+                "", type, " Boxcar", 20f, 120f, false, true, 0);
+    }
+
+    //XM4A
+    public static Transport.Rollingstock XM4A() {
+        return new Transport.Rollingstock("XM4A", "America", "1963-2000~", "",
+                "", type, " Boxcar", 28.75f, 120f, false, true, 0);
     }
 
     //40ft CP Mechanical Plug Door Refrigerated Boxcar
     public static Transport.Rollingstock CP_Mechanical_Reefer_40ft() {
         return new Transport.Rollingstock("CP 40ft Mechanical Refrigerator", "Canada", "?", "",
-                "", type, " Reefer", 48f, 120f, false, true, 0);
+                "", type, " Reefer", 20f, 120f, false, true, 0);
     }
 
     //40ft Boxcar - CP Plug Slide Boxcar
@@ -1615,19 +1694,19 @@ public class Transport {
     //40ft Boxcar - CP Minibox
     public static Transport.Rollingstock CP_Minibox() {
         return new Transport.Rollingstock("40ft CP Minibox", "Canada", "1929-1983", "",
-                "", type, " Boxcar", 36f, 120f, false, true, 0);
+                "", type, " Boxcar", 18f, 120f, false, true, 0);
     }
 
     //GCS Flatcar
     public static Transport.Rollingstock GSC_Flatcar() {
         return new Transport.Rollingstock("GSCFlatcar", "America", "1956", "",
-                "", type, " Flatcar", 75f, 120f, false, true, 0);
+                "", type, " Flatcar", 15f, 120f, false, true, 0);
     }
 
     //PRR Gla Hopper
     public static Transport.Rollingstock PRR_Gla_Hopper() {
         return new Transport.Rollingstock("PRR Gla Hopper", "America", "1956", "",
-                "", type, " Hopper", 75f, 120f, false, true, 0);
+                "", type, " Hopper", 15f, 120f, false, true, 0);
     }
 
     //89ft Flatcar

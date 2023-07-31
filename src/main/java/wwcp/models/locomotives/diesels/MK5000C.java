@@ -20,7 +20,7 @@ public class MK5000C extends ModelBase //Same as Filename
 
 	public MK5000C() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[389];
+		bodyModel = new ModelRendererTurbo[393];
 
 		initbodyModel_1();
 
@@ -276,7 +276,7 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[241] = new ModelRendererTurbo(this, 329, 137, textureX, textureY); // Box 11
 		bodyModel[242] = new ModelRendererTurbo(this, 401, 137, textureX, textureY); // Box 11
 		bodyModel[243] = new ModelRendererTurbo(this, 321, 145, textureX, textureY); // Box 11
-		bodyModel[244] = new ModelRendererTurbo(this, 401, 145, textureX, textureY); // Box 11
+		bodyModel[244] = new ModelRendererTurbo(this, 402, 145, textureX, textureY); // Box 11
 		bodyModel[245] = new ModelRendererTurbo(this, 321, 105, textureX, textureY); // Box 11
 		bodyModel[246] = new ModelRendererTurbo(this, 104, 89, textureX, textureY); // Box 11
 		bodyModel[247] = new ModelRendererTurbo(this, 281, 121, textureX, textureY); // Box 11
@@ -421,6 +421,10 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[386] = new ModelRendererTurbo(this, 321, 200, textureX, textureY); // Box 390
 		bodyModel[387] = new ModelRendererTurbo(this, 384, 358, textureX, textureY); // Box 11
 		bodyModel[388] = new ModelRendererTurbo(this, 350, 337, textureX, textureY); // Box 11
+		bodyModel[389] = new ModelRendererTurbo(this, 1, 206, textureX, textureY); // Box 390
+		bodyModel[390] = new ModelRendererTurbo(this, 1, 206, textureX, textureY); // Box 391
+		bodyModel[391] = new ModelRendererTurbo(this, 1, 206, textureX, textureY); // Box 392
+		bodyModel[392] = new ModelRendererTurbo(this, 1, 210, textureX, textureY); // Box 392
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // box
 		bodyModel[0].setRotationPoint(-72.5F, 3.5F, -0.5F);
@@ -1102,7 +1106,7 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[222].addShapeBox(0F, 0F, 0F, 2, 2, 7, 0F,0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1.7F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1.7F, 0F, 0F); // Box 11
 		bodyModel[222].setRotationPoint(-59.5F, -22F, 0F);
 
-		bodyModel[223].addShapeBox(0F, 0F, 0F, 1, 8, 11, 0F,0.375F, 0F, 0F, -0.375F, 0F, 0F, -3.875F, 0F, 0F, 3.875F, 0F, 0F, 3F, 0F, 0F, -3F, 0F, 0F, -6.5F, 0F, 0F, 6.5F, 0F, 0F); // Box 11
+		bodyModel[223].addShapeBox(0F, 0F, 0F, 1, 8, 11, 0F,0.375F, 0F, 0F, -0.375F, 0F, 0F, -3.875F, 0F, 0F, 3.875F, 0F, 0F, 2.5F, 0F, 0F, -3F, 0F, 0F, -6.5F, 0F, 0F, 6F, 0F, 0F); // Box 11
 		bodyModel[223].setRotationPoint(-56.15F, -20F, -11F);
 
 		bodyModel[224].addShapeBox(0F, 0F, 0F, 1, 2, 4, 0F,0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F, 0F, -0.1F, -0.2F); // Box 128
@@ -1167,8 +1171,8 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[243].addBox(0F, 0F, 0F, 7, 8, 1, 0F); // Box 11
 		bodyModel[243].setRotationPoint(-58.5F, -13F, 2F);
 
-		bodyModel[244].addBox(0F, 0F, 0F, 7, 1, 8, 0F); // Box 11
-		bodyModel[244].setRotationPoint(-58.5F, -14F, 2F);
+		bodyModel[244].addBox(0F, 0F, 0F, 6, 1, 8, 0F); // Box 11
+		bodyModel[244].setRotationPoint(-57.5F, -14F, 2F);
 
 		bodyModel[245].addShapeBox(0F, 0F, 0F, 1, 2, 3, 0F,0F, 0F, -0.5F, 0.5F, 0F, -0.5F, -1F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 1.5F, 0F, -1.5F, 0F, 0F, 0F, 0F, 0F, -0.5F); // Box 11
 		bodyModel[245].setRotationPoint(-57.5F, -16F, 2F);
@@ -1191,8 +1195,8 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[251].addBox(0F, 0F, 0F, 5, 8, 2, 0F); // Box 11
 		bodyModel[251].setRotationPoint(-58.5F, -13F, -4F);
 
-		bodyModel[252].addBox(0F, 0F, 0F, 5, 1, 8, 0F); // Box 11
-		bodyModel[252].setRotationPoint(-58.5F, -14F, -10F);
+		bodyModel[252].addShapeBox(0F, 0F, 0F, 4, 1, 8, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[252].setRotationPoint(-57.5F, -14F, -10F);
 
 		bodyModel[253].addBox(0F, 0F, 0F, 2, 9, 2, 0F); // Box 11
 		bodyModel[253].setRotationPoint(-53.5F, -14F, -4F);
@@ -1317,7 +1321,7 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[293].addShapeBox(0F, 0F, 0F, 25, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Box 459
 		bodyModel[293].setRotationPoint(8.5F, 1F, -10F);
 
-		bodyModel[294].addShapeBox(0F, 0F, 0F, 8, 1, 4, 0F,0F, 0F, 0F, 0F, 1F, 0F, 0F, 1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F); // Box 11
+		bodyModel[294].addShapeBox(0F, 0F, 0F, 8, 1, 4, 0F,0F, 0.5F, 0F, 0.75F, 1F, 0F, 0.75F, 1F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0.75F, -1F, 0F, 0.75F, -1F, 0F, 0F, 0F, 0F); // Box 11
 		bodyModel[294].setRotationPoint(-68.5F, -15F, -2F);
 
 		bodyModel[295].addShapeBox(0F, 0F, 0F, 1, 1, 6, 0F,0F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, -1.5F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, -1.5F, 0F, 0F); // Box 340
@@ -1432,7 +1436,7 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[331].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F); // Box 379
 		bodyModel[331].setRotationPoint(-21.5F, -23.5F, 0.5F);
 
-		bodyModel[332].addShapeBox(0F, 0F, 0F, 8, 1, 9, 0F,-4F, -5F, 0F, 1.35F, -3F, 0F, 0.5F, 1F, -2F, 0F, 0F, 0F, -4F, 4F, 0F, 1.35F, 2F, 0F, 0.5F, -1F, -2F, 0F, 0F, 0F); // Box 380
+		bodyModel[332].addShapeBox(0F, 0F, 0F, 8, 1, 9, 0F,-4F, -5F, 0F, 1.85F, -3F, 0F, 1F, 1F, -2F, 0F, 0.5F, 0F, -4F, 4F, 0F, 1.85F, 2F, 0F, 1F, -1F, -2F, 0F, 0F, 0F); // Box 380
 		bodyModel[332].setRotationPoint(-68.5F, -15F, -11F);
 
 		bodyModel[333].addBox(0F, 0F, 0F, 1, 13, 4, 0F); // Box 381
@@ -1447,10 +1451,10 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[336].addBox(0F, 0F, 0F, 6, 9, 1, 0F); // Box 384
 		bodyModel[336].setRotationPoint(-64.5F, -10F, -11F);
 
-		bodyModel[337].addShapeBox(0F, 0F, 0F, 6, 2, 1, 0F,0F, -2F, 0F, -0.65F, 0F, 0F, -0.65F, 0F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 385
+		bodyModel[337].addShapeBox(0F, 0F, 0F, 6, 2, 1, 0F,0F, -2F, 0F, -0.15F, 0F, 0F, -0.15F, 0F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 385
 		bodyModel[337].setRotationPoint(-64.5F, -12F, -11F);
 
-		bodyModel[338].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.4F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F); // Box 386
+		bodyModel[338].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.85F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.4F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F); // Box 386
 		bodyModel[338].setRotationPoint(-59.5F, -12F, -11F);
 
 		bodyModel[339].addBox(0F, 0F, 0F, 6, 9, 1, 0F); // Box 387
@@ -1462,10 +1466,10 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[341].addShapeBox(0F, 0F, 0F, 1, 4, 9, 0F,4F, 0F, 0F, -4F, 0F, 0F, -1F, -4F, 0F, 0F, -4F, 0F, 4F, 0F, 0F, -4F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F); // Box 389
 		bodyModel[341].setRotationPoint(-64.5F, -14F, 2F);
 
-		bodyModel[342].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.4F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F); // Box 391
+		bodyModel[342].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.85F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F); // Box 391
 		bodyModel[342].setRotationPoint(-59.5F, -12F, 10F);
 
-		bodyModel[343].addShapeBox(0F, 0F, 0F, 1, 8, 11, 0F,3.875F, 0F, 0F, -3.875F, 0F, 0F, -0.375F, 0F, 0F, 0.375F, 0F, 0F, 6.5F, 0F, 0F, -6.5F, 0F, 0F, -3F, 0F, 0F, 3F, 0F, 0F); // Box 392
+		bodyModel[343].addShapeBox(0F, 0F, 0F, 1, 8, 11, 0F,3.875F, 0F, 0F, -3.875F, 0F, 0F, -0.375F, 0F, 0F, 0.375F, 0F, 0F, 6F, 0F, 0F, -6.5F, 0F, 0F, -3F, 0F, 0F, 2.5F, 0F, 0F); // Box 392
 		bodyModel[343].setRotationPoint(-56.15F, -20F, 0F);
 
 		bodyModel[344].addShapeBox(0F, 0F, 0F, 3, 8, 1, 0F,-3F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -3F, 0F, 0F, -0.35F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.35F, 0F, 0F); // Box 393
@@ -1474,16 +1478,16 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[345].addBox(0F, 0F, 0F, 3, 11, 1, 0F); // Box 394
 		bodyModel[345].setRotationPoint(-58.5F, -12F, 10F);
 
-		bodyModel[346].addShapeBox(0F, 0F, 0F, 6, 2, 1, 0F,0F, -2F, 0F, -0.65F, 0F, 0F, -0.65F, 0F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 396
+		bodyModel[346].addShapeBox(0F, 0F, 0F, 6, 2, 1, 0F,0F, -2F, 0F, -0.15F, 0F, 0F, -0.15F, 0F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 396
 		bodyModel[346].setRotationPoint(-64.5F, -12F, 10F);
 
-		bodyModel[347].addShapeBox(0F, 0F, 0F, 8, 1, 2, 0F,0F, 0F, -2F, 0.5F, 1F, 0F, 0F, 1F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0.5F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F); // Box 397
+		bodyModel[347].addShapeBox(0F, 0F, 0F, 8, 1, 2, 0F,0F, 0.5F, -2F, 1F, 1F, 0F, 0.75F, 1F, 0F, 0F, 0.5F, 0F, 0F, 0F, -2F, 1F, -1F, 0F, 0.75F, -1F, 0F, 0F, 0F, 0F); // Box 397
 		bodyModel[347].setRotationPoint(-68.5F, -15F, -4F);
 
-		bodyModel[348].addShapeBox(0F, 0F, 0F, 8, 1, 9, 0F,0F, 0F, 0F, 0.5F, 1F, -2F, 1.35F, -3F, 0F, -4F, -5F, 0F, 0F, 0F, 0F, 0.5F, -1F, -2F, 1.35F, 2F, 0F, -4F, 4F, 0F); // Box 398
+		bodyModel[348].addShapeBox(0F, 0F, 0F, 8, 1, 9, 0F,0F, 0.5F, 0F, 1F, 1F, -2F, 1.85F, -3F, 0F, -4F, -5F, 0F, 0F, 0F, 0F, 1F, -1F, -2F, 1.85F, 2F, 0F, -4F, 4F, 0F); // Box 398
 		bodyModel[348].setRotationPoint(-68.5F, -15F, 2F);
 
-		bodyModel[349].addShapeBox(0F, 0F, 0F, 8, 1, 2, 0F,0F, 0F, 0F, 0F, 1F, 0F, 0.5F, 1F, 0F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, -1F, 0F, 0.5F, -1F, 0F, 0F, 0F, -2F); // Box 399
+		bodyModel[349].addShapeBox(0F, 0F, 0F, 8, 1, 2, 0F,0F, 0.5F, 0F, 0.75F, 1F, 0F, 1F, 1F, 0F, 0F, 0.5F, -2F, 0F, 0F, 0F, 0.75F, -1F, 0F, 1.25F, -1F, 0F, 0F, 0F, -2F); // Box 399
 		bodyModel[349].setRotationPoint(-68.5F, -15F, 2F);
 
 		bodyModel[350].addShapeBox(0F, 0F, 5F, 1, 2, 2, 0F,0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F, 0F, -0.45F, -0.45F); // Marker_Front_Right
@@ -1519,10 +1523,10 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[358].addBox(0F, 0F, 0F, 2, 1, 3, 0F); // Box 408
 		bodyModel[358].setRotationPoint(-56F, -15F, 7F);
 
-		bodyModel[359].addShapeBox(0F, 0F, 0F, 1, 12, 2, 0F,0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 410
+		bodyModel[359].addShapeBox(0F, 0F, 0F, 1, 12, 2, 0F,-1F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 410
 		bodyModel[359].setRotationPoint(-59.5F, -13F, -10F);
 
-		bodyModel[360].addShapeBox(0F, 0F, 0F, 1, 12, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 411
+		bodyModel[360].addShapeBox(0F, 0F, 0F, 1, 12, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 411
 		bodyModel[360].setRotationPoint(-59.5F, -13F, 8F);
 
 		bodyModel[361].addShapeBox(0F, 0F, 0F, 1, 1, 6, 0F,-0.15F, -0.5F, 0F, -0.35F, -0.5F, 0F, 1F, -0.5F, -0.5F, -1.5F, -0.5F, -0.5F, -0.15F, 0F, 0F, -0.35F, 0F, 0F, 1F, 0F, -0.5F, -1.5F, 0F, -0.5F); // Box 412
@@ -1556,10 +1560,10 @@ public class MK5000C extends ModelBase //Same as Filename
 		bodyModel[370].setRotationPoint(70.5F, -9F, 7.5F);
 
 		bodyModel[371].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 422
-		bodyModel[371].setRotationPoint(-66F, -15.3F, -4F);
+		bodyModel[371].setRotationPoint(-65.5F, -15.3F, -4.5F);
 
 		bodyModel[372].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 423
-		bodyModel[372].setRotationPoint(-66F, -15.3F, 3F);
+		bodyModel[372].setRotationPoint(-65.5F, -15.3F, 3.5F);
 
 		bodyModel[373].addBox(0F, 0F, 0F, 2, 0, 1, 0F); // Box 393
 		bodyModel[373].setRotationPoint(-23F, 1F, 9.5F);
@@ -1608,5 +1612,17 @@ public class MK5000C extends ModelBase //Same as Filename
 
 		bodyModel[388].addShapeBox(0F, 0F, 0F, 1, 1, 11, 0F,0.01F, 0F, 0F, -0.01F, 0F, 0F, -3.51F, 0F, 0F, 3.51F, 0F, 0F, 0.2F, -0.5F, 0F, -0.2F, -0.5F, 0F, -3.7F, -0.5F, 0F, 3.7F, -0.5F, 0F); // Box 11
 		bodyModel[388].setRotationPoint(-56.5F, -20F, -11F);
+
+		bodyModel[389].addBox(0F, 0F, 0F, 1, 1, 18, 0F); // Box 390
+		bodyModel[389].setRotationPoint(-58.5F, -14F, -9F);
+
+		bodyModel[390].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 391
+		bodyModel[390].setRotationPoint(-58.5F, -14F, -10F);
+
+		bodyModel[391].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 392
+		bodyModel[391].setRotationPoint(-58.5F, -14F, 9F);
+
+		bodyModel[392].addBox(0F, 0F, 0F, 0, 2, 4, 0F); // Box 392
+		bodyModel[392].setRotationPoint(-68.55F, -15.5F, -2F);
 	}
 }

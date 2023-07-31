@@ -86,6 +86,8 @@ public class EntityB408 extends EntityTrainCore {
     public void registerSkins(){
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B408/B408_Ge_Demo.png", "textures/bogies/AmericanTrucks/FB2_Truck_Black.png",
                 "GE Demo", "General Electric #808 in red demo scheme");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B408/B408_CR.png", "textures/bogies/AmericanTrucks/FB2_Truck_Black.png",
+                "CR", "Conrail blue");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B408/B408_CR_Quality.png", "textures/bogies/AmericanTrucks/FB2_Truck_Black.png",
                 "CR Quality", "Conrail Quality blue");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B408/B408_ATSF.png", "textures/bogies/AmericanTrucks/FB2_Truck_Silver.png",
@@ -94,6 +96,8 @@ public class EntityB408 extends EntityTrainCore {
                 "BNSF H1", "Burlington Northern Santa Fe heritage 1 scheme");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B408/B398_SP.png", "textures/bogies/AmericanTrucks/FB2_Truck_SP.png",
                 "SP B39-8 Spec.", "Southern Pacific bloody nose B39-8 Specifications");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B408/B398_BCRAIL.png", "textures/bogies/AmericanTrucks/FB2_Truck_Silver.png",
+                "BCOL B39-8 Spec.", "British Columbia Railway B39-8 Specifications");
     }
 
 
