@@ -90,6 +90,8 @@ public class EntitySD45 extends EntityTrainCore {
                 "SP Ears", "Southern Pacific Bloody Nose with emd tunnel motor ears, 3 produced");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45R_SP.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_SP.png",
                 "SP Rebuilt", "Southern Pacific Bloody Nose Rebuilt w/o L window and w/ rear mars light configuration");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45R_SPKodachrome.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Silver.png",
+                "SP Kodachrome", "Southern Pacific in Kodachrome yellow and red");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_DRGW_Early.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",
                 "D&RGW Early", "Denver & Rio Grande Western Early");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD45/SD45_DRGW_Late.png", "textures/bogies/AmericanTrucks/Flexicoil_C1_Black.png",

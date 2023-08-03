@@ -217,7 +217,7 @@ public class EntitySD70MP2 extends EntityTrainCore {
 
     public String[] setParticles(){
 
-        return new String[]{"smoke ,0,-0.1,1,0,0,0,0"};
+        return new String[]{"smoke ,0,-0.5,1,0,0,0,0"};
 
     }
 

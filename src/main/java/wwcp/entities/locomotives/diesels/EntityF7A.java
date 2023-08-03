@@ -4,6 +4,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
+import ebf.tim.api.TransportSkin;
 import ebf.tim.entities.EntityTrainCore;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
@@ -16,9 +17,11 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.AmericanTrucks.Blomberg_B;
+import wwcp.models.bogies.AmericanTrucks.HiAd4Axel;
 import wwcp.models.locomotives.diesels.F7A;
 import wwcp.worldwidecontentpack;
 
+import java.util.List;
 import java.util.UUID;
 
 
@@ -82,55 +85,53 @@ public class EntityF7A extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/EMD F7 Demo new.png", "textures/bogies/blombergB_silver.png",
-                "EMD Demonstrator", "Standard EMD demonstrator scheme");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/MILW F7.png", "textures/bogies/blombergB_black.png",
-                "Milwaukee Road Orange", "Milwaukee Road Orange scheme with Black Roof");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7_CN.png", "textures/bogies/blombergB_black.png",
-                "Canadian National Wet Noodle Scheme", "Red front with wet noodle logo and striped sides");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7_CNW.png", "textures/bogies/blombergB_black.png",
-                "CNW Yellow/Green", "Classic CNW scheme with green roof and yellow body");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7_NYC_CigarBand.png", "textures/bogies/blombergB_black.png",
-                "NYC Cigar Band", "New York Central black scheme with cigar band");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Bluebonnet.png", "textures/bogies/blombergB_silver.png",
-                "Santa Fe Blue Bonnet", "Santa Fe with blue bonnet scheme on nose and silver body");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Warbonnet_1_Leslie_A-200.png", "textures/bogies/blombergB_silver.png",
-                "Santa Fe War Bonnet 1", "Santa Fe with war bonnet, silver body, A-200");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Warbonnet_2_Leslie_S5T.png", "textures/bogies/blombergB_silver.png",
-                "Santa Fe War Bonnet 2", "Santa Fe with war bonnet, silver body, S5T");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Yellowbonnet_1.png", "textures/bogies/blombergB_silver.png",
-                "Santa Fe Yellow Bonnet 1", "Santa Fe with YellowBonnet, 1");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Yellowbonnet_2.png", "textures/bogies/blombergB_silver.png",
-                "Santa Fe Yellow Bonnet 2", "Santa Fe with YellowBonnet, 2");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Yellowbonnet_3.png", "textures/bogies/blombergB_silver.png",
-                "Santa Fe Yellow Bonnet 3", "Santa Fe with YellowBonnet, 3");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/Santa_Fe_F7-A_Yellowbonnet_4.png", "textures/bogies/blombergB_silver.png",
-                "Santa Fe Yellow Bonnet 4", "Santa Fe with YellowBonnet, 4");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/WWCP_1.png", "textures/bogies/blombergB_silver.png",
-                "WWCP 2 Years blue nose", "Fictional WWCP livery");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/WWCP_2.png", "textures/bogies/blombergB_silver.png",
-                "WWCP 2 Years purple nose", "Fictional WWCP livery");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7_SP_BloodyNose.png", "textures/bogies/blombergB_silver.png",
-                "F7 SP Bloodynose", "Fictional WWCP livery");
-        //todo fix above entry.
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/RI_F7A_Yellow_Wings.png",
+                "CRI&P Yellow Wings", "Chicago, Rock Island & Pacific railway with yellow wings").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/RI_F7A_Maroon_Short_Stripe.png",
+                "CRI&P Short Stripe", "Chicago, Rock Island & Pacific railway with short nose stripe").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/RI_F7A_Maroon_Short_Stripe_Block_Letters.png",
+                "CRI&P Short Stripe & Block Letters", "Chicago, Rock Island & Pacific railway with short nose stripe and block letters").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7A_SPWidow.png",
+                "SP Black Widow", "Southern Pacific black widow scheme").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7A_KCSG.png",
+                "KCS Ghost", "Kansas City Southern ghost scheme").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/CGW_F7A_Maroon.png",
+                "CGW Maroon", "Chicago Great Western railroad in maroon").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/MP_F7A_Jenks_Blue.png",
+                "MP Jenks Blue", "Missouri Pacific railway in jenks blue").setBogieTextures(new String[] {"textures/bogies/blombergB_mp.png", "textures/bogies/blombergB_mp.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/TP_F7A_Jenks_Blue.png",
+                "T&P Jenks Blue", "Texas & Pacific (in Missouri pacific railway jenks blue)").setBogieTextures(new String[] {"textures/bogies/blombergB_mp.png", "textures/bogies/blombergB_mp.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7A_GNS.png",
+                "GN", "Great Northern Simplified Empire Builder").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7A_BNEarly.png",
+                "GN Patched", "Great Northern Patched BN").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/BN_F7A_Cascade_Green.png",
+                "BN", "Burlington Northern in cascade green").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/ATSF_Freight_F7.png",
+                "ATSF Bluebonnet", "Atchison, Topeka and Santa Fe railway in bluebonnet freight scheme").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/F7A/F7A_Amtrak.png",
+                "Amtrak", "Amtrak in phase I").setBogieTextures(new String[] {"textures/bogies/blombergB_black.png", "textures/bogies/blombergB_black.png"}));
+
     }
     
     @Override
     public String getDefaultSkin() {
-        return "wwcp:EMD Demonstrator";
+        return "wwcp:CRI&P Yellow Wings";
     }
 
     @Override
     public float getMaxFuel(){return 20;}
 
 
-    public TrainsInMotion.transportTypes getType() {return TrainsInMotion.transportTypes.DIESEL;
+    @Override
+    public List<TrainsInMotion.transportTypes> getTypes() {
+        return TrainsInMotion.transportTypes.DIESEL.singleton();
     }
 
 
 
     @Override
-    public float[][] getRiderOffsets(){return new float[][]{{-1.9f, 1.45f, -0.3f}};}
+    public float[][] getRiderOffsets(){return new float[][]{{-2.1f, 1.35f, -0.2f}};}
 
     @Override
     public float[] getHitboxSize() {
@@ -151,14 +152,36 @@ public class EntityF7A extends EntityTrainCore {
      */
 
     @Override
-    public float[][] bogieModelOffsets(){return new float[][]{{1.7f,0f,0},{-2.05f,0f,0}};
+    public float[][] bogieModelOffsets(){return new float[][]{{1.9f,0f,0},{-1.9f,0f,0}};
     }
     @Override
-    public ModelBase[] bogieModels() {return new ModelBase[]{new Blomberg_B()}; }
+    public ModelBase[] bogieModels() {
+        return new ModelBase[]{new Blomberg_B(), new Blomberg_B()};
+    }
 
     @Override
     public float[] bogieLengthFromCenter() {
-        return new float[]{2, -2};
+        return new float[]{1.9f, -1.9f};
+    }
+
+    public int[] getParticleData(int id) {
+        switch (id){
+            case 0:{return new int[]{1, 60, 0x555555};}//GE smoke
+            case 1:{return super.getParticleData(id);}//heavy smoke
+            case 2:{return super.getParticleData(id);}//steam
+            case 3:{return super.getParticleData(id);}//led lamp
+            case 4:{return super.getParticleData(id);}//reverse lamp
+            case 5:{return super.getParticleData(id);}//small sphere lamp
+
+            default:{return new int[]{5, 100, 0xf3da90};}
+        }
+    }
+
+    public String[] setParticles(){
+
+        return new String[]{"smoke ,0,1.5,0.9,0,0,0,0",
+                "smoke ,0,0.5,0.9,0,0,0,0"};
+
     }
 
     @Override
@@ -189,14 +212,7 @@ public class EntityF7A extends EntityTrainCore {
      * <h2>Fluid Tank Capacity</h2>
      */
     //@Override
-    public int[] getTankCapacity(){return new int[]{9161, 800};}
-
-    @Override
-    public boolean isItemValidForSlot(int slot, ItemStack stack){
-        switch (slot){
-            case 400:{return stack!=null && stack.getItem() ==Items.redstone;}
-            default:{return true;}
-        }}
+    public int[] getTankCapacity(){return new int[]{9161};}
 
     /**
      * <h2>fuel management</h2>
@@ -204,7 +220,7 @@ public class EntityF7A extends EntityTrainCore {
      */
 
     public void manageFuel() {
-        this.fuelHandler.manageElectric(this);
+        this.fuelHandler.manageDiesel(this);
     }
 
     /**

@@ -4,7 +4,9 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.TrainsInMotion;
 import ebf.tim.api.SkinRegistry;
+import ebf.tim.api.TransportSkin;
 import ebf.tim.entities.EntityTrainCore;
+import ebf.tim.models.Bogie;
 import ebf.tim.registry.URIRegistry;
 import ebf.tim.utility.RailUtility;
 import fexcraft.tmt.slim.ModelBase;
@@ -15,6 +17,9 @@ import net.minecraft.world.World;
 import wwcp.entities.EntityDataSets.Transport;
 import wwcp.entities.WWCPTransport;
 import wwcp.models.bogies.AmericanTrucks.FB2Truck;
+import wwcp.models.bogies.AmericanTrucks.SLRV_Bogey;
+import wwcp.models.bogies.AmericanTrucks.SLRV_Bogey2;
+import wwcp.models.bogies.AmericanTrucks.Type_B;
 import wwcp.models.locomotives.diesels.B307;
 import wwcp.worldwidecontentpack;
 
@@ -84,14 +89,39 @@ public class EntityB307 extends EntityTrainCore {
 
     @Override
     public void registerSkins(){
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307_SP.png", "textures/bogies/AmericanTrucks/FB2_Truck_SP.png",
-                "SP", "Southern Pacific as delivered");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307_SP2.png", "textures/bogies/AmericanTrucks/FB2_Truck_SP.png",
-                "SP rebuilt", "Southern Pacific rebuilt w/ beacon");
-        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307a_MP.png", "textures/bogies/AmericanTrucks/FB2_Truck_MP.png",
-                "MP", "Missouri Pacific Blue model: B30-7a");
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307_SP.png",
+                "SP", "Southern Pacific as delivered").setBogieTextures(new String[] {"textures/bogies/AmericanTrucks/FB2_Truck_SP.png", "textures/bogies/AmericanTrucks/FB2_Truck_SP.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307_SP2.png",
+                "SP rebuilt", "Southern Pacific rebuilt w/ beacon").setBogieTextures(new String[] {"textures/bogies/AmericanTrucks/FB2_Truck_SP.png", "textures/bogies/AmericanTrucks/FB2_Truck_SP.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307a_MP.png",
+                "MP", "Missouri Pacific Blue model: B30-7a").setBogieTextures(new String[] {"textures/bogies/AmericanTrucks/FB2_Truck_MP.png", "textures/bogies/AmericanTrucks/FB2_Truck_MP.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307_SLSF.png",
+                "SLSF", "St.Louis-San Francisco Railway orange & white").setBogieTextures(new String[] {"textures/bogies/Type_B_Truck.png", "textures/bogies/Type_B_Truck.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307_BN.png",
+                "BN", "Burlington Northern Green").setBogieTextures(new String[] {"textures/bogies/Type_B_Truck.png", "textures/bogies/Type_B_Truck.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307_BNW.png",
+                "BN Whiteface", "Burlington Northern Whiteface, only 1 B30-7 with this livery").setBogieTextures(new String[] {"textures/bogies/Type_B_Truck.png", "textures/bogies/Type_B_Truck.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307_FL.png",
+                "SCL_FL", "Seaboard Coast Line - Family Lines").setBogieTextures(new String[] {"textures/bogies/AmericanTrucks/FB2_Truck_Black.png", "textures/bogies/AmericanTrucks/FB2_Truck_Black.png"}));
+        SkinRegistry.addSkin(this.getClass(), new TransportSkin(worldwidecontentpack.MODID, "textures/locomotive/Diesel/B307/B307_FL2.png",
+                "SCL_FL w/ nose logo", "Seaboard Coast Line - Family Lines w/ nose logo").setBogieTextures(new String[] {"textures/bogies/AmericanTrucks/FB2_Truck_Black.png", "textures/bogies/AmericanTrucks/FB2_Truck_Black.png"}));
+
     }
 
+    @Override
+    public Bogie[] bogies() {
+        if(getCurrentSkin().name.equals("SLSF")||getCurrentSkin().name.equals("BN")||getCurrentSkin().name.equals("BN Whiteface")) {
+            return new Bogie[]{
+                    new Bogie(new Type_B(), -2.4f, 0f, 0),
+                    new Bogie(new Type_B(), 2.4f, 0f, 0)
+            };
+        } else {
+            return new Bogie[]{
+                    new Bogie(new FB2Truck(), -2.4f, 0f, 0),
+                    new Bogie(new FB2Truck(), 2.4f, 0f, 0)
+            };
+        }
+    }
 
     @Override
     public String getDefaultSkin() {
@@ -111,15 +141,9 @@ public class EntityB307 extends EntityTrainCore {
      * @return
      */
     @Override
-    public ModelBase[] bogieModels() {return new ModelBase[]{new FB2Truck()}; }
-
-    @Override
-    public float[][] bogieModelOffsets() {
-        return new float[][]{{2.4f,0f,0},{-2.4f,0f,0}};
+    public ModelBase[] bogieModels() {
+        return new ModelBase[]{new FB2Truck(), new FB2Truck()};
     }
-
-    @Override
-    public float[] bogieLengthFromCenter(){return new float[]{2.4f,-2.4f};}
 
     @Override
     public List<TrainsInMotion.transportTypes> getTypes() {

@@ -217,10 +217,15 @@ public class wwcp_registrations {
                 // new EntitySD60Mac(null),
                 // new EntityGP50(null),
                 // new EntityM640(null),
+                new EntityC424(null),
+                new EntityC425(null),
+                new EntityC430(null),
+                new EntityC630M(null),
                 new EntityBL2(null),
                 new EntityGP7(null),
                 new EntityGP7RRI(null),
                 new EntityGP9R(null),
+                new EntityGP30(null),
                 new EntityGP402LW(null),
                 new EntitySD7(null),
                 new EntitySD382(null),
@@ -230,6 +235,7 @@ public class wwcp_registrations {
                 new EntitySD60(null),
                 new EntitySD60M2(null),
                 new EntitySD70(null),
+                new EntitySD70M(null),
                 new EntitySD70MP2(null),
                 new EntitySD75M(null),
                 new EntitySD90MACH(null),
@@ -237,6 +243,9 @@ public class wwcp_registrations {
                 new EntityU33B(null),
                 new EntityB307(null),
                 new EntityB307a(null),
+                new EntityB398(null),
+                new EntityB408(null),
+                new EntityMK5000C(null),
                 new EntityRS3(null),
                 new EntityRS23(null),
                 new EntityJT26C(null),
@@ -272,6 +281,8 @@ public class wwcp_registrations {
     public static GenericRailTransport[] listelectric() {
         return new GenericRailTransport[]{
                 //European Stock
+                new EntitySLRVC(null),
+                new EntitySLRV(null),
                 new EntityTraxxF140MS2E(null),
                 new EntityV36Electric(null),
                 new EntityES64U2(null),
@@ -333,6 +344,8 @@ public class wwcp_registrations {
                 new EntityDSB_CFM(null),
 
                 //American Stock
+                new EntityBuddBilevel(null),
+                new EntityBuddBilevelCab(null),
                 new EntityACF_60Seats(null),
                 new EntityAmfleet1(null),
                 new EntityBOCaboose(null),
@@ -377,6 +390,7 @@ public class wwcp_registrations {
                //American Stock
                 new Entity40ftAAR_Boxcar(null),
                 new EntityGN40HomebuiltBoxcar(null),
+                new EntityXM4A(null),
                 new EntityCP_Minibox(null),
                 // new EntityCP_Plug_Slide(null),
                 // new EntityCP_Plugdoor(null),
@@ -394,6 +408,7 @@ public class wwcp_registrations {
                 new EntityThrall616BoeingFlatcar(null),
                 new EntityGunderson596Woodchip(null),
                 new EntityBay2ConcreteHopper(null),
+                new EntityPS2Early3Bay(null),
                 new EntityNSC53Wellcar(null),
                 new EntityPaccar64Woodchip(null)
         };

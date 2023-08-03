@@ -1057,10 +1057,10 @@ public class SD50 extends ModelBase //Same as Filename
 		bodyModel[173].setRotationPoint(-70.08F, -13.5F, -1F);
 
 		bodyModel[174].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F); // Light_Nose_Top-Top
-		bodyModel[174].setRotationPoint(-70.33F, -13.5F, -1F);
+		bodyModel[174].setRotationPoint(-70.2F, -13.5F, -1F);
 
 		bodyModel[175].addShapeBox(0F, 0F, 0F, 1, 2, 2, 0F,-0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, -0.75F, -0.25F, -0.25F); // Light_Nose_Top-Bottom
-		bodyModel[175].setRotationPoint(-70.33F, -11.8F, -1F);
+		bodyModel[175].setRotationPoint(-70.2F, -11.8F, -1F);
 
 		bodyModel[176].addShapeBox(0F, 0F, 0F, 1, 5, 2, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F); // Box 11
 		bodyModel[176].setRotationPoint(-69.56F, -12.5F, -1F);
@@ -1875,19 +1875,19 @@ public class SD50 extends ModelBase //Same as Filename
 		bodyModel[430].setRotationPoint(31F, -23.75F, -4.5F);
 
 		bodyModel[431].addShapeBox(0F, 0F, -1F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
-		bodyModel[431].setRotationPoint(-52.75F, -21.51F, -8.25F);
+		bodyModel[431].setRotationPoint(-53.75F, -21.51F, -8.25F);
 		bodyModel[431].rotateAngleX = 0.78539816F;
 
 		bodyModel[432].addShapeBox(0F, 0F, -1F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_Left
-		bodyModel[432].setRotationPoint(-52.75F, -21.51F, -8.25F);
+		bodyModel[432].setRotationPoint(-53.75F, -21.51F, -8.25F);
 		bodyModel[432].rotateAngleX = 0.78539816F;
 
 		bodyModel[433].addShapeBox(0F, 0F, 1F, 1, 1, 1, 0F,-0.35F, -0.75F, 0.15F, 0.15F, -0.75F, 0.15F, 0.15F, -0.75F, -0.35F, -0.35F, -0.75F, -0.35F, -0.35F, 0F, 0.15F, 0.15F, 0F, 0.15F, 0.15F, 0F, -0.35F, -0.35F, 0F, -0.35F); // Flashers_ns
-		bodyModel[433].setRotationPoint(-52.75F, -21.51F, 8.25F);
+		bodyModel[433].setRotationPoint(-53.75F, -21.51F, 8.25F);
 		bodyModel[433].rotateAngleX = -0.78539816F;
 
 		bodyModel[434].addShapeBox(0F, 0F, 1F, 1, 1, 1, 0F,-0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F, -0.4F, 0F, 0.1F, 0.1F, 0F, 0.1F, 0.1F, 0F, -0.4F, -0.4F, 0F, -0.4F); // Beacon_Right
-		bodyModel[434].setRotationPoint(-52.75F, -21.51F, 8.25F);
+		bodyModel[434].setRotationPoint(-53.75F, -21.51F, 8.25F);
 		bodyModel[434].rotateAngleX = -0.78539816F;
 
 		bodyModel[435].addBox(0F, 0F, 0F, 1, 1, 1, 0F); // Box 88
@@ -2110,7 +2110,7 @@ public class SD50 extends ModelBase //Same as Filename
 		bodyModel[513] = new ModelRendererTurbo(this, 491, 212, textureX, textureY); // Box 52
 		bodyModel[514] = new ModelRendererTurbo(this, 491, 212, textureX, textureY); // Box 52
 		bodyModel[515] = new ModelRendererTurbo(this, 394, 261, textureX, textureY); // Box 145
-		bodyModel[516] = new ModelRendererTurbo(this, 465, 222, textureX, textureY); // Box 11
+		bodyModel[516] = new ModelRendererTurbo(this, 446, 222, textureX, textureY); // Box 11
 		bodyModel[517] = new ModelRendererTurbo(this, 368, 221, textureX, textureY); // Box 11
 		bodyModel[518] = new ModelRendererTurbo(this, 105, 267, textureX, textureY); // Exhaust
 		bodyModel[519] = new ModelRendererTurbo(this, 137, 262, textureX, textureY); // BeaconCNW

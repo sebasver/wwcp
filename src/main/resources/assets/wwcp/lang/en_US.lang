@@ -141,6 +141,9 @@ item.RoyalScot.name=LMS Original Royal Scot
 item.Fowlertender.name=LMS Fowler 3000 Gallon Tender
 //American Tab
 
+item.SLRVC.name=SLRV C
+item.SLRV.name=SLRV
+
 item.X10A.name=CNR X10A
 item.U1F.name=CNR U-1-F
 
@@ -157,6 +160,7 @@ item.GP7.name=GP7
 item.GP7RRI.name=GP7R CRI&P
 item.GP9R.name=GP9R
 item.GP40-2LW.name=GP40-2LW
+item.GP30.name=GP30
 item.GP50.name=GP50
 
 
@@ -171,6 +175,7 @@ item.SD50.name=SD50
 item.SD60.name=SD60
 item.SD60M2.name=SD60M
 item.SD70.name=SD70
+item.SD70M.name=SD70M
 item.SD70MP2.name=SD70M Phase 2 Cab
 item.SD75M.name=SD75M
 item.TEBC6.name=TEBC6
@@ -182,12 +187,20 @@ item.SD70ACU.name=SD70ACU
 item.RS3.name=RS3
 item.RS18.name=RS18
 item.RS23.name=RS23
+item.C424.name=C424
+item.C425.name=C425
+item.C430.name=C430
+item.C630M.name=C630M
 
 item.M640.name=M640
 
 item.U33B.name=U33B
 item.B307a.name=B30-7a Highood
 item.B307.name=B30-7
+item.B398.name=B39-8
+item.B408.name=B40-8
+
+item.MK5000C.name=MK5000C
 
 item.AC4400CW.name=AC4400CW
 
@@ -200,9 +213,11 @@ item.JT26C.name=JT26C
 item.40ftBoxcar.name=40ft Boxcar
 item.40ftAARBoxcar.name=40ft AAR Standard Boxcar
 item.GN40HomebuiltBoxcar.name=GN 40' Homebuilt Boxcar
+item.XM4A.name=XM-4A
 item.Gunderson596Woodchip.name=Gunderson 59'6 Woodchip Gondola
 item.Paccar64Woodchip.name=Paccar/Gunderson 64' Woodchip Gondola
 item.Bay2ConcreteHopper.name=2 Bay Concrete Hopper
+item.PS2Early3Bay.name=PS-2-CD 3 Bay Covered Hopper
 item.HiCube86QuadDoor.name=86' Hi-Cube Quad Door Autoparts Boxcar
 item.Thrall616Bulkhead.name=Thrall 61'6 Bulkhead
 item.Roadrailer53Dryvan.name=53' Roadrailer Dryvan
@@ -224,6 +239,8 @@ item.CPMetalVan.name=CP Metal Van
 item.B&O_Caboose.nme=B&O Caboose
 item.B&OCaboose.name=B&O Caboose
 
+item.BuddBilevel.name=Budd Bilevel
+item.BuddBilevelCab.name=Budd Bilevel Cab Car
 item.ACF_60Seat.name=ACF 60 Seat Coach
 item.Amfleet1.name=Amfleet Coach 1
 item.BOLE1First.name=BO LE1 (1st unit)

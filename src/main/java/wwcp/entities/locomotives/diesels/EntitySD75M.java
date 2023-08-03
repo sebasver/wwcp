@@ -91,6 +91,8 @@ public class EntitySD75M extends EntityTrainCore {
                 "ATSF", "Atchison, Topeka and Santa Fe Railway Warbonnet");
         SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD75M/SD75M_NS.png", "textures/bogies/HTSCtruck_Black.png",
                 "NS", "Norfolk Southern Black w/ white top");
+        SkinRegistry.addSkin(this.getClass(),worldwidecontentpack.MODID, "textures/locomotive/Diesel/SD75M/SD75M_DTKC.png", "textures/bogies/HTSCtruck_Black.png",
+                "DT&KC", "Dallas, Tucumcari and Kansas City Railway (Fictional)");
 
     }
 
@@ -221,7 +223,7 @@ public class EntitySD75M extends EntityTrainCore {
 
     public String[] setParticles(){
 
-        return new String[]{"smoke ,0,-0.1,1,0,0,0,0"};
+        return new String[]{"smoke ,0,-0.5,1,0,0,0,0"};
 
     }
 
