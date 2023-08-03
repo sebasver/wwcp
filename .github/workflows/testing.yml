@@ -21,8 +21,8 @@ jobs:
         mkdir ~/.gradle
         mkdir ~/.gradle/caches
         cd ~/.gradle/caches
-        7z x /home/runner/work/Traincraft-5/Traincraft-5/gradle/caches.7z.001 -y
-        cd /home/runner/work/Traincraft-5/Traincraft-5
+        7z x /home/runner/work/wwcp/wwcp/gradle/caches.7z.001 -y
+        cd /home/runner/work/wwcp/wwcp
 
 
     - name: Set up JDK 1.8
