@@ -22,7 +22,7 @@ jobs:
         mkdir ~/.gradle/caches
         cd ~/.gradle/caches
         ls /home/runner/work/wwcp/wwcp/gradle
-        ls /home/runner/work/wwcp
+        ls /home/runner/work/wwcp/wwcp/gradle/wrapper
         7z x /home/runner/work/wwcp/wwcp/gradle/caches.7z.001 -y
         cd /home/runner/work/wwcp/wwcp
 
