@@ -20,6 +20,7 @@ jobs:
         sudo apt-get install -y p7zip-full
         mkdir ~/.gradle
         mkdir ~/.gradle/caches
+        7z x /home/runner/work/wwcp/wwcp/gradle/caches.7z.001 -y
         cd /home/runner/work/wwcp/wwcp
 
 
